@@ -1,0 +1,2 @@
+A libnova wrapper that includes a copy of libnova 
+itself for static linking.

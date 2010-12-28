@@ -1,0 +1,25 @@
+@comment $OpenBSD$
+%%SHARED%%
+${P5ARCH}/
+${P5ARCH}/Astro/
+${P5ARCH}/Astro/Nova/
+${P5ARCH}/Astro/Nova.pm
+${P5ARCH}/Astro/Nova/DMS.pm
+${P5ARCH}/Astro/Nova/EquPosn.pm
+${P5ARCH}/Astro/Nova/GalPosn.pm
+${P5ARCH}/Astro/Nova/HMS.pm
+${P5ARCH}/Astro/Nova/LnLatPosn.pm
+${P5ARCH}/Astro/Nova/ZoneDate.pm
+${P5ARCH}/auto/
+${P5ARCH}/auto/Astro/
+${P5ARCH}/auto/Astro/Nova/
+${P5ARCH}/auto/Astro/Nova/Nova.bs
+@man man/man3p/Astro::Nova.3p
+@man man/man3p/Astro::Nova::DMS.3p
+@man man/man3p/Astro::Nova::EquPosn.3p
+@man man/man3p/Astro::Nova::GalPosn.3p
+@man man/man3p/Astro::Nova::HMS.3p
+@man man/man3p/Astro::Nova::LnLatPosn.3p
+@man man/man3p/Astro::Nova::ZoneDate.3p
+share/examples/p5-Astro-Nova/
+share/examples/p5-Astro-Nova/moon.pl

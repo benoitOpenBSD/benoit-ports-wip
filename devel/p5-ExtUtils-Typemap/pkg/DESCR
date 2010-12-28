@@ -1,0 +1,7 @@
+This module can read, modify, create and write Perl XS typemap files. If
+you don't know what a typemap is, please confer the perlxstut and perlxs
+manuals.
+
+The module is not entirely round-trip safe: For example it currently
+simply strips all comments. The order of entries in the maps is,
+however, preserved.
