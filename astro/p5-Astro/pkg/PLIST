@@ -1,0 +1,8 @@
+@comment $OpenBSD$
+${P5SITE}/Astro/
+${P5SITE}/Astro/Coord.pm
+${P5SITE}/Astro/Misc.pm
+${P5SITE}/Astro/Time.pm
+@man man/man3p/Astro::Coord.3p
+@man man/man3p/Astro::Misc.3p
+@man man/man3p/Astro::Time.3p
