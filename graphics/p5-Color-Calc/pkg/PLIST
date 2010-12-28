@@ -1,0 +1,7 @@
+@comment $OpenBSD: PLIST,v 1.2 2008/12/04 00:04:13 simon Exp $
+${P5SITE}/Color/
+${P5SITE}/Color/Calc/
+${P5SITE}/Color/Calc.pm
+${P5SITE}/Color/Calc/WWW.pm
+@man man/man3p/Color::Calc.3p
+@man man/man3p/Color::Calc::WWW.3p
