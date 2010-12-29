@@ -1,0 +1,2 @@
+@comment $OpenBSD$
+${P5ARCH}/auto/Math/FastGF2/FastGF2.so

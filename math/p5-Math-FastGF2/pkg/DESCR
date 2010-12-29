@@ -1,0 +1,4 @@
+This module provides an interface for performing single modulo arithmetic
+operations on Galois Field polynomials in GF(2^8), GF(2^16) and GF(2^32).
+All values to be operated on are simple Perl numeric scalars which are taken
+to represent polynomials with binary co-efficients.
