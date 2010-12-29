@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+@bin bin/Packer
+@bin bin/critter
+@man man/man6/critter.6
+share/Critical_Mass/
+share/Critical_Mass/lg-criti.xm
+share/Critical_Mass/resource.dat

@@ -1,0 +1,29 @@
+$OpenBSD$
+--- configure.orig	Sat Dec 26 19:02:03 2009
++++ configure	Sat Dec 26 19:03:02 2009
+@@ -3864,13 +3864,13 @@
+     LIBS="-L/usr/local/lib -L/usr/X11R6/lib $LIBS"
+     CXXFLAGS="$CXXFLAGS -I/usr/X11R6/include"
+ 
+-echo "$as_me:$LINENO: checking for main in -lpng12" >&5
+-echo $ECHO_N "checking for main in -lpng12... $ECHO_C" >&6
++echo "$as_me:$LINENO: checking for main in -lpng" >&5
++echo $ECHO_N "checking for main in -lpng... $ECHO_C" >&6
+ if test "${ac_cv_lib_png12_main+set}" = set; then
+   echo $ECHO_N "(cached) $ECHO_C" >&6
+ else
+   ac_check_lib_save_LIBS=$LIBS
+-LIBS="-lpng12  $LIBS"
++LIBS="-lpng $LIBS"
+ cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */
+ _ACEOF
+@@ -3926,7 +3926,7 @@
+ #define HAVE_LIBPNG12 1
+ _ACEOF
+ 
+-  LIBS="-lpng12 $LIBS"
++  LIBS="-lpng $LIBS"
+ 
+ else
+   { { echo "$as_me:$LINENO: error: libpng is needed" >&5
