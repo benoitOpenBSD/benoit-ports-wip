@@ -1,0 +1,41 @@
+--- src/Config.orig	Tue Jun  9 10:21:13 2009
++++ src/Config	Wed Jun 10 15:39:08 2009
+@@ -1,6 +1,6 @@
+ CC = g++ -pipe
+ 
+-CFLAGS = -Wall -fPIC -D_FILE_OFFSET_BITS=64
++CFLAGS += -Wall -fPIC -D_FILE_OFFSET_BITS=64
+ 
+ # CFLAGS += -m32 -mtune=i386 -march=i386 -L/usr/lib32
+ #  -L/emul/ia32-linux/usr/lib/
+@@ -14,7 +14,7 @@
+     XemHasWebServer    = true
+     XemHasNetStore     = false
+ # XemHasWebServer implies XemHasPersistence
+-    XemHasLibZZip      = false
++    XemHasLibZZip      = true
+ 
+     Profile = Debug
+     Profile = DebugNoLog
+@@ -51,9 +51,9 @@
+ 	CFLAGS += -pg
+ endif
+ ifeq ($(Profile),Perf)
+-	CFLAGS += -O3
++	CFLAGS += -O2
+ # 	CFLAGS += -pg
+-	CFLAGS += -DXEM_SYNC
++#	CFLAGS += -DXEM_SYNC
+ 	CFLAGS += -D__XEM_USE_INLINE
+ #	CFLAGS += -Winline
+ #	CFLAGS += -finline-limit=18000 
+@@ -101,7 +101,7 @@
+ 
+ # Standard Config
+ 	LANG = 
+-	MODULEINSTALLDIR = /usr/bin
+-	MODULEINSTALLDIR_LIB = /lib
++	MODULEINSTALLDIR = ${LOCALBASE}/bin
++	MODULEINSTALLDIR_LIB = ${LOCALBASE}/lib
+ 	SUDO = sudo
+ 

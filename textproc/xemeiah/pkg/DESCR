@@ -1,0 +1,3 @@
+Xemeiah is a fast, open and scalable XML Framework written in C++. Xemieah
+provides an efficient XSLT Processor, tending to comply with Oasis
+conformance tests for XSLT 1.0 and 2.0, with XPath 1.0 at least.
