@@ -1,0 +1,19 @@
+@comment $OpenBSD$
+${P5SITE}/Net/
+${P5SITE}/Net/Write/
+${P5SITE}/Net/Write.pm
+${P5SITE}/Net/Write/Layer.pm
+${P5SITE}/Net/Write/Layer2.pm
+${P5SITE}/Net/Write/Layer3.pm
+${P5SITE}/Net/Write/Layer4.pm
+@man man/man3p/Net::Write.3p
+@man man/man3p/Net::Write::Layer.3p
+@man man/man3p/Net::Write::Layer2.3p
+@man man/man3p/Net::Write::Layer3.3p
+@man man/man3p/Net::Write::Layer4.3p
+share/examples/p5-Net-Write/
+share/examples/p5-Net-Write/layer2.pl
+share/examples/p5-Net-Write/layer3-ipv6.pl
+share/examples/p5-Net-Write/layer3.pl
+share/examples/p5-Net-Write/layer4-ipv6.pl
+share/examples/p5-Net-Write/layer4.pl
