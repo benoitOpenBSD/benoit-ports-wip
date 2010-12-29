@@ -1,0 +1,20 @@
+--- Makefile.in.orig	Tue Sep 22 01:44:23 2009
++++ Makefile.in	Tue Sep 22 14:44:54 2009
+@@ -217,7 +217,7 @@ top_build_prefix = @top_build_prefix@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+ SUBDIRS = lib src doc . tests
+-AM_MAKEINFOFLAGS = -I$(top_srcdir)/doc/example
++AM_MAKEINFOFLAGS = -I$(top_srcdir)/share/examples/check/
+ CLEANFILES = *~\
+ 	$(PACKAGE)-$(VERSION).tar.gz\
+ 	ChangeLog.bak
+@@ -683,7 +683,7 @@ info: info-recursive
+ 
+ info-am:
+ 
+-install-data-am: install-docDATA install-m4dataDATA install-pcdataDATA
++install-data-am: install-m4dataDATA install-pcdataDATA
+ 
+ install-dvi: install-dvi-recursive
+ 

@@ -1,0 +1,24 @@
+#
+# remove usage of pthread to have better reliability in regression test
+# and less problem with the non-blocking semantics of pthread
+#
+--- configure.orig	Tue Sep 22 01:18:45 2009
++++ configure	Wed Sep 23 07:49:36 2009
+@@ -16606,6 +16606,8 @@
+ 
+ fi
+ 
++acx_pthread_ok=no
++
+ rm -rf conftest.dSYM
+ rm -f core conftest.err conftest.$ac_objext conftest_ipa8_conftest.oo \
+       conftest$ac_exeext conftest.$ac_ext
+@@ -16791,6 +16793,8 @@
+ 
+ 
+ fi
++
++acx_pthread_ok=no
+ 
+ rm -rf conftest.dSYM
+ rm -f core conftest.err conftest.$ac_objext conftest_ipa8_conftest.oo \
