@@ -1,0 +1,2 @@
+This module implements the SEAL2 algorithm. SEAL2 is the second version of
+the stream cipher, SEAL, designed by Don Coppersmith and Phillip Rogaway.
