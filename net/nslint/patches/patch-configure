@@ -1,0 +1,17 @@
+$OpenBSD$
+--- configure.orig	Sun Oct 11 01:30:24 2009
++++ configure	Tue Oct 12 08:23:35 2010
+@@ -3767,11 +3767,11 @@
+ 
+     V_CCOPT=""
+     if test "${ac_cv_without_optimization+set}" != set; then
+-	    V_CCOPT="-O"
++	    V_CCOPT=""
+     fi
+     V_INCLS=""
+     if test "${srcdir}" != "." ; then
+-	    V_INCLS="-I\$\(srcdir\)"
++	    V_INCLS="-I\$(srcdir\)"
+     fi
+     if test -z "$CC" ; then
+ 	    case "$target_os" in

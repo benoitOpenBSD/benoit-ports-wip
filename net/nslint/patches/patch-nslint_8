@@ -1,0 +1,31 @@
+$OpenBSD$
+--- nslint.8.orig	Sat Mar 14 06:43:37 2009
++++ nslint.8	Tue Oct 12 08:12:16 2010
+@@ -101,14 +101,14 @@
+ Specify an alternate
+ .I named.boot
+ file. The default is
+-.IR /etc/named.boot .
++.IR /var/named/etc/named.boot .
+ .TP
+ .TP
+ .B -c
+ Specify an alternate
+ .I named.conf
+ file. The default is
+-.IR /etc/named.conf .
++.IR /var/named/etc/named.conf .
+ .TP
+ .B -B
+ Specify an alternate
+@@ -466,8 +466,8 @@
+ .na
+ .nh
+ .nf
+-/etc/named.conf - default named configuration file
+-/etc/named.boot - old style named configuration file
++/var/named/etc/etc/named.conf - default named configuration file
++/var/named/etc/etc/named.boot - old style named configuration file
+ nslint.conf - default nslint configuration file
+ nslint.boot - old style nslint configuration file
+ .ad
