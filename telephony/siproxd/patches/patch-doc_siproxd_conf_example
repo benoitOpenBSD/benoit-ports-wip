@@ -1,0 +1,31 @@
+--- doc/siproxd.conf.example.orig	Thu May 21 14:40:10 2009
++++ doc/siproxd.conf.example	Tue Dec  8 08:39:40 2009
+@@ -78,8 +78,8 @@
+ # Secure Enviroment settings:
+ #   user:	uid/gid to switch to after startup
+ #   chrootjail:	path to chroot to (chroot jail)
+-user = nobody
+-#chrootjail = /var/lib/siproxd/
++user = _siproxd
++chrootjail = /var/siproxd/
+ 
+ ######################################################################
+ # Registration file:
+@@ -88,7 +88,7 @@
+ #   the specified directory path does exist!
+ #   Note: If running in chroot jail, this path starts relative
+ #         to the jail.
+-registration_file = /var/lib/siproxd/siproxd_registrations
++registration_file = siproxd_registrations
+ 
+ ######################################################################
+ # Automatically save current registrations every 'n' seconds
+@@ -101,7 +101,7 @@
+ #   This file holds the PID of the main thread of siproxd.
+ #   Note: If running in chroot jail, this path starts relative
+ #         to the jail.
+-pid_file = /var/run/siproxd/siproxd.pid
++pid_file = siproxd.pid
+ 
+ ######################################################################
+ # global switch to control the RTP proxy behaviour
