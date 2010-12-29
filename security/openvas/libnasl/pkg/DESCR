@@ -1,0 +1,8 @@
+libnasl for OpenVAS
+
+OpenVAS is a network security scanner, a fork of Nessus v2
+
+The NASL (Nessus Attack Scripting Language) library is used to create
+scripts, and run them by ether with the OpenVAS server or 
+opennasl command
+

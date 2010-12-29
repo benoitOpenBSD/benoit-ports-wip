@@ -1,0 +1,79 @@
+$OpenBSD$
+--- openvas-adduser.in.orig	Mon Jan 26 07:20:59 2009
++++ openvas-adduser.in	Wed Feb 18 23:13:14 2009
+@@ -95,10 +95,10 @@ if [ "$X" = "401b30e3b8b5d629635a5c613cdb7919" -o \
+      "$X" = "401B30E3B8B5D629635A5C613CDB7919" ]; then
+  MD5CMD="openssl md5"
+ else
+- X=`echo x | md5sum | awk '{print $1}'`
++ X=`echo x | md5 | awk '{print $1}'`
+  if [ "$X" = "401b30e3b8b5d629635a5c613cdb7919" -o \
+       "$X" = "401B30E3B8B5D629635A5C613CDB7919" ]; then
+-  MD5CMD=md5sum
++  MD5CMD=md5
+  else
+   MD5CMD=""
+  fi
+@@ -146,7 +146,7 @@ while test "$ok" = `gettext "n"`;
+ do
+  echo $Xn "`gettext "Login :"` $Xc"
+  read login
+- if [ -d $localstatedir/lib/openvas/users/$login ];
++ if [ -d $localstatedir/openvas/users/$login ];
+  then
+    gettext "This login already exists. Choose another one."; echo
+  else
+@@ -276,9 +276,9 @@ esac
+ #echo "$login:$password" > $TMPDIR/adduser.$$
+ 	
+ 
+-chmod 0700 "$localstatedir/lib/openvas/"
+-mkdir -p "$localstatedir/lib/openvas/users/$login"
+-chmod 0700 "$localstatedir/lib/openvas/users/$login"
++chmod 0700 "$localstatedir/openvas/users"
++mkdir -p "$localstatedir/openvas/users/$login"
++chmod 0700 "$localstatedir/openvas/users/$login"
+ 
+ 
+ 
+@@ -289,14 +289,14 @@ chmod 0700 "$localstatedir/lib/openvas/users/$login"
+ # Create the auth. dir, which contains the user rules,
+ # password, and plugin acl
+ #
+-mkdir -p "$localstatedir/lib/openvas/users/$login/auth"
+-chmod 0700 "$localstatedir/lib/openvas/users/$login/auth"
++mkdir -p "$localstatedir/openvas/users/$login/auth"
++chmod 0700 "$localstatedir/openvas/users/$login/auth"
+ 
+ #
+ # Create the plugins dir, which contains the user plugins
+ #
+-mkdir -p "$localstatedir/lib/openvas/users/$login/plugins"
+-chmod 0700 "$localstatedir/lib/openvas/users/$login/plugins"
++mkdir -p "$localstatedir/openvas/users/$login/plugins"
++chmod 0700 "$localstatedir/openvas/users/$login/plugins"
+ 
+ 
+ if [ "$auth" = "pass" ]; then
+@@ -307,17 +307,17 @@ if [ "$auth" = "pass" ]; then
+ 	}
+ 	SEED=`(echo $SEED; date; df; ls -l; echo $URANDOM) | $MD5CMD | awk '{print $1}'`
+ 	H=`echo $Xn $SEED$password$Xc | $MD5CMD | awk '{print $1}'`
+-	echo $H $SEED > "$localstatedir/lib/openvas/users/$login/auth/hash"
++	echo $H $SEED > "$localstatedir/openvas/users/$login/auth/hash"
+     else
+-	echo "$password" > "$localstatedir/lib/openvas/users/$login/auth/password"
++	echo "$password" > "$localstatedir/openvas/users/$login/auth/password"
+     fi
+ elif [ "$auth" = "cert" ]; then
+-	echo "$dn" > "$localstatedir/lib/openvas/users/$login/auth/dname"
++	echo "$dn" > "$localstatedir/openvas/users/$login/auth/dname"
+ fi
+ 
+ 
+ 
+-cp $tmpAddUserFile "$localstatedir/lib/openvas/users/$login/auth/rules"
++cp $tmpAddUserFile "$localstatedir/openvas/users/$login/auth/rules"
+ 
+ 
+ 

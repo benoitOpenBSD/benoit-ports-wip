@@ -1,0 +1,11 @@
+$OpenBSD$
+--- libopenvas/ftp_funcs.c.orig	Sat Oct 25 11:57:26 2008
++++ libopenvas/ftp_funcs.c	Sat Oct 25 11:58:21 2008
+@@ -26,6 +26,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <stdio.h>
++#include <sys/socket.h>
+ 
+ /* this works for libc6 systems, unclear
+  * wether it will not work on other systems */

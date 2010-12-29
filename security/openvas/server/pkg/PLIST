@@ -1,0 +1,44 @@
+@comment $OpenBSD$
+bin/openvas-mkcert-client
+@bin bin/openvas-mkrand
+bin/openvasd-config
+include/openvas/
+include/openvas/config.h
+include/openvas/includes.h
+include/openvas/nessusicmp.h
+include/openvas/nessusip.h
+include/openvas/nessusraw.h
+include/openvas/nessustcp.h
+include/openvas/nessusudp.h
+include/openvas/threadcompat.h
+@man man/man1/openvas-mkcert-client.1
+@man man/man1/openvas-mkrand.1
+@man man/man1/openvasd-config.1
+@man man/man8/openvas-adduser.8
+@man man/man8/openvas-mkcert.8
+@man man/man8/openvas-rmuser.8
+@man man/man8/openvasd.8
+sbin/openvas-adduser
+sbin/openvas-mkcert
+sbin/openvas-rmuser
+@bin sbin/openvasd
+@mode 755
+@sample /etc/openvas/
+@mode 700
+@sample /etc/openvas/gnupg/
+@mode 755
+@sample /var/log/openvas/
+@sample /var/openvas/
+@mode 700
+@sample /var/openvas/CA/
+@sample /var/openvas/jobs/
+@sample /var/openvas/logs/
+@sample /var/openvas/tmp/
+@sample /var/openvas/users/
+@mode
+share/doc/openvas/
+share/doc/openvas/README.OpenBSD
+share/examples/openvas/
+@mode 700
+share/examples/openvas/openvas-services
+@sample /var/openvas/openvas-services

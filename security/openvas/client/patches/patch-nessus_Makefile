@@ -1,0 +1,18 @@
+$OpenBSD$
+--- nessus/Makefile.orig	Thu Mar  5 09:28:58 2009
++++ nessus/Makefile	Thu Mar  5 23:39:21 2009
+@@ -11,14 +11,6 @@ CFLAGS+=-Wall
+ # The name of the executable:
+ NESSUSCLIENT=OpenVAS-Client
+ 
+-# Add some specific Windows compile options for Cygwin
+-SYSTEM:=$(shell uname -o)
+-ifeq ($(SYSTEM), Cygwin)
+-CFLAGS+=-mms-bitfields
+-LDFLAGS+=-mwindows
+-NESSUSCLIENT=OpenVAS-Client.exe
+-endif
+-
+ OBJS = auth.o \
+        nessus_plugin.o \
+        comm.o \

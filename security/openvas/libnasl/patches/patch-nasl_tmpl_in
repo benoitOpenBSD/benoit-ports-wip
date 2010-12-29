@@ -1,0 +1,20 @@
+$OpenBSD$
+--- nasl.tmpl.in.orig	Tue Dec 16 13:06:34 2008
++++ nasl.tmpl.in	Sun Dec 21 13:49:03 2008
+@@ -63,6 +63,7 @@ HAVE_UCB_INCLUDE=@have_ucbinclude@
+ 
+ 
+ RPCSVC=@rpcsvc_lib@
++GNUTLS=-lgnutls
+ COMPAT=@compat_lib@
+ # Some defines you may want to modify
+ DEFS=@DEFS@ $(HAVE_UCB_INCLUDE) $(DEBUG)
+@@ -76,7 +77,7 @@ GPGME_CONFIG=@GPGME_CONFIG@
+ LIBOPENVASCONFIG=@LIBOPENVASCONFIG@
+ # Your C compiler
+ CC=@CC@
+-LIBS=@LIBS@ $(RPCSVC) $(COMPAT)
++LIBS=@LIBS@ $(RPCSVC) $(GNUTLS) $(COMPAT)
+ LIBTOOL=@LIBTOOL@ --silent
+ RANLIB=@RANLIB@
+ PACKAGE_VERSION=@OPENVASNASL_SUPER@:@OPENVASNASL_PATCH@:@OPENVASNASL_MINOR@

@@ -1,0 +1,11 @@
+$OpenBSD$
+--- nasl/Makefile.orig	Sun Dec 21 13:51:40 2008
++++ nasl/Makefile	Sun Dec 21 13:54:19 2008
+@@ -103,7 +103,6 @@ install : libopenvasnasl.la openvas-nasl
+ 	test -d ${DESTDIR}${libdir} || $(INSTALL_DIR) -m 755 ${DESTDIR}${libdir}
+ 	test -d ${DESTDIR}${bindir} || $(INSTALL_DIR) -m 755 ${DESTDIR}${bindir}
+ 	$(LIBTOOL) --mode=install $(INSTALL) libopenvasnasl.la ${DESTDIR}${libdir}/libopenvasnasl.la
+-	$(LIBTOOL) --mode=finish ${DESTDIR}${libdir}
+ 	test -d ${DESTDIR}${bindir} || $(INSTALL_DIR) -m 755 ${DESTDIR}${bindir}
+ 	$(INSTALL) openvas-nasl ${DESTDIR}${bindir}/
+ 

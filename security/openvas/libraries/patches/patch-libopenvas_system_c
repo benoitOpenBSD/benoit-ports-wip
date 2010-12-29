@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libopenvas/system.c.orig	Fri Feb  6 09:15:38 2009
++++ libopenvas/system.c	Tue Feb 10 23:48:19 2009
+@@ -38,6 +38,8 @@
+ #include <malloc.h>
+ #endif
+ 
++#include "config.h"
++
+ /**
+  * This method always returns the requested
+  * memory size. If anything failed during allocating

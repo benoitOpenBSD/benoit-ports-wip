@@ -1,0 +1,15 @@
+$OpenBSD$
+--- openvas-rmuser.in.orig	Mon Jan 26 07:20:59 2009
++++ openvas-rmuser.in	Wed Feb 18 23:13:14 2009
+@@ -89,9 +89,9 @@ test -z "$login" && {
+  exit 1
+ }
+ 
+-if [ -d "$localstatedir/lib/openvas/users/$login" ];
++if [ -d "$localstatedir/openvas/users/$login" ];
+ then
+- rm -rf "$localstatedir/lib/openvas/users/$login"
++ rm -rf "$localstatedir/openvas/users/$login"
+  gettext "user removed."; echo
+ else
+  gettext "user does not exist"; echo

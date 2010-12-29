@@ -1,0 +1,7 @@
+$OpenBSD$
+--- Makefile.config.orig	Sun Nov  2 00:47:24 2008
++++ Makefile.config	Sun Nov  2 00:47:45 2008
+@@ -1,2 +1,2 @@
+ OPENSSL=/usr/local/ssl
+-PREFIX=/usr
++PREFIX=/usr/local

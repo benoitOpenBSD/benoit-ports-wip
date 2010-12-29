@@ -1,0 +1,16 @@
+$OpenBSD$
+--- src/openvas-lib/Makefile.orig	Tue Jan 20 09:51:17 2009
++++ src/openvas-lib/Makefile	Thu Mar  5 23:37:54 2009
+@@ -41,12 +41,6 @@ INCLUDE = ${include} $(GTKCONFIG_CFLAGS) -I../../nessu
+ NESSUS_INCLUDE=`sh ./cflags`
+ CFLAGS+=-Wall
+ 
+-# Add some specific Windows compile options for Cygwin
+-SYSTEM:=$(shell uname -o)
+-ifeq ($(SYSTEM), Cygwin)
+-CFLAGS+=-mms-bitfields
+-LDFLAGS+=-mwindows
+-endif
+ 
+ OBJS=hash_table_file.o
+ 

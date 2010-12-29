@@ -1,0 +1,61 @@
+$OpenBSD$
+--- src/util/openvas_ssh_key_create.c.orig	Wed Mar  4 07:26:56 2009
++++ src/util/openvas_ssh_key_create.c	Thu Mar  5 23:30:06 2009
+@@ -124,8 +124,8 @@ static
+ gboolean openvas_ssh_privkey_create(char* pubkey_file, char* privkey_file,
+                                     char* passphrase_pub, char* passphrase_priv)
+ {
+-  gchar* stdout = NULL;
+-  gchar* stderr = NULL;
++  gchar* gstdout = NULL;
++  gchar* gstderr = NULL;
+   GError* err = NULL;
+   gint exit_status;
+   char* dir = NULL;
+@@ -174,14 +174,14 @@ gboolean openvas_ssh_privkey_create(char* pubkey_file,
+                                     passphrase_priv, NULL);
+   efree (&pubkey_stripped);
+ 
+-  if(g_spawn_command_line_sync(command, &stdout, &stderr, &exit_status, &err) == FALSE
++  if(g_spawn_command_line_sync(command, &gstdout, &gstderr, &exit_status, &err) == FALSE
+           || exit_status != 0 )
+   {
+     show_error(_("Error creating private key file.\nFor further information consult your shell."));
+     printf("Error creating private key file.");
+     printf("\tSpawned openssl process returned with %d.\n", exit_status);
+-    printf("\t\t stdout: %s", stdout);
+-    printf("\t\t stderr: %s", stderr);
++    printf("\t\t stdout: %s", gstdout);
++    printf("\t\t stderr: %s", gstderr);
+     return FALSE;
+   }
+ 
+@@ -204,8 +204,8 @@ static
+ gboolean openvas_ssh_pubkey_create(char* comment, char* passphrase,
+                                    char* filepath)
+ {
+-  gchar* stdout = NULL;
+-  gchar* stderr = NULL;
++  gchar* gstdout = NULL;
++  gchar* gstderr = NULL;
+   GError* err = NULL;
+   gint exit_status;
+   char* dir;
+@@ -251,14 +251,14 @@ gboolean openvas_ssh_pubkey_create(char* comment, char
+                                     comment, " -P ", passphrase, NULL);
+   efree(&file_pubstripped);
+ 
+-  if(g_spawn_command_line_sync(command, &stdout, &stderr, &exit_status, &err) == FALSE
++  if(g_spawn_command_line_sync(command, &gstdout, &gstderr, &exit_status, &err) == FALSE
+      || exit_status != 0 )
+   {
+     show_error(_("Error creating public key file.\nFor further information consult your shell."));
+     printf("Error creating public key file.\n");
+     printf("\tSpawned key-gen process returned with %d.\n", exit_status);
+-    printf("\t\t stdout: %s", stdout);
+-    printf("\t\t stderr: %s", stderr);
++    printf("\t\t stdout: %s", gstdout);
++    printf("\t\t stderr: %s", gstderr);
+     return FALSE;
+   }
+   return TRUE;

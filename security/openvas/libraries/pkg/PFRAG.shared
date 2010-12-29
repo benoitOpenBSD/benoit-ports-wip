@@ -1,0 +1,3 @@
+@comment $OpenBSD$
+@lib lib/libopenvas.so.${LIBopenvas_VERSION}
+@lib lib/libopenvas_hg.so.${LIBopenvas_hg_VERSION}

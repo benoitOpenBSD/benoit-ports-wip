@@ -1,0 +1,20 @@
+$OpenBSD$
+--- Makefile.orig	Fri Feb 13 07:15:55 2009
++++ Makefile	Wed Feb 18 23:34:46 2009
+@@ -68,6 +68,7 @@ install-bin:
+ 	@test -d $(DESTDIR)${localstatedir}/run || $(INSTALL_DIR) -m 755 $(DESTDIR)${localstatedir}/run
+ 	@test -d $(DESTDIR)${includedir} || $(INSTALL_DIR) -m 755 $(DESTDIR)${includedir}
+ 	@test -d $(DESTDIR)${includedir}/openvas || $(INSTALL_DIR) -m 755 $(DESTDIR)${includedir}/openvas
++	@test -d $(DESTDIR)${datadir}/examples/openvas || $(INSTALL_DIR) -m 755 $(DESTDIR)${datadir}/examples/openvas
+ 	@test -d $(DESTDIR)${OPENVASD_CACHE} || $(INSTALL_DIR) -m 755 $(DESTDIR)${OPENVASD_CACHE}
+ 	$(INSTALL) -m 755 openvas-mkcert-client $(DESTDIR)${bindir}/openvas-mkcert-client
+ 	$(INSTALL) -m 755 openvasd-config $(DESTDIR)${bindir}/openvasd-config
+@@ -76,7 +77,7 @@ install-bin:
+ 	$(INSTALL) -m 755 openvas-adduser $(DESTDIR)${sbindir}/openvas-adduser
+ 	$(INSTALL) -m 755 openvas-rmuser $(DESTDIR)${sbindir}/openvas-rmuser
+ 	$(INSTALL) -m 755 openvas-mkcert $(DESTDIR)${sbindir}/openvas-mkcert
+-	$(INSTALL) -c -m 0444 openvas-services  $(DESTDIR)${OPENVASD_STATEDIR}/openvas-services
++	$(INSTALL) -c -m 0444 openvas-services  $(DESTDIR)${datadir}/examples/openvas/openvas-services
+ 	$(INSTALL) -c -m 0444 include/includes.h $(DESTDIR)${includedir}/openvas/includes.h
+ 	$(INSTALL) -c -m 0444 include/config.h $(DESTDIR)${includedir}/openvas/config.h
+ 	$(INSTALL) -c -m 0444 include/threadcompat.h $(DESTDIR)${includedir}/openvas/threadcompat.h

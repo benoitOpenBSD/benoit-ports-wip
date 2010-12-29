@@ -1,0 +1,11 @@
+$OpenBSD$
+--- plugins/synscan/synscan.c.orig	Sun Dec 21 14:39:04 2008
++++ plugins/synscan/synscan.c	Sun Dec 21 14:39:28 2008
+@@ -1,6 +1,6 @@
+ #define _BSD_SOURCE 1
+ 
+-#include <includes.h>
++#include "includes.h"
+ #include <nessusraw.h>
+ 
+ 

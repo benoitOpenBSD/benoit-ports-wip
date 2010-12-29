@@ -1,0 +1,11 @@
+OpenVAS Security Scanner plugins
+
+You will find some instructions on how to use 
+OpenVAS in
+${PREFIX}/share/doc/openvas/README.OpenBSD.
+
+This file is contained in the openvas-server package.
+
+The plugins will need to be copied into the
+/var/openvas/plugins directory. Before starting
+openvasd.

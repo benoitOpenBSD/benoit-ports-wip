@@ -1,0 +1,22 @@
+$OpenBSD$
+--- configure.in.orig	Mon Jan 26 07:21:08 2009
++++ configure.in	Tue Feb 10 23:35:30 2009
+@@ -96,15 +96,11 @@ AC_SUBST(GLIB_CFLAGS)
+ AC_SUBST(GLIB_LIBS)
+ 
+ dnl Check for extra libraries
+-AC_CHECK_LIB(resolv, dn_expand, LIBS="-lresolv $LIBS",
+-  [AC_CHECK_LIB(resolv, __dn_expand, LIBS="-lresolv $LIBS",
+-    AC_MSG_ERROR(you need to install resolve library with development files))])
++AC_HAVE_LIBRARY(resolv,LIBS="-lresolv $LIBS")
+ 
+-AC_CHECK_LIB(gnutls, gnutls_init, LIBS="-lgnutls $LIBS",
+-  AC_MSG_ERROR(you need to install gnutls library with development files))
++AC_HAVE_LIBRARY(gnutls, LIBS="=lgnutls $LIBS")
+ 
+-AC_CHECK_LIB(pcap, pcap_restart, LIBS="-lpcap $LIBS",
+-  AC_MSG_ERROR(you need to install pcap library with development files))
++AC_HAVE_LIBRARY(pcap, LIBS="-lpcap $LIBS")
+ 
+ # These libraries break stuff under IRIX
+ if  test "`uname`" != "IRIX" ;

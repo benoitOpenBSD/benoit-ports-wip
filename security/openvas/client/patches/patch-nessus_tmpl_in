@@ -1,0 +1,12 @@
+$OpenBSD$
+--- nessus.tmpl.in.orig	Tue Dec 16 13:03:34 2008
++++ nessus.tmpl.in	Sun Dec 21 21:34:27 2008
+@@ -119,7 +119,7 @@ SOCKET_LIB=@socket_lib@ @nsl_lib@ @resolv_lib@
+ # documentation
+ MAN_NESSUS_1=@man_nessus_1@
+ # where the pdf doc's reside:
+-NESSUS_DOCDIR=$(DESTDIR)/$(datadir)/doc/openvas-manual
++NESSUS_DOCDIR=$(DESTDIR)/$(datadir)/doc/openvas
+ 
+ # C compiler options
+ NESSUS_CFLAGS=$(CWARN) $(include) -DNESSUS_DOCDIR=\"${NESSUS_DOCDIR}\" @sslcflags@

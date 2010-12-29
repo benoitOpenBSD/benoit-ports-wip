@@ -1,0 +1,10 @@
+@comment $OpenBSD$
+%%SHARED%%
+bin/openvas-libnasl-config
+@bin bin/openvas-nasl
+include/openvas/
+include/openvas/nasl.h
+lib/libopenvasnasl.a
+lib/libopenvasnasl.la
+@man man/man1/openvas-libnasl-config.1
+@man man/man1/openvas-nasl.1

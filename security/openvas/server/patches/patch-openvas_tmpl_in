@@ -1,0 +1,12 @@
+$OpenBSD$
+--- openvas.tmpl.in.orig	Sun Dec 21 16:20:33 2008
++++ openvas.tmpl.in	Sun Dec 21 16:23:07 2008
+@@ -37,7 +37,7 @@ mandir=@mandir@
+ srcdir=${rootdir}/src
+ libsdir=${rootdir}/libs
+ top_builddir = @PWDD@
+-include= -I. -I$(rootdir)/include  
++include= -I. -I$(rootdir)/include -I $(includedir) 
+ INSTALL=@INSTALL@
+ INSTALL_DIR=@INSTALL_DIR@
+ installuser=@installuser@

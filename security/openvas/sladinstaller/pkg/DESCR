@@ -1,0 +1,14 @@
+Openvas security scanner slad addon
+
+OpenVAS is a Network Security Scanner, a fork of the Nessus v2. 
+
+SLAD - Security Local Auditing Daemon
+http://www.dn-systems.org/slad.shtml
+
+SLAD will run various audit tools on the target platform.
+
+a slad.inc file is required from the target.
+
+WARNING - this is supplied untested, it requires root access to
+install SLAD on the target Linux platform. A copy of SLAD is also
+required.

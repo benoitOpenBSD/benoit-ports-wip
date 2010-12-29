@@ -1,0 +1,27 @@
+$OpenBSD$
+--- Makefile.orig	Mon Oct 20 07:39:54 2008
++++ Makefile	Sun Nov  2 00:37:27 2008
+@@ -10,12 +10,6 @@ LDFLAGS+=-L. -L$(OPENSSL)/lib -L/usr/X11R6/lib
+ LIBS+=`pkg-config --libs gtk+-2.0` `pkg-config --libs gthread-2.0` `curl-config --libs` -lssl -lcrypto
+ STATLIBS+=-lXft -lfontconfig -lfreetype -lpangoft2-1.0 -lXcursor -lXinerama -lXext -lXi -lXrandr -lXrender -lXt -lX11 -lpng12 -ljpeg -ltiff -lexpat
+ 
+-SYSTEM:=$(shell uname -o)
+-ifeq ($(SYSTEM), Cygwin)
+-CXXFLAGS+=-mms-bitfields -DCYGWIN
+-LDFLAGS+=-mwindows
+-endif
+-
+ include Makefile.config
+ 
+ all:	$(EXE) $(LANG)
+@@ -36,8 +30,8 @@ clean:
+ 	$(MAKE) -C libssh $@
+ 
+ install:	all
+-	install -m 755 $(EXE) $(PREFIX)/bin
+-	install -m 644 -D de.mo $(LOCALEDIR)/de/LC_MESSAGES/$(EXE).mo
++	install -m 755 $(EXE) $(DESTDIR)$(PREFIX)/bin
++	install -m 644 -d de.mo $(DESTDIR)$(LOCALEDIR)/de/LC_MESSAGES/$(EXE).mo
+ 
+ uninstall:
+ 	-$(RM) $(PREFIX)/bin/$(EXE)

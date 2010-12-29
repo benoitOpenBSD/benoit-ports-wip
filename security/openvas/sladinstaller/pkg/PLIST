@@ -1,0 +1,3 @@
+@comment $OpenBSD$
+@bin bin/sladinstaller
+share/locale/de/LC_MESSAGES/sladinstaller.mo/

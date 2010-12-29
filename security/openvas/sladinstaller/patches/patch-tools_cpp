@@ -1,0 +1,19 @@
+$OpenBSD$
+--- tools.cpp.orig	Sun Nov  2 00:27:36 2008
++++ tools.cpp	Sun Nov  2 00:27:51 2008
+@@ -29,7 +29,6 @@
+ #include <arpa/inet.h>
+ #include <assert.h>
+ #include <cstdio>
+-#include <curl/curl.h>
+ #include <fcntl.h>
+ #include <libintl.h>
+ #include "libssh/libssh.h"
+@@ -48,6 +47,7 @@
+ #include <sstream>
+ #include <iosfwd>
+ #include <glib.h>
++#include <curl/curl.h>
+ 
+ #ifdef CYGWIN
+ #include <gtk/gtk.h>

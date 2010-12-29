@@ -1,0 +1,12 @@
+$OpenBSD$
+--- openvas-mkcert-client.in.orig	Mon Jan 26 07:20:59 2009
++++ openvas-mkcert-client.in	Wed Feb 18 23:13:14 2009
+@@ -180,7 +180,7 @@ while [ "$R" != `gettext "y"` -a "$R" != `gettext "n"`
+ done
+ 
+ if [ "$R" = `gettext "y"` ]; then
+-    USERSDIR=$localstatedir/lib/openvas/users
++    USERSDIR=$localstatedir/openvas/users
+     while [ ! -d "$USERSDIR" ]; do
+ 	eval_gettext "\$USERSDIR: not a directory."; echo
+ 	gettext "Users directory? "

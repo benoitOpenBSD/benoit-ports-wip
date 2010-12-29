@@ -1,0 +1,13 @@
+@comment $OpenBSD$
+lib/openvas/
+lib/openvas/plugins/
+lib/openvas/plugins/find_service.nes
+lib/openvas/plugins/ftp_write_dirs.nes
+lib/openvas/plugins/linux_tftp.nes
+lib/openvas/plugins/nmap_wrapper.nes
+lib/openvas/plugins/objectserver.nes
+lib/openvas/plugins/openvas_tcp_scanner.nes
+lib/openvas/plugins/smad.nes
+lib/openvas/plugins/ssl_ciphers.nes
+lib/openvas/plugins/synscan.nes
+sbin/openvas-nvt-sync

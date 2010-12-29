@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libopenvas_hg/hg_dns_axfr.c.orig	Sun Dec 21 01:02:18 2008
++++ libopenvas_hg/hg_dns_axfr.c	Sun Dec 21 01:02:37 2008
+@@ -57,7 +57,7 @@
+   do {                                  \
+     uint16_t *t_cp = (uint16_t *) (cp); \
+     (s) = ntohs (*t_cp);                \
+-    (cp) += NS_INT16SZ;                 \
++    (cp) += INT16SZ;                 \
+ } while (0)
+ 
+ typedef union {

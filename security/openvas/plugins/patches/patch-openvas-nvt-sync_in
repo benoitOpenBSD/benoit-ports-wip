@@ -1,0 +1,49 @@
+$OpenBSD$
+--- openvas-nvt-sync.in.orig	Fri Nov 28 07:42:22 2008
++++ openvas-nvt-sync.in	Sun Dec 21 14:14:01 2008
+@@ -1,4 +1,4 @@
+-#!/bin/bash
++#!/bin/sh
+ #
+ # OpenVAS
+ # $Id$
+@@ -35,7 +35,7 @@ localstatedir=@localstatedir@
+ 
+ # these locations should be correct if standard ./configure had
+ # been applied.
+-NVT_DIR="$libdir/openvas/plugins"
++NVT_DIR="$localstatedir/openvas/plugins"
+ 
+ # The URL of the plugin feed
+ FEED=rsync://rsync.openvas.org:/nvt-feed
+@@ -45,7 +45,7 @@ FEED=rsync://rsync.openvas.org:/nvt-feed
+ findcmd()
+ {
+   CMD=$1
+-  SRCH=/usr/bin:/usr/ucb:/usr/sbin
++  SRCH=/bin:/usr/bin:/usr/ucb:/usr/sbin:/usr/local/bin:/usr/local/sbin
+   SAVEIFS=$IFS
+   IFS=:
+   set $SRCH
+@@ -63,7 +63,7 @@ chk_system_tools(){
+ echo "Searching for required system tools ..."
+ 
+ RSYNC=`findcmd rsync`
+-MD5SUM=`findcmd md5sum`
++MD5SUM=`findcmd md5`
+ 
+ if [ -z "$RSYNC" ]; then
+   echo "Error: RSYNC not found";
+@@ -85,10 +85,10 @@ sync_nvts (){
+     echo "Error: rsync failed. Your NVT collection might be broken now."
+     exit 1
+   fi
+-  eval "cd \"$NVT_DIR\" ; md5sum -c --status \"$NVT_DIR/md5sums\""
++  eval "cd \"$NVT_DIR\" ; md5 -q -c \"$NVT_DIR/md5sums\""
+   if [ $? -ne 0 ] ; then
+     echo "Error: md5sums not correct. Your NVT collection might be broken now."
+-    echo "Please try this for details: cd \"$NVT_DIR\" ; md5sum -c \"$NVT_DIR/md5sums\" | less"
++    echo "Please try this for details: cd \"$NVT_DIR\" ; md5 -c \"$NVT_DIR/md5sums\" | less"
+     exit 1
+   fi
+ 

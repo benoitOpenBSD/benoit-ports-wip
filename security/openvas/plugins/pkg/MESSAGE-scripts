@@ -1,0 +1,9 @@
+OpenVAS Security Scanner plugins scripts
+
+This package is optional, the scripts
+contained within this will be updated
+by openvas-nvt-sync.
+
+The scripts if installed will have to be
+copied to /var/openvas/plugins the
+directory updated by openvas-nvt-sync.

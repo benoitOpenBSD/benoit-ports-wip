@@ -1,0 +1,21 @@
+OpenVAS security scanner Plugins Scripts
+
+This is a set of NASL (Nessus Attack Scripting Language) scripts,
+which can be used in performing network secrutiy scans.
+
+
+WARNING
+
+The nikto.nasl plugins expects nikto.pl to be in the search path
+Workaround is to create a link between nikto and nikto.pl.
+
+The scripts are separated they are not Arch dependant and the
+openvas-nvt-sync will download the current scripts.
+
+Many scripts require other packages which are not included in
+the dependancies, Nikto, Nmap, ike-scan, Hydra, SLAD,
+smnpwalk, ldapsearch (OpenLDAP), pnscan, portbunny,
+strobe. For windows scans, smbclient from samba is used.
+
+ovaldi - is not currently available for OpenBSD.
+sladinstaller - is included but untested.
