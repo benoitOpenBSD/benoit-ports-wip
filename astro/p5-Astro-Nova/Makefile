@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =	Perl interface to libnova 
+COMMENT =	perl interface to libnova 
 
 DISTNAME =	Astro-Nova-0.06
 CATEGORIES =	astro
