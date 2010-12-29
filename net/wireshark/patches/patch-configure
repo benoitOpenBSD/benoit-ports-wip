@@ -1,0 +1,13 @@
+$OpenBSD$
+--- configure.orig	Sat Mar 21 22:12:06 2009
++++ configure	Sun Apr  5 14:27:38 2009
+@@ -30507,6 +30507,9 @@ fi
+ 	    # Well, we at least have the krb5 header file.
+ 	    # Check whether this is Heimdal or MIT.
+ 	    #
++	    ac_krb5_version="HEIMDAL"
++	    KRB5_LIBS="-lkrb5 -lcrypto"
++
+ 	    { echo "$as_me:$LINENO: checking whether the Kerberos library is Heimdal or MIT" >&5
+ echo $ECHO_N "checking whether the Kerberos library is Heimdal or MIT... $ECHO_C" >&6; }
+ 	    if test "x$ac_krb5_version" = "xHEIMDAL" -o "x$ac_krb5_version" = "xMIT"
