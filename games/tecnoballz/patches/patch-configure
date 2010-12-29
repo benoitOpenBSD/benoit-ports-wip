@@ -1,0 +1,30 @@
+$OpenBSD$
+--- configure.orig	Mon Nov 19 14:45:33 2007
++++ configure	Mon Dec 28 10:43:24 2009
+@@ -3939,7 +3939,7 @@
+ 
+ 
+ #CXXFLAGS="-g -O3 -Wall"
+-CXXFLAGS=" -O3 -Wall"
++CXXFLAGS=" -Wall"
+ 
+ 
+ ac_ext=c
+@@ -4879,7 +4879,7 @@
+   echo $ECHO_N "(cached) $ECHO_C" >&6
+ else
+   ac_check_lib_save_LIBS=$LIBS
+-LIBS="-lvorbisfile  $LIBS"
++LIBS="-lvorbis -logg -lvorbisfile  $LIBS"
+ cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */
+ _ACEOF
+@@ -4936,7 +4936,7 @@
+ echo "${ECHO_T}$ac_cv_lib_vorbisfile_ov_raw_seek" >&6; }
+ if test $ac_cv_lib_vorbisfile_ov_raw_seek = yes; then
+ 
+-	MM_LIBS="${MM_LIBS} -lvorbisfile"
++	MM_LIBS="${MM_LIBS} -lvorbis -logg -lvorbisfile"
+ 
+ else
+ 

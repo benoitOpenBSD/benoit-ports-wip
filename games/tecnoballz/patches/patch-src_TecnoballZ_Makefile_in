@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/TecnoballZ/Makefile.in.orig	Mon Nov 19 14:45:35 2007
++++ src/TecnoballZ/Makefile.in	Mon Dec 28 11:48:55 2009
+@@ -188,6 +188,7 @@
+   tilemap-guardians_40.data \
+   tilemap-menu_20.data \
+ 	tilemap-menu_40.data \
++	levels-data.xml \
+ 	$(NULL)
+ 
+ all: all-recursive

@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/Makefile.in.orig	Mon Dec 28 11:06:55 2009
++++ src/Makefile.in	Mon Dec 28 11:07:15 2009
+@@ -257,7 +257,7 @@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+ NULL = 
+-gamesdir = $(prefix)/games
++gamesdir = $(prefix)/bin
+ scoredir = /var/games/tecnoballz
+ score = tecnoballz.hi
+ SUBDIRS = TecnoballZ 

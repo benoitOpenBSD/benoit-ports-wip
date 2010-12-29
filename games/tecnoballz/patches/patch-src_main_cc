@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/main.cc.orig	Mon Nov 19 13:44:15 2007
++++ src/main.cc	Mon Dec 28 10:59:37 2009
+@@ -58,7 +58,7 @@
+ /**
+  * The main function is where the program starts execution
+  */
+-Sint32
++int
+ main (Sint32 arg_count, char **arg_values)
+ {
+   /* GP2X or PSP port */
