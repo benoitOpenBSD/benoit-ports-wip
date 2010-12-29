@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/gltron.c.orig	Sun Dec 27 10:42:39 2009
++++ src/gltron.c	Sun Dec 27 10:42:56 2009
+@@ -9,7 +9,7 @@
+ #include "base/util.h"
+ #include "SDL.h"
+ 
+-int main(int argc, char *argv[] ) {
++int main(int argc, const char *argv[] ) {
+ 	initSubsystems(argc, argv);
+ 	runScript(PATH_SCRIPTS, "main.lua");
+   return 0;
