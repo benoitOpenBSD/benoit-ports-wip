@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.1.1.1 2010/12/29 08:32:33 benoit Exp $
 
 COMMENT =	perl binding for Redis database
 
