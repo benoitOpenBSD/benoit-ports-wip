@@ -1,0 +1,17 @@
+$OpenBSD$
+--- Makefile.in.orig	Sun Oct 20 20:30:12 2002
++++ Makefile.in	Sun Dec 27 10:09:01 2009
+@@ -13,10 +13,10 @@
+ bindir=@bindir@
+ mandir=@mandir@
+ 
+-GLAXIUM_INSTALLDIR=$(bindir)
++GLAXIUM_INSTALLDIR=$(DESTDIR)$(bindir)
+ DATA_DIRS=samples textures
+-GLAXIUM_HOME=$(datadir)/games/glaxium
+-MAN_DIR=$(mandir)
++GLAXIUM_HOME=$(DESTDIR)$(datadir)/glaxium
++MAN_DIR=$(DESTDIR)$(mandir)
+ 
+ glaxium : $(OBJ)
+ 	gcc -g -o glaxium $(OBJ) $(LIB)

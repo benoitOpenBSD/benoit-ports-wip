@@ -1,0 +1,30 @@
+$OpenBSD$
+--- configure.orig	Sun Oct 20 20:32:19 2002
++++ configure	Sun Dec 27 09:46:56 2009
+@@ -3671,7 +3671,7 @@
+   echo $ECHO_N "(cached) $ECHO_C" >&6
+ else
+   ac_check_lib_save_LIBS=$LIBS
+-LIBS="-lpng  $LIBS"
++LIBS="-lpng -lz $LIBS"
+ cat >conftest.$ac_ext <<_ACEOF
+ #line $LINENO "configure"
+ #include "confdefs.h"
+@@ -3725,7 +3725,7 @@
+ #define HAVE_LIBPNG 1
+ _ACEOF
+ 
+-  LIBS="-lpng $LIBS"
++  LIBS="-lpng -lz $LIBS"
+ 
+ else
+   echo "Download <http://www.cdrom.com/pub/png>";exit 12
+@@ -4290,7 +4290,7 @@
+ 
+ 
+ 
+-        DATADIR="$datadir/games/glaxium"
++        DATADIR="$datadir/glaxium"
+         DATADIR=`(
+             test "x$prefix" = xNONE && prefix="$ac_default_prefix"
+             test "x$exec_prefix" = xNONE && exec_prefix="${prefix}"
