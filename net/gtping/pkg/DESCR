@@ -1,0 +1,2 @@
+Like ping(8), but uses GTP ping requests to ping GGSNs and anything
+else that will answer them.
