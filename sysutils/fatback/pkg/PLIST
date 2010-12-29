@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+@bin bin/fatback
+@info info/fatback-manual.info
+@man man/man1/fatback.1
