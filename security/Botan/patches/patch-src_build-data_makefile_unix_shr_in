@@ -1,0 +1,22 @@
+--- src/build-data/makefile/unix_shr.in.orig	Wed Apr  8 02:25:45 2009
++++ src/build-data/makefile/unix_shr.in	Fri May 29 17:03:52 2009
+@@ -70,8 +70,8 @@
+ LIBNAME       = @{var:lib_prefix}libbotan
+ STATIC_LIB    = $(LIBNAME).a
+ 
+-SHARED_LIB    = $(LIBNAME)-$(MAJOR).$(MINOR).$(PATCH).@{var:so_suffix}
+-SONAME        = $(LIBNAME)-$(MAJOR).$(MINOR).$(PATCH).@{var:so_suffix}
++SHARED_LIB    = $(LIBNAME).@{var:so_suffix}.0.0
++SONAME        = $(SHARED_LIB)
+ 
+ SYMLINK       = libbotan.@{var:so_suffix}
+ 
+@@ -88,7 +88,7 @@
+ # Link Commands                                  #
+ ##################################################
+ $(CHECK): $(LIBRARIES) $(CHECKOBJS)
+-	$(CXX) $(CHECKOBJS) -L. -lbotan-@{var:version} $(LINK_TO) -o $(CHECK)
++	$(CXX) $(CHECKOBJS) -L. -lbotan $(LINK_TO) -o $(CHECK)
+ 
+ $(STATIC_LIB): $(LIBOBJS)
+ 	$(RM) $(STATIC_LIB)
