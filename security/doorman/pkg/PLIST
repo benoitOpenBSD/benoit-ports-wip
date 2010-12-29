@@ -1,0 +1,24 @@
+@comment $OpenBSD$
+@bin bin/knock
+@man man/man1/knock.1
+@man man/man5/doormand.cf.5
+@man man/man5/guestlist.5
+@man man/man5/knockcf.5
+@man man/man8/doormand.8
+@bin sbin/doormand
+share/examples/doormand/
+@sample ${SYSCONFDIR}/doormand/
+share/examples/doormand/doormand.cf.EXAMPLE
+@sample ${SYSCONFDIR}/doormand/doormand.cf
+share/examples/doormand/guestlist.EXAMPLE
+@sample ${SYSCONFDIR}/doormand/guestlist
+share/examples/doormand/ipchains_add
+share/examples/doormand/ipchains_delete
+share/examples/doormand/ipf_add
+share/examples/doormand/ipf_delete
+share/examples/doormand/ipfw_add
+share/examples/doormand/ipfw_delete
+share/examples/doormand/iptables_add
+share/examples/doormand/iptables_delete
+share/examples/doormand/pfctl_add
+share/examples/doormand/pfctl_delete

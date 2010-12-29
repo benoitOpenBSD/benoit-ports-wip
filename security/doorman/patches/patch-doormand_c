@@ -1,0 +1,171 @@
+$OpenBSD$
+--- doormand.c.orig	Sun Sep  4 19:42:18 2005
++++ doormand.c	Tue Dec 30 04:56:47 2008
+@@ -387,7 +387,11 @@ int open_a_pcap (char    *device,
+     int datalink_header_lengths[] = {
+     //    hdr len      code      data link type
+     //    -------      --- ---------------------------
++#if defined(__FreeBSD__) || defined(__OpenBSD__)
++             4,    //   0  no link-layer encapsulation
++#else
+              0,    //   0  no link-layer encapsulation
++#endif
+             14,    //   1  Ethernet (10Mb)
+             -1,    //   2  Experimental Ethernet (3Mb)
+             -1,    //   3  Amateur Radio AX.25
+@@ -569,7 +573,6 @@ char *run_script (char *script, char *fmt, ...)
+     if (p == NULL) {
+         croak (errno, "Bad (or no) output from script %s", script) ;
+     }
+-    fclose (f) ;
+ 
+     p = strrchr(return_buffer, '\n') ;
+     if (p) *p = 0 ;
+@@ -614,6 +617,7 @@ char *run_script (char *script, char *fmt, ...)
+ // more readable.
+ //
+ 
++#if defined(__FreeBSD__) || defined(__OpenBSD__)
+ #define LSOF()\
+ sprintf (cmd, "lsof -Pn -iTCP@%s:%s", interface_ip_str, dport_string) ;\
+ \
+@@ -635,6 +639,7 @@ while (fgets(buffer, 254, f)) {\
+     if ((p1 = token (&p2, " ")) == NULL) continue ;\
+     if ((p1 = token (&p2, " ")) == NULL) continue ;\
+     if ((p1 = token (&p2, " ")) == NULL) continue ;\
++    if ((p1 = token (&p2, " ")) == NULL) continue ;\
+     if ((p1 = token (&p2, " :")) == NULL) continue ;\
+     local_ip = inet_addr(p1) ;\
+     if ((p1 = token (&p2, "-")) == NULL) continue ;\
+@@ -659,10 +664,56 @@ while (fgets(buffer, 254, f)) {\
+     }\
+ }\
+ pclose(f) ;
++#else
++#define LSOF()\
++sprintf (cmd, "lsof -Pn -iTCP@%s:%s", interface_ip_str, dport_string) ;\
++\
++f = popen (cmd, "r") ;\
++if (f == NULL) {\
++    croak (errno, "Can't execute '%s'; exiting.", cmd) ;\
++}\
++\
++fgets(buffer, 254, f) ;   /* throw away the first line. */ \
++while (fgets(buffer, 254, f)) {\
++    p2 = buffer ;\
++    if ((p1 = token (&p2, " ")) == NULL) continue ;\
++    dname = p1 ;\
++    if ((p1 = token (&p2, " ")) == NULL) continue ;\
++    pid = p1 ;\
++    if ((p1 = token (&p2, " ")) == NULL) continue ;\
++    uname = p1 ;\
++    if ((p1 = token (&p2, " ")) == NULL) continue ;\
++    if ((p1 = token (&p2, " ")) == NULL) continue ;\
++    if ((p1 = token (&p2, " ")) == NULL) continue ;\
++    if ((p1 = token (&p2, " ")) == NULL) continue ;\
++    if ((p1 = token (&p2, " :")) == NULL) continue ;\
++    local_ip = inet_addr(p1) ;\
++    if ((p1 = token (&p2, "-")) == NULL) continue ;\
++    local_port = atoi(p1) ;\
++    if ((p1 = token (&p2, "->:")) == NULL) continue ;\
++    aptr = p1 ;\
++    remote_ip = inet_addr(p1) ;\
++    if ((p1 = token (&p2, " ")) == NULL) continue ;\
++    pptr = p1 ;\
++    remote_port = atoi(p1) ;\
++    if ((p1 = token (&p2, " ()")) == NULL) continue ;\
++    status = p1 ;\
++\
++    if ((saddr == remote_ip) &&\
++        (daddr == local_ip) &&\
++        (sport == remote_port) &&\
++        (dport == local_port) && \
++        (strcmp(status, "ESTABLISHED") == 0))\
++    {\
++        connected = TRUE ;\
++        break ;\
++    }\
++}\
++pclose(f) ;
++#endif
+ 
+ 
+ 
+-
+ void manage_firewall (char               *device,
+                       int                hdr_len, 
+                       char               *guest,
+@@ -704,7 +755,11 @@ void manage_firewall (char               *device,
+     snprintf (cmd, 254, "tcp and dst port %s and src %s and dst %s",
+               dport_string, src_addr, interface_ip_str) ;
+     DEBUG "open a secondary pcap: '%s'", cmd) ;
++#if defined(__FreeBSD__) || defined(__OpenBSD__)
++    hdr_len = open_a_pcap (device, 1000, &cap, cmd);
++#else
+     hdr_len = open_a_pcap (device, 0, &cap, cmd) ;
++#endif
+ 
+     // set broad firewall rule
+     sprintf (G_fw_broad_rule, " %s %s 0 %s %s",
+@@ -716,7 +771,22 @@ void manage_firewall (char               *device,
+ 
+     for (;;) {
+ 
++#if defined(__FreeBSD__) || defined(__OpenBSD__)
++	{
++	    int ret = 0;
++	    struct pcap_pkthdr * packet_hdr_p;
++
++	    while (ret == 0) {
++		ret = pcap_next_ex (cap, &packet_hdr_p, (const u_char **)&p) ;
++		packet_hdr = *packet_hdr_p;
++		if (ret < 0) {
++		    p = NULL;
++		}
++	    }
++	}
++#else
+         p = (unsigned char*)pcap_next (cap, &packet_hdr) ;
++#endif
+         if (p == NULL) {
+             WARNX "manage_firewall got null from 'pcap_next': %s  Exiting.",
+                    pcap_geterr(G_cap)) ;
+@@ -1300,8 +1370,13 @@ reconfigure:
+         croak (errno, "Can't get interface address of %s", device) ;
+     }
+ 
++#if defined(__FreeBSD__) || defined(__OpenBSD__)
++    hdr_len = open_a_pcap (device, 1000, &G_cap, "udp and port %d and dst %s",
++                           port, interface_ip) ;
++#else
+     hdr_len = open_a_pcap (device, 0, &G_cap, "udp and port %d and dst %s",
+                            port, interface_ip) ;
++#endif
+ 
+     if (G_reconfigure) {
+         G_reconfigure = FALSE ;
+@@ -1330,9 +1405,23 @@ reconfigure:
+         char            src_addr_buff[16] ;
+ 
+         errno = 0 ;
+-        netdown_count = 0 ;
+ 
++#if defined(__FreeBSD__) || defined(__OpenBSD__)
++	{
++	    int ret = 0;
++	    struct pcap_pkthdr * packet_hdr_p;
++
++	    while (ret == 0) {
++		ret = pcap_next_ex (G_cap, &packet_hdr_p, (const u_char **)&p) ;
++		packet_hdr = *packet_hdr_p;
++		if (ret < 0) {
++		    p = NULL;
++		}
++	    }
++	}
++#else
+         p = (unsigned char *)pcap_next (G_cap, &packet_hdr) ;
++#endif
+         if (G_reconfigure) {
+             if (daemonize) err_closelog() ;
+             goto reconfigure ;

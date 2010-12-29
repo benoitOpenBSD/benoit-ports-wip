@@ -1,0 +1,12 @@
+$OpenBSD$
+--- utilities.c.orig	Sat Jul 24 00:04:22 2004
++++ utilities.c	Tue Dec 30 00:21:51 2008
+@@ -120,7 +120,7 @@ char *itohex (char *p, int n)
+ void xxdump (FILE* f, void *v, int len, int aflag)
+ {
+     int      i, line, last ;
+-    char     buffer[80] ;
++    char     buffer[81] ;
+     char     c ;
+     u_char   *base, *data, *p ;
+ 
