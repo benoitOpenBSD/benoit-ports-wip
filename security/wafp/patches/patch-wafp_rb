@@ -1,0 +1,34 @@
+--- wafp.rb.orig	Mon Dec 28 23:53:02 2009
++++ wafp.rb	Thu Dec 31 12:09:37 2009
+@@ -1,4 +1,4 @@
+-#!/usr/bin/ruby
++#!${PREFIX}/bin/ruby
+ ################################################################################
+ # WAFP - Web Application Finger Printer
+ ################################################################################
+@@ -39,12 +39,14 @@
+ 
+ begin
+   # this is required for all the people using rubygems on their systems
++  $LOAD_PATH << './${PREFIX}/share/wafp'
+   require 'rubygems'
+ rescue LoadError
+ end
+ require 'getoptlong'
+ require 'sqlite3'
+ # this is a modified version of net/http
++$LOAD_PATH << './${PREFIX}/share/wafp'
+ require "lib/wafp_http.rb"
+ require "lib/wafp_https.rb"
+ # this is a modified version of pidify
+@@ -61,8 +63,8 @@
+ CONTACT      = 'richard.sammet@gmail.com';
+ WEBSITE      = 'http://mytty.org/wafp/';
+ # the databases
+-FDB          = 'fprints_wafp.db'
+-SDB          = 'scan_wafp.db'
++FDB          = '${PREFIX}/share/wafp/fprints_wafp.db'
++SDB          = '${PREFIX}/share/wafp/scan_wafp.db'
+ # predefined http headers
+ USERAGENT    = 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.10) Gecko/2009050223 Gentoo Firefox/3.0.10'
+ 

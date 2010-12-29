@@ -1,0 +1,10 @@
+--- lib/wafp_https.rb.orig	Thu Dec 31 12:05:24 2009
++++ lib/wafp_https.rb	Thu Dec 31 12:06:14 2009
+@@ -98,6 +98,7 @@
+ 
+ =end
+ 
++$LOAD_PATH << './${PREFIX}/share/wafp'
+ require "lib/wafp_http.rb"
+ require 'openssl'
+ 

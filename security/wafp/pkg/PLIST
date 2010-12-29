@@ -1,0 +1,20 @@
+@comment $OpenBSD$
+bin/wafp.rb
+share/wafp/
+@comment no checksum
+share/wafp/fprints_wafp.db
+share/wafp/lib/
+share/wafp/lib/fprints_wafp.schema
+share/wafp/lib/scan_wafp.schema
+share/wafp/lib/wafp_http.rb
+share/wafp/lib/wafp_https.rb
+share/wafp/lib/wafp_pidify.rb
+@comment no checksum
+share/wafp/scan_wafp.db
+share/wafp/utils/
+share/wafp/utils/README.generate_wafp_fingerprint
+share/wafp/utils/SUBMIT_YOUR_FPS
+share/wafp/utils/extract_from_db.sh
+share/wafp/utils/generate_fp_sync_list.sh
+share/wafp/utils/generate_wafp_fingerprint.sh
+share/wafp/utils/online_update.sh
