@@ -1,0 +1,11 @@
+--- Src/mix.c.orig	Mon Nov 19 14:42:41 2007
++++ Src/mix.c	Sat Oct  3 12:00:15 2009
+@@ -429,7 +429,7 @@
+ #ifdef WIN32
+ 	strnncpy(SENDMAIL     , "outfile");
+ #else /* end of WIN32 */
+-	strnncpy(SENDMAIL     , "/usr/lib/sendmail -t");
++	strnncpy(SENDMAIL     , "/usr/sbin/sendmail -t");
+ #endif /* else if not WIN32 */
+ 	strnncpy(SENDANONMAIL , "");
+ 	strnncpy(NEWS         , "");

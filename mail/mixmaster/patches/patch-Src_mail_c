@@ -1,0 +1,11 @@
+--- Src/mail.c.orig	Sat Oct  3 11:15:46 2009
++++ Src/mail.c	Sat Oct  3 11:57:53 2009
+@@ -252,7 +252,7 @@
+ 
+     /* Step 2:  Stat the file.  Wait for ENOENT as a response. */
+     for (count = 0;; count++) {
+-      snprintf(path, PATHMAX, "%s%cout.%lu.%u_%lu.%s,S=%lu.txt",
++      snprintf(path, PATHMAX, "%s%cout.%u.%u_%lu.%s,S=%lu.txt",
+ 	POOLDIR, DIRSEP, time(NULL), getpid(), namecounter++, hostname, head->length + message->length);
+ 
+       if (stat(path, &statbuf) == 0)
