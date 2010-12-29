@@ -1,0 +1,107 @@
+@comment $OpenBSD$
+${P5SITE}/Net/Packet/
+${P5SITE}/Net/Packet.pm
+${P5SITE}/Net/Packet/ARP.pm
+${P5SITE}/Net/Packet/CDP/
+${P5SITE}/Net/Packet/CDP.pm
+${P5SITE}/Net/Packet/CDP/Address.pm
+${P5SITE}/Net/Packet/CDP/Type.pm
+${P5SITE}/Net/Packet/CDP/TypeAddresses.pm
+${P5SITE}/Net/Packet/CDP/TypeCapabilities.pm
+${P5SITE}/Net/Packet/CDP/TypeDeviceId.pm
+${P5SITE}/Net/Packet/CDP/TypePortId.pm
+${P5SITE}/Net/Packet/CDP/TypeSoftwareVersion.pm
+${P5SITE}/Net/Packet/Consts.pm
+${P5SITE}/Net/Packet/Desc.pm
+${P5SITE}/Net/Packet/DescL2.pm
+${P5SITE}/Net/Packet/DescL3.pm
+${P5SITE}/Net/Packet/DescL4.pm
+${P5SITE}/Net/Packet/Dump.pm
+${P5SITE}/Net/Packet/ETH.pm
+${P5SITE}/Net/Packet/Env.pm
+${P5SITE}/Net/Packet/Frame.pm
+${P5SITE}/Net/Packet/ICMPv4.pm
+${P5SITE}/Net/Packet/IGMPv4.pm
+${P5SITE}/Net/Packet/IPv4.pm
+${P5SITE}/Net/Packet/IPv6.pm
+${P5SITE}/Net/Packet/LLC.pm
+${P5SITE}/Net/Packet/Layer.pm
+${P5SITE}/Net/Packet/Layer2.pm
+${P5SITE}/Net/Packet/Layer3.pm
+${P5SITE}/Net/Packet/Layer4.pm
+${P5SITE}/Net/Packet/Layer7.pm
+${P5SITE}/Net/Packet/NULL.pm
+${P5SITE}/Net/Packet/OSPF.pm
+${P5SITE}/Net/Packet/PPP.pm
+${P5SITE}/Net/Packet/PPPLCP.pm
+${P5SITE}/Net/Packet/PPPoE.pm
+${P5SITE}/Net/Packet/RAW.pm
+${P5SITE}/Net/Packet/SLL.pm
+${P5SITE}/Net/Packet/STP.pm
+${P5SITE}/Net/Packet/TCP.pm
+${P5SITE}/Net/Packet/UDP.pm
+${P5SITE}/Net/Packet/Utils.pm
+${P5SITE}/Net/Packet/VLAN.pm
+@man man/man3p/Net::Packet.3p
+@man man/man3p/Net::Packet::ARP.3p
+@man man/man3p/Net::Packet::CDP.3p
+@man man/man3p/Net::Packet::CDP::Address.3p
+@man man/man3p/Net::Packet::CDP::Type.3p
+@man man/man3p/Net::Packet::CDP::TypeAddresses.3p
+@man man/man3p/Net::Packet::CDP::TypeCapabilities.3p
+@man man/man3p/Net::Packet::CDP::TypeDeviceId.3p
+@man man/man3p/Net::Packet::CDP::TypePortId.3p
+@man man/man3p/Net::Packet::CDP::TypeSoftwareVersion.3p
+@man man/man3p/Net::Packet::Consts.3p
+@man man/man3p/Net::Packet::Desc.3p
+@man man/man3p/Net::Packet::DescL2.3p
+@man man/man3p/Net::Packet::DescL3.3p
+@man man/man3p/Net::Packet::DescL4.3p
+@man man/man3p/Net::Packet::Dump.3p
+@man man/man3p/Net::Packet::ETH.3p
+@man man/man3p/Net::Packet::Env.3p
+@man man/man3p/Net::Packet::Frame.3p
+@man man/man3p/Net::Packet::ICMPv4.3p
+@man man/man3p/Net::Packet::IGMPv4.3p
+@man man/man3p/Net::Packet::IPv4.3p
+@man man/man3p/Net::Packet::IPv6.3p
+@man man/man3p/Net::Packet::LLC.3p
+@man man/man3p/Net::Packet::Layer.3p
+@man man/man3p/Net::Packet::Layer2.3p
+@man man/man3p/Net::Packet::Layer3.3p
+@man man/man3p/Net::Packet::Layer4.3p
+@man man/man3p/Net::Packet::Layer7.3p
+@man man/man3p/Net::Packet::NULL.3p
+@man man/man3p/Net::Packet::OSPF.3p
+@man man/man3p/Net::Packet::PPP.3p
+@man man/man3p/Net::Packet::PPPLCP.3p
+@man man/man3p/Net::Packet::PPPoE.3p
+@man man/man3p/Net::Packet::RAW.3p
+@man man/man3p/Net::Packet::SLL.3p
+@man man/man3p/Net::Packet::STP.3p
+@man man/man3p/Net::Packet::TCP.3p
+@man man/man3p/Net::Packet::UDP.3p
+@man man/man3p/Net::Packet::Utils.3p
+@man man/man3p/Net::Packet::VLAN.3p
+share/examples/p5-Net-Packet/
+share/examples/p5-Net-Packet/arp-reply.pl
+share/examples/p5-Net-Packet/arp-request.pl
+share/examples/p5-Net-Packet/arp-scan.pl
+share/examples/p5-Net-Packet/chaos-query.pl
+share/examples/p5-Net-Packet/d3-syn-send.pl
+share/examples/p5-Net-Packet/d4-syn-send.pl
+share/examples/p5-Net-Packet/icmp-dest-unreach.pl
+share/examples/p5-Net-Packet/icmp-echo.pl
+share/examples/p5-Net-Packet/icmp-information.pl
+share/examples/p5-Net-Packet/icmp-mask.pl
+share/examples/p5-Net-Packet/icmp-redirect.pl
+share/examples/p5-Net-Packet/icmp-timestamp.pl
+share/examples/p5-Net-Packet/ip6-syn-send.pl
+share/examples/p5-Net-Packet/ipv4-flags.pl
+share/examples/p5-Net-Packet/read-pcap.pl
+share/examples/p5-Net-Packet/sniffer.pl
+share/examples/p5-Net-Packet/syn-scan.pl
+share/examples/p5-Net-Packet/syn-send.pl
+share/examples/p5-Net-Packet/udp-send.pl
+share/examples/p5-Net-Packet/vlan-craft.pl
+share/examples/p5-Net-Packet/vlan-support.pl
