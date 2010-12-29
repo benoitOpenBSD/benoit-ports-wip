@@ -1,0 +1,8 @@
+ZDoom is, essentially, an advanced source port for Doom. However, it doesn't
+just support Doom/Doom II... it also has support for Hexen, Heretic, and
+Strife.
+
+ZDoom's purpose is to allow Doom mappers to be more creative with their
+work, using scripting. You can also add elements of detail to your levels,
+such as slopes, mirrors, 3-D bridges (sort of), colored lighting,
+deep-water, translucent glass, print messages, and many others.
