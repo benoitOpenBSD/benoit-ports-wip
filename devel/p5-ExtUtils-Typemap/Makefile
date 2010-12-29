@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =	Read/Write/Modify Perl/XS typemap files
+COMMENT =	read/write/modify Perl/XS typemap files
 
 DISTNAME =	ExtUtils-Typemap-0.05
 CATEGORIES =	devel
