@@ -1,0 +1,4 @@
+Taginfo is a quick implementation of the TagLib API for use in the music
+jukebox program Room Juice.  It's meant to be fast, not featureful. Taginfo
+reads what tags TagLib can read, which as of this writing are ID3, ID3V2,
+Ogg, and FLAC.
