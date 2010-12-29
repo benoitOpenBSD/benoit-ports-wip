@@ -1,0 +1,19 @@
+--- CMakeLists.txt.orig	Fri Jul 10 12:40:51 2009
++++ CMakeLists.txt	Fri Jul 10 12:41:22 2009
+@@ -21,14 +21,14 @@
+     MESSAGE(FATAL_ERROR "ERROR: stdint.h header is missing!")
+ ENDIF(NOT HAVE_STDINT_H)
+ 
+-set(CMAKE_C_FLAGS "-Wall -Wextra")
++set(CMAKE_C_FLAGS "-Wall")
+ 
+ # Other interesting gcc options:
+ # -Wconversion
+ # -Wstrict-overflow
+ set(CMAKE_C_FLAGS_DEBUG "-O0 -ggdb -Werror")
+ 
+-set(CMAKE_C_FLAGS_RELEASE "-O3")
++set(CMAKE_C_FLAGS_RELEASE "-O2")
+ 
+ add_subdirectory (lib)
+ add_subdirectory (weak)
