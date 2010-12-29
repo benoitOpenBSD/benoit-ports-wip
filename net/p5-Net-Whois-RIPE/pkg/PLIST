@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+${P5SITE}/Net/Whois/
+${P5SITE}/Net/Whois/RIPE.pm
+@man man/man3p/Net::Whois::RIPE.3p
