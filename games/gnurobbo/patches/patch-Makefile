@@ -1,0 +1,34 @@
+--- Makefile.orig	Wed Dec 23 00:41:48 2009
++++ Makefile	Mon Dec 28 22:15:39 2009
+@@ -1,16 +1,16 @@
+ # Change these to install somewhere else
+ # System wide:
+-#PACKAGE_DATA_DIR=/usr/local/share/$(TARGET)/
+-#BINDIR=/usr/local/bin/
+-#DOCDIR=/usr/local/share/$(TARGET)/
++PACKAGE_DATA_DIR=${PREFIX}/share/$(TARGET)/
++BINDIR=${PREFIX}/bin/
++DOCDIR=${PREFIX}/share/doc/$(TARGET)/
+ # Local:
+ #PACKAGE_DATA_DIR=$(HOME)/Games/$(TARGET)/
+ #BINDIR=$(HOME)/Games/$(TARGET)/
+ #DOCDIR=$(HOME)/Games/$(TARGET)/
+ # The current folder:
+-PACKAGE_DATA_DIR=./data/
+-BINDIR=./
+-DOCDIR=./
++#PACKAGE_DATA_DIR=./data/
++#BINDIR=./
++#DOCDIR=./
+ 
+ # Uncomment the line below if you want to have music support
+ #MUSIC=-DHAVE_MUSIC
+@@ -29,7 +29,7 @@
+ 
+ # These should be ok for most
+ SDL_CONFIG=sdl-config
+-CFLAGS=-O3 -pipe -Wall -fomit-frame-pointer `$(SDL_CONFIG) --cflags` -DPLATFORM_PC -DVERSION=\"$(VERSION)\" -DPACKAGE_DATA_DIR=\"$(PACKAGE_DATA_DIR)/\" $(FONT_USE_PIXMAP) $(MUSIC) $(DESIGNER)
++CFLAGS=-O2 -pipe -Wall `$(SDL_CONFIG) --cflags` -DPLATFORM_PC -DVERSION=\"$(VERSION)\" -DPACKAGE_DATA_DIR=\"$(PACKAGE_DATA_DIR)/\" $(FONT_USE_PIXMAP) $(MUSIC) $(DESIGNER)
+ LINK=$(CC)
+ LDFLAGS=
+ LIBS=`$(SDL_CONFIG) --libs` -lSDL_image -lSDL_mixer $(FONT_USE_SDL_TTF)
