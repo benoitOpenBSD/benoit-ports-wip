@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.in.orig	Mon Dec 28 09:40:56 2009
++++ Makefile.in	Mon Dec 28 09:41:10 2009
+@@ -82,7 +82,7 @@
+ GZIP_ENV = --best
+ distuninstallcheck_listfiles = find . -type f -print
+ distcleancheck_listfiles = find . -type f -print
+-pkgdatadir = $(mandir)
++pkgdatadir = $(mandir)/man6
+ ACLOCAL = @ACLOCAL@
+ AMDEP_FALSE = @AMDEP_FALSE@
+ AMDEP_TRUE = @AMDEP_TRUE@

@@ -1,0 +1,39 @@
+$OpenBSD$
+--- powermanga.6.orig	Mon Dec 28 10:10:41 2009
++++ powermanga.6	Mon Dec 28 10:12:01 2009
+@@ -113,22 +113,22 @@
+ .B \--hard
+ make the game harder
+ .SH FILES
+-.B /usr/share/games/powermanga/graphics/
++.B ${PREFIX}/share/games/powermanga/graphics/
+ .br
+ .RS
+ Graphics files.
+ .RE
+-.B /usr/share/games/powermanga/data/
++.B ${PREFIX}/share/games/powermanga/data/
+ .br
+ .RS
+ Levels and data files.
+ .RE
+-.B /usr/share/games/powermanga/sound/
++.B ${PREFIX}/share/games/powermanga/sound/
+ .br
+ .RS
+ Sound files.
+ .RE
+-.B /usr/share/games/powermanga/texts/
++.B ${PREFIX}/share/games/powermanga/texts/
+ .br
+ .RS
+ Texts files.
+@@ -140,7 +140,7 @@
+ .SH AUTHOR
+ Powermanga - Copyright TLK Games. You are free to redistribute
+ and/or change it under the terms of the GNU General Public License. See the
+-.I /usr/share/doc/powermanga/copyright
++.I ${PREFIX}/share/doc/powermanga/copyright
+ for details.
+ .br
+ This manual page was written by Jeronimo Pellegrini <pellegrini@mpcnet.com.br>, based on the previous one by Samuel Hocevar <sam@zoy.org>, for the Debian GNU/Linux system (but may be used by others).
