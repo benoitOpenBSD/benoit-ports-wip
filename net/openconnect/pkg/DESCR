@@ -1,0 +1,32 @@
+OpenConnect is a client for Cisco's AnyConnect SSL VPN, which is
+supported by the ASA5500 Series, by IOS 12.4(9)T or later on Cisco
+SR500, 870, 880, 1800, 2800, 3800, 7200 Series and Cisco 7301 Routers,
+and probably others.
+
+OpenConnect is released under the GNU Lesser Public License, version
+2.1.
+
+Like vpnc, OpenConnect is not officially supported by, or associated in
+any way with, Cisco Systems. It just happens to interoperate with their
+equipment.
+
+Development of OpenConnect was started after a trial of their "official"
+client under Linux found it to have many deficiencies:
+
+	* Inability to use SSL certificates from a TPM, or even use
+	a passphrase.
+	* Lack of support for Linux platforms other than i386.
+	* Lack of integration with NetworkManager on the Linux desktop.
+	* Lack of proper (RPM/DEB) packaging for Linux distributions.
+	* "Stealth" use of libraries with dlopen(), even using the
+	development-only symlinks such as libz.so - making it hard to
+	properly discover the dependencies which proper packaging would
+	have expressed
+	* Tempfile races allowing unprivileged users to trick it into
+	overwriting arbitrary files, as root.
+	* Unable to run as an unprivileged user, which would have
+	reduced severity of the above bug.
+	* Inability to audit the source code for further such "Security
+	101" bugs.
+
+Naturally, OpenConnect addresses all of the above issues, and more.

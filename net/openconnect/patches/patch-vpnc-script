@@ -1,0 +1,62 @@
+$OpenBSD$
+--- vpnc-script.orig	Thu Nov  4 01:57:35 2010
++++ vpnc-script	Thu Nov  4 02:04:00 2010
+@@ -58,7 +58,7 @@ if [ ! -d "/var/run/vpnc" ]; then
+ fi
+ 
+ # stupid SunOS: no blubber in /usr/local/bin ... (on stdout)
+-IPROUTE="`which ip | grep '^/' 2> /dev/null`"
++IPROUTE="`which ip 2>/dev/null | grep '^/' 2> /dev/null`"
+ 
+ if [ "$OS" = "Linux" ]; then
+ 	ifconfig_syntax_ptp="pointopoint"
+@@ -124,7 +124,7 @@ do_ifconfig() {
+ 
+ destroy_tun_device() {
+ 	case "$OS" in
+-	NetBSD|FreeBSD) # and probably others...
++	NetBSD|FreeBSD|OpenBSD) # and probably others...
+ 		ifconfig "$TUNDEV" destroy
+ 		;;
+         SunOS)
+@@ -220,13 +220,13 @@ else # use route command
+ 
+ 	del_vpngateway_route() {
+ 	        vpngw_route=`netstat -r -n | awk '/:/ { next; } /^(default|0\.0\.0\.0)/ { print $2; }'`
+-		route $route_syntax_del -host "$VPNGATEWAY" $route_syntax_gw "$vpngw_route"
++		route $route_syntax_del -host "$VPNGATEWAY" $route_syntax_gw "$vpngw_route" 2>/dev/null
+ 	}
+ 
+ 	set_default_route() {
+ 		DEFAULTGW="`get_default_gw`"
+ 		echo "$DEFAULTGW" > "$DEFAULT_ROUTE_FILE"
+-		route $route_syntax_del default $route_syntax_gw "`get_default_gw`"
++		route $route_syntax_del default $route_syntax_gw "`get_default_gw`" 2>/dev/null
+ 		route add default $route_syntax_gw "$INTERNAL_IP4_ADDRESS" $route_syntax_interface
+ 	}
+ 
+@@ -234,13 +234,13 @@ else # use route command
+ 		NETWORK="$1"
+ 		NETMASK="$2"
+ 		NETMASKLEN="$3"
+-		del_network_route "$NETWORK" "$NETMASK" "$NETMASKLEN"
++		del_network_route "$NETWORK" "$NETMASK" "$NETMASKLEN" 2>/dev/null
+ 		route add -net "$NETWORK" $route_syntax_netmask "$NETMASK" $route_syntax_gw "$INTERNAL_IP4_ADDRESS" $route_syntax_interface
+ 	}
+ 
+ 	reset_default_route() {
+ 		if [ -s "$DEFAULT_ROUTE_FILE" ]; then
+-			route $route_syntax_del default $route_syntax_gw "`get_default_gw`" $route_syntax_interface
++			route $route_syntax_del default $route_syntax_gw "`get_default_gw`" $route_syntax_interface 2>/dev/null
+ 			route add default $route_syntax_gw `cat "$DEFAULT_ROUTE_FILE"`
+ 			rm -f -- "$DEFAULT_ROUTE_FILE"
+ 		fi
+@@ -248,7 +248,7 @@ else # use route command
+ 
+ 	del_network_route() {
+ 		case "$OS" in
+-		Linux|NetBSD|Darwin|SunOS) # and probably others...
++		Linux|NetBSD|Darwin|SunOS|OpenBSD) # and probably others...
+ 			# routes are deleted automatically on device shutdown
+ 			return
+ 			;;

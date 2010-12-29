@@ -1,0 +1,8 @@
+@comment $OpenBSD$
+@bin bin/openconnect
+share/examples/openconnect/
+share/examples/openconnect/vpnc-script
+@mode 0600
+@sample ${SYSCONFDIR}/openconnect/
+@mode 0750
+@sample ${SYSCONFDIR}/openconnect/vpnc-script
