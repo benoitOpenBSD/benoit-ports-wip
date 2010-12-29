@@ -1,0 +1,11 @@
+--- lib/md5.c.orig	Sat Mar 21 20:51:15 2009
++++ lib/md5.c	Sat Mar 21 20:51:24 2009
+@@ -29,7 +29,7 @@
+ # include <config.h>
+ #endif
+ 
+-#include <endian.h>
++#include <sys/types.h>
+ #include <stdlib.h>
+ #include <string.h>
+ #include <sys/types.h>

@@ -1,0 +1,10 @@
+--- libelf/elf.h.orig	Sat Mar 21 21:11:05 2009
++++ libelf/elf.h	Sat Mar 21 21:10:56 2009
+@@ -21,7 +21,6 @@
+ #ifndef _ELF_H
+ #define	_ELF_H 1
+ 
+-#include <features.h>
+ 
+ __BEGIN_DECLS
+ 

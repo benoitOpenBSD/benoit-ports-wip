@@ -1,0 +1,18 @@
+--- libelf/Makefile.in.orig	Sat Mar 21 21:06:16 2009
++++ libelf/Makefile.in	Sat Mar 21 21:06:59 2009
+@@ -258,11 +258,11 @@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+ zip_LIBS = @zip_LIBS@
+-@MUDFLAP_FALSE@AM_CFLAGS = $(am__append_1) -Wall -Wshadow -Werror \
+-@MUDFLAP_FALSE@	-Wunused -Wextra -Wformat=2 -std=gnu99 \
++@MUDFLAP_FALSE@AM_CFLAGS = $(am__append_1) -Wshadow \
++@MUDFLAP_FALSE@	-Wunused -Wformat=2 -std=gnu99 \
+ @MUDFLAP_FALSE@	$($(*F)_CFLAGS)
+-@MUDFLAP_TRUE@AM_CFLAGS = -fmudflap $(am__append_1) -Wall -Wshadow \
+-@MUDFLAP_TRUE@	-Werror -Wunused -Wextra -Wformat=2 -std=gnu99 \
++@MUDFLAP_TRUE@AM_CFLAGS = -fmudflap $(am__append_1) -Wshadow \
++@MUDFLAP_TRUE@  -Wunused -Wformat=2 -std=gnu99 \
+ @MUDFLAP_TRUE@	$($(*F)_CFLAGS)
+ INCLUDES = -I$(srcdir) -I$(top_srcdir)/lib -I..
+ GCC_INCLUDE = -I$(shell $(CC) -print-file-name=include)

@@ -1,0 +1,11 @@
+--- configure.orig	Sat Mar 21 19:37:01 2009
++++ configure	Sat Mar 21 19:39:54 2009
+@@ -4051,7 +4051,7 @@
+ save_CFLAGS="$CFLAGS"
+ save_LDFLAGS="$LDFLAGS"
+ CFLAGS="-fpic $CFLAGS"
+-LDFLAGS="-shared -Wl,-z,defs,-z,relro $LDFLAGS"
++LDFLAGS="-shared  $LDFLAGS"
+ cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */
+ _ACEOF

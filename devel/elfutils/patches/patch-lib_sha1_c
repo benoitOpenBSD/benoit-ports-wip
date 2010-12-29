@@ -1,0 +1,18 @@
+--- lib/sha1.c.orig	Wed Dec 10 23:21:28 2008
++++ lib/sha1.c	Sat Mar 21 21:05:20 2009
+@@ -29,7 +29,6 @@
+ # include <config.h>
+ #endif
+ 
+-#include <endian.h>
+ #include <stdlib.h>
+ #include <string.h>
+ #include <sys/types.h>
+@@ -37,7 +36,6 @@
+ #include "sha1.h"
+ 
+ #if __BYTE_ORDER == __LITTLE_ENDIAN
+-# include <byteswap.h>
+ # define SWAP(n) bswap_32 (n)
+ #else
+ # define SWAP(n) (n)
