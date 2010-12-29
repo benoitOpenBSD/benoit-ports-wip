@@ -1,0 +1,21 @@
+$OpenBSD: patch-src_Makefile,v 1.6 2010/07/17 22:46:03 benoit Exp $
+--- src/Makefile.orig	Sun Jun 13 23:12:37 2010
++++ src/Makefile	Sat Jul 17 12:27:56 2010
+@@ -279,7 +279,7 @@
+ 	$(LN) x86-any.h arch.h
+ 	$(MAKE) $(PROJ) \
+ 		JOHN_OBJS="$(JOHN_OBJS) x86.o" \
+-		ASFLAGS="$(ASFLAGS) -DUNDERSCORES -DALIGN_LOG -DBSD"
++		ASFLAGS="$(ASFLAGS) -DBSD"
+ 
+ freebsd-alpha:
+ 	$(LN) alpha.h arch.h
+@@ -313,7 +313,7 @@
+ 	$(LN) x86-any.h arch.h
+ 	$(MAKE) $(PROJ) \
+ 		JOHN_OBJS="$(JOHN_OBJS) x86.o" \
+-		ASFLAGS="$(ASFLAGS) -DUNDERSCORES -DALIGN_LOG -DBSD"
++		ASFLAGS="$(ASFLAGS) -DALIGN_LOG -DBSD"
+ 
+ openbsd-alpha:
+ 	$(LN) alpha.h arch.h
