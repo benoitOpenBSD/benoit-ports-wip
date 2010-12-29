@@ -1,0 +1,46 @@
+@comment $OpenBSD$
+%%SHARED%%
+bin/dnet.pl
+${P5ARCH}/
+${P5ARCH}/Net/
+${P5ARCH}/Net/Libdnet/
+${P5ARCH}/Net/Libdnet.pm
+${P5ARCH}/Net/Libdnet/Arp.pm
+${P5ARCH}/Net/Libdnet/Entry/
+${P5ARCH}/Net/Libdnet/Entry/Intf.pm
+${P5ARCH}/Net/Libdnet/Eth.pm
+${P5ARCH}/Net/Libdnet/Fw.pm
+${P5ARCH}/Net/Libdnet/Intf.pm
+${P5ARCH}/Net/Libdnet/Ip.pm
+${P5ARCH}/Net/Libdnet/Route.pm
+${P5ARCH}/Net/Libdnet/Tun.pm
+${P5ARCH}/auto/
+${P5ARCH}/auto/Net/
+${P5ARCH}/auto/Net/Libdnet/
+${P5ARCH}/auto/Net/Libdnet/Libdnet.bs
+@man man/man3p/Net::Libdnet.3p
+@man man/man3p/Net::Libdnet::Arp.3p
+@man man/man3p/Net::Libdnet::Entry::Intf.3p
+@man man/man3p/Net::Libdnet::Eth.3p
+@man man/man3p/Net::Libdnet::Fw.3p
+@man man/man3p/Net::Libdnet::Intf.3p
+@man man/man3p/Net::Libdnet::Ip.3p
+@man man/man3p/Net::Libdnet::Route.3p
+@man man/man3p/Net::Libdnet::Tun.3p
+share/examples/p5-Net-Libdnet/
+share/examples/p5-Net-Libdnet/arp-add.pl
+share/examples/p5-Net-Libdnet/arp-delete.pl
+share/examples/p5-Net-Libdnet/arp-get.pl
+share/examples/p5-Net-Libdnet/arp-list.pl
+share/examples/p5-Net-Libdnet/eth-send.pl
+share/examples/p5-Net-Libdnet/fw-add.pl
+share/examples/p5-Net-Libdnet/fw-delete.pl
+share/examples/p5-Net-Libdnet/fw-list.pl
+share/examples/p5-Net-Libdnet/intf-get-dst.pl
+share/examples/p5-Net-Libdnet/intf-get-src.pl
+share/examples/p5-Net-Libdnet/intf-get.pl
+share/examples/p5-Net-Libdnet/intf-list.pl
+share/examples/p5-Net-Libdnet/ip-send.pl
+share/examples/p5-Net-Libdnet/route-get.pl
+share/examples/p5-Net-Libdnet/route-list.pl
+share/examples/p5-Net-Libdnet/tun-open.pl
