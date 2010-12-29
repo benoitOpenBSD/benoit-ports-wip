@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/lmarbles.6.orig	Sun Dec 27 17:37:51 2009
++++ src/lmarbles.6	Sun Dec 27 17:38:36 2009
+@@ -22,7 +22,7 @@
+ .IP "~/.marbles.cfg"
+ Automatically generated configfile. This is not meant for human editing.
+ .TP
+-.IP "/var/lib/games/lmarbles.prfs"
++.IP "/var/games/lmarbles.prfs"
+ Global preferences and score file. Not for human editing.
+ .SH BUGS
+ Please report any bugs you find to Michael Speck <kulkanie@gmx.net>
