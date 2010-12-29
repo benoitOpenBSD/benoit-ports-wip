@@ -1,0 +1,12 @@
+--- ncgen/main.c~	Fri Jun  6 01:16:56 2008
++++ ncgen/main.c	Tue Mar 17 16:54:42 2009
+@@ -225,6 +225,9 @@
+ 	cdlname = argv[0];
+     }
+     yyin = fp;
++    
++    fflush(stdout);
++    
+     return (yyparse());
+ #ifdef USE_PARALLEL
+    MPI_Finalize();
