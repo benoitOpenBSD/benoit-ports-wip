@@ -1,0 +1,15 @@
+--- src/tools/depbuild.cpp.orig	Wed Dec 27 12:04:05 2006
++++ src/tools/depbuild.cpp	Tue May 19 23:21:20 2009
+@@ -26,8 +26,12 @@
+ #include <cstdio>
+ using namespace std;
+ 
++#include <unistd.h>
++
+ #include "fileutil.h"
+ #include "strutil.h"
++
++#define F_OK 0
+ 
+ string cc;
+ string nasm;
