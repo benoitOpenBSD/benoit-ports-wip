@@ -1,0 +1,27 @@
+@comment $OpenBSD$
+@bin bin/readdisk
+@bin bin/uae
+share/uae/
+share/uae/amiga/
+share/uae/amiga/source/
+share/uae/amiga/source/Makefile.gcc
+share/uae/amiga/source/mhint.asm
+share/uae/amiga/source/mousehack.c
+share/uae/amiga/source/timehack.c
+share/uae/amiga/source/transdisk.c
+share/uae/amiga/source/transrom.c
+share/uae/amiga/source/uae-configuration.c
+share/uae/amiga/source/uae-configuration.s
+share/uae/amiga/source/uae-control.c
+share/uae/amiga/source/uae-control.h
+share/uae/amiga/source/uae_pragmas.h
+share/uae/amiga/source/uae_rcli.c
+share/uae/amiga/source/uaectrl.c
+share/uae/bsdsocket.txt
+share/uae/cmd-line.txt
+share/uae/compiling.txt
+share/uae/configuration.txt
+share/uae/floppies.txt
+share/uae/joystick.txt
+share/uae/keyboard.txt
+share/uae/scsi.txt
