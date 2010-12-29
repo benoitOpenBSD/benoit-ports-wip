@@ -1,0 +1,11 @@
+@comment $OpenBSD$
+@bin bin/fd2
+@bin bin/glob6
+@bin bin/osh
+@bin bin/sh6
+@man man/man1/fd2.1
+@man man/man1/glob6.1
+@man man/man1/goto.1
+@man man/man1/if.1
+@man man/man1/osh.1
+@man man/man1/sh6.1

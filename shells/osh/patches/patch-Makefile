@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.orig	Sun May 31 23:22:03 2009
++++ Makefile	Sun May 31 23:23:05 2009
+@@ -11,7 +11,7 @@
+ # Choose where and how to install the binaries and manual pages.
+ #
+ DESTDIR?=
+-PREFIX?=	/usr/local
++PREFIX?=	${LOCALBASE}
+ BINDIR?=	$(PREFIX)/bin
+ MANDIR?=	$(PREFIX)/man/man1
+ SYSCONFDIR?=	$(PREFIX)/etc
