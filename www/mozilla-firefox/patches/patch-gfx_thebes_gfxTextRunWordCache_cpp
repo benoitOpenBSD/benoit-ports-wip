@@ -1,0 +1,13 @@
+$OpenBSD$
+--- gfx/thebes/gfxTextRunWordCache.cpp.orig	Fri Aug  6 11:52:57 2010
++++ gfx/thebes/gfxTextRunWordCache.cpp	Fri Aug  6 11:53:14 2010
+@@ -49,6 +49,9 @@
+ 
+ #include "nsBidiUtils.h"
+ 
++// for intptr_t
++#include <stdint.h>
++
+ #ifdef DEBUG
+ #include <stdio.h>
+ #endif

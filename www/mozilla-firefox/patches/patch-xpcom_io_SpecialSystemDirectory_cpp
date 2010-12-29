@@ -1,0 +1,12 @@
+$OpenBSD: patch-xpcom_io_SpecialSystemDirectory_cpp,v 1.2 2010/04/26 19:55:58 landry Exp $
+--- xpcom/io/SpecialSystemDirectory.cpp.orig	Wed Jul 21 02:53:09 2010
++++ xpcom/io/SpecialSystemDirectory.cpp	Sun Aug  1 12:58:35 2010
+@@ -523,7 +523,7 @@ GetUnixXDGUserDirectory(SystemDirectories aSystemDirec
+     if (NS_FAILED(rv))
+         return rv;
+     if (!exists) {
+-        rv = file->Create(nsIFile::DIRECTORY_TYPE, 0755);
++        rv = file->Create(nsIFile::DIRECTORY_TYPE, 0700);
+         if (NS_FAILED(rv))
+             return rv;
+     }

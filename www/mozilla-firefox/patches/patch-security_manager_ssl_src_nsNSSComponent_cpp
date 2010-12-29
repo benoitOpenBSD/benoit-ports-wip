@@ -1,0 +1,27 @@
+$OpenBSD: patch-security_manager_ssl_src_nsNSSComponent_cpp,v 1.7 2010/04/26 19:55:58 landry Exp $
+--- security/manager/ssl/src/nsNSSComponent.cpp.orig	Thu Nov  4 21:06:46 2010
++++ security/manager/ssl/src/nsNSSComponent.cpp	Sat Nov 13 11:56:36 2010
+@@ -850,11 +850,10 @@ nsNSSComponent::InstallLoadableRoots()
+     return;
+ 
+   const char *possible_ckbi_locations[] = {
+-    NS_XPCOM_CURRENT_PROCESS_DIR,
++    0, // This special value means: 
++       //   search for ckbi in NSS_LIBDIR
+     NS_GRE_DIR,
+-    0 // This special value means: 
+-      //   search for ckbi in the directories on the shared
+-      //   library/DLL search path
++    NS_XPCOM_CURRENT_PROCESS_DIR
+   };
+ 
+   for (size_t il = 0; il < sizeof(possible_ckbi_locations)/sizeof(const char*); ++il) {
+@@ -863,7 +862,7 @@ nsNSSComponent::InstallLoadableRoots()
+ 
+     if (!possible_ckbi_locations[il])
+     {
+-      fullLibraryPath = PR_GetLibraryName(nsnull, "nssckbi");
++      fullLibraryPath = PR_GetLibraryName(NSS_LIBDIR, "nssckbi");
+     }
+     else
+     {

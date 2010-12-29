@@ -1,0 +1,12 @@
+$OpenBSD$
+Allow to build with --enable-debug
+--- gfx/thebes/GLContext.h.orig	Thu Nov  4 21:05:47 2010
++++ gfx/thebes/GLContext.h	Sat Nov 13 11:59:04 2010
+@@ -42,6 +42,7 @@
+ #define GLCONTEXT_H_
+ 
+ #include <stdio.h>
++#include <stdint.h>
+ #include <string.h>
+ #include <ctype.h>
+ 

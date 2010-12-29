@@ -1,0 +1,11 @@
+$OpenBSD: patch-js_src_xpconnect_src_Makefile_in,v 1.1 2010/04/26 19:55:58 landry Exp $
+--- js/src/xpconnect/src/Makefile.in.orig	Thu Nov  4 21:06:09 2010
++++ js/src/xpconnect/src/Makefile.in	Sat Nov 13 11:56:34 2010
+@@ -210,6 +210,7 @@ dom_quickstubs.cpp: $(srcdir)/dom_quickstubs.qsconf \
+ 	  --makedepend-output $(MDDEPDIR)/dom_qsgen.pp \
+ 	  $(ENABLE_TRACEABLE_FLAGS) \
+ 	  $(srcdir)/dom_quickstubs.qsconf
++	perl -pi.bak -e 's/(nsCOMPtr<nsIVariant> arg1)\(/$$1 = nsCOMPtr<nsIVariant>(/' dom_quickstubs.cpp
+ 
+ GARBAGE += \
+ 		dom_quickstubs.h \

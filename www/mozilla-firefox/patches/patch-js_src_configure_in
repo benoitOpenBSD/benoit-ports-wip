@@ -1,0 +1,49 @@
+$OpenBSD: patch-js_src_configure_in,v 1.1 2010/04/26 19:55:58 landry Exp $
+--- js/src/configure.in.orig	Thu Nov  4 21:05:48 2010
++++ js/src/configure.in	Sat Nov 13 11:56:33 2010
+@@ -999,7 +999,7 @@ WIN_TOP_SRC=
+ MOZ_USER_DIR=".mozilla"
+ 
+ MOZ_JS_LIBS='-L$(libdir) -lmozjs'
+-MOZ_FIX_LINK_PATHS='-Wl,-rpath-link,$(LIBXUL_DIST)/bin -Wl,-rpath-link,$(PREFIX)/lib'
++MOZ_FIX_LINK_PATHS='-Wl,-rpath-link,$(LIBXUL_DIST)/bin -Wl,-rpath-link,$(PREFIX)/lib -L$(LIBXUL_DIST)/bin'
+ 
+ MOZ_COMPONENT_NSPR_LIBS='-L$(LIBXUL_DIST)/bin $(NSPR_LIBS)'
+ 
+@@ -2283,7 +2283,7 @@ ia64*-hpux*)
+ 	;;
+ 
+ *-openbsd*)
+-    DLL_SUFFIX=".so.1.0"
++    DLL_SUFFIX=".so.${SO_VERSION}"
+     DSO_CFLAGS=''
+     DSO_PIC_CFLAGS='-fPIC'
+     DSO_LDOPTS='-shared -fPIC'
+@@ -2621,7 +2621,7 @@ i?86-*)
+     AC_DEFINE(JS_CPU_X86)
+     AC_DEFINE(JS_NUNBOX32)
+     ;;
+-x86_64*-*)
++amd64*-*)
+     ENABLE_TRACEJIT=1
+     NANOJIT_ARCH=X64
+     ENABLE_METHODJIT=1
+@@ -2693,7 +2693,7 @@ case "$target" in
+ i?86-*)
+     AC_DEFINE(AVMPLUS_IA32)
+     ;;
+-x86_64*-*)
++amd64*-*)
+     AC_DEFINE(AVMPLUS_AMD64)
+     AC_DEFINE(AVMPLUS_64BIT)
+     ;;
+@@ -2717,6 +2717,9 @@ case "$target" in
+     AC_DEFINE(AVMPLUS_UNIX)
+     ;;
+ *-freebsd*|*-kfreebsd*)
++    AC_DEFINE(AVMPLUS_UNIX)
++    ;;
++*-openbsd*)
+     AC_DEFINE(AVMPLUS_UNIX)
+     ;;
+ *-gnu*)

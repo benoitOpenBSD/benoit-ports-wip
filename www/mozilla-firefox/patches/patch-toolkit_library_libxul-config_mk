@@ -1,0 +1,18 @@
+$OpenBSD$
+--- toolkit/library/libxul-config.mk.orig	Thu Nov  4 21:06:54 2010
++++ toolkit/library/libxul-config.mk	Sat Nov 13 11:59:42 2010
+@@ -364,12 +364,13 @@ EXTRA_DSO_LDOPTS += \
+ 	$(PNG_LIBS) \
+ 	$(QCMS_LIBS) \
+ 	$(MOZ_JS_LIBS) \
+-	$(NSS_LIBS) \
+ 	$(MOZ_CAIRO_LIBS) \
+ 	$(MOZ_HARFBUZZ_LIBS) \
+ 	$(MOZ_OTS_LIBS) \
+ 	$(MOZ_APP_EXTRA_LIBS) \
+ 	$(NULL)
++
++OS_LIBS	+= $(NSS_LIBS)
+ 
+ ifdef MOZ_NATIVE_ZLIB
+ EXTRA_DSO_LDOPTS += $(ZLIB_LIBS)
