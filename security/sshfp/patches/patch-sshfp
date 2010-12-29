@@ -1,0 +1,8 @@
+--- sshfp.orig	Wed Jun  3 14:05:25 2009
++++ sshfp	Wed Jun  3 14:05:56 2009
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!${MODPY_BIN}
+ # Generate SSHFP DNS records (RFC4255) from knownhosts files or ssh-keyscan
+ # Copyright by Xelerance http://www.xelerance.com/
+ # Paul Wouters <paul@xelerance.com> and Jake Appelbaum <jacob@appelbaum.net>
