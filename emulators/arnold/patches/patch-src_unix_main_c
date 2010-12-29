@@ -1,0 +1,20 @@
+--- src/unix/main.c~	Sun Nov  4 21:15:22 2001
++++ src/unix/main.c	Sat May 30 03:31:16 2009
+@@ -63,7 +63,7 @@
+ 		char LocalDirectory[1024];
+ 		char ProgramDirectory[1024]="";
+ 		
+-		getcwd(ProgramDirectory, 1024);
++		strlcpy(ProgramDirectory, SHAREDIR, sizeof(ProgramDirectory));
+ 
+ sprintf(LocalDirectory,"%s/roms/amsdose/",ProgramDirectory);
+ 	
+@@ -94,7 +94,7 @@
+ 
+ 	if (CPCEmulation_Initialise())
+ 	  {
+-		chdir(ProgramDirectory);
++		/* chdir(ProgramDirectory); */
+ 
+ 		CPC_SetCPCType(CPC_TYPE_CPC6128);
+ 

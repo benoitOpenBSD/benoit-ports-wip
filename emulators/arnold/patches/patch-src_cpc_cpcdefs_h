@@ -1,0 +1,11 @@
+--- src/cpc/cpcdefs.h.orig	Sun May 31 00:49:58 2009
++++ src/cpc/cpcdefs.h	Sun May 31 00:50:13 2009
+@@ -19,6 +19,8 @@
+  */
+ #ifndef __CPCDEFS_HEADER_INCLUDED__
+ #define __CPCDEFS_HEADER_INCLUDED__
++
++#include <unistd.h>
+ 
+ /* defines to control parts of CPC emulation etc */
+ 

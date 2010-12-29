@@ -1,0 +1,32 @@
+@comment $OpenBSD$
+@bin bin/arnold
+share/arnold/
+share/arnold/roms/
+share/arnold/roms/amsdose/
+share/arnold/roms/amsdose/amsdos.rom
+share/arnold/roms/amsdose/file_id.diz
+share/arnold/roms/cpc464e/
+share/arnold/roms/cpc464e/basic.rom
+share/arnold/roms/cpc464e/file_id.diz
+share/arnold/roms/cpc464e/os.rom
+share/arnold/roms/cpc6128e/
+share/arnold/roms/cpc6128e/basic.rom
+share/arnold/roms/cpc6128e/file_id.diz
+share/arnold/roms/cpc6128e/os.rom
+share/arnold/roms/cpc664e/
+share/arnold/roms/cpc664e/basic.rom
+share/arnold/roms/cpc664e/file_id.diz
+share/arnold/roms/cpc664e/os.rom
+share/arnold/roms/cpcplus/
+share/arnold/roms/cpcplus/out.tmp
+share/arnold/roms/cpcplus/system.cpr
+share/arnold/roms/kcc/
+share/arnold/roms/kcc/kccbas.rom
+share/arnold/roms/kcc/kccos.rom
+share/doc/arnold/
+share/doc/arnold/readme.txt
+share/doc/arnold/stsound-readme.txt
+share/doc/arnold/whatsnew.txt
+share/doc/arnold/whatsnew1.txt
+share/doc/arnold/whatsnew2.txt
+share/doc/arnold/whatsnew3.txt

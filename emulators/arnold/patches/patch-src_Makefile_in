@@ -1,0 +1,11 @@
+--- src/Makefile.in.orig	Sat May 30 03:33:17 2009
++++ src/Makefile.in	Sat May 30 03:33:36 2009
+@@ -25,7 +25,7 @@
+ SDLLIB = @SDL_LIBS@
+ 
+ #-Wall for max warnings!
+-CFLAGS = @CPPFLAGS@ @CFLAGS@ $(GTKINC) $(SDLINC) @DEFS@ $(X11INC) -I. -DUNIX -Wall -Wno-unused
++CFLAGS = @CPPFLAGS@ @CFLAGS@ $(GTKINC) $(SDLINC) @DEFS@ $(X11INC) -I. -DUNIX -Wall -Wno-unused -DSHAREDIR=\"${SHAREDIR}\"
+ #-g3 -pg -dm -dp -a
+ LFLAGS1 = @LDFLAGS@ @LIBS@ $(GTKLIB) $(SDLLIB) $(X11LIBS)
+ #debug
