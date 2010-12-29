@@ -1,0 +1,9 @@
+Fairly Secure Hashed Password (FSHP) is a salted, iteratively hashed
+password hashing implementation.
+
+Design principle is similar with PBKDF1 specification in RFC 2898 (a.k.a:
+PKCS #5: Password-Based Cryptography Specification Version 2.0)
+
+FSHP allows choosing the salt length, number of iterations and the
+underlying cryptographic hash function among SHA-1 and SHA-2 (256, 384,
+512).
