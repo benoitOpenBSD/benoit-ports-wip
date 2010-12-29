@@ -1,0 +1,32 @@
+--- Makefile.orig	Sat Jun 12 19:49:47 2004
++++ Makefile	Sun Dec 20 16:30:11 2009
+@@ -101,6 +101,11 @@
+ CCO_FREEBSD=-Wall -O6 -fomit-frame-pointer
+ CCOC_FREEBSD=-c
+ 
++# OpenBSD
++CC_OPENBSD=${CC}
++CCO_OPENBSD=${CFLAGS} -DHAVE_DEV_URANDOM -DHAVE_RANDOM
++CCOC_OPENBSD=-c
++
+ # --------------------------------------------------------------------------
+ # Digital/Compaq UNIX Alpha
+ #
+@@ -124,6 +129,7 @@
+ 		echo "  solarisx86   -- for Solaris x86 (tested on 2.6)"; \
+ 		echo "  freebsd      -- for FreeBSD (tested on 2.2.6-STABLE)"; \
+ 		echo "  digitalalpha -- for Digital/Compaq UNIX Alpha"; \
++		echo "  OpenBSD      -- for OpenBSD"; \
+ 		echo "  generic      -- for generic unix"
+ 
+ linux	:	
+@@ -137,6 +143,9 @@
+ 
+ freebsd	:	
+ 		$(MAKE) $(TARGETS) "CC=$(CC_FREEBSD)" "CCO=$(CCO_FREEBSD)" "CCOC=$(CCOC_FREEBSD)"
++
++OpenBSD	:	
++		$(MAKE) $(TARGETS) "CC=$(CC_OPENBSD)" "CCO=$(CCO_OPENBSD)" "CCOC=$(CCOC_OPENBSD)"
+ 
+ solarissp	:	
+ 		$(MAKE) $(TARGETS) "CC=$(CC_SOLARISSP)" "CCO=$(CCO_SOLARISSP)" "CCOC=$(CCOC_SOLARISSP)"
