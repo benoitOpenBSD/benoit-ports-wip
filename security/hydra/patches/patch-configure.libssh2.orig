@@ -1,0 +1,31 @@
+--- configure.orig	Wed Sep 29 13:19:43 2010
++++ configure	Sat Nov 13 12:31:43 2010
+@@ -283,16 +283,16 @@
+     SAPR3_IPATH=""
+ fi
+ 
+-echo "Checking for libssh (libssh/libssh.h) ..."
++echo "Checking for libssh (libssh2.h) ..."
+ for i in  $LIBDIRS /lib  /usr/lib /usr/local/lib /opt/local/lib .
+ do
+     if [ "X" = "X$SSH_PATH" ]; then
+-        if [ -f "$i/libssh.so" -o -f "$i/libssh.dylib" ]; then
++        if [ -f "$i/libssh2.so" -o -f "$i/libssh.dylib" ]; then
+             SSH_PATH="$i"
+         fi
+     fi
+     if [ "X" = "X$SSH_PATH" ]; then
+-        TMP_LIB=`/bin/ls $i/libssh.so* 2> /dev/null | grep libssh.`
++        TMP_LIB=`/bin/ls $i/libssh2.so* 2> /dev/null | grep libssh.`
+         if [ -n "$TMP_LIB" ]; then
+           SSH_PATH="$i"
+         fi
+@@ -311,7 +311,7 @@
+ for i in /usr/local/include /*ssl/include /usr/include .
+ do
+     if [ "X" = "X$SSH_IPATH" ]; then
+-        if [ -f "$i/libssh/libssh.h" ]; then
++        if [ -f "$i/libssh2.h" ]; then
+             SSH_IPATH="$i"
+         fi
+     fi
