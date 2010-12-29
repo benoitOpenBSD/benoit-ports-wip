@@ -1,0 +1,9 @@
+--- test.py.orig	Wed Feb 27 16:28:40 2002
++++ test.py	Wed Jun  3 12:38:12 2009
+@@ -1,4 +1,6 @@
+ #!/usr/bin/python
++# coding: utf-8
++
+ import unittest
+ from cStringIO import StringIO
+ 

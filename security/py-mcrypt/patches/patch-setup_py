@@ -1,0 +1,10 @@
+--- setup.py.orig	Wed Jun  3 12:26:42 2009
++++ setup.py	Wed Jun  3 12:27:19 2009
+@@ -16,5 +16,7 @@
+       ext_modules = [Extension("mcrypt",
+       			       ["mcrypt.c"],
+ 			       libraries=["mcrypt"],
++			       include_dirs=['${LOCALBASE}/include'],
++			       library_dirs=['${LOCALBASE}/lib'],
+ 			       define_macros=[("VERSION", '"%s"'%VERSION)])],
+       )

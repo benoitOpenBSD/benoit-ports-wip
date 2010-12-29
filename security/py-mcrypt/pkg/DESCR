@@ -1,0 +1,7 @@
+The python mcrypt module provides an interface for the mcrypt library.
+
+Mcrypt is a library which provides a uniform interface to several symmetric
+encryption algorithms. It is intended to have a simple interface to access
+encryption algorithms in ofb, cbc, cfb, ecb and stream modes. The algorithms
+it supports are DES, 3DES, RIJNDAEL, Twofish, IDEA, GOST, CAST-256, ARCFOUR,
+SERPENT, SAFER+, and more.
