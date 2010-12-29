@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/TGIGlobals.cpp.orig	Tue Dec 29 08:09:18 2009
++++ src/TGIGlobals.cpp	Tue Dec 29 08:10:51 2009
+@@ -238,7 +238,7 @@
+ 	mmSelectMode(MM_MODE_A);
+ 
+ 	TGIGlobals::Trace("mmSoundBankInFile"); 
+-    mmSoundBankInFiles("/dstroydata/soundbank.bin");
++    mmSoundBankInFiles("${PREFIX}/share/dstroy/soundbank.bin");
+ 	TGIGlobals::Trace("mmSoundBankInFile done "); 
+ #endif
+ 

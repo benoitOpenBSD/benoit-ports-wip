@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/DstroyGlobals.h.orig	Tue Dec 29 08:00:53 2009
++++ src/DstroyGlobals.h	Tue Dec 29 08:01:44 2009
+@@ -27,7 +27,7 @@
+ 
+ #ifndef DATADIR
+ 	#ifndef __NDS__
+-		#define DATADIR "./dstroydata"
++		#define DATADIR "${PREFIX}/share/dstroy"
+ 	#else
+ 		#define DATADIR "/dstroydata" //pour NDS, les ressources doivent etre dans la racine de la carte
+ 	#endif
