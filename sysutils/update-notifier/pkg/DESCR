@@ -1,0 +1,5 @@
+update-notifier is a desktop daemon which regularly checks a given
+OpenBSD mirror for the presence of a newer snapshot, and shows a
+systray icon in this case. Timestamps for newer package/base/X
+snapshots are shown in a GTK tooltip when hovering mouse over the
+systray icon.

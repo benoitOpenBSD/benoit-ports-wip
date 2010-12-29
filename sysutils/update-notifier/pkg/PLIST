@@ -1,0 +1,9 @@
+@comment $OpenBSD$
+bin/update-notifier
+share/doc/update-notifier/
+share/doc/update-notifier/README
+share/examples/update-notifier/
+@sample ${SYSCONFDIR}/xdg/
+@sample ${SYSCONFDIR}/xdg/autostart/
+share/examples/update-notifier/update-notifier.desktop
+@sample ${SYSCONFDIR}/xdg/autostart/update-notifier.desktop
