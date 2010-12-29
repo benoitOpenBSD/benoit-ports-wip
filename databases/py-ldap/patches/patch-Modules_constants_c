@@ -1,0 +1,13 @@
+$OpenBSD$
+--- Modules/constants.c.orig	Mon Nov  1 15:44:20 2010
++++ Modules/constants.c	Mon Nov  1 15:45:39 2010
+@@ -181,7 +181,9 @@
+ #ifdef LDAP_OPT_X_TLS_CRLCHECK
+   /* only available if OpenSSL supports it => might cause backward compability problems */
+ 	add_int(d,OPT_X_TLS_CRLCHECK);
++#ifdef LDAP_OPT_X_TLS_CRLFILE
+ 	add_int(d,OPT_X_TLS_CRLFILE);
++#endif
+ 	add_int(d,OPT_X_TLS_CRL_NONE);
+ 	add_int(d,OPT_X_TLS_CRL_PEER);
+ 	add_int(d,OPT_X_TLS_CRL_ALL);

@@ -1,0 +1,14 @@
+$OpenBSD$
+--- setup.cfg.orig	Thu Aug  5 16:44:52 2010
++++ setup.cfg	Mon Nov  1 15:32:19 2010
+@@ -2,8 +2,8 @@
+ extra_objects = 
+ extra_compile_args = 
+ libs = ldap_r lber sasl2 ssl crypto
+-library_dirs = /usr/local/openldap-2.3/lib
+-include_dirs = /usr/local/openldap-2.3/include /usr/include/sasl
++library_dirs = ${LOCALBASE}/lib
++include_dirs = ${LOCALBASE}/include ${LOCALBASE}/include/sasl
+ 
+ [egg_info]
+ tag_build = 

@@ -1,0 +1,41 @@
+@comment $OpenBSD: PLIST-examples,v 1.6 2010/08/30 20:59:41 fgsch Exp $
+@pkgpath databases/py-ldap,-examples,python2.4
+@pkgpath databases/py-ldap,-examples,python2.5
+@pkgpath databases/py-ldap,-examples,python2.6
+share/examples/py-ldap/
+share/examples/py-ldap/Demo/
+share/examples/py-ldap/Demo/.cvsignore
+share/examples/py-ldap/Demo/Lib/
+share/examples/py-ldap/Demo/Lib/.cvsignore
+share/examples/py-ldap/Demo/Lib/ldap/
+share/examples/py-ldap/Demo/Lib/ldap/.cvsignore
+share/examples/py-ldap/Demo/Lib/ldap/async/
+share/examples/py-ldap/Demo/Lib/ldap/async/.cvsignore
+share/examples/py-ldap/Demo/Lib/ldap/async/deltree.py
+share/examples/py-ldap/Demo/Lib/ldap/async/ldifwriter.py
+share/examples/py-ldap/Demo/Lib/ldap/async/sizelimit.py
+share/examples/py-ldap/Demo/Lib/ldapurl/
+share/examples/py-ldap/Demo/Lib/ldapurl/.cvsignore
+share/examples/py-ldap/Demo/Lib/ldapurl/urlsearch.py
+share/examples/py-ldap/Demo/Lib/ldif/
+share/examples/py-ldap/Demo/Lib/ldif/.cvsignore
+share/examples/py-ldap/Demo/Lib/ldif/ldifcopy.py
+share/examples/py-ldap/Demo/initialize.py
+share/examples/py-ldap/Demo/ldapcontrols.py
+share/examples/py-ldap/Demo/matchedvalues.py
+share/examples/py-ldap/Demo/ms_ad_bind.py
+share/examples/py-ldap/Demo/options.py
+share/examples/py-ldap/Demo/page_control.py
+share/examples/py-ldap/Demo/passwd_ext_op.py
+share/examples/py-ldap/Demo/pickle_ldapobject.py
+share/examples/py-ldap/Demo/pyasn1/
+share/examples/py-ldap/Demo/pyasn1/README
+share/examples/py-ldap/Demo/pyasn1/prereadcontrol.py
+share/examples/py-ldap/Demo/reconnect.py
+share/examples/py-ldap/Demo/rename.py
+share/examples/py-ldap/Demo/resiter.py
+share/examples/py-ldap/Demo/sasl_bind.py
+share/examples/py-ldap/Demo/schema.py
+share/examples/py-ldap/Demo/schema_tree.py
+share/examples/py-ldap/Demo/simple.py
+share/examples/py-ldap/Demo/simplebrowse.py
