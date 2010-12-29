@@ -1,0 +1,11 @@
+--- src/misc.h.orig	Mon Nov 23 08:34:14 2009
++++ src/misc.h	Sun Dec 13 01:20:15 2009
+@@ -47,7 +47,7 @@
+ #include <boost/date_time/posix_time/conversion.hpp>
+ 
+ #ifndef Q_WS_WIN
+-#ifdef Q_WS_MAC
++#if defined(Q_WS_MAC) || defined(__OpenBSD__)
+ #include <sys/param.h>
+ #include <sys/mount.h>
+ #else
