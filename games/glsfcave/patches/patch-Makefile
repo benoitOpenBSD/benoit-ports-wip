@@ -1,0 +1,16 @@
+$OpenBSD$
+--- Makefile.orig	Sat Aug  9 08:03:04 2008
++++ Makefile	Mon Dec 21 00:11:17 2009
+@@ -1,8 +1,8 @@
+-LDFLAGS=-L/usr/X11R6/lib -lglut -lGLU -lGL
+-CFLAGS=-O2
++LDFLAGS=-lglut -lGLU -lGL -lXmu -lXi -lXext -lX11 -lm -L${X11BASE}/lib -L${LOCALBASE}/lib
++#CFLAGS=-O2
+ # if you do not want sound support using ALUT comment this out:
+-CPPFLAGS+=-DGLSFCAVE_SOUND 
+-LDFLAGS+=-lalut
++#CPPFLAGS+=-DGLSFCAVE_SOUND 
++#LDFLAGS+=-lalut
+ 
+ glsfcave: glsfcave.o
+ 	$(CC) $(CFLAGS) -o glsfcave glsfcave.o $(LDFLAGS) 
