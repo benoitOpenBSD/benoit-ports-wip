@@ -1,0 +1,13 @@
+$OpenBSD$
+--- include/cssysdef.h~	Tue Apr 22 14:16:43 2008
++++ include/cssysdef.h	Sun Dec 27 02:00:34 2009
+@@ -678,9 +678,6 @@
+ #endif
+ 
+ #include <stdlib.h>
+-#ifdef CS_HAVE_MALLOC_H
+-#include <malloc.h>
+-#endif
+ #include <new>
+ 
+ /**\name Platform-specific memory allocation

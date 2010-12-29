@@ -1,0 +1,360 @@
++++ Sun Dec 27 02:19:27 CET 2009
+===>  Checking files for crystalspace-1.2.1
+`/usr/ports/distfiles/crystalspace-src-1.2.1.tar.bz2' is up to date.
+>> (SHA256) crystalspace-src-1.2.1.tar.bz2: OK
+===>  Extracting for crystalspace-1.2.1
+===>  Patching for crystalspace-1.2.1
+===>  Configuring for crystalspace-1.2.1
+checking build system type... x86_64-unknown-openbsd4.6
+checking host system type... x86_64-unknown-openbsd4.6
+checking whether to enable -mno-cygwin... no
+checking for gcc... cc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether cc accepts -g... yes
+checking for cc option to accept ISO C89... none needed
+checking if cc accepts -pipe... -pipe
+checking whether we are using the GNU C++ compiler... yes
+checking whether c++ accepts -g... yes
+checking how to treat C++ warnings as errors... -Werror
+checking how to enable C++ PIC generation... -fPIC
+checking for ld... ld
+checking if binutils version >= 2.17... no (version 2.15)
+checking if binutils version >= 2.16.91... no
+checking if -shared is accepted... -shared -fPIC
+checking if -soname is accepted... yes
+checking if response files are accepted... no
+checking how to run the C preprocessor... cc -E
+checking how to run the C++ preprocessor... c++ -E
+checking for ranlib... ranlib
+checking for dlltool... no
+checking for dllwrap... no
+checking for windres... no
+checking for strings... strings
+checking for objcopy... objcopy
+checking for libtool... /usr/local/bin/libtool
+checking classification of /usr/local/bin/libtool... gnu
+checking how to create a directory... mkdir
+checking how to create a directory tree... mkdir -p
+checking for install... /usr/bin/install -c -o root -g bin
+checking whether ln -s works... yes
+checking for texi2dvi... texi2dvi
+checking for texi2pdf... texi2pdf
+checking for dvips... no
+checking for dvipdf... dvipdf
+checking for makeinfo... makeinfo
+checking for doxygen... no
+checking for dot... no
+checking for flex... flex
+checking for bison... bison
+checking if bison version >= 1.35... yes (version 2.3)
+checking for hhc... no
+checking for swig... swig
+checking if swig version >= 1.3.21... yes (version 1.3.36)
+checking for rsvg... rsvg
+checking for icotool... no
+checking for convert... no
+checking for jam... /usr/local/bin/jam
+checking if jam version >= 2.4... yes (version 2.5)
+checking for gnumake... no
+checking for gmake... gmake
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking cmath usability... yes
+checking cmath presence... yes
+checking for cmath... yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking ieeefp.h usability... yes
+checking ieeefp.h presence... yes
+checking for ieeefp.h... yes
+checking for pow in -lm... yes
+checking for cosf in -lm... yes
+checking for cosf in -lmx... no
+checking for dlopen in -ldl... no
+checking for gethostbyname in -lnsl... no
+checking for pthread... yes
+checking for pthread recursive mutexes... PTHREAD_MUTEX_RECURSIVE
+checking for pthread_atfork support... yes
+checking whether to link base g++ libraries statically... no
+checking for RTLD_NOW... yes
+checking for perl5... no
+checking for perl... perl
+checking how to suppress C++ `long double' warnings... no
+checking for python... no
+checking for java... no
+checking for javac... no
+checking for ant... no
+checking for STL... yes
+checking how to enable C++ compilation warnings... -Wall
+checking how to treat C++ warnings as errors... -Werror
+checking how to suppress C++ unused variable warnings... -Wno-unused
+checking how to suppress C++ uninitialized variable warnings... -Wno-uninitialized
+checking how to suppress C++ unknown #pragma warnings... -Wno-unknown-pragmas
+checking how to suppress C++ `long double' warnings... (cached) no
+checking how to suppress C++ non-virtual destructor warnings... -Wno-non-virtual-dtor
+checking for flag to disable string-aliasing... -fno-strict-aliasing
+checking how to enable C++ exceptions... -fexceptions -fno-omit-frame-pointer
+checking how to disable C++ exceptions... -fno-exceptions
+checking how to enforce C++ standards conformance... -ansi -pedantic
+checking if -force_cpusubtype_ALL is needed... no
+checking how to export all dynamic symbols... -Wl,-E
+checking if --kill-at is accepted... no
+checking if reporting missing symbols is supported... -Wl,-z,defs
+checking if missing symbols can be reported as warnings... -Wl,--warn-unresolved-symbols
+checking how to disable function inlining... -fno-inline-functions
+checking how to treat C warnings as errors... -Werror
+checking how to treat C++ warnings as errors... (cached) -Werror
+checking how to treat C++ warnings as errors... (cached) -Werror
+checking how to enable C++ PIC generation... (cached) -fPIC
+checking for inline visibility flag... no
+checking for hidden symbol visibility flag... (cached) no
+checking for default symbol visibility flag... -fvisibility=default
+checking how to declare hidden visibility... __attribute__((visibility("hidden")))
+checking how to declare default visibility... __attribute__((visibility("default")))
+checking whether to use CPU-specific optimizations... minimum
+checking for code generation flags... no
+checking how to enable optimizations... -O3
+checking if -fomit-frame-pointer is accepted... -fomit-frame-pointer
+checking if -ffast-math is accepted... -ffast-math
+checking build mode... optimize
+checking if binutils version >= 2.17... (cached) no (version 2.15)
+checking whether to split debug information... no
+checking how to enable debug mode debugging symbols... -g3
+checking whether to enable debug information in optimize mode... no
+checking if -I/usr/local/include is usable... -I/usr/local/include
+checking for va_copy... yes
+checking for __va_copy... yes
+checking for pkg-config... pkg-config
+checking if pkg-config recognizes x11... yes
+checking for x11-config... no
+checking for libx11... yes
+checking if pkg-config recognizes xext... yes
+checking for xext-config... no
+checking for libxext... yes
+checking if pkg-config recognizes xxf86vm... yes
+checking for xxf86vm-config... no
+checking if pkg-config recognizes Xxf86vm... no
+checking for Xxf86vm-config... no
+checking for libxxf86vm... yes
+checking if pkg-config recognizes xaw7... yes
+checking for xaw7-config... no
+checking if pkg-config recognizes Xaw... no
+checking for Xaw-config... no
+checking for libxaw7... yes
+checking for int32... no
+checking for windows.h... no
+checking for OpenGL... yes
+checking for GLhandleARB... yes
+checking for GLcharARB... yes
+checking for GLchar... yes
+checking for GLU... yes
+checking for GLX... yes
+checking for GLX extensions... yes
+checking if pkg-config recognizes z... no
+checking for z-config... no
+checking if pkg-config recognizes zlib... no
+checking for zlib-config... no
+checking for libz... yes
+checking if pkg-config recognizes png... no
+checking for png-config... no
+checking if pkg-config recognizes libpng... yes
+checking for libpng-config... libpng-config
+checking for libpng... yes
+checking if pkg-config recognizes jpeg... no
+checking for jpeg-config... no
+checking if pkg-config recognizes libjpeg... no
+checking for libjpeg-config... no
+checking for libjpeg... yes
+checking if pkg-config recognizes lcms... yes
+checking for lcms-config... no
+checking for liblcms... yes
+checking if pkg-config recognizes mng... no
+checking for mng-config... no
+checking if pkg-config recognizes libmng... no
+checking for libmng-config... no
+checking for libmng... yes
+checking if pkg-config recognizes ogg... yes
+checking for ogg-config... no
+checking for libogg... yes
+checking if pkg-config recognizes vorbis... yes
+checking for vorbis-config... no
+checking for libvorbis... yes
+checking if pkg-config recognizes vorbisfile... yes
+checking for vorbisfile-config... no
+checking for libvorbisfile... yes
+checking if pkg-config recognizes 3ds... no
+checking for 3ds-config... no
+checking if pkg-config recognizes lib3ds... no
+checking for lib3ds-config... no
+checking if pkg-config recognizes lib3ds-120... no
+checking for lib3ds-120-config... no
+checking for lib3ds... no
+checking if pkg-config recognizes ode... no
+checking for ode-config... no
+checking for libode... no
+checking if pkg-config recognizes bullet... no
+checking for bullet-config... no
+checking for libbullet... no
+checking for OpenAL... no
+checking if pkg-config recognizes freetype2... yes
+checking for freetype2-config... no
+checking if pkg-config recognizes freetype... no
+checking for freetype-config... freetype-config
+checking for libfreetype2... yes
+checking if freetype2 is sufficiently recent... yes
+checking if pkg-config recognizes cal3d... no
+checking for cal3d-config... no
+checking for libcal3d... no
+checking if pkg-config recognizes sdl... yes
+checking for sdl-config... sdl-config
+checking for libsdl... yes
+checking if SDL is sufficiently recent... yes
+checking if pkg-config recognizes wx... no
+checking for wx-config... wx-config
+checking for libwx... yes
+checking if wxWidgets is built with OpenGL support... yes
+checking if pkg-config recognizes CEGUI... no
+checking for CEGUI-config... no
+checking if pkg-config recognizes CEGUIBase... no
+checking for CEGUIBase-config... no
+checking for libCEGUI... no
+checking for GNU/Linux joystick API... no
+checking if pkg-config recognizes Cg... no
+checking for Cg-config... no
+checking if pkg-config recognizes cg... no
+checking for cg-config... no
+checking if pkg-config recognizes CG... no
+checking for CG-config... no
+checking for libCg... no
+checking soundcard.h usability... yes
+checking soundcard.h presence... yes
+checking for soundcard.h... yes
+checking if pkg-config recognizes jackasyn... no
+checking for jackasyn-config... no
+checking for libjackasyn... no
+checking if pkg-config recognizes asound... no
+checking for asound-config... no
+checking for libasound... no
+checking if pkg-config recognizes caca... no
+checking for caca-config... no
+checking if pkg-config recognizes libcaca... no
+checking for libcaca-config... no
+checking for libcaca... no
+checking for regexp support... yes
+checking for backtrace... no
+checking for setenv... yes
+checking for _aligned_malloc... no
+checking if <malloc.h> can be included... yes
+checking cxxabi.h usability... yes
+checking cxxabi.h presence... yes
+checking for cxxabi.h... yes
+checking for abi::__cxa_demangle... yes
+checking for perl5... (cached) perl
+checking for TemplateToolkit... no
+checking for ttree... no
+checking if pkg-config recognizes cppunit... no
+checking for cppunit-config... no
+checking for libcppunit... no
+checking if plugins require main()... yes
+checking for long... yes
+checking size of long... 8
+checking whether byte ordering is bigendian... no
+checking for stdint.h... (cached) yes
+checking for INT64_C... yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for intptr_t... yes
+checking for intmax_t... yes
+checking for inttypes.h... (cached) yes
+checking for PRIx99 macros... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking for wint_t... yes
+checking for wchar_t... yes
+checking for wcslen... yes
+checking for fputws... yes
+checking for fwide... yes
+checking for wcsrtombs... yes
+checking for wchar_t... (cached) yes
+checking size of wchar_t... 4
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking for MAXPATHLEN... yes
+checking for winsock.h... no
+checking for unistd.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking for socket support... yes
+checking for socklen_t... yes
+checking byteswap.h usability... no
+checking byteswap.h presence... no
+checking for byteswap.h... no
+checking how to declare deprecation... __attribute__((deprecated))
+checking how to declare const function... __attribute__((const))
+checking how to declare pure function... __attribute__((pure))
+checking how to declare allocation function... __attribute__((malloc))
+checking if assembly-coded csQsqrt() compiles... yes
+checking for isfinite... no
+checking for finitef... yes
+checking for finite... yes
+checking for _finite... no
+checking for std::isfinite... yes
+checking for isnan... no
+checking for isnanf... yes
+checking for _isnan... no
+checking for std::isnan... yes
+checking for isnormal... no
+checking for normalf... no
+checking for std::isnormal... yes
+checking elf.h usability... no
+checking elf.h presence... no
+checking for elf.h... no
+checking whether to embed plugin meta-information... no
+checking whether to enable ptmalloc... yes
+checking whether to use extensive memory debugger... no
+checking whether to use memory tracker... no
+checking whether to use reference tracker... no
+checking whether to use leak guard... no
+checking whether to build shared libraries... yes
+checking whether to emulate makefiles... yes
+configure: creating ./config.status
+config.status: creating Jamfile
+config.status: executing include/csconfig.h commands
+config.status: executing Jamconfig commands
+config.status: executing Makefile commands
+--- Sun Dec 27 02:21:01 CET 2009
