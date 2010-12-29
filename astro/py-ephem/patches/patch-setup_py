@@ -1,0 +1,11 @@
+--- setup.py.orig	Sun Oct  4 10:21:41 2009
++++ setup.py	Sun Oct  4 10:22:56 2009
+@@ -46,7 +46,7 @@
+         ],
+       packages = [ 'ephem', 'ephem.tests' ],
+       package_dir = { '': 'src' },
+-      package_data = { 'ephem': ['doc/*.rst',
++      package_data = { 'ephem': [
+                                  'tests/jpl/*.txt',
+                                  'tests/usno/*.txt',
+                                  ],},
