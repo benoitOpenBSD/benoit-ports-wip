@@ -1,0 +1,13 @@
+ooc is an object-oriented programming language which is implemented with a
+source-to-source translator to pure C99. It supports classes, abstract
+functions, foreach, ranges, etc. It intends to be modern, modular,
+extensible, yet simple and fast.
+
+ooc is trying to reconcile high-level concepts from Java/C# and the speed
+and small footprint of C. It somehow falls into the same category as Vala,
+except that Vala is based on GLib, while ooc is based only on the standard C
+library, making it very lightweight.
+
+ooc is for people thriving for object orientation and other high level
+features (e.g. a garbage collector, foreaches, imports vs includes), without
+willing to bear the weight of C++ or the Java/C# runtime environments.
