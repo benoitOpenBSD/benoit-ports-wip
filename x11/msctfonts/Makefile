@@ -1,0 +1,41 @@
+# $OpenBSD$
+
+COMMENT =		Microsoft ClearType fonts
+
+DISTNAME =		PowerPointViewer.exe
+EXTRACT_SUFX =
+PKGNAME =		msctfonts-1.0
+CATEGORIES =		x11
+
+HOMEPAGE =		http://download.microsoft.com/download
+
+# No redistribution
+PERMIT_PACKAGE_CDROM =	No redistribution
+PERMIT_PACKAGE_FTP =	No redistribution
+PERMIT_DISTFILES_CDROM =No redistribution
+PERMIT_DISTFILES_FTP =	No redistribution
+
+MASTER_SITES =		${HOMEPAGE}/f/5/a/f5a3df76-d856-4a61-a6bd-722f52a5be26/
+
+BUILD_DEPENDS =		archivers/cabextract
+
+NO_BUILD =		Yes
+NO_REGRESS =		Yes
+PKG_ARCH =		*
+
+
+INST_DIR =		${PREFIX}/lib/X11/fonts/msctfonts
+
+EXTRACT_CASES =		*.exe) cabextract --lowercase --quiet \
+			--directory=${WRKDIST} -F ppviewer.cab ${DISTDIR}/${DISTNAME} ;;
+
+post-extract:
+	@cabextract --lowercase -F '*.TT[FC]' --directory=${WRKDIST} \
+		${WRKDIST}/ppviewer.cab
+	@mv ${WRKDIST}/cambria.ttc ${WRKDIST}/cambria.ttf
+
+do-install:
+	${INSTALL_DATA_DIR} ${INST_DIR}
+	${INSTALL_DATA} ${WRKSRC}/*.ttf ${INST_DIR}
+
+.include <bsd.port.mk>
