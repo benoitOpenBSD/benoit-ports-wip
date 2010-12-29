@@ -1,0 +1,11 @@
+$OpenBSD$
+--- libusal/scsi-remote.c.orig	Tue May 26 13:06:39 2009
++++ libusal/scsi-remote.c	Tue May 26 13:07:04 2009
+@@ -1027,6 +1027,7 @@ rscsiaborted(usalp, fd)
+  * and make sure that we use sigset() instead of signal() if possible.
+  */
+ #include <waitdefs.h>
++#include <sys/socket.h>
+ LOCAL int
+ _rcmdrsh(ahost, inport, locuser, remuser, cmd, rsh)
+ 	char		**ahost;

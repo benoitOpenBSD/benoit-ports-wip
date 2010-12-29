@@ -1,0 +1,13 @@
+$OpenBSD$
+--- include/AddScgBits.cmake.orig	Thu Nov 23 19:57:28 2006
++++ include/AddScgBits.cmake	Tue May 26 13:49:12 2009
+@@ -57,9 +57,5 @@ struct sched_param scp;
+ SET(CMAKE_REQUIRED_LIBRARIES )
+    CHECK_C_SOURCE_COMPILES("${TESTSRC}" LIBC_SCHED)
+ 
+-IF(NOT LIBC_SCHED)
+-   LIST(APPEND EXTRA_LIBS -lrt)
+-   #MESSAGE("Using librt for realtime functions")
+-ENDIF(NOT LIBC_SCHED)
+ 
+ ENDIF(NOT GUARD_SCGCONFIG)

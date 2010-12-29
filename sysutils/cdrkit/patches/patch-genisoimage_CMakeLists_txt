@@ -1,0 +1,24 @@
+--- genisoimage/CMakeLists.txt.orig	Sun Jan  6 04:01:25 2008
++++ genisoimage/CMakeLists.txt	Wed May 27 00:38:28 2009
+@@ -3,7 +3,7 @@
+ INCLUDE(../include/AddScgBits.cmake)
+ INCLUDE(../include/AddSchilyBits.cmake)
+ 
+-INCLUDE_DIRECTORIES(../include ../libhfs_iso ../wodim ${CMAKE_BINARY_DIR})
++INCLUDE_DIRECTORIES(../include ../libhfs_iso ../wodim ${CMAKE_BINARY_DIR} ${LOCALBASE}/include)
+ 
+ INCLUDE(CheckIncludeFiles)
+ CHECK_INCLUDE_FILES("magic.h" USE_MAGIC)
+@@ -36,10 +36,10 @@
+  
+ 
+ #SET_SOURCE_FILES_PROPERTIES(${MKISOFS_MOST_SRCS} PROPERTIES )
+-LINK_DIRECTORIES(../libhfs_iso ../librols ../libusal ../libunls  ../wodim)
++LINK_DIRECTORIES(../libhfs_iso ../librols ../libusal ../libunls  ../wodim ${LOCALBASE}/lib)
+ 
+ ADD_EXECUTABLE (genisoimage genisoimage.c ${MKISOFS_MOST_SRCS})
+-TARGET_LINK_LIBRARIES(genisoimage wodimstuff hfs_iso  ${MAGICLIBS} c unls z bz2 ${EXTRA_LIBICONV} ${EXTRA_LIBS})
++TARGET_LINK_LIBRARIES(genisoimage wodimstuff hfs_iso  -L${LOCALBASE}/lib ${MAGICLIBS} c unls z bz2 ${EXTRA_LIBICONV} ${EXTRA_LIBS})
+ 
+ # common lib set and genisoimage source parts for the rest
+ LINK_LIBRARIES(wodimstuff ${EXTRA_LIBS}  unls ${EXTRA_LIBICONV} )
