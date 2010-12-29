@@ -1,0 +1,21 @@
+--- src/airserv-ng.c.orig	Sat Jun  6 02:18:38 2009
++++ src/airserv-ng.c	Tue Aug 11 22:03:16 2009
+@@ -434,12 +434,12 @@ static void handle_card(struct sstate *ss)
+     if (rd >= 0)
+     	rd += sizeof(*ri);
+ 
+-	ri->ri_mactime = __cpu_to_be64(ri->ri_mactime);
+-	ri->ri_power = __cpu_to_be32(ri->ri_power);
+-	ri->ri_noise = __cpu_to_be32(ri->ri_noise);
+-	ri->ri_channel = __cpu_to_be32(ri->ri_channel);
+-	ri->ri_rate = __cpu_to_be32(ri->ri_rate);
+-	ri->ri_antenna = __cpu_to_be32(ri->ri_antenna);
++	ri->ri_mactime = aircrack_htonl64(ri->ri_mactime);
++	ri->ri_power = htonl(ri->ri_power);
++	ri->ri_noise = htonl(ri->ri_noise);
++	ri->ri_channel = htonl(ri->ri_channel);
++	ri->ri_rate = htonl(ri->ri_rate);
++	ri->ri_antenna = htonl(ri->ri_antenna);
+ 
+ 	c = ss->ss_clients.c_next;
+ 	while (c != &ss->ss_clients) {

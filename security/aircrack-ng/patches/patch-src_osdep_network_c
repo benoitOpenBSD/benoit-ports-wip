@@ -1,0 +1,21 @@
+--- src/osdep/network.c.orig	Tue Sep  1 11:28:10 2009
++++ src/osdep/network.c	Mon Sep 28 23:10:30 2009
+@@ -293,12 +293,12 @@
+ 	/* XXX */
+ 	if (ri) {
+ 		// re-assemble 64-bit integer
+-		ri->ri_mactime = __be64_to_cpu((uint64_t)buf[0] << 32 || buf[1] );
+-		ri->ri_power = __be32_to_cpu(buf[2]);
+-		ri->ri_noise = __be32_to_cpu(buf[3]);
+-		ri->ri_channel = __be32_to_cpu(buf[4]);
+-		ri->ri_rate = __be32_to_cpu(buf[5]);
+-		ri->ri_antenna = __be32_to_cpu(buf[6]);
++		ri->ri_mactime = aircrack_ntohl64((uint64_t)buf[0] << 32 || buf[1] );
++		ri->ri_power = ntohl(buf[2]);
++		ri->ri_noise = ntohl(buf[3]);
++		ri->ri_channel = ntohl(buf[4]);
++		ri->ri_rate = ntohl(buf[5]);
++		ri->ri_antenna = ntohl(buf[6]);
+ 	}
+ 	l -= sz;
+ 	assert(l > 0);

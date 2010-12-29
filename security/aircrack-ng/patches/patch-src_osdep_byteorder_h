@@ -1,0 +1,13 @@
+--- src/osdep/byteorder.h.orig	Tue Aug 11 22:28:57 2009
++++ src/osdep/byteorder.h	Tue Aug 11 22:29:44 2009
+@@ -136,7 +136,9 @@
+ 	 * -------
+ 	 */
+ 	#if defined(__sparc__)
+-	#include <sys/byteorder.h>
++	#if !defined(__OpenBSD__)
++	  #include <sys/byteorder.h>
++        #endif
+ 	#include <sys/types.h>
+ 	#include <unistd.h>
+ 
