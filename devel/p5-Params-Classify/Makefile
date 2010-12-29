@@ -19,4 +19,7 @@ USE_GROFF =		Yes
 
 CONFIGURE_STYLE =	modbuild
 
+REGRESS_DEPENDS =	devel/p5-Test-Pod-Coverage \
+			devel/p5-Test-Pod
+
 .include <bsd.port.mk>
