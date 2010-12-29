@@ -16,7 +16,8 @@ PERMIT_DISTFILES_FTP =	Yes
 MODULES =		cpan
 
 BUILD_DEPENDS =		security/p5-Crypt-Rijndael \
-			math/p5-Data-Float
+			math/p5-Data-Float \
+			www/p5-libwww
 RUN_DEPENDS =		${BUILD_DEPENDS}
 
 USE_GROFF =		Yes
