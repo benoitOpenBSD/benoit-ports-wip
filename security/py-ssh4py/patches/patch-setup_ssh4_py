@@ -1,0 +1,11 @@
+--- setup_ssh4.py.orig	Thu Oct  1 11:12:56 2009
++++ setup_ssh4.py	Thu Oct  1 11:14:14 2009
+@@ -60,7 +60,7 @@
+ 		"-DSHA1_ASM", "-DRMD160_ASM", "-DOPENSSL_USE_APPLINK"]
+ 	# ExtraLinkArgs = ["-nodefaultlib"]
+ else:
+-    IncludeDirs = ['libssh2-0.14/include']
++    IncludeDirs = ['%%LOCALBASE%%/include']
+     LibraryDirs = ['libssh2-0.14/src']
+     Libraries = ['ssl', 'crypto', 'ssh2', 'z']
+ if sys.platform == 'darwin':
