@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/sound_oss.c.orig	Mon Mar 23 16:19:28 2009
++++ src/sound_oss.c	Mon Mar 23 16:19:41 2009
+@@ -31,7 +31,7 @@
+ #include <unistd.h>
+ #include <fcntl.h>
+ #include <sys/ioctl.h>
+-#include <sys/soundcard.h>
++#include <soundcard.h>
+ /* XXX: #include <machine/soundcard.h> */
+ 
+ #include "atari.h"
