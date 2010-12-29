@@ -1,0 +1,12 @@
+$OpenBSD$
+--- doc/Makefile.in.orig	Sun Nov  9 20:22:16 2008
++++ doc/Makefile.in	Sat Dec 19 11:41:28 2009
+@@ -140,7 +140,7 @@
+ builddir = @builddir@
+ datadir = @datadir@
+ datarootdir = @datarootdir@
+-docdir = $(prefix)/share/doc/@PACKAGE@-@VERSION@
++docdir = $(prefix)/share/doc/prboom
+ dvidir = @dvidir@
+ exec_prefix = @exec_prefix@
+ host = @host@
