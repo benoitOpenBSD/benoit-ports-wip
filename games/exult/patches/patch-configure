@@ -1,0 +1,47 @@
+--- configure.orig	Wed Jun  9 08:28:39 2004
++++ configure	Sun Dec 27 00:02:05 2009
+@@ -2751,7 +2751,7 @@
+   fi
+ else
+   if test "$GCC" = yes; then
+-    CFLAGS="-O2"
++    CFLAGS=
+   else
+     CFLAGS=
+   fi
+@@ -3961,7 +3961,7 @@
+   fi
+ else
+   if test "$GXX" = yes; then
+-    CXXFLAGS="-O2"
++    CXXFLAGS=
+   else
+     CXXFLAGS=
+   fi
+@@ -4351,7 +4351,7 @@
+   fi
+ else
+   if test "$GXX" = yes; then
+-    CXXFLAGS="-O2"
++    CXXFLAGS=
+   else
+     CXXFLAGS=
+   fi
+@@ -13598,7 +13598,7 @@
+ else
+ 	echo "$as_me:$LINENO: result: no" >&5
+ echo "${ECHO_T}no" >&6
+-	DEBUG_FLAGS="-O2"
++	DEBUG_FLAGS=
+ fi
+ 
+ # optimized debugging mode
+@@ -13619,7 +13619,7 @@
+ #define DEBUG 1
+ _ACEOF
+ 
+-	DEBUG_FLAGS="-g -O2 -fno-default-inline -fno-inline"
++	DEBUG_FLAGS="-g -fno-default-inline -fno-inline"
+ else
+ 	echo "$as_me:$LINENO: result: no" >&5
+ echo "${ECHO_T}no" >&6

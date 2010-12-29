@@ -1,0 +1,31 @@
+@comment $OpenBSD$
+@bin bin/expack
+@bin bin/exult
+@bin bin/shp2pcx
+@bin bin/splitshp
+@bin bin/textpack
+@bin bin/ucc
+@bin bin/ucxt
+@man man/man1/expack.1
+@man man/man1/ipack.1
+@man man/man1/shp2pcx.1
+@man man/man1/splitshp.1
+@man man/man1/textpack.1
+@man man/man6/exult.6
+share/applications/exult.desktop
+share/exult/
+share/exult/estudio/
+share/exult/estudio/new/
+share/exult/exult.flx
+share/exult/exult_bg.flx
+share/exult/exult_si.flx
+share/exult/exultmsg.txt
+share/exult/midisfx.flx
+share/exult/u7bgintrinsics.data
+share/exult/u7misc.data
+share/exult/u7opcodes.data
+share/exult/u7siintrinsics.data
+share/icons/
+share/icons/exult.png
+@exec %D/bin/update-desktop-database
+@unexec-delete %D/bin/update-desktop-database
