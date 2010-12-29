@@ -1,0 +1,11 @@
+--- Makefile.in.orig	Tue Mar 10 23:44:25 2009
++++ Makefile.in	Tue Mar 10 23:45:14 2009
+@@ -58,7 +58,7 @@
+ CD = cd
+ COPY = cp
+ DEL = rm --force
+-MAKE = make
++MAKE = gmake
+ MKDIR = mkdir
+ MV = ./install-sh
+ 

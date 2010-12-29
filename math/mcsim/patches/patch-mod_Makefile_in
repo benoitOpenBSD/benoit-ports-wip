@@ -1,0 +1,30 @@
+--- mod/Makefile.in.orig	Fri Sep 19 14:27:12 2008
++++ mod/Makefile.in	Tue Mar 10 17:41:30 2009
+@@ -78,8 +78,8 @@
+ #
+ #>>>>  Define the COMPILER name and LINKER name here only.
+ 
+-CC = gcc
+-LINK = gcc
++#CC =
++LINK = $(CC)
+ 
+ #>>>>  Define PATHS
+ #	The include path should be a directory containing header
+@@ -121,14 +121,14 @@
+ #
+ #>>>> Include any special warning flags 
+ #
+-WARNINGS = -Wall
++WARNINGS = -ansi
+ 
+ 
+ #--------------------
+ #****  You shouldn't need to change these lines.  They are dependent
+ #****  only on the above setup.
+ 
+-CFLAGS = $(C_OPTIM_FLAG) $(C_DEBUG_FLAG) $(DEBUG_SYMBOLS) \
++CFLAGS += $(C_DEBUG_FLAG) $(DEBUG_SYMBOLS) \
+ 	 -I $(INCPATH) $(WARNINGS) -DLINUX -D_GNU_SOURCE 
+ 
+ CLFLAGS = $(L_OPTIM_FLAG) $(L_DEBUG_FLAG)

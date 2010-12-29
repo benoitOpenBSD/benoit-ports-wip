@@ -1,0 +1,83 @@
+--- sim/Makefile.in.orig	Mon Jan  5 14:58:36 2009
++++ sim/Makefile.in	Wed Mar 11 00:15:40 2009
+@@ -26,15 +26,15 @@
+ COPY  = cp
+ DEL   = rm
+ MKDIR = mkdir
+-MOD   = mod
++MOD   = ../mod/mod
+ 
+ 
+ #---------- Compiler ----------
+ #
+ #>>>>  Define the COMPILER name and LINKER name here only.
+ 
+-CC   = gcc
+-LINK = gcc
++#CC   = gcc
++LINK = $(CC)
+ 
+ 
+ #>>>>  Define PATHS
+@@ -42,6 +42,8 @@
+ #      files which are not in the standard include path.  Use `.'
+ #      if none is used.  
+ 
++MCSIM_HOME = ${WRKSRC}
++
+ INCPATH = $(MCSIM_HOME)/sim
+ OBJPATH = o
+ 
+@@ -50,12 +52,12 @@
+ #
+ #>>>> Include any special warning flags 
+ 
+-WARNINGS = -Wall -ansi
++WARNINGS = -ansi
+ 
+ 
+ #>>>> Libary link flags. Include libraries here
+ 
+-LFLAGS = -lgsl -lgslcblas -lm
++LFLAGS = -lgsl -lgslcblas -lm -fPIC -L ${LOCALBASE}/lib
+ 
+ 
+ #     The debug target does not used the shared library
+@@ -71,14 +73,14 @@
+ #     messages must be included by defining DEBUG. 
+ 
+ ifeq ($(MAKECMDGOALS),debug)
+-CFLAGS = -DDEBUG -g -I $(INCPATH) -I /usr/local/include $(WARNINGS)
+-CLFLAGS = -g -L /usr/local/lib
++CFLAGS = -DDEBUG -g -I $(INCPATH) -I ${LOCALBASE}/include $(WARNINGS)
++CLFLAGS = -g -L ${LOCALBASE}/lib
+ else
+-CFLAGS = -DNDEBUG -O -I $(INCPATH) -I /usr/local/include $(WARNINGS)
++CFLAGS = -DNDEBUG -O -I $(INCPATH) -I ${LOCALBASE}/include $(WARNINGS)
+ ifeq ($(MAKECMDGOALS),standalone)
+-CLFLAGS = -L /usr/local/lib
++CLFLAGS = -L ${LOCALBASE}/lib
+ else
+-CLFLAGS = -shared -L /usr/local/lib
++CLFLAGS = -shared -L ${LOCALBASE}/lib
+ endif
+ endif
+ 
+@@ -151,7 +153,7 @@
+ 
+ LIBMCSIMDEP = $(LIBMCSIMC)
+ 
+-MCSIMDEP = /usr/lib/libmcsim.so $(MODELT).c
++MCSIMDEP = ${LOCALBASE}/libmcsim.so $(MODELT).c
+ 
+ MCDEBUGDEP = $(wildcard $(INCPATH)/*.c) $(MODELT).c
+ 
+@@ -168,7 +170,7 @@
+ #**** and inference rules associated with them.
+ 
+ #     Make an executable using the shared library
+-one: $(MCSIMT) 
++one: $(MCSIMALONET)
+ 
+ #     Make a shared library with all .c files except model.c
+ lib install: $(LIBMCSIMT) 
