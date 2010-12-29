@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =	A full operating system stack fingerprinting suite
+COMMENT =	a full operating system stack fingerprinting suite
 
 DISTNAME =	Net-SinFP-2.07
 CATEGORIES =	net
