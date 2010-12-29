@@ -1,0 +1,23 @@
+--- Makefile.orig	Mon Mar 23 18:13:08 2009
++++ Makefile	Mon Mar 23 18:13:45 2009
+@@ -7,16 +7,16 @@
+ #	make		Makes the MOPAC file
+ #	make clean	Clean up disk to minimum config
+ #
+-FFLAGS	        = -O  -c  -static
++FFLAGS	        = -O2 -g -c -static
+ HDRS		= SIZES
+ SRCS:sh		= ls *.f 
+ OBJS		= $(SRCS:.f=.o)
+ SIZEDEPSRC:sh	= grep -l -i '      INCLUDE ' *.f; true
+ SIZEDEPEND	= $(SIZEDEPSRC:.f=.o)
+ 
+-mopac.exe:     	SIZES $(OBJS) 
+-		@echo -n "Loading mopac.exe ... "
+-		f77 -O $(OBJS) -o mopac.exe
++mopac:     	SIZES $(OBJS) 
++		@echo -n "Loading mopac ... "
++		f77 -O $(OBJS) -o mopac
+ 		@echo "done"
+ 
+ clean:
