@@ -1,0 +1,29 @@
+--- Imakefile.local.ori	Tue Jan  6 06:25:52 2009
++++ Imakefile.local	Tue Jan  6 06:24:59 2009
+@@ -51,6 +51,8 @@
+ XCOMM USER_XPMINCDIR = -I/usr/local/include
+ XCOMM
+ #define XPM
++USER_XPMLIBDIR = -L/usr/X11R6/lib
++USER_XPMINCDIR = -I/usr/X11R6/include
+ 
+ XCOMM ----------------------------------------------------------------------
+ XCOMM Feature: Use Jpeg images
+@@ -67,6 +69,8 @@
+ XCOMM USER_JPEGINCDIR = -I/usr/local/include
+ XCOMM
+ #define JPEG
++USER_JPEGLIBDIR = -L/usr/local/lib
++USER_JPEGINCDIR = -I/usr/local/include
+ 
+ XCOMM ----------------------------------------------------------------------
+ XCOMM Feature: Using M4 to process the ctwm configuration file
+@@ -79,7 +83,7 @@
+ XCOMM Feature: Support for Gnome extensions
+ XCOMM If you want to build with Gnome extensions, define GNOME.
+ XCOMM
+-#define GNOME
++#undef GNOME
+ 
+ XCOMM ----------------------------------------------------------------------
+ XCOMM Feature: Use GNU regex
