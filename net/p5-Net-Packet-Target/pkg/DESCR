@@ -1,0 +1,10 @@
+Net::Packet::Target object can be used to describe one target, or
+multiple targets. They are mainly used when you use some automated
+tasks you which to use on a range of IPs/ports.
+
+To describe multiple targets, you simply enter an IP range, or a
+port range, or the two. To describe a single target, you enter one
+IP address, and one port. You can also avoid totally ports, or avoid
+totally IPs, you do what you want.
+
+It also handles IP name resolution for IPv4 and IPv6, if available.

@@ -1,0 +1,8 @@
+@comment $OpenBSD$
+${P5SITE}/Net/Packet/Target.pm
+@man man/man3p/Net::Packet::Target.3p
+share/examples/p5-Net-Packet-Target/
+share/examples/p5-Net-Packet-Target/multi-targets-multi-ports.pl
+share/examples/p5-Net-Packet-Target/multi-targets-one-port.pl
+share/examples/p5-Net-Packet-Target/one-target.pl
+share/examples/p5-Net-Packet-Target/target-range.pl
