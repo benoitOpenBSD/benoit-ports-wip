@@ -1,0 +1,39 @@
+@comment $OpenBSD$
+%%SHARED%%
+include/libdrizzle/
+include/libdrizzle/column.h
+include/libdrizzle/column_client.h
+include/libdrizzle/column_server.h
+include/libdrizzle/command_client.h
+include/libdrizzle/command_server.h
+include/libdrizzle/conn.h
+include/libdrizzle/conn_client.h
+include/libdrizzle/conn_server.h
+include/libdrizzle/constants.h
+include/libdrizzle/drizzle.h
+include/libdrizzle/drizzle_client.h
+include/libdrizzle/drizzle_server.h
+include/libdrizzle/field_client.h
+include/libdrizzle/field_server.h
+include/libdrizzle/handshake_client.h
+include/libdrizzle/handshake_server.h
+include/libdrizzle/query.h
+include/libdrizzle/result.h
+include/libdrizzle/result_client.h
+include/libdrizzle/result_server.h
+include/libdrizzle/row_client.h
+include/libdrizzle/row_server.h
+include/libdrizzle/structs.h
+include/libdrizzle/visibility.h
+lib/libdrizzle.a
+lib/libdrizzle.la
+lib/pkgconfig/
+lib/pkgconfig/libdrizzle.pc
+share/examples/libdrizzle/
+@bin share/examples/libdrizzle/client
+@bin share/examples/libdrizzle/pipe_query
+@bin share/examples/libdrizzle/proxy
+@bin share/examples/libdrizzle/server
+@bin share/examples/libdrizzle/simple
+@bin share/examples/libdrizzle/simple_multi
+@bin share/examples/libdrizzle/sqlite_server
