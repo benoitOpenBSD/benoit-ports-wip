@@ -1,0 +1,49 @@
+@comment $OpenBSD$
+bin/sinfp.db
+bin/sinfp.pl
+${P5SITE}/Net/SinFP/
+${P5SITE}/Net/SinFP.pm
+${P5SITE}/Net/SinFP/Consts.pm
+${P5SITE}/Net/SinFP/DB/
+${P5SITE}/Net/SinFP/DB.pm
+${P5SITE}/Net/SinFP/DB/IpVersion.pm
+${P5SITE}/Net/SinFP/DB/Os.pm
+${P5SITE}/Net/SinFP/DB/OsVersion.pm
+${P5SITE}/Net/SinFP/DB/OsVersionChildren.pm
+${P5SITE}/Net/SinFP/DB/OsVersionFamily.pm
+${P5SITE}/Net/SinFP/DB/PatternBinary.pm
+${P5SITE}/Net/SinFP/DB/PatternTcpFlags.pm
+${P5SITE}/Net/SinFP/DB/PatternTcpMss.pm
+${P5SITE}/Net/SinFP/DB/PatternTcpOptions.pm
+${P5SITE}/Net/SinFP/DB/PatternTcpWindow.pm
+${P5SITE}/Net/SinFP/DB/Signature.pm
+${P5SITE}/Net/SinFP/DB/SystemClass.pm
+${P5SITE}/Net/SinFP/DB/Vendor.pm
+${P5SITE}/Net/SinFP/Result.pm
+${P5SITE}/Net/SinFP/Search.pm
+${P5SITE}/Net/SinFP/SinFP4.pm
+${P5SITE}/Net/SinFP/SinFP6.pm
+@man man/man3p/Net::SinFP.3p
+@man man/man3p/Net::SinFP::Consts.3p
+@man man/man3p/Net::SinFP::DB.3p
+@man man/man3p/Net::SinFP::DB::IpVersion.3p
+@man man/man3p/Net::SinFP::DB::Os.3p
+@man man/man3p/Net::SinFP::DB::OsVersion.3p
+@man man/man3p/Net::SinFP::DB::OsVersionChildren.3p
+@man man/man3p/Net::SinFP::DB::OsVersionFamily.3p
+@man man/man3p/Net::SinFP::DB::PatternBinary.3p
+@man man/man3p/Net::SinFP::DB::PatternTcpFlags.3p
+@man man/man3p/Net::SinFP::DB::PatternTcpMss.3p
+@man man/man3p/Net::SinFP::DB::PatternTcpOptions.3p
+@man man/man3p/Net::SinFP::DB::PatternTcpWindow.3p
+@man man/man3p/Net::SinFP::DB::Signature.3p
+@man man/man3p/Net::SinFP::DB::SystemClass.3p
+@man man/man3p/Net::SinFP::DB::Vendor.3p
+@man man/man3p/Net::SinFP::Result.3p
+@man man/man3p/Net::SinFP::Search.3p
+@man man/man3p/Net::SinFP::SinFP4.3p
+@man man/man3p/Net::SinFP::SinFP6.3p
+share/examples/p5-Net-SinFP/
+share/examples/p5-Net-SinFP/sinfp-active.pl
+share/examples/p5-Net-SinFP/sinfp-passive-offline.pl
+share/examples/p5-Net-SinFP/sinfp-passive-online.pl
