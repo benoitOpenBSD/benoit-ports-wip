@@ -1,0 +1,10 @@
+@comment $OpenBSD$
+${P5SITE}/DBIx/
+${P5SITE}/DBIx/SQLite/
+${P5SITE}/DBIx/SQLite/Simple/
+${P5SITE}/DBIx/SQLite/Simple.pm
+${P5SITE}/DBIx/SQLite/Simple/Table.pm
+@man man/man3p/DBIx::SQLite::Simple.3p
+@man man/man3p/DBIx::SQLite::Simple::Table.3p
+share/examples/p5-DBIx-SQLite-Simple/
+share/examples/p5-DBIx-SQLite-Simple/pubs.pl
