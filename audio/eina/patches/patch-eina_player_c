@@ -1,0 +1,11 @@
+--- eina/player.c.orig	Tue Dec 29 10:48:56 2009
++++ eina/player.c	Tue Dec 29 10:49:46 2009
+@@ -447,7 +447,7 @@
+ 			N_("Eina music player"));
+ 		gtk_label_set_markup(
+ 			eina_obj_get_typed(self, GTK_LABEL, "stream-info-label"),
+-			N_("<span size=\"x-large\" weight=\"bold\">Eina music player</span>\n<span size=\"x-large\" weight=\"normal\">\u200B</span>")
++			N_("<span size=\"x-large\" weight=\"bold\">Eina music player</span>\n<span size=\"x-large\" weight=\"normal\">\r</span>")
+ 			);
+ 		gtk_label_set_selectable(GTK_LABEL(eina_obj_get_widget(self, "stream-info-label")), FALSE);
+ 		return;

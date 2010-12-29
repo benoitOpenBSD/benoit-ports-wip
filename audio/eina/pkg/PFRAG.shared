@@ -1,0 +1,8 @@
+@comment $OpenBSD$
+lib/eina/adb/libadb.so
+lib/eina/coverplus/libcoverplus.so
+lib/eina/lastfm/liblastfm.so
+lib/eina/notify/libnotify.so
+lib/eina/recently/librecently.so
+@lib lib/libgel-1.0.so.${LIBgel-1.0_VERSION}
+@lib lib/liblomo-1.0.so.${LIBlomo-1.0_VERSION}

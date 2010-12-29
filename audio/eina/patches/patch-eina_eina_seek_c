@@ -1,0 +1,11 @@
+--- eina/eina-seek.c.orig	Tue Jun  9 17:41:24 2009
++++ eina/eina-seek.c	Tue Dec 29 10:46:59 2009
+@@ -432,7 +432,7 @@
+ 			priv->total_is_desync = FALSE;
+ 		}
+ 		else
+-			gtk_label_set_markup(priv->time_labels[EINA_SEEK_TIME_TOTAL], "\u200b");
++			gtk_label_set_markup(priv->time_labels[EINA_SEEK_TIME_TOTAL], "\r");
+ 	}
+ 	// If total is -1 even if there is no widget to show it, self must be
+ 	// insensitive and progress reset

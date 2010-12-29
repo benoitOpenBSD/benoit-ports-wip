@@ -1,0 +1,1 @@
+return c == ZERO_WIDTH_SPACE           // 200Bh

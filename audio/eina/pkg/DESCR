@@ -1,0 +1,10 @@
+Eina works like a common portable music player. Just plays what you want to
+listen.
+
+Apart from simplicity, today users expect more from a player than just
+reading files. Artwork, lyrics, network support, artist data and other music
+information find their right place in Eina.
+
+Plugins can take care of all the extra functionality, since Eina exposes
+everything from its internals. It's fairly easy to extend the player
+capabilities and change the way it works inside.
