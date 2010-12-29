@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+@bin bin/hhexen-gl
+share/hhexen/
+share/hhexen/assassin.wad

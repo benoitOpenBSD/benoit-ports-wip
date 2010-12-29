@@ -1,0 +1,4 @@
+[Hacked Hexen] based on K.Robillard's Linux Hexen engine, is finally being
+finished after Dan left it in limbo for a while. New stuff includes midi,
+screenshots, bug-fixes, transparent maps, and extensive C fixes allowing for
+OS and CPU portability.
