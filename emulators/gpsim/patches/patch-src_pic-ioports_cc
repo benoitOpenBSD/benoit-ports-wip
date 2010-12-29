@@ -1,0 +1,29 @@
+--- src/pic-ioports.cc.orig	Thu Feb 12 02:33:42 2009
++++ src/pic-ioports.cc	Fri May 29 23:38:43 2009
+@@ -287,7 +287,7 @@
+ // setbit
+ // FIXME - a sink should be created for the intf and rbif functions.
+ 
+-void PicPortBRegister::setbit(unsigned int bit_number, char new3State)
++void PicPortBRegister::setbitO(unsigned int bit_number, char new3State)
+ {
+   Dprintf(("PicPortBRegister::setbit() bit=%d,val=%c\n",bit_number,new3State));
+ 
+@@ -298,7 +298,7 @@
+ 
+ 
+   RegisterValue lastDrivenValue = rvDrivenValue;
+-  PortRegister::setbit(bit_number, new3State);
++  PortRegister::setbitO(bit_number, new3State);
+ 
+   unsigned int bitMask = (1<<bit_number) & 0xF0;
+ 
+@@ -437,7 +437,7 @@
+ 
+   return value.data;
+ }
+-void PicLatchRegister::setbit(unsigned int bit_number, char new_value)
++void PicLatchRegister::setbitO(unsigned int bit_number, char new_value)
+ {
+   printf("PicLatchRegister::setbit() -- shouldn't be called\n");
+ }

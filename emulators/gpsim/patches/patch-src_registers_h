@@ -1,0 +1,19 @@
+--- src/registers.h.orig	Thu Feb 12 02:33:42 2009
++++ src/registers.h	Fri May 29 23:23:01 2009
+@@ -21,6 +21,7 @@
+ #ifndef __REGISTERS_H__
+ #define __REGISTERS_H__
+ 
++
+ #include <stdio.h>
+ #include <iostream>
+ #include <iomanip>
+@@ -309,7 +310,7 @@
+   /// registers. Instead, it is a place holder which is over-ridden
+   /// by the IO ports.
+   
+-  virtual void setbit(unsigned int bit_number, bool new_value);
++  virtual void setbitO(unsigned int bit_number, bool new_value);
+ 
+   
+   ///  like setbit, getbit is used mainly for breakpoints.

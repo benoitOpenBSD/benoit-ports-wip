@@ -1,0 +1,20 @@
+--- src/pic-ioports.h.orig	Fri May 29 23:25:35 2009
++++ src/pic-ioports.h	Fri May 29 23:25:55 2009
+@@ -71,7 +71,7 @@
+ 
+   virtual void put(unsigned int new_value);
+   virtual unsigned int get();
+-  virtual void setbit(unsigned int bit_number, char new_value);
++  virtual void setbitO(unsigned int bit_number, char new_value);
+   void setRBPU(bool);
+   void setIntEdge(bool);
+   void assignRBPUSink(unsigned int bitPos, sfr_register *);
+@@ -126,7 +126,7 @@
+   virtual void put(unsigned int new_value);
+   virtual void put_value(unsigned int new_value);
+   virtual unsigned int get();
+-  virtual void setbit(unsigned int bit_number, char new_value);
++  virtual void setbitO(unsigned int bit_number, char new_value);
+ 
+   virtual void setEnableMask(unsigned int nEnableMask);
+ 

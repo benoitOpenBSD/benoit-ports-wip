@@ -1,0 +1,11 @@
+--- src/p12x.h.orig	Fri May 29 23:29:01 2009
++++ src/p12x.h	Fri May 29 23:29:13 2009
+@@ -32,7 +32,7 @@
+   GPIO(Processor *pCpu, const char *pName, const char *pDesc,
+        unsigned int numIopins, 
+        unsigned int enableMask);
+-  void setbit(unsigned int bit_number, char new_value);
++  void setbitO(unsigned int bit_number, char new_value);
+   void setPullUp ( bool bNewPU );
+ 
+ private:

@@ -1,0 +1,47 @@
+--- src/breakpoints.h.orig	Thu Feb 12 02:33:41 2009
++++ src/breakpoints.h	Fri May 29 23:21:27 2009
+@@ -22,7 +22,7 @@
+ #ifndef  __BREAKPOINTS_H__
+ #define  __BREAKPOINTS_H__
+ 
+-#include  <iostream>
++#include <iostream>
+ #include <iomanip>
+ #include <glib.h>
+ #include <string>
+@@ -456,7 +456,7 @@
+   virtual RegisterValue getRVN();
+   virtual unsigned int get();
+   virtual Register *getReg();
+-  virtual void setbit(unsigned int bit_number, bool new_value);
++  virtual void setbitO(unsigned int bit_number, bool new_value);
+   virtual bool get_bit(unsigned int bit_number);
+   virtual double get_bit_voltage(unsigned int bit_number);
+   virtual bool hasBreak();
+@@ -552,7 +552,7 @@
+ 
+   virtual void put(unsigned int new_value);
+   virtual void putRV(RegisterValue rv);
+-  virtual void setbit(unsigned int bit_number, bool new_value);
++  virtual void setbitO(unsigned int bit_number, bool new_value);
+   virtual char const * bpName() { return "register write"; }
+ 
+   virtual int  printTraced(Trace *pTrace, unsigned int tbi,
+@@ -568,7 +568,7 @@
+ 
+   virtual void put(unsigned int new_value);
+   virtual void putRV(RegisterValue rv);
+-  virtual void setbit(unsigned int bit_number, bool new_value);
++  virtual void setbitO(unsigned int bit_number, bool new_value);
+   virtual char const * bpName() { return "register change"; }
+ 
+   virtual int  printTraced(Trace *pTrace, unsigned int tbi,
+@@ -612,7 +612,7 @@
+ 
+   virtual void put(unsigned int new_value);
+   virtual void putRV(RegisterValue rv);
+-  virtual void setbit(unsigned int bit_number, bool new_value);
++  virtual void setbitO(unsigned int bit_number, bool new_value);
+   virtual char const * bpName() { return "register write value"; }
+ 
+   virtual int  printTraced(Trace *pTrace, unsigned int tbi,

@@ -1,0 +1,19 @@
+--- src/16bit-registers.cc.orig	Fri May 29 23:34:29 2009
++++ src/16bit-registers.cc	Fri May 29 23:34:57 2009
+@@ -1324,14 +1324,14 @@
+ 
+ //-------------------------------------------------------------------
+ //-------------------------------------------------------------------
+-void PORTC16::setbit(unsigned int bit_number, bool new_value)
++void PORTC16::setbitO(unsigned int bit_number, bool new_value)
+ {
+ 
+   unsigned int old_value = value.get();
+ 
+   //cout << "PORTC16::setbit() bit " << bit_number << " to " << new_value << '\n';
+ 
+-  IOPORT::setbit( bit_number,  new_value);
++  IOPORT::setbitO( bit_number,  new_value);
+ 
+   int diff = old_value ^ value.get(); // The difference between old and new
+ 

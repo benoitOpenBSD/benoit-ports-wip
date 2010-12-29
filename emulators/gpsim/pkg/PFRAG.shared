@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+@lib lib/libgpsim.so.${LIBgpsim_VERSION}
+@lib lib/libgpsim_dspic.so.${LIBgpsim_dspic_VERSION}
+@lib lib/libgpsim_eXdbm.so.${LIBgpsim_eXdbm_VERSION}
+@lib lib/libgpsim_modules.so.${LIBgpsim_modules_VERSION}
+@lib lib/libgpsimcli.so.${LIBgpsimcli_VERSION}
+@lib lib/libgpsimgui.so.${LIBgpsimgui_VERSION}

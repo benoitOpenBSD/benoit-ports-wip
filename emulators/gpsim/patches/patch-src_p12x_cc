@@ -1,0 +1,16 @@
+--- src/p12x.cc.orig	Fri May 29 23:30:00 2009
++++ src/p12x.cc	Fri May 29 23:30:16 2009
+@@ -595,11 +595,11 @@
+ {
+ }
+ 
+-void GPIO::setbit(unsigned int bit_number, char new_value)
++void GPIO::setbitO(unsigned int bit_number, char new_value)
+ {
+   unsigned int lastDrivenValue = rvDrivenValue.data;
+ 
+-  PortRegister::setbit(bit_number, new_value);
++  PortRegister::setbitO(bit_number, new_value);
+ 
+   // If gpio bit 0,1 or 3 changed states AND
+   // ~GPWU is low (wake up on change is enabled) AND

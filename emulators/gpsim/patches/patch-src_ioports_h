@@ -1,0 +1,20 @@
+--- src/ioports.h.orig	Fri May 29 23:30:52 2009
++++ src/ioports.h	Fri May 29 23:31:21 2009
+@@ -311,7 +311,7 @@
+   virtual unsigned int get_value();
+   virtual void putDrive(unsigned int new_drivingValue);
+   virtual unsigned int getDriving();
+-  virtual void setbit(unsigned int bit_number, char new_value);
++  virtual void setbitO(unsigned int bit_number, char new_value);
+   virtual void setEnableMask(unsigned int nEnableMask);
+ 
+   unsigned int getEnableMask()
+@@ -362,7 +362,7 @@
+ 
+   // setbit() is called when a stimulus writes a value to one
+   // of the I/O pins in this Port.
+-  virtual void setbit(unsigned int bit_number, bool new_value);
++  virtual void setbitO(unsigned int bit_number, bool new_value);
+ 
+   virtual bool get_bit(unsigned int bit_number);
+ 

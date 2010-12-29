@@ -1,0 +1,29 @@
+--- src/ioports.cc.orig	Fri May 29 23:32:02 2009
++++ src/ioports.cc	Fri May 29 23:33:32 2009
+@@ -161,7 +161,7 @@
+ {
+   Dprintf((" PortSink::setSinkState:bit=%d,val=%c\n",m_iobit,cNewSinkState));
+ 
+-  m_PortRegister->setbit(m_iobit,cNewSinkState);
++  m_PortRegister->setbitO(m_iobit,cNewSinkState);
+ }
+ void PortSink::release()
+ {
+@@ -251,7 +251,7 @@
+ // FIXME -  rvDrivenValue and value are always the same, so why have
+ // FIXME -  both?
+ 
+-void PortRegister::setbit(unsigned int bit_number, char new3State)
++void PortRegister::setbitO(unsigned int bit_number, char new3State)
+ {
+   if(bit_number <= bit_mask) {
+ 
+@@ -806,7 +806,7 @@
+ 
+ //-------------------------------------------------------------------
+ //-------------------------------------------------------------------
+-void IOPORT::setbit(unsigned int bit_number, bool new_value)
++void IOPORT::setbitO(unsigned int bit_number, bool new_value)
+ {
+ 
+   int bit_mask = 1<<bit_number;

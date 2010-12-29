@@ -1,0 +1,11 @@
+--- src/registers.cc.orig	Fri May 29 23:24:24 2009
++++ src/registers.cc	Fri May 29 23:24:43 2009
+@@ -317,7 +317,7 @@
+ // is really not intended to be used on the file_register
+ // class. Instead, setbit is a place holder for high level
+ // classes that overide this function
+-void Register::setbit(unsigned int bit_number, bool new_value)
++void Register::setbitO(unsigned int bit_number, bool new_value)
+ {
+   if(bit_number <= bit_mask) {
+     trace.raw(write_trace.get() | value.get());
