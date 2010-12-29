@@ -1,0 +1,20 @@
+--- lasso/registry.c.orig	Wed Sep 30 13:59:04 2009
++++ lasso/registry.c	Wed Sep 30 13:59:51 2009
+@@ -116,7 +116,7 @@
+ {
+ 	return g_direct_hash((void*)(record->from_namespace
+ 		^ record->from_name
+-		^ record->to_namespace));
++		^ (size_t)record->to_namespace));
+ }
+ 
+ /**
+@@ -129,7 +129,7 @@
+  */
+ guint lasso_registry_functional_mapping_hash(LassoRegistryFunctionalMappingRecord *record)
+ {
+-	return g_direct_hash((void*)(record->from_namespace ^ record->to_namespace));
++	return g_direct_hash((void*)(record->from_namespace ^ (size_t)record->to_namespace));
+ }
+ 
+ /**

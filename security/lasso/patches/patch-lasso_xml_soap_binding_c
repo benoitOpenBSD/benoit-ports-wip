@@ -1,0 +1,11 @@
+--- lasso/xml/soap_binding.c.orig	Wed Sep 30 18:03:58 2009
++++ lasso/xml/soap_binding.c	Wed Sep 30 18:06:24 2009
+@@ -23,7 +23,7 @@
+  */
+ 
+ #include "private.h"
+-#include <lasso/xml/soap_binding.h>
++#include <lasso/xml/soap_binding_provider.h>
+ 
+ #define find_node_type_in_list(iter, check) \
+ 	{\

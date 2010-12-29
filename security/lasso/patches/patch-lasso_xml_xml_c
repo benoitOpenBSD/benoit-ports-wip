@@ -1,0 +1,22 @@
+--- lasso/xml/xml.c.orig	Wed Sep 30 14:28:50 2009
++++ lasso/xml/xml.c	Wed Sep 30 14:30:05 2009
+@@ -1555,7 +1555,9 @@
+ 		}
+ 	}
+ 
+-	node = lasso_node_new_from_xmlNode_with_type(xmlnode, typename);
++	if (typename) {
++		node = lasso_node_new_from_xmlNode_with_type(xmlnode, typename);
++	}
+ 	lasso_release(typename);
+ 
+ 	return node;
+@@ -1592,7 +1594,7 @@
+ 	const char *c;
+ 
+ 	c = message;
+-	while (*c != 0 && (isalnum(*c) || *c == '+' || *c == '/' || *c == '\n' || *c == '\r')) c++;
++	while (*c != 0 && (isalnum((unsigned char)*c) || *c == '+' || *c == '/' || *c == '\n' || *c == '\r')) c++;
+ 	while (*c == '=' || *c == '\n' || *c == '\r') c++; /* trailing = */
+ 
+ 	if (*c == 0)
