@@ -1,0 +1,7 @@
+arc4 random number generator
+
+Very quick high quality 32-bit pseudo-random number generator.
+
+This code is derived from section 17.1 of Applied Cryptography, second
+edition, which describes a stream cipher allegedly compatible with RSA Labs
+"RC4" cipher (the actual description of which is a trade secret).
