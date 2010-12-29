@@ -1,0 +1,21 @@
+@comment $OpenBSD$
+lib/python${MODPY_VERSION}/site-packages/bcryptor/
+lib/python${MODPY_VERSION}/site-packages/bcryptor-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
+lib/python${MODPY_VERSION}/site-packages/bcryptor-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
+lib/python${MODPY_VERSION}/site-packages/bcryptor-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
+lib/python${MODPY_VERSION}/site-packages/bcryptor-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/dependency_links.txt
+lib/python${MODPY_VERSION}/site-packages/bcryptor-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/not-zip-safe
+lib/python${MODPY_VERSION}/site-packages/bcryptor-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/requires.txt
+lib/python${MODPY_VERSION}/site-packages/bcryptor-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt
+lib/python${MODPY_VERSION}/site-packages/bcryptor/__init__.py
+lib/python${MODPY_VERSION}/site-packages/bcryptor/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/bcryptor/bcrypt.py
+lib/python${MODPY_VERSION}/site-packages/bcryptor/bcrypt.pyc
+lib/python${MODPY_VERSION}/site-packages/bcryptor/engine.so
+lib/python${MODPY_VERSION}/site-packages/bcryptor/wrap/
+lib/python${MODPY_VERSION}/site-packages/bcryptor/wrap/engine.c
+lib/python${MODPY_VERSION}/site-packages/bcryptor/wrap/engine.pyx
+lib/python${MODPY_VERSION}/site-packages/bcryptor/wrap/src/
+lib/python${MODPY_VERSION}/site-packages/bcryptor/wrap/src/bcrypt.c
+lib/python${MODPY_VERSION}/site-packages/bcryptor/wrap/src/blf.h
+lib/python${MODPY_VERSION}/site-packages/bcryptor/wrap/src/blowfish.c

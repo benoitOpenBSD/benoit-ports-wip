@@ -1,0 +1,14 @@
+Python wrapper for bcrypt
+
+Bcrypt is an implementation of a modern password hashing algorithm, based on
+the Blowfish block cipher, by Niels Provos and David Mazieres. It has been
+the default password scheme since OpenBSD 2.1.
+
+A paper on the algorithm that explains its design decisions is available
+here:
+    http://www.usenix.org/events/usenix99/provos.html
+
+The most important property of bcrypt is that it is adaptable to future
+processor performance improvements, allowing you to arbitrarily increase the
+processing cost of checking a password while still maintaining compatibility
+with your older password hashes.
