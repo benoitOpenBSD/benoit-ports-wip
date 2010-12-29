@@ -1,0 +1,5 @@
+PySkein is an extension module for Python 3.0 or later, allowing Python
+scripts to compute hash values with the recently proposed Skein hash
+algorithm (one of the Second Round Candidates in the NIST SHA-3
+Competition). It is based on the optimized version of the Skein reference
+implementation, written in C by Doug Whiting.
