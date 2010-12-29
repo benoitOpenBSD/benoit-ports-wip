@@ -1,0 +1,3 @@
+@comment $OpenBSD$
+@bin bin/nomarch
+@man man/man1/nomarch.1
