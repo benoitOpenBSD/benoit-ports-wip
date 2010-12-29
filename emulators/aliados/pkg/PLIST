@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+@bin bin/aliados
+share/doc/aliados/
+share/doc/aliados/NEWS
+share/doc/aliados/README
+share/doc/aliados/aliados.doc
