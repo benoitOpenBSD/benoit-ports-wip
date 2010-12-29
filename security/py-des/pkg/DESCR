@@ -1,0 +1,7 @@
+This is a pure python implementation of the DES encryption algorithm.
+It's pure python to avoid portability issues, since most DES
+implementations are programmed in C (for performance reasons).
+
+The code below is not written for speed or performance, so not for those
+needing a fast des implementation, but rather a handy portable solution
+ideal for small usages.
