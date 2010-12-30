@@ -1,0 +1,9 @@
+DHCPStatus is a query tool for browsing information stored in DHCPD's
+configuration and leases files, dhcpd.conf and dhcpd.leases. It
+correlates the subnet details that you configure in the conf file
+with the lease records that DHCPD maintains in its lease file. You
+can thus obtain an overall picture of your DHCP environment, as
+well as view details of individual leases for each IP.
+
+DHCPStatus can be run either as a CGI script and viewed via a web
+browser, or as a command-line tool that generates simple text output.

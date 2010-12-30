@@ -1,0 +1,24 @@
+@comment $OpenBSD$
+bin/dhcpstatus
+bin/dhcpstatus.cgi
+${P5SITE}/dhcpstatus/
+${P5SITE}/dhcpstatus/Dhcpstatus_env.pm
+${P5SITE}/dhcpstatus/Display.pm
+${P5SITE}/dhcpstatus/Formatted_text.pm
+${P5SITE}/dhcpstatus/Lease.pm
+${P5SITE}/dhcpstatus/Line_print.pm
+${P5SITE}/dhcpstatus/Pool.pm
+${P5SITE}/dhcpstatus/Subnet.pm
+${P5SITE}/dhcpstatus/common.pm
+${P5SITE}/dhcpstatus/dhcpstatus.pm
+${P5SITE}/dhcpstatus/dhcpstatus_cgi.pm
+${P5SITE}/dhcpstatus/dhcpstatus_cmd.pm
+${P5SITE}/dhcpstatus/dhcpstatus_subnet.pm
+${P5SITE}/dhcpstatus/dhcpstatus_subnet_cgi.pm
+${P5SITE}/dhcpstatus/dhcpstatus_subnet_cmd.pm
+${P5SITE}/dhcpstatus/display_html.pm
+${P5SITE}/dhcpstatus/display_line.pm
+${P5SITE}/dhcpstatus/iptools.pm
+share/examples/dhcpstatus/
+share/examples/dhcpstatus/dhcpstatus.ini
+@sample ${SYSCONFDIR}/dhcpstatus.ini

@@ -1,0 +1,19 @@
+$OpenBSD$
+--- scripts/dhcpstatus.orig	Sun Aug 12 06:01:35 2001
++++ scripts/dhcpstatus	Mon Sep  6 16:02:54 2010
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ 
+ #------------------------------------------------------------------------
+ # Copyright (C) 2000 Michael Grubits.
+@@ -22,8 +22,7 @@
+ 
+ use strict;
+ 
+-use lib "/usr/local/dhcpstatus";
+-my $dhcpstatus_dir = $INC[0];
++my $dhcpstatus_dir = "${SYSCONFDIR}";
+ 
+ use dhcpstatus::dhcpstatus_cmd;
+ use dhcpstatus::dhcpstatus_subnet_cmd;

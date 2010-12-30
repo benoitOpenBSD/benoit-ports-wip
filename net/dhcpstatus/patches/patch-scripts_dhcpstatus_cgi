@@ -1,0 +1,13 @@
+$OpenBSD$
+--- scripts/dhcpstatus.cgi.orig	Sun Aug 12 06:01:40 2001
++++ scripts/dhcpstatus.cgi	Mon Sep  6 16:03:03 2010
+@@ -22,8 +22,7 @@
+ 
+ use strict;
+ 
+-use lib "/usr/local/dhcpstatus";
+-my $dhcpstatus_dir = $INC[0];
++my $dhcpstatus_dir = "${SYSCONFDIR}";
+ 
+ use dhcpstatus::dhcpstatus_cgi;
+ use dhcpstatus::dhcpstatus_subnet_cgi;

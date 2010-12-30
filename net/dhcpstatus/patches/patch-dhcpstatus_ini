@@ -1,0 +1,12 @@
+$OpenBSD$
+--- dhcpstatus.ini.orig	Mon Sep  6 15:47:23 2010
++++ dhcpstatus.ini	Mon Sep  6 15:47:57 2010
+@@ -16,7 +16,7 @@ conf_file=/etc/dhcpd.conf
+ #
+ #
+ # location of the .leases file.
+-leases_file=/etc/dhcpd.leases
++leases_file=/var/db/dhcpd.leases
+ #
+ #
+ # show_whole_subnet: this parameter determines whether or not to display non-
