@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.1.1.1 2010/12/30 10:41:42 benoit Exp $
 
 COMMENT =	essential utilities for the Iterator class.
 

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2010/12/03 11:44:29 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.8 2010/12/30 09:54:51 benoit Exp $
 
 COMMENT= 	DateTime parser for ISO8601 date formats
 
