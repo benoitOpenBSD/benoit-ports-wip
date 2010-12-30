@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2010/12/03 11:44:29 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.7 2010/12/30 09:31:34 benoit Exp $
 
 COMMENT= 	DateTime::Format extension to HTTP formats
 
