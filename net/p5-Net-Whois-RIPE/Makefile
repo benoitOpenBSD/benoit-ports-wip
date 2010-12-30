@@ -20,6 +20,6 @@ USE_GROFF =		Yes
 RUN_DEPENDS =		devel/p5-Test-Exception \
 			devel/p5-Module-Install \
 			devel/p5-Iterator-Util
-REGRESS_DEPENDS =       ${BUILD_DEPENDS}
+REGRESS_DEPENDS =       ${RUN_DEPENDS}
                                                 
 .include <bsd.port.mk>
