@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# $OpenBSD$
+
+. /etc/rc.d/rc.subr
+
+daemon="${TRUEPREFIX}/sbin/havp"
+
+rc_pre() {
+	install -d -o _havp /var/run/havp/ /var/tmp/havp/
+}
+
+rc_cmd $1
