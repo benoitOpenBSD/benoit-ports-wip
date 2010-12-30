@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2010/12/03 11:45:42 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.10 2010/12/30 16:20:57 benoit Exp $
 
 COMMENT =	perl implementation of RIPE whois
 
@@ -21,5 +21,5 @@ RUN_DEPENDS =		devel/p5-Test-Exception \
 			devel/p5-Module-Install \
 			devel/p5-Iterator-Util
 REGRESS_DEPENDS =       ${RUN_DEPENDS}
-                                                
+                         
 .include <bsd.port.mk>
