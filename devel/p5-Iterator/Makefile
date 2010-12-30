@@ -5,8 +5,6 @@ COMMENT =	a general-purpose iterator class.
 DISTNAME =	Iterator-0.03
 CATEGORIES =	devel
 
-CPAN_AUTHOR =	ROODE
-
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Perl
