@@ -13,7 +13,7 @@ PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
-BUILD_DEPENDS =	devel/p5-Test-Distribution \
+REGRESS_DEPENDS =	devel/p5-Test-Distribution \
 		devel/p5-Test-Pod
 RUN_DEPENDS=	devel/p5-DateTime-Format-Builder
 
