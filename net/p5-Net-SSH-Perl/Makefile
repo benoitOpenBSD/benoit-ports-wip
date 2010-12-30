@@ -1,12 +1,11 @@
-# $OpenBSD: Makefile,v 1.6 2007/09/15 22:36:57 merdely Exp $
+# $OpenBSD: Makefile,v 1.11 2010/12/03 11:45:42 ajacoutot Exp $
 
 COMMENT=	perl implementation of the SSH1 and SSH2 protocols
 
 MODULES=	cpan
 DISTNAME=	Net-SSH-Perl-1.34
 CATEGORIES=	net security
-
-MAINTAINER=	Nikolay Sturm <sturm@openbsd.org>
+USE_GROFF =	Yes
 
 # GPL/Artistic
 PERMIT_PACKAGE_CDROM=	Yes
@@ -25,7 +24,7 @@ RUN_DEPENDS+=	converters/p5-Convert-PEM \
 		security/p5-Crypt-RSA \
 		security/p5-Digest-BubbleBabble \
 		security/p5-Digest-HMAC \
-		security/p5-Digest-SHA1->=2.10
+		security/p5-Digest-SHA1>=2.10
 
 # 03-packet.t just hangs in test 2, known since early 2004
 NO_REGRESS=	Yes
