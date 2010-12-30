@@ -1,0 +1,18 @@
+$OpenBSD: README,v 1.1 2010/11/16 10:11:51 jasper Exp $
+
+To start with prelude-lml, you have to create a starting profile,
+e.g. "prelude-lml" by running on the manager side:
+
+# prelude-adduser registration-server prelude-manager \
+	--uid=564 --gid=564
+
+and on the sensor side:
+
+# prelude-adduser register prelude-lml "idmef:w" \
+	<manager address> --uid 564 --gid 564
+
+To start prelude-lml at boot-time, you could use:
+
+if [ -x ${TRUEPREFIX}/bin/prelude-lml ]; then
+	echo -n ' prelude-lml'; ${TRUEPREFIX}/bin/prelude-lml -d
+fi

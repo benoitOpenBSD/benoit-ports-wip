@@ -1,0 +1,7 @@
+htdocs_dir = '${TRUEPREFIX}/share/prewikka/htdocs'
+database_dir = '${TRUEPREFIX}/share/prewikka/database'
+locale_dir = '${TRUEPREFIX}/share/locale/'
+conf_dir = '${SYSCONFDIR}/prewikka'
+version = '${VERSION}'
+libprelude_required_version = '1.0.0'
+libpreludedb_required_version = '1.0.0'
