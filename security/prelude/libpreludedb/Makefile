@@ -22,6 +22,7 @@ MODULES=	lang/python \
 USE_GROFF =	Yes
 
 SHARED_LIBS=	preludedb	4.10
+#SHARED_LIBS=	preludedb	5.0
 
 WANTLIB=	tasn1 z gcrypt gnutls prelude
 WANTLIB-main=	${WANTLIB} c
@@ -51,6 +52,8 @@ RUN_DEPENDS-mysql=	# empty
 RUN_DEPENDS-sqlite=	# empty
 
 CONFIGURE_STYLE=gnu
+
+#MAKE_FLAGS +=		LIBPRELUDEDB_SONAME=libpreludedb.so.${LIBpreludedb_VERSION}
 
 PSEUDO_FLAVORS=	no_pgsql no_mysql no_sqlite
 FLAVOR?=

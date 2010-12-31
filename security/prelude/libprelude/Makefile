@@ -8,7 +8,8 @@ PKGNAME=        prelude-${DISTNAME}
 
 MASTER_SITES=   http://www.prelude-technologies.com/download/releases/libprelude/
 
-SHARED_LIBS=    prelude 21.1
+SHARED_LIBS=    prelude 	21.1	# 21.1	
+SHARED_LIBS +=  preludecpp	3.0	# 3.0
 
 MODULES=        devel/gettext \
                 lang/python

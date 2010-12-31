@@ -145,7 +145,7 @@ lib/python${MODPY_VERSION}/site-packages/prewikka/views/stats.py
 lib/python${MODPY_VERSION}/site-packages/prewikka/views/stats.pyc
 lib/python${MODPY_VERSION}/site-packages/prewikka/views/usermanagement.py
 lib/python${MODPY_VERSION}/site-packages/prewikka/views/usermanagement.pyc
-share/doc/pkg-readmes/prelude-prewikka-${MODPY_EGG_VERSION}p0
+share/doc/pkg-readmes/prelude-prewikka-${MODPY_EGG_VERSION}
 share/locale/de/LC_MESSAGES/prewikka.mo
 share/locale/es/LC_MESSAGES/prewikka.mo
 share/locale/fr/LC_MESSAGES/prewikka.mo

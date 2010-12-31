@@ -110,6 +110,7 @@ share/examples/prelude-lml/ruleset/shadow-utils.rules
 @sample ${SYSCONFDIR}/prelude-lml/ruleset/shadow-utils.rules
 share/examples/prelude-lml/ruleset/single.rules
 @sample ${SYSCONFDIR}/prelude-lml/ruleset/single.rules
+share/examples/prelude-lml/ruleset/snare_windows.rules
 share/examples/prelude-lml/ruleset/sonicwall.rules
 @sample ${SYSCONFDIR}/prelude-lml/ruleset/sonicwall.rules
 share/examples/prelude-lml/ruleset/spamassassin.rules
