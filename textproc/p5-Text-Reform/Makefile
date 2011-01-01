@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2010/12/03 11:46:49 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.11 2011/01/01 12:57:23 benoit Exp $
 
 COMMENT=		perl module to formating plaintext
 
@@ -20,6 +20,5 @@ DEMOS_DIR =	${PREFIX}/share/examples/p5-Text-Reform
 post-install:
 	${INSTALL_DATA_DIR} ${DEMOS_DIR}
 	@cd ${WRKSRC}/demo/ && pax -rw . ${DEMOS_DIR}
-	chown -R ${SHAREOWN}:${SHAREGRP} ${DEMOS_DIR}
                     
 .include <bsd.port.mk>
