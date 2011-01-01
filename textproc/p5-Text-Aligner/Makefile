@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2010/12/03 11:46:49 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.7 2010/12/31 17:21:45 benoit Exp $
 
 COMMENT=	justify strings to various alignment styles
 
