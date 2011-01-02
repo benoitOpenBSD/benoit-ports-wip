@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.1.1.1 2006/12/08 07:04:59 steven Exp $
+@comment $OpenBSD: PLIST,v 1.2 2011/01/02 13:31:56 benoit Exp $
 bin/audio_rename
 bin/mp3info2
 bin/typeset_audio_dir
