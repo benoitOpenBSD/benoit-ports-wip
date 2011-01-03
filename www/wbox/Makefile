@@ -7,7 +7,7 @@ CATEGORIES=		net www
 
 HOMEPAGE=		http://www.hping.org/wbox/
 
-MAINTAINER=		Laurent Fanis <laurent@humppa.nl>
+MAINTAINER=		Laurent Fanis <laurent@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
