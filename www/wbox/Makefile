@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2008/05/08 22:44:13 espie Exp $
+# $OpenBSD: Makefile,v 1.3 2011/01/03 20:46:02 benoit Exp $
 
 COMMENT=		HTTP testing tool
 
