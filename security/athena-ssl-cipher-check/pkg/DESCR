@@ -1,0 +1,4 @@
+athena-ssl-cipher-check is an SSL Cipher scanner. Unlike most
+scanners, rather than scanning the few ciphers openssl supports, it
+checks for every possible cipher by enumerating all 65536 cipher
+codes.
