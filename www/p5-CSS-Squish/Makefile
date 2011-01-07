@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2010/12/03 11:46:51 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.10 2011/01/07 11:46:58 benoit Exp $
 
 COMMENT=	compress CSS info for transmission
 
