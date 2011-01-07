@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.1.1.1 2006/06/25 15:20:01 espie Exp $
+@comment $OpenBSD: PLIST,v 1.2 2011/01/07 09:59:09 benoit Exp $
 bin/tab2graph
 bin/tablify
 bin/tabmerge
