@@ -1,10 +1,9 @@
 # $OpenBSD: Makefile,v 1.40 2010/07/17 22:46:00 benoit Exp $
 
-COMMENT-main =		extremely fast password cracker
+COMMENT =		extremely fast password cracker
 
 V =			1.7.6
 DISTNAME =		john-${V}
-PKGNAME-main =		${DISTNAME}
 CATEGORIES =		security
 
 HOMEPAGE =		http://www.openwall.com/john/
@@ -20,9 +19,7 @@ PERMIT_DISTFILES_FTP =	Yes
 WANTLIB =		c
 
 MASTER_SITES =		${HOMEPAGE}/g/
-MASTER_SITES0 =		http://www.openwall.com/john/contrib/
-                        
-MULTI_PACKAGES =	-main
+MASTER_SITES0 =		${HOMEPAGE}/contrib/
 
 FLAVORS =		contrib
 FLAVOR ?=
@@ -57,15 +54,12 @@ ALL_TARGET=		generic
 .endif
 
 .if ${FLAVOR:L:Mcontrib}
-MULTI_PACKAGES +=        -contrib
-COMMENT-contrib =        extremely fast password cracker
-PKGNAME-contrib =        john-contrib-${V}
-PATCH_DIST_STRIP =       -p1
-PATCHFILES +=            john-1.7.6-jumbo-9.diff.gz:0
-WANTLIB +=               m crypto ldap_r lber
-BUILD_DEPENDS +=         databases/mysql
-LIB_DEPENDS +=           databases/openldap
-MAKE_FLAGS +=            LDFLAGS="-lcrypto -lm"
+PATCH_DIST_STRIP =	-p1
+PATCHFILES +=		${DISTNAME}-jumbo-9.diff.gz:0
+WANTLIB +=		m crypto
+BUILD_DEPENDS +=	databases/mysql \
+			databases/openldap
+MAKE_FLAGS +=		LDFLAGS="-lcrypto -lm"
 .endif
 
 do-configure:
