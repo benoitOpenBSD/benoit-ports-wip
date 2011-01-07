@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2010/12/03 11:46:49 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.6 2011/01/07 09:21:47 benoit Exp $
 
 COMMENT =	rewrite strings based on a set of known prefixes
 

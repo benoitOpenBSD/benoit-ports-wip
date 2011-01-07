@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2010/12/03 11:44:24 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.7 2011/01/07 09:03:15 benoit Exp $
 
 COMMENT=	pager utility
 
@@ -14,6 +14,5 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 RUN_DEPENDS=	databases/p5-Data-Page
-BUILD_DEPENDS = ${RUN_DEPENDS}
 
 .include <bsd.port.mk>
