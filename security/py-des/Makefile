@@ -1,8 +1,8 @@
 # $OpenBSD$
 
-COMMENT =		pure python implementation of DES and TRIPLE DES encryption algorithm
+COMMENT =		python implementation of DES and TRIPLE DES algorithm
 
-MODPY_EGG_VERSION =	2.0.0
+MODPY_EGG_VERSION =	2.0.1
 DISTNAME =		pyDes-${MODPY_EGG_VERSION}
 PKGNAME =		py-des-${MODPY_EGG_VERSION}
 
@@ -19,8 +19,6 @@ PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		http://twhiteman.netfirms.com/pyDES/
-
-EXTRACT_SUFX =         .zip
 
 MODULES =		lang/python
 
