@@ -1,0 +1,21 @@
+--- CMakeLists.txt.orig	Mon Jan 10 07:18:05 2011
++++ CMakeLists.txt	Mon Jan 10 07:18:40 2011
+@@ -141,12 +141,12 @@
+ ENDIF()
+ 
+ IF(UNIX)
+-	FIND_LIBRARY(DLD_LIBRARY_PATH dl dld)
+-	IF(DLD_LIBRARY_PATH)
+-		MESSAGE(STATUS "Looking for dl library: found")
+-	ELSE(DLD_LIBRARY_PATH)
+-		MESSAGE(FATAL_ERROR "Looking for dl library: not found!")
+-	ENDIF(DLD_LIBRARY_PATH)
++#	FIND_LIBRARY(DLD_LIBRARY_PATH dl dld)
++#	IF(DLD_LIBRARY_PATH)
++#		MESSAGE(STATUS "Looking for dl library: found")
++#	ELSE(DLD_LIBRARY_PATH)
++#		MESSAGE(FATAL_ERROR "Looking for dl library: not found!")
++#	ENDIF(DLD_LIBRARY_PATH)
+ 
+ 	SET(CMAKE_THREAD_PREFER_PTHREAD true)
+ 	FIND_PACKAGE(Threads REQUIRED)
