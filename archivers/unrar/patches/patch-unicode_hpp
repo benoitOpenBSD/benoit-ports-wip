@@ -6,7 +6,7 @@ $OpenBSD: patch-unicode_hpp,v 1.1 2010/12/30 07:51:31 benoit Exp $
  // so we replace it with snwprintf in our custom sprintfw definition.
  #define sprintfw snwprintf
 +#elif defined (__OpenBSD__)
-+#define sprintfw(s,...) *(s)=0
++inline int sprintfw(wchar *s, ...) { *s = '\0'; return 1; }
  #else
  #define sprintfw swprintf
  #endif
