@@ -17,7 +17,7 @@ PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		SDL c m png pthread z GL stdc++ SDL_image SDL_mixer \
-			SDL_net SDL_ttf
+			SDL_net SDL_ttf ogg
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=fheroes2/}
 
@@ -29,7 +29,8 @@ LIB_DEPENDS =		devel/sdl-image \
 			devel/sdl-mixer \
 			devel/sdl-net \
 			devel/sdl-ttf \
-			graphics/png
+			graphics/png \
+			audio/libogg
 
 USE_GROFF =		Yes
 USE_GMAKE =		Yes
@@ -37,5 +38,8 @@ USE_GMAKE =		Yes
 WRKDIST =               ${WRKDIR}/fheroes-src
 
 NO_REGRESS =		Yes
+
+do-install:
+			${INSTALL_PROGRAM} ${WRKSRC}/src/dist/fheroes2 ${PREFIX}/bin/
 
 .include <bsd.port.mk>
