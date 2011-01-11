@@ -1,3 +1,4 @@
+$OpenBSD$
 --- src/Makefile~	Tue Jan 11 02:21:05 2011
 +++ src/Makefile	Tue Jan 11 08:27:57 2011
 @@ -54,7 +54,7 @@
