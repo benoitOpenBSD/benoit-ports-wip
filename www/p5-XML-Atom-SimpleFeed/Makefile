@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2010/12/03 11:46:53 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.5 2011/01/17 11:57:10 benoit Exp $
 
 COMMENT =	no-fuss generation of Atom syndication feeds
 
