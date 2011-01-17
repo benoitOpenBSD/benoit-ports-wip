@@ -1,0 +1,56 @@
+$OpenBSD: patch-figlet,v 1.4 2009/05/27 10:24:53 benoit Exp $
+--- figlet.6.orig	Thu Apr 10 14:59:31 2008
++++ figlet.6	Mon May 25 22:07:34 2009
+@@ -54,7 +54,27 @@ FIGlet \- display large characters made up of ordinary
+ [
+ .I message
+ ]
+-
++.LP
++.B chkfont
++.I fontfile
++[
++.I ...
++]
++.LP
++.B figlist
++[
++.B \-d
++.I font_directory
++]
++.LP
++.B showfigfonts
++[
++.B \-d
++.I font_directory
++]
++[
++sample_word
++]
+ .SH DESCRIPTION
+ .B FIGlet
+ prints its input using large characters
+@@ -98,6 +118,23 @@ fonts and control files
+ in compressed form.
+ See
+ .BR "COMPRESSED FONTS" .
++
++.B chkfont
++checks
++.B FIGlet
++fonts for formatting errors.
++.B chkfont
++is useful for those wishing to design or edit their own fonts.
++
++.B figlist
++lists all the available fonts and control files.
++
++.B showfigfonts
++displays a sample of each available font in 
++.I font_directory
++using the name of the font as the sample text, unless
++.I sample_word
++is specified.
+ 
+ .SH USAGE
+ Just start up
