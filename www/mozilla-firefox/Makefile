@@ -3,8 +3,8 @@
 COMMENT =	Mozilla web browser
 
 # Don't forget to bump www/firefox-i18n after updates.
-MOZILLA_VERSION =	4.0b7
-MOZILLA_BRANCH =	2.0b7
+MOZILLA_VERSION =	4.0b9
+MOZILLA_BRANCH =	2.0b9
 MOZILLA_PROJECT =	mozilla-firefox
 MOZILLA_CODENAME =	browser
 
@@ -21,9 +21,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
-
-# needed for convert xpm icon to png
-BUILD_DEPENDS +=	graphics/netpbm
 
 # lots of logic in mozilla.port.mk
 MODULES =	www/mozilla devel/gettext lang/python
@@ -57,9 +54,6 @@ SUBST_VARS +=	MOZILLA_VERSION
 #	rm ${WRKSRC}/toolkit/mozapps/extensions/test/unit/*.orig
 
 post-install:
-	# override with our own default settings
-	${INSTALL_DATA} ${FILESDIR}/browserconfig.properties \
-		${PREFIX}/lib/firefox-${MOZILLA_VERSION}/chrome/en-US/locale/branding/
 	${SUBST_CMD} -o ${SHAREOWN} -g ${SHAREGRP} -c ${FILESDIR}/mozilla-firefox.1 \
 		${PREFIX}/man/man1/mozilla-firefox.1
 	cd ${PREFIX}/man/man1/ && ln -sf mozilla-firefox.1 firefox.1
@@ -68,12 +62,5 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/applications/ ; \
 	${SUBST_CMD} -o ${SHAREOWN} -g ${SHAREGRP} -c ${FILESDIR}/${_MOZ_PROJECT_SHORT}.desktop \
 		${PREFIX}/share/applications/${_MOZ_PROJECT_SHORT}.desktop ; \
-	# create an xpm icon from the png one as nsWindow::SetWindowIconList
-	# fails to load png icons : confuses the png pixbuf loader from gtk, which
-	# differs from the libpng bundled in firefox
-	cd ${PREFIX}/lib/firefox-${MOZILLA_VERSION}/chrome/icons/default/ && \
-		${LOCALBASE}/bin/pngtopnm -alpha default48.png > ${WRKSRC}/alpha.pgm && \
-		${LOCALBASE}/bin/pngtopnm default48.png | \
-		${LOCALBASE}/bin/ppmtoxpm -alphamask=${WRKSRC}/alpha.pgm > default.xpm
 
 .include <bsd.port.mk>

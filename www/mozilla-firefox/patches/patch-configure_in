@@ -1,7 +1,7 @@
 $OpenBSD: patch-configure_in,v 1.18 2010/06/28 21:24:22 landry Exp $
---- configure.in.orig	Thu Nov  4 21:05:18 2010
-+++ configure.in	Sat Nov 13 11:56:32 2010
-@@ -1233,7 +1233,7 @@ MOZ_PNG_LIBS='$(call EXPAND_LIBNAME_PATH,mozpng,$(DEPT
+--- configure.in.orig	Tue Jan 11 04:25:42 2011
++++ configure.in	Sat Jan 15 01:03:20 2011
+@@ -1228,7 +1228,7 @@ MOZ_PNG_LIBS='$(call EXPAND_LIBNAME_PATH,mozpng,$(DEPT
  MOZ_JS_STATIC_LIBS='-L$(LIBXUL_DIST)/bin -ljs_static'
  MOZ_JS_SHARED_LIBS='-L$(LIBXUL_DIST)/bin -lmozjs'
  DYNAMIC_XPCOM_LIBS='-L$(LIBXUL_DIST)/bin -lxpcom -lxpcom_core -lmozalloc'
@@ -10,7 +10,7 @@ $OpenBSD: patch-configure_in,v 1.18 2010/06/28 21:24:22 landry Exp $
  XPCOM_FROZEN_LDOPTS='-L$(LIBXUL_DIST)/bin -lxpcom -lmozalloc'
  LIBXUL_LIBS='$(XPCOM_FROZEN_LDOPTS) -lxul'
  XPCOM_GLUE_LDOPTS='$(LIBXUL_DIST)/lib/$(LIB_PREFIX)xpcomglue_s.$(LIB_SUFFIX) $(XPCOM_FROZEN_LDOPTS)'
-@@ -2596,7 +2596,7 @@ ia64*-hpux*)
+@@ -2590,7 +2590,7 @@ ia64*-hpux*)
  	;;
  
  *-openbsd*)
@@ -19,7 +19,7 @@ $OpenBSD: patch-configure_in,v 1.18 2010/06/28 21:24:22 landry Exp $
      DSO_CFLAGS=''
      DSO_PIC_CFLAGS='-fPIC'
      DSO_LDOPTS='-shared -fPIC'
-@@ -4439,7 +4439,7 @@ if test "$ac_cv_thread_keyword" = yes; then
+@@ -4432,7 +4432,7 @@ if test "$ac_cv_thread_keyword" = yes; then
        :
        ;;
      *)
@@ -28,7 +28,7 @@ $OpenBSD: patch-configure_in,v 1.18 2010/06/28 21:24:22 landry Exp $
        ;;
    esac
  fi
-@@ -5690,14 +5690,7 @@ dnl ==================================================
+@@ -5700,14 +5700,7 @@ dnl ==================================================
  
  # The GNOME component is built if one of 
  # gnome-vfs, gio, gconf or libnotify is available.

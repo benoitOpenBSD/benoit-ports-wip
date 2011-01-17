@@ -1,7 +1,7 @@
 $OpenBSD: patch-layout_build_Makefile_in,v 1.1 2010/04/26 19:55:58 landry Exp $
---- layout/build/Makefile.in.orig	Thu Nov  4 21:06:10 2010
-+++ layout/build/Makefile.in	Sat Nov 13 11:56:35 2010
-@@ -296,6 +296,10 @@ ifneq (,$(filter gtk2,$(MOZ_WIDGET_TOOLKIT)))
+--- layout/build/Makefile.in.orig	Tue Jan 11 04:26:19 2011
++++ layout/build/Makefile.in	Sat Jan 15 01:03:20 2011
+@@ -294,6 +294,10 @@ ifneq (,$(filter gtk2,$(MOZ_WIDGET_TOOLKIT)))
  EXTRA_DSO_LDOPTS += $(XLDFLAGS) $(XLIBS)
  endif
  

@@ -320,88 +320,59 @@ UNSUPPORTED(int sa_stream_create_opaque(sa_stream_t **s,
 UNSUPPORTED(int sa_stream_set_write_lower_watermark(sa_stream_t *s,
     size_t size))
 UNSUPPORTED(int sa_stream_set_read_lower_watermark(sa_stream_t *s, size_t size))
-UNSUPPORTED(int sa_stream_set_write_upper_watermark(sa_stream_t *s,
-    size_t size))
+UNSUPPORTED(int sa_stream_set_write_upper_watermark(sa_stream_t *s, size_t size))
 UNSUPPORTED(int sa_stream_set_read_upper_watermark(sa_stream_t *s, size_t size))
-UNSUPPORTED(int sa_stream_set_channel_map(sa_stream_t *s,
-    const sa_channel_t map[], unsigned int n))
+UNSUPPORTED(int sa_stream_set_channel_map(sa_stream_t *s, const sa_channel_t map[], unsigned int n))
 UNSUPPORTED(int sa_stream_set_xrun_mode(sa_stream_t *s, sa_xrun_mode_t mode))
 UNSUPPORTED(int sa_stream_set_non_interleaved(sa_stream_t *s, int enable))
 UNSUPPORTED(int sa_stream_set_dynamic_rate(sa_stream_t *s, int enable))
 UNSUPPORTED(int sa_stream_set_driver(sa_stream_t *s, const char *driver))
-UNSUPPORTED(int sa_stream_start_thread(sa_stream_t *s,
-    sa_event_callback_t callback))
+UNSUPPORTED(int sa_stream_start_thread(sa_stream_t *s, sa_event_callback_t callback))
 UNSUPPORTED(int sa_stream_stop_thread(sa_stream_t *s))
-UNSUPPORTED(int sa_stream_change_device(sa_stream_t *s,
-    const char *device_name))
-UNSUPPORTED(int sa_stream_change_read_volume(sa_stream_t *s,
-    const int32_t vol[], unsigned int n))
-UNSUPPORTED(int sa_stream_change_write_volume(sa_stream_t *s,
-    const int32_t vol[], unsigned int n))
+UNSUPPORTED(int sa_stream_change_device(sa_stream_t *s, const char *device_name))
+UNSUPPORTED(int sa_stream_change_read_volume(sa_stream_t *s, const int32_t vol[], unsigned int n))
+UNSUPPORTED(int sa_stream_change_write_volume(sa_stream_t *s, const int32_t vol[], unsigned int n))
 UNSUPPORTED(int sa_stream_change_rate(sa_stream_t *s, unsigned int rate))
-UNSUPPORTED(int sa_stream_change_meta_data(sa_stream_t *s, const char *name,
-    const void *data, size_t size))
+UNSUPPORTED(int sa_stream_change_meta_data(sa_stream_t *s, const char *name, const void *data, size_t size))
 UNSUPPORTED(int sa_stream_change_user_data(sa_stream_t *s, const void *value))
-UNSUPPORTED(int sa_stream_set_adjust_rate(sa_stream_t *s,
-    sa_adjust_t direction))
-UNSUPPORTED(int sa_stream_set_adjust_nchannels(sa_stream_t *s,
-    sa_adjust_t direction))
-UNSUPPORTED(int sa_stream_set_adjust_pcm_format(sa_stream_t *s,
-    sa_adjust_t direction))
-UNSUPPORTED(int sa_stream_set_adjust_watermarks(sa_stream_t *s,
-    sa_adjust_t direction))
+UNSUPPORTED(int sa_stream_set_adjust_rate(sa_stream_t *s, sa_adjust_t direction))
+UNSUPPORTED(int sa_stream_set_adjust_nchannels(sa_stream_t *s, sa_adjust_t direction))
+UNSUPPORTED(int sa_stream_set_adjust_pcm_format(sa_stream_t *s, sa_adjust_t direction))
+UNSUPPORTED(int sa_stream_set_adjust_watermarks(sa_stream_t *s, sa_adjust_t direction))
 UNSUPPORTED(int sa_stream_get_mode(sa_stream_t *s, sa_mode_t *access_mode))
 UNSUPPORTED(int sa_stream_get_codec(sa_stream_t *s, char *codec, size_t *size))
-UNSUPPORTED(int sa_stream_get_pcm_format(sa_stream_t *s,
-    sa_pcm_format_t *format))
+UNSUPPORTED(int sa_stream_get_pcm_format(sa_stream_t *s, sa_pcm_format_t *format))
 UNSUPPORTED(int sa_stream_get_rate(sa_stream_t *s, unsigned int *rate))
 UNSUPPORTED(int sa_stream_get_nchannels(sa_stream_t *s, int *nchannels))
 UNSUPPORTED(int sa_stream_get_user_data(sa_stream_t *s, void **value))
-UNSUPPORTED(int sa_stream_get_write_lower_watermark(sa_stream_t *s,
-    size_t *size))
-UNSUPPORTED(int sa_stream_get_read_lower_watermark(sa_stream_t *s,
-    size_t *size))
-UNSUPPORTED(int sa_stream_get_write_upper_watermark(sa_stream_t *s,
-    size_t *size))
-UNSUPPORTED(int sa_stream_get_read_upper_watermark(sa_stream_t *s,
-    size_t *size))
-UNSUPPORTED(int sa_stream_get_channel_map(sa_stream_t *s, sa_channel_t map[],
-    unsigned int *n))
+UNSUPPORTED(int sa_stream_get_write_lower_watermark(sa_stream_t *s, size_t *size))
+UNSUPPORTED(int sa_stream_get_read_lower_watermark(sa_stream_t *s, size_t *size))
+UNSUPPORTED(int sa_stream_get_write_upper_watermark(sa_stream_t *s, size_t *size))
+UNSUPPORTED(int sa_stream_get_read_upper_watermark(sa_stream_t *s, size_t *size))
+UNSUPPORTED(int sa_stream_get_channel_map(sa_stream_t *s, sa_channel_t map[], unsigned int *n))
 UNSUPPORTED(int sa_stream_get_xrun_mode(sa_stream_t *s, sa_xrun_mode_t *mode))
 UNSUPPORTED(int sa_stream_get_non_interleaved(sa_stream_t *s, int *enabled))
 UNSUPPORTED(int sa_stream_get_dynamic_rate(sa_stream_t *s, int *enabled))
-UNSUPPORTED(int sa_stream_get_driver(sa_stream_t *s, char *driver_name,
-    size_t *size))
-UNSUPPORTED(int sa_stream_get_device(sa_stream_t *s, char *device_name,
-    size_t *size))
-UNSUPPORTED(int sa_stream_get_read_volume(sa_stream_t *s, int32_t vol[],
-    unsigned int *n))
-UNSUPPORTED(int sa_stream_get_write_volume(sa_stream_t *s, int32_t vol[],
-    unsigned int *n))
-UNSUPPORTED(int sa_stream_get_meta_data(sa_stream_t *s, const char *name,
-    void *data, size_t *size))
-UNSUPPORTED(int sa_stream_get_adjust_rate(sa_stream_t *s,
-    sa_adjust_t *direction))
-UNSUPPORTED(int sa_stream_get_adjust_nchannels(sa_stream_t *s,
-    sa_adjust_t *direction))
-UNSUPPORTED(int sa_stream_get_adjust_pcm_format(sa_stream_t *s,
-    sa_adjust_t *direction))
-UNSUPPORTED(int sa_stream_get_adjust_watermarks(sa_stream_t *s,
-    sa_adjust_t *direction))
+UNSUPPORTED(int sa_stream_get_driver(sa_stream_t *s, char *driver_name, size_t *size))
+UNSUPPORTED(int sa_stream_get_device(sa_stream_t *s, char *device_name, size_t *size))
+UNSUPPORTED(int sa_stream_get_read_volume(sa_stream_t *s, int32_t vol[], unsigned int *n))
+UNSUPPORTED(int sa_stream_get_write_volume(sa_stream_t *s, int32_t vol[], unsigned int *n))
+UNSUPPORTED(int sa_stream_get_meta_data(sa_stream_t *s, const char *name, void*data, size_t *size))
+UNSUPPORTED(int sa_stream_get_adjust_rate(sa_stream_t *s, sa_adjust_t *direction))
+UNSUPPORTED(int sa_stream_get_adjust_nchannels(sa_stream_t *s, sa_adjust_t *direction))
+UNSUPPORTED(int sa_stream_get_adjust_pcm_format(sa_stream_t *s, sa_adjust_t *direction))
+UNSUPPORTED(int sa_stream_get_adjust_watermarks(sa_stream_t *s, sa_adjust_t *direction))
 UNSUPPORTED(int sa_stream_get_state(sa_stream_t *s, sa_state_t *state))
 UNSUPPORTED(int sa_stream_get_event_error(sa_stream_t *s, sa_error_t *error))
 UNSUPPORTED(int sa_stream_get_event_notify(sa_stream_t *s, sa_notify_t *notify))
 UNSUPPORTED(int sa_stream_read(sa_stream_t *s, void *data, size_t nbytes))
-UNSUPPORTED(int sa_stream_read_ni(sa_stream_t *s, unsigned int channel,
-    void *data, size_t nbytes))
-UNSUPPORTED(int sa_stream_write_ni(sa_stream_t *s, unsigned int channel,
-    const void *data, size_t nbytes))
-UNSUPPORTED(int sa_stream_pwrite(sa_stream_t *s, const void *data,
-    size_t nbytes, int64_t offset, sa_seek_t whence))
-UNSUPPORTED(int sa_stream_pwrite_ni(sa_stream_t *s, unsigned int channel,
-    const void *data, size_t nbytes, int64_t offset, sa_seek_t whence))
+UNSUPPORTED(int sa_stream_read_ni(sa_stream_t *s, unsigned int channel, void *data, size_t nbytes))
+UNSUPPORTED(int sa_stream_write_ni(sa_stream_t *s, unsigned int channel, const void *data, size_t nbytes))
+UNSUPPORTED(int sa_stream_pwrite(sa_stream_t *s, const void *data, size_t nbytes, int64_t offset, sa_seek_t whence))
+UNSUPPORTED(int sa_stream_pwrite_ni(sa_stream_t *s, unsigned int channel, const void *data, size_t nbytes, int64_t offset, sa_seek_t whence))
 UNSUPPORTED(int sa_stream_get_read_size(sa_stream_t *s, size_t *size))
 UNSUPPORTED(int sa_stream_drain(sa_stream_t *s))
+UNSUPPORTED(int sa_stream_get_min_write(sa_stream_t *s, size_t *samples))
 
 const char *sa_strerror(int code) { return NULL; }
 
