@@ -1,0 +1,11 @@
+--- libnetutil/netutil.cc~	Fri Jan 21 01:04:16 2011
++++ libnetutil/netutil.cc	Sat Jan 29 19:53:54 2011
+@@ -135,6 +135,8 @@
+ #include <sys/resource.h>
+ #endif
+ 
++#include "../sctp.h"
++
+ #include "netutil.h"
+ 
+ #define NBASE_MAX_ERR_STR_LEN 1024  /* Max length of an error message */
