@@ -6,17 +6,20 @@
 @bin bin/ncat
 bin/ndiff
 @bin bin/nmap
+@bin bin/nping
 @comment lib/python${MODPY_VERSION}/
 @comment lib/python${MODPY_VERSION}/site-packages/
 @man man/man1/ncat.1
 @man man/man1/ndiff.1
 @man man/man1/nmap.1
+@man man/man1/nping.1
 @comment share/applications/
 share/ncat/
 share/ncat/ca-bundle.crt
 share/nmap/
 share/nmap/nmap-mac-prefixes
 share/nmap/nmap-os-db
+share/nmap/nmap-payloads
 share/nmap/nmap-protocols
 share/nmap/nmap-rpc
 share/nmap/nmap-service-probes
