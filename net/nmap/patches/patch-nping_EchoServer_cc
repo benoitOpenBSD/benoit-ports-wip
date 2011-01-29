@@ -1,0 +1,11 @@
+--- nping/EchoServer.cc~	Fri Jan 21 01:04:51 2011
++++ nping/EchoServer.cc	Sat Jan 29 23:21:08 2011
+@@ -836,7 +836,7 @@
+   const unsigned char *packet=NULL;
+   const unsigned char *link=NULL;
+   nsock_iod nsi = nse_iod(nse);
+-  struct timeval pcaptime;
++  struct bpf_timeval pcaptime;
+   nsock_iod clnt_iod=NULL;
+   NEPContext *ctx=NULL;
+   EchoHeader pkt_out;

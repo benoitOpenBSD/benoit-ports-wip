@@ -1,0 +1,13 @@
+--- nping/ProbeMode.cc~	Fri Jan 21 01:04:51 2011
++++ nping/ProbeMode.cc	Sat Jan 29 23:32:48 2011
+@@ -1506,8 +1506,8 @@
+  u16 *ethtype=NULL;
+  u8 buffer[512+1];
+  size_t link_offset=0;
+- static struct timeval pcaptime;
+- static struct timeval prevtime;
++ static struct bpf_timeval pcaptime;
++ static struct bpf_timeval prevtime;
+  NpingTarget *trg=NULL;
+  u16 *prt=NULL;
+  u8 proto=0;

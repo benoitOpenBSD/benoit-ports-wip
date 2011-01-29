@@ -1,0 +1,13 @@
+--- nping/configure~	Sat Jan 22 00:10:38 2011
++++ nping/configure	Sat Jan 29 23:51:37 2011
+@@ -5127,8 +5127,8 @@
+   else
+     CPPFLAGS="$CPPFLAGS -I$libpcapdir"
+   fi
+-  LIBPCAP_LIBS='$(LIBPCAPDIR)/libpcap.a'
+-  PCAP_DEPENDS='$(LIBPCAPDIR)/libpcap.a'
++  LIBPCAP_LIBS='-lpcap'
++  PCAP_DEPENDS='-lpcap'
+   PCAP_BUILD="pcap_build"
+   PCAP_CLEAN="pcap_clean"
+   PCAP_DIST_CLEAN="pcap_dist_clean"
