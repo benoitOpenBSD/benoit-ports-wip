@@ -1,15 +1,14 @@
-$OpenBSD: patch-configure,v 1.12 2010/10/04 20:42:37 benoit Exp $
---- configure.orig0	Mon Oct  4 16:05:33 2010
-+++ configure	Mon Oct  4 16:06:34 2010
-@@ -675,6 +675,7 @@
+--- configure.orig	Fri Jan 21 22:00:04 2011
++++ configure	Sat Jan 29 19:50:06 2011
+@@ -630,6 +630,7 @@
  PCAP_CLEAN
  PCAP_BUILD
  PCAP_DEPENDS
 +OPENSSL_NO_MD2
  OPENSSL_LIBS
- ZENMAP_DIST_CLEAN
- ZENMAP_CLEAN
-@@ -6683,6 +6684,150 @@
+ NPING_DIST_CLEAN
+ NPING_CLEAN
+@@ -5939,6 +5940,150 @@
   fi
  fi
  
@@ -159,8 +158,8 @@ $OpenBSD: patch-configure,v 1.12 2010/10/04 20:42:37 benoit Exp $
 +
  OPENSSL_LIBS=
  if test "$use_openssl" = "yes"; then
-   cat >>confdefs.h <<\_ACEOF
-@@ -7161,6 +7306,7 @@
+   $as_echo "#define HAVE_OPENSSL 1" >>confdefs.h
+@@ -6115,6 +6260,7 @@
  extern char pcap_version[];
  int main() {
    int major, minor1, minor2;
@@ -168,21 +167,24 @@ $OpenBSD: patch-configure,v 1.12 2010/10/04 20:42:37 benoit Exp $
    sscanf(pcap_version,"%d.%d.%d", &major, &minor1, &minor2);
    if (major > 0)
      exit(0);
-@@ -7492,7 +7638,7 @@
- cat >>conftest.$ac_ext <<_ACEOF
- /* end confdefs.h.  */
- $ac_includes_default
--#include <pcre/pcre.h>
-+#include <pcre.h>
- _ACEOF
- rm -f conftest.$ac_objext
- if { (ac_try="$ac_compile"
-@@ -7693,7 +7839,7 @@
+@@ -6285,7 +6431,7 @@
+ fi
+ 
+ else
+-  ac_fn_c_check_header_mongrel "$LINENO" "pcre/pcre.h" "ac_cv_header_pcre_pcre_h" "$ac_includes_default"
++  ac_fn_c_check_header_mongrel "$LINENO" "pcre.h" "ac_cv_header_pcre_pcre_h" "$ac_includes_default"
+ if test "x$ac_cv_header_pcre_pcre_h" = x""yes; then :
+   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for pcre_version in -lpcre" >&5
+ $as_echo_n "checking for pcre_version in -lpcre... " >&6; }
+@@ -6349,9 +6495,9 @@
+   PCRE_DIST_CLEAN="pcre_dist_clean"
  else
  # We only need to check for and use this if we are NOT using included pcre
- 
--for ac_header in pcre/pcre.h
-+for ac_header in pcre.h
- do
- as_ac_Header=`$as_echo "ac_cv_header_$ac_header" | $as_tr_sh`
- if { as_var=$as_ac_Header; eval "test \"\${$as_var+set}\" = set"; }; then
+-  for ac_header in pcre/pcre.h
++  for ac_header in pcre.h
+ do :
+-  ac_fn_c_check_header_mongrel "$LINENO" "pcre/pcre.h" "ac_cv_header_pcre_pcre_h" "$ac_includes_default"
++  ac_fn_c_check_header_mongrel "$LINENO" "pcre.h" "ac_cv_header_pcre_pcre_h" "$ac_includes_default"
+ if test "x$ac_cv_header_pcre_pcre_h" = x""yes; then :
+   cat >>confdefs.h <<_ACEOF
+ #define HAVE_PCRE_PCRE_H 1
