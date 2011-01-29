@@ -1,0 +1,26 @@
+--- scan_engine.cc.orig	Fri Jan 15 04:55:23 2010
++++ scan_engine.cc	Wed Jan 20 19:54:57 2010
+@@ -108,6 +108,7 @@
+ #include <math.h>
+ #include <list>
+ #include <map>
++#include "sctp.h"
+ 
+ using namespace std;
+ extern NmapOps o;
+@@ -4915,13 +4916,13 @@ static void begin_sniffer(UltraScanInfo *USI, vector<T
+     if (doIndividual){
+       pcap_filter="dst host ";
+       pcap_filter+=inet_ntoa(Targets[0]->v4source());
+-      pcap_filter+=" and (icmp or ((tcp or udp or sctp) and (";
++      pcap_filter+=" and (icmp or ((tcp or udp) and (";
+       pcap_filter+=dst_hosts;
+       pcap_filter+=")))";
+     }else{
+       pcap_filter="dst host ";
+       pcap_filter+=inet_ntoa(Targets[0]->v4source());
+-      pcap_filter+=" and (icmp or tcp or udp or sctp)";
++      pcap_filter+=" and (icmp or tcp or udp)";
+     }
+   }else assert(0);
+   if (o.debugging > 2) log_write(LOG_PLAIN, "Pcap filter: %s\n", pcap_filter.c_str());

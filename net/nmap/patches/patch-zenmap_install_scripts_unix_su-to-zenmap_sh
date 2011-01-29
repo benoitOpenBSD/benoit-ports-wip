@@ -1,0 +1,34 @@
+$OpenBSD: patch-zenmap_install_scripts_unix_su-to-zenmap_sh,v 1.2 2009/10/22 10:00:57 giovanni Exp $
+--- zenmap/install_scripts/unix/su-to-zenmap.sh.orig	Sun May  3 06:33:50 2009
++++ zenmap/install_scripts/unix/su-to-zenmap.sh	Thu Oct  1 18:46:30 2009
+@@ -1,4 +1,4 @@
+-#!/bin/bash
++#!/bin/sh
+ #this code is bassed off of the debian su-to-root command
+ #Joost Witteveen <joostje@debian.org>
+ #Morten Brix Pedersen
+@@ -18,13 +18,13 @@ else
+         if test "X$KDE_FULL_SESSION" = "Xtrue" ; then
+           if which kdesu >/dev/null 2>&1 ; then
+             SU_TO_ROOT_X=kdesu
+-          elif test -x /usr/lib/kde4/libexec/kdesu ; then
++          elif test -x ${LOCALBASE}/lib/kde4/libexec/kdesu ; then
+             SU_TO_ROOT_X=kde4su
+           fi;
+         fi;
+       elif which kdesu >/dev/null 2>&1 ; then 
+         SU_TO_ROOT_X=kdesu
+-      elif test -x /usr/lib/kde4/libexec/kdesu ; then
++      elif test -x ${LOCALBASE}/lib/kde4/libexec/kdesu ; then
+         SU_TO_ROOT_X=kde4su
+       elif which ktsuss >/dev/null 2>&1 ; then
+         SU_TO_ROOT_X=ktsuss
+@@ -41,7 +41,7 @@ else
+     case $SU_TO_ROOT_X in
+       gksu) gksu -u "$PRIV" "$COMMAND";;
+       kdesu) kdesu -u "$PRIV" "$COMMAND";;
+-      kde4su) /usr/lib/kde4/libexec/kdesu -u "$PRIV" "$COMMAND";;
++      kde4su) ${LOCALBASE}/lib/kde4/libexec/kdesu -u "$PRIV" "$COMMAND";;
+       ktsuss) ktsuss -u "$PRIV" "$COMMAND";;
+   # As a last resort, open a new xterm use sudo/su
+       sdterm) xterm -e "sudo -u $PRIV $COMMAND";;
