@@ -2,7 +2,7 @@
 
 COMMENT =	perl implementation of RIPE whois
 
-DISTNAME =	Net-Whois-RIPE-2.00002
+DISTNAME =	Net-Whois-RIPE-2.00003
 CATEGORIES =	net
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
