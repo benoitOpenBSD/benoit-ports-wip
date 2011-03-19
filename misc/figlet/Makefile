@@ -25,8 +25,6 @@ DISTFILES =	${DISTNAME}${EXTRACT_SUFX} \
 MAKE_FLAGS =	CC="${CC}" CFLAGS="${CFLAGS}" \
 		DEFAULTFONTDIR=${PREFIX}/share/figlet
 
-USE_GROFF =	Yes
-
 NO_REGRESS =	Yes
 
 pre-configure:
