@@ -2,7 +2,7 @@
 
 COMMENT =	a full operating system stack fingerprinting suite
 
-DISTNAME =	Net-SinFP-2.07
+DISTNAME =	Net-SinFP-2.09
 CATEGORIES =	net
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
