@@ -1,24 +1,36 @@
 # $OpenBSD$
 
 COMMENT =	library for manipulating PDF documents
-VERSION=	0.4.5
-DISTNAME=	pdfedit-${VERSION}
-CATEGORIES=	textproc
 
-HOMEPAGE=	http://pdfedit.petricek.net/
+VERSION =	0.4.5
+DISTNAME =	pdfedit-${VERSION}
+CATEGORIES =	textproc
 
-MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
+HOMEPAGE =	http://pdfedit.petricek.net/
+
+MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
+PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE_FTP =	Yes
+PERMIT_DISTFILES_CDROM =Yes
+PERMIT_DISTFILES_FTP =	Yes
 
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pdfedit/}
+MASTER_SITES		= ${MASTER_SITE_SOURCEFORGE:=pdfedit/}
 
-WANTLIB=	c
+WANTLIB =		c m z stdc++ freetype t1 ICE X11
 
-USE_GMAKE =	Yes
+LIB_DEPENDS =		devel/t1lib \
+			devel/boost
+
+USE_GMAKE =		Yes
+
+CONFIGURE_STYLE =	gnu
+CONFIGURE_ARGS +=	--with-parallel-make=off \
+			--enable-tools \
+			--enable-pdfedit-core-dev \
+			--disable-gui
+
+NO_REGRESS =		Yes
 
 .include <bsd.port.mk>
