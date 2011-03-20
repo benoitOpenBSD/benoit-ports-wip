@@ -29,8 +29,16 @@ CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	--with-parallel-make=off \
 			--enable-tools \
 			--enable-pdfedit-core-dev \
-			--disable-gui
+			--disable-gui \
+			--with-t1-includes=${LOCALBASE}/include \
+			--with-t1-library=${LOCALBASE}/lib
+#			--enable-poratability-flags=no
 
+#CONFIGURE_ENV = 
+#CONFIGURE_ENV += CPPFLAGS='-I${LOCALBASE}/include'
+#CONFIGURE_ENV = CPPFLAGS='-I${X11BASE}/include/freetype2 -I${X11BASE}/include -I${LOCALBASE}/include -DLOCALBASE="\"${LOCALBASE}\""' \
+#		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib -lm -lz"
+ 
 NO_REGRESS =		Yes
 
 .include <bsd.port.mk>
