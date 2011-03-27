@@ -1,0 +1,99 @@
+--- Makefile.orig	Sat Feb 12 01:20:00 2011
++++ Makefile	Sat Mar 26 15:16:18 2011
+@@ -262,7 +262,7 @@
+ 
+ # CFLAGS and LDFLAGS are for the users to override from the command line.
+ 
+-CFLAGS = -g -O2 -Wall
++CFLAGS ?= -g -O2 -Wall
+ LDFLAGS =
+ ALL_CFLAGS = $(CPPFLAGS) $(CFLAGS)
+ ALL_LDFLAGS = $(LDFLAGS)
+@@ -281,32 +281,25 @@
+ # runtime figures out where they are based on the path to the executable.
+ # This can help installing the suite in a relocatable way.
+ 
+-prefix = $(HOME)
++#prefix = $(HOME)
+ bindir_relative = bin
+ bindir = $(prefix)/$(bindir_relative)
+-mandir = share/man
++mandir = man
+ infodir = share/info
+-gitexecdir = libexec/git-core
++gitexecdir = libexec/git
+ sharedir = $(prefix)/share
+ gitwebdir = $(sharedir)/gitweb
+ template_dir = share/git-core/templates
+ htmldir = share/doc/git-doc
+-ifeq ($(prefix),/usr)
+-sysconfdir = /etc
+-ETC_GITCONFIG = $(sysconfdir)/gitconfig
+-ETC_GITATTRIBUTES = $(sysconfdir)/gitattributes
+-else
+-sysconfdir = $(prefix)/etc
+-ETC_GITCONFIG = etc/gitconfig
+-ETC_GITATTRIBUTES = etc/gitattributes
+-endif
++ETC_GITCONFIG = $(SYSCONFDIR)/gitconfig
++ETC_GITATTRIBUTES = $(SYSCONFDIR)/gitattributes
+ lib = lib
+ # DESTDIR=
+ pathsep = :
+ 
+ export prefix bindir sharedir sysconfdir gitwebdir
+ 
+-CC = gcc
++CC ?= gcc
+ AR = ar
+ RM = rm -f
+ DIFF = diff
+@@ -314,9 +307,9 @@
+ FIND = find
+ INSTALL = install
+ RPMBUILD = rpmbuild
+-TCL_PATH = tclsh
+-TCLTK_PATH = wish
+-PTHREAD_LIBS = -lpthread
++TCL_PATH ?= tclsh
++TCLTK_PATH ?= wish
++PTHREAD_LIBS = -pthread
+ PTHREAD_CFLAGS =
+ GCOV = gcov
+ 
+@@ -943,13 +936,14 @@
+ 	HAVE_PATHS_H = YesPlease
+ endif
+ ifeq ($(uname_S),OpenBSD)
+-	NO_STRCASESTR = YesPlease
+ 	NO_MEMMEM = YesPlease
+ 	USE_ST_TIMESPEC = YesPlease
+ 	NEEDS_LIBICONV = YesPlease
+-	BASIC_CFLAGS += -I/usr/local/include
+-	BASIC_LDFLAGS += -L/usr/local/lib
++	BASIC_CFLAGS += -I${X11BASE}/include -I${LOCALBASE}/include
++	BASIC_LDFLAGS += -L${X11BASE}/lib -L${LOCALBASE}/lib
+ 	HAVE_PATHS_H = YesPlease
++	NO_PTHREADS = YesPlease
++	NO_PYTHON = YesPlease
+ endif
+ ifeq ($(uname_S),NetBSD)
+ 	ifeq ($(shell expr "$(uname_R)" : '[01]\.'),2)
+@@ -1291,7 +1285,7 @@
+ EXTLIBS += -lz
+ 
+ ifndef NO_OPENSSL
+-	OPENSSL_LIBSSL = -lssl
++	OPENSSL_LIBSSL = -lssl -lcrypto
+ 	ifdef OPENSSLDIR
+ 		BASIC_CFLAGS += -I$(OPENSSLDIR)/include
+ 		OPENSSL_LINK = -L$(OPENSSLDIR)/$(lib) $(CC_LD_DYNPATH)$(OPENSSLDIR)/$(lib)
+@@ -2119,7 +2113,7 @@
+ 
+ ### Testing rules
+ 
+-test: all
++test:
+ 	$(MAKE) -C t/ all
+ 
+ test-ctype$X: ctype.o

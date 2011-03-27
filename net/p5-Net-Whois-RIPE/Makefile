@@ -15,11 +15,7 @@ PERMIT_DISTFILES_FTP =	Yes
 
 MODULES =		cpan
 
-USE_GROFF =		Yes
-
-RUN_DEPENDS =		devel/p5-Test-Exception \
-			devel/p5-Module-Install \
-			devel/p5-Iterator-Util
-REGRESS_DEPENDS =       ${RUN_DEPENDS}
+RUN_DEPENDS =		devel/p5-Iterator-Util
+REGRESS_DEPENDS =	devel/p5-Test-Exception
                          
 .include <bsd.port.mk>

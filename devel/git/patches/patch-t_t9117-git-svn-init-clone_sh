@@ -1,0 +1,11 @@
+$OpenBSD: patch-t_t9117-git-svn-init-clone_sh,v 1.2 2009/01/24 14:31:29 bernd Exp $
+--- t/t9117-git-svn-init-clone.sh.orig	Thu Dec 25 06:33:25 2008
++++ t/t9117-git-svn-init-clone.sh	Thu Dec 25 19:25:32 2008
+@@ -8,7 +8,6 @@ test_description='git svn init/clone tests'
+ . ./lib-git-svn.sh
+ 
+ # setup, run inside tmp so we don't have any conflicts with $svnrepo
+-set -e
+ rm -r .git
+ mkdir tmp
+ cd tmp
