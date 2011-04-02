@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.22 2010/07/17 22:52:50 benoit Exp $
+# $OpenBSD: Makefile,v 1.26 2010/11/19 07:23:15 espie Exp $
 
 COMMENT =	create, alter and inspect Matroska files
 
-DISTNAME =	mkvtoolnix-4.3.0
+DISTNAME =	mkvtoolnix-4.6.0
 CATEGORIES =	multimedia x11
 
 HOMEPAGE =	http://www.bunkus.org/videotools/mkvtoolnix/
@@ -15,23 +15,26 @@ PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-WANTLIB =	boost_system-mt.>=1.1 boost_regex-mt.>=1.1 boost_filesystem-mt.>=1.1 \
-		bz2.>=10 c ebml expat FLAC.>=9 lzo2 m magic.>=2 matroska.>=1.0 \
-		ogg stdc++ vorbis.>=8 z pthread
+WANTLIB =	boost_system-mt>=1.1 boost_regex-mt>=1.1 \
+		boost_filesystem-mt>=1.1 \
+		bz2>=10 c ebml expat FLAC>=9 lzo2 m magic>=2 matroska>=1.0 \
+		ogg stdc++ vorbis>=8 z pthread
 
 MASTER_SITES =	${HOMEPAGE}/sources/
 
 EXTRACT_SUFX =	.tar.bz2
 
-MODULES =	devel/gettext
+MODULES =	devel/gettext \
+		lang/ruby
 
-LIB_DEPENDS =	::audio/flac \
-		::archivers/bzip2 \
-		::archivers/lzo2 \
-		::multimedia/libmatroska \
-		::audio/libvorbis \
-		::devel/libmagic \
-		::devel/boost
+BUILD_DEPENDS =	devel/ruby-rake
+LIB_DEPENDS =	audio/flac \
+		archivers/bzip2 \
+		archivers/lzo2 \
+		multimedia/libmatroska \
+		audio/libvorbis \
+		devel/libmagic \
+		devel/boost
 
 MAKE_FLAGS +=	V=1
 
@@ -49,6 +52,7 @@ CONFIGURE_ENV =	CPPFLAGS="-I${X11BASE}/include -I${LOCALBASE}/include" \
 		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib \
 		-lm -lstdc++ -pthread -liconv" \
 		ac_cv_has_nl_langinfo=no
+USE_GROFF =	Yes
 
 FLAVORS =	no_x11
 FLAVOR ?=
@@ -56,13 +60,18 @@ FLAVOR ?=
 .if ${FLAVOR:L:Mno_x11}
 CONFIGURE_ARGS += --disable-gui --disable-wxwidgets
 .else
-USE_X11 =	Yes
-LIB_DEPENDS +=	wx_base,wx_base_net,wx_base_odbc,wx_base_xml,wx_gtk2_adv,wx_gtk2_aui,wx_gtk2_core,wx_gtk2_dbgrid,wx_gtk2_html,wx_gtk2_qa,wx_gtk2_xrc,wx_gtk2_richtext:wxWidgets-gtk2->=2.8.10:x11/wxWidgets
+LIB_DEPENDS +=	x11/wxWidgets>=2.8.10
+WANTLIB +=	wx_base wx_base_net wx_base_odbc wx_base_xml wx_gtk2_adv \
+		wx_gtk2_aui wx_gtk2_core wx_gtk2_dbgrid wx_gtk2_html \
+		wx_gtk2_qa wx_gtk2_xrc wx_gtk2_richtext
 CONFIGURE_ARGS += --enable-gui --enable-wxwidgets
 .endif
 
 NO_REGRESS =    Yes
 
+do-build:
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${RAKE}
+        
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/man/ja.po
 	${INSTALL_DATA_DIR} ${PREFIX}/man/zh_CN.po
