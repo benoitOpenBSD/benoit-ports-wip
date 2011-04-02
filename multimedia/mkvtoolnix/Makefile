@@ -27,7 +27,6 @@ EXTRACT_SUFX =	.tar.bz2
 MODULES =	devel/gettext \
 		lang/ruby
 
-BUILD_DEPENDS =	devel/ruby-rake
 LIB_DEPENDS =	audio/flac \
 		archivers/bzip2 \
 		archivers/lzo2 \
@@ -35,6 +34,8 @@ LIB_DEPENDS =	audio/flac \
 		audio/libvorbis \
 		devel/libmagic \
 		devel/boost
+
+BUILD_DEPENDS =	devel/ruby-rake
 
 MAKE_FLAGS +=	V=1
 
@@ -71,7 +72,7 @@ NO_REGRESS =    Yes
 
 do-build:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${RAKE}
-        
+	
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/man/ja.po
 	${INSTALL_DATA_DIR} ${PREFIX}/man/zh_CN.po
