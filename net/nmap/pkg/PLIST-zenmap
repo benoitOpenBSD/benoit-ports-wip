@@ -1,9 +1,7 @@
-@comment $OpenBSD: PLIST-zenmap,v 1.10 2010/04/21 07:08:23 giovanni Exp $
+@comment $OpenBSD: PLIST-zenmap,v 1.11 2011/03/28 09:01:24 giovanni Exp $
 bin/nmapfe
 bin/xnmap
 bin/zenmap
-@comment lib/python${MODPY_VERSION}/
-@comment lib/python${MODPY_VERSION}/site-packages/
 lib/python${MODPY_VERSION}/site-packages/radialnet/
 lib/python${MODPY_VERSION}/site-packages/radialnet/__init__.py
 lib/python${MODPY_VERSION}/site-packages/radialnet/__init__.pyc

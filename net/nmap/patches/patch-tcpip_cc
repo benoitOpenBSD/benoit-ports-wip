@@ -1,11 +1,11 @@
---- tcpip.cc.orig	Sat Jan 29 23:11:51 2011
-+++ tcpip.cc	Sat Jan 29 23:12:07 2011
-@@ -128,7 +128,7 @@
+--- tcpip.cc.orig	Fri Jan 21 01:04:16 2011
++++ tcpip.cc	Wed Feb  2 13:12:14 2011
+@@ -120,6 +120,8 @@
+ #endif /* NETINET_IF_ETHER_H */
+ #endif /* HAVE_NETINET_IF_ETHER_H */
  
- static PacketCounter PktCt;
- 
--
 +#include "sctp.h"
++
+ extern NmapOps o;
  
- 
- 
+ #ifdef WIN32
