@@ -2,7 +2,7 @@
 
 COMMENT =	ANother Tool for Language Recognition
 
-DISTNAME =	antlr-3.1.3
+DISTNAME =	antlr-3.3
 PKGNAME =	${DISTNAME}
 
 CATEGORIES =	lang java
