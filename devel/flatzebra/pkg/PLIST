@@ -4,6 +4,7 @@ include/flatzebra-0.1/
 include/flatzebra-0.1/flatzebra/
 include/flatzebra-0.1/flatzebra/Couple.h
 include/flatzebra-0.1/flatzebra/GameEngine.h
+include/flatzebra-0.1/flatzebra/Joystick.h
 include/flatzebra-0.1/flatzebra/KeyState.h
 include/flatzebra-0.1/flatzebra/PixmapArray.h
 include/flatzebra-0.1/flatzebra/PixmapLoadError.h
