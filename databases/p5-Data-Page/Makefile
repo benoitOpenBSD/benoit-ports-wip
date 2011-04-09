@@ -5,7 +5,6 @@ COMMENT=	pager utility
 DISTNAME=	Data-Page-2.02
 CATEGORIES=	databases
 MODULES=	cpan
-USE_GROFF =	Yes
 
 MAINTAINER=		Sean Comeau <scomeau@obscurity.org>
 
@@ -17,6 +16,5 @@ PERMIT_DISTFILES_FTP=	Yes
 
 RUN_DEPENDS=	devel/p5-Class-Accessor-Chained \
 		devel/p5-Test-Exception
-BUILD_DEPENDS = ${RUN_DEPENDS}
 
 .include <bsd.port.mk>
