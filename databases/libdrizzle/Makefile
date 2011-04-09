@@ -2,7 +2,7 @@
 
 COMMENT =		Drizzle Client & Protocol Library
 
-V =			0.6
+V =			0.8
 DISTNAME =		libdrizzle-${V}
 
 SHARED_LIBS +=		drizzle 0.0	# .0.6

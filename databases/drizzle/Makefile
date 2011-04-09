@@ -2,7 +2,7 @@
 
 COMMENT =		A Lightweight SQL Database for Cloud and Web
 
-DISTNAME =		drizzle-2009.12.1240
+DISTNAME =		drizzle-2010.04.1513
 
 #SHARED_LIBS =		???
 
@@ -20,7 +20,7 @@ PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		z pthread readline
 
-MASTER_SITES =		http://launchpad.net/drizzle/trunk/bell/+download/
+MASTER_SITES =		http://launchpad.net/drizzle/cherry/2010-04-26/+download/
 
 MODULES+=	devel/gettext
 MODULES+=       gcc4
@@ -31,11 +31,12 @@ MODGCC4_LANGS=  c c++
 BUILD_DEPENDS +=	devel/bison
 BUILD_DEPENDS +=	devel/gperf
 #RUN_DEPENDS =		???
-LIB_DEPENDS +=		pcre.>=2.0::devel/pcre
+
+LIB_DEPENDS +=		devel/pcre
 LIB_DEPENDS +=		lib/uuid/uuid::sysutils/e2fsprogs,-uuid
-LIB_DEPENDS +=		curl.>=13::net/curl
-LIB_DEPENDS +=		gnutls::security/gnutls
-LIB_DEPENDS +=		protobuf::devel/protobuf
+LIB_DEPENDS +=		net/curl
+LIB_DEPENDS +=		security/gnutls
+LIB_DEPENDS +=		devel/protobuf
 LIB_DEPENDS +=		drizzle::databases/libdrizzle
 LIB_DEPENDS +=		estdc++.>=11:libstdc++->=4.2,<4.3|libstdc++->=4.2v0,<4.3v0:lang/gcc/4.2,-estdc
 #REGRESS_DEPENDS =	???
