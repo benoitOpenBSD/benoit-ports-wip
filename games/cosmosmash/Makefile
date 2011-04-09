@@ -18,7 +18,7 @@ WANTLIB += SDL SDL_image SDL_mixer c m pthread stdc++ flatzebra-0.1>=1
 
 MASTER_SITES=	http://sarrazip.com/dev/
 
-LIB_DEPENDS=	devel/flatzebra>=0.1.4
+LIB_DEPENDS=	devel/flatzebra>=0.1.5
 RUN_DEPENDS=	devel/desktop-file-utils
 
 USE_GROFF =	Yes
