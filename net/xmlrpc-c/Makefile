@@ -3,7 +3,7 @@
 COMMENT=	XML-RPC C/C++ client-server implementation
 CATEGORIES=	net devel textproc
 
-V=		1.06.41
+V=		1.06.42
 DISTNAME=	xmlrpc-c-${V}
 
 EXTRACT_SUFX=	.tgz

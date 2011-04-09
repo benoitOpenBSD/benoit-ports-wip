@@ -20,4 +20,6 @@ RUN_DEPENDS=		www/p5-URI \
 			www/p5-libwww \
 			converters/p5-Net-IDN-Encode
 
+REGRESS_IS_INTERACTIVE = Yes
+
 .include <bsd.port.mk>
