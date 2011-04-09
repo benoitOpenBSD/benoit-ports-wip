@@ -2,7 +2,7 @@
 
 COMMENT=	extension for unparsed raw whois information
 
-DISTNAME=	Net-Whois-Raw-2.27
+DISTNAME=	Net-Whois-Raw-2.31
 CATEGORIES=	net
 
 # perl
@@ -14,7 +14,6 @@ PERMIT_DISTFILES_FTP=   Yes
 MODULES=		cpan
 
 CONFIGURE_STYLE=	modbuild
-USE_GROFF =		Yes
 
 BUILD_DEPENDS=		${RUN_DEPENDS}
 RUN_DEPENDS=		www/p5-URI \
