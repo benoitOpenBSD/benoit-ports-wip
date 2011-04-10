@@ -4,7 +4,7 @@ ONLY_FOR_ARCHS =	i386
 
 COMMENT =		Ultimate packer for executables
 
-DISTNAME =		upx-3.03-src
+DISTNAME =		upx-3.07-src
 PKGNAME = 		${DISTNAME:S/-src//}
 CATEGORIES =		archivers
 
