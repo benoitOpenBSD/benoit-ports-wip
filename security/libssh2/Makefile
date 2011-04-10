@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.10 2010/11/20 17:22:43 espie Exp $
+# $OpenBSD: Makefile,v 1.11 2011/04/10 16:01:03 benoit Exp $
 
 COMMENT =		library implementing the SSH2 protocol
 

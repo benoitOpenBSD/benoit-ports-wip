@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.7 2010/07/25 13:24:59 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.8 2011/04/10 16:01:04 benoit Exp $
 %%SHARED%%
 include/libssh2.h
 include/libssh2_publickey.h
