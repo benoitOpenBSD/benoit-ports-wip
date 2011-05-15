@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/mz.h.orig	Sun May 15 11:50:25 2011
++++ src/mz.h	Sun May 15 11:50:51 2011
+@@ -23,7 +23,7 @@
+ 
+ #define _GNU_SOURCE
+ 
+-#include <libnet.h>
++#include <libdnet-1.1/libnet.h>
+ #include <pcap.h>
+ #include <stdio.h>
+ #include <unistd.h>
