@@ -6,7 +6,7 @@ $OpenBSD$
  #define _GNU_SOURCE
  
 -#include <libnet.h>
-+#include <libdnet-1.1/libnet.h>
++#include "${PREFIX}/include/libnet-1.1/libnet.h"
  #include <pcap.h>
  #include <stdio.h>
  #include <unistd.h>
