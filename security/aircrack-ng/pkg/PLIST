@@ -32,9 +32,12 @@
 @bin sbin/aireplay-ng
 @comment sbin/airmon-ng
 @bin sbin/airodump-ng
-sbin/airodump-ng-oui-update
+@comment sbin/airodump-ng-oui-update
 @bin sbin/airserv-ng
 @comment sbin/airtun-ng
 @bin sbin/easside-ng
 @bin sbin/tkiptun-ng
 @bin sbin/wesside-ng
+@extraunexec rm -rf %D/share/aircrack-ng/*
+@sample share/aircrack-ng/
+share/doc/pkg-readmes/${FULLPKGNAME}

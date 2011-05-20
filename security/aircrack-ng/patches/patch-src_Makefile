@@ -1,5 +1,5 @@
---- src/Makefile.orig	Sun Jun 14 17:07:09 2009
-+++ src/Makefile	Tue Aug 11 22:03:16 2009
+--- src/Makefile.orig	Sat Feb 13 22:32:28 2010
++++ src/Makefile	Sun May  1 08:03:24 2011
 @@ -99,16 +99,16 @@ LIBOSD		= $(OSD)/lib$(OSD).a
  LIBSSL		= -lssl -lcrypto $(LDFLAGS)
  LIBSQL		=

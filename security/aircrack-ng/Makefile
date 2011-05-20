@@ -1,6 +1,6 @@
 # $OpenBSD: Makefile,v 1.4 2010/11/20 17:22:43 espie Exp $
 
-COMMENT=		'802.11 WEP and WPA-PSK keys cracking program'
+COMMENT=		802.11 WEP and WPA-PSK keys cracking program
 DISTNAME=		aircrack-ng-1.1
 CATEGORIES=		security
 
@@ -14,12 +14,12 @@ PERMIT_PACKAGE_FTP=     Yes
 PERMIT_DISTFILES_CDROM= Yes
 PERMIT_DISTFILES_FTP=   Yes
 
-WANTLIB=		c pthread crypto ssl sqlite3 z
+WANTLIB=		c pthread crypto ssl z
 
-MASTER_SITES=		http://download.aircrack-ng.org/ \
-			http://www.arcane-labs.net/download/OpenBSD/
+MASTER_SITES=		http://download.aircrack-ng.org/
 
-LIB_DEPENDS =		databases/sqlite3
+WANTLIB +=		sqlite3
+LIB_DEPENDS=		databases/sqlite3
 
 USE_GMAKE=		Yes
 USE_GROFF =		Yes
@@ -27,5 +27,8 @@ MAKE_ENV+=		SQLITE=true UNSTABLE=true
 MAKE_FLAGS+=		CC=${CC}
 
 NO_REGRESS=		Yes
+
+pre-configure:
+	${SUBST_CMD} ${WRKSRC}/src/airodump-ng.h
 
 .include <bsd.port.mk>

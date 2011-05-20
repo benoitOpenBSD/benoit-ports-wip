@@ -1,5 +1,5 @@
---- common.mak.orig	Sat Jul 25 02:34:40 2009
-+++ common.mak	Tue Aug 11 22:03:16 2009
+--- common.mak.orig	Thu Mar 26 22:01:02 2009
++++ common.mak	Wed Apr 15 18:36:48 2009
 @@ -31,16 +31,16 @@ COMMON_CFLAGS   += -DCYGWIN
  endif
  
@@ -22,7 +22,7 @@
          endif
      endif
 @@ -70,7 +70,7 @@ OPTFLAGS        = -D_FILE_OFFSET_BITS=64
- CFLAGS          ?= -g -W -Wall -Werror -O3 -Wno-strict-aliasing
+ CFLAGS          ?= -g -W -Wall -Werror -O3
  CFLAGS          += $(OPTFLAGS) $(REVFLAGS) $(COMMON_CFLAGS)
  
 -prefix          = /usr/local
