@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-src_osdep_byteorder_h,v 1.1 2011/05/21 11:19:24 fgsch Exp $
 --- src/osdep/byteorder.h.orig	Fri Jan 22 01:01:28 2010
 +++ src/osdep/byteorder.h	Sun May  1 08:21:24 2011
 @@ -212,6 +212,19 @@
