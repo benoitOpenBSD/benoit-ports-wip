@@ -2,7 +2,7 @@
 
 COMMENT =	create, alter and inspect Matroska files
 
-DISTNAME =	mkvtoolnix-4.6.0
+DISTNAME =	mkvtoolnix-4.7.0
 CATEGORIES =	multimedia x11
 
 HOMEPAGE =	http://www.bunkus.org/videotools/mkvtoolnix/
