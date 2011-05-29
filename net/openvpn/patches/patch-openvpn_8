@@ -1,0 +1,15 @@
+$OpenBSD$
+--- openvpn.8.orig	Thu Apr 21 21:13:51 2011
++++ openvpn.8	Sun May 29 11:03:25 2011
+@@ -1352,6 +1352,11 @@
+ Currently defaults to 100.
+ .\"*********************************************************
+ .TP
++.B --rtable n
++(OpenBSD only) Set the routing table.
++Defaults to 0.
++.\"*********************************************************
++.TP
+ .B \-\-shaper n
+ Limit bandwidth of outgoing tunnel data to
+ .B n
