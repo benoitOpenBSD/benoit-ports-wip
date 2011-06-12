@@ -1,31 +1,30 @@
-# $OpenBSD$
+# $OpenBSD: Makefile.template,v 1.54 2008/01/13 16:43:57 espie Exp $
 
-COMMENT =		Dual-stack traceroute software
+SHARED_LIBS +=  scamperfile               0.0 # 0.0
 
-VERSION =		20070523p
-DISTNAME =		scamper-cvs-${VERSION}
-PKGNAME =		scamper-${VERSION}
-CATEGORIES =		net
+COMMENT =	parallel internet measurement utility
 
-HOMEPAGE =		http://www.wand.net.nz/scamper/
+DISTNAME =	scamper-cvs-20110608
+PKGNAME =	scamper-0.0.20110608
+CATEGORIES =	net benchmarks
 
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
+HOMEPAGE =	http://www.wand.net.nz/scamper/
 
-# GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
+MAINTAINER =	Stuart Henderson <sthen@openbsd.org>
 
-WANTLIB =		c
+# GPLv2 only
+PERMIT_PACKAGE_CDROM =	 Yes
+PERMIT_PACKAGE_FTP =	 Yes
+PERMIT_DISTFILES_CDROM = Yes
+PERMIT_DISTFILES_FTP =	 Yes
 
-MASTER_SITES =		http://www.wand.net.nz/scamper/
+WANTLIB += c
 
-NO_REGRESS =		Yes
+MASTER_SITES = ${HOMEPAGE}
 
-do-install:
-		${INSTALL_PROGRAM} ${WRKSRC}/scamper ${PREFIX}/bin
-		${INSTALL_MAN_DIR} ${PREFIX}/man/man1
-		${INSTALL_MAN} ${WRKSRC}/scamper.1 ${PREFIX}/man/man1
+USE_GROFF =		Yes
+USE_LIBTOOL =		Yes
+CONFIGURE_STYLE =	gnu
+MAKE_FLAGS =		PRIVSEP_USER=_scamper
 
 .include <bsd.port.mk>
