@@ -1,6 +1,7 @@
---- setup.c.orig	Wed Jun 14 01:29:59 2006
-+++ setup.c	Sun Jan 21 12:08:33 2007
-@@ -233,7 +233,7 @@ char	drawPath[MAXPATHLENGTH]; /* last ch
+$OpenBSD$
+--- setup.c.orig	Sun Jun 19 00:06:08 2011
++++ setup.c	Sat Jun 25 16:04:40 2011
+@@ -237,7 +237,7 @@ char	drawPath[MAXPATHLENGTH]; /* last char is NOT '/' 
  char	bootDir[MAXPATHLENGTH+2];
  char	homeDir[MAXPATHLENGTH];
  char	tgifDir[MAXPATHLENGTH];

@@ -2,7 +2,7 @@
 
 COMMENT =	two-dimensional drawing tool and hyper-object browser
 
-VERSION =	4.2.3
+VERSION =	4.2.4
 DISTNAME =	tgif-QPL-${VERSION}
 PKGNAME =	tgif-${VERSION}
 CATEGORIES =	graphics
