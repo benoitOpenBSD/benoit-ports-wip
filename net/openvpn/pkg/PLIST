@@ -42,10 +42,34 @@ share/examples/openvpn/easy-rsa/2.0/clean-all
 share/examples/openvpn/easy-rsa/2.0/inherit-inter
 share/examples/openvpn/easy-rsa/2.0/list-crl
 @comment share/examples/openvpn/easy-rsa/2.0/openssl-0.9.6.cnf
-share/examples/openvpn/easy-rsa/2.0/openssl.cnf
+share/examples/openvpn/easy-rsa/2.0/openssl-0.9.8.cnf
+share/examples/openvpn/easy-rsa/2.0/openssl-1.0.0.cnf
+share/examples/openvpn/easy-rsa/2.0/openssl-1.0.0.cnf-old-copy
 share/examples/openvpn/easy-rsa/2.0/pkitool
 share/examples/openvpn/easy-rsa/2.0/revoke-full
 share/examples/openvpn/easy-rsa/2.0/sign-req
+share/examples/openvpn/easy-rsa/2.0/tmp/
+share/examples/openvpn/easy-rsa/2.0/tmp/README
+share/examples/openvpn/easy-rsa/2.0/tmp/build-ca
+share/examples/openvpn/easy-rsa/2.0/tmp/build-dh
+share/examples/openvpn/easy-rsa/2.0/tmp/build-inter
+share/examples/openvpn/easy-rsa/2.0/tmp/build-key
+share/examples/openvpn/easy-rsa/2.0/tmp/build-key-pass
+share/examples/openvpn/easy-rsa/2.0/tmp/build-key-pkcs12
+share/examples/openvpn/easy-rsa/2.0/tmp/build-key-server
+share/examples/openvpn/easy-rsa/2.0/tmp/build-req
+share/examples/openvpn/easy-rsa/2.0/tmp/build-req-pass
+share/examples/openvpn/easy-rsa/2.0/tmp/clean-all
+share/examples/openvpn/easy-rsa/2.0/tmp/file
+share/examples/openvpn/easy-rsa/2.0/tmp/inherit-inter
+share/examples/openvpn/easy-rsa/2.0/tmp/list-crl
+share/examples/openvpn/easy-rsa/2.0/tmp/openssl-0.9.6.cnf
+share/examples/openvpn/easy-rsa/2.0/tmp/openssl-1.0.0.cnf
+share/examples/openvpn/easy-rsa/2.0/tmp/pkitool
+share/examples/openvpn/easy-rsa/2.0/tmp/revoke-full
+share/examples/openvpn/easy-rsa/2.0/tmp/sign-req
+share/examples/openvpn/easy-rsa/2.0/tmp/vars
+share/examples/openvpn/easy-rsa/2.0/tmp/whichopensslcnf
 share/examples/openvpn/easy-rsa/2.0/vars
 @comment share/examples/openvpn/easy-rsa/2.0/whichopensslcnf
 share/examples/openvpn/sample-config-files/

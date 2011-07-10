@@ -2,7 +2,7 @@
 
 COMMENT=	easy-to-use, robust, and highly configurable VPN
 
-VERSION=	2.2.0
+VERSION=	2.2.1
 DISTNAME=	openvpn-${VERSION}
 CATEGORIES=	net security
 
