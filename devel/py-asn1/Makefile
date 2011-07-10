@@ -1,12 +1,13 @@
-# $OpenBSD: Makefile,v 1.11 2010/12/18 10:31:59 benoit Exp $
+# $OpenBSD: Makefile,v 1.13 2011/06/08 17:39:24 jasper Exp $
 
 COMMENT =	ASN.1 library for Python
 
-MODPY_EGG_VERSION =	0.0.13b
+MODPY_EGG_VERSION =	0.0.13
 DISTNAME =		pyasn1-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:S/py/py-/}
 CATEGORIES =		devel
 PKG_ARCH =		*
+EPOCH =			0
 
 HOMEPAGE =		http://pyasn1.sourceforge.net/
 
