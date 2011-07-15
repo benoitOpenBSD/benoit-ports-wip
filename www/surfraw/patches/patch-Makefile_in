@@ -1,0 +1,32 @@
+$OpenBSD: patch-Makefile_in,v 1.4 2010/07/30 21:07:15 benoit Exp $
+--- Makefile.in.orig	Thu May  6 21:26:01 2010
++++ Makefile.in	Sat Jul 24 11:48:57 2010
+@@ -766,13 +766,13 @@
+ 	mkdir -p $(DESTDIR)@sysconfdir@/xdg/surfraw
+ 	cp surfraw.conf $(DESTDIR)@sysconfdir@/xdg/surfraw/conf
+ 	cp $(top_srcdir)/surfraw.bookmarks $(DESTDIR)@sysconfdir@/xdg/surfraw/bookmarks
+-	while read target link ;\
+-	do \
+-		ln -sf $$target  $(DESTDIR)/$$link ;\
+-	done < links
+-@OPENSEARCH_TRUE@	ln -sf elvi.1sr.gz $(DESTDIR)/@mandir@/man1/opensearch.1sr.gz
++	#while read target link ;\
++	#do \
++	#	ln -sf $$target  $(DESTDIR)/$$link ;\
++	#done < links
++#@OPENSEARCH_TRUE@	ln -sf elvi.1sr.gz $(DESTDIR)/@mandir@/man1/opensearch.1sr.gz
+ @INSTALLSR_TRUE@	ln -sf surfraw $(DESTDIR)/@bindir@/sr
+-@INSTALLSR_TRUE@	ln -sf surfraw.1.gz $(DESTDIR)/@mandir@/man1/sr.1.gz
++# @INSTALLSR_TRUE@	ln -sf surfraw.1.gz $(DESTDIR)/@mandir@/man1/sr.1.gz
+ 
+ uninstall-local: links
+ 	-rm -f $(DESTDIR)@sysconfdir@/xdg/surfraw/conf
+@@ -791,7 +791,7 @@
+ 	mail -s add LSM@qqx.org < $<
+ 
+ test: all surfraw.conf
+-	make -C test test
++	${MAKE} -C test test
+ 
+ .PHONY: test
+ 
