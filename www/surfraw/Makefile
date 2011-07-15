@@ -18,7 +18,6 @@ PERMIT_DISTFILES_FTP =	Yes
 MASTER_SITES =		${HOMEPAGE}/dist/
 
 CONFIGURE_STYLE = 	gnu
-USE_GMAKE =		yes
 USE_GROFF =		Yes
 
 pre-configure:
