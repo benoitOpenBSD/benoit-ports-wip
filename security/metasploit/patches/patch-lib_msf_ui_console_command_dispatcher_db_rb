@@ -1,18 +1,8 @@
-$OpenBSD: patch-lib_msf_ui_console_command_dispatcher_db_rb,v 1.1.1.1 2010/12/23 12:39:17 stephan Exp $
---- lib/msf/ui/console/command_dispatcher/db.rb.orig	Wed Oct 20 15:19:54 2010
-+++ lib/msf/ui/console/command_dispatcher/db.rb	Sat Nov 27 08:35:47 2010
-@@ -1436,26 +1436,22 @@ class Db
+$OpenBSD$
+--- lib/msf/ui/console/command_dispatcher/db.rb.orig	Fri May 13 18:20:35 2011
++++ lib/msf/ui/console/command_dispatcher/db.rb	Sat Jul 16 17:05:41 2011
+@@ -1653,18 +1653,14 @@
  			print_line("")
- 
- 			if ! framework.db.drivers.include?('sqlite3')
--				print_status("    DB Support: Enable the sqlite3 driver with the following command:")
--				print_status("                $ gem install sqlite3-ruby")
-+				print_status("    DB Support: Install the sqlite3 driver with the following command:")
-+				print_status("                $ sudo pkg_add ruby-sqlite3")
- 				print_error( "    Note that sqlite is not supported due to numerous issues.")
- 				print_error( "    It may work, but don't count on it")
- 				print_line("")
- 			end
  
  			if ! framework.db.drivers.include?('mysql')
 -				print_status("    DB Support: Enable the mysql driver with the following command:")
