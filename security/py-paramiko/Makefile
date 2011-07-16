@@ -23,7 +23,7 @@ MODULES = 	lang/python
 
 MODPY_SETUPTOOLS = Yes
 
-RUN_DEPENDS = 	security/py-crypto>=2.1
+RUN_DEPENDS = 	security/py-crypto
 REGRESS_DEPENDS = ${RUN_DEPENDS}
 
 pre-build:
