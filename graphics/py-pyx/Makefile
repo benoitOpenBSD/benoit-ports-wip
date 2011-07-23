@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2011/06/08 17:35:28 jasper Exp $
+# $OpenBSD: Makefile,v 1.8 2011/07/23 14:09:05 benoit Exp $
 
 COMMENT=	package for creating PostScript/PDF graphics
 
