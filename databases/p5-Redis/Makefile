@@ -17,8 +17,6 @@ PERMIT_DISTFILES_FTP =	Yes
 
 MODULES =		cpan
 
-USE_GROFF =		Yes
-
 REGRESS_DEPENDS =	devel/p5-Test-Deep \
 			devel/p5-Test-Exception \
 			devel/p5-IO-String \
