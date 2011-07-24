@@ -114,6 +114,7 @@ post-install:
 	chown -R ${BINOWN}:${BINGRP} ${PREFIX}/libexec/git
 	cd ${WRKBUILD}/gitweb && \
 		${MAKE_ENV} ${MAKE_PROGRAM} gitwebdir=${TRUEPREFIX}/share/gitweb install
+	perl -pi -e "s|${WRKINST}||g" ${PREFIX}/share/gitweb/gitweb.cgi
 	${INSTALL_DATA} ${WRKBUILD}/gitweb/README ${PREFIX}/share/gitweb
 
 do-regress:
