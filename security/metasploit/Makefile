@@ -5,7 +5,7 @@ COMMENT-mysql = penetration testing resources (mysql backend)
 COMMENT-pgsql =	penetration testing resources (postgres backend)
 CATEGORIES =	security
 
-V =		3.7.1
+V =		3.7.2
 PKGNAME-main =	metasploit-${V}
 PKGNAME-mysql =	metasploit-mysql-${V}
 PKGNAME-pgsql =	metasploit-pgssql-${V}
