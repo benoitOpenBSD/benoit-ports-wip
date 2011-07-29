@@ -11,9 +11,11 @@ PKGNAME-svn =	git-svn-${V}
 PKGNAME-x11 =	git-x11-${V}
 CATEGORIES =	devel
 
+REVISION-main =	0
+
 HOMEPAGE =	http://git-scm.com/
 
-MAINTAINER =	Bernd Ahlers <bernd@openbsd.org>
+MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM = Yes
