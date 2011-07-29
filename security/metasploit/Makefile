@@ -8,7 +8,7 @@ CATEGORIES =	security
 V =		3.7.2
 PKGNAME-main =	metasploit-${V}
 PKGNAME-mysql =	metasploit-mysql-${V}
-PKGNAME-pgsql =	metasploit-pgssql-${V}
+PKGNAME-pgsql =	metasploit-pgsql-${V}
 DISTNAME =	framework-${V}
 
 EXTRACT_SUFX =	.tar.bz2
