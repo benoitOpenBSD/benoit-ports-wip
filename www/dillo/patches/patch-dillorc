@@ -1,12 +1,13 @@
---- dillorc.orig	Wed Jun 10 05:35:25 2009
-+++ dillorc	Tue Sep 22 17:43:18 2009
-@@ -45,11 +45,11 @@
- # Ex. {helvetica, lucida, times, "new century schoolbook", utopia, ...}
- # The values below represent the defaults.
+$OpenBSD$
+--- dillorc.orig	Tue Dec 21 11:47:49 2010
++++ dillorc	Fri Jul 29 23:32:03 2011
+@@ -50,11 +50,12 @@
  #
+ # If FLTK2 has been configured with Xft enabled (the default), you can
+ # use scalable fonts such as DejaVu or Liberation (try running "fc-list").
 -#font_serif="DejaVu Serif"
 -#font_sans_serif="DejaVu Sans"
--#font_cursive="DejaVu Sans"
+-#font_cursive="URW Chancery L"
 -#font_fantasy="DejaVu Sans"
 -#font_monospace="DejaVu Sans Mono"
 +font_serif="Bitstream vera Serif"
@@ -14,6 +15,7 @@
 +font_cursive="Bitstream vera Serif"
 +font_fantasy="Bitstream vera Serif"
 +font_monospace="Bitstream Vera Sans Mono"
- 
- # All font sizes are scaled by this value
- # font_factor=1.5
++
+ #
+ # Otherwise, use bitmapped fonts like the following (for a list, try running
+ # "xlsfonts -fn *-iso10646-1 | grep -v -e -0-0 | cut -d - -f 3 | sort | uniq").
