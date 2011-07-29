@@ -1,0 +1,21 @@
+$OpenBSD: patch-dpid_main_c,v 1.4 2010/03/01 14:53:34 benoit Exp $
+--- dpid/main.c.orig	Mon Feb  8 11:59:31 2010
++++ dpid/main.c	Tue Feb 23 10:32:46 2010
+@@ -68,7 +68,7 @@
+    }
+    if (pid == 0) {
+       /* Child, start plugin */
+-      if (execl(dpi_attr.path, dpi_attr.path, (char*)NULL) == -1) {
++      if (execl(dpi_attr.path, dpi_attr.path, (void *)NULL) == -1) {
+          ERRMSG("start_plugin", "execl", errno);
+          MSG_ERR("ERROR in child proc for %s\n", dpi_attr.path);
+          exit(1);
+@@ -100,7 +100,7 @@
+       MSG_ERR("ERROR in child proc for %s\n", dpi_attr.path);
+       exit(1);
+    }
+-   if (execl(dpi_attr.path, dpi_attr.path, (char*)NULL) == -1) {
++   if (execl(dpi_attr.path, dpi_attr.path, (void *)NULL) == -1) {
+       ERRMSG("start_plugin", "execl", errno);
+       MSG_ERR("ERROR in child proc for %s\n", dpi_attr.path);
+       exit(1);

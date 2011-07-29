@@ -1,0 +1,11 @@
+--- dpi/https.c.orig	Sun Jun  7 05:40:49 2009
++++ dpi/https.c	Tue Sep 22 16:03:34 2009
+@@ -159,7 +159,7 @@
+    /*FIXME - provide for sysconfdir variables and such*/
+    if (exit_error == 0){
+       if (SSL_CTX_load_verify_locations(
+-         ssl_context, NULL, "/etc/ssl/certs/" ) == 0){
++         ssl_context, "/etc/ssl/cert.pem", "/etc/ssl/certs/" ) == 0){
+          MSG("Error opening system x509 certificate location\n");
+          exit_error = 1;
+       }
