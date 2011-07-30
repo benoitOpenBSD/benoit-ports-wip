@@ -2,17 +2,16 @@
 
 COMMENT =	fast light toolkit
 
-V =		8514
+V =		7725
 DISTNAME =	fltk-2.0.x-r${V}
 PKGNAME =	fltk2-2.0.${V}
 
+REVISION =	0
 EPOCH =		0
 
 CATEGORIES =	x11
 
 HOMEPAGE =	http://www.fltk.org/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # FLTK/GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
