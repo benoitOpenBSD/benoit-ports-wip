@@ -2,14 +2,12 @@
 
 COMMENT =	interface to the Skein digest algorithm
 
-HOMEPAGE =	http://www.skein-hash.info/
-
-MODULES =	cpan
 DISTNAME =	Digest-Skein-0.05
 CATEGORIES =	security
-#USE_GROFF =	Yes
 
 REVISION =	0
+
+HOMEPAGE =	http://www.skein-hash.info/
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
@@ -18,6 +16,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
+
+MODULES =	cpan
 
 BYTEORDER !=	sysctl -n hw.byteorder
 
