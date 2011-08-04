@@ -55,9 +55,9 @@ CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include" \
 
 pre-configure:
 	@chmod +x ${WRKSRC}/install-sh
-	@perl -pi -e 's,!!LOCALBASE!!,${LOCALBASE},g' \
-		${WRKSRC}/data/autostart.sh.in
-	@perl -pi -e 's,/usr/bin/env python,${MODPY_BIN},' \
-		${WRKSRC}/tools/xdg-autostart/xdg-autostart
+#	@perl -pi -e 's,!!LOCALBASE!!,${LOCALBASE},g' \
+#		${WRKSRC}/data/autostart.sh.in
+#	@perl -pi -e 's,/usr/bin/env python,${MODPY_BIN},' \
+#		${WRKSRC}/tools/xdg-autostart/xdg-autostart
 	
 .include <bsd.port.mk>
