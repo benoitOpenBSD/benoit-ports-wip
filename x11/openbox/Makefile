@@ -5,7 +5,7 @@ COMMENT =	small, fast & usable window manager
 V =		3.5.0
 DISTNAME =	openbox-${V}
 
-SHARED_LIBS +=	obparser	9.1 # .21.7
+SHARED_LIBS +=	obt		0.0 # .0.1
 SHARED_LIBS +=	obrender	9.1 # .21.7
 
 CATEGORIES =	x11
@@ -50,7 +50,7 @@ MODPY_RUNDEP =	No
 CONFIGURE_STYLE = gnu
 CONFIGURE_ARGS = ${CONFIGURE_SHARED} \
 		--docdir=${PREFIX}/share/examples/openbox
-CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include  -I${X11BASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 pre-configure:

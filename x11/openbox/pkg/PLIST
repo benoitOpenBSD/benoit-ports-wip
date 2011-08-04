@@ -8,27 +8,37 @@ bin/openbox-gnome-session
 bin/openbox-kde-session
 bin/openbox-session
 include/openbox/
-include/openbox/${V}/
-include/openbox/${V}/openbox/
-include/openbox/${V}/openbox/color.h
-include/openbox/${V}/openbox/font.h
-include/openbox/${V}/openbox/geom.h
-include/openbox/${V}/openbox/gradient.h
-include/openbox/${V}/openbox/image.h
-include/openbox/${V}/openbox/instance.h
-include/openbox/${V}/openbox/mask.h
-include/openbox/${V}/openbox/parse.h
-include/openbox/${V}/openbox/render.h
-include/openbox/${V}/openbox/theme.h
-include/openbox/${V}/openbox/version.h
-lib/libobparser.a
-lib/libobparser.la
+include/openbox/3.5/
+include/openbox/3.5/obrender/
+include/openbox/3.5/obrender/color.h
+include/openbox/3.5/obrender/font.h
+include/openbox/3.5/obrender/geom.h
+include/openbox/3.5/obrender/gradient.h
+include/openbox/3.5/obrender/image.h
+include/openbox/3.5/obrender/instance.h
+include/openbox/3.5/obrender/mask.h
+include/openbox/3.5/obrender/render.h
+include/openbox/3.5/obrender/theme.h
+include/openbox/3.5/obrender/version.h
+include/openbox/3.5/obt/
+include/openbox/3.5/obt/display.h
+include/openbox/3.5/obt/keyboard.h
+include/openbox/3.5/obt/link.h
+include/openbox/3.5/obt/paths.h
+include/openbox/3.5/obt/prop.h
+include/openbox/3.5/obt/signal.h
+include/openbox/3.5/obt/util.h
+include/openbox/3.5/obt/version.h
+include/openbox/3.5/obt/xml.h
+include/openbox/3.5/obt/xqueue.h
 lib/libobrender.a
 lib/libobrender.la
-lib/openbox/
-lib/openbox/xdg-autostart
-lib/pkgconfig/obparser-3.0.pc
-lib/pkgconfig/obrender-3.0.pc
+lib/libobt.a
+lib/libobt.la
+lib/pkgconfig/obrender-3.5.pc
+lib/pkgconfig/obt-3.5.pc
+libexec/openbox-autostart
+libexec/openbox-xdg-autostart
 @man man/man1/obxprop.1
 @man man/man1/openbox-gnome-session.1
 @man man/man1/openbox-kde-session.1
@@ -57,8 +67,10 @@ share/examples/openbox/xbm/shade.xbm
 share/examples/openbox/xbm/shade_toggled.xbm
 share/examples/openbox/xdg/
 share/examples/openbox/xdg/openbox/
-share/examples/openbox/xdg/openbox/autostart.sh
-@sample ${SYSCONFDIR}/xdg/openbox/autostart.sh
+share/examples/openbox/xdg/openbox/autostart
+@sample ${SYSCONFDIR}/xdg/openbox/autostart
+share/examples/openbox/xdg/openbox/environment
+@sample ${SYSCONFDIR}/xdg/openbox/environment
 share/gnome/
 share/gnome/wm-properties/
 share/gnome/wm-properties/openbox.desktop
@@ -117,6 +129,9 @@ share/themes/Bear2/openbox-3/shade.xbm
 share/themes/Bear2/openbox-3/shade_pressed.xbm
 share/themes/Bear2/openbox-3/themerc
 share/themes/Clearlooks/
+share/themes/Clearlooks-3.4/
+share/themes/Clearlooks-3.4/openbox-3/
+share/themes/Clearlooks-3.4/openbox-3/themerc
 share/themes/Clearlooks-Olive/
 share/themes/Clearlooks-Olive/openbox-3/
 share/themes/Clearlooks-Olive/openbox-3/themerc
