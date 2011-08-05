@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+%%SHARED%%
+@bin bin/yara
+include/yara.h
+lib/libyara.a
+lib/libyara.la
+@man man/man1/yara.1

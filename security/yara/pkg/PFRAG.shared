@@ -1,0 +1,2 @@
+@comment $OpenBSD$
+@lib lib/libyara.so.${LIByara_VERSION}

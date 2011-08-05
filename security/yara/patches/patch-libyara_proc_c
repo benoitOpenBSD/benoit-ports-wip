@@ -1,0 +1,12 @@
+$OpenBSD$
+--- libyara/proc.c.orig	Fri Aug  5 08:23:06 2011
++++ libyara/proc.c	Fri Aug  5 08:23:58 2011
+@@ -122,7 +122,7 @@
+ #include "mem.h"
+ #include "proc.h"
+ 
+-#if defined(__FreeBSD__) || defined(__MACH__)
++#if defined(__FreeBSD__) || defined(__MACH__) || defined(__OpenBSD__)
+ #define PTRACE_ATTACH PT_ATTACH
+ #define PTRACE_DETACH PT_DETACH
+ #endif
