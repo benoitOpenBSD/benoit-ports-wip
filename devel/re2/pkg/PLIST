@@ -6,5 +6,3 @@ include/re2/set.h
 include/re2/stringpiece.h
 include/re2/variadic_function.h
 lib/libre2.a
-lib/libre2.so.0
-@bin lib/libre2.so.0.0.0

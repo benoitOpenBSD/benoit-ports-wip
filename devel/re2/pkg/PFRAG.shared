@@ -1,2 +1,2 @@
 @comment $OpenBSD$
-lib/libre2.so.${LIBre2_VERSION}
+@lib lib/libre2.so.${LIBre2_VERSION}
