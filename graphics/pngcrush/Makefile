@@ -3,7 +3,7 @@
 
 COMMENT =		optimizer for PNG files
 
-DISTNAME =		pngcrush-1.7.16
+DISTNAME =		pngcrush-1.7.17
 CATEGORIES =		graphics
 
 HOMEPAGE =		http://pmt.sourceforge.net/pngcrush/
