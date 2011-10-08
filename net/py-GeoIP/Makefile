@@ -31,6 +31,6 @@ NO_REGRESS =		Yes
                        
 post-install:
 	${INSTALL_DATA_DIR} ${EXAMPLEDIR}
-	${INSTALL_SCRIPT} ${WRKSRC}/test* ${EXAMPLEDIR}
+	${INSTALL_SCRIPT} ${WRKSRC}/${MODPY_ADJ_FILES} ${EXAMPLEDIR}
 
 .include <bsd.port.mk>
