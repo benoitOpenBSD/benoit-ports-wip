@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.24 2011/06/08 17:43:20 jasper Exp $
+# $OpenBSD: Makefile,v 1.26 2011/10/22 07:29:01 rpointel Exp $
 
 COMMENT = 	Python module that implements the SSH2 protocol
 
