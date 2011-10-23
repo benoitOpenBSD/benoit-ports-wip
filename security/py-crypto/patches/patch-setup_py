@@ -1,48 +1,27 @@
+$OpenBSD: patch-setup_py,v 1.6 2011/10/10 10:08:05 mpi Exp $
 --- setup.py.orig	Fri Aug 27 06:41:55 2010
-+++ setup.py	Sat Jun 25 17:15:30 2011
-@@ -157,7 +157,7 @@
-             self.compiler.include_dirs.insert(0, "src/inc-msvc/")
- 
-         # Detect libgmp and don't build _fastmath if it is missing.
--        lib_dirs = self.compiler.library_dirs + ['/lib', '/usr/lib']
-+        lib_dirs = self.compiler.library_dirs + ['${LOCALBASE}/lib']
-         if not (self.compiler.find_library_file(lib_dirs, 'gmp')):
-             print >>sys.stderr, "warning: GMP library not found; Not building Crypto.PublicKey._fastmath."
-             self.__remove_extensions(["Crypto.PublicKey._fastmath"])
-@@ -262,7 +262,7 @@
-       'ext_modules': plat_ext + [
-             # _fastmath (uses GNU mp library)
-             Extension("Crypto.PublicKey._fastmath",
--                      include_dirs=['src/'],
-+                      include_dirs=['src/', '${LOCALBASE}/include'],
-                       libraries=['gmp'],
++++ setup.py	Sun Oct  9 17:06:47 2011
+@@ -267,9 +267,6 @@ kw = {'name':"pycrypto",
                        sources=["src/_fastmath.c"]),
  
-@@ -270,9 +270,10 @@
-             Extension("Crypto.Hash.MD2",
-                       include_dirs=['src/'],
-                       sources=["src/MD2.c"]),
--            Extension("Crypto.Hash.MD4",
+             # Hash functions
+-            Extension("Crypto.Hash.MD2",
 -                      include_dirs=['src/'],
--                      sources=["src/MD4.c"]),
-+            # Patented
-+            # Extension("Crypto.Hash.MD4",
-+            #          include_dirs=['src/'],
-+            #           sources=["src/MD4.c"]),
-             Extension("Crypto.Hash.SHA256",
+-                      sources=["src/MD2.c"]),
+             Extension("Crypto.Hash.MD4",
                        include_dirs=['src/'],
-                       sources=["src/SHA256.c"]),
-@@ -285,9 +286,10 @@
+                       sources=["src/MD4.c"]),
+@@ -285,9 +282,10 @@ kw = {'name':"pycrypto",
              Extension("Crypto.Cipher.AES",
                        include_dirs=['src/'],
                        sources=["src/AES.c"]),
 -            Extension("Crypto.Cipher.ARC2",
 -                      include_dirs=['src/'],
 -                      sources=["src/ARC2.c"]),
-+            # Patented
-+            # Extension("Crypto.Cipher.ARC2",
-+            #          include_dirs=['src/'],
-+            #          sources=["src/ARC2.c"]),
++# Patented
++#            Extension("Crypto.Cipher.ARC2",
++#                      include_dirs=['src/'],
++#                      sources=["src/ARC2.c"]),
              Extension("Crypto.Cipher.Blowfish",
                        include_dirs=['src/'],
                        sources=["src/Blowfish.c"]),

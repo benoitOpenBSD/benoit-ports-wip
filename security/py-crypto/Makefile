@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2011/06/08 17:43:20 jasper Exp $
+# $OpenBSD: Makefile,v 1.21 2011/10/10 10:08:05 mpi Exp $
 
 SHARED_ONLY =		Yes
 
@@ -11,7 +11,7 @@ CATEGORIES =    	security devel
 
 HOMEPAGE =		https://www.dlitz.net/software/pycrypto/
 
-MAINTAINER =		Will Maier <wcmaier@openbsd.org>
+MAINTAINER =		Martin Pieuchot <mpi@openbsd.org>
 
 # Public domain (patented algorithms removed by patch)
 PERMIT_PACKAGE_CDROM =	Yes
@@ -29,6 +29,8 @@ DOCSDIR =	${PREFIX}/share/doc/py-crypto
 
 pre-configure:
 	@${SUBST_CMD} ${WRKSRC}/setup.py
+	rm ${WRKSRC}/lib/Crypto/SelfTest/Cipher/test_ARC2.py
+	rm ${WRKSRC}/lib/Crypto/SelfTest/Hash/test_MD2.py
 
 post-install:
 	${INSTALL_DATA_DIR} ${DOCSDIR}
@@ -36,6 +38,6 @@ post-install:
 
 do-regress: fake
 	cd ${WRKSRC} && ${MAKE_ENV} \
-		PYTHONPATH=${WRKINST}${MODPY_SITEPKG} ${MODPY_BIN} setup.py test
+	PYTHONPATH=${WRKINST}${MODPY_SITEPKG} ${MODPY_BIN} setup.py test
 
 .include <bsd.port.mk>
