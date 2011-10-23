@@ -4,9 +4,8 @@ PKG_ARCH =	*
 
 COMMENT =	substitute for MS TTF core fonts
 
-DISTNAME =	liberation-fonts-ttf-1.07.0
+DISTNAME =	liberation-fonts-ttf-1.07.1
 PKGNAME =	${DISTNAME:S/-ttf//}
-REVISION =	0
 CATEGORIES =	fonts x11
 
 HOMEPAGE =	https://fedorahosted.org/liberation-fonts
