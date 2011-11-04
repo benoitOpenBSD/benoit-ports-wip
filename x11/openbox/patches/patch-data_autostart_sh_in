@@ -1,0 +1,13 @@
+$OpenBSD: patch-data_autostart_sh_in,v 1.3 2010/05/02 09:10:56 benoit Exp $
+--- data/autostart.sh.in.orig	Sun Mar 14 15:40:37 2010
++++ data/autostart.sh.in	Sat Apr 17 10:53:22 2010
+@@ -17,13 +17,13 @@
+ test -z $BG || $BG -solid "#303030"
+ 
+ # D-bus
+-if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
+-       eval `dbus-launch --sh-syntax --exit-with-session`
+-fi
++#if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
++#       eval `dbus-launch --sh-syntax --exit-with-session`
++#fi

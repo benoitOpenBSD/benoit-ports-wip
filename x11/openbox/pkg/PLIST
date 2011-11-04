@@ -8,35 +8,36 @@ bin/openbox-gnome-session
 bin/openbox-kde-session
 bin/openbox-session
 include/openbox/
-include/openbox/3.5/
-include/openbox/3.5/obrender/
-include/openbox/3.5/obrender/color.h
-include/openbox/3.5/obrender/font.h
-include/openbox/3.5/obrender/geom.h
-include/openbox/3.5/obrender/gradient.h
-include/openbox/3.5/obrender/image.h
-include/openbox/3.5/obrender/instance.h
-include/openbox/3.5/obrender/mask.h
-include/openbox/3.5/obrender/render.h
-include/openbox/3.5/obrender/theme.h
-include/openbox/3.5/obrender/version.h
-include/openbox/3.5/obt/
-include/openbox/3.5/obt/display.h
-include/openbox/3.5/obt/keyboard.h
-include/openbox/3.5/obt/link.h
-include/openbox/3.5/obt/paths.h
-include/openbox/3.5/obt/prop.h
-include/openbox/3.5/obt/signal.h
-include/openbox/3.5/obt/util.h
-include/openbox/3.5/obt/version.h
-include/openbox/3.5/obt/xml.h
-include/openbox/3.5/obt/xqueue.h
+include/openbox/${API_V}/
+include/openbox/${API_V}/obrender/
+include/openbox/${API_V}/obrender/color.h
+include/openbox/${API_V}/obrender/font.h
+include/openbox/${API_V}/obrender/geom.h
+include/openbox/${API_V}/obrender/gradient.h
+include/openbox/${API_V}/obrender/image.h
+include/openbox/${API_V}/obrender/instance.h
+include/openbox/${API_V}/obrender/mask.h
+include/openbox/${API_V}/obrender/render.h
+include/openbox/${API_V}/obrender/theme.h
+include/openbox/${API_V}/obrender/version.h
+include/openbox/${API_V}/obt/
+include/openbox/${API_V}/obt/display.h
+include/openbox/${API_V}/obt/keyboard.h
+include/openbox/${API_V}/obt/link.h
+include/openbox/${API_V}/obt/paths.h
+include/openbox/${API_V}/obt/prop.h
+include/openbox/${API_V}/obt/signal.h
+include/openbox/${API_V}/obt/util.h
+include/openbox/${API_V}/obt/version.h
+include/openbox/${API_V}/obt/xml.h
+include/openbox/${API_V}/obt/xqueue.h
 lib/libobrender.a
 lib/libobrender.la
 lib/libobt.a
 lib/libobt.la
-lib/pkgconfig/obrender-3.5.pc
-lib/pkgconfig/obt-3.5.pc
+@lib lib/libobt.so.${LIBobt_VERSION}
+lib/pkgconfig/obrender-${API_V}.pc
+lib/pkgconfig/obt-${API_V}.pc
 libexec/openbox-autostart
 libexec/openbox-xdg-autostart
 @man man/man1/obxprop.1
@@ -48,6 +49,10 @@ share/applications/openbox.desktop
 share/examples/openbox/
 @sample ${SYSCONFDIR}/xdg/
 @sample ${SYSCONFDIR}/xdg/openbox/
+share/examples/openbox/autostart
+@sample ${SYSCONFDIR}/xdg/openbox/autostart
+share/examples/openbox/environment
+@sample ${SYSCONFDIR}/xdg/openbox/environment
 share/examples/openbox/menu.xml
 @sample ${SYSCONFDIR}/xdg/openbox/menu.xml
 share/examples/openbox/menu.xsd
@@ -65,12 +70,6 @@ share/examples/openbox/xbm/max.xbm
 share/examples/openbox/xbm/max_toggled.xbm
 share/examples/openbox/xbm/shade.xbm
 share/examples/openbox/xbm/shade_toggled.xbm
-share/examples/openbox/xdg/
-share/examples/openbox/xdg/openbox/
-share/examples/openbox/xdg/openbox/autostart
-@sample ${SYSCONFDIR}/xdg/openbox/autostart
-share/examples/openbox/xdg/openbox/environment
-@sample ${SYSCONFDIR}/xdg/openbox/environment
 share/gnome/
 share/gnome/wm-properties/
 share/gnome/wm-properties/openbox.desktop
