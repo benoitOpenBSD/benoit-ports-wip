@@ -1,11 +1,12 @@
-# $OpenBSD: Makefile,v 1.62 2011/10/14 07:05:24 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.63 2011/11/02 19:12:01 jasper Exp $
 
 COMMENT =	small, fast & usable window manager
 
 V =		3.5.0
 DISTNAME =	openbox-${V}
-SHARED_LIBS +=	obt		0.0 # .21.7
-SHARED_LIBS +=	obrender	9.1 # .21.7
+REVISION =	0
+SHARED_LIBS +=  obt                  0.0      # 0.1
+SHARED_LIBS +=  obrender             10.0      # 27.1
 
 CATEGORIES =	x11
 
@@ -34,13 +35,15 @@ RUN_DEPENDS =	devel/py-xdg \
 		devel/desktop-file-utils
 LIB_DEPENDS +=	devel/pango \
 		devel/startup-notification \
-                graphics/imlib2 \
-                textproc/libxml
+		graphics/imlib2 \
+		textproc/libxml
 
-FAKE_FLAGS =        sysconfdir="${PREFIX}/share/examples/openbox" \
-                rcdir="${PREFIX}/share/examples/openbox"
-API_V =         ${V:R}
-SUBST_VARS =        API_V
+FAKE_FLAGS =	sysconfdir="${PREFIX}/share/examples/openbox" \
+		rcdir="${PREFIX}/share/examples/openbox" \
+		mkdir_p="$${SHELL} ${WRKSRC}/install-sh -d"
+		
+API_V = 	${V:R}
+SUBST_VARS =	API_V
 
 USE_GMAKE =	Yes
 USE_LIBTOOL =	Yes
@@ -54,6 +57,6 @@ CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 pre-configure:
-	${SUBST_CMD} ${WRKSRC}/data/autostart/autostart.in	
-
+	${SUBST_CMD} ${WRKSRC}/data/autostart/autostart.in
+	
 .include <bsd.port.mk>
