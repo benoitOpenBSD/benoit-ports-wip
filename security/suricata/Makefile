@@ -1,10 +1,11 @@
 # $OpenBSD$
 
-COMMENT =		Open Source Next Generation Intrusion Detection and Prevention Engine
+COMMENT =		Next Generation Intrusion Detection and Prevention Engine
 
 DISTNAME =		suricata-1.1
 CATEGORIES =		security
-#SHARED_LIBS +=		yara	0.0	# .1.1
+#SHARED_LIBS +=  htp-0.2                   0.0 # 1.2
+SHARED_LIBS +=  htp                       0.0 # 1.2
 
 HOMEPAGE =              http://www.openinfosecfoundation.org/
 
@@ -20,7 +21,8 @@ MASTER_SITES =		http://www.openinfosecfoundation.org/download/
 
 WANTLIB =		c m stdc++ pcre
 
-LIB_DEPENDS =		devel/pcre
+LIB_DEPENDS =		devel/pcre \
+			devel/libyaml
 
 USE_GMAKE =		Yes
 USE_GROFF =		Yes
