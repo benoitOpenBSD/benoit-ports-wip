@@ -1,17 +1,19 @@
-# $OpenBSD: Makefile,v 1.78 2011/07/24 16:29:28 benoit Exp $
+# $OpenBSD: Makefile,v 1.84 2011/11/08 10:27:49 jasper Exp $
 
 COMMENT-main =	GIT - Tree History Storage Tool
 COMMENT-svn =	GIT - subversion interoperability tools
 COMMENT-x11 =	GIT - graphical tools
 
-V =		1.7.6
+V =		1.7.7.3
 DISTNAME =	git-${V}
 PKGNAME-main =	${DISTNAME}
 PKGNAME-svn =	git-svn-${V}
 PKGNAME-x11 =	git-x11-${V}
 CATEGORIES =	devel
 
-REVISION-main =	0
+#REVISION-main =	3
+#REVISION-svn =	2
+#REVISION-x11 =	2
 
 HOMEPAGE =	http://git-scm.com/
 
@@ -28,7 +30,9 @@ DOC_DISTFILES =		git-manpages-${V}${EXTRACT_SUFX} \
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} ${DOC_DISTFILES}
 EXTRACT_ONLY =		${DISTNAME}${EXTRACT_SUFX}
 
-MASTER_SITES =		ftp://ftp.kernel.org/pub/software/scm/git/ \
+MASTER_SITES =		http://git-core.googlecode.com/files/ \
+			http://distfiles.nl/ \
+			ftp://ftp.kernel.org/pub/software/scm/git/ \
 			ftp://ftp.de.kernel.org/pub/software/scm/git/ \
 			ftp://ftp.au.kernel.org/pub/software/scm/git/
 
@@ -67,7 +71,7 @@ WANTLIB-x11 =
 PKG_ARCH-x11 =		*
 
 MAKE_ENV =		prefix=${PREFIX} CC="${CC}" CFLAGS="${CFLAGS}" V=1 \
-			SYSCONFDIR=${SYSCONFDIR} \
+			sysconfdir=${SYSCONFDIR} \
 			TCLTK_PATH=${MODTK_BIN} \
 			TCL_PATH=${MODTCL_BIN} \
 			REGRESS_SHELL=${LOCALBASE}/bin/bash
