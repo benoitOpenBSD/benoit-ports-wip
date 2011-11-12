@@ -11,10 +11,6 @@ PKGNAME-svn =	git-svn-${V}
 PKGNAME-x11 =	git-x11-${V}
 CATEGORIES =	devel
 
-#REVISION-main =	3
-#REVISION-svn =	2
-#REVISION-x11 =	2
-
 HOMEPAGE =	http://git-scm.com/
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>

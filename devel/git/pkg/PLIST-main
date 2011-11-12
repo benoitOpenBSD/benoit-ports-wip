@@ -164,6 +164,22 @@ libexec/git/git-submodule
 libexec/git/git-web--browse
 @bin libexec/git/git-whatchanged
 @bin libexec/git/git-write-tree
+libexec/git/mergetools/
+libexec/git/mergetools/araxis
+libexec/git/mergetools/bc3
+libexec/git/mergetools/defaults
+libexec/git/mergetools/diffuse
+libexec/git/mergetools/ecmerge
+libexec/git/mergetools/emerge
+libexec/git/mergetools/kdiff3
+libexec/git/mergetools/kompare
+libexec/git/mergetools/meld
+libexec/git/mergetools/opendiff
+libexec/git/mergetools/p4merge
+libexec/git/mergetools/tkdiff
+libexec/git/mergetools/tortoisemerge
+libexec/git/mergetools/vim
+libexec/git/mergetools/xxdiff
 @man man/man1/git-add.1
 @man man/man1/git-am.1
 @man man/man1/git-annotate.1
@@ -259,6 +275,7 @@ libexec/git/git-web--browse
 @man man/man1/git-remote-ext.1
 @man man/man1/git-remote-fd.1
 @man man/man1/git-remote-helpers.1
+@man man/man1/git-remote-testgit.1
 @man man/man1/git-remote.1
 @man man/man1/git-repack.1
 @man man/man1/git-replace.1
@@ -314,6 +331,7 @@ libexec/git/git-web--browse
 @man man/man7/gitcvs-migration.7
 @man man/man7/gitdiffcore.7
 @man man/man7/gitglossary.7
+@man man/man7/gitnamespaces.7
 @man man/man7/gitrevisions.7
 @man man/man7/gittutorial-2.7
 @man man/man7/gittutorial.7
@@ -530,6 +548,8 @@ share/doc/git/git-remote-fd.html
 share/doc/git/git-remote-fd.txt
 share/doc/git/git-remote-helpers.html
 share/doc/git/git-remote-helpers.txt
+share/doc/git/git-remote-testgit.html
+share/doc/git/git-remote-testgit.txt
 share/doc/git/git-remote.html
 share/doc/git/git-remote.txt
 share/doc/git/git-repack.html
@@ -640,6 +660,8 @@ share/doc/git/gitignore.html
 share/doc/git/gitignore.txt
 share/doc/git/gitmodules.html
 share/doc/git/gitmodules.txt
+share/doc/git/gitnamespaces.html
+share/doc/git/gitnamespaces.txt
 share/doc/git/gitrepository-layout.html
 share/doc/git/gitrepository-layout.txt
 share/doc/git/gitrevisions.html
@@ -648,6 +670,8 @@ share/doc/git/gittutorial-2.html
 share/doc/git/gittutorial-2.txt
 share/doc/git/gittutorial.html
 share/doc/git/gittutorial.txt
+share/doc/git/gitweb.conf.html
+share/doc/git/gitweb.html
 share/doc/git/gitworkflows.html
 share/doc/git/gitworkflows.txt
 share/doc/git/glossary-content.txt
@@ -694,9 +718,7 @@ share/git-core/templates/description
 share/git-core/templates/hooks/
 share/git-core/templates/hooks/applypatch-msg.sample
 share/git-core/templates/hooks/commit-msg.sample
-share/git-core/templates/hooks/post-commit.sample
 share/git-core/templates/hooks/post-receive-email.sample
-share/git-core/templates/hooks/post-receive.sample
 share/git-core/templates/hooks/post-update.sample
 share/git-core/templates/hooks/pre-applypatch.sample
 share/git-core/templates/hooks/pre-commit.sample
