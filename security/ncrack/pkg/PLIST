@@ -1,0 +1,13 @@
+@comment $OpenBSD$
+@bin bin/ncrack
+@man man/man1/ncrack.1
+share/ncrack/
+share/ncrack/common.usr
+share/ncrack/default.pwd
+share/ncrack/default.usr
+share/ncrack/jtr.pwd
+share/ncrack/minimal.usr
+share/ncrack/myspace.pwd
+share/ncrack/ncrack-services
+share/ncrack/phpbb.pwd
+share/ncrack/top50000.pwd
