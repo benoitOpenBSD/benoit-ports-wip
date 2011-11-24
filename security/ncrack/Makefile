@@ -20,7 +20,7 @@ MASTER_SITES =		http://nmap.org/ncrack/dist/
 WANTLIB =		c m stdc++ ssl crypto
 
 USE_GMAKE =		Yes
-# USE_GROFF =		Yes
+USE_GROFF =		Yes
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
