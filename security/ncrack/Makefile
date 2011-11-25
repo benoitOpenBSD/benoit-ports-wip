@@ -23,8 +23,8 @@ USE_GMAKE =		Yes
 USE_GROFF =		Yes
 
 CONFIGURE_STYLE =	gnu
-CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib"
+CONFIGURE_ARGS =	--with-localdirs \
+			--with-openssl=/usr
 
 NO_REGRESS =		Yes
 
