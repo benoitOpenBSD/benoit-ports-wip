@@ -2,7 +2,7 @@
 
 COMMENT =		word-based diff program
 
-DISTNAME =		dwdiff-2.0
+DISTNAME =		dwdiff-2.0.2
 CATEGORIES =		sysutils textproc
 
 HOMEPAGE =		http://os.ghalkes.nl/dwdiff.html
