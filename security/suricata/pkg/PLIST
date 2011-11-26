@@ -1,0 +1,14 @@
+@comment $OpenBSD$
+%%SHARED%%
+@bin bin/suricata
+include/htp/
+include/htp/bstr.h
+include/htp/dslib.h
+include/htp/hooks.h
+include/htp/htp.h
+include/htp/htp_decompressors.h
+include/htp/utf8_decoder.h
+lib/libhtp.a
+lib/libhtp.la
+lib/pkgconfig/
+lib/pkgconfig/htp.pc
