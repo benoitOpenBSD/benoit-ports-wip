@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.18 2011/06/08 17:39:25 jasper Exp $
+# $OpenBSD: Makefile,v 1.19 2011/09/16 09:24:55 espie Exp $
 
 COMMENT =		Python parsing module
 
