@@ -2,7 +2,7 @@
 
 COMMENT =	space-based shoot'em up game for X11
 
-DISTNAME =	xsoldier-1.5
+DISTNAME =	xsoldier-1.8
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://www.interq.or.jp/libra/oohara/xsoldier/
@@ -23,8 +23,6 @@ CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	--localstatedir=/var
 
 MAKE_FLAGS =		CC_OPTIMIZE="${CFLAGS}"
-
-USE_GROFF =		Yes
 
 NO_REGRESS =		Yes
 
