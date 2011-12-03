@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.7 2009/03/26 11:50:09 jasper Exp $
+# $OpenBSD: Makefile,v 1.12 2011/09/16 11:13:40 espie Exp $
 
 COMMENT=	SNMP framework for Python
 
-MODPY_EGG_VERSION=	4.1.11a
+MODPY_EGG_VERSION = 4.2.1
 DISTNAME=	pysnmp-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:S/py/py-/}
 CATEGORIES=	net
@@ -21,18 +21,20 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pysnmp/}
 
 MODULES=	lang/python
 
+MODPY_SETUPTOOLS = Yes
+
+BUILD_DEPENDS =	${RUN_DEPENDS}
+RUN_DEPENDS =   security/py-crypto \
+		devel/py-asn1
+
 DOCSDIR=	${PREFIX}/share/doc/py-snmp
 EXAMPLESDIR=	${PREFIX}/share/examples/py-snmp
 
 post-install:
-	${INSTALL_DATA_DIR} ${DOCSDIR}
+	${INSTALL_DATA_DIR} ${DOCSDIR} ${EXAMPLESDIR}
 	cd ${WRKSRC}/docs; tar cf - . | tar xf - -C ${DOCSDIR} 
-	${INSTALL_DATA_DIR} ${EXAMPLESDIR}
 	cd ${WRKSRC}/examples; tar cf - . | tar xf - -C ${EXAMPLESDIR}
 
-do-regress: fake
-	@cd ${WRKSRC} && ${MAKE_ENV} \
-		PYTHONPATH=${WRKINST}${MODPY_SITEPKG} \
-		${MODPY_BIN} -c 'from pysnmp.test import suite; suite.run()'
+NO_REGRESS =	Yes
 
 .include <bsd.port.mk>
