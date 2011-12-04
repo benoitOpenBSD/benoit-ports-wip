@@ -7,9 +7,9 @@ DISTNAME=	pysnmp-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:S/py/py-/}
 CATEGORIES=	net
 
-HOMEPAGE=	http://pysnmp.sourceforge.net/
+REVISION =	0
 
-MAINTAINER=	Xavier Santolaria <xsa@openbsd.org>
+HOMEPAGE=	http://pysnmp.sourceforge.net/
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
