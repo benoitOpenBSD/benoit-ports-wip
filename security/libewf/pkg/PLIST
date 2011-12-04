@@ -18,6 +18,10 @@ lib/libewf.a
 lib/libewf.la
 lib/pkgconfig/
 lib/pkgconfig/libewf.pc
+lib/python2.7/
+lib/python2.7/site-packages/
+lib/python2.7/site-packages/pyewf.a
+lib/python2.7/site-packages/pyewf.la
 @man man/man1/ewfacquire.1
 @man man/man1/ewfacquirestream.1
 @man man/man1/ewfexport.1

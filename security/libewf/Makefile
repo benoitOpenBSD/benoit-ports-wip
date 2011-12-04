@@ -28,6 +28,7 @@ CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS=         ${CONFIGURE_SHARED} \
 			--enable-python
 
+USE_LIBTOOL =		Yes
 USE_GROFF =		Yes
 
 WRKDIST =		${WRKDIR}/libewf-20111015
