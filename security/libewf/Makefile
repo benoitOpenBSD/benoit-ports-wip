@@ -22,6 +22,8 @@ MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=libewf/}
 
 WANTLIB =		c crypto ssl z
 
+MODULES =		devel/gettext
+
 LIB_DEPENDS =		devel/uuid
 
 CONFIGURE_STYLE =	gnu
