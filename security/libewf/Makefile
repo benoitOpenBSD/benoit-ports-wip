@@ -25,9 +25,10 @@ WANTLIB =		c crypto ssl z
 LIB_DEPENDS =		devel/uuid
 
 CONFIGURE_STYLE =	gnu
-CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
-			CFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib"
+CONFIGURE_ARGS=         ${CONFIGURE_SHARED} \
+			--enable-python
+
+USE_GROFF =		Yes
 
 WRKDIST =		${WRKDIR}/libewf-20111015
 
