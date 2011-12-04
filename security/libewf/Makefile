@@ -6,6 +6,8 @@ VERSION =		beta-20111015
 DISTNAME =		libewf-${VERSION}
 CATEGORIES =		security
 
+SHARED_LIBS +=		ewf	0.0 # 2.0
+
 HOMEPAGE =              http://sourceforge.net/projects/libewf/
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -24,6 +26,7 @@ LIB_DEPENDS =		devel/uuid
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
+			CFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
 WRKDIST =		${WRKDIR}/libewf-20111015
