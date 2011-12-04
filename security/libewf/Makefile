@@ -22,7 +22,8 @@ MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=libewf/}
 
 WANTLIB =		c crypto ssl z
 
-MODULES =		devel/gettext
+MODULES =		devel/gettext \
+			lang/python
 
 LIB_DEPENDS =		devel/uuid
 
