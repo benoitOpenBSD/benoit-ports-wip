@@ -2,7 +2,7 @@
 
 COMMENT =		Next Generation Intrusion Detection and Prevention Engine
 
-DISTNAME =		suricata-1.1
+DISTNAME =		suricata-1.1.1
 CATEGORIES =		security
 SHARED_LIBS +=  htp-0.2                   0.0 # 1.2
 SHARED_LIBS +=  htp                       0.0 # 1.2
@@ -22,7 +22,8 @@ MASTER_SITES =		http://www.openinfosecfoundation.org/download/
 WANTLIB =		c m stdc++ pcre
 
 LIB_DEPENDS =		devel/pcre \
-			devel/libyaml
+			devel/libyaml \
+			net/libnet/1.1
 
 USE_GMAKE =		Yes
 USE_GROFF =		Yes
@@ -31,6 +32,7 @@ USE_LIBTOOL =		Yes
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
+CONFIGURE_ARGS =	--with-libnet-includes=${LOCALBASE}/include/libnet-1.1
 
 NO_REGRESS =		Yes
 
