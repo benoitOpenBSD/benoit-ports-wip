@@ -19,7 +19,7 @@ PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		http://www.openinfosecfoundation.org/download/
 
-WANTLIB =		c m stdc++ pcap pcre yaml z lib/libnet-1.1/net=11
+WANTLIB =		c m stdc++ pcap pcre pthread yaml z lib/libnet-1.1/net=11
 
 LIB_DEPENDS =		devel/pcre \
 			devel/libyaml \
