@@ -2,7 +2,7 @@
 
 COMMENT =	cloud storage client library
 
-DISTNAME =	Droplet
+DISTNAME =	Droplet-20111217
 CATEGORIES =	devel
 
 HOMEPAGE =	http://github.com/scality/Droplet/wiki
@@ -17,7 +17,8 @@ PERMIT_DISTFILES_FTP =		Yes
 
 WANTLIB =		c
 
-MASTER_SITES =		https://github.com/scality/Droplet.git
+MASTER_SITES =		http://www.arcane-labs.com/download/OpenBSD/
+# MASTER_SITES =		https://github.com/scality/Droplet.git
 
 AUTOCONF_VERSION =	2.59
 AUTOMAKE_VERSION =	1.9
