@@ -1,28 +1,46 @@
 # $OpenBSD$
 
-COMMENT =	cloud storage client library
+SHARED_ONLY=		Yes
 
-DISTNAME =	Droplet-20111217
-CATEGORIES =	devel
+CATEGORIES=		devel
+COMMENT=		high perfomance Cloud Storage client library	
 
-HOMEPAGE =	http://github.com/scality/Droplet/wiki
+VERSION=		1.1
+DISTNAME=		droplet-${VERSION}
+HOMEPAGE=		https://github.com/scality/Droplet
 
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
+SHARED_LIBS=		droplet		0.0 #0.0
+
+MAINTAINER=		Rafael Sadowski <rafael@sizeofvoid.org>
 
 # BSD
-PERMIT_PACKAGE_CDROM =		Yes
-PERMIT_PACKAGE_FTP =		Yes
-PERMIT_DISTFILES_CDROM =	Yes
-PERMIT_DISTFILES_FTP =		Yes
+PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_FTP=	Yes
+PERMIT_DISTFILES_CDROM=	Yes
+PERMIT_DISTFILES_FTP=	Yes
 
-WANTLIB =		c
+WANTLIB=		ssl json xml2 pthread crypto z iconv m c
 
-MASTER_SITES =		http://www.arcane-labs.com/download/OpenBSD/
-# MASTER_SITES =		https://github.com/scality/Droplet.git
+MASTER_SITES=		http://www.sizeofvoid.org/pub/OpenBSD/distfiles/
 
-AUTOCONF_VERSION =	2.59
-AUTOMAKE_VERSION =	1.9
+WRKSRC=			${WRKDIR}/scality-Droplet-e6692cc
+WRKDIST=		${WRKSRC}
+MODULES=		devel/gettext
+BUILD_DEPENDS=		${MODGNU_AUTOCONF_DEPENDS} \
+			${MODGNU_AUTOMAKE_DEPENDS} \
+			devel/json-c
 
-CONFIGURE_STYLE =	autoconf automake
+LIB_DEPENDS=		textproc/libxml \
+			devel/json-c
+
+USE_LIBTOOL=		Yes
+AUTOCONF_VERSION= 	2.68
+AUTOMAKE_VERSION=	1.11
+CONFIGURE_STYLE=	autoconf automake gnu
+CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
+			LDFLAGS="-L${LOCALBASE}/lib"
+post-patch:
+	@cd ${WRKBUILD} && env AUTOCONF_VERSION=2.68 AUTOMAKE_VERSION=1.11 \
+		./autogen.sh
 
 .include <bsd.port.mk>
