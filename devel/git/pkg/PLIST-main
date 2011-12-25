@@ -320,12 +320,14 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-whatchanged.1
 @man man/man1/git-write-tree.1
 @man man/man1/git.1
+@man man/man1/gitweb.1
 @man man/man3p/Git.3p
 @man man/man5/gitattributes.5
 @man man/man5/githooks.5
 @man man/man5/gitignore.5
 @man man/man5/gitmodules.5
 @man man/man5/gitrepository-layout.5
+@man man/man5/gitweb.conf.5
 @man man/man7/gitcli.7
 @man man/man7/gitcore-tutorial.7
 @man man/man7/gitcvs-migration.7
@@ -671,7 +673,9 @@ share/doc/git/gittutorial-2.txt
 share/doc/git/gittutorial.html
 share/doc/git/gittutorial.txt
 share/doc/git/gitweb.conf.html
+share/doc/git/gitweb.conf.txt
 share/doc/git/gitweb.html
+share/doc/git/gitweb.txt
 share/doc/git/gitworkflows.html
 share/doc/git/gitworkflows.txt
 share/doc/git/glossary-content.txt
@@ -702,6 +706,7 @@ share/doc/git/pretty-options.txt
 share/doc/git/pull-fetch-param.txt
 share/doc/git/rev-list-options.txt
 share/doc/git/revisions.txt
+share/doc/git/sequencer.txt
 share/doc/git/urls-remotes.txt
 share/doc/git/urls.txt
 share/doc/git/user-manual.html

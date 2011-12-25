@@ -37,6 +37,7 @@ share/git-gui/lib/encoding.tcl
 share/git-gui/lib/error.tcl
 share/git-gui/lib/git-gui.ico
 share/git-gui/lib/index.tcl
+share/git-gui/lib/line.tcl
 share/git-gui/lib/logo.tcl
 share/git-gui/lib/merge.tcl
 share/git-gui/lib/mergetool.tcl
