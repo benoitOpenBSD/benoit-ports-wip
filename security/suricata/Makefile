@@ -23,7 +23,8 @@ WANTLIB =		c m stdc++ pcap pcre pthread yaml z lib/libnet-1.1/net=11
 
 LIB_DEPENDS =		devel/pcre \
 			devel/libyaml \
-			net/libnet/1.1
+			net/libnet/1.1 \
+			devel/libmagic
 
 USE_GMAKE =		Yes
 USE_GROFF =		Yes
