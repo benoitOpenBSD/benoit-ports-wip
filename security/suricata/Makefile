@@ -2,7 +2,7 @@
 
 COMMENT =		Next Generation Intrusion Detection and Prevention Engine
 
-DISTNAME =		suricata-1.2rc1
+DISTNAME =		suricata-1.2
 CATEGORIES =		security
 SHARED_LIBS +=  htp-0.2                   0.0 # 1.2
 SHARED_LIBS +=  htp                       0.0 # 1.2
