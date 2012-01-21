@@ -21,9 +21,9 @@ MASTER_SITES =		${MASTER_SITE_GNU:=cflow/}
 
 MODULES =		devel/gettext
 
-BUILD_DEPENDS =		devel/flex
-
 MAKE_FLAGS =		LIBINTL="-L${LOCALBASE}/lib -liconv -lintl"
+
+BUILD_DEPENDS =		devel/flex
 
 SEPARATE_BUILD =	simple
 CONFIGURE_STYLE =	gnu
