@@ -1,7 +1,7 @@
 $OpenBSD$
---- Makefile.orig	Wed Nov  9 02:05:09 2011
-+++ Makefile	Sat Nov 12 15:07:23 2011
-@@ -278,7 +278,7 @@
+--- Makefile.orig	Thu Jan 19 01:29:32 2012
++++ Makefile	Sat Jan 21 10:18:35 2012
+@@ -280,7 +280,7 @@ endif
  
  # CFLAGS and LDFLAGS are for the users to override from the command line.
  
@@ -10,7 +10,7 @@ $OpenBSD$
  LDFLAGS =
  ALL_CFLAGS = $(CPPFLAGS) $(CFLAGS)
  ALL_LDFLAGS = $(LDFLAGS)
-@@ -296,12 +296,12 @@
+@@ -298,12 +298,12 @@ STRIP ?= strip
  # runtime figures out where they are based on the path to the executable.
  # This can help installing the suite in a relocatable way.
  
@@ -26,7 +26,7 @@ $OpenBSD$
  mergetoolsdir = $(gitexecdir)/mergetools
  sharedir = $(prefix)/share
  gitwebdir = $(sharedir)/gitweb
-@@ -315,7 +315,7 @@
+@@ -317,7 +317,7 @@ pathsep = :
  
  export prefix bindir sharedir sysconfdir gitwebdir
  
@@ -35,7 +35,7 @@ $OpenBSD$
  AR = ar
  RM = rm -f
  DIFF = diff
-@@ -323,10 +323,10 @@
+@@ -325,10 +325,10 @@ TAR = tar
  FIND = find
  INSTALL = install
  RPMBUILD = rpmbuild
@@ -49,7 +49,7 @@ $OpenBSD$
  PTHREAD_CFLAGS =
  GCOV = gcov
  
-@@ -967,13 +967,14 @@
+@@ -974,13 +974,14 @@ ifeq ($(uname_S),FreeBSD)
  	HAVE_PATHS_H = YesPlease
  endif
  ifeq ($(uname_S),OpenBSD)
@@ -67,7 +67,7 @@ $OpenBSD$
  endif
  ifeq ($(uname_S),NetBSD)
  	ifeq ($(shell expr "$(uname_R)" : '[01]\.'),2)
-@@ -1358,7 +1359,7 @@
+@@ -1387,7 +1388,7 @@ endif
  EXTLIBS += -lz
  
  ifndef NO_OPENSSL
@@ -76,7 +76,7 @@ $OpenBSD$
  	ifdef OPENSSLDIR
  		BASIC_CFLAGS += -I$(OPENSSLDIR)/include
  		OPENSSL_LINK = -L$(OPENSSLDIR)/$(lib) $(CC_LD_DYNPATH)$(OPENSSLDIR)/$(lib)
-@@ -2202,7 +2203,7 @@
+@@ -2235,7 +2236,7 @@ export NO_SVN_TESTS
  
  ### Testing rules
  
