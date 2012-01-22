@@ -2,7 +2,7 @@
 
 COMMENT =		GNU PIC assembler and utilities
 
-VERSION =		0.13.7
+VERSION =		0.14.1
 DISTNAME =		gputils-${VERSION}
 CATEGORIES =		devel
 
@@ -28,7 +28,7 @@ CONFIGURE_STYLE =	gnu autoconf
 CONFIGURE_ENV =		"CC=${CC}" "CPP=${CPP}" "CFLAGS=${CFLAGS}" "CPPFLAGS=${CPPFLAGS}" "LDFLAGS=${LDFLAGS}"
 USE_GROFF =	Yes
 
-AUTOCONF_VERSION =	2.61
+AUTOCONF_VERSION =	2.67
 
 do-regress:
 	cd ${WRKSRC}/gpasm/testsuite && sh ./test all
