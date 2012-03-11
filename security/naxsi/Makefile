@@ -1,33 +1,34 @@
 # $OpenBSD$
 
-COMMENT=	Web Application Firewall module for Nginx
+COMMENT =	Web Application Firewall module for Nginx
 
-DISTNAME=	nginx-1.0.13
-CATEGORIES=	www security
+NAXSI_VERSION =	naxsi-0.43-1
+DISTNAME =	nginx-1.0.13
+CATEGORIES =	www security
 
-HOMEPAGE=	https://code.google.com/p/naxsi
+HOMEPAGE =	https://code.google.com/p/naxsi
 
-MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
+MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # BSD-like
-PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
+PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE_FTP =	Yes
+PERMIT_DISTFILES_CDROM =Yes
+PERMIT_DISTFILES_FTP =	Yes
 
-WANTLIB=		c crypto pcre ssl z
+WANTLIB =		c crypto pcre ssl z
 
 MASTER_SITES =		http://nginx.org/download/	
 
-LIB_DEPENDS=		devel/pcre
+LIB_DEPENDS =		devel/pcre
 
-NGINX_DIR=		/var/nginx
-SUBST_VARS=		NGINX_DIR
+NGINX_DIR =		/var/nginx
+SUBST_VARS =		NGINX_DIR
 
-CONFIGURE_STYLE=	simple
+CONFIGURE_STYLE =	simple
 
 .if ${FLAVOR:L:Mnaxsi}
-CONFIGURE_ARGS=		--prefix=${SYSCONFDIR}/nginx \
+CONFIGURE_ARGS =	--prefix=${SYSCONFDIR}/nginx \
 			--conf-path=${SYSCONFDIR}/nginx/nginx.conf \
 			--sbin-path=${PREFIX}/sbin/nginx \
 			--pid-path=/var/run/nginx.pid \
@@ -41,7 +42,7 @@ CONFIGURE_ARGS=		--prefix=${SYSCONFDIR}/nginx \
 			--error-log-path=/var/www/logs/error.log \
 			--user=www \
 			--group=www \
-			--add-module=../naxsi-0.43-1/naxsi_src/ \
+			--add-module=../${NAXSI_VERSION}/naxsi_src/ \
 			--with-http_gzip_static_module \
 			--with-http_ssl_module \
 			--with-http_stub_status_module \
@@ -50,7 +51,7 @@ CONFIGURE_ARGS=		--prefix=${SYSCONFDIR}/nginx \
 			--with-mail_ssl_module \
 			--with-ipv6
 .else
-CONFIGURE_ARGS=		--prefix=${SYSCONFDIR}/nginx \
+CONFIGURE_ARGS = 	--prefix=${SYSCONFDIR}/nginx \
 			--conf-path=${SYSCONFDIR}/nginx/nginx.conf \
 			--sbin-path=${PREFIX}/sbin/nginx \
 			--pid-path=/var/run/nginx.pid \
@@ -73,7 +74,7 @@ CONFIGURE_ARGS=		--prefix=${SYSCONFDIR}/nginx \
 			--with-ipv6
 .endif
 
-FLAVORS=		passenger naxsi
+FLAVORS =		passenger naxsi
 FLAVOR?=
 
 .if ${FLAVOR:L:Mpassenger}
@@ -85,12 +86,11 @@ WANTLIB +=		m pthread stdc++
 
 .if ${FLAVOR:L:Mnaxsi}
 MASTER_SITES0 =         https://naxsi.googlecode.com/files/
-# CONFIGURE_ARGS +=	--add-module=../naxsi-0.43-1/naxsi_src/
-DISTFILES =             ${DISTNAME}${EXTRACT_SUFX} naxsi-0.43-1.tgz:0
+DISTFILES =             ${DISTNAME}${EXTRACT_SUFX} ${NAXSI_VERSION}.tgz:0
 .endif
 
-NO_REGRESS=		Yes
-ALL_TARGET=
+NO_REGRESS =		Yes
+ALL_TARGET =
 
 pre-configure:
 	@${SUBST_CMD} ${WRKBUILD}/conf/nginx.conf
@@ -105,5 +105,6 @@ do-install:
 .endfor
 	${INSTALL_DATA_DIR} ${PREFIX}/share/nginx/html/
 	${INSTALL_DATA} ${WRKSRC}/html/* ${PREFIX}/share/nginx/html/
+	${INSTALL_DATA} ${WRKSRC}/../${NAXSI_VERSION}/naxsi_config/naxsi_core.rules ${PREFIX}/share/nginx/
 
 .include <bsd.port.mk>

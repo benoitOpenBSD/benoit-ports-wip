@@ -19,6 +19,7 @@ share/nginx/html/index.html
 share/nginx/koi-utf
 share/nginx/koi-win
 share/nginx/mime.types
+share/nginx/naxsi_core.rules
 share/nginx/nginx.conf
 share/nginx/scgi_params
 share/nginx/uwsgi_params
