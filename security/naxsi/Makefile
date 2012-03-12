@@ -27,6 +27,9 @@ SUBST_VARS =		NGINX_DIR
 
 CONFIGURE_STYLE =	simple
 
+FLAVORS =		passenger naxsi
+FLAVOR?=
+
 .if ${FLAVOR:L:Mnaxsi}
 CONFIGURE_ARGS =	--prefix=${SYSCONFDIR}/nginx \
 			--conf-path=${SYSCONFDIR}/nginx/nginx.conf \
@@ -73,9 +76,6 @@ CONFIGURE_ARGS = 	--prefix=${SYSCONFDIR}/nginx \
 			--with-mail_ssl_module \
 			--with-ipv6
 .endif
-
-FLAVORS =		passenger naxsi
-FLAVOR?=
 
 .if ${FLAVOR:L:Mpassenger}
 CONFIGURE_ARGS +=	--add-module=${LOCALBASE}/lib/phusion-passenger/ext/nginx
