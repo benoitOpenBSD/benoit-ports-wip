@@ -2,7 +2,7 @@
 
 COMMENT =		retrieves syskey and extract hashes
 
-DISTNAME =		samdump2-2.0.1
+DISTNAME =		samdump2-3.0.0
 CATEGORIES =		security
 
 HOMEPAGE =		http://ophcrack.sourceforge.net/
@@ -24,7 +24,6 @@ EXTRACT_SUFX =		.tar.bz2
 MAKE_FLAGS =		CC="${CC}" CFLAGS="${CFLAGS}"
 
 USE_GMAKE =		Yes
-USE_GROFF =		Yes
 
 NO_REGRESS =		Yes
 
