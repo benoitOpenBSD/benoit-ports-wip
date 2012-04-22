@@ -1,12 +1,12 @@
-$OpenBSD: patch-Makefile,v 1.4 2010/04/07 21:37:35 sthen Exp $
---- Makefile.orig	Wed Feb  3 10:16:57 2010
-+++ Makefile	Wed Feb  3 10:17:01 2010
-@@ -6,7 +6,7 @@ IFLAGS  = -idirafter dummyinc
- CFLAGS	=	-O2 -Wall -W -Wshadow #-pedantic -Werror -Wconversion
+$OpenBSD$
+--- Makefile.orig	Tue Apr  3 09:21:18 2012
++++ Makefile	Sun Apr 22 11:34:50 2012
+@@ -9,7 +9,7 @@
+ 	#-pedantic -Wconversion
  
  LIBS	=	`./vsf_findlibs.sh`
 -LINK	=	-Wl,-s
 +LINK	=	-Wl
+ LDFLAGS	=	-fPIE -pie -Wl,-z,relro -Wl,-z,now
  
  OBJS	=	main.o utility.o prelogin.o ftpcmdio.o postlogin.o privsock.o \
- 		tunables.o ftpdataio.o secbuf.o ls.o \
