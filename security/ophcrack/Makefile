@@ -2,7 +2,7 @@
 
 COMMENT =		password cracker based on rainbow tables
 
-DISTNAME =		ophcrack-3.3.1
+DISTNAME =		ophcrack-3.4.0
 CATEGORIES =		security
 
 HOMEPAGE =		http://ophcrack.sourceforge.net/
