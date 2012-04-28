@@ -2,7 +2,7 @@
 
 COMMENT =		Atari 2600 VCS emulator
 
-DISTNAME =		stella-3.4.1
+DISTNAME =		stella-3.6.1
 CATEGORIES =		emulators
 DISTFILES =		${DISTNAME}-src.tar.gz
 
