@@ -64,5 +64,5 @@ lib/python${MODPY_VERSION}/site-packages/pyasn1/type/univ.py
 lib/python${MODPY_VERSION}/site-packages/pyasn1/type/univ.pyc
 lib/python${MODPY_VERSION}/site-packages/pyasn1/type/useful.py
 lib/python${MODPY_VERSION}/site-packages/pyasn1/type/useful.pyc
-share/doc/py-asn1/
-share/doc/py-asn1/pyasn1-tutorial.html
+share/doc/${MODPY_PY_PREFIX}asn1/
+share/doc/${MODPY_PY_PREFIX}asn1/pyasn1-tutorial.html
