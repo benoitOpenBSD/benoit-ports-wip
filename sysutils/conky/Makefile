@@ -4,8 +4,7 @@ ONLY_FOR_ARCHS= ${APM_ARCHS}
 
 COMMENT=	light-weight system monitor
 
-DISTNAME=	conky-1.8.1
-REVISION=	8
+DISTNAME=	conky-1.9.0
 CATEGORIES=	sysutils
 HOMEPAGE=	http://conky.sourceforge.net/
 
