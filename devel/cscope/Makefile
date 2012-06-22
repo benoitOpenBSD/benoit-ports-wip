@@ -20,7 +20,9 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cscope/}
 
 EXTRACT_SUFX =         .tar.bz2
 
-CONFIGURE_STYLE=	gnu
+CONFIGURE_STYLE =	autoconf
+AUTOCONF_VERSION =	2.69
+
 USE_GROFF =		Yes
 
 post-install:
