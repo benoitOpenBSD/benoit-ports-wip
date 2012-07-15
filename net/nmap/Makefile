@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.100 2012/05/15 18:28:36 jasper Exp $
+# $OpenBSD: Makefile,v 1.101 2012/07/10 15:22:45 jasper Exp $
 
 COMMENT-main=	scan ports and fingerprint stack of network hosts
 COMMENT-zenmap=	graphical frontend for nmap
@@ -38,6 +38,7 @@ CONFIGURE_ARGS=	--with-libpcap=/usr \
 		--with-liblua=${LOCALBASE} \
 		--with-libpcre=${LOCALBASE} \
 		--with-mandir=${LOCALBASE}/man \
+		--without-nmap-update \
 		--disable-nls
 
 WANTLIB-main=		c crypto m pcap ssl stdc++ pcre pthread ${MODLUA_WANTLIB}

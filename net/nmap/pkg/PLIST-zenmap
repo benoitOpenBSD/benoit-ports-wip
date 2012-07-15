@@ -148,7 +148,7 @@ lib/python${MODPY_VERSION}/site-packages/radialnet/util/integration.py
 lib/python${MODPY_VERSION}/site-packages/radialnet/util/integration.pyc
 lib/python${MODPY_VERSION}/site-packages/radialnet/util/misc.py
 lib/python${MODPY_VERSION}/site-packages/radialnet/util/misc.pyc
-@comment lib/python${MODPY_VERSION}/site-packages/ze${FULLPKGNAME\-main}-py${MODPY_VERSION}.egg-info
+lib/python${MODPY_VERSION}/site-packages/zenmap-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info
 lib/python${MODPY_VERSION}/site-packages/zenmapCore/
 lib/python${MODPY_VERSION}/site-packages/zenmapCore/BasePaths.py
 lib/python${MODPY_VERSION}/site-packages/zenmapCore/BasePaths.pyc

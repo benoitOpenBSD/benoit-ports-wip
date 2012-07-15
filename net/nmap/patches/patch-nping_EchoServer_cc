@@ -1,6 +1,6 @@
-$OpenBSD: patch-nping_EchoServer_cc,v 1.1 2011/03/28 09:01:24 giovanni Exp $
+$OpenBSD: patch-nping_EchoServer_cc,v 1.2 2012/07/10 15:22:45 jasper Exp $
 --- nping/EchoServer.cc.orig	Thu Mar  1 07:53:35 2012
-+++ nping/EchoServer.cc	Fri May 25 15:15:19 2012
++++ nping/EchoServer.cc	Wed Jul 11 15:20:46 2012
 @@ -840,7 +840,7 @@ int EchoServer::nep_capture_handler(nsock_pool nsp, ns
    const unsigned char *packet=NULL;
    const unsigned char *link=NULL;
