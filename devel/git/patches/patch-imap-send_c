@@ -1,7 +1,7 @@
 $OpenBSD: patch-imap-send_c,v 1.10 2011/04/29 11:09:12 stsp Exp $
---- imap-send.c.orig	Thu Jan 19 01:29:32 2012
-+++ imap-send.c	Sat Jan 21 10:18:35 2012
-@@ -1067,7 +1067,7 @@ static struct store *imap_open_store(struct imap_serve
+--- imap-send.c.orig	Wed Jul 11 22:39:17 2012
++++ imap-send.c	Sun Jul 15 09:47:29 2012
+@@ -1045,7 +1045,7 @@ static struct store *imap_open_store(struct imap_serve
  	/* open connection to IMAP server */
  
  	if (srvc->tunnel) {

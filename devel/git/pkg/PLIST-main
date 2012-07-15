@@ -7,7 +7,16 @@ bin/git-cvsserver
 @bin bin/git-upload-archive
 @bin bin/git-upload-pack
 lib/libgit.a
+libdata/perl5/site_perl/Git/
 libdata/perl5/site_perl/Git.pm
+libdata/perl5/site_perl/Git/I18N.pm
+libdata/perl5/site_perl/Git/SVN/
+libdata/perl5/site_perl/Git/SVN/Editor.pm
+libdata/perl5/site_perl/Git/SVN/Fetcher.pm
+libdata/perl5/site_perl/Git/SVN/Memoize/
+libdata/perl5/site_perl/Git/SVN/Memoize/YAML.pm
+libdata/perl5/site_perl/Git/SVN/Prompt.pm
+libdata/perl5/site_perl/Git/SVN/Ra.pm
 libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/
 libexec/git/
 @bin libexec/git/git
@@ -32,10 +41,14 @@ libexec/git/git-bisect
 @bin libexec/git/git-cherry-pick
 @bin libexec/git/git-clean
 @bin libexec/git/git-clone
+@bin libexec/git/git-column
 @bin libexec/git/git-commit
 @bin libexec/git/git-commit-tree
 @bin libexec/git/git-config
 @bin libexec/git/git-count-objects
+@bin libexec/git/git-credential-cache
+@bin libexec/git/git-credential-cache--daemon
+@bin libexec/git/git-credential-store
 libexec/git/git-cvsexportcommit
 libexec/git/git-cvsimport
 libexec/git/git-cvsserver
@@ -95,6 +108,7 @@ libexec/git/git-mergetool--lib
 @bin libexec/git/git-mv
 @bin libexec/git/git-name-rev
 @bin libexec/git/git-notes
+libexec/git/git-p4
 @bin libexec/git/git-pack-objects
 @bin libexec/git/git-pack-redundant
 @bin libexec/git/git-pack-refs
@@ -168,6 +182,7 @@ libexec/git/mergetools/
 libexec/git/mergetools/araxis
 libexec/git/mergetools/bc3
 libexec/git/mergetools/defaults
+libexec/git/mergetools/deltawalker
 libexec/git/mergetools/diffuse
 libexec/git/mergetools/ecmerge
 libexec/git/mergetools/emerge
@@ -199,10 +214,14 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-cherry.1
 @man man/man1/git-clean.1
 @man man/man1/git-clone.1
+@man man/man1/git-column.1
 @man man/man1/git-commit-tree.1
 @man man/man1/git-commit.1
 @man man/man1/git-config.1
 @man man/man1/git-count-objects.1
+@man man/man1/git-credential-cache--daemon.1
+@man man/man1/git-credential-cache.1
+@man man/man1/git-credential-store.1
 @man man/man1/git-cvsexportcommit.1
 @man man/man1/git-cvsimport.1
 @man man/man1/git-cvsserver.1
@@ -256,6 +275,7 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-mv.1
 @man man/man1/git-name-rev.1
 @man man/man1/git-notes.1
+@man man/man1/git-p4.1
 @man man/man1/git-pack-objects.1
 @man man/man1/git-pack-redundant.1
 @man man/man1/git-pack-refs.1
@@ -322,6 +342,12 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git.1
 @man man/man1/gitweb.1
 @man man/man3p/Git.3p
+@man man/man3p/Git::I18N.3p
+@man man/man3p/Git::SVN::Editor.3p
+@man man/man3p/Git::SVN::Fetcher.3p
+@man man/man3p/Git::SVN::Memoize::YAML.3p
+@man man/man3p/Git::SVN::Prompt.3p
+@man man/man3p/Git::SVN::Ra.3p
 @man man/man5/gitattributes.5
 @man man/man5/githooks.5
 @man man/man5/gitignore.5
@@ -330,6 +356,7 @@ libexec/git/mergetools/xxdiff
 @man man/man5/gitweb.conf.5
 @man man/man7/gitcli.7
 @man man/man7/gitcore-tutorial.7
+@man man/man7/gitcredentials.7
 @man man/man7/gitcvs-migration.7
 @man man/man7/gitdiffcore.7
 @man man/man7/gitglossary.7
@@ -398,6 +425,8 @@ share/doc/git/git-clean.html
 share/doc/git/git-clean.txt
 share/doc/git/git-clone.html
 share/doc/git/git-clone.txt
+share/doc/git/git-column.html
+share/doc/git/git-column.txt
 share/doc/git/git-commit-tree.html
 share/doc/git/git-commit-tree.txt
 share/doc/git/git-commit.html
@@ -406,6 +435,12 @@ share/doc/git/git-config.html
 share/doc/git/git-config.txt
 share/doc/git/git-count-objects.html
 share/doc/git/git-count-objects.txt
+share/doc/git/git-credential-cache--daemon.html
+share/doc/git/git-credential-cache--daemon.txt
+share/doc/git/git-credential-cache.html
+share/doc/git/git-credential-cache.txt
+share/doc/git/git-credential-store.html
+share/doc/git/git-credential-store.txt
 share/doc/git/git-cvsexportcommit.html
 share/doc/git/git-cvsexportcommit.txt
 share/doc/git/git-cvsimport.html
@@ -512,6 +547,8 @@ share/doc/git/git-name-rev.html
 share/doc/git/git-name-rev.txt
 share/doc/git/git-notes.html
 share/doc/git/git-notes.txt
+share/doc/git/git-p4.html
+share/doc/git/git-p4.txt
 share/doc/git/git-pack-objects.html
 share/doc/git/git-pack-objects.txt
 share/doc/git/git-pack-redundant.html
@@ -650,6 +687,8 @@ share/doc/git/gitcli.html
 share/doc/git/gitcli.txt
 share/doc/git/gitcore-tutorial.html
 share/doc/git/gitcore-tutorial.txt
+share/doc/git/gitcredentials.html
+share/doc/git/gitcredentials.txt
 share/doc/git/gitcvs-migration.html
 share/doc/git/gitcvs-migration.txt
 share/doc/git/gitdiffcore.html
@@ -695,6 +734,8 @@ share/doc/git/howto/update-hook-example.txt
 share/doc/git/howto/use-git-daemon.txt
 share/doc/git/howto/using-merge-subtree.html
 share/doc/git/howto/using-merge-subtree.txt
+share/doc/git/howto/using-signed-tag-in-pull-request.html
+share/doc/git/howto/using-signed-tag-in-pull-request.txt
 share/doc/git/i18n.txt
 share/doc/git/index.html
 share/doc/git/mailmap.txt
@@ -740,3 +781,31 @@ share/gitweb/static/git-favicon.png
 share/gitweb/static/git-logo.png
 share/gitweb/static/gitweb.css
 share/gitweb/static/gitweb.js
+share/locale/
+share/locale/da/
+share/locale/da/LC_MESSAGES/
+share/locale/da/LC_MESSAGES/git.mo
+share/locale/de/
+share/locale/de/LC_MESSAGES/
+share/locale/de/LC_MESSAGES/git.mo
+share/locale/is/
+share/locale/is/LC_MESSAGES/
+share/locale/is/LC_MESSAGES/git.mo
+share/locale/it/
+share/locale/it/LC_MESSAGES/
+share/locale/it/LC_MESSAGES/git.mo
+share/locale/nl/
+share/locale/nl/LC_MESSAGES/
+share/locale/nl/LC_MESSAGES/git.mo
+share/locale/pt_PT/
+share/locale/pt_PT/LC_MESSAGES/
+share/locale/pt_PT/LC_MESSAGES/git.mo
+share/locale/sv/
+share/locale/sv/LC_MESSAGES/
+share/locale/sv/LC_MESSAGES/git.mo
+share/locale/vi/
+share/locale/vi/LC_MESSAGES/
+share/locale/vi/LC_MESSAGES/git.mo
+share/locale/zh_CN/
+share/locale/zh_CN/LC_MESSAGES/
+share/locale/zh_CN/LC_MESSAGES/git.mo

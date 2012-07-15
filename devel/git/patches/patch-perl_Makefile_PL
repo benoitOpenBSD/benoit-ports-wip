@@ -1,14 +1,16 @@
---- perl/Makefile.PL.orig	Sun Oct 11 03:42:04 2009
-+++ perl/Makefile.PL	Mon Oct 12 15:38:28 2009
-@@ -1,4 +1,5 @@
- use ExtUtils::MakeMaker;
+--- perl/Makefile.PL.orig	Wed Jul 11 22:39:17 2012
++++ perl/Makefile.PL	Sun Jul 15 09:47:29 2012
+@@ -7,6 +7,7 @@ use Getopt::Long;
+ Getopt::Long::Configure qw/ pass_through /;
+ 
+ GetOptions("localedir=s" => \my $localedir);
 +use Config;
  
  sub MY::postamble {
  	return <<'MAKE_FRAG';
-@@ -34,5 +35,6 @@ WriteMakefile(
- 	VERSION_FROM    => 'Git.pm',
+@@ -55,5 +56,6 @@ WriteMakefile(
  	PM		=> \%pm,
+ 	PM_FILTER	=> qq[\$(PERL) -pe "s<\\Q++LOCALEDIR++\\E><$localedir>"],
  	MAKEFILE	=> 'perl.mak',
 -	INSTALLSITEMAN3DIR => '$(SITEPREFIX)/share/man/man3'
 +	INSTALLARCHLIB	=> $Config{installsitearch},
