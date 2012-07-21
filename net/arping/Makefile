@@ -2,7 +2,7 @@
 
 COMMENT =	ARP level ping utility
 
-DISTNAME =	arping-2.11
+DISTNAME =	arping-2.12
 CATEGORIES =	net
 
 HOMEPAGE =	http://www.habets.pp.se/synscan/programs.php?prog=ARPing
@@ -15,7 +15,7 @@ PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-WANTLIB =	c pcap lib/libnet-1.1/net=11
+WANTLIB =	c m pcap lib/libnet-1.1/net=11
 
 MASTER_SITES =	http://www.habets.pp.se/synscan/files/ \
 		http://www.arcane-labs.net/download/OpenBSD/
