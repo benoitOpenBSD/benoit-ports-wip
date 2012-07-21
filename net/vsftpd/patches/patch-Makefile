@@ -1,6 +1,6 @@
 --- Makefile.orig	Tue Apr  3 09:21:18 2012
-+++ Makefile	Sun Apr 22 11:57:33 2012
-@@ -3,14 +3,12 @@
++++ Makefile	Sat Jul 21 15:29:55 2012
+@@ -3,14 +3,12 @@ CC 	=	gcc
  INSTALL	=	install
  IFLAGS  = -idirafter dummyinc
  #CFLAGS = -g
