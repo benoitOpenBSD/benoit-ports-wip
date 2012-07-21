@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.20 2010/11/16 11:23:27 espie Exp $
+# $OpenBSD: Makefile,v 1.22 2012/04/28 10:51:44 ajacoutot Exp $
 
 COMMENT =	breakout game with many levels, powerups, good graphics
 
-DISTNAME =	lbreakout2-2.6.3
+DISTNAME =	lbreakout2-2.6.4
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://lgames.sourceforge.net/index.php?action=show_project&project=LBreakout2
@@ -15,7 +15,7 @@ PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-WANTLIB =	SDL c m pthread z png>=9.0 SDL_mixer
+WANTLIB =	SDL c m pthread z png>=9.0 SDL_mixer usbhid
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=lgames/}
 
@@ -27,9 +27,10 @@ RUN_DEPENDS =	devel/desktop-file-utils
 
 USE_GMAKE =	Yes
 
+LOCALSTATEDIR=	${BASELOCALSTATEDIR}/games
+
 CONFIGURE_STYLE =	gnu
-CONFIGURE_ARGS +=	--localstatedir=/var/games \
-			--with-docdir=${PREFIX}/share/doc
+CONFIGURE_ARGS +=	--with-docdir=${PREFIX}/share/doc
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include/libpng" \
 			LDFLAGS="-L${LOCALBASE}/lib" \
 			LIBS="-lintl -liconv"
