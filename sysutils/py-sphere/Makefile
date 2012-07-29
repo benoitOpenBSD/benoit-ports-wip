@@ -27,4 +27,7 @@ MODPY_SETUPTOOLS =	Yes
 
 NO_REGRESS =		Yes
 
+post-install:
+			find ${WRKINST}${MODPY_SITEPKG} -type f -exec chmod 444 {} \;
+
 .include <bsd.port.mk>
