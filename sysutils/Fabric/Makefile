@@ -22,7 +22,8 @@ MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
 
 BUILD_DEPENDS =		${RUN_DEPENDS}
-RUN_DEPENDS =		security/py-crypto
+RUN_DEPENDS =		security/py-crypto \
+			security/py-ssh
 
 # REGRESS_DEPENDS =	devel/py-nose
 NO_REGRESS =		Yes
