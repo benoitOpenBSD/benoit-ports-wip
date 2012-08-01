@@ -1,0 +1,2 @@
+crackpkcs12 is a tool to audit PKCS#12 files passwords (extension .p12
+or .pfx).  It's written in C and uses openssl library.
