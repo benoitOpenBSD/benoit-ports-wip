@@ -1,0 +1,4 @@
+SleekXMPP is a pet project of an XMPP enthusiast. The goals of the
+project are ease of implementation, and complete draft XEP (XMPP
+Extended Protocol) coverage. Ideally the community will be able to use
+this for bots, easy XEP protocoling, etc.
