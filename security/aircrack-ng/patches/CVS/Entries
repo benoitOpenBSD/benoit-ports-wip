@@ -1,9 +1,13 @@
 /patch-common_mak/1.1.1.1/Wed May  6 20:39:29 2009//
 /patch-src_aircrack-ng_h/1.1.1.1/Wed May  6 20:39:29 2009//
-/patch-src_Makefile/1.2/Sat May 21 20:09:11 2011//
 /patch-src_airodump-ng_h/1.1/Sat May 21 20:09:11 2011//
 /patch-src_common_c/1.1/Sat May 21 20:09:11 2011//
 /patch-src_osdep_Makefile/1.2/Sat May 21 20:09:11 2011//
-/patch-src_osdep_byteorder_h/1.1/Sat May 21 20:09:11 2011//
 /patch-src_osdep_openbsd_c/1.1/Sat May 21 20:09:11 2011//
+/patch-src_osdep_byteorder_h/1.2/Thu Aug 25 18:55:38 2011//
+/patch-src_Makefile/1.4/Sun Aug 19 19:22:26 2012//
+/patch-src_aircrack-ng_c/1.2/Mon Aug 20 13:46:34 2012//
+/patch-src_common_h/1.2/Mon Aug 20 13:46:34 2012//
+/patch-src_sha1-sse2_S/1.2/Mon Aug 20 13:46:34 2012//
+/patch-src_sha1-sse2_h/1.2/Mon Aug 20 13:46:34 2012//
 D
