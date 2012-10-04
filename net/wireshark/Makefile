@@ -1,83 +1,111 @@
 # $OpenBSD$
 
-COMMENT =	insecure user-friendly network protocol analyzer
+COMMENT-main=	graphical network protocol analyzer
+COMMENT-text=	network protocol analyzer
 
-WVER =		1.2.5
-DISTNAME =	wireshark-${WVER}
-SHARED_LIBS =	wireshark	0.0 \
-		wiretap		0.0 \
-		wsutil		0.0
+VER=		1.8.2
+WVER=		${VER}
+DISTNAME=	wireshark-${WVER}
+PKGNAME-main=	wireshark-${VER}
+PKGNAME-text=	tshark-${VER}
+SHARED_ONLY=	Yes
 
-CATEGORIES =	net security x11
+SHARED_LIBS +=  wsutil               0.0      # 1.0
+SHARED_LIBS +=  wiretap              0.0      # 1.0
+SHARED_LIBS +=  wireshark            0.0      # 1.0
 
-HOMEPAGE =	http://wireshark.org/
+CATEGORIES=	net security x11
 
-EXTRACT_SUFX =	.tar.bz2
+HOMEPAGE=	http://www.wireshark.org/
 
-USE_GMAKE =	Yes
+EXTRACT_SUFX=	.tar.bz2
 
-# XXX @newuser in pkg/PLIST, not used at present
+FLAVORS=	gtk2 no_python
+FLAVOR?=
+
+USE_GMAKE=	Yes
+USE_GROFF=	Yes
 
 # Mostly GPLv2 or later. Some files are less restrictive.
 # tools/pidl is GPLv3 or later. See COPYING.
-PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
+PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_FTP=	Yes
+PERMIT_DISTFILES_CDROM=	Yes
+PERMIT_DISTFILES_FTP=	Yes
 
-WANTLIB =	c crypto expat jack krb5 m sndio pcap pixman-1 pthread \
-		tasn1 z fontconfig freetype X11 Xext Xrender Xau Xcomposite \
-		Xcursor Xdamage Xdmcp Xfixes Xi Xinerama Xrandr expat
+WANTLIB += c glib-2.0 m pcap pthread z
 
-MASTER_SITES =	http://wireshark.osmirror.nl/download/src/all-versions/ \
-		http://www.wireshark.org/download/src/all-versions/ \
-		http://wireshark.zing.org/download/src/all-versions/ \
-		http://wireshark.cs.pu.edu.tw/download/src/all-versions/
+WANTLIB-text += ${WANTLIB} ${MODLUA_WANTLIB} GeoIP cares gcrypt gmodule-2.0
+WANTLIB-text += gnutls gpg-error krb5 smi
 
-SUBST_VARS =	WVER
+WANTLIB-main += ${WANTLIB} wireshark wiretap wsutil
+WANTLIB-main += cairo gdk_pixbuf-2.0 gmodule-2.0 gobject-2.0
+WANTLIB-main += pango-1.0 pangocairo-1.0 portaudio stdc++
 
-# used to create register.c, the shell alternative is slow+semi-broken
-MODULES =	lang/python
-MODPY_RUNDEP =	no
+MODULES=	lang/lua
+MODLUA_SA=	Yes
 
-#BUILD_DEPENDS=	::devel/pkgconfig
+MULTI_PACKAGES= -text -main
 
-LIB_DEPENDS =	devel/atk \
-		graphics/cairo \
-		net/libcares \
-		net/GeoIP \
-		x11/gtk+2 \
+MASTER_SITES=	http://www.wireshark.org/download/src/all-versions/ \
+		http://www.wireshark.org/download/automated/src/
+
+SUBST_VARS=	WVER
+
+LIB_DEPENDS=
+
+LIB_DEPENDS-text= ${LIB_DEPENDS} \
+		${MODLUA_LIB_DEPENDS} \
 		devel/glib2 \
-		graphics/glitz \
+		net/libcares \
+		net/libsmi \
+		net/GeoIP  \
 		security/libgcrypt \
-		security/libgpg-error \
-		security/gnutls \
-		converters/libiconv \
-		devel/gettext \
-		lang/lua \
-		devel/pango \
-		devel/pcre \
+		security/gnutls
+
+LIB_DEPENDS-main= ${LIB_DEPENDS} \
+		tshark-${VER}:${PKGPATH},${FLAVOR},-text \
 		audio/portaudio-svn \
-		graphics/png
+		devel/pango \
+		graphics/cairo
 
-USE_LIBTOOL =	Yes
+USE_LIBTOOL=	Yes
+LIBTOOL_FLAGS+= --tag=disable-static
 
-CONFIGURE_STYLE =gnu
+CONFIGURE_STYLE= gnu
+SEPARATE_BUILD=	Yes
+CFLAGS+=	-I${LOCALBASE}/include/lua-5.1
 
-CONFIGURE_ARGS =${CONFIGURE_SHARED} \
-		--with-adns \
-		--with-krb5 \
-		--with-net-snmp \
+CONFIGURE_ARGS=	${CONFIGURE_SHARED} \
+		--with-dumpcap-group=_wireshark \
 		--with-ssl
 
-CONFIGURE_ENV =	CPPFLAGS="-I/usr/include/kerberosV" \
-		LDFLAGS="-Lwiretap/.libs -Lepan/.libs" \
-		PYTHON=${MODPY_BIN}
+.if !${FLAVOR:L:Mno_python}
+MODULES +=		lang/python
+WANTLIB-text +=		${MODPY_WANTLIB}
+LIB_DEPENDS-text +=	${MODPY_LIB_DEPENDS}
+CONFIGURE_ARGS +=	--with-python
+.endif
 
-NO_REGRESS =	Yes
+.if !${FLAVOR:L:Mgtk2}
+CONFIGURE_ARGS +=	--with-gtk3=yes \
+			CPPFLAGS="-DGDK_VERSION_MIN_REQUIRED=GDK_VERSION_3_0"
+WANTLIB-main +=		gdk-3 gtk-3
+LIB_DEPENDS-main +=		x11/gtk+3
+.else
+WANTLIB-main +=		gdk-x11-2.0 gtk-x11-2.0
+LIB_DEPENDS-main +=		x11/gtk+2
+.endif
 
-# XXX sometimes this gets built empty
-pre-install:
-	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} wireshark-filter.4
+NO_REGRESS=	Yes
+
+post-extract:
+	${INSTALL} -m 555 ${FILESDIR}/krb5-config ${WRKDIR}/bin
+.if !${FLAVOR:L:Mno_python}
+	ln -s /usr/local/bin/python${MODPY_VERSION}-config ${WRKDIR}/bin/python-config
+.endif
+
+post-install:
+	@find ${PREFIX}/lib/wireshark -name '*.la' -print0 | xargs -r0 rm
 
 .include <bsd.port.mk>
