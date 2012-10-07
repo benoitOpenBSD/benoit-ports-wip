@@ -4,7 +4,7 @@ PKG_ARCH =	*
 
 COMMENT =	substitute for MS TTF core fonts
 
-DISTNAME =	liberation-fonts-ttf-2.00.0
+DISTNAME =	liberation-fonts-ttf-2.00.1
 PKGNAME =	${DISTNAME:S/-ttf//}
 CATEGORIES =	fonts x11
 
