@@ -2,8 +2,8 @@
 
 COMMENT =	Web Application Firewall module for Nginx
 
-NAXSI_VERSION =	naxsi-0.45
-DISTNAME =	nginx-1.0.15
+NAXSI_VERSION =	naxsi-core-0.48
+DISTNAME =	nginx-1.2.5
 CATEGORIES =	www security
 
 HOMEPAGE =	https://code.google.com/p/naxsi
@@ -50,6 +50,8 @@ CONFIGURE_ARGS =	--prefix=${SYSCONFDIR}/nginx \
 			--with-http_ssl_module \
 			--with-http_stub_status_module \
 			--with-http_mp4_module \
+			--with-http_flv_module \
+			--with-http_realip_module \
 			--with-mail \
 			--with-mail_ssl_module \
 			--with-ipv6
@@ -72,14 +74,16 @@ CONFIGURE_ARGS = 	--prefix=${SYSCONFDIR}/nginx \
 			--with-http_ssl_module \
 			--with-http_stub_status_module \
 			--with-http_mp4_module \
+			--with-http_flv_module \
+			--with-http_realip_module \
 			--with-mail \
 			--with-mail_ssl_module \
 			--with-ipv6
 .endif
 
 .if ${FLAVOR:L:Mpassenger}
-CONFIGURE_ARGS +=	--add-module=${LOCALBASE}/lib/phusion-passenger/ext/nginx
-BUILD_DEPENDS +=	www/ruby-passenger,-main
+CONFIGURE_ARGS +=	--add-module=${LOCALBASE}/lib/phusion-passenger19/ext/nginx
+BUILD_DEPENDS +=	www/ruby-passenger,-main,ruby19
 RUN_DEPENDS +=		ruby-passenger-*|ruby19-passenger-*:www/ruby-passenger,-main
 WANTLIB +=		m pthread stdc++
 .endif
