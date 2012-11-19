@@ -10,13 +10,19 @@ lib/libgit.a
 libdata/perl5/site_perl/Git/
 libdata/perl5/site_perl/Git.pm
 libdata/perl5/site_perl/Git/I18N.pm
+libdata/perl5/site_perl/Git/IndexInfo.pm
 libdata/perl5/site_perl/Git/SVN/
+libdata/perl5/site_perl/Git/SVN.pm
 libdata/perl5/site_perl/Git/SVN/Editor.pm
 libdata/perl5/site_perl/Git/SVN/Fetcher.pm
+libdata/perl5/site_perl/Git/SVN/GlobSpec.pm
+libdata/perl5/site_perl/Git/SVN/Log.pm
 libdata/perl5/site_perl/Git/SVN/Memoize/
 libdata/perl5/site_perl/Git/SVN/Memoize/YAML.pm
+libdata/perl5/site_perl/Git/SVN/Migration.pm
 libdata/perl5/site_perl/Git/SVN/Prompt.pm
 libdata/perl5/site_perl/Git/SVN/Ra.pm
+libdata/perl5/site_perl/Git/SVN/Utils.pm
 libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/
 libexec/git/
 @bin libexec/git/git
@@ -46,6 +52,7 @@ libexec/git/git-bisect
 @bin libexec/git/git-commit-tree
 @bin libexec/git/git-config
 @bin libexec/git/git-count-objects
+@bin libexec/git/git-credential
 @bin libexec/git/git-credential-cache
 @bin libexec/git/git-credential-cache--daemon
 @bin libexec/git/git-credential-store
@@ -181,6 +188,7 @@ libexec/git/git-web--browse
 libexec/git/mergetools/
 libexec/git/mergetools/araxis
 libexec/git/mergetools/bc3
+libexec/git/mergetools/codecompare
 libexec/git/mergetools/defaults
 libexec/git/mergetools/deltawalker
 libexec/git/mergetools/diffuse
@@ -222,6 +230,7 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-credential-cache--daemon.1
 @man man/man1/git-credential-cache.1
 @man man/man1/git-credential-store.1
+@man man/man1/git-credential.1
 @man man/man1/git-cvsexportcommit.1
 @man man/man1/git-cvsimport.1
 @man man/man1/git-cvsserver.1
@@ -348,6 +357,7 @@ libexec/git/mergetools/xxdiff
 @man man/man3p/Git::SVN::Memoize::YAML.3p
 @man man/man3p/Git::SVN::Prompt.3p
 @man man/man3p/Git::SVN::Ra.3p
+@man man/man3p/Git::SVN::Utils.3p
 @man man/man5/gitattributes.5
 @man man/man5/githooks.5
 @man man/man5/gitignore.5
@@ -441,6 +451,8 @@ share/doc/git/git-credential-cache.html
 share/doc/git/git-credential-cache.txt
 share/doc/git/git-credential-store.html
 share/doc/git/git-credential-store.txt
+share/doc/git/git-credential.html
+share/doc/git/git-credential.txt
 share/doc/git/git-cvsexportcommit.html
 share/doc/git/git-cvsexportcommit.txt
 share/doc/git/git-cvsimport.html
