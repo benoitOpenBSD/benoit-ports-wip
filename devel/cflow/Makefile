@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2009/08/12 12:25:38 benoit Exp $
+# $OpenBSD: Makefile,v 1.5 2012/03/29 13:38:13 sthen Exp $
 
 COMMENT =	analyze C source files and print a call graph
 
@@ -23,9 +23,8 @@ MODULES =		devel/gettext
 
 MAKE_FLAGS =		LIBINTL="-L${LOCALBASE}/lib -liconv -lintl"
 
-BUILD_DEPENDS =		devel/flex
-
-SEPARATE_BUILD =	simple
+USE_GMAKE =		Yes
+SEPARATE_BUILD =	Yes
 CONFIGURE_STYLE =	gnu
 
 post-install:
