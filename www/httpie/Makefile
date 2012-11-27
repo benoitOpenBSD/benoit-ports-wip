@@ -18,7 +18,7 @@ PERMIT_PACKAGE_FTP =		Yes
 PERMIT_DISTFILES_CDROM =	Yes
 PERMIT_DISTFILES_FTP =		Yes
 
-MASTER_SITES =	https://github.com/jkbr/httpie/archive/
+MASTER_SITES =		https://github.com/jkbr/httpie/archive/
 
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
