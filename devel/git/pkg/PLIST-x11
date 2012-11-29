@@ -7,12 +7,6 @@ libexec/git/git-gui--askpass
 @man man/man1/git-citool.1
 @man man/man1/git-gui.1
 @man man/man1/gitk.1
-share/doc/git/git-citool.html
-share/doc/git/git-citool.txt
-share/doc/git/git-gui.html
-share/doc/git/git-gui.txt
-share/doc/git/gitk.html
-share/doc/git/gitk.txt
 share/git-gui/
 share/git-gui/lib/
 share/git-gui/lib/about.tcl
