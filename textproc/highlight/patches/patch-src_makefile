@@ -1,5 +1,6 @@
---- src/makefile	Wed Oct  5 22:14:22 2011
-+++ src/makefile.new	Sun Oct 23 12:58:49 2011
+$OpenBSD$
+--- src/makefile.orig	Tue Aug 21 23:07:51 2012
++++ src/makefile	Tue Jan  1 15:19:22 2013
 @@ -12,11 +12,11 @@
  
  # See src/gui-qt/highlight.pro for the Qt GUI compilation options
@@ -14,15 +15,17 @@
  #CFLAGS:=-ggdb ${CFLAGS}
  
  CFLAGS_DILU=-fno-strict-aliasing
-@@ -33,7 +33,7 @@
- INCLUDE_DIR=./include/
- 
+@@ -35,8 +35,8 @@
  # Lua paths
--LUA_CFLAGS=-I/usr/include/lua5.1
-+LUA_CFLAGS=-I${LOCALBASE}/include
- LUA_LIBS=-llua
- #LUA_CFLAGS=$(shell pkg-config --cflags lua5.1)
- #LUA_LIBS=$(shell pkg-config --libs lua5.1)
+ #LUA_CFLAGS=-I/usr/include/lua5.1
+ #LUA_LIBS=-llua
+-LUA_CFLAGS=$(shell pkg-config --cflags lua)
+-LUA_LIBS=$(shell pkg-config --libs lua)
++LUA_CFLAGS=$(shell pkg-config --cflags lua51)
++LUA_LIBS=$(shell pkg-config --libs lua51)
+ 
+ 
+ # Third-Party software paths
 @@ -45,10 +45,10 @@
  DILU_DIR=${CORE_DIR}Diluculum/
  
