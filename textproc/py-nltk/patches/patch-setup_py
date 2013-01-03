@@ -1,0 +1,15 @@
+$OpenBSD$
+
+- don't install random java files.
+
+--- setup.py.orig	Mon Sep 24 11:29:14 2012
++++ setup.py	Thu Jan  3 22:54:25 2013
+@@ -69,7 +69,7 @@
+     'Topic :: Text Processing :: Indexing',
+     'Topic :: Text Processing :: Linguistic',
+     ],
+-    package_data = {'nltk': ['nltk.jar', 'test/*.doctest', 'VERSION']},
++    package_data = {'nltk': ['test/*.doctest', 'VERSION']},
+     packages = find_packages(),
+     zip_safe=False, # since normal files will be present too?
+     install_requires=['PyYAML>=3.09'],
