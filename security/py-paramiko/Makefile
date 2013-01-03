@@ -2,12 +2,12 @@
 
 COMMENT = 	Python module that implements the SSH2 protocol
 
-MODPY_EGG_VERSION = 	1.7.7.1
+MODPY_EGG_VERSION = 	1.9.0
 DISTNAME = 		paramiko-${MODPY_EGG_VERSION}
 PKGNAME = 		py-${DISTNAME}
 CATEGORIES = 		security
 
-HOMEPAGE = 		http://www.lag.net/paramiko/
+HOMEPAGE = 		https://github.com/paramiko/paramiko/
 
 MAINTAINER = 		Benoit Lecocq <benoit@openbsd.org>
 
@@ -17,7 +17,7 @@ PERMIT_PACKAGE_FTP = 	Yes
 PERMIT_DISTFILES_CDROM = Yes
 PERMIT_DISTFILES_FTP = 	Yes
 
-MASTER_SITES = 	${HOMEPAGE}download/
+MASTER_SITES = 	${MASTER_SITE_PYPI:=p/paramiko/}
 
 MODULES = 	lang/python
 
