@@ -35,6 +35,6 @@ lib/python${MODPY_VERSION}/site-packages/MySQLdb/times.pyc
 lib/python${MODPY_VERSION}/site-packages/_mysql.so
 lib/python${MODPY_VERSION}/site-packages/_mysql_exceptions.py
 lib/python${MODPY_VERSION}/site-packages/_mysql_exceptions.pyc
-share/doc/py-mysql/
-share/doc/py-mysql/FAQ.txt
-share/doc/py-mysql/MySQLdb.txt
+share/doc/${MODPY_PY_PREFIX}mysql/
+share/doc/${MODPY_PY_PREFIX}mysql/FAQ.txt
+share/doc/${MODPY_PY_PREFIX}mysql/MySQLdb.txt
