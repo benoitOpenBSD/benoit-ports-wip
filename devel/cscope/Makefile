@@ -2,7 +2,7 @@
 
 COMMENT=		code browsing program
 
-DISTNAME=		cscope-15.8
+DISTNAME=		cscope-15.8a
 CATEGORIES=     	devel
 
 HOMEPAGE=		http://cscope.sourceforge.net/
@@ -18,12 +18,7 @@ WANTLIB=		c ncurses
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cscope/}
 
-EXTRACT_SUFX =         .tar.bz2
-
-CONFIGURE_STYLE =	autoconf
-AUTOCONF_VERSION =	2.69
-
-USE_GROFF =		Yes
+CONFIGURE_STYLE=	gnu
 
 post-install:
 	@cd ${WRKSRC}; ${INSTALL_SCRIPT} contrib/xcscope/cscope-indexer \
