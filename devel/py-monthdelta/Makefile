@@ -10,8 +10,6 @@ CATEGORIES =		devel
 
 HOMEPAGE =		http://packages.python.org/MonthDelta
 
-MAINTAINER =		Martin Pieuchot <mpi@openbsd.org>
-
 # MIT
 PERMIT_PACKAGE_CDROM =		Yes
 PERMIT_PACKAGE_FTP =		Yes
