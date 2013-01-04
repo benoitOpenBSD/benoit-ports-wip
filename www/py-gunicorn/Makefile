@@ -20,7 +20,6 @@ MASTER_SITES =		${MASTER_SITE_PYPI:=g/gunicorn/}
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
 
-#REGRESS_DEPENDS =        devel/py-nose
 REGRESS_DEPENDS =	devel/py-test
 
 .include <bsd.port.mk>
