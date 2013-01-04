@@ -1,9 +1,17 @@
 $OpenBSD$
-
-- don't install random java files.
-
 --- setup.py.orig	Mon Sep 24 11:29:14 2012
-+++ setup.py	Thu Jan  3 22:54:25 2013
++++ setup.py	Fri Jan  4 10:58:49 2013
+@@ -19,8 +19,8 @@
+ with open(version_file) as fh:
+     nltk_version = fh.read().strip()
+ 
+-import distribute_setup
+-distribute_setup.use_setuptools()
++#import distribute_setup
++#distribute_setup.use_setuptools()
+ 
+ from setuptools import setup, find_packages
+ 
 @@ -69,7 +69,7 @@
      'Topic :: Text Processing :: Indexing',
      'Topic :: Text Processing :: Linguistic',
