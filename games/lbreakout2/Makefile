@@ -15,7 +15,7 @@ PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-WANTLIB =	SDL c m pthread z png>=9.0 SDL_mixer usbhid
+WANTLIB =	SDL c m pthread z png>=9.0 SDL_mixer
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=lgames/}
 
