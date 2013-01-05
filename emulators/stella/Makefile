@@ -16,7 +16,7 @@ PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-WANTLIB =		c stdc++ m z pthread SDL>=1.2 png usbhid
+WANTLIB =		c stdc++ m z pthread SDL>=1.2 png
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=stella/}
 
