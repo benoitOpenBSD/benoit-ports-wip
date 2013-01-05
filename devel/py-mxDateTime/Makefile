@@ -19,7 +19,7 @@ PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =	http://downloads.egenix.com/python/
 
-WANTLIB += m ${MODPY_WANTLIB}
+WANTLIB += m ${MODPY_WANTLIB} pthread
 
 MODULES =	lang/python
 
