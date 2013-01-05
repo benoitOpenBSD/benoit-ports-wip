@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2011/09/16 11:41:41 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2013/01/04 11:27:15 benoit Exp $
 
 COMMENT=		Natural Language ToolKit
 
@@ -6,6 +6,8 @@ MODPY_EGG_VERSION=	2.0.4
 DISTNAME=		nltk-${MODPY_EGG_VERSION}
 PKGNAME=		py-nltk-${MODPY_EGG_VERSION}
 CATEGORIES=		textproc
+
+EPOCH =			0
 
 HOMEPAGE=		http://www.nltk.org/
 

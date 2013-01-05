@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.2 2010/08/30 07:16:02 jasper Exp $
+@comment $OpenBSD: PLIST,v 1.3 2013/01/04 11:27:20 benoit Exp $
 lib/python${MODPY_VERSION}/site-packages/nltk/
 lib/python${MODPY_VERSION}/site-packages/nltk-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
 lib/python${MODPY_VERSION}/site-packages/nltk-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
