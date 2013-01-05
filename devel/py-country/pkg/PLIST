@@ -16,7 +16,6 @@ lib/python${MODPY_VERSION}/site-packages/pycountry/databases/iso3166_2.xml
 lib/python${MODPY_VERSION}/site-packages/pycountry/databases/iso4217.xml
 lib/python${MODPY_VERSION}/site-packages/pycountry/databases/iso639.xml
 lib/python${MODPY_VERSION}/site-packages/pycountry/db.py
-lib/python${MODPY_VERSION}/site-packages/pycountry/db.py.orig
 lib/python${MODPY_VERSION}/site-packages/pycountry/db.pyc
 lib/python${MODPY_VERSION}/site-packages/pycountry/locales/
 lib/python${MODPY_VERSION}/site-packages/pycountry/locales/af/

@@ -25,4 +25,7 @@ MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
 NO_REGRESS =		Yes
 
+post-configure:
+			rm ${WRKSRC}/src/pycountry/db.py.orig
+
 .include <bsd.port.mk>
