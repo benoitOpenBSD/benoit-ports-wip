@@ -3,11 +3,9 @@
 COMMENT= 	DateTime parser for ISO8601 date formats
 
 MODULES=	cpan 
-DISTNAME=	DateTime-Format-ISO8601-0.07
+DISTNAME =	DateTime-Format-ISO8601-0.08
 CATEGORIES=	devel
 EPOCH =		0
-
-USE_GROFF =	Yes
 
 # perl
 PERMIT_PACKAGE_CDROM=	Yes
@@ -17,7 +15,9 @@ PERMIT_DISTFILES_FTP=	Yes
 
 REGRESS_DEPENDS =	devel/p5-Test-Distribution \
 			devel/p5-Test-Pod
-RUN_DEPENDS=		devel/p5-DateTime-Format-Builder
+RUN_DEPENDS=		devel/p5-DateTime-Format-Builder \
+			devel/p5-File-Find-Rule
+BUILD_DEPENDS =		${RUN_DEPENDS}
 
 CONFIGURE_STYLE=modbuild
 
