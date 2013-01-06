@@ -17,7 +17,6 @@ REGRESS_DEPENDS =	devel/p5-Test-Distribution \
 			devel/p5-Test-Pod
 RUN_DEPENDS=		devel/p5-DateTime-Format-Builder \
 			devel/p5-File-Find-Rule
-BUILD_DEPENDS =		${RUN_DEPENDS}
 
 CONFIGURE_STYLE=modbuild
 
