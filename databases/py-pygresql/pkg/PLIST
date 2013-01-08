@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.1.1.1 2008/05/08 16:53:22 wcmaier Exp $
+@comment $OpenBSD: PLIST,v 1.2 2013/01/07 13:07:08 benoit Exp $
 lib/python${MODPY_VERSION}/site-packages/PyGreSQL-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
 lib/python${MODPY_VERSION}/site-packages/PyGreSQL-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
 lib/python${MODPY_VERSION}/site-packages/PyGreSQL-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
