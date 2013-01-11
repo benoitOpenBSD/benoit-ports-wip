@@ -10,34 +10,42 @@ share/examples/nikto/
 share/examples/nikto/nikto.conf
 @sample ${SYSCONFDIR}/nikto.conf
 share/nikto/
+share/nikto/databases/
+@comment no checksum
+share/nikto/databases/db_404_strings
+@comment no checksum
+share/nikto/databases/db_content_search
+@comment no checksum
+share/nikto/databases/db_dictionary
+@comment no checksum
+share/nikto/databases/db_embedded
+@comment no checksum
+share/nikto/databases/db_favicon
+@comment no checksum
+share/nikto/databases/db_headers
+@comment no checksum
+share/nikto/databases/db_httpoptions
+@comment no checksum
+share/nikto/databases/db_multiple_index
+@comment no checksum
+share/nikto/databases/db_outdated
+@comment no checksum
+share/nikto/databases/db_parked_strings
+@comment no checksum
+share/nikto/databases/db_realms
+@comment no checksum
+share/nikto/databases/db_server_msgs
+@comment no checksum
+share/nikto/databases/db_subdomains
+@comment no checksum
+share/nikto/databases/db_tests
+@comment no checksum
+share/nikto/databases/db_variables
 share/nikto/plugins/
+@comment no checksum
+share/nikto/plugins/JSON-PP.pm
+@comment no checksum
 share/nikto/plugins/LW2.pm
-@comment no checksum
-share/nikto/plugins/db_404_strings
-@comment no checksum
-share/nikto/plugins/db_content_search
-@comment no checksum
-share/nikto/plugins/db_embedded
-@comment no checksum
-share/nikto/plugins/db_favicon
-@comment no checksum
-share/nikto/plugins/db_headers
-@comment no checksum
-share/nikto/plugins/db_httpoptions
-@comment no checksum
-share/nikto/plugins/db_multiple_index
-@comment no checksum
-share/nikto/plugins/db_outdated
-@comment no checksum
-share/nikto/plugins/db_realms
-@comment no checksum
-share/nikto/plugins/db_server_msgs
-@comment no checksum
-share/nikto/plugins/db_subdomains
-@comment no checksum
-share/nikto/plugins/db_tests
-@comment no checksum
-share/nikto/plugins/db_variables
 @comment no checksum
 share/nikto/plugins/nikto_apache_expect_xss.plugin
 @comment no checksum
@@ -47,19 +55,21 @@ share/nikto/plugins/nikto_auth.plugin
 @comment no checksum
 share/nikto/plugins/nikto_cgi.plugin
 @comment no checksum
+share/nikto/plugins/nikto_clientaccesspolicy.plugin
+@comment no checksum
 share/nikto/plugins/nikto_content_search.plugin
 @comment no checksum
 share/nikto/plugins/nikto_cookies.plugin
 @comment no checksum
 share/nikto/plugins/nikto_core.plugin
 @comment no checksum
-share/nikto/plugins/nikto_core.plugin.debug
-@comment no checksum
 share/nikto/plugins/nikto_dictionary_attack.plugin
 @comment no checksum
 share/nikto/plugins/nikto_embedded.plugin
 @comment no checksum
 share/nikto/plugins/nikto_favicon.plugin
+@comment no checksum
+share/nikto/plugins/nikto_fileops.plugin
 @comment no checksum
 share/nikto/plugins/nikto_headers.plugin
 @comment no checksum
@@ -70,6 +80,10 @@ share/nikto/plugins/nikto_msgs.plugin
 share/nikto/plugins/nikto_multiple_index.plugin
 @comment no checksum
 share/nikto/plugins/nikto_outdated.plugin
+@comment no checksum
+share/nikto/plugins/nikto_parked.plugin
+@comment no checksum
+share/nikto/plugins/nikto_paths.plugin
 @comment no checksum
 share/nikto/plugins/nikto_put_del_test.plugin
 @comment no checksum
@@ -87,7 +101,7 @@ share/nikto/plugins/nikto_report_xml.plugin
 @comment no checksum
 share/nikto/plugins/nikto_robots.plugin
 @comment no checksum
-share/nikto/plugins/nikto_single.plugin
+share/nikto/plugins/nikto_siebel.plugin
 @comment no checksum
 share/nikto/plugins/nikto_ssl.plugin
 @comment no checksum

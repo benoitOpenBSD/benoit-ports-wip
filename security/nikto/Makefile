@@ -1,14 +1,14 @@
-# $OpenBSD: Makefile,v 1.19 2011/04/05 20:28:17 jasper Exp $
+# $OpenBSD: Makefile,v 1.20 2011/09/07 13:21:11 nigel Exp $
 
 COMMENT =	web and CGI vulnerability scanner with SSL support
 
-DISTNAME =	nikto-2.1.4
+DISTNAME =	nikto-2.1.5
 EPOCH = 	0
 CATEGORIES =	security www
 
 HOMEPAGE =	http://www.cirt.net/nikto2
 
-MAINTAINER =	Rui Reis <rui@openbsd.org>
+MAINTAINER =	Nigel Taylor <nigel@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
@@ -24,7 +24,6 @@ EXTRACT_SUFX =	.tar.bz2
 RUN_DEPENDS =	security/p5-Net_SSLeay
 
 NO_BUILD =	Yes
-USE_GROFF =	Yes
 NO_REGRESS =	Yes
 PKG_ARCH =	*
 
@@ -35,6 +34,7 @@ pre-configure:
 		${WRKSRC}/nikto.conf
 
 do-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/share/nikto/databases
 	${INSTALL_DATA_DIR} ${PREFIX}/share/nikto/plugins
 	${INSTALL_DATA_DIR} ${PREFIX}/share/nikto/templates
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/nikto
@@ -45,6 +45,7 @@ do-install:
 		${PREFIX}/share/examples/nikto/nikto.conf
 
 	${INSTALL_DATA} ${WRKSRC}/plugins/* ${PREFIX}/share/nikto/plugins
+	${INSTALL_DATA} ${WRKSRC}/databases/* ${PREFIX}/share/nikto/databases
 	${INSTALL_DATA} ${WRKSRC}/templates/* ${PREFIX}/share/nikto/templates
 
 	${INSTALL_DATA} ${WRKSRC}/docs/nikto_manual.html ${PREFIX}/share/doc/nikto
