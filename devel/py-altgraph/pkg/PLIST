@@ -20,5 +20,3 @@ lib/python${MODPY_VERSION}/site-packages/altgraph/ObjectGraph.py
 lib/python${MODPY_VERSION}/site-packages/altgraph/ObjectGraph.pyc
 lib/python${MODPY_VERSION}/site-packages/altgraph/__init__.py
 lib/python${MODPY_VERSION}/site-packages/altgraph/__init__.pyc
-lib/python${MODPY_VERSION}/site-packages/altgraph/compat.py
-lib/python${MODPY_VERSION}/site-packages/altgraph/compat.pyc
