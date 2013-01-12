@@ -9,12 +9,11 @@ EXTRACT_SUFX =	.zip
 DISTNAME =	yui_${V}
 PKGNAME-main =	yui-${V}
 PKGNAME-docs =	yui-doc-${V}
-REVISION-docs =	0
+REVISION-docs =	1
+REVISION-main = 0
 MULTI_PACKAGES = -main -docs
 
 HOMEPAGE =	http://developer.yahoo.com/yui/
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes

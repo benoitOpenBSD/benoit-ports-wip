@@ -3,7 +3,7 @@
 COMMENT =	elliptic curve method (ECM) factorization library
 
 DISTNAME =	ecm-6.4.2
-SHARED_LIBS =	ecm	0.0
+SHARED_LIBS =	ecm	0.1
 CATEGORIES =	math
 
 HOMEPAGE =	http://gforge.inria.fr/projects/ecm/
