@@ -32,6 +32,8 @@ pre-configure:
 		${WRKSRC}/nikto.conf
 	perl -pi -e 's,# DOCDIR=.+,DOCDIR=${PREFIX}/share/doc/nikto,' \
 		${WRKSRC}/nikto.conf
+	perl -pi -e 's,# DBDIR=.+,DBDIR=/var/db/nikto/databases,' \
+		${WRKSRC}/nikto.conf
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/nikto/databases
@@ -44,9 +46,9 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/nikto.conf \
 		${PREFIX}/share/examples/nikto/nikto.conf
 
-	${INSTALL_DATA} ${WRKSRC}/plugins/* ${PREFIX}/share/nikto/plugins
-	${INSTALL_DATA} ${WRKSRC}/databases/* ${PREFIX}/share/nikto/databases
-	${INSTALL_DATA} ${WRKSRC}/templates/* ${PREFIX}/share/nikto/templates
+	${INSTALL_DATA} ${WRKSRC}/databases/!(*.orig) ${PREFIX}/share/nikto/databases
+	${INSTALL_DATA} ${WRKSRC}/plugins/!(*.orig) ${PREFIX}/share/nikto/plugins
+	${INSTALL_DATA} ${WRKSRC}/templates/!(*.orig) ${PREFIX}/share/nikto/templates
 
 	${INSTALL_DATA} ${WRKSRC}/docs/nikto_manual.html ${PREFIX}/share/doc/nikto
 	${INSTALL_DATA} ${WRKSRC}/docs/CHANGES.txt ${PREFIX}/share/doc/nikto

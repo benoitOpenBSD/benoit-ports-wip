@@ -2,7 +2,7 @@
 
 COMMENT =		library implementing the SSH2 protocol
 
-DISTNAME =		libssh2-1.4.0
+DISTNAME =		libssh2-1.4.3
 CATEGORIES =		security
 SHARED_LIBS +=		ssh2	6.0	# .1.1
 
@@ -23,7 +23,6 @@ MASTER_SITES =		http://www.libssh2.org/download/
 
 CONFIGURE_STYLE =	gnu
 USE_LIBTOOL =		Yes
-USE_GROFF =		Yes
 
 # The second test will only pass if public key auth is configured for ${USER}
 REGRESS_IS_INTERACTIVE = Yes
