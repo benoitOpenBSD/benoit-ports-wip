@@ -1,0 +1,24 @@
+--- getopt.c.orig	Sun Aug 12 12:17:30 2012
++++ getopt.c	Sun Jan 13 16:05:35 2013
+@@ -320,9 +320,9 @@
+ 
+ static void __attribute__ ((__noreturn__)) print_help(void)
+ {
+-	fputs(_("Usage: getopt optstring parameters\n"), stderr);
+-	fputs(_("       getopt [options] [--] optstring parameters\n"), stderr);
+-	fputs(_("       getopt [options] -o|--options optstring [options] [--]\n"), stderr);
++	fputs(_("Usage: gnugetopt optstring parameters\n"), stderr);
++	fputs(_("       gnugetopt [options] [--] optstring parameters\n"), stderr);
++	fputs(_("       gnugetopt [options] -o|--options optstring [options] [--]\n"), stderr);
+ 	fputs(_("              parameters\n"), stderr);
+ 	fputs(_("\nOptions:\n"), stderr);
+ 	fputs(_(" -a, --alternative            Allow long options starting with single -\n"), stderr);
+@@ -333,7 +333,7 @@
+ 	fputs(_(" -q, --quiet                  Disable error reporting by getopt(3)\n"), stderr);
+ 	fputs(_(" -Q, --quiet-output           No normal output\n"), stderr);
+ 	fputs(_(" -s, --shell <shell>          Set shell quoting conventions\n"), stderr);
+-	fputs(_(" -T, --test                   Test for getopt(1) version\n"), stderr);
++	fputs(_(" -T, --test                   Test for gnugetopt(1) version\n"), stderr);
+ 	fputs(_(" -u, --unquote                Do not quote the output\n"), stderr);
+ 	fputs(_(" -V, --version                Output version information\n"), stderr);
+ 	fputc('\n', stderr);
