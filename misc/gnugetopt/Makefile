@@ -2,7 +2,7 @@
 
 COMMENT=	GNU getopt(1) utility
 
-DISTNAME=	getopt-1.1.5
+DISTNAME =	getopt-1.1.5
 PKGNAME=	gnu${DISTNAME}
 CATEGORIES=	misc
 
@@ -25,7 +25,6 @@ MAKE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		LIBS="-lintl -liconv" \
 		CC="${CC}"
-USE_GROFF =	Yes
 
 NO_REGRESS=	Yes
 
