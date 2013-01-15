@@ -1,0 +1,71 @@
+@comment $OpenBSD$
+bin/guake
+bin/guake-prefs
+lib/python${MODPY_VERSION}/site-packages/guake/
+lib/python${MODPY_VERSION}/site-packages/guake/__init__.py
+lib/python${MODPY_VERSION}/site-packages/guake/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/guake/__init__.pyo
+lib/python${MODPY_VERSION}/site-packages/guake/common.py
+lib/python${MODPY_VERSION}/site-packages/guake/common.pyc
+lib/python${MODPY_VERSION}/site-packages/guake/common.pyo
+lib/python${MODPY_VERSION}/site-packages/guake/dbusiface.py
+lib/python${MODPY_VERSION}/site-packages/guake/dbusiface.pyc
+lib/python${MODPY_VERSION}/site-packages/guake/dbusiface.pyo
+lib/python${MODPY_VERSION}/site-packages/guake/globalhotkeys.a
+lib/python${MODPY_VERSION}/site-packages/guake/globalhotkeys.la
+lib/python${MODPY_VERSION}/site-packages/guake/globalhotkeys.so
+lib/python${MODPY_VERSION}/site-packages/guake/globals.py
+lib/python${MODPY_VERSION}/site-packages/guake/globals.pyc
+lib/python${MODPY_VERSION}/site-packages/guake/globals.pyo
+lib/python${MODPY_VERSION}/site-packages/guake/prefs.py
+lib/python${MODPY_VERSION}/site-packages/guake/prefs.pyc
+lib/python${MODPY_VERSION}/site-packages/guake/prefs.pyo
+lib/python${MODPY_VERSION}/site-packages/guake/simplegladeapp.py
+lib/python${MODPY_VERSION}/site-packages/guake/simplegladeapp.pyc
+lib/python${MODPY_VERSION}/site-packages/guake/simplegladeapp.pyo
+@man man/man1/guake.1
+share/applications/
+share/applications/guake-prefs.desktop
+share/applications/guake.desktop
+share/dbus-1/services/org.guake.Guake.service
+share/guake/
+share/guake/about.glade
+share/guake/guake.glade
+share/guake/prefs.glade
+share/icons/hicolor/16x16/apps/guake-prefs.png
+share/icons/hicolor/16x16/apps/guake.png
+share/icons/hicolor/22x22/apps/guake-prefs.png
+share/icons/hicolor/22x22/apps/guake.png
+share/icons/hicolor/24x24/apps/guake-prefs.png
+share/icons/hicolor/24x24/apps/guake.png
+share/icons/hicolor/256x256/apps/guake-prefs.png
+share/icons/hicolor/256x256/apps/guake.png
+share/icons/hicolor/32x32/apps/guake-prefs.png
+share/icons/hicolor/32x32/apps/guake.png
+share/icons/hicolor/48x48/apps/guake-prefs.png
+share/icons/hicolor/48x48/apps/guake.png
+share/locale/de/LC_MESSAGES/guake.mo
+share/locale/el/LC_MESSAGES/guake.mo
+share/locale/es/LC_MESSAGES/guake.mo
+share/locale/fa/LC_MESSAGES/guake.mo
+share/locale/fr/LC_MESSAGES/guake.mo
+share/locale/hu/LC_MESSAGES/guake.mo
+share/locale/it/LC_MESSAGES/guake.mo
+share/locale/ja/LC_MESSAGES/guake.mo
+share/locale/no/LC_MESSAGES/guake.mo
+share/locale/pl/LC_MESSAGES/guake.mo
+share/locale/pt_BR/LC_MESSAGES/guake.mo
+share/locale/ru/LC_MESSAGES/guake.mo
+share/locale/zh_CN/LC_MESSAGES/guake.mo
+share/pixmaps/
+share/pixmaps/guake/
+share/pixmaps/guake/add_tab.png
+share/pixmaps/guake/guake-notification.png
+share/pixmaps/guake/guake-tray.png
+share/pixmaps/guake/guake.png
+@unexec GCONF_CONFIG_SOURCE=`%D/bin/gconftool-2 --get-default-source` %D/bin/gconftool-2 --makefile-uninstall-rule %D/${SCHEMAS_INSTDIR}/*.schemas % > /dev/null
+@exec GCONF_CONFIG_SOURCE=`%D/bin/gconftool-2 --get-default-source` %D/bin/gconftool-2 --makefile-install-rule %D/${SCHEMAS_INSTDIR}/*.schemas > % /dev/null
+@exec %D/bin/gtk-update-icon-cache -q -t %D/share/icons/hicolor
+@unexec-delete %D/bin/gtk-update-icon-cache -q -t %D/share/icons/hicolor
+@exec %D/bin/update-desktop-database
+@unexec-delete %D/bin/update-desktop-database
