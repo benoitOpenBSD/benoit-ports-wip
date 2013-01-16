@@ -17,6 +17,8 @@ PERMIT_DISTFILES_FTP =	Yes
 
 MODULES =		cpan
 
+RUN_DEPENDS =		devel/p5-Try-Tiny
+
 REGRESS_DEPENDS =	devel/p5-Test-Deep \
 			devel/p5-Test-Fatal \
 			devel/p5-Test-Exception \
