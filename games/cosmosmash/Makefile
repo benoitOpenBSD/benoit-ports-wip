@@ -2,7 +2,7 @@
 
 COMMENT=	astrosmash clone for X
 
-DISTNAME=	cosmosmash-1.4.5
+DISTNAME=	cosmosmash-1.4.6
 
 CATEGORIES=	games
 
