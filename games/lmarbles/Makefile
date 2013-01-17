@@ -9,7 +9,7 @@ HOMEPAGE =		http://lgames.sourceforge.net/index.php?project=LMarbles
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-#
+# GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
@@ -22,7 +22,6 @@ MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=lgames/}
 RUN_DEPENDS =		devel/desktop-file-utils
 LIB_DEPENDS =		devel/sdl-mixer
 
-USE_GROFF =		Yes
 USE_GMAKE =		Yes
 
 CONFIGURE_STYLE =	gnu

@@ -1,0 +1,48 @@
+
+$ lmarbles
+
+video hardware capabilities:
+Hardware Surfaces: No
+HW_Blit (CC, A): No (No, No)
+SW_Blit (CC, A): No (No, No)
+HW_Fill: No
+Video Memory: 0
+------
+loading configuration...
+cfg file '/home/benoit/.lgames/lmarbles.conf' not found; using defaults
+loading profiles...
+WARNING: file /var/lmarbles.prfs does not exist; cannot read profiles
+searching for level sets...
+'Original'
+...total of 1
+audio_open: can't open audio device:
+loading levelsets...
+Original... ok
+loading graphics sets...
+'metal'...
+ok
+'stone'...
+ok
+'wood'...
+ok
+sound_chunk_load: cannot load WAV 'teleport.wav' as audio device isn't
+initated properly
+sound_chunk_load: cannot load WAV 'select.wav' as audio device isn't
+initated properly
+sound_chunk_load: cannot load WAV 'stop.wav' as audio device isn't initated
+properly
+sound_chunk_load: cannot load WAV 'click.wav' as audio device isn't initated
+properly
+sound_chunk_load: cannot load WAV 'explode.wav' as audio device isn't
+initated properly
+sound_chunk_load: cannot load WAV 'alarm.wav' as audio device isn't initated
+properly
+sound_chunk_load: cannot load WAV 'arrow.wav' as audio device isn't initated
+properly
+sound_chunk_load: cannot load WAV 'score.wav' as audio device isn't initated
+properly
+sound_chunk_load: cannot load WAV 'click.wav' as audio device isn't initated
+properly
+saving profiles... WARNING: no write access to /var/lmarbles.prfs
+saving profiles... WARNING: no write access to /var/lmarbles.prfs
+Bye, bye!
