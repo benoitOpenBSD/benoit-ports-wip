@@ -1,12 +1,12 @@
 # $OpenBSD$
 
-COMMENT =		python wrapper for bcrypt
+COMMENT =		logging in YAML format
 
-MODPY_EGG_VERSION =	1.2.2
-DISTNAME =		Bcryptor-${MODPY_EGG_VERSION}
+MODPY_EGG_VERSION =	0.9
+DISTNAME =		Yamlog-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME:L}
 
-CATEGORIES =		security
+CATEGORIES =		sysutils
 
 HOMEPAGE =		http://www.bitbucket.org/ares/bcryptor/
 
@@ -18,18 +18,13 @@ PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=B/Bcryptor/}
+MASTER_SITES =		${MASTER_SITE_PYPI:=Y/Yamlog/}
 
 MODULES =		lang/python
 
 MODPY_SETUPTOOLS =	Yes
 
-BUILD_DEPENDS =		lang/cython
-RUN_DEPENDS =		textproc/py-yamlog
 REGRESS_DEPENDS =	devel/py-nose \
-			${RUN_DEPENDS}
-
-pre-build:
-			cd ${WRKSRC} && /usr/local/bin/cython lib/bcryptor/wrap/engine.pyx
+			devel/py-coverage
 
 .include <bsd.port.mk>

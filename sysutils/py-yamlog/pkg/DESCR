@@ -1,0 +1,4 @@
+Yamlog uses a rotating file that rollovers at 128 KB, it writes messages
+in YAML format since it's more easy to parse using the international
+format for date and time, and it also logs the higher-level messages to
+the standard error into single lines.

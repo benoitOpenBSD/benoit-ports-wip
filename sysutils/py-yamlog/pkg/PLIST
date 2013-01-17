@@ -1,0 +1,26 @@
+@comment $OpenBSD$
+lib/python${MODPY_VERSION}/site-packages/Yamlog.egg-info/
+lib/python${MODPY_VERSION}/site-packages/Yamlog.egg-info/PKG-INFO
+lib/python${MODPY_VERSION}/site-packages/Yamlog.egg-info/SOURCES.txt
+lib/python${MODPY_VERSION}/site-packages/Yamlog.egg-info/dependency_links.txt
+lib/python${MODPY_VERSION}/site-packages/Yamlog.egg-info/top_level.txt
+lib/python${MODPY_VERSION}/site-packages/Yamlog.egg-info/zip-safe
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/dependency_links.txt
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/zip-safe
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}.egg-info/
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}.egg-info/PKG-INFO
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}.egg-info/SOURCES.txt
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}.egg-info/dependency_links.txt
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}.egg-info/top_level.txt
+lib/python${MODPY_VERSION}/site-packages/Yamlog_${MODPY_EGG_VERSION}.egg-info/zip-safe
+lib/python${MODPY_VERSION}/site-packages/yamlog/
+lib/python${MODPY_VERSION}/site-packages/yamlog/__init__.py
+lib/python${MODPY_VERSION}/site-packages/yamlog/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/yamlog/exception.py
+lib/python${MODPY_VERSION}/site-packages/yamlog/exception.pyc
+lib/python${MODPY_VERSION}/site-packages/yamlog/logger.py
+lib/python${MODPY_VERSION}/site-packages/yamlog/logger.pyc
