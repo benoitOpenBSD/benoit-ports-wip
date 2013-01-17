@@ -24,9 +24,10 @@ LIB_DEPENDS =		devel/sdl-mixer
 
 USE_GMAKE =		Yes
 
+LOCALSTATEDIR=  ${BASELOCALSTATEDIR}/games
+
 CONFIGURE_STYLE =	gnu
-CONFIGURE_ARGS +=	--localstatedir="/var/games" \
-			--enable-ascii
+CONFIGURE_ARGS +=	--enable-ascii
 NO_REGRESS =		Yes
 
 post-install:
