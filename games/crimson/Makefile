@@ -1,4 +1,6 @@
-# $OpenBSD: Makefile,v 1.23 2010/11/16 11:23:26 espie Exp $
+# $OpenBSD: Makefile,v 1.24 2012/03/03 11:48:44 sthen Exp $
+
+BROKEN-arm=	mktileset buggy, loops at high CPU use
 
 COMMENT=	tactical war game like Battle Isle; multiplayer
 DISTNAME=	crimson-0.5.3
@@ -8,13 +10,13 @@ MASTER_SITES=	${HOMEPAGE}files/
 
 HOMEPAGE=	http://crimson.seul.org/
 
-# GPLv2
+# GPL
 PERMIT_PACKAGE_CDROM=	Yes
 PERMIT_PACKAGE_FTP=	Yes
 PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
-WANTLIB=		SDL X11 Xext c m pthread pthread-stubs stdc++ usbhid \
-			xcb z SDL_mixer SDL_net SDL_ttf
+WANTLIB=		SDL c m pthread stdc++ \
+			z SDL_mixer SDL_net SDL_ttf
 
 USE_GMAKE=	Yes
 USE_GROFF =	Yes
