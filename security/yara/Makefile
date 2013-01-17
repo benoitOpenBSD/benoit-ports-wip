@@ -10,7 +10,7 @@ HOMEPAGE =              http://code.google.com/p/yara-project/
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# GPLv3
+# GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
