@@ -1,0 +1,40 @@
+
+$ make configure
+===>  Configuring for criticalmass-1.5
+Using /usr/ports/pobj/criticalmass-1.5/config.site (generated)
+configure: WARNING: unrecognized options: --disable-silent-rules
+configure: loading site script /usr/ports/pobj/criticalmass-1.5/config.site
+checking build system type... x86_64-unknown-openbsd5.2
+checking host system type... x86_64-unknown-openbsd5.2
+checking target system type... x86_64-unknown-openbsd5.2
+checking for a BSD-compatible install... /usr/bin/install -c -o root -g bin
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... mkdir -p
+checking for gawk... (cached) awk
+checking whether gmake sets $(MAKE)... yes
+checking for gcc... cc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether cc accepts -g... (cached) yes
+checking for cc option to accept ISO C89... none needed
+checking for style of include used by gmake... GNU
+checking dependency style of cc... none
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether c++ accepts -g... (cached) yes
+checking dependency style of c++... none
+checking for ranlib... (cached) ranlib
+checking for an ANSI C-conforming const... (cached) yes
+checking for main in -lSDL... yes
+checking for main in -lSDL_image... yes
+checking for main in -lSDL_mixer... yes
+checking for main in -lcurl-gnutls... no
+configure: error: libcurl-gnutls is needed
+*** Error 1 in . (/usr/ports/infrastructure/mk/bsd.port.mk:2567
+*** '/usr/ports/pobj/criticalmass-1.5/.configure_done')
+*** Error 1 in /home/benoit/benoit-ports-wip/games/criticalmass
+*** (/usr/ports/infrastructure/mk/bsd.port.mk:2323 'configure')
+

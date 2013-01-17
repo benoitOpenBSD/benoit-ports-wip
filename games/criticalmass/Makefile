@@ -2,7 +2,7 @@
 
 COMMENT =		Space shootemup resembling Galaxian
 
-DISTNAME =		CriticalMass-1.0.2
+DISTNAME =		CriticalMass-1.5
 PKGNAME =		${DISTNAME:L}
 CATEGORIES =		games
 
@@ -10,7 +10,7 @@ HOMEPAGE =		http://criticalmass.sourceforge.net/
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# GPLv2+
+# GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
@@ -24,7 +24,8 @@ EXTRACT_SUFX =		.tar.bz2
 
 LIB_DEPENDS =		devel/sdl-image \
 			devel/sdl-mixer \
-			graphics/png
+			graphics/png \
+			net/curl
 
 USE_GROFF =		Yes
 USE_GMAKE =		Yes
