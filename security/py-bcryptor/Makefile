@@ -25,7 +25,7 @@ MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
 
 BUILD_DEPENDS =		lang/cython
-RUN_DEPENDS =		textproc/py-yamlog
+RUN_DEPENDS =		sysutils/py-yamlog
 REGRESS_DEPENDS =	devel/py-nose \
 			${RUN_DEPENDS}
 
