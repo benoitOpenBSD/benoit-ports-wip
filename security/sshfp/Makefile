@@ -9,13 +9,13 @@ HOMEPAGE =		http://www.xelerance.com/software/sshfp/
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# GPLv2
+# GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-MASTER_SITES =		http://www.xelerance.com/software/sshfp/
+MASTER_SITES =		ftp://ftp.xelerance.com/sshfp/
 
 MODULES =		lang/python
 
