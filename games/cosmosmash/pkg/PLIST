@@ -7,6 +7,7 @@ share/pixmaps/cosmosmash.png
 share/sounds/
 share/sounds/cosmosmash/
 share/sounds/cosmosmash/hyperspace.wav
+share/sounds/cosmosmash/level-finished.wav
 share/sounds/cosmosmash/player-hit.wav
 share/sounds/cosmosmash/pulsar-beep.wav
 share/sounds/cosmosmash/rock-hit-0.wav
