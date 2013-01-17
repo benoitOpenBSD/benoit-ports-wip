@@ -2,7 +2,7 @@
 
 COMMENT =		a Python crypto and SSL toolkit
 
-MODPY_EGG_VERSION =	0.20.2
+MODPY_EGG_VERSION =	0.21.1
 DISTNAME =		M2Crypto-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME:L}
 
