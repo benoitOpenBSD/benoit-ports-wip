@@ -2,7 +2,7 @@
 
 COMMENT =	Bandwidth measurement tool.
 
-DISTNAME =	bwping-1.2
+DISTNAME =	bwping-1.7
 PKGNAME =	${DISTNAME}
 CATEGORIES =	net
 
@@ -20,7 +20,7 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=bwping/}
 
 MAINTAINER =	Federico Fazzi <ocredef@gmail.com>
 
-AUTOCONF_VERSION =	2.59
+AUTOCONF_VERSION =	2.68
 CONFIGURE_STYLE =	autoconf
 
 .include <bsd.port.mk>
