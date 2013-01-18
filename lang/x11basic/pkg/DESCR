@@ -1,0 +1,7 @@
+X11-Basic is a dialect of the BASIC programming language with graphics
+capability that integrates features like shell scripting,
+cgi-Programming and full graphical visualisation into the easy to
+learn basic language on modern computers.
+
+The structure of the language is similar to the ATARI-ST GFA-BASIC.
+GFA-Basic programs should run with only few changes.
