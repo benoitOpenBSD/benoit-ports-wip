@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.26 2011/04/07 20:09:43 benoit Exp $
+# $OpenBSD: Makefile,v 1.27 2011/09/16 11:13:38 espie Exp $
 
 COMMENT =		graphical network monitor
 
@@ -27,6 +27,7 @@ WANTLIB += pcap pcre pixman-1 png popt pthread pthread-stubs ssl
 WANTLIB += util xcb xml2 z gnomeui-2 glade-2.0 gtk-x11-2.0
 WANTLIB += gailutil gdk-x11-2.0 gdk_pixbuf-2.0 xcb-shm
 WANTLIB += gcrypt gpg-error xcb-render ltdl ogg vorbis vorbisfile
+WANTLIB += ffi harfbuzz icudata icule icuuc stdc++
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=etherape/}
 
