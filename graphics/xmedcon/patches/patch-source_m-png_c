@@ -1,0 +1,11 @@
+--- source/m-png.c.orig	Tue Dec 27 01:46:06 2011
++++ source/m-png.c	Fri Jan 18 09:39:09 2013
+@@ -65,7 +65,7 @@
+ 
+   if (!png_ptr) return; 
+ 
+-  longjmp(png_jmpbuf(png_ptr), 1);
++  png_longjmp(png_ptr, 1);
+ }
+ 
+ static void MdcPngWarn(png_structp png_ptr, png_const_charp warning_msg)
