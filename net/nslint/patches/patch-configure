@@ -1,7 +1,7 @@
 $OpenBSD$
 --- configure.orig	Sun Oct 11 01:30:24 2009
-+++ configure	Tue Oct 12 08:23:35 2010
-@@ -3767,11 +3767,11 @@
++++ configure	Fri Jan 18 07:52:33 2013
+@@ -3767,11 +3767,11 @@ _ACEOF
  
      V_CCOPT=""
      if test "${ac_cv_without_optimization+set}" != set; then

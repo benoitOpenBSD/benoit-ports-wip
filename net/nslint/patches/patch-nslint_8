@@ -1,7 +1,7 @@
 $OpenBSD$
 --- nslint.8.orig	Sat Mar 14 06:43:37 2009
-+++ nslint.8	Tue Oct 12 08:12:16 2010
-@@ -101,14 +101,14 @@
++++ nslint.8	Fri Jan 18 07:52:33 2013
+@@ -101,14 +101,14 @@ Missing semicolons and quotes.
  Specify an alternate
  .I named.boot
  file. The default is
@@ -18,7 +18,7 @@ $OpenBSD$
  .TP
  .B -B
  Specify an alternate
-@@ -466,8 +466,8 @@
+@@ -466,8 +466,8 @@ This will suppress "name referenced without other reco
  .na
  .nh
  .nf

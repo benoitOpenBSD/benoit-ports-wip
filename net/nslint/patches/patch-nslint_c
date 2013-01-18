@@ -1,7 +1,7 @@
 $OpenBSD$
 --- nslint.c.orig	Wed Oct 14 20:06:06 2009
-+++ nslint.c	Tue Oct 12 08:28:13 2010
-@@ -190,6 +190,9 @@
++++ nslint.c	Fri Jan 18 07:52:33 2013
+@@ -190,6 +190,9 @@ int	errors;
  #ifdef __FreeBSD__
  char	*bootfile = "/etc/namedb/named.boot";
  char	*conffile = "/etc/namedb/named.conf";
