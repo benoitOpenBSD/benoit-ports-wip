@@ -17,7 +17,7 @@ PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM = Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-WANTLIB +=	${MODPY_WANTLIB}
+WANTLIB +=	${MODPY_WANTLIB} pthread
 
 MODULES =	lang/python
 
@@ -30,11 +30,11 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/py-pyx
 	cd ${WRKSRC}/examples && pax -rw * ${PREFIX}/share/examples/py-pyx
 
-do-regress: install
+do-regress: fake
 	cd ${WRKSRC}/examples && for i in `find . -name "*.py"`; do \
 		echo $$i; \
 		cd ${WRKSRC}/examples/`dirname $$i`; \
-		${MODPY_BIN} `basename $$i`; \
+		PYTHONPATH=${WRKINST}${MODPY_SITEPKG} ${MODPY_BIN} `basename $$i`; \
 	done
 
 .include <bsd.port.mk>
