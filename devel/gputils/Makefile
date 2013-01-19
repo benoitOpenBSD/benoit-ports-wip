@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.8 2010/10/18 17:47:53 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2012/02/21 16:21:41 ajacoutot Exp $
 
 COMMENT =		GNU PIC assembler and utilities
 
-VERSION =		0.14.1
+VERSION =		1.0.0
 DISTNAME =		gputils-${VERSION}
 CATEGORIES =		devel
 
@@ -24,11 +24,14 @@ MASTER_SITES0 =		http://www.arcane-labs.net/download/OpenBSD/
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} gputils-testsuite-${VERSION}${EXTRACT_SUFX}:0
 DIST_SUBDIR =		gputils
 
-CONFIGURE_STYLE =	gnu autoconf
+CONFIGURE_STYLE =	autoconf
 CONFIGURE_ENV =		"CC=${CC}" "CPP=${CPP}" "CFLAGS=${CFLAGS}" "CPPFLAGS=${CPPFLAGS}" "LDFLAGS=${LDFLAGS}"
-USE_GROFF =	Yes
+CONFIGURE_ARGS +=	--disable-html-doc
 
-AUTOCONF_VERSION =	2.67
+USE_GROFF =	Yes
+USE_GMAKE =	Yes
+
+AUTOCONF_VERSION =	2.68
 
 do-regress:
 	cd ${WRKSRC}/gpasm/testsuite && sh ./test all

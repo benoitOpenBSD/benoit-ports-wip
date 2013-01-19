@@ -4,7 +4,6 @@ include/crack.h
 include/packer.h
 lib/libcrack.a
 lib/libcrack.la
-@lib lib/libcrack.so.${LIBcrack_VERSION}
 lib/python${MODPY_VERSION}/site-packages/_cracklib.a
 lib/python${MODPY_VERSION}/site-packages/_cracklib.la
 lib/python${MODPY_VERSION}/site-packages/_cracklib.so
