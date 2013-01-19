@@ -24,7 +24,13 @@ MODPY_SETUPTOOLS =	Yes
 BUILD_DEPENDS =		${RUN_DEPENDS}
 RUN_DEPENDS =		security/py-paramiko
 
-# REGRESS_DEPENDS =	devel/py-nose
+REGRESS_DEPENDS =	devel/py-nose \
+			devel/py-fudge
+			
 NO_REGRESS =		Yes
+
+#do-regress:
+#			@cd ${WRKSRC}/tests && PYTHONPATH=${WRKINST}${MODPY_SITEPKG} \
+#			${MODPY_BIN} ./test_utils.py
 
 .include <bsd.port.mk>
