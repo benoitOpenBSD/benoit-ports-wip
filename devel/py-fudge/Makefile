@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =		module for using fake objects (mocks and stubs) to test real ones
+COMMENT =		module for using fake objects to test real ones
 
 MODPY_EGG_VERSION =	1.0.3
 DISTNAME =		fudge-${MODPY_EGG_VERSION}
@@ -22,12 +22,5 @@ MODULES =		lang/python
 
 MODPY_SETUPTOOLS =	Yes
 NO_REGRESS =		Yes
-
-REGRESS_DEPENDS =	devel/py-tox
-
-# XXX: need tox http://pypi.python.org/pypi/tox/
-do-regress: fake
-			@cd ${WRKSRC} && PYTHONPATH=${WRKINST}${MODPY_SITEPKG} \
-			./run_tests.sh
 
 .include <bsd.port.mk>
