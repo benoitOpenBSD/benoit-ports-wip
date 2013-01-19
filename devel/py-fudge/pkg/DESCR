@@ -1,0 +1,2 @@
+Fudge is a module for replacing real objects with fakes (mocks, stubs, etc)
+while testing.
