@@ -25,8 +25,11 @@ MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
 NO_REGRESS =		Yes
 
+# XXX: need py-py > 1.4.9
+RUN_DEPENDS =		devel/py-py
+
 REGRESS_DEPENDS =	devel/py-test \
-			devel/py-py
+			${RUN_DEPENDS}
 
 # XXX: need py-py > 1.4.9
 do-regress: fake

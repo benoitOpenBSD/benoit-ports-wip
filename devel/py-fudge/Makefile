@@ -23,9 +23,11 @@ MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
 NO_REGRESS =		Yes
 
+REGRESS_DEPENDS =	devel/py-tox
+
 # XXX: need tox http://pypi.python.org/pypi/tox/
-#do-regress: fake
-#			@cd ${WRKSRC} && PYTHONPATH=${WRKINST}${MODPY_SITEPKG} \
-#			./run_tests.sh
+do-regress: fake
+			@cd ${WRKSRC} && PYTHONPATH=${WRKINST}${MODPY_SITEPKG} \
+			./run_tests.sh
 
 .include <bsd.port.mk>
