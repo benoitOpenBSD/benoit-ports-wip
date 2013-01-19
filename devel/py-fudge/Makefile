@@ -8,7 +8,7 @@ PKGNAME =		py-${DISTNAME}
 
 CATEGORIES =		devel
 
-HOMEPAGE =		http://pypi.python.org/pypi/pycountry
+HOMEPAGE =		http://farmdev.com/projects/fudge/
 
 # MIT
 PERMIT_PACKAGE_CDROM =		Yes
