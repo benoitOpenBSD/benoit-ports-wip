@@ -23,10 +23,11 @@ EXTRACT_SUFX =		.zip
 MODULES =		lang/python
 
 MODPY_SETUPTOOLS =	Yes
-NO_REGRESS =		Yes
+#NO_REGRESS =		Yes
 
 # XXX: need py-py > 1.4.9
-RUN_DEPENDS =		devel/py-py
+RUN_DEPENDS =		devel/py-py \
+			devel/py-virtualenv
 
 REGRESS_DEPENDS =	devel/py-test \
 			${RUN_DEPENDS}
