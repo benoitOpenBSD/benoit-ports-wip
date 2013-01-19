@@ -1,0 +1,15 @@
+@comment $OpenBSD: PLIST,v 1.3 2010/03/21 12:13:08 landry Exp $
+@bin bin/fidentify
+@bin bin/photorec
+@bin bin/testdisk
+@man man/man8/fidentify.8
+@man man/man8/photorec.8
+@man man/man8/testdisk.8
+share/doc/${FULLPKGNAME}/
+share/doc/${FULLPKGNAME}/AUTHORS
+share/doc/${FULLPKGNAME}/ChangeLog
+share/doc/${FULLPKGNAME}/NEWS
+share/doc/${FULLPKGNAME}/README
+share/doc/${FULLPKGNAME}/THANKS
+share/doc/${FULLPKGNAME}/html/
+share/doc/${FULLPKGNAME}/html/online.html
