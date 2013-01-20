@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2009/12/22 16:27:59 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.6 2010/11/16 11:23:25 espie Exp $
 
 COMMENT=	cute and addictive action-puzzle game
 
