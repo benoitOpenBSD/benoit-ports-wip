@@ -1,0 +1,9 @@
+--- src/Makefile.am~	Fri Jan  1 23:36:00 2010
++++ src/Makefile.am	Sun Jan 20 12:36:55 2013
+@@ -1,5 +1,5 @@
+ 
+-gamesdir = $(prefix)/games
++gamesdir = $(prefix)/bin
+ scoredir = /var/games/powermanga
+ score = powermanga.hi
+ 
