@@ -15,7 +15,7 @@ PERMIT_DISTFILES_CDROM=	Yes
 PERMIT_DISTFILES_FTP=	Yes
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gxemul/}
-WANTLIB=		c m
+WANTLIB=		c m stdc++
 
 CONFIGURE_STYLE=	simple
 USE_GROFF =		Yes
@@ -26,7 +26,7 @@ FLAVOR?=
 .if ${FLAVOR:L:Mno_x11}
 CONFIGURE_ARGS=		--disable-x
 .else
-WANTLIB+=		X11 pthread-stubs xcb
+WANTLIB+=		X11
 .endif
 
 NO_REGRESS=		Yes
