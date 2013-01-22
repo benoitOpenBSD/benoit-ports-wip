@@ -1,0 +1,15 @@
+MCLinker is a full-fledged system linker for mobile devices. It supports
+multiple platforms (ARM, X86 and Mips). It is fast, small with low
+memory footprints. And the best, MCLinker is non-GPL open source.
+
+MCLinker leverages the LLVM to link object files, and generate shared
+objects and executable files. In our experiments, MCLinker is steadily
+x2 faster than GNU ld. With debug info striping, MCLinker is also faster
+than Google gold. MCLinker increases the code size of Android libbcc
+only less than 180KB. Its code size is 1/8 of GNU ld and 1/15 of Google
+gold linker.
+
+So far, MCLinker is a full-fledged linker on Android Jelly Bean
+platforms.  It can generate shared object for Android JNI (Java Native
+Interface) environment. It supports various Android platforms. ARM, x86
+and MIPS platforms are examined.
