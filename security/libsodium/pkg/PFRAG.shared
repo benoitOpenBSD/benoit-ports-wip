@@ -1,0 +1,2 @@
+@comment $OpenBSD$
+@lib lib/libsodium.so.${LIBsodium_VERSION}
