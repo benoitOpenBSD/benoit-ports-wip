@@ -17,11 +17,13 @@ PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=md5deep/}
 
-WANTLIB =		c m
+WANTLIB =		c m pthread stdc++
 
 USE_GMAKE =		Yes
 
 CONFIGURE_STYLE =	gnu
+
+REGRESS_DEPENDS =	shells/bash
 
 do-regress: fake
 			cd ${WRKSRC}/tests && GOOD_BIN=${WRKDIST}/src \
