@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST-main,v 1.51 2012/11/30 21:16:30 pascal Exp $
+@comment $OpenBSD: PLIST-main,v 1.52 2013/01/09 09:46:54 sthen Exp $
 @pkgpath devel/git
 @bin bin/git
 bin/git-cvsserver
@@ -131,6 +131,7 @@ libexec/git/git-relink
 @bin libexec/git/git-remote-http
 @bin libexec/git/git-remote-https
 libexec/git/git-remote-testgit
+@bin libexec/git/git-remote-testsvn
 libexec/git/git-repack
 @bin libexec/git/git-replace
 @bin libexec/git/git-repo-config
