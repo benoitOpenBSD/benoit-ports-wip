@@ -59,17 +59,5 @@ ${P5SITE}/auto/share/dist/Zoidberg/zoidrc.example
 share/doc/zoid/
 share/doc/zoid/Changes
 share/doc/zoid/README
-share/zoid/
-share/zoid/pixmaps/
-share/zoid/pixmaps/zoid16.png
-share/zoid/pixmaps/zoid32.png
-share/zoid/pixmaps/zoid64.png
-share/zoid/pixmaps/zoid70.png
-share/zoid/plugins/
-share/zoid/plugins/CPAN.pm
-share/zoid/plugins/Commands.pl
-share/zoid/plugins/Intel.pl
-share/zoid/plugins/Log.pl
-share/zoid/plugins/ReadLine.pl
-share/zoid/zoidrc.sample
+share/doc/zoid/zoidrc.sample
 @sample ${SYSCONFDIR}/zoidrc
