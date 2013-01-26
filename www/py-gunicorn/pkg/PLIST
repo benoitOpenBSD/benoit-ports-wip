@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.1.1.1 2012/04/27 09:01:31 mpi Exp $
+@comment $OpenBSD: PLIST,v 1.2 2013/01/09 11:51:33 benoit Exp $
 bin/gunicorn
 bin/gunicorn_django
 bin/gunicorn_paster
