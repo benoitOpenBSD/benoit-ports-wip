@@ -2,11 +2,11 @@
 
 COMMENT =	library for network communication, encryption, etc
 
-V =		0.1
+V =		0.2
 DISTNAME =	libsodium-${V}
 CATEGORIES = 	security
 
-SHARED_LIBS +=	sodium	0.0 # 0.0
+SHARED_LIBS +=	sodium	0.0 # 1.0
 
 HOMEPAGE =	https://github.com/jedisct1/libsodium
  
@@ -21,5 +21,7 @@ PERMIT_PACKAGE_CDROM =		Yes
 MASTER_SITES =	http://download.dnscrypt.org/libsodium/releases/
 
 CONFIGURE_STYLE =	gnu
+
+USE_LIBTOOL =		Yes
 
 .include <bsd.port.mk>
