@@ -1,4 +1,4 @@
-$OpenBSD: patch-t_t0000-basic_sh,v 1.2 2013/01/09 09:46:54 sthen Exp $
+$OpenBSD: patch-t_t0000-basic_sh,v 1.3 2013/01/25 08:14:59 dcoppa Exp $
 --- t/t0000-basic.sh.orig	Mon Jan 14 20:22:04 2013
 +++ t/t0000-basic.sh	Wed Jan 23 14:53:15 2013
 @@ -472,7 +472,7 @@ test_expect_success 'update-index D/F conflict' '

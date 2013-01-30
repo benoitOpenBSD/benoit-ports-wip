@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2011/12/03 06:24:57 benoit Exp $
+# $OpenBSD: Makefile,v 1.15 2012/06/17 09:50:46 benoit Exp $
 
 COMMENT =		word-based diff program
 

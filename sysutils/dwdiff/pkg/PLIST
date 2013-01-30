@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.4 2011/03/19 09:56:32 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.5 2012/06/17 09:50:50 benoit Exp $
 @bin bin/dwdiff
 @man man/man1/dwdiff.1
 share/doc/dwdiff/
