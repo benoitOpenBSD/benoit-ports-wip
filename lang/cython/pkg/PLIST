@@ -342,6 +342,7 @@ lib/python${MODPY_VERSION}/site-packages/Cython/Utility/MemoryView_C.c
 lib/python${MODPY_VERSION}/site-packages/Cython/Utility/ModuleSetupCode.c
 lib/python${MODPY_VERSION}/site-packages/Cython/Utility/ObjectHandling.c
 lib/python${MODPY_VERSION}/site-packages/Cython/Utility/Optimize.c
+lib/python${MODPY_VERSION}/site-packages/Cython/Utility/Overflow.c
 lib/python${MODPY_VERSION}/site-packages/Cython/Utility/Printing.c
 lib/python${MODPY_VERSION}/site-packages/Cython/Utility/StringTools.c
 lib/python${MODPY_VERSION}/site-packages/Cython/Utility/TestCyUtilityLoader.pyx

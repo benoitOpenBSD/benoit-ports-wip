@@ -5,11 +5,11 @@
 @man man/man8/fidentify.8
 @man man/man8/photorec.8
 @man man/man8/testdisk.8
-share/doc/${FULLPKGNAME}/
-share/doc/${FULLPKGNAME}/AUTHORS
-share/doc/${FULLPKGNAME}/ChangeLog
-share/doc/${FULLPKGNAME}/NEWS
-share/doc/${FULLPKGNAME}/README
-share/doc/${FULLPKGNAME}/THANKS
-share/doc/${FULLPKGNAME}/html/
-share/doc/${FULLPKGNAME}/html/online.html
+share/doc/testdisk-${VERSION}/
+share/doc/testdisk-${VERSION}/AUTHORS
+share/doc/testdisk-${VERSION}/ChangeLog
+share/doc/testdisk-${VERSION}/NEWS
+share/doc/testdisk-${VERSION}/README
+share/doc/testdisk-${VERSION}/THANKS
+share/doc/testdisk-${VERSION}/html/
+share/doc/testdisk-${VERSION}/html/online.html
