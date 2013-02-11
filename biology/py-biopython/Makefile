@@ -3,7 +3,7 @@
 SHARED_ONLY=		Yes
 COMMENT=		Python tools for computational molecular biology
 
-MODPY_EGG_VERSION=	1.60
+MODPY_EGG_VERSION=	1.61
 DISTNAME=		biopython-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES=		biology
@@ -35,7 +35,7 @@ CFLAGS+=	-fPIC
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/py-biopython/
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/py-biopython/
-	${INSTALL_DATA} ${WRKSRC}/Doc/*.txt ${PREFIX}/share/doc/py-biopython/
+	${INSTALL_DATA} ${WRKSRC}/Doc/*.pdf ${PREFIX}/share/doc/py-biopython/
 	cd ${WRKSRC}/Doc/examples; tar cf - * | \
 		tar xf - -C ${PREFIX}/share/examples/py-biopython
 
