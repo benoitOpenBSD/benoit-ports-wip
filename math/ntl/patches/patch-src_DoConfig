@@ -1,0 +1,37 @@
+--- src/DoConfig.orig	Fri Aug 14 14:53:11 2009
++++ src/DoConfig	Sun Oct 24 11:03:33 2010
+@@ -12,14 +12,14 @@
+ 
+ %MakeVal = (
+ 
+-'CC'	      => 'gcc',
+-'CXX'	      => 'g++',
+-'CFLAGS'      => '-O2',
++'CC'	      => '${CC}',
++'CXX'	      => '${CXX}',
++'CFLAGS'      => '-O2 -g',
+ 'CXXFLAGS'    => '$(CFLAGS)',
+ 'AR'	      => 'ar',
+ 'ARFLAGS'     => 'ruv',
+ 'RANLIB'      => 'ranlib',
+-'LIBTOOL'     => 'libtool',
++'LIBTOOL'     => '${LIBTOOL}',
+ 
+ 'LDFLAGS'     => '',
+ 'LDFLAGS_CXX' => '$(LDFLAGS)',
+@@ -27,12 +27,14 @@
+ 'LDLIBS_CXX'  => '$(LDLIBS)',
+ 'CPPFLAGS'    => '',
+ 
+-'DEF_PREFIX'  => '/usr/local',
++'DEF_PREFIX'  => '${LOCALBASE}',
+ 
+ 'PREFIX'      => '$(DEF_PREFIX)',
+ 'LIBDIR'      => '$(PREFIX)/lib',
+ 'INCLUDEDIR'  => '$(PREFIX)/include',
+ 'DOCDIR'      => '$(PREFIX)/share/doc',
++
++'LIBntl_VERSION' => '$(LIBntl_VERSION)',
+ 
+ 'GMP_PREFIX'  => '$(DEF_PREFIX)',
+ 'GMP_INCDIR'  => '$(GMP_PREFIX)/include',
