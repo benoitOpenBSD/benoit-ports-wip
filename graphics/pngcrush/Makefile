@@ -23,7 +23,7 @@ MAKE_FLAGS =		CC="${CC}" LD="${CC}" CFLAGS="${CFLAGS} -I. -DZ_SOLO"
 
 NO_REGRESS =		Yes
 
-USE_GMAKE =		Yes
+#USE_GMAKE =		Yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pngcrush ${PREFIX}/bin
