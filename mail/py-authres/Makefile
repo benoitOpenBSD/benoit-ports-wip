@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2012/05/10 15:02:57 giovanni Exp $
+# $OpenBSD: Makefile,v 1.2 2013/01/09 16:33:46 benoit Exp $
 
 COMMENT =	module for RFC 5451 Authentication-Results Headers
 
-MODPY_EGG_VERSION = 0.402
+MODPY_EGG_VERSION = 0.501
 DISTNAME =	authres-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
 CATEGORIES =	mail
@@ -15,7 +15,7 @@ PERMIT_PACKAGE_FTP =	Yes
 PERMIT_DISTFILES_CDROM =Yes
 PERMIT_DISTFILES_FTP =	Yes
 
-MASTER_SITES =	${HOMEPAGE}/0.4/${MODPY_EGG_VERSION}/+download/
+MASTER_SITES =	${HOMEPAGE}/0.5/${MODPY_EGG_VERSION}/+download/
 
 MODULES	=	lang/python
 
