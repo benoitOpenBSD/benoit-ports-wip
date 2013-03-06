@@ -2,7 +2,7 @@
 
 COMMENT =	library for network communication, encryption, etc
 
-V =		0.2
+V =		0.3
 DISTNAME =	libsodium-${V}
 CATEGORIES = 	security
 
