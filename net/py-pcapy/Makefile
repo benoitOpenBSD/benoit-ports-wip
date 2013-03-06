@@ -18,8 +18,8 @@ PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB += 		${MODPY_WANTLIB} m stdc++ pcap
 
-MASTER_SITES =		http://oss.coresecurity.com/repo/
-
+#MASTER_SITES =		http://oss.coresecurity.com/repo/
+MASTER_SITES =		http://corelabs.coresecurity.com/index.php?module=Wiki&action=attachment&type=tool&page=Pcapy&file=
 MODULES =		lang/python
 
 NO_REGRESS =		Yes
