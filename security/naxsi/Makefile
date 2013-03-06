@@ -2,8 +2,8 @@
 
 COMMENT =	Web Application Firewall module for Nginx
 
-NAXSI_VERSION =	naxsi-core-0.48
-DISTNAME =	nginx-1.2.6
+NAXSI_VERSION =	naxsi-core-0.49
+DISTNAME =	nginx-1.2.7
 CATEGORIES =	www security
 
 HOMEPAGE =	https://code.google.com/p/naxsi
