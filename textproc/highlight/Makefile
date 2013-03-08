@@ -2,7 +2,7 @@
 
 COMMENT =		convert source code to markup formats
 
-DISTNAME =		highlight-3.12
+DISTNAME =		highlight-3.13
 CATEGORIES =		textproc converters
 
 HOMEPAGE =		http://www.andre-simon.de/
