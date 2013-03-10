@@ -33,7 +33,7 @@ FLAVOR ?=
 WANTLIB +=		ICE SM X11 Xext Xi Xinerama Xrender fontconfig
 WANTLIB +=		freetype stdc++ QtGui>=8 QtCore>=7 qwt
 
-MODULES +=		x11/qt4 
+MODULES +=		x11/qt4
 
 LIB_DEPENDS +=		x11/qt4 \
 			x11/qwt
