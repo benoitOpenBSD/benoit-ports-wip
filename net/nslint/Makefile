@@ -1,23 +1,20 @@
-# $OpenBSD: Makefile,v 1.10 2012/08/18 12:41:38 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.13 2013/03/11 11:35:50 espie Exp $
 
 COMMENT=		performs consistency checks on BIND files
 
-DISTNAME=		nslint-3.0a2
-CATEGORIES=     	net
+DISTNAME =		nslint-3.0a2
+CATEGORIES=		net
 
 MAINTAINER=		Wangden Kelsang <wngdn@src.uchicago.edu>
 
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 MASTER_SITES=		ftp://ftp.ee.lbl.gov/old/
 
 FLAVORS=		static
 FLAVOR?=
 
-.if ${FLAVOR:L} == "static"
+.if ${FLAVOR} == "static"
 CONFIGURE_ENV+=		LDFLAGS=-static
 .else
 WANTLIB=		c
@@ -25,8 +22,8 @@ WANTLIB=		c
 
 CONFIGURE_STYLE=	gnu
 ALL_TARGET=		nslint
-INSTALL_TARGET=		install
+INSTALL_TARGET =		install
 
-NO_REGRESS=		Yes
+NO_TEST=		Yes
 
 .include <bsd.port.mk>
