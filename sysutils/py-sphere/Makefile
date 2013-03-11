@@ -2,7 +2,7 @@
 
 COMMENT =		vSphere SDK for python.
 
-MODPY_EGG_VERSION =	0.1.6
+MODPY_EGG_VERSION =	0.1.7
 DISTNAME =		pysphere-${MODPY_EGG_VERSION}
 PKGNAME =		py-sphere-${MODPY_EGG_VERSION}
 CATEGORIES =		sysutils
@@ -13,9 +13,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		http://pysphere.googlecode.com/files/
 EXTRACT_SUFX =		.zip
@@ -25,7 +22,7 @@ MODULES =		lang/python
 
 MODPY_SETUPTOOLS =	Yes
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 post-install:
 			find ${WRKINST}${MODPY_SITEPKG} -type f -exec chmod 444 {} \;
