@@ -1,7 +1,7 @@
-$OpenBSD: patch-tests_setproctitle_test_py,v 1.1.1.1 2011/12/19 10:37:41 mpi Exp $
---- tests/setproctitle_test.py	Wed Nov  9 02:54:18 2011
-+++ tests/setproctitle_test.py	Sun Dec 18 15:47:52 2011
-@@ -431,7 +431,7 @@
+$OpenBSD$
+--- tests/setproctitle_test.py.orig	Wed Feb 20 00:34:08 2013
++++ tests/setproctitle_test.py	Mon Mar 11 23:37:03 2013
+@@ -485,7 +485,7 @@ class SetproctitleTestCase(unittest.TestCase):
          if 'bsd' in sys.platform:
              procname = os.path.basename(sys.executable)
              title = ' '.join([t for t in title.split(' ')

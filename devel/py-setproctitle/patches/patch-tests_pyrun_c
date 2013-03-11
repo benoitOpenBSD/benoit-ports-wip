@@ -1,6 +1,6 @@
-$OpenBSD: patch-tests_pyrun_c,v 1.1.1.1 2011/12/19 10:37:41 mpi Exp $
---- tests/pyrun.c	Sun Dec 18 15:07:17 2011
-+++ tests/pyrun.c	Sun Dec 18 15:07:28 2011
+$OpenBSD$
+--- tests/pyrun.c.orig	Tue Feb  7 22:44:32 2012
++++ tests/pyrun.c	Mon Mar 11 23:37:03 2013
 @@ -10,6 +10,7 @@
   *-------------------------------------------------------------------------
   */
