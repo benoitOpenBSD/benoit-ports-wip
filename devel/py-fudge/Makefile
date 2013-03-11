@@ -12,15 +12,12 @@ HOMEPAGE =		http://farmdev.com/projects/fudge/
 
 # MIT
 PERMIT_PACKAGE_CDROM =		Yes
-PERMIT_PACKAGE_FTP =		Yes
-PERMIT_DISTFILES_CDROM =	Yes
-PERMIT_DISTFILES_FTP =		Yes
 
 MASTER_SITES=		${MASTER_SITE_PYPI:=f/fudge/}
 
 MODULES =		lang/python
 
 MODPY_SETUPTOOLS =	Yes
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 .include <bsd.port.mk>
