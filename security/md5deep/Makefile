@@ -11,9 +11,6 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Public domain, GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=md5deep/}
 
@@ -23,9 +20,9 @@ USE_GMAKE =		Yes
 
 CONFIGURE_STYLE =	gnu
 
-REGRESS_DEPENDS =	shells/bash
+TEST_DEPENDS =	shells/bash
 
-do-regress: fake
+do-test: fake
 			cd ${WRKSRC}/tests && GOOD_BIN=${WRKDIST}/src \
 			/usr/local/bin/bash ./tests.sh
 
