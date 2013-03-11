@@ -1,7 +1,7 @@
 $OpenBSD$
---- Tests/run_tests.py.orig	Mon Jun 25 11:10:25 2012
-+++ Tests/run_tests.py	Fri Jan  4 22:03:19 2013
-@@ -131,11 +131,11 @@
+--- Tests/run_tests.py.orig	Tue Feb  5 15:38:32 2013
++++ Tests/run_tests.py	Mon Mar 11 11:07:57 2013
+@@ -157,11 +157,11 @@
      # A. Because Martel may not be in ../build/lib.*
      test_path = sys.path[0] or "."
      source_path = os.path.abspath("%s/.." % test_path)

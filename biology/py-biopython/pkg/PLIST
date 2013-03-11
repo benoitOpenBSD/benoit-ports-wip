@@ -904,7 +904,7 @@ lib/python${MODPY_VERSION}/site-packages/BioSQL/Loader.py
 lib/python${MODPY_VERSION}/site-packages/BioSQL/Loader.pyc
 lib/python${MODPY_VERSION}/site-packages/BioSQL/__init__.py
 lib/python${MODPY_VERSION}/site-packages/BioSQL/__init__.pyc
-lib/python${MODPY_VERSION}/site-packages/biopython-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info
+lib/python${MODPY_VERSION}/site-packages/${FULLPKGNAME\-}-py${MODPY_VERSION}.egg-info
 share/doc/${MODPY_PY_PREFIX}biopython/
 share/doc/${MODPY_PY_PREFIX}biopython/Tutorial.pdf
 share/doc/${MODPY_PY_PREFIX}biopython/biopdb_faq.pdf

@@ -1,11 +1,10 @@
-# $OpenBSD: Makefile,v 1.20 2011/11/01 16:05:26 jasper Exp $
+# $OpenBSD: Makefile,v 1.21 2013/03/10 23:04:44 espie Exp $
 
 SHARED_ONLY=		Yes
 COMMENT=		Python tools for computational molecular biology
 
-MODPY_EGG_VERSION=	1.61
+MODPY_EGG_VERSION =	1.61
 DISTNAME=		biopython-${MODPY_EGG_VERSION}
-PKGNAME =		py-${DISTNAME}
 CATEGORIES=		biology
 
 HOMEPAGE=		http://www.biopython.org/
@@ -14,21 +13,18 @@ MAINTAINER=		Will Maier <wcmaier@openbsd.org>
 
 # BSD-like 
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM= Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 MASTER_SITES=	${HOMEPAGE}DIST/
 
 MODULES=	lang/python
 
-WANTLIB+=	${MODPY_WANTLIB}
+WANTLIB +=	${MODPY_WANTLIB} pthread
 
 BUILD_DEPENDS=	devel/swig \
 		math/py-numpy
 RUN_DEPENDS=	math/py-numpy \
 		print/py-reportlab/reportlab
-REGRESS_DEPENDS=${RUN_DEPENDS}
+TEST_DEPENDS=	${RUN_DEPENDS}
 
 CFLAGS+=	-fPIC
 
@@ -39,7 +35,7 @@ post-install:
 	cd ${WRKSRC}/Doc/examples; tar cf - * | \
 		tar xf - -C ${PREFIX}/share/examples/py-biopython
 
-do-regress: fake
+do-test: fake
 	@cd ${WRKSRC}/Tests && \
 		PYTHONPATH=${WRKINST}${MODPY_SITEPKG} \
 		${MODPY_BIN} ./run_tests.py
