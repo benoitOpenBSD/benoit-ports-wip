@@ -23,4 +23,6 @@ NO_TEST =		Yes
 FLAVORS =		python3
 FLAVOR ?=
 
+# XXX http://marc.info/?l=openbsd-ports&m=135557010512004&w=2
+
 .include <bsd.port.mk>
