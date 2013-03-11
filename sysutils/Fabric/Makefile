@@ -2,7 +2,7 @@
 
 COMMENT =		Pythonic tool for remote execution and deployment.
 
-MODPY_EGG_VERSION =	1.5.2
+MODPY_EGG_VERSION =	1.6.0
 DISTNAME =		Fabric-${MODPY_EGG_VERSION}
 CATEGORIES =		sysutils
 
@@ -12,9 +12,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		${MASTER_SITE_PYPI:=F/Fabric/}
 
@@ -24,13 +21,13 @@ MODPY_SETUPTOOLS =	Yes
 BUILD_DEPENDS =		${RUN_DEPENDS}
 RUN_DEPENDS =		security/py-paramiko
 
-REGRESS_DEPENDS =	devel/py-nose \
+TEST_DEPENDS =		devel/py-nose \
 			devel/py-fudge
 			
-NO_REGRESS =		Yes
+#NO_TEST =		Yes
 
-#do-regress:
-#			@cd ${WRKSRC}/tests && PYTHONPATH=${WRKINST}${MODPY_SITEPKG} \
-#			${MODPY_BIN} ./test_utils.py
+do-test:
+			@cd ${WRKSRC}/tests && PYTHONPATH=${WRKINST}${MODPY_SITEPKG} \
+			${MODPY_BIN} ./test_main.py
 
 .include <bsd.port.mk>
