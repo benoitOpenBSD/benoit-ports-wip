@@ -1,0 +1,10 @@
+@comment $OpenBSD$
+lib/python${MODPY_VERSION}/site-packages/ptr.py
+lib/python${MODPY_VERSION}/site-packages/ptr.pyc
+lib/python${MODPY_VERSION}/site-packages/pytest_runner-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
+lib/python${MODPY_VERSION}/site-packages/pytest_runner-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
+lib/python${MODPY_VERSION}/site-packages/pytest_runner-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/SOURCES.txt
+lib/python${MODPY_VERSION}/site-packages/pytest_runner-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/dependency_links.txt
+lib/python${MODPY_VERSION}/site-packages/pytest_runner-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/entry_points.txt
+lib/python${MODPY_VERSION}/site-packages/pytest_runner-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt
+lib/python${MODPY_VERSION}/site-packages/pytest_runner-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/zip-safe
