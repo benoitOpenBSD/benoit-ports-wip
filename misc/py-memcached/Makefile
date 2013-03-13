@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2011/09/16 10:31:23 espie Exp $
+# $OpenBSD: Makefile,v 1.10 2013/03/11 11:23:58 espie Exp $
 
 COMMENT =	Python interface to memcached
 
