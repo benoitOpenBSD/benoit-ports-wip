@@ -18,8 +18,9 @@ EXTRACT_SUFX =		.zip
 MODULES=	lang/python
 MODPY_SETUPTOOLS =	Yes
 
-BUILD_DEPENDS =		devel/py-hgtools \
+RUN_DEPENDS =		devel/py-hgtools \
 			devel/pytest-runner
+BUILD_DEPENDS =		${RUN_DEPENDS}
 
 NO_TEST=	Yes
 
