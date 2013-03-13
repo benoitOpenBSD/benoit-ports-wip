@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.90 2013/01/30 12:16:13 benoit Exp $
+# $OpenBSD: Makefile,v 1.92 2013/03/12 22:39:30 sthen Exp $
 
 COMMENT-main =	GIT - Tree History Storage Tool
 COMMENT-svn =	GIT - subversion interoperability tools
@@ -63,7 +63,7 @@ MAKE_ENV =		REGRESS_SHELL=${LOCALBASE}/bin/bash
 USE_GMAKE =		Yes
 USE_GROFF =		Yes
 
-REGRESS_DEPENDS =	archivers/zip \
+TEST_DEPENDS =	archivers/zip \
 			devel/cvsps \
 			devel/subversion,-perl \
 			shells/bash
@@ -95,7 +95,7 @@ post-install:
 	perl -pi -e "s|${WRKINST}||g" ${PREFIX}/share/gitweb/gitweb.cgi
 	${INSTALL_DATA} ${WRKBUILD}/gitweb/README ${PREFIX}/share/gitweb
 
-do-regress:
+do-test:
 	cd ${WRKSRC}/t && rm -f ${SKIP_TESTS}
 	cd ${WRKSRC} && ${MAKE_ENV} ${MAKE_PROGRAM} \
 		HOME=${WRKDIST}/t/trash test
