@@ -15,7 +15,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=		lang/python
 
-WANTLIB +=		${MODPY_WANTLIB}
+WANTLIB +=		${MODPY_WANTLIB} pthread
 
 do-test: fake
 	@cd ${WRKSRC} && ${MAKE_ENV} \
