@@ -1,0 +1,20 @@
+$OpenBSD$
+--- config.mak.uname.orig	Wed Mar 13 20:15:22 2013
++++ config.mak.uname	Thu Mar 21 15:57:51 2013
+@@ -191,13 +191,13 @@ ifeq ($(uname_S),FreeBSD)
+ 	HAVE_PATHS_H = YesPlease
+ endif
+ ifeq ($(uname_S),OpenBSD)
+-	NO_STRCASESTR = YesPlease
+ 	NO_MEMMEM = YesPlease
+ 	USE_ST_TIMESPEC = YesPlease
+ 	NEEDS_LIBICONV = YesPlease
+-	BASIC_CFLAGS += -I/usr/local/include
+-	BASIC_LDFLAGS += -L/usr/local/lib
++	BASIC_CFLAGS += -I${X11BASE}/include -I${LOCALBASE}/include
++	BASIC_LDFLAGS += -L${X11BASE}/lib -L${LOCALBASE}/lib
+ 	HAVE_PATHS_H = YesPlease
++	NO_PYTHON = YesPlease
+ endif
+ ifeq ($(uname_S),NetBSD)
+ 	ifeq ($(shell expr "$(uname_R)" : '[01]\.'),2)
