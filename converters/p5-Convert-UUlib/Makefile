@@ -1,20 +1,19 @@
-# $OpenBSD: Makefile,v 1.12 2011/01/05 21:25:28 benoit Exp $
+# $OpenBSD: Makefile,v 1.15 2013/03/11 01:30:27 espie Exp $
 
 SHARED_ONLY=	Yes
 
 COMMENT=	interface to the uulib library
 
-DISTNAME=	Convert-UUlib-1.34
+DISTNAME =	Convert-UUlib-1.4
+EPOCH =		1
 CATEGORIES=	converters
 MODULES=	cpan
-USE_GROFF =	Yes
 
 MAINTAINER=	Ibrahim Khalifa <ibo@toontown.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
+
+WANTLIB += c
 
 .include <bsd.port.mk>
