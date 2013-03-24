@@ -13,15 +13,10 @@ HOMEPAGE =	https://github.com/jedisct1/libsodium
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
-PERMIT_DISTFILES_FTP =		Yes
-PERMIT_DISTFILES_CDROM =	Yes
-PERMIT_PACKAGE_FTP =		Yes
-PERMIT_PACKAGE_CDROM =		Yes
+PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =	http://download.dnscrypt.org/libsodium/releases/
 
 CONFIGURE_STYLE =	gnu
-
-USE_LIBTOOL =		Yes
 
 .include <bsd.port.mk>
