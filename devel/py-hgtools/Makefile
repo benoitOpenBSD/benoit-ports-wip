@@ -1,8 +1,8 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.1.1.1 2013/03/22 09:19:19 benoit Exp $
 
 COMMENT =		classes and setuptools plugin for Mercurial repositories
 
-MODPY_EGG_VERSION = 	2.0.3
+MODPY_EGG_VERSION = 	2.1
 DISTNAME =		hgtools-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		devel
@@ -11,7 +11,7 @@ HOMEPAGE =		http://bitbucket.org/jaraco/hgtools/
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# GPL
+# GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES=		${MASTER_SITE_PYPI:=h/hgtools/}
