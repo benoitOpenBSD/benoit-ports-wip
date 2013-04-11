@@ -1,7 +1,7 @@
 $OpenBSD$
---- Makefile.orig	Wed Mar 13 20:15:22 2013
-+++ Makefile	Thu Mar 21 15:57:51 2013
-@@ -1132,7 +1132,7 @@ endif
+--- Makefile.orig	Mon Apr  8 00:52:04 2013
++++ Makefile	Thu Apr 11 08:13:36 2013
+@@ -1129,7 +1129,7 @@ endif
  EXTLIBS += -lz
  
  ifndef NO_OPENSSL
@@ -10,7 +10,7 @@ $OpenBSD$
  	ifdef OPENSSLDIR
  		BASIC_CFLAGS += -I$(OPENSSLDIR)/include
  		OPENSSL_LINK = -L$(OPENSSLDIR)/$(lib) $(CC_LD_DYNPATH)$(OPENSSLDIR)/$(lib)
-@@ -2032,13 +2032,13 @@ $(REMOTE_CURL_PRIMARY): remote-curl.o http.o http-walk
+@@ -2029,13 +2029,13 @@ $(REMOTE_CURL_PRIMARY): remote-curl.o http.o http-walk
  		$(LIBS) $(CURL_LIBCURL) $(EXPAT_LIBEXPAT)
  
  $(LIB_FILE): $(LIB_OBJS)
@@ -27,7 +27,7 @@ $OpenBSD$
  
  export DEFAULT_EDITOR DEFAULT_PAGER
  
-@@ -2212,7 +2212,7 @@ export TEST_NO_MALLOC_CHECK
+@@ -2209,7 +2209,7 @@ export TEST_NO_MALLOC_CHECK
  
  ### Testing rules
  
