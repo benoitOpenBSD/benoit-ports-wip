@@ -1,6 +1,5 @@
 /patch-Makefile_in/1.1/Sun Apr 21 21:49:50 2013//
 /patch-configure/1.5/Sun Apr 21 21:49:50 2013//
-/patch-doc_openvpn_8/1.1/Sun Apr 21 21:49:50 2013//
 /patch-include_Makefile_in/1.1/Sun Apr 21 21:49:50 2013//
 /patch-sample_sample-config-files_client_conf/1.1/Sun Apr 21 21:49:50 2013//
 /patch-sample_sample-config-files_server_conf/1.1/Sun Apr 21 21:49:50 2013//
@@ -10,11 +9,6 @@
 /patch-sample_sample-config-files_tls-office_conf/1.1/Sun Apr 21 21:49:50 2013//
 /patch-sample_sample-config-files_xinetd-client-config/1.1/Sun Apr 21 21:49:50 2013//
 /patch-sample_sample-config-files_xinetd-server-config/1.1/Sun Apr 21 21:49:50 2013//
-/patch-src_openvpn_init_c/1.1/Sun Apr 21 21:49:50 2013//
-/patch-src_openvpn_options_c/1.1/Sun Apr 21 21:49:50 2013//
-/patch-src_openvpn_options_h/1.1/Sun Apr 21 21:49:50 2013//
-/patch-src_openvpn_socket_c/1.1/Sun Apr 21 21:49:50 2013//
-/patch-src_openvpn_socket_h/1.1/Sun Apr 21 21:49:50 2013//
 /patch-src_openvpn_syshead_h/1.1/Sun Apr 21 21:49:50 2013//
 /patch-src_openvpn_tun_c/1.1/Sun Apr 21 21:49:50 2013//
 D
