@@ -2,12 +2,12 @@
 
 COMMENT=	RSS and Atom feeds parser written in Python
 
-V =		5.1.3
+V=		5.1.3
 DISTNAME=	feedparser-${V}
 PKGNAME=	py-${DISTNAME}
 CATEGORIES=	textproc
 
-HOMEPAGE =	https://code.google.com/p/feedparser/
+HOMEPAGE=	http://www.feedparser.org/
 
 MAINTAINER=	Romain Gaillegue <romain@biscotte.net>
 
@@ -17,8 +17,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 MASTER_SITES=	http://feedparser.googlecode.com/files/
 
 MODULES=	lang/python
+MODPY_SETUPTOOLS=	Yes
 
-MODPY_SETUPTOOLS =	Yes
 
 do-test:
 	cd ${WRKSRC}/feedparser/ && ${MODPY_BIN} feedparsertest.py
