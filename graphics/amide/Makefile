@@ -44,7 +44,6 @@ LIB_DEPENDS =	devel/gsl>=1.6 \
 
 USE_GMAKE =	Yes
 USE_GROFF =		Yes
-USE_LIBTOOL =	No
 
 AUTOCONF_VERSION =	2.68
 CONFIGURE_STYLE =	autoconf
