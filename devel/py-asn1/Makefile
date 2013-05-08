@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.19 2013/01/01 16:27:17 benoit Exp $
+# $OpenBSD: Makefile,v 1.21 2013/03/11 10:50:25 espie Exp $
 
 COMMENT =	ASN.1 library for Python
 
-MODPY_EGG_VERSION =	0.1.6
+MODPY_EGG_VERSION =	0.1.7
 DISTNAME =		pyasn1-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:S/py/py-/}
 CATEGORIES =		devel
@@ -13,11 +13,8 @@ HOMEPAGE =		http://pyasn1.sourceforge.net/
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# BSD-style
-PERMIT_PACKAGE_FTP =	Yes
+# BSD 2-Clause
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_DISTFILES_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=pyasn1/}
 
@@ -31,7 +28,7 @@ post-install:
 	${INSTALL_DATA_DIR} ${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${DOCSDIR}
 
-do-regress: fake
+do-test: fake
 	@cd ${WRKSRC} && ${MAKE_ENV} \
 		PYTHONPATH=${WRKSRC} ${MODPY_BIN} ./test/suite.py
 
