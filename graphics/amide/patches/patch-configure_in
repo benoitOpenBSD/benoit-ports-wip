@@ -1,0 +1,30 @@
+$OpenBSD$
+
+- Remove over-the-top optimization
+- Remove gnome-vfs2 dependency.
+
+--- configure.in.orig	Thu Nov 10 00:34:11 2011
++++ configure.in	Wed May  8 17:55:11 2013
+@@ -53,7 +53,7 @@
+ dnl specify optimization level, added 2010.02.20
+ OPTIMIZATION_LEVEL="-O3"
+ echo "setting optimization level to $OPTIMIZATION_LEVEL"
+-CFLAGS="$CFLAGS $OPTIMIZATION_LEVEL"
++CFLAGS="${CFLAGS}"
+ 
+ if test $CC = "gcc"; then
+    echo -n "checking version of gcc... "
+@@ -348,11 +348,8 @@
+ ## add in gnome-vfs if not on win32 or gtk-osx
+ ## gnome-vfs is only used by amide_gnome.c and only on unix
+ if (test $native_win32 = no) && (test $enable_native_gtk_osx = no); then
+-   PKG_CHECK_MODULES(AMIDE_GTK_EXTRA_GVFS,[
+-		gnome-vfs-2.0   >= 2.16.0
+-   ])
+-   AMIDE_GTK_LIBS="$AMIDE_GTK_LIBS $AMIDE_GTK_EXTRA_GVFS_LIBS"
+-   AMIDE_GTK_CFLAGS="$AMIDE_GTK_CFLAGS $AMIDE_GTK_EXTRA_GVFS_CFLAGS"
++   AMIDE_GTK_LIBS="$AMIDE_GTK_LIBS"
++   AMIDE_GTK_CFLAGS="$AMIDE_GTK_CFLAGS"
+ fi
+  
+ AC_SUBST(AMIDE_GTK_LIBS)

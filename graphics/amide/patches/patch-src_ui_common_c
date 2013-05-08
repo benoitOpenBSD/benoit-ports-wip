@@ -1,0 +1,25 @@
+$OpenBSD$
+
+- Remove call to amide_gnome_help_display(), thus dropping the
+  dependency on gnome-vfs2.
+
+--- src/ui_common.c.orig	Wed May  8 18:09:25 2013
++++ src/ui_common.c	Wed May  8 18:09:58 2013
+@@ -903,7 +903,7 @@
+ 
+ void amide_call_help(const gchar * link_id) {
+ 
+-#ifndef OLD_WIN32_HACKS
++#ifndef __OpenBSD__
+   GError *error=NULL;
+   amide_gnome_help_display(PACKAGE, link_id, &error);
+   if (error != NULL) {
+@@ -912,7 +912,7 @@
+   }
+ 
+ #else
+-  g_warning("Help is unavailable in the Windows version. Please see the help documentation online at http://amide.sf.net, or in the AMIDE install folder");
++  g_warning("Help is unavailable in this version. Please see the help documentation online at http://amide.sf.net, or in the AMIDE install folder");
+ #endif
+ 
+   return;
