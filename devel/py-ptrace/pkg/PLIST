@@ -82,6 +82,8 @@ lib/python${MODPY_VERSION}/site-packages/ptrace/pydistorm.py
 lib/python${MODPY_VERSION}/site-packages/ptrace/pydistorm.pyc
 lib/python${MODPY_VERSION}/site-packages/ptrace/signames.py
 lib/python${MODPY_VERSION}/site-packages/ptrace/signames.pyc
+lib/python${MODPY_VERSION}/site-packages/ptrace/six.py
+lib/python${MODPY_VERSION}/site-packages/ptrace/six.pyc
 lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/
 lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/__init__.py
 lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/__init__.pyc
@@ -99,10 +101,6 @@ lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/linux_syscall64.py
 lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/linux_syscall64.pyc
 lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/names.py
 lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/names.pyc
-lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/openbsd_constants.py
-lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/openbsd_constants.pyc
-lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/openbsd_syscall.py
-lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/openbsd_syscall.pyc
 lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/posix_arg.py
 lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/posix_arg.pyc
 lib/python${MODPY_VERSION}/site-packages/ptrace/syscall/posix_constants.py
@@ -125,4 +123,4 @@ lib/python${MODPY_VERSION}/site-packages/ptrace/tools.py
 lib/python${MODPY_VERSION}/site-packages/ptrace/tools.pyc
 lib/python${MODPY_VERSION}/site-packages/ptrace/version.py
 lib/python${MODPY_VERSION}/site-packages/ptrace/version.pyc
-lib/python${MODPY_VERSION}/site-packages/python_ptrace-0.6-py${MODPY_VERSION}.egg-info
+lib/python${MODPY_VERSION}/site-packages/python_ptrace-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info
