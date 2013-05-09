@@ -39,6 +39,8 @@ share/verilator/include/verilated.cpp
 share/verilator/include/verilated.h
 share/verilator/include/verilated.mk
 share/verilator/include/verilated.v
+share/verilator/include/verilated_config.h
+share/verilator/include/verilated_config.h.in
 share/verilator/include/verilated_dpi.cpp
 share/verilator/include/verilated_dpi.h
 share/verilator/include/verilated_heavy.h

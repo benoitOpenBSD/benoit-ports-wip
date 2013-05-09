@@ -1,32 +1,32 @@
-# $OpenBSD: Makefile,v 1.50 2010/12/30 07:51:27 benoit Exp $
+# $OpenBSD: Makefile,v 1.58 2013/03/10 22:28:05 espie Exp $
 
 COMMENT=	extract, list, and test RAR archives
 
-DISTNAME=	unrarsrc-4.0.2
-PKGNAME=	unrar-4.02
-REVISION =	0
+# NB: The software version is different from the distfile version.
+# Check version.hpp or the banner printed when running unrar
+# for the version to use in PKGNAME.  In particular, RARVER_BETA
+# is *not* a third digit, but increments before finally being set
+# to 0 for a non-beta release, e.g., "4.00 beta 6" was succeeded
+# by "4.00".
+
+PKGNAME=	unrar-4.20
+EPOCH=		1
+DISTNAME=	unrarsrc-4.2.4
 CATEGORIES=	archivers
 
 HOMEPAGE=	http://www.rarlab.com/
 
-MAINTAINER=	Rui Reis <rui@openbsd.org>
+# nonstandard
+PERMIT_PACKAGE_CDROM=	Yes
 
-# Restrictive
-PERMIT_PACKAGE_CDROM=	no fee
-PERMIT_PACKAGE_FTP=	may not modify
-PERMIT_DISTFILES_CDROM=	no fee
-PERMIT_DISTFILES_FTP=	Yes
-
-WANTLIB=	c m stdc++
+WANTLIB=	c crypto m stdc++
 
 MASTER_SITES=	${HOMEPAGE}rar/
 
 WRKDIST=	${WRKDIR}/unrar
 
 MAKE_FILE=	makefile.unix
-MAKE_FLAGS=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}"
-
-MAKE_FLAGS+=	EXTRA_CFLAGS=${EXTRA_CFLAGS}
+MAKE_FLAGS=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" STRIP=:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKBUILD}/unrar ${PREFIX}/bin
@@ -34,6 +34,6 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/readme.txt ${WRKSRC}/license.txt \
 		${PREFIX}/share/doc/unrar
 
-NO_REGRESS=	Yes
+NO_TEST=	Yes
 
 .include <bsd.port.mk>

@@ -4,7 +4,7 @@ ONLY_FOR_ARCHS =	i386
 
 COMMENT =		Ultimate packer for executables
 
-DISTNAME =		upx-3.07-src
+DISTNAME =		upx-3.09-src
 PKGNAME = 		${DISTNAME:S/-src//}
 CATEGORIES =		archivers
 
@@ -13,10 +13,7 @@ HOMEPAGE =		http://upx.sourceforge.net/
 MAINTAINER =		Benoit Lecocq <blq@arcane-labs.net>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =		Yes 
-PERMIT_PACKAGE_FTP =		Yes
-PERMIT_DISTFILES_CDROM =	Yes 
-PERMIT_DISTFILES_FTP =		Yes 
+PERMIT_PACKAGE_CDROM =	Yes 
 
 WANTLIB =		c z stdc++ m
 
@@ -29,7 +26,7 @@ BUILD_DEPENDS =		archivers/ucl \
 
 USE_GMAKE =		Yes
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 UPXDOCS =		BUGS COPYING LICENSE NEWS PROJECTS README \
 			README.1ST README.SRC THANKS TODO
