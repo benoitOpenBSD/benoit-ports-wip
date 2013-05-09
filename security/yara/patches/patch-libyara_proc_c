@@ -1,7 +1,7 @@
 $OpenBSD$
---- libyara/proc.c.orig	Fri Aug  5 08:23:06 2011
-+++ libyara/proc.c	Fri Aug  5 08:23:58 2011
-@@ -122,7 +122,7 @@
+--- libyara/proc.c.orig	Fri Mar 29 12:40:27 2013
++++ libyara/proc.c	Thu May  9 11:44:40 2013
+@@ -121,7 +121,7 @@ int get_process_memory(int pid, MEMORY_BLOCK** first_b
  #include "mem.h"
  #include "proc.h"
  
