@@ -2,7 +2,7 @@
 
 COMMENT =		generic virtualenv management and test command line tool
 
-MODPY_EGG_VERSION =	1.4.2
+MODPY_EGG_VERSION =	1.4.3
 DISTNAME =		tox-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 
@@ -12,13 +12,8 @@ HOMEPAGE =		http://codespeak.net/tox
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes
-PERMIT_PACKAGE_FTP =		Yes
-PERMIT_DISTFILES_CDROM =	Yes
-PERMIT_DISTFILES_FTP =		Yes
 
 MASTER_SITES=		${MASTER_SITE_PYPI:=t/tox/}
-
-EXTRACT_SUFX =		.zip
 
 MODULES =		lang/python
 
@@ -28,10 +23,10 @@ MODPY_SETUPTOOLS =	Yes
 RUN_DEPENDS =		devel/py-py \
 			devel/py-virtualenv
 
-REGRESS_DEPENDS =	devel/py-test \
+TEST_DEPENDS =		devel/py-test \
 			${RUN_DEPENDS}
 
-do-regress: fake
+do-test: fake
 			@cd ${WRKSRC} && PYTHONPATH=${WRKINST}${MODPY_SITEPKG} \
 			${MODPY_BIN} ./setup.py test
 

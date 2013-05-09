@@ -1,5 +1,6 @@
 @comment $OpenBSD$
 bin/tox
+bin/tox-quickstart
 lib/python${MODPY_VERSION}/site-packages/tox/
 lib/python${MODPY_VERSION}/site-packages/tox-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
 lib/python${MODPY_VERSION}/site-packages/tox-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
@@ -17,6 +18,10 @@ lib/python${MODPY_VERSION}/site-packages/tox/_config.py
 lib/python${MODPY_VERSION}/site-packages/tox/_config.pyc
 lib/python${MODPY_VERSION}/site-packages/tox/_exception.py
 lib/python${MODPY_VERSION}/site-packages/tox/_exception.pyc
+lib/python${MODPY_VERSION}/site-packages/tox/_pytestplugin.py
+lib/python${MODPY_VERSION}/site-packages/tox/_pytestplugin.pyc
+lib/python${MODPY_VERSION}/site-packages/tox/_quickstart.py
+lib/python${MODPY_VERSION}/site-packages/tox/_quickstart.pyc
 lib/python${MODPY_VERSION}/site-packages/tox/_venv.py
 lib/python${MODPY_VERSION}/site-packages/tox/_venv.pyc
 lib/python${MODPY_VERSION}/site-packages/tox/_verlib.py
