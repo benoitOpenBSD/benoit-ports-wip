@@ -2,7 +2,7 @@
 
 COMMENT =		GNU PIC assembler and utilities
 
-VERSION =		1.0.0
+VERSION =		1.1.0
 DISTNAME =		gputils-${VERSION}
 CATEGORIES =		devel
 
