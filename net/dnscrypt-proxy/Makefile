@@ -3,7 +3,7 @@
 COMMENT-main=		secure communications between a DNS client and resolver
 COMMENT-plugins=	example plugins for dnscrypt-proxy
 
-V=			1.2.1
+V=			1.3.0
 
 DISTNAME=		dnscrypt-proxy-${V}
 CATEGORIES=		net
@@ -23,7 +23,7 @@ PKGNAME-plugins=	dnscrypt-proxy-plugins-${V}
 
 commonWANTLIB=		c execinfo kvm m
 
-WANTLIB-main=		${commonWANTLIB} ltdl
+WANTLIB-main=		${commonWANTLIB} crypto ltdl
 WANTLIB-plugins=	${commonWANTLIB} crypto ldns
 
 commonLIB_DEPENDS=	devel/libexecinfo
@@ -34,6 +34,8 @@ LIB_DEPENDS-plugins=	${commonLIB_DEPENDS} net/ldns/libldns
 BUILD_DEPENDS-plugins=	devel/libtool
 
 CONFIGURE_STYLE=	gnu
+
+USE_LIBTOOL =		No
 
 CONFIGURE_ARGS+=	--enable-plugins --enable-plugins-root
 
