@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-ONLY_FOR_ARCHS =	i386
+#ONLY_FOR_ARCHS =	i386
 
 COMMENT =		Ultimate packer for executables
 
