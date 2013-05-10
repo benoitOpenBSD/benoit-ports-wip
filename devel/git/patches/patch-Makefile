@@ -1,15 +1,6 @@
-$OpenBSD$
---- Makefile.orig	Mon Apr  8 00:52:04 2013
-+++ Makefile	Thu Apr 11 08:13:36 2013
-@@ -1129,7 +1129,7 @@ endif
- EXTLIBS += -lz
- 
- ifndef NO_OPENSSL
--	OPENSSL_LIBSSL = -lssl
-+	OPENSSL_LIBSSL = -lssl -lcrypto
- 	ifdef OPENSSLDIR
- 		BASIC_CFLAGS += -I$(OPENSSLDIR)/include
- 		OPENSSL_LINK = -L$(OPENSSLDIR)/$(lib) $(CC_LD_DYNPATH)$(OPENSSLDIR)/$(lib)
+$OpenBSD: patch-Makefile,v 1.38 2013/05/02 10:01:34 dcoppa Exp $
+--- Makefile.orig	Tue Apr 30 12:18:10 2013
++++ Makefile	Tue Apr 30 12:33:22 2013
 @@ -2029,13 +2029,13 @@ $(REMOTE_CURL_PRIMARY): remote-curl.o http.o http-walk
  		$(LIBS) $(CURL_LIBCURL) $(EXPAT_LIBEXPAT)
  
