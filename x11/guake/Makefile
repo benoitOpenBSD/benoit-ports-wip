@@ -12,13 +12,13 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += GL X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes
-WANTLIB += Xi Xinerama Xrandr Xrender Xxf86vm atk-1.0 cairo drm
+WANTLIB += X11 Xcomposite Xcursor Xdamage Xext Xfixes util
+WANTLIB += Xi Xinerama Xrandr Xrender atk-1.0 cairo graphite2
 WANTLIB += expat ffi fontconfig freetype gdk-x11-2.0 gdk_pixbuf-2.0
 WANTLIB += gio-2.0 glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0
 WANTLIB += gtk-x11-2.0 harfbuzz icudata icule icuuc m pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread
-WANTLIB += pthread-stubs python2.7 stdc++ xcb xcb-render xcb-shm z
+WANTLIB += pthread-stubs python2.7 xcb xcb-render xcb-shm z
 
 MASTER_SITES =	${HOMEPAGE}files/
 
@@ -39,7 +39,6 @@ RUN_DEPENDS =	devel/py-notify \
 		devel/gsettings-desktop-schemas
 				 
 USE_GMAKE =	Yes
-USE_LIBTOOL =	Yes
 
 MODGNOME_DESKTOP_FILE =	Yes
 MODGNOME_ICON_CACHE =	Yes
