@@ -1,0 +1,19 @@
+
+===>  Installing guake-0.4.4 from /usr/ports/packages/amd64/all/
+guake-0.4.4|**********************************************************************************************************|100%
+(gconftool-2:16503): GConf-WARNING **: Client failed to connect to the D-BUS
+daemon:
+Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+I/O warning : failed to load external entity "/usr/local//*.schemas"
+Failed to open `/usr/local//*.schemas': No such file or directory
+/dev/null:1: parser error : Document is empty
+
+^
+/dev/null:1: parser error : Start tag expected, '<' not found
+
+^
+system(/bin/sh, -c, GCONF_CONFIG_SOURCE=`/usr/local/bin/gconftool-2
+--get-default-source` /usr/local/bin/gconftool-2 --makefile-install-rule
+-- /usr/local/${SCHEMAS_INSTDIR}/*.schemas > % /dev/null) failed:  exit(1)
+guake-0.4.4: ok
+
