@@ -14,5 +14,6 @@ PERMIT_PACKAGE_CDROM=	Yes
 RUN_DEPENDS=	devel/p5-Params-Validate \
 		graphics/p5-Graphics-ColorNames-WWW
 BUILD_DEPENDS =	${RUN_DEPENDS}
+TEST_DEPENDS =	devel/p5-Test-NoWarnings
 
 .include <bsd.port.mk>
