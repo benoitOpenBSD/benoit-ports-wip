@@ -1,0 +1,10 @@
+--- bwping6.c.orig	Sun May 12 13:04:50 2013
++++ bwping6.c	Sun May 12 13:05:05 2013
+@@ -5,6 +5,7 @@
+ #include <sys/types.h>
+ #include <sys/socket.h>
+ #include <sys/time.h>
++#include <sys/uio.h>
+ 
+ #include <arpa/inet.h>
+ 
