@@ -2,7 +2,7 @@
 
 COMMENT =		Drizzle Client & Protocol Library
 
-V =			5.1.2
+V =			5.1.4
 DISTNAME =		libdrizzle-${V}
 
 SHARED_LIBS +=		drizzle 0.0	# .0.6
@@ -15,20 +15,18 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # New BSD
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		https://launchpad.net/libdrizzle/5.1/${V}/+download/
 
 BUILD_DEPENDS =		textproc/py-sphinx
 
-USE_LIBTOOL =		Yes
+#USE_LIBTOOL =		No
+USE_GMAKE =		Yes
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED}
 			
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 #post-install:
 #	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/libdrizzle

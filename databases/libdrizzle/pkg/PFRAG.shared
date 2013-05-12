@@ -1,4 +1,0 @@
-@comment $OpenBSD$
-@lib lib/libdrizzle.so.${LIBdrizzle_VERSION}
-@lib share/examples/libdrizzle/libdrizzle.so.${LIBdrizzle_VERSION}
-@lib share/examples/libdrizzle/libsqlite3.so.${LIBsqlite3_VERSION}
