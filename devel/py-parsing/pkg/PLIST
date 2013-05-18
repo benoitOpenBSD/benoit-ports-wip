@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.13 2011/11/26 09:58:42 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.14 2013/01/05 13:10:22 benoit Exp $
 lib/python${MODPY_VERSION}/site-packages/pyparsing-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info
 lib/python${MODPY_VERSION}/site-packages/pyparsing.py
 lib/python${MODPY_VERSION}/site-packages/pyparsing.pyc
