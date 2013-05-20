@@ -2,7 +2,7 @@
 
 COMMENT =		GNU PIC assembler and utilities
 
-VERSION =		1.1.0
+VERSION =		1.2.0
 DISTNAME =		gputils-${VERSION}
 CATEGORIES =		devel
 
@@ -28,7 +28,7 @@ CONFIGURE_ARGS +=	--disable-html-doc
 USE_GROFF =		Yes
 USE_GMAKE =		Yes
 
-AUTOCONF_VERSION =	2.68
+AUTOCONF_VERSION =	2.69
 
 do-test: fake
 	cd ${WRKSRC}/gpasm/testsuite && sh ./test all
