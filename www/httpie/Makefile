@@ -2,7 +2,7 @@
 
 COMMENT =		HTTPie is a CLI, cURL-like tool for humans
 
-MODPY_EGG_VERSION =	0.5.0
+MODPY_EGG_VERSION =	0.5.1
 DISTNAME =		httpie-${MODPY_EGG_VERSION}
 CATEGORIES =		www
 
@@ -22,6 +22,6 @@ RUN_DEPENDS =		textproc/py-pygments \
 			www/py-requests
 BUILD_DEPENDS =		${RUN_DEPENDS}
 
-NO_TEST =            Yes
-               
+NO_TEST =		Yes
+
 .include <bsd.port.mk>
