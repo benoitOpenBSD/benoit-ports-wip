@@ -2,7 +2,7 @@
 
 COMMENT =		Sixth Edition UNIX shell
 
-DISTNAME =		osh-20090527
+DISTNAME =		osh-20130331
 CATEGORIES =		shells
 
 HOMEPAGE =		http://v6shell.org/
@@ -11,15 +11,12 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		c
 
 MASTER_SITES =		http://v6shell.org/src/
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 #ALL_TARGET =		oshall
 
