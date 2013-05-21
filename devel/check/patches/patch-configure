@@ -1,24 +1,12 @@
-#
-# remove usage of pthread to have better reliability in regression test
-# and less problem with the non-blocking semantics of pthread
-#
---- configure.orig	Tue Sep 22 01:18:45 2009
-+++ configure	Wed Sep 23 07:49:36 2009
-@@ -16606,6 +16606,8 @@
+$OpenBSD: patch-configure,v 1.1 2013/01/21 13:01:48 ajacoutot Exp $
+--- configure.orig	Mon Jan 21 11:37:18 2013
++++ configure	Mon Jan 21 11:37:22 2013
+@@ -12250,7 +12250,7 @@ fi
+ # Checks for libraries.
  
- fi
- 
-+acx_pthread_ok=no
-+
- rm -rf conftest.dSYM
- rm -f core conftest.err conftest.$ac_objext conftest_ipa8_conftest.oo \
-       conftest$ac_exeext conftest.$ac_ext
-@@ -16791,6 +16793,8 @@
+ # Link with rt for clock_gettime
+-LIBS=-lrt
++LIBS=
  
  
- fi
-+
-+acx_pthread_ok=no
- 
- rm -rf conftest.dSYM
- rm -f core conftest.err conftest.$ac_objext conftest_ipa8_conftest.oo \
+ # Checks for header files.
