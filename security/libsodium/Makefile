@@ -20,6 +20,6 @@ MASTER_SITES =		http://download.dnscrypt.org/libsodium/releases/
 WANTLIB += 		m
 
 CONFIGURE_STYLE =	gnu
-USE_LIBTOOL =		No
+#USE_LIBTOOL =		No
                                                 
 .include <bsd.port.mk>
