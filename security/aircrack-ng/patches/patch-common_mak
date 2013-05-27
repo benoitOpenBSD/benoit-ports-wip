@@ -1,32 +1,27 @@
---- common.mak.orig	Thu Mar 26 22:01:02 2009
-+++ common.mak	Wed Apr 15 18:36:48 2009
-@@ -31,16 +31,16 @@ COMMON_CFLAGS   += -DCYGWIN
+$OpenBSD$
+--- common.mak.orig	Sat May 25 23:49:08 2013
++++ common.mak	Mon May 27 08:40:19 2013
+@@ -31,7 +31,7 @@
+ 
+ 
+ ifeq ($(subst TRUE,true,$(filter TRUE true,$(sqlite) $(SQLITE))),true)
+-	COMMON_CFLAGS	+= -I/usr/local/include -DHAVE_SQLITE
++	COMMON_CFLAGS	+= -I${LOCALBASE}/include -DHAVE_SQLITE
  endif
  
- ifeq ($(SQLITE), true)
--    COMMON_CFLAGS	+= -I/usr/local/include -DHAVE_SQLITE
-+    COMMON_CFLAGS	+= -I${LOCALBASE}/include -DHAVE_SQLITE
- else
-     ifeq ($(sqlite), true)
--        COMMON_CFLAGS	+= -I/usr/local/include -DHAVE_SQLITE
-+        COMMON_CFLAGS	+= -I${LOCALBASE}/include -DHAVE_SQLITE
-     else
-         ifeq ($(SQLITE), TRUE)
--            COMMON_CFLAGS	+= -I/usr/local/include -DHAVE_SQLITE
-+            COMMON_CFLAGS	+= -I${LOCALBASE}/include -DHAVE_SQLITE
-         else
-             ifeq ($(sqlite), TRUE)
--                COMMON_CFLAGS	+= -I/usr/local/include -DHAVE_SQLITE
-+                COMMON_CFLAGS	+= -I${LOCALBASE}/include -DHAVE_SQLITE
-             endif
-         endif
-     endif
-@@ -70,7 +70,7 @@ OPTFLAGS        = -D_FILE_OFFSET_BITS=64
- CFLAGS          ?= -g -W -Wall -Werror -O3
+ ifeq ($(OSNAME), cygwin)
+@@ -110,11 +110,11 @@
+ CFLAGS          ?= -g -W -Wall -O3
  CFLAGS          += $(OPTFLAGS) $(REVFLAGS) $(COMMON_CFLAGS)
  
 -prefix          = /usr/local
 +prefix          = ${LOCALBASE}
  bindir          = $(prefix)/bin
  sbindir         = $(prefix)/sbin
- mandir          = $(prefix)/man/man1
+-mandir          = $(prefix)/share/man/man1
+-smandir         = $(prefix)/share/man/man8
++mandir          = $(prefix)/man/man1
++smandir         = $(prefix)/man/man8
+ datadir         = $(prefix)/share
+ docdir          = $(datadir)/doc/aircrack-ng
+ libdir		= $(prefix)/lib

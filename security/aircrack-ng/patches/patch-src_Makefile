@@ -1,23 +1,12 @@
---- src/Makefile.orig	Sat Feb 13 23:32:28 2010
-+++ src/Makefile	Tue May 31 19:45:28 2011
-@@ -99,16 +99,16 @@ LIBOSD		= $(OSD)/lib$(OSD).a
- LIBSSL		= -lssl -lcrypto $(LDFLAGS)
- LIBSQL		=
- ifeq ($(SQLITE), true)
+$OpenBSD$
+--- src/Makefile.orig	Thu Mar  7 20:16:40 2013
++++ src/Makefile	Mon May 27 08:29:36 2013
+@@ -96,7 +96,7 @@
+ 
+ 
+ ifeq ($(subst TRUE,true,$(filter TRUE true,$(sqlite) $(SQLITE))),true)
 -	LIBSQL		= -L/usr/local/lib -lsqlite3
 +	LIBSQL		= -L${LOCALBASE}/lib -lsqlite3
  else
- 	ifeq ($(sqlite), true)
--		LIBSQL          = -L/usr/local/lib -lsqlite3
-+		LIBSQL          = -L${LOCALBASE}/lib -lsqlite3
- 	else
- 		ifeq ($(SQLITE), TRUE)
--			LIBSQL          = -L/usr/local/lib -lsqlite3
-+			LIBSQL          = -L${LOCALBASE}/lib -lsqlite3
- 		else
- 			ifeq ($(sqlite), TRUE)
--				LIBSQL          = -L/usr/local/lib -lsqlite3
-+				LIBSQL          = -L${LOCALBASE}/lib -lsqlite3
- 			endif
- 		endif
- 	endif
+ 	LIBSQL		=
+ endif

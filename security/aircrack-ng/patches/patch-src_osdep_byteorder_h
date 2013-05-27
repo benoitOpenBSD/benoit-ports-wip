@@ -1,16 +1,16 @@
-$OpenBSD: patch-src_osdep_byteorder_h,v 1.2 2011/08/25 12:51:56 naddy Exp $
---- src/osdep/byteorder.h.orig	Wed Aug 24 21:36:30 2011
-+++ src/osdep/byteorder.h	Wed Aug 24 21:55:32 2011
-@@ -167,7 +167,7 @@
+$OpenBSD$
+--- src/osdep/byteorder.h.orig	Mon May 27 08:25:27 2013
++++ src/osdep/byteorder.h	Mon May 27 08:36:36 2013
+@@ -181,7 +181,7 @@
  	 * Solaris
  	 * -------
  	 */
--	#if defined(__sparc__)
-+	#if defined(__sun) && defined(__SVR4)
+-	#if defined(__sparc__) && defined(__sun__)
++	#if defined(__sparc__) && defined(__sun__) && defined(__SVR4)
  	#include <sys/byteorder.h>
  	#include <sys/types.h>
  	#include <unistd.h>
-@@ -210,6 +210,19 @@
+@@ -224,6 +224,19 @@
  	// FreeBSD
  	#ifdef __FreeBSD__
  		#include <machine/endian.h>
