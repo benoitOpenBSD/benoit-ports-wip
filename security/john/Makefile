@@ -1,33 +1,31 @@
-# $OpenBSD: Makefile,v 1.44 2011/06/24 15:19:18 benoit Exp $
+# $OpenBSD: Makefile,v 1.47 2013/03/11 11:41:25 espie Exp $
 
 COMMENT =		extremely fast password cracker
 
-DISTNAME =		john-1.7.9
+DISTNAME =		john-1.8.0
 CATEGORIES =		security
 
 HOMEPAGE =		http://www.openwall.com/john/
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# GPL & Public Domain
+# GPLv2 & Public Domain
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		c
 
-MASTER_SITES =		${HOMEPAGE}/g/
+MASTER_SITES =		${HOMEPAGE}j/
 
 WRKSRC =		${WRKDIST}/src
 
 MAKE_FLAGS =		CC=${CC} AS=${CC} LD=${CC} \
-			CFLAGS="${CFLAGS} -c" LDFLAGS="${LDFLAGS}"
+			CFLAGS="${CFLAGS} -c" LDFLAGS="${LDFLAGS}" \
+			OPT_NORMAL="" OPT_INLINE=""
 
-REGRESS_TARGET =	check
+TEST_TARGET =	check
 
 .if ${MACHINE_ARCH} == "i386"
-ALL_TARGET=		openbsd-x86-mmx
+ALL_TARGET=		openbsd-x86-any
 .elif ${MACHINE_ARCH} == "amd64"
 ALL_TARGET=		openbsd-x86-64
 .elif ${MACHINE_ARCH} == "sparc"
