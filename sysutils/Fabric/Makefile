@@ -2,7 +2,7 @@
 
 COMMENT =		Pythonic tool for remote execution and deployment.
 
-MODPY_EGG_VERSION =	1.6.0
+MODPY_EGG_VERSION =	1.6.1
 DISTNAME =		Fabric-${MODPY_EGG_VERSION}
 CATEGORIES =		sysutils
 
