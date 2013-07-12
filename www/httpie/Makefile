@@ -18,6 +18,7 @@ MASTER_SITES =		${MASTER_SITE_PYPI:=h/httpie/}
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
 
+# XXX need py-requests>=1.2.3
 RUN_DEPENDS =		textproc/py-pygments \
 			www/py-requests
 BUILD_DEPENDS =		${RUN_DEPENDS}
