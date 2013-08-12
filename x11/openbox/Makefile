@@ -1,12 +1,11 @@
-# $OpenBSD: Makefile,v 1.63 2011/11/02 19:12:01 jasper Exp $
+# $OpenBSD: Makefile,v 1.70 2013/05/31 15:35:14 ajacoutot Exp $
 
 COMMENT =	small, fast & usable window manager
 
-V =		3.5.0
+V =		3.5.2
 DISTNAME =	openbox-${V}
-REVISION =	0
-SHARED_LIBS +=  obt                  0.0      # 0.1
-SHARED_LIBS +=  obrender             10.0      # 27.1
+SHARED_LIBS +=  obt                  1.0       # 2.1
+SHARED_LIBS +=  obrender             11.0      # 29.1
 
 CATEGORIES =	x11
 
@@ -16,15 +15,14 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB += ICE Imlib2 SM X11 X11-xcb Xau Xcursor Xext Xfixes Xft
 WANTLIB += Xinerama Xrandr Xrender c expat ffi fontconfig freetype
-WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 m pango-1.0
-WANTLIB += pangoft2-1.0 pangoxft-1.0 pcre pthread startup-notification-1
-WANTLIB += xcb xcb-aux xml2 z
+WANTLIB += glib-2.0 gmodule-2.0 gobject-2.0 gthread-2.0 harfbuzz
+WANTLIB += m pango-1.0 pangoft2-1.0 pangoxft-1.0 gdk_pixbuf-2.0
+WANTLIB += pcre pthread startup-notification-1 xcb xcb-aux xml2
+WANTLIB += cairo gio-2.0 graphite2 pangocairo-1.0 pixman-1 png
+WANTLIB += pthread-stubs xcb-render xcb-shm z croco-0.6 rsvg-2
 
 MASTER_SITES =	${HOMEPAGE}dist/openbox/
 
@@ -36,7 +34,9 @@ RUN_DEPENDS =	devel/py-xdg \
 LIB_DEPENDS +=	devel/pango \
 		devel/startup-notification \
 		graphics/imlib2 \
-		textproc/libxml
+		textproc/libxml \
+		www/libcroco \
+		x11/gnome/librsvg
 
 FAKE_FLAGS =	sysconfdir="${PREFIX}/share/examples/openbox" \
 		rcdir="${PREFIX}/share/examples/openbox" \
@@ -46,7 +46,6 @@ API_V = 	${V:R}
 SUBST_VARS =	API_V
 
 USE_GMAKE =	Yes
-USE_LIBTOOL =	Yes
 MODPY_RUNDEP =	No
 MODPY_ADJ_FILES =data/autostart/openbox-xdg-autostart
 
@@ -54,7 +53,7 @@ CONFIGURE_STYLE = gnu
 CONFIGURE_ARGS = ${CONFIGURE_SHARED} \
 		--docdir=${PREFIX}/share/examples/openbox
 CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
+		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
 
 pre-configure:
 	${SUBST_CMD} ${WRKSRC}/data/autostart/autostart.in
