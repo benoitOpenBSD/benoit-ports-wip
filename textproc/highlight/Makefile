@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.19 2012/09/19 08:15:09 jasper Exp $
+# $OpenBSD: Makefile,v 1.22 2013/06/05 07:33:21 benoit Exp $
 
 COMMENT =		convert source code to markup formats
 
-DISTNAME =		highlight-3.13
+DISTNAME =		highlight-3.15
 CATEGORIES =		textproc converters
 
 HOMEPAGE =		http://www.andre-simon.de/
@@ -31,7 +31,7 @@ MAKE_FLAGS =		CXX=${CXX} \
 			CFLAGS+="`pkg-config --cflags ${MODLUA_DEP}`" \
 			LUA_LIBS="`pkg-config --libs ${MODLUA_DEP}`"
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 SHARE_DIRS =		langDefs themes
 
