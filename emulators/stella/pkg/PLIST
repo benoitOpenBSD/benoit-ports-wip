@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.10 2013/01/05 21:43:15 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.11 2013/07/04 12:44:30 benoit Exp $
 @bin bin/stella
 share/doc/stella/
 share/doc/stella/debugger.html

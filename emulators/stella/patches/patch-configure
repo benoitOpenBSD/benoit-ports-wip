@@ -1,4 +1,4 @@
-$OpenBSD: patch-configure,v 1.2 2012/04/27 14:33:23 gonzalo Exp $
+$OpenBSD: patch-configure,v 1.3 2013/07/04 12:44:30 benoit Exp $
 --- configure.orig	Wed Apr 17 17:00:32 2013
 +++ configure	Thu Jul  4 11:49:38 2013
 @@ -589,7 +589,7 @@ if test "$_libpng" = auto ; then
