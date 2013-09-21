@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.15 2012/06/17 09:50:46 benoit Exp $
+# $OpenBSD: Makefile,v 1.17 2013/07/02 15:06:51 benoit Exp $
 
 COMMENT =		word-based diff program
 
-DISTNAME =		dwdiff-2.0.4
+DISTNAME =		dwdiff-2.0.7
 CATEGORIES =		sysutils textproc
 
 HOMEPAGE =		http://os.ghalkes.nl/dwdiff.html
@@ -11,9 +11,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		c icudata icui18n icuuc m pthread
 
@@ -30,7 +27,7 @@ CONFIGURE_ENV =		CFLAGS="-I${LOCALBASE}/include ${CFLAGS}" \
 			LINGUAS="nl de fr es"
 
 USE_GROFF =		Yes
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 LANGS =			de nl fr es
 
