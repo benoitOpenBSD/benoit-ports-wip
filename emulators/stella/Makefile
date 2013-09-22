@@ -23,7 +23,7 @@ LIB_DEPENDS =		devel/sdl \
 CXXFLAGS +=		-I${X11BASE}/include \
 			-L${LOCALBASE}/lib
 CONFIGURE_STYLE =	simple
-CONFIGURE_ARGS +=	--disable-gl --with-libpng-prefix=/usr/local
+CONFIGURE_ARGS +=	--disable-gl --with-libpng-prefix=${LOCALBASE}
 
 USE_GMAKE =		Yes
 
