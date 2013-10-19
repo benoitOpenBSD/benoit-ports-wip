@@ -2,10 +2,10 @@
 
 COMMENT =	display file system space usage using graph and colors
 
-DISTNAME =	dfc-3.0.3
+DISTNAME =	dfc-3.0.4
 CATEGORIES =	sysutils
 
-MASTER_SITES =  http://projects.gw-computing.net/attachments/download/78/
+MASTER_SITES =	http://projects.gw-computing.net/attachments/download/79/
 HOMEPAGE =	http://projects.gw-computing.net/projects/dfc
 
 # BSD
