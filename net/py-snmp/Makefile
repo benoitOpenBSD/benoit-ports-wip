@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.15 2013/01/07 16:23:21 benoit Exp $
+# $OpenBSD: Makefile,v 1.17 2013/03/11 11:35:55 espie Exp $
 
 COMMENT=	SNMP framework for Python
 
-MODPY_EGG_VERSION = 4.2.4
+MODPY_EGG_VERSION = 4.2.5
 DISTNAME=	pysnmp-${MODPY_EGG_VERSION}
 PKGNAME=	${DISTNAME:S/py/py-/}
 CATEGORIES=	net
@@ -30,6 +30,6 @@ post-install:
 	cd ${WRKSRC}/docs; tar cf - . | tar xf - -C ${DOCSDIR} 
 	cd ${WRKSRC}/examples; tar cf - . | tar xf - -C ${EXAMPLESDIR}
 
-NO_REGRESS =	Yes
+NO_TEST =	Yes
 
 .include <bsd.port.mk>
