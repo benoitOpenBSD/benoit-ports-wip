@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.7 2013/01/04 20:46:58 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.8 2013/07/18 15:13:03 benoit Exp $
 @conflict linkchecker->=7.1,<7.1p1
 lib/python${MODPY_VERSION}/site-packages/dns/
 lib/python${MODPY_VERSION}/site-packages/dns/__init__.py
