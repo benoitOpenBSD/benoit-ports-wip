@@ -1,0 +1,12 @@
+$OpenBSD: patch-src_Makefile_in,v 1.7 2013/05/29 14:08:06 jasper Exp $
+--- src/Makefile.in.orig	Fri Oct 11 08:26:47 2013
++++ src/Makefile.in	Sun Oct 20 11:52:53 2013
+@@ -223,7 +223,7 @@ am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(p
+ 	"$(DESTDIR)$(pkgdatadir)"
+ LTLIBRARIES = $(lib_LTLIBRARIES) $(noinst_LTLIBRARIES) \
+ 	$(pkgverlib_LTLIBRARIES)
+-cmd_mirror_la_LIBADD =
++cmd_mirror_la_LIBADD = $(GNULIB)
+ am_cmd_mirror_la_OBJECTS = MirrorJob.lo
+ cmd_mirror_la_OBJECTS = $(am_cmd_mirror_la_OBJECTS)
+ AM_V_lt = $(am__v_lt_@AM_V@)

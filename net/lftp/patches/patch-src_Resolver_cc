@@ -1,0 +1,12 @@
+$OpenBSD: patch-src_Resolver_cc,v 1.10 2013/05/29 14:08:06 jasper Exp $
+--- src/Resolver.cc.orig	Tue Mar 19 14:00:26 2013
++++ src/Resolver.cc	Sun Oct 20 11:52:53 2013
+@@ -798,8 +798,6 @@ void Resolver::LookupOne(const char *name)
+ #  undef h_errno // it could be a macro, but we want it to be local variable.
+       int h_errno=0;
+       ha=getipnodebyname(name,af,0,&h_errno);
+-# elif defined(HAVE_GETHOSTBYNAME2)
+-      ha=gethostbyname2(name,af);
+ # else
+       if(af==AF_INET)
+ 	 ha=gethostbyname(name);
