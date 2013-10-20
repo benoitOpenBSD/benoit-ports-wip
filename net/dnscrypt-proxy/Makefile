@@ -3,7 +3,7 @@
 COMMENT-main=		secure communications between a DNS client and resolver
 COMMENT-plugins=	example plugins for dnscrypt-proxy
 
-V=			1.3.0
+V=			1.3.3
 
 DISTNAME=		dnscrypt-proxy-${V}
 CATEGORIES=		net
