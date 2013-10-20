@@ -2,7 +2,7 @@
 
 COMMENT =		multi-threaded HTTP benchmark and regression tester
 
-DISTNAME =		siege-2.78
+DISTNAME =		siege-3.0.4
 
 CATEGORIES =		benchmarks www
 
@@ -14,8 +14,8 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB += c crypto pthread ssl
 
 # main distribution site is broken for EPSV/EPRT as of 20100915
-MASTER_SITES =		http://spacehopper.org/mirrors/ \
-			ftp://ftp.joedog.org/pub/siege/
+MASTER_SITES =		http://www.joedog.org/pub/siege/ \
+			http://spacehopper.org/mirrors/ 
 
 MAKE_FLAGS =		localstatedir=${LOCALSTATEDIR}
 USE_GROFF =		Yes
