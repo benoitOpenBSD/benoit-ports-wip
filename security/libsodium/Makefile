@@ -2,11 +2,11 @@
 
 COMMENT =	library for network communication, encryption, etc
 
-V =		0.4.3
+V =		0.4.4
 DISTNAME =	libsodium-${V}
 CATEGORIES = 	security
 
-SHARED_LIBS +=	sodium	0.0 # 7.0
+SHARED_LIBS +=	sodium	0.0 # 9.0
 
 HOMEPAGE =	https://github.com/jedisct1/libsodium
  
