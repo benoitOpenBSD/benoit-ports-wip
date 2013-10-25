@@ -36,3 +36,12 @@ lib/python${MODPY_VERSION}/site-packages/httpie/solarized.py
 lib/python${MODPY_VERSION}/site-packages/httpie/solarized.pyc
 lib/python${MODPY_VERSION}/site-packages/httpie/utils.py
 lib/python${MODPY_VERSION}/site-packages/httpie/utils.pyc
+lib/python${MODPY_VERSION}/site-packages/httpie/plugins/
+lib/python${MODPY_VERSION}/site-packages/httpie/plugins/__init__.py
+lib/python${MODPY_VERSION}/site-packages/httpie/plugins/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/httpie/plugins/base.py
+lib/python${MODPY_VERSION}/site-packages/httpie/plugins/base.pyc
+lib/python${MODPY_VERSION}/site-packages/httpie/plugins/builtin.py
+lib/python${MODPY_VERSION}/site-packages/httpie/plugins/builtin.pyc
+lib/python${MODPY_VERSION}/site-packages/httpie/plugins/manager.py
+lib/python${MODPY_VERSION}/site-packages/httpie/plugins/manager.pyc

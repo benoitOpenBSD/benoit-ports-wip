@@ -2,7 +2,7 @@
 
 COMMENT =		HTTPie is a CLI, cURL-like tool for humans
 
-MODPY_EGG_VERSION =	0.6.0
+MODPY_EGG_VERSION =	0.7.2
 DISTNAME =		httpie-${MODPY_EGG_VERSION}
 CATEGORIES =		www
 
@@ -18,7 +18,7 @@ MASTER_SITES =		${MASTER_SITE_PYPI:=h/httpie/}
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
 
-# XXX need py-requests>=1.2.3
+# XXX need py-pygments >= 2.0.0
 RUN_DEPENDS =		textproc/py-pygments \
 			www/py-requests
 BUILD_DEPENDS =		${RUN_DEPENDS}
