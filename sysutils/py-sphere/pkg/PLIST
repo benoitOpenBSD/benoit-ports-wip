@@ -98,6 +98,8 @@ lib/python${MODPY_VERSION}/site-packages/pysphere/resources/vi_exception.py
 lib/python${MODPY_VERSION}/site-packages/pysphere/resources/vi_exception.pyc
 lib/python${MODPY_VERSION}/site-packages/pysphere/version.py
 lib/python${MODPY_VERSION}/site-packages/pysphere/version.pyc
+lib/python${MODPY_VERSION}/site-packages/pysphere/vi_managed_entity.py
+lib/python${MODPY_VERSION}/site-packages/pysphere/vi_managed_entity.pyc
 lib/python${MODPY_VERSION}/site-packages/pysphere/vi_mor.py
 lib/python${MODPY_VERSION}/site-packages/pysphere/vi_mor.pyc
 lib/python${MODPY_VERSION}/site-packages/pysphere/vi_performance_manager.py

@@ -2,7 +2,7 @@
 
 COMMENT =		vSphere SDK for python.
 
-MODPY_EGG_VERSION =	0.1.7
+MODPY_EGG_VERSION =	0.1.8
 DISTNAME =		pysphere-${MODPY_EGG_VERSION}
 PKGNAME =		py-sphere-${MODPY_EGG_VERSION}
 CATEGORIES =		sysutils
