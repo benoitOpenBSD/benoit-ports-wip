@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =		library implementing the SSH2 protocol
+COMMENT =		an SSL library with an intuitive API
 
 V =			1.3.1
 DISTNAME =		polarssl-${V}-gpl
