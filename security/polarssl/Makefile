@@ -25,5 +25,9 @@ USE_GMAKE =		Yes
 WRKDIST =		${WRKDIR}/polarssl-${V}
 
 do-install:
+		${INSTALL_DATA} ${WRKSRC}/library/libpolarssl.* ${PREFIX}/lib
+		cd ${PREFIX}/lib && mv libpolarssl.so libpolarssl.so.${LIBpolarssl_VERSION} 
+		${INSTALL_DATA_DIR} ${PREFIX}/include/polarssl
+		${INSTALL_DATA} ${WRKSRC}/include/polarssl/* ${PREFIX}/include/polarssl		
 
 .include <bsd.port.mk>
