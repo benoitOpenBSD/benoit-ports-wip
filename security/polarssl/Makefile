@@ -15,13 +15,15 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		z
+WANTLIB =		 c crypto ssl
 
 MASTER_SITES =		https://polarssl.org/download/
 EXTRACT_SUFX =		.tgz
 
-MODULES =		devel/cmake
+USE_GMAKE =		Yes
 
 WRKDIST =		${WRKDIR}/polarssl-${V}
+
+do-install:
 
 .include <bsd.port.mk>
