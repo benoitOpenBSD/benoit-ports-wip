@@ -1,3 +1,4 @@
-PolarSSL makes it trivially easy for developers to include cryptographic 
-and SSL/TLS capabilities in their (embedded) products, facilitating this
-functionality with a minimal coding footprint.
+PolarSSL is a light-weight open source cryptographic and SSL/TLS library
+written in C. PolarSSL is written with embedded systems in mind and has
+been ported on a number of architectures, including ARM, PowerPC, MIPS
+and Motorola 68000.
