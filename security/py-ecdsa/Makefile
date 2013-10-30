@@ -18,7 +18,6 @@ MASTER_SITES =		${MASTER_SITE_PYPI:=e/ecdsa/}
 
 MODULES =		lang/python
 
-#do-test:
-#			cd ${WRKSRC}/ecdsa && ${MODPY_BIN} test_pyecdsa.py 
+NO_TEST =		Yes
         
 .include <bsd.port.mk>

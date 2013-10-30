@@ -20,7 +20,8 @@ MODULES = 		lang/python
 
 MODPY_SETUPTOOLS = 	Yes
 
-RUN_DEPENDS = 		security/py-crypto
+RUN_DEPENDS = 		security/py-crypto \
+			security/py-ecdsa
 TEST_DEPENDS =		${RUN_DEPENDS}
 
 pre-build:
