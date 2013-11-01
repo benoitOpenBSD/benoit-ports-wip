@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.4 2009/03/13 17:58:47 jasper Exp $
+@comment $OpenBSD: PLIST,v 1.5 2013/03/14 10:04:29 benoit Exp $
 @bin bin/medcon
 @bin bin/xmedcon
 bin/xmedcon-config
