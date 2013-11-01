@@ -18,6 +18,7 @@ MASTER_SITES =		${MASTER_SITE_PYPI:=e/ecdsa/}
 
 MODULES =		lang/python
 
+# XXX modify test_pyecdsa.py to enable test in the future !
 NO_TEST =		Yes
-        
+
 .include <bsd.port.mk>
