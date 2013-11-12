@@ -23,7 +23,7 @@ WANTLIB += pixman-1 png pthread pthread-stubs schroedinger-1.0
 WANTLIB += speex stdc++ theoradec theoraenc vorbis vorbisenc vpx
 WANTLIB += x264 xcb xcb-render xcb-shm xml2 z
 WANTLIB += dbus-1 dbus-glib-1 ffi graphite2 opus
-WANTLIB += harfbuzz icudata icule icuuc xvidcore
+WANTLIB += harfbuzz xvidcore
 
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=amide/}
 
