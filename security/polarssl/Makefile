@@ -2,7 +2,7 @@
 
 COMMENT =		an SSL library with an intuitive API
 
-V =			1.3.1
+V =			1.3.2
 DISTNAME =		polarssl-${V}-gpl
 PKGNAME =		${DISTNAME:S/-gpl//}
 CATEGORIES =		security
