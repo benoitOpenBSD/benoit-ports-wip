@@ -1,0 +1,12 @@
+$OpenBSD$
+--- CMakeLists.txt.orig	Tue Nov  5 22:39:25 2013
++++ CMakeLists.txt	Wed Nov 13 10:28:56 2013
+@@ -105,7 +105,7 @@
+ 	if(USE_SYSTEM_POLARSSL)
+ 		find_library(POLARSSL polarssl)
+ 	else()
+-		add_definitions(-DPOLARSSL_THREADING_PTHREAD -DPOLARSSL_THREADING_C)
++#		add_definitions(-DPOLARSSL_THREADING_PTHREAD -DPOLARSSL_THREADING_C)
+ 		add_subdirectory(polarssl)
+ 	endif()
+ 	set(POLARSSL_LIBRARY "polarssl")
