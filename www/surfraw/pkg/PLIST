@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.15 2010/07/30 21:07:17 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.16 2011/07/15 13:27:00 benoit Exp $
 @conflict p5-WWW-Wikipedia-*
 bin/opensearch-discover
 bin/opensearch-genquery
