@@ -6,6 +6,7 @@ share/doc/mednafen/Makefile.in
 share/doc/mednafen/README.jpeg4a
 share/doc/mednafen/bwolf0.png
 share/doc/mednafen/bwolf1.png
+share/doc/mednafen/cheat.html
 share/doc/mednafen/cheats.txt
 share/doc/mednafen/debugger.html
 share/doc/mednafen/docgen.inc

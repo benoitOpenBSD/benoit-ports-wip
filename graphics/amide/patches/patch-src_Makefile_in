@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-src_Makefile_in,v 1.4 2013/11/03 10:31:01 benoit Exp $
 
 Don't build amide_gnome.c, it's only there because upstream didn't
 migrate away from this deprecated library yet. It's function is to
