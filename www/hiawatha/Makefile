@@ -3,7 +3,7 @@
 SHARED_LIBS=	polarssl 2.0
 
 COMMENT=	secure webserver
-DISTNAME =	hiawatha-9.3
+DISTNAME =	hiawatha-9.3.1
 CATEGORIES=	www net
 
 HOMEPAGE=	http://www.hiawatha-webserver.org/
