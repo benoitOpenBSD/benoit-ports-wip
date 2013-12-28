@@ -1,5 +1,6 @@
 @comment $OpenBSD$
 @bin bin/yara
+@bin bin/yarac
 include/yara.h
 lib/libyara.a
 lib/libyara.la
