@@ -1,6 +1,4 @@
 @comment $OpenBSD: PLIST,v 1.20 2013/11/01 07:28:15 benoit Exp $
-lib/python${MODPY_VERSION}/
-lib/python${MODPY_VERSION}/site-packages/
 lib/python${MODPY_VERSION}/site-packages/paramiko/
 lib/python${MODPY_VERSION}/site-packages/paramiko-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
 lib/python${MODPY_VERSION}/site-packages/paramiko-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
