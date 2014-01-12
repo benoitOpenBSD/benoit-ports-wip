@@ -1,7 +1,7 @@
 $OpenBSD$
---- Makefile.orig	Thu Jul 11 10:52:21 2013
-+++ Makefile	Fri Nov  1 08:02:21 2013
-@@ -19,30 +19,30 @@
+--- Makefile.orig	Thu Jan  2 09:24:28 2014
++++ Makefile	Wed Jan  8 09:42:38 2014
+@@ -20,30 +20,30 @@
  #   % make COPTS="-DDO_HTPASSWD"
  
  COPTS+=	-DDO_HTPASSWD
@@ -11,13 +11,13 @@ $OpenBSD$
 +MAN=	bozohttpd.8
  BUILDSYMLINKS+=bozohttpd.8 httpd.8
  SRCS=	bozohttpd.c ssl-bozo.c auth-bozo.c cgi-bozo.c daemon-bozo.c \
- 	tilde-luzah-bozo.c dir-index-bozo.c content-bozo.c
+ 	tilde-luzah-bozo.c dir-index-bozo.c content-bozo.c lua-bozo.c
  SRCS+=	main.c
  
--LDADD=	-lcrypt
--DPADD=	${LIBCRYPT}
-+#LDADD=	-lcrypt
-+#DPADD=	${LIBCRYPT}
+-LDADD=	-lcrypt -llua -lm
+-DPADD=	${LIBCRYPT} ${LIBLUA} ${LIBM}
++LDADD=	-llua -lm
++DPADD=	${LIBLUA} ${LIBM}
  
  WARNS?=	4
  
