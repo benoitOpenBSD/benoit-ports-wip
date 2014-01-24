@@ -1,12 +1,12 @@
 $OpenBSD$
---- Makefile.orig	Wed Dec 18 03:16:07 2013
-+++ Makefile	Wed Dec 18 10:53:27 2013
-@@ -6,7 +6,7 @@
- RANLIB ?= $(CROSS)ranlib
- STRIP ?= $(CROSS)strip
+--- Makefile~	Thu Jan 16 14:07:59 2014
++++ Makefile	Mon Jan 20 15:01:51 2014
+@@ -15,7 +15,7 @@
+ STRIP = $(CROSS)strip
+ endif
  
 -CFLAGS += -fPIC -O3 -Wall -Iinclude
 +CFLAGS += -fPIC -Wall -Iinclude
- LDFLAGS += -shared
  
- PREFIX ?= /usr
+ ifeq ($(USE_SYS_DYN_MEM),yes)
+ CFLAGS += -DUSE_SYS_DYN_MEM
