@@ -7,6 +7,6 @@ include/capstone/mips.h
 include/capstone/ppc.h
 include/capstone/x86.h
 lib/libcapstone.a
-lib/libcapstone.so
+@lib lib/libcapstone.so.${LIBcapstone_VERSION}
 lib/pkgconfig/
 lib/pkgconfig/capstone.pc
