@@ -18,8 +18,8 @@ MASTER_SITES =		${MASTER_SITE_PYPI:=c/capstone/}
 
 MODULES =		lang/python
 
-NO_TEST =		Yes
-
 BUILD_DEPENDS =		devel/capstone
+
+NO_TEST =		Yes
 
 .include <bsd.port.mk>
