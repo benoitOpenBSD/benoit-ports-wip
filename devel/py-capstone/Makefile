@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =		Python API for dealing capstone disassembly engine
+COMMENT =		Python API for capstone disassembly engine
 
 MODPY_EGG_VERSION =	2.0
 DISTNAME =		capstone-${MODPY_EGG_VERSION}
