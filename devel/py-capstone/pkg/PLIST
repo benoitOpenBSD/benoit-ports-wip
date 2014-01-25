@@ -1,0 +1,27 @@
+@comment $OpenBSD$
+lib/python${MODPY_VERSION}/site-packages/capstone/
+lib/python${MODPY_VERSION}/site-packages/capstone-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info
+lib/python${MODPY_VERSION}/site-packages/capstone/__init__.py
+lib/python${MODPY_VERSION}/site-packages/capstone/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/capstone/arm.py
+lib/python${MODPY_VERSION}/site-packages/capstone/arm.pyc
+lib/python${MODPY_VERSION}/site-packages/capstone/arm64.py
+lib/python${MODPY_VERSION}/site-packages/capstone/arm64.pyc
+lib/python${MODPY_VERSION}/site-packages/capstone/arm64_const.py
+lib/python${MODPY_VERSION}/site-packages/capstone/arm64_const.pyc
+lib/python${MODPY_VERSION}/site-packages/capstone/arm_const.py
+lib/python${MODPY_VERSION}/site-packages/capstone/arm_const.pyc
+lib/python${MODPY_VERSION}/site-packages/capstone/capstone.py
+lib/python${MODPY_VERSION}/site-packages/capstone/capstone.pyc
+lib/python${MODPY_VERSION}/site-packages/capstone/mips.py
+lib/python${MODPY_VERSION}/site-packages/capstone/mips.pyc
+lib/python${MODPY_VERSION}/site-packages/capstone/mips_const.py
+lib/python${MODPY_VERSION}/site-packages/capstone/mips_const.pyc
+lib/python${MODPY_VERSION}/site-packages/capstone/ppc.py
+lib/python${MODPY_VERSION}/site-packages/capstone/ppc.pyc
+lib/python${MODPY_VERSION}/site-packages/capstone/ppc_const.py
+lib/python${MODPY_VERSION}/site-packages/capstone/ppc_const.pyc
+lib/python${MODPY_VERSION}/site-packages/capstone/x86.py
+lib/python${MODPY_VERSION}/site-packages/capstone/x86.pyc
+lib/python${MODPY_VERSION}/site-packages/capstone/x86_const.py
+lib/python${MODPY_VERSION}/site-packages/capstone/x86_const.pyc
