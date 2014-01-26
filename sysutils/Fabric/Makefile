@@ -23,7 +23,7 @@ RUN_DEPENDS =		security/py-paramiko
 
 TEST_DEPENDS =		devel/py-nose \
 			devel/py-fudge
-			
+
 #NO_TEST =		Yes
 
 do-test:
