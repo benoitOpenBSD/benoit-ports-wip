@@ -25,3 +25,5 @@ lib/python${MODPY_VERSION}/site-packages/capstone/x86.py
 lib/python${MODPY_VERSION}/site-packages/capstone/x86.pyc
 lib/python${MODPY_VERSION}/site-packages/capstone/x86_const.py
 lib/python${MODPY_VERSION}/site-packages/capstone/x86_const.pyc
+share/doc/${MODPY_PY_PREFIX}capstone/
+share/doc/${MODPY_PY_PREFIX}capstone/LICENSE.TXT

@@ -18,8 +18,15 @@ MASTER_SITES =		${MASTER_SITE_PYPI:=c/capstone/}
 
 MODULES =		lang/python
 
+#FLAVORS =		python3
+#FLAVOR ?=
+
 BUILD_DEPENDS =		devel/capstone
 
 NO_TEST =		Yes
+
+post-install:
+			${INSTALL_DATA_DIR} ${PREFIX}/share/doc/py-capstone
+			${INSTALL_DATA} ${WRKSRC}/LICENSE.TXT ${PREFIX}/share/doc/py-capstone/LICENSE.TXT
 
 .include <bsd.port.mk>
