@@ -1,8 +1,8 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.1.1.1 2014/01/24 22:47:46 benoit Exp $
 
 COMMENT =	multi-platform, multi-architecture disassembly framework
 
-DISTNAME =	capstone-2.0
+DISTNAME =	capstone-2.1
 CATEGORIES =	devel
 HOMEPAGE =	http://www.capstone-engine.org/
 
@@ -13,7 +13,7 @@ SHARED_LIBS =	capstone	0.0
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES = 		http://capstone-engine.org/download/2.0/
+MASTER_SITES = 		http://capstone-engine.org/download/2.1/
 
 USE_GMAKE =		Yes
 FAKE_FLAGS =		PREFIX=${PREFIX}

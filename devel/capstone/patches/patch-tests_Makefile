@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-tests_Makefile,v 1.1.1.1 2014/01/24 22:47:46 benoit Exp $
 Avoid overriding optimization flags.
 --- tests/Makefile.orig	Fri Jan 24 13:46:13 2014
 +++ tests/Makefile	Fri Jan 24 13:46:33 2014

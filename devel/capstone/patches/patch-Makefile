@@ -1,11 +1,11 @@
-$OpenBSD$
+$OpenBSD: patch-Makefile,v 1.1.1.1 2014/01/24 22:47:46 benoit Exp $
 1. Do not force some compilation flags.
 2. Set library version, respecting OpenBSD policy.
 3. Avoid duplication of defines, linked to (2).
 4. Do not use $(INSTALL_*) at the build stage.
---- Makefile.orig	Wed Jan 22 14:33:35 2014
-+++ Makefile	Fri Jan 24 13:53:48 2014
-@@ -15,7 +15,7 @@ RANLIB = $(CROSS)ranlib
+--- Makefile.orig	Tue Mar  4 17:35:03 2014
++++ Makefile	Sat Mar  8 15:19:39 2014
+@@ -15,7 +15,7 @@
  STRIP = $(CROSS)strip
  endif
  
@@ -14,7 +14,7 @@ $OpenBSD$
  
  ifeq ($(USE_SYS_DYN_MEM),yes)
  CFLAGS += -DUSE_SYS_DYN_MEM
-@@ -43,6 +43,10 @@ INSTALL_DATA ?= $(INSTALL_BIN) -m0644
+@@ -43,6 +43,10 @@
  INSTALL_LIBRARY ?= $(INSTALL_BIN) -m0755
  
  LIBNAME = capstone
@@ -23,9 +23,9 @@ $OpenBSD$
 +LIBVER = $(LIB$(LIBNAME)_VERSION)
 +endif
  
- LIBOBJ =
- LIBOBJ += cs.o utils.o SStream.o MCInstrDesc.o MCRegisterInfo.o
-@@ -120,7 +124,11 @@ endif
+ 
+ DEP_ARM =
+@@ -178,7 +182,11 @@
  endif
  endif
  
@@ -37,7 +37,7 @@ $OpenBSD$
  ARCHIVE = lib$(LIBNAME).$(AR_EXT)
  PKGCFGF = $(LIBNAME).pc
  
-@@ -130,7 +138,7 @@ VERSION=$(shell echo `grep -e PKG_MAJOR -e PKG_MINOR C
+@@ -188,7 +196,7 @@
  
  all: $(LIBRARY) $(ARCHIVE) $(PKGCFGF)
  	$(MAKE) -C tests
@@ -46,7 +46,7 @@ $OpenBSD$
  
  $(LIBRARY): $(LIBOBJ)
  	$(CC) $(LDFLAGS) $(LIBOBJ) -o $(LIBRARY)
-@@ -152,8 +160,8 @@ $(PKGCFGF):
+@@ -235,8 +243,8 @@
  
  install: $(PKGCFGF) $(ARCHIVE) $(LIBRARY)
  	mkdir -p $(LIBDIR)
@@ -56,14 +56,14 @@ $OpenBSD$
 +	$(INSTALL_DATA) $(ARCHIVE) $(LIBDIR)
  	mkdir -p $(INCDIR)/$(LIBNAME)
  	$(INSTALL_DATA) include/*.h $(INCDIR)/$(LIBNAME)
- 	mkdir -p $(LIBDIR)/pkgconfig
-@@ -161,12 +169,12 @@ install: $(PKGCFGF) $(ARCHIVE) $(LIBRARY)
+ 	mkdir -p $(PKGCFCGDIR)
+@@ -244,12 +252,12 @@
  
  uninstall:
  	rm -rf $(INCDIR)/$(LIBNAME)
 -	rm -f $(LIBDIR)/lib$(LIBNAME).$(EXT)
 -	rm -f $(LIBDIR)/lib$(LIBNAME).$(AR_EXT)
--	rm -f $(LIBDIR)/pkgconfig/$(LIBNAME).pc
+-	rm -f $(PKGCFCGDIR)/$(LIBNAME).pc
 +	rm -f $(LIBDIR)/$(LIBRARY)
 +	rm -f $(LIBDIR)/$(ARCHIVE)
 +	rm -f $(LIBDIR)/pkgconfig/$(PKGCFGF)
@@ -72,5 +72,5 @@ $OpenBSD$
 -	rm -f $(LIBOBJ) lib$(LIBNAME).*
 +	rm -f $(LIBOBJ) $(ARCHIVE) $(LIBRARY)
  	rm -f $(PKGCFGF)
+ 	rm -f include/diet.h
  	$(MAKE) -C bindings/python clean
- 	$(MAKE) -C bindings/java clean
