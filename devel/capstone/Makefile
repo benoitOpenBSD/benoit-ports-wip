@@ -8,7 +8,7 @@ HOMEPAGE =	http://www.capstone-engine.org/
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
-SHARED_LIBS =	capstone	0.0
+SHARED_LIBS =	capstone	1.0
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
