@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v 1.1.1.1 2013/10/30 15:24:54 benoit Exp $
 lib/python${MODPY_VERSION}/site-packages/ecdsa/
 lib/python${MODPY_VERSION}/site-packages/ecdsa-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info
 lib/python${MODPY_VERSION}/site-packages/ecdsa/__init__.py

@@ -1,11 +1,13 @@
-$OpenBSD: patch-Makefile,v 1.1.1.1 2014/01/24 22:47:46 benoit Exp $
+$OpenBSD$
+
 1. Do not force some compilation flags.
 2. Set library version, respecting OpenBSD policy.
 3. Avoid duplication of defines, linked to (2).
 4. Do not use $(INSTALL_*) at the build stage.
---- Makefile.orig	Tue Mar  4 17:35:03 2014
-+++ Makefile	Sat Mar  8 15:19:39 2014
-@@ -15,7 +15,7 @@
+
+--- Makefile.orig	Tue Mar 11 04:41:09 2014
++++ Makefile	Fri Mar 14 07:52:13 2014
+@@ -16,7 +16,7 @@
  STRIP = $(CROSS)strip
  endif
  
@@ -14,7 +16,7 @@ $OpenBSD: patch-Makefile,v 1.1.1.1 2014/01/24 22:47:46 benoit Exp $
  
  ifeq ($(USE_SYS_DYN_MEM),yes)
  CFLAGS += -DUSE_SYS_DYN_MEM
-@@ -43,6 +43,10 @@
+@@ -44,6 +44,10 @@
  INSTALL_LIBRARY ?= $(INSTALL_BIN) -m0755
  
  LIBNAME = capstone
@@ -25,7 +27,13 @@ $OpenBSD: patch-Makefile,v 1.1.1.1 2014/01/24 22:47:46 benoit Exp $
  
  
  DEP_ARM =
-@@ -178,7 +182,11 @@
+@@ -180,12 +184,16 @@
+ AR_EXT = a
+ API_MAJOR=$(shell echo `grep -e CS_API_MAJOR include/capstone.h | grep -v = | awk '{print $$3}'` | awk '{print $$1}')
+ 
+-LDFLAGS += -Wl,-soname,lib$(LIBNAME)$(API_MAJOR)
++LDFLAGS += -Wl,-soname,lib$(LIBNAME)
+ endif
  endif
  endif
  
@@ -37,7 +45,7 @@ $OpenBSD: patch-Makefile,v 1.1.1.1 2014/01/24 22:47:46 benoit Exp $
  ARCHIVE = lib$(LIBNAME).$(AR_EXT)
  PKGCFGF = $(LIBNAME).pc
  
-@@ -188,7 +196,7 @@
+@@ -193,7 +201,7 @@
  
  all: $(LIBRARY) $(ARCHIVE) $(PKGCFGF)
  	$(MAKE) -C tests
@@ -46,7 +54,7 @@ $OpenBSD: patch-Makefile,v 1.1.1.1 2014/01/24 22:47:46 benoit Exp $
  
  $(LIBRARY): $(LIBOBJ)
  	$(CC) $(LDFLAGS) $(LIBOBJ) -o $(LIBRARY)
-@@ -235,8 +243,8 @@
+@@ -244,8 +252,8 @@
  
  install: $(PKGCFGF) $(ARCHIVE) $(LIBRARY)
  	mkdir -p $(LIBDIR)
@@ -57,7 +65,7 @@ $OpenBSD: patch-Makefile,v 1.1.1.1 2014/01/24 22:47:46 benoit Exp $
  	mkdir -p $(INCDIR)/$(LIBNAME)
  	$(INSTALL_DATA) include/*.h $(INCDIR)/$(LIBNAME)
  	mkdir -p $(PKGCFCGDIR)
-@@ -244,12 +252,12 @@
+@@ -253,12 +261,12 @@
  
  uninstall:
  	rm -rf $(INCDIR)/$(LIBNAME)

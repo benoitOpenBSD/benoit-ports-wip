@@ -2,7 +2,7 @@
 
 COMMENT =	multi-platform, multi-architecture disassembly framework
 
-DISTNAME =	capstone-2.1
+DISTNAME =	capstone-2.1.1
 CATEGORIES =	devel
 HOMEPAGE =	http://www.capstone-engine.org/
 
@@ -27,7 +27,7 @@ do-test:
 	    -f ${MAKE_FILE} -p -n | grep ^SOURCES); \
 	echo "$$@"; \
 	shift 2; for t; do \
-		t=$${t%.c}; LD_LIBRARY_PATH=`pwd` ./$$t; \
+		t=$${t%.c}; LD_PRELOAD=libcapstone.so.${LIBcapstone_VERSION} ./$$t; \
 	done
 
 .include <bsd.port.mk>
