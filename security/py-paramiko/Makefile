@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.33 2013/11/01 07:28:15 benoit Exp $
+# $OpenBSD: Makefile,v 1.35 2014/03/10 20:56:17 benoit Exp $
 
 COMMENT = 	Python module that implements the SSH2 protocol
 
-MODPY_EGG_VERSION = 	1.12.1
+MODPY_EGG_VERSION = 	1.13.0
 DISTNAME = 		paramiko-${MODPY_EGG_VERSION}
 PKGNAME = 		py-${DISTNAME}
 CATEGORIES = 		security
@@ -27,11 +27,12 @@ TEST_DEPENDS =		${RUN_DEPENDS}
 pre-build:
 	@perl -pi -e "s,^\#\!/usr/bin/env python,#!${MODPY_BIN}," \
 	  ${WRKSRC}/demos/*.py
-        
+
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/py-paramiko
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/py-paramiko
-	${INSTALL_DATA} ${WRKSRC}/docs/* ${PREFIX}/share/doc/py-paramiko
+	cd ${WRKSRC}/docs && pax -rw * ${PREFIX}/share/doc/py-paramiko
+#	${INSTALL_DATA} ${WRKSRC}/docs/* ${PREFIX}/share/doc/py-paramiko
 	${INSTALL_DATA} ${WRKSRC}/demos/* \
 	  ${PREFIX}/share/examples/py-paramiko
 

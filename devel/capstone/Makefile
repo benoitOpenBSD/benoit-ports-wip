@@ -27,7 +27,8 @@ do-test:
 	    -f ${MAKE_FILE} -p -n | grep ^SOURCES); \
 	echo "$$@"; \
 	shift 2; for t; do \
-		t=$${t%.c}; LD_PRELOAD=libcapstone.so.${LIBcapstone_VERSION} ./$$t; \
+		t=$${t%.c}; LD_LIBRARY_PATH=`pwd` \
+		LD_PRELOAD=libcapstone.so.${LIBcapstone_VERSION} ./$$t; \
 	done
 
 .include <bsd.port.mk>
