@@ -1,10 +1,9 @@
-# $OpenBSD: Makefile,v 1.31 2013/11/03 10:31:01 benoit Exp $
+# $OpenBSD: Makefile,v 1.33 2014/03/16 11:21:28 ajacoutot Exp $
 
 COMMENT =	Amide a Medical Imaging Data Examiner
 
-DISTNAME =	amide-1.0.4
+DISTNAME =	amide-1.0.5
 CATEGORIES =	graphics
-REVISION =	0
 
 HOMEPAGE =	http://amide.sourceforge.net/
 
@@ -13,7 +12,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =   Yes
 
-WANTLIB += X11 Xcomposite Xcursor Xdamage 
+WANTLIB += X11 Xcomposite Xcursor Xdamage
 WANTLIB += Xext Xfixes Xi Xinerama Xrandr Xrender art_lgpl_2
 WANTLIB += atk-1.0 avcodec avutil c cairo expat fontconfig
 WANTLIB += freetype gailutil gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0
@@ -31,28 +30,23 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=amide/}
 EXTRACT_SUFX =	.tgz
 
 MODULES =	devel/gettext \
-		textproc/intltool
+		x11/gnome
 
-BUILD_DEPENDS =	devel/m4 \
-		x11/gnome/doc-utils
-RUN_DEPENDS =	devel/desktop-file-utils \
-		x11/gnome/yelp
+MODGNOME_TOOLS=	yelp
+MODGNOME_DESKTOP_FILE= Yes
+
+BUILD_DEPENDS =	devel/m4
+
 LIB_DEPENDS =	devel/gsl>=1.6 \
 		x11/gnome/libgnomecanvas \
 		graphics/xmedcon \
 		graphics/ffmpeg>=20121026 \
 		devel/gconf2
 
-USE_GMAKE =	Yes
-USE_GROFF =		Yes
-
-AUTOCONF_VERSION =	2.68
+AUTOCONF_VERSION =	2.69
 CONFIGURE_STYLE =	autoconf
-CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib" \
-			XMEDCON_CONFIG="${LOCALBASE}/bin/xmedcon-config"
-CONFIGURE_ARGS +=	${CONFIGURE_SHARED} \
-			--disable-xmedcontest \
+CONFIGURE_ENV =		XMEDCON_CONFIG="${LOCALBASE}/bin/xmedcon-config"
+CONFIGURE_ARGS +=	--disable-xmedcontest \
 			--disable-libfame \
 			--disable-libdcmdata \
 			--enable-ffmpeg
