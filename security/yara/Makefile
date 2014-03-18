@@ -2,8 +2,8 @@
 
 COMMENT =		the pattern matching swiss knife for malware researchers
 
-Y_VER =			v2.0.0
-DISTNAME =		yara-${Y_VER:S/v//}
+Y_VER =			2.1.0
+DISTNAME =		yara-${Y_VER}
 CATEGORIES =		security
 SHARED_LIBS +=		yara	0.0	# .0.0
 
