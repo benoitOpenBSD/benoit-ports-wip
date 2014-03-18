@@ -1,0 +1,36 @@
+$OpenBSD$
+--- programs/x509/CMakeLists.txt.orig	Tue Mar 18 16:59:05 2014
++++ programs/x509/CMakeLists.txt	Tue Mar 18 16:59:55 2014
+@@ -10,21 +10,21 @@
+     set(libs ${libs} ${ZLIB_LIBRARIES})
+ endif(ENABLE_ZLIB_SUPPORT)
+ 
+-add_executable(cert_app cert_app.c)
+-target_link_libraries(cert_app ${libs})
++add_executable(polarssl_cert_app cert_app.c)
++target_link_libraries(polarssl_cert_app ${libs})
+ 
+-add_executable(crl_app crl_app.c)
+-target_link_libraries(crl_app ${libs})
++add_executable(polarssl_crl_app crl_app.c)
++target_link_libraries(polarssl_crl_app ${libs})
+ 
+-add_executable(req_app req_app.c)
+-target_link_libraries(req_app ${libs})
++add_executable(polarssl_req_app req_app.c)
++target_link_libraries(polarssl_req_app ${libs})
+ 
+-add_executable(cert_req cert_req.c)
+-target_link_libraries(cert_req ${libs})
++add_executable(polarssl_cert_req cert_req.c)
++target_link_libraries(polarssl_cert_req ${libs})
+ 
+-add_executable(cert_write cert_write.c)
+-target_link_libraries(cert_write ${libs})
++add_executable(polarssl_cert_write cert_write.c)
++target_link_libraries(polarssl_cert_write ${libs})
+ 
+-install(TARGETS cert_app crl_app req_app cert_req cert_write
++install(TARGETS polarssl_cert_app polarssl_crl_app polarssl_req_app polarssl_cert_req polarssl_cert_write
+         DESTINATION "bin"
+         PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)

@@ -1,0 +1,21 @@
+$OpenBSD$
+--- programs/util/CMakeLists.txt.orig	Tue Mar 18 16:55:27 2014
++++ programs/util/CMakeLists.txt	Tue Mar 18 16:57:47 2014
+@@ -2,12 +2,12 @@
+      polarssl
+ )
+ 
+-add_executable(strerror strerror.c)
+-target_link_libraries(strerror ${libs})
++add_executable(polarssl_strerror strerror.c)
++target_link_libraries(polarssl_strerror ${libs})
+ 
+-add_executable(pem2der pem2der.c)
+-target_link_libraries(pem2der ${libs})
++add_executable(polarssl_pem2der pem2der.c)
++target_link_libraries(polarssl_pem2der ${libs})
+ 
+-install(TARGETS strerror pem2der
++install(TARGETS polarssl_strerror polarssl_pem2der
+         DESTINATION "bin"
+         PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
