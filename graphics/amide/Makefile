@@ -12,7 +12,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =   Yes
 
-WANTLIB += X11 Xcomposite Xcursor Xdamage
+WANTLIB += X11 Xcomposite Xcursor Xdamage 
 WANTLIB += Xext Xfixes Xi Xinerama Xrandr Xrender art_lgpl_2
 WANTLIB += atk-1.0 avcodec avutil c cairo expat fontconfig
 WANTLIB += freetype gailutil gconf-2 gdk-x11-2.0 gdk_pixbuf-2.0
