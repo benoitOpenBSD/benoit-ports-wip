@@ -1,15 +1,19 @@
 # $OpenBSD: Makefile,v 1.111 2014/03/28 11:46:56 dcoppa Exp $
 
-COMMENT-main =	GIT - Tree History Storage Tool
+COMMENT =	GIT - Tree History Storage Tool
 COMMENT-svn =	GIT - subversion interoperability tools
 COMMENT-x11 =	GIT - graphical tools
 
 V =		1.9.1
 DISTNAME =	git-${V}
-PKGNAME-main =	${DISTNAME}
+PKGNAME =	${DISTNAME}
 PKGNAME-svn =	git-svn-${V}
+FULLPKGPATH-svn = ${PKGPATH},-svn
 PKGNAME-x11 =	git-x11-${V}
+FULLPKGPATH-x11 = ${PKGPATH},-x11
 CATEGORIES =	devel
+ 
+REVISION = 0
 
 HOMEPAGE =	http://git-scm.com/
 
@@ -28,30 +32,34 @@ MODULES =		devel/gettext x11/tk
 
 BUILD_DEPENDS =		devel/p5-Error
 
-MULTI_PACKAGES =	-main -svn -x11
+# MULTI_PACKAGES =	-main -svn -x11
+PSEUDO_FLAVORS =	x11 svn
+FLAVOR ?=
 
-WANTLIB-main =		c expat crypto curl pthread ssl z ${MODGETTEXT_WANTLIB}
-RUN_DEPENDS-main =	net/rsync \
+WANTLIB =		c expat crypto curl pthread ssl z ${MODGETTEXT_WANTLIB}
+RUN_DEPENDS =		net/rsync \
 			devel/p5-Error \
 			devel/cvsps \
 			${MODGETTEXT_RUN_DEPENDS}
-LIB_DEPENDS-main =	net/curl \
+LIB_DEPENDS =		net/curl \
 			${MODGETTEXT_LIB_DEPENDS}
 
-RUN_DEPENDS-svn =	${BASE_PKGPATH} \
-			devel/p5-Term-ReadKey \
+.if ${FLAVOR:Msvn}
+RUN_DEPENDS +=		devel/p5-Term-ReadKey \
 			devel/subversion,-perl \
 			www/p5-URI \
 			www/p5-libwww
-LIB_DEPENDS-svn =
-WANTLIB-svn =
-PKG_ARCH-svn =		*
+LIB_DEPENDS =
+WANTLIB =
+PKG_ARCH =		*
+.endif
 
-RUN_DEPENDS-x11 =	${BASE_PKGPATH},-main \
-			${MODTK_RUN_DEPENDS}
-LIB_DEPENDS-x11 =
-WANTLIB-x11 =
-PKG_ARCH-x11 =		*
+.if ${FLAVOR:Mx11}
+RUN_DEPENDS +=		${MODTK_RUN_DEPENDS}
+LIB_DEPENDS =
+WANTLIB =
+PKG_ARCH =		*
+.endif
 
 MAKE_FLAGS =		V=1 \
 			gitexecdir=libexec/git \
