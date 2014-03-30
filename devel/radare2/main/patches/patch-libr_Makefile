@@ -1,0 +1,15 @@
+$OpenBSD$
+--- libr/Makefile.orig	Fri Oct 11 01:36:54 2013
++++ libr/Makefile	Tue Nov 12 12:24:55 2013
+@@ -111,9 +111,8 @@
+ 	@for a in `find * -type f | grep -e '\.${EXT_SO}$$' | grep -v lib/t | grep lib | grep -v /p/` ; do \
+ 	  b=`echo $$a|cut -d / -f 2`; \
+ 	  echo " ${LFX}/$$b.${LIBVERSION}"; \
+-	  ${INSTALL_LIB} $$a ${LFX}/$$b.${LIBVERSION} ; \
+-	  ( cd ${LFX} ; ln -fs $$b.${LIBVERSION} $$b ) ; \
+-	done
++	  ${INSTALL_LIB} $$a ${LFX}/$$b.${LIBVERSION} \
++	;done
+ 	# object archives
+ 	@for a in `find * -type f | grep -e '\.a$$' | grep -v fs/p` ; do \
+ 	  echo " ${LFX}/$$a"; ${INSTALL_DATA} $$a ${LFX} ; done
