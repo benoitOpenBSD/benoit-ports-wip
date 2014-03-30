@@ -1,4 +1,4 @@
-$OpenBSD: patch-cs_c,v 1.1 2014/03/09 19:58:51 jasper Exp $
+$OpenBSD: patch-cs_c,v 1.2 2014/03/16 09:45:32 benoit Exp $
 
 The 'mips' symbol is special on MIPS platforms, so rename it to prevent a
 conflict.

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2014/01/24 22:47:46 benoit Exp $
+# $OpenBSD: Makefile,v 1.2 2014/03/16 09:45:32 benoit Exp $
 
 COMMENT =	multi-platform, multi-architecture disassembly framework
 
