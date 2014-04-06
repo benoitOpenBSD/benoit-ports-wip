@@ -1,12 +1,14 @@
 $OpenBSD$
 --- Makefile.orig	Thu Jan  2 09:24:28 2014
-+++ Makefile	Wed Jan  8 09:42:38 2014
-@@ -20,30 +20,30 @@
++++ Makefile	Sun Apr  6 17:29:51 2014
+@@ -19,31 +19,31 @@
+ # for setting CFLAGS relevant to your make, eg
  #   % make COPTS="-DDO_HTPASSWD"
  
- COPTS+=	-DDO_HTPASSWD
+-COPTS+=	-DDO_HTPASSWD
 -PROG=	httpd
 -MAN=	httpd.8
++COPTS+=	-DDO_HTPASSWD -DNO_LUA_SUPPORT
 +PROG=	bozohttpd
 +MAN=	bozohttpd.8
  BUILDSYMLINKS+=bozohttpd.8 httpd.8
@@ -16,8 +18,8 @@ $OpenBSD$
  
 -LDADD=	-lcrypt -llua -lm
 -DPADD=	${LIBCRYPT} ${LIBLUA} ${LIBM}
-+LDADD=	-llua -lm
-+DPADD=	${LIBLUA} ${LIBM}
++LDADD=	-lm
++DPADD=	${LIBM}
  
  WARNS?=	4
  
