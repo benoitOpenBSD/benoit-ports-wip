@@ -2,7 +2,7 @@
 
 COMMENT =		classes and setuptools plugin for Mercurial repositories
 
-MODPY_EGG_VERSION = 	5.1
+MODPY_EGG_VERSION = 	5.3
 DISTNAME =		hgtools-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		devel
