@@ -2,7 +2,7 @@
 
 COMMENT =		multi-threaded HTTP benchmark and regression tester
 
-DISTNAME =		siege-3.0.4
+DISTNAME =		siege-3.0.5
 
 CATEGORIES =		benchmarks www
 
@@ -18,7 +18,6 @@ MASTER_SITES =		http://www.joedog.org/pub/siege/ \
 			http://spacehopper.org/mirrors/ 
 
 MAKE_FLAGS =		localstatedir=${LOCALSTATEDIR}
-USE_GROFF =		Yes
 
 LOCALSTATEDIR=		${BASELOCALSTATEDIR}/log/siege
 SYSCONFDIR=		${BASESYSCONFDIR}/siege
