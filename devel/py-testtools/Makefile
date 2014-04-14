@@ -2,7 +2,7 @@
 
 COMMENT=	extensions to the Python unit testing framework
 
-MODPY_EGG_VERSION = 0.9.30
+MODPY_EGG_VERSION= 0.9.35
 DISTNAME=	testtools-${MODPY_EGG_VERSION}
 PKGNAME=	py-${DISTNAME}
 CATEGORIES=	devel
