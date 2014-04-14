@@ -1,18 +1,14 @@
-# $OpenBSD: Makefile,v 1.7 2010/12/31 17:21:45 benoit Exp $
+# $OpenBSD: Makefile,v 1.9 2013/10/11 23:51:17 naddy Exp $
 
 COMMENT=	justify strings to various alignment styles
 
 MODULES=	cpan
-DISTNAME=	Text-Aligner-0.07
+DISTNAME=	Text-Aligner-0.10
 CATEGORIES=	textproc
-USE_GROFF =	Yes
 
 MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 .include <bsd.port.mk>
