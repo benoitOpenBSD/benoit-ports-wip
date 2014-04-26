@@ -12,7 +12,7 @@ MASTER_SITES=	http://ftp.uni-muenster.de/pub/ipv6/bieringer/software/ipv6calc/ \
 # GPLv2 only
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB=		c
+WANTLIB =		c m crypto
 
 CONFIGURE_STYLE=gnu
 USE_GMAKE=	Yes
