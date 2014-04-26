@@ -1,0 +1,5 @@
+Vix is another graphical (SDL-based) hexadecimal dump tool designed for
+GNU/Linux (alhtough it may compile in other Unices) with an important
+feature: it lets you see the patterns formed by its bits. With some
+practice, you can train your eyes to spot sections within an executable
+file, a firmware, or any file made out of blocks of any content.

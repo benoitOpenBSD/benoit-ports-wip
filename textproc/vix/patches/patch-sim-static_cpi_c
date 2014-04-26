@@ -1,0 +1,11 @@
+$OpenBSD$
+--- sim-static/cpi.c.orig	Sat Apr 26 08:35:48 2014
++++ sim-static/cpi.c	Sat Apr 26 08:35:57 2014
+@@ -22,7 +22,6 @@
+ #include <sys/mman.h>
+ #include <unistd.h>
+ #include <fcntl.h>
+-#include <sys/io.h>
+ 
+ #include <util.h>
+ #include "cpi.h"
