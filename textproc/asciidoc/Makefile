@@ -1,9 +1,8 @@
-# $OpenBSD: Makefile,v 1.16 2011/09/16 11:41:40 espie Exp $
+# $OpenBSD: Makefile,v 1.21 2014/03/09 19:48:59 jasper Exp $
 
-COMMENT=	text document format for writing documents and man pages 
+COMMENT=	text document format for writing documents and man pages
 
-DISTNAME=	asciidoc-8.6.7
-#REVISION=	0
+DISTNAME=	asciidoc-8.6.9
 CATEGORIES=	textproc
 
 MAINTAINER=	Robert Nagy <robert@openbsd.org>
@@ -12,55 +11,34 @@ HOMEPAGE=	http://www.methods.co.nz/asciidoc/
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=asciidoc/}
 
 MODULES=	lang/python
-RUN_DEPENDS=	textproc/libxslt \
-		textproc/docbook \
-		textproc/docbook-xsl
+RUN_DEPENDS=	textproc/docbook-xsl
 
 MODPY_ADJ_FILES=a2x.py \
 		asciidoc.py \
+		asciidocapi.py \
 		filters/{code,graphviz,latex,music}/*.py
 
-NO_BUILD=	Yes
-NO_REGRESS=	Yes
-USE_GROFF =	Yes
+PKG_ARCH=	*
+USE_GMAKE=	Yes
+NO_TEST=	Yes
+
+FAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples
+
+CONFIGURE_STYLE=gnu
 
 post-configure:
 	@perl -pi -e 's,/etc,${SYSCONFDIR},g' ${WRKSRC}/asciidoc.py
 
-do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/asciidoc.py ${PREFIX}/bin/asciidoc 
-	${INSTALL_SCRIPT} ${WRKSRC}/a2x.py ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/doc/asciidoc.1 ${WRKSRC}/doc/a2x.1 \
-				${PREFIX}/man/man1
-
-	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/asciidoc \
-				${PREFIX}/share/examples/asciidoc/filters \
-				${PREFIX}/share/examples/asciidoc/docbook-xsl \
-				${PREFIX}/share/examples/asciidoc/stylesheets \
-				${PREFIX}/share/examples/asciidoc/javascripts \
-				${PREFIX}/share/examples/asciidoc/images/icons/callouts
-
-	${INSTALL_DATA} ${WRKSRC}/*.conf ${PREFIX}/share/examples/asciidoc
-
-	cd ${WRKSRC}/filters/ && umask 022 && pax -rw . \
-		${PREFIX}/share/examples/asciidoc/filters
-
-	${INSTALL_DATA} ${WRKSRC}/docbook-xsl/*.xsl \
-		${PREFIX}/share/examples/asciidoc/docbook-xsl
-	${INSTALL_DATA} ${WRKSRC}/stylesheets/*.css \
-		${PREFIX}/share/examples/asciidoc/stylesheets
-	${INSTALL_DATA} ${WRKSRC}/javascripts/*.js \
-		${PREFIX}/share/examples/asciidoc/javascripts
-	${INSTALL_DATA} ${WRKSRC}/images/icons/*.png \
-		${PREFIX}/share/examples/asciidoc/images/icons
-	${INSTALL_DATA} ${WRKSRC}/images/icons/callouts/* \
-		${PREFIX}/share/examples/asciidoc/images/icons/callouts
+post-install:
+	${INSTALL_DATA_DIR} ${WRKINST}${MODPY_SITEPKG}
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/asciidoc/vim/syntax
+	${INSTALL_DATA} ${WRKSRC}/asciidocapi.py \
+		${WRKINST}${MODPY_SITEPKG}/asciidocapi.py
+	${INSTALL_DATA} ${WRKSRC}/vim/syntax/asciidoc.vim \
+		${PREFIX}/share/examples/asciidoc/vim/syntax/
 
 .include <bsd.port.mk>
