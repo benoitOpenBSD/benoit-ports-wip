@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/atari.c.orig	Sun Apr 27 13:06:29 2014
++++ src/atari.c	Sun Apr 27 13:07:27 2014
+@@ -426,7 +426,7 @@
+ 	   or it does not specify some ROM paths (blank paths count as specified) */
+ 	SYSROM_FindInDir(".", TRUE); /* current directory */
+ #if defined(unix) || defined(__unix__) || defined(__linux__)
+-	SYSROM_FindInDir("/usr/share/atari800", TRUE);
++	SYSROM_FindInDir("${PREFIX}/share/atari800", TRUE);
+ #endif
+ 	if (*argc > 0 && argv[0] != NULL) {
+ 		char atari800_exe_dir[FILENAME_MAX];

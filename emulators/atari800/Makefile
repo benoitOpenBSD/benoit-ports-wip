@@ -30,12 +30,13 @@ LIB_DEPENDS =		devel/sdl \
 
 NO_TEST =		Yes
 
-A800DOCSDIR =		${PREFIX}/share/doc/atari800
+pre-configure:
+		${SUBST_CMD} ${WRKSRC}/src/atari800.man ${WRKSRC}/src/atari.c
 
 do-install:
 		${INSTALL_PROGRAM} ${WRKBUILD}/atari800 ${PREFIX}/bin
-		${INSTALL_DATA_DIR} ${A800DOCSDIR}
-		${INSTALL_DATA} ${WRKSRC}/DOC/* ${A800DOCSDIR}
+		${INSTALL_DATA_DIR} ${PREFIX}/share/doc/atari800 ${PREFIX}/share/atari800
+		${INSTALL_DATA} ${WRKSRC}/DOC/* ${PREFIX}/share/doc/atari800
 		${INSTALL_DATA} ${WRKBUILD}/atari800.man ${PREFIX}/man/man1/atari800.1
 
 .include <bsd.port.mk>
