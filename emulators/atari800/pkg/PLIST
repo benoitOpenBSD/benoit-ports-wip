@@ -4,6 +4,7 @@
 share/doc/atari800/
 share/doc/atari800/BUGS
 share/doc/atari800/BUILD.PS2
+share/doc/atari800/BUILD.RPI
 share/doc/atari800/CHANGES.OLD
 share/doc/atari800/CHANGES.dc
 share/doc/atari800/CREDITS
@@ -21,13 +22,17 @@ share/doc/atari800/NEWS
 share/doc/atari800/PORTING
 share/doc/atari800/PortMaintainers
 share/doc/atari800/README
+share/doc/atari800/README.RPI
+share/doc/atari800/README.android
 share/doc/atari800/README.dc
 share/doc/atari800/README.ps2
 share/doc/atari800/TODO
 share/doc/atari800/USAGE
 share/doc/atari800/cart.txt
+share/doc/atari800/directx.txt
 share/doc/atari800/emuos.txt
 share/doc/atari800/pokeysnd.txt
 share/doc/atari800/r_device.txt
 share/doc/atari800/rdevice_faq.txt
 share/doc/atari800/readme.html.in
+share/doc/atari800/trainer.txt

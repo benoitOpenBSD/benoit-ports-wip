@@ -1,7 +1,7 @@
 $OpenBSD$
---- src/sound_oss.c.orig	Mon Mar 23 16:19:28 2009
-+++ src/sound_oss.c	Mon Mar 23 16:19:41 2009
-@@ -31,7 +31,7 @@
+--- src/sound_oss.c.orig	Mon Dec 16 00:17:45 2013
++++ src/sound_oss.c	Sun Apr 27 12:58:06 2014
+@@ -26,7 +26,7 @@
  #include <unistd.h>
  #include <fcntl.h>
  #include <sys/ioctl.h>

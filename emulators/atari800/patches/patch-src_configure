@@ -1,12 +1,12 @@
 $OpenBSD$
---- src/configure.orig	Wed Jul 11 21:50:57 2007
-+++ src/configure	Sun May 31 01:16:03 2009
-@@ -4386,7 +4386,7 @@ SUPPORTS_SOUND_OSS=yes
+--- src/configure.orig	Sat Apr 12 16:00:06 2014
++++ src/configure	Sun Apr 27 12:58:06 2014
+@@ -4346,7 +4346,7 @@ fi
+ done
  
- 
- 
+ SUPPORTS_SOUND_OSS=yes
 -for ac_header in fcntl.h sys/ioctl.h sys/soundcard.h
 +for ac_header in fcntl.h sys/ioctl.h soundcard.h
- do
- as_ac_Header=`echo "ac_cv_header_$ac_header" | $as_tr_sh`
- if { as_var=$as_ac_Header; eval "test \"\${$as_var+set}\" = set"; }; then
+ do :
+   as_ac_Header=`$as_echo "ac_cv_header_$ac_header" | $as_tr_sh`
+ ac_fn_c_check_header_mongrel "$LINENO" "$ac_header" "$as_ac_Header" "$ac_includes_default"
