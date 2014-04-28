@@ -16,7 +16,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gxemul/}
 WANTLIB=		c m stdc++
 
 CONFIGURE_STYLE=	simple
-USE_GROFF =		Yes
 
 FLAVORS=		no_x11
 FLAVOR?=
