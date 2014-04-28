@@ -2,7 +2,7 @@
 
 COMMENT =		HTTPie is a CLI, cURL-like tool for humans
 
-MODPY_EGG_VERSION =	0.7.2
+MODPY_EGG_VERSION =	0.8.0
 DISTNAME =		httpie-${MODPY_EGG_VERSION}
 CATEGORIES =		www
 
