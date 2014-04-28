@@ -1,30 +1,23 @@
-# $OpenBSD: Makefile,v 1.18 2008/02/01 21:38:26 steven Exp $
+# $OpenBSD: Makefile,v 1.23 2013/10/11 20:39:49 naddy Exp $
 
-COMMENT=		twm, plus support for multiple virtual screens, etc
+COMMENT=	twm, plus support for multiple virtual screens, etc
 
-DISTNAME=		ctwm-3.8a
-PKGNAME=		${DISTNAME}
-CATEGORIES=		x11
+DISTNAME =	ctwm-3.8.1
 
-HOMEPAGE=		http://ctwm.free.lp.se/
+CATEGORIES=	x11
+
+HOMEPAGE=	http://www.ctwm.org/
 
 # BSD-like/badly worded
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
-WANTLIB=		ICE SM X11 Xau Xdmcp Xext Xmu Xpm Xt c
+WANTLIB=	ICE SM X11 Xau Xdmcp Xext Xmu Xpm Xt c
 
-LIB_DEPENDS=		jpeg.>=62::graphics/jpeg
+MASTER_SITES=	${HOMEPAGE}/dist/
 
-MASTER_SITES=		${HOMEPAGE}dist/
+USE_GROFF =	Yes
+CONFIGURE_STYLE= imake
 
-pre-patch:
-	cp  ${WRKSRC}/Imakefile.local-template ${WRKSRC}/Imakefile.local
-	        
-USE_X11=		Yes
-CONFIGURE_STYLE=	imake
-NO_REGRESS=		Yes
+NO_TEST=	Yes
 
 .include <bsd.port.mk>

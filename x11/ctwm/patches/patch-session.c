@@ -1,14 +1,15 @@
---- session.c.orig	Tue Dec 11 15:38:52 2001
-+++ session.c	Fri Jul  5 14:36:25 2002
-@@ -892,6 +892,7 @@
+$OpenBSD$
+--- session.c.orig	Fri Feb  2 09:56:54 2007
++++ session.c	Mon Apr 28 14:06:51 2014
+@@ -838,6 +838,7 @@
      return found;
  }
  
 +#ifndef __OpenBSD__
  /*===[ Unique Filename Generator ]===========================================*/
  
- static char *
-@@ -922,6 +923,7 @@
+ static char *unique_filename (char *path, char *prefix)
+@@ -865,6 +866,7 @@
  #endif
  }
  
@@ -16,18 +17,18 @@
  /*===[ SAVE WINDOW INFORMATION ]=============================================*/
  
  #ifndef PATH_MAX
-@@ -951,6 +953,10 @@
+@@ -891,6 +893,10 @@
      char discardCommand[PATH_MAX + 4];
      int numVals, i;
-     char yes = 1;
+     static int first_time = 1;
 +#ifdef __OpenBSD__
 +    int tmphandle;
 +    char tmpprefix[256];
 +#endif
-     static int first_time = 1;
  
      if (first_time)
-@@ -1003,12 +1009,20 @@
+     {
+@@ -942,12 +948,20 @@
       *        no longer the same since the new format supports
       *        virtaul workspaces.
       *========================================================*/
