@@ -9,8 +9,6 @@ CATEGORIES =		math
 
 HOMEPAGE =		http://sympy.org
 
-MAINTAINER =		Wen Heping <wenheping@gmail.com>
-
 # New BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
