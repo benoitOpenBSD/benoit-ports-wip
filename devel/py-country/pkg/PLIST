@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.4 2013/11/18 20:42:52 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.5 2014/01/30 08:01:48 benoit Exp $
 lib/python${MODPY_VERSION}/site-packages/pycountry/
 lib/python${MODPY_VERSION}/site-packages/pycountry-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
 lib/python${MODPY_VERSION}/site-packages/pycountry-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
