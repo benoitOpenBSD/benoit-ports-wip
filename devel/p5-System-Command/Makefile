@@ -6,14 +6,13 @@ MODULES =	cpan
 DISTNAME =	System-Command-1.108
 CATEGORIES =	devel
 
-MAINTAINER =	Wen Heping <wenheping@gmail.com>
-
 # perl
 PERMIT_PACKAGE_CDROM =	Yes
 
 MAKE_ENV +=		TEST_POD=yes
 
 BUILD_DEPENDS =	devel/p5-IPC-Run
+# XXX  Failed test 'process 1778 is still alive' at t/20-zombie.t line 149.
 TEST_DEPENDS =	devel/p5-Test-Output 
 
 .include <bsd.port.mk>
