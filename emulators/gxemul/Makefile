@@ -2,7 +2,7 @@
 
 COMMENT=		ARM/M88k/MIPS/PowerPC/SuperH machines emulator
 
-DISTNAME=		gxemul-0.6.0
+DISTNAME =		gxemul-0.6.0
 CATEGORIES=		emulators
 HOMEPAGE=		http://gxemul.sourceforge.net/
 
@@ -13,7 +13,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gxemul/}
 
-WANTLIB=		c m stdc++
+WANTLIB =		c m stdc++
 
 CONFIGURE_STYLE=	simple
 
