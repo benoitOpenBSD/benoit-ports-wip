@@ -1,3 +1,0 @@
-pip is a replacement for easy_install. It uses mostly the same
-techniques for finding packages, so packages that were made
-easy_installable should be pip-installable as well.
