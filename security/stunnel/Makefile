@@ -1,43 +1,34 @@
-# $OpenBSD: Makefile,v 1.55 2010/11/20 17:22:45 espie Exp $
+# $OpenBSD: Makefile,v 1.72 2014/03/24 21:44:09 dcoppa Exp $
 
 COMMENT=	SSL encryption wrapper for standard network daemons
 
-VERSION=	4.34
-DISTNAME=	stunnel-${VERSION}
+DISTNAME=	stunnel-5.01
 CATEGORIES=	security
 
-MAINTAINER=     Jakob Schlyter <jakob@openbsd.org>
+MAINTAINER=	Gleydson Soares <gsoares@openbsd.org>
 
-# GPL
+# GPLv2+ with OpenSSL exemption
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
-WANTLIB=		c crypto ssl util wrap z
+
+WANTLIB += c crypto pthread ssl util z
 
 HOMEPAGE=	http://www.stunnel.org/
 
-MASTER_SITES=	ftp://stunnel.mirt.net/stunnel/ \
-		http://www.stunnel.org/download/stunnel/src/ \
-		http://mike.daewoo.com.pl/computer/stunnel/ \
-		http://opensores.thebunker.net/pub/mirrors/stunnel/ \
-		ftp://ftp.fu-berlin.de/unix/security/stunnel/ \
-		ftp://ftp.uni-freiburg.de/pub/net/stunnel/ \
-		ftp://ftp.all.de/pub2/unix/security/stunnel/
+# Origin server: https://www.stunnel.org/downloads/archive/5.x/
+# Doesn't currently work with ftp(1) ssl support.
+MASTER_SITES=	http://ftp.nluug.nl/pub/networking/stunnel/archive/5.x/ \
+		http://mirror.bit.nl/stunnel/archive/5.x/ \
+		ftp://ftp.stunnel.org/stunnel/archive/5.x/
 
-SEPARATE_BUILD=		concurrent
+SEPARATE_BUILD=		Yes
 CONFIGURE_STYLE=	gnu
-CONFIGURE_ARGS+=	--with-random=/dev/arandom \
+CONFIGURE_ARGS+=	${CONFIGURE_SHARED} \
 			--with-ssl=/usr \
-			--enable-ipv6 \
-			--sysconfdir=${SYSCONFDIR} \
 			--with-threads=fork \
-			--localstatedir=/var \
-			${CONFIGURE_SHARED}
+			--disable-libwrap
 MODGNU_CONFIG_GUESS_DIRS=${WRKSRC}/auto
-NO_REGRESS=		Yes
+NO_TEST=		Yes
 USE_GMAKE=		Yes
-USE_LIBTOOL=		Yes
 USE_GROFF =		Yes
 
 do-install:

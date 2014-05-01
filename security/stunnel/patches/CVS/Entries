@@ -1,6 +1,5 @@
-/patch-Makefile_in/1.6/Thu May 28 18:08:49 2009//
-/patch-src_client_c/1.2/Wed May 14 21:06:15 2008//
-/patch-src_stunnel_c/1.7/Mon Sep 22 19:20:01 2008//
-/patch-tools_Makefile_in/1.7/Thu May 28 18:08:49 2009//
-/patch-tools_stunnel_conf-sample_in/1.7/Thu May 28 18:08:49 2009//
+/patch-tools_stunnel_conf-sample_in/1.10/Sat Jan  4 07:38:48 2014//
+/patch-Makefile_in/1.10/Mon Mar 17 16:29:28 2014//
+/patch-tools_Makefile_in/1.11/Mon Mar 17 16:29:28 2014//
+/patch-src_ssl_c/1.1/Sat Apr 19 12:29:02 2014//
 D
