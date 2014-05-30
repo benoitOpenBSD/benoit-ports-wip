@@ -1,7 +1,7 @@
 $OpenBSD: patch-Makefile,v 1.45 2014/03/10 20:56:53 pascal Exp $
---- Makefile.orig	Fri Feb 14 22:57:09 2014
-+++ Makefile	Sun Feb 16 18:13:36 2014
-@@ -2072,13 +2072,13 @@ $(REMOTE_CURL_PRIMARY): remote-curl.o http.o http-walk
+--- Makefile.orig	Wed May 28 21:10:36 2014
++++ Makefile	Thu May 29 13:01:29 2014
+@@ -2075,13 +2075,13 @@ $(REMOTE_CURL_PRIMARY): remote-curl.o http.o http-walk
  		$(LIBS) $(CURL_LIBCURL) $(EXPAT_LIBEXPAT)
  
  $(LIB_FILE): $(LIB_OBJS)
@@ -18,7 +18,7 @@ $OpenBSD: patch-Makefile,v 1.45 2014/03/10 20:56:53 pascal Exp $
  
  export DEFAULT_EDITOR DEFAULT_PAGER
  
-@@ -2256,7 +2256,7 @@ export TEST_NO_MALLOC_CHECK
+@@ -2262,7 +2262,7 @@ export TEST_NO_MALLOC_CHECK
  
  ### Testing rules
  
