@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-Makefile,v 1.4 2014/04/06 15:48:25 benoit Exp $
 --- Makefile.orig	Thu Jan  2 09:24:28 2014
 +++ Makefile	Sun Apr  6 17:29:51 2014
 @@ -19,31 +19,31 @@

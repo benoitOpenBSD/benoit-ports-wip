@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.15 2013/11/01 07:18:11 benoit Exp $
+# $OpenBSD: Makefile,v 1.17 2014/05/23 12:54:48 sthen Exp $
 
 COMMENT =	bozotic HTTP server
 
-DISTNAME =	bozohttpd-20140201
+DISTNAME =	bozohttpd-20140708
 CATEGORIES =	www
 
 HOMEPAGE =	http://www.eterna.com.au/bozohttpd/
@@ -19,7 +19,10 @@ EXTRACT_SUFX =		.tar.bz2
 
 FAKE_FLAGS =		BINDIR=${PREFIX}/libexec MANDIR=${PREFIX}/man/man
 
+post-extract:
+	rm ${WRKSRC}/{auth-bozo,bozohttpd}.c.orig
+
 do-test:
-			cd ${WRKSRC}/testsuite && ${MAKE_PROGRAM} ${MAKE_FLAGS} check
+	cd ${WRKSRC}/testsuite && ${MAKE_PROGRAM} ${MAKE_FLAGS} check
 
 .include <bsd.port.mk>
