@@ -32,7 +32,6 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/py-paramiko
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/py-paramiko
 	cd ${WRKSRC}/docs && pax -rw * ${PREFIX}/share/doc/py-paramiko
-#	${INSTALL_DATA} ${WRKSRC}/docs/* ${PREFIX}/share/doc/py-paramiko
 	${INSTALL_DATA} ${WRKSRC}/demos/* \
 	  ${PREFIX}/share/examples/py-paramiko
 
