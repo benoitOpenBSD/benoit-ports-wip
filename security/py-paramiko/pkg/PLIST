@@ -114,7 +114,6 @@ share/doc/${MODPY_PY_PREFIX}paramiko/_static/down-pressed.png
 share/doc/${MODPY_PY_PREFIX}paramiko/_static/down.png
 share/doc/${MODPY_PY_PREFIX}paramiko/_static/file.png
 share/doc/${MODPY_PY_PREFIX}paramiko/_static/jquery.js
-share/doc/${MODPY_PY_PREFIX}paramiko/_static/logo.png
 share/doc/${MODPY_PY_PREFIX}paramiko/_static/minus.png
 share/doc/${MODPY_PY_PREFIX}paramiko/_static/plus.png
 share/doc/${MODPY_PY_PREFIX}paramiko/_static/pygments.css
