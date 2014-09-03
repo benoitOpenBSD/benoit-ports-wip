@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.14 2013/09/05 19:05:42 nigel Exp $
+@comment $OpenBSD: PLIST,v 1.15 2014/04/12 09:00:56 shadchin Exp $
 lib/python${MODPY_VERSION}/site-packages/pytz/
 lib/python${MODPY_VERSION}/site-packages/pytz-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
 lib/python${MODPY_VERSION}/site-packages/pytz-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
@@ -7,7 +7,7 @@ lib/python${MODPY_VERSION}/site-packages/pytz-${MODPY_EGG_VERSION}-py${MODPY_VER
 lib/python${MODPY_VERSION}/site-packages/pytz-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/top_level.txt
 lib/python${MODPY_VERSION}/site-packages/pytz-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/zip-safe
 lib/python${MODPY_VERSION}/site-packages/pytz/__init__.py
-lib/python${MODPY_VERSION}/site-packages/pytz/${MODPY_PYCACHE}/
+${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/pytz/${MODPY_PYCACHE}/
 lib/python${MODPY_VERSION}/site-packages/pytz/${MODPY_PYCACHE}__init__.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/pytz/${MODPY_PYCACHE}exceptions.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/pytz/${MODPY_PYCACHE}lazy.${MODPY_PYC_MAGIC_TAG}pyc
@@ -255,6 +255,7 @@ lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/Palmer
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/Rothera
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/South_Pole
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/Syowa
+lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/Troll
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Antarctica/Vostok
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Arctic/
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Arctic/Longyearbyen
@@ -275,6 +276,7 @@ lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Beirut
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Bishkek
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Brunei
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Calcutta
+lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Chita
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Choibalsan
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Chongqing
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Chungking
@@ -326,15 +328,13 @@ lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Qatar
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Qyzylorda
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Rangoon
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Riyadh
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Riyadh87
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Riyadh88
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Riyadh89
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Saigon
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Sakhalin
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Samarkand
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Seoul
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Shanghai
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Singapore
+lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Srednekolymsk
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Taipei
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Tashkent
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Asia/Tbilisi
@@ -548,10 +548,6 @@ lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mexico/
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mexico/BajaNorte
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mexico/BajaSur
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mexico/General
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mideast/
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mideast/Riyadh87
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mideast/Riyadh88
-lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Mideast/Riyadh89
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/NZ
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/NZ-CHAT
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/Navajo
@@ -630,3 +626,4 @@ lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/iso3166.tab
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/localtime
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/posixrules
 lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/zone.tab
+lib/python${MODPY_VERSION}/site-packages/pytz/zoneinfo/zone1970.tab
