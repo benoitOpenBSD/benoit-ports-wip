@@ -2,7 +2,7 @@
 
 COMMENT =	Victor Shoup's Number Theory Library
 
-DISTNAME =	ntl-6.2.0
+DISTNAME =	ntl-6.2.1
 SHARED_LIBS =	ntl	2.0	# 0.0
 CATEGORIES =	math
 
