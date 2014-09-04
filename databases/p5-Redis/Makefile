@@ -20,7 +20,9 @@ BUILD_DEPENDS =		devel/p5-Test-CPAN-Meta
 
 TEST_DEPENDS =	devel/p5-Test-Deep \
 			devel/p5-Test-Fatal \
-			devel/p5-Test-Exception \
+			devel/p5-Test-SharedFork \
+			net/p5-Test-TCP \
+			net/p5-IO-Socket-Timeout \
 			devel/p5-Try-Tiny \
 			devel/p5-IO-String \
 			databases/redis
