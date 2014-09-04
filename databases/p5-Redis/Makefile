@@ -16,6 +16,8 @@ MODULES =		cpan
 
 RUN_DEPENDS =		devel/p5-Try-Tiny
 
+BUILD_DEPENDS =		devel/p5-Test-CPAN-Meta
+
 TEST_DEPENDS =	devel/p5-Test-Deep \
 			devel/p5-Test-Fatal \
 			devel/p5-Test-Exception \
