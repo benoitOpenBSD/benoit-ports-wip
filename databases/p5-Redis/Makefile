@@ -21,6 +21,7 @@ BUILD_DEPENDS =		devel/p5-Test-CPAN-Meta
 TEST_DEPENDS =	devel/p5-Test-Deep \
 			devel/p5-Test-Fatal \
 			devel/p5-Test-SharedFork \
+			devel/p5-PerlIO-via-Timeout \
 			net/p5-Test-TCP \
 			net/p5-IO-Socket-Timeout \
 			devel/p5-Try-Tiny \
