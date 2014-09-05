@@ -2,9 +2,8 @@
 
 COMMENT =		collaborative, networked system to detect and block spam
 
-MODPY_EGG_VERSION =	0.5.0
+MODPY_EGG_VERSION =	0.7.0
 DISTNAME =		pyzor-${MODPY_EGG_VERSION}
-REVISION =		2
 CATEGORIES =		mail net
 
 HOMEPAGE =		http://pyzor.sourceforge.net/
