@@ -21,7 +21,8 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB-main =	GL SDL X11 c m pthread z ogg vorbis vorbisfile \
+# XXX sdl2 Broken
+WANTLIB-main =	GL SDL2 X11 c m pthread z ogg vorbis vorbisfile \
 		jpeg png SDL_ttf physfs
 
 MASTER_SITES =	${HOMEPAGE}
@@ -30,7 +31,7 @@ LIB_DEPENDS-main =	audio/libogg \
 			audio/libvorbis \
 			graphics/jpeg \
 			graphics/png \
-			devel/sdl-ttf \
+			devel/sdl2-ttf \
 			devel/physfs
 LIB_DEPENDS-data =
 WANTLIB-data =
@@ -42,7 +43,7 @@ MODULES =	devel/gettext
 USE_GMAKE =	Yes
 NO_TEST =	Yes
 
-MAKE_FLAGS =	CPPFLAGS="-I${X11BASE}/include" \
+MAKE_FLAGS =	CPPFLAGS="-I${X11BASE}/include -I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -pthread -logg -lvorbis" \
 		INTL_LIBS="-lintl -liconv"
 
