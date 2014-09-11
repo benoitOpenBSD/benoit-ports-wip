@@ -1,12 +1,14 @@
-# $OpenBSD: Makefile,v 1.2 2013/03/11 11:23:57 espie Exp $
+# $OpenBSD: Makefile,v 1.5 2013/12/08 22:02:18 benoit Exp $
 
 COMMENT=	nyancat in your terminal
 
-DISTNAME =	nyancat-1.2
+V =		1.4.4
+EPOCH=		0
+DISTNAME=	${V}
+DIST_SUBDIR=	nyancat
+PKGNAME=	nyancat-${V}
 
 CATEGORIES=	misc
-
-EPOCH =		0
 
 HOMEPAGE=	https://github.com/klange/nyancat
 
@@ -15,12 +17,11 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB += c
 
-MASTER_SITES =	http://www.arcane-labs.net/download/OpenBSD/ \
-		http://spacehopper.org/mirrors/
+MASTER_SITES=	${HOMEPAGE}/archive/
 
 NO_TEST=	Yes
 
-WRKDIST=	${WRKDIR}/nyancat
+WRKDIST=	${WRKDIR}/${PKGNAME}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/nyancat ${PREFIX}/bin
