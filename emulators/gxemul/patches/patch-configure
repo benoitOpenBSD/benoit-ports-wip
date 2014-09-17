@@ -1,11 +1,11 @@
 $OpenBSD$
---- configure.orig	Sun Feb 14 10:33:54 2010
-+++ configure	Sat Jan  1 23:42:15 2011
-@@ -481,19 +481,6 @@
- 	rm -f _testprog _testprog.error _testprog.stdout
- fi
+--- configure.orig	Wed Sep 17 07:53:37 2014
++++ configure	Wed Sep 17 07:55:36 2014
+@@ -597,19 +597,6 @@
+ rm -f _testprog _testprog.error _testprog.stdout
  
--#  -O for optimization
+ 
+-#  -O optimization for non-debug builds. Try -O and -O3.
 -if [ ! z"$DEBUG" = zYES ]; then
 -	$CXX $CXXFLAGS -O _testprog.cc -o _testprog 2> /dev/null
 -	if [ -x _testprog ]; then
