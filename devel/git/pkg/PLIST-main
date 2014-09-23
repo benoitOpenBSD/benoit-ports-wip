@@ -357,7 +357,7 @@ libexec/git/mergetools/xxdiff
 @man man/man7/gitglossary.7
 @man man/man7/gitnamespaces.7
 @man man/man7/gitrevisions.7
-@man man/man7/gittutorial-2.7
+@man man/man7/gittutorial-${MODPY_VERSION}
 @man man/man7/gittutorial.7
 @man man/man7/gitworkflows.7
 share/doc/pkg-readmes/${FULLPKGNAME}
@@ -393,6 +393,7 @@ share/gitweb/static/git-logo.png
 share/gitweb/static/gitweb.css
 share/gitweb/static/gitweb.js
 share/locale/bg/LC_MESSAGES/git.mo
+share/locale/ca/LC_MESSAGES/git.mo
 share/locale/de/LC_MESSAGES/git.mo
 share/locale/fr/LC_MESSAGES/git.mo
 share/locale/is/
