@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+bin/dnschef.py
+share/doc/dnschef/
+share/doc/dnschef/CHANGELOG
+share/doc/dnschef/LICENSE
+share/doc/dnschef/README
+share/doc/dnschef/TODO
