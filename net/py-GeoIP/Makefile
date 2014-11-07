@@ -37,4 +37,6 @@ post-install:
 	${INSTALL_DATA_DIR} ${EXAMPLEDIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/${MODPY_ADJ_FILES} ${EXAMPLEDIR}
 
+NO_TEST =		Yes
+
 .include <bsd.port.mk>
