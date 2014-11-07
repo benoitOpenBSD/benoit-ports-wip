@@ -1,0 +1,29 @@
+--- configure.orig	Fri Nov  7 18:59:59 2014
++++ configure	Fri Nov  7 19:01:25 2014
+@@ -13959,7 +13959,7 @@
+   withval=$with_readline; if test "x$withval" = "xno" ; then
+       without_readline=yes
+     elif test "x$withval" != "xyes" ; then
+-      with_arg="$withval/include:-L$withval/lib $withval/include/readline:-L$withval/lib"
++      with_arg="$withval/include:-L$withval/lib $withval/include/ereadline:-L$withval/lib"
+     fi
+ fi
+ 
+@@ -13983,7 +13983,7 @@
+       if test -f $incl/readline/readline.h ; then
+         { $as_echo "$as_me:${as_lineno-$LINENO}: result: $incl/readline/readline.h" >&5
+ $as_echo "$incl/readline/readline.h" >&6; }
+-        READLINE_LIBS="$lib -lreadline"
++        READLINE_LIBS="$lib -lereadline"
+ 	if test "$incl" != "/usr/include"; then
+ 	  READLINE_INCLUDES="-I$incl/readline -I$incl"
+ 	else
+@@ -13997,7 +13997,7 @@
+       elif test -f $incl/readline.h -a "x$incl" != "x/usr/include"; then
+         { $as_echo "$as_me:${as_lineno-$LINENO}: result: $incl/readline.h" >&5
+ $as_echo "$incl/readline.h" >&6; }
+-        READLINE_LIBS="$lib -lreadline"
++        READLINE_LIBS="$lib -lereadline"
+         READLINE_INCLUDES="-I$incl"
+ 
+ $as_echo "#define HAVE_READLINE 1" >>confdefs.h

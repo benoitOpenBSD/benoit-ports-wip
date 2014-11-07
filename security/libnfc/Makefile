@@ -27,7 +27,7 @@ LIB_DEPENDS =		devel/libusb-compat \
 USE_GMAKE =		Yes
 
 CONFIGURE_STYLE =	gnu
-CONFIGURE_ARGS +=	${CONFIGURE_SHARED}  --with-drivers=acr122_usb,acr122s,pn53x_usb --enable-debug \
+CONFIGURE_ARGS +=	${CONFIGURE_SHARED}  --with-drivers=acr122_usb --enable-debug \
 			CPPFLAGS="-I${LOCALBASE}/include/ereadline -I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib -pthread" \
 			--with-readline=${PREFIX}
