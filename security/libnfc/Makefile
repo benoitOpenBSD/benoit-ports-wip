@@ -21,13 +21,15 @@ WANTLIB += pthread usb
 MASTER_SITES =		http://dl.bintray.com/nfc-tools/sources/
 EXTRACT_SUFX =		.tar.bz2
 
-LIB_DEPENDS =		devel/libusb-compat
+LIB_DEPENDS =		devel/libusb-compat \
+			devel/readline
 
 USE_GMAKE =		Yes
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	${CONFIGURE_SHARED}  --with-drivers=acr122_usb,acr122s,pn53x_usb --enable-debug \
-			CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib -pthread"
+			CPPFLAGS="-I${LOCALBASE}/include/ereadline -I${LOCALBASE}/include" \
+			LDFLAGS="-L${LOCALBASE}/lib -pthread" \
+			--with-readline=${PREFIX}
 
 .include <bsd.port.mk>
