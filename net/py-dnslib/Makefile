@@ -16,6 +16,9 @@ MASTER_SITES =		${MASTER_SITE_PYPI:=d/dnslib/}
 
 MODULES =		lang/python
 
+FLAVORS =		python3
+FLAVOR ?=
+
 pre-configure:
 	@perl -pi -e 's,python,${MODPY_BIN},g' ${WRKDIST}/run_tests.sh
 
