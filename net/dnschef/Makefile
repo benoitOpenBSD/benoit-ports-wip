@@ -32,6 +32,7 @@ pre-configure:
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/dnschef
 	${INSTALL_SCRIPT} ${WRKSRC}/dnschef.py ${PREFIX}/bin
-	${INSTALL_DATA} ${WRKSRC}/{CHANGELOG,LICENSE,README,TODO} ${PREFIX}/share/doc/dnschef
+	${INSTALL_DATA} ${WRKSRC}/{CHANGELOG,LICENSE,README,TODO,dnschef.ini} \
+		${PREFIX}/share/doc/dnschef
 
 .include <bsd.port.mk>
