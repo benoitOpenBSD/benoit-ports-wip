@@ -1,0 +1,9 @@
+$OpenBSD$
+--- Makefile.orig	Thu Dec  6 12:34:03 2007
++++ Makefile	Thu Dec  6 12:34:23 2007
+@@ -1,5 +1,3 @@
+-CC=gcc
+-CFLAGS=-O3 -Wall
+ LIBS=-lncurses
+ 
+ CFILES=globals.c view.c aliens.c ufo.c player.c nInvaders.c
