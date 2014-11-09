@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.7 2013/07/17 08:25:34 benoit Exp $
+# $OpenBSD: Makefile,v 1.9 2014/06/17 10:14:41 jasper Exp $
 
 COMMENT =		Python WSGI HTTP server
 
-MODPY_EGG_VERSION =	18.0
+MODPY_EGG_VERSION =	19.1.1
 DISTNAME =		gunicorn-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		www
@@ -17,6 +17,6 @@ MASTER_SITES =		${MASTER_SITE_PYPI:=g/gunicorn/}
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
 
-TEST_DEPENDS =        devel/py-test
+TEST_DEPENDS =		devel/py-test
 
 .include <bsd.port.mk>
