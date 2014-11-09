@@ -1,15 +1,13 @@
 $OpenBSD$
---- src/DoConfig.orig	Fri Aug 22 05:06:48 2014
-+++ src/DoConfig	Mon Aug 25 09:04:35 2014
-@@ -12,23 +12,27 @@
+--- src/DoConfig.orig	Sat Nov  8 18:18:53 2014
++++ src/DoConfig	Sun Nov  9 11:35:57 2014
+@@ -12,23 +12,25 @@
  
  %MakeVal = (
  
 -'CXX'	      => 'g++',
--'CXXFLAGS'    => '-O2',
-+'CC'          => 'gcc',
+-'CXXFLAGS'    => '-g -O2',
 +'CXX'	      => '${CXX}',
-+'CFLAGS'      => '-O2 -g',
 +'CXXFLAGS'    => '$(CFLAGS)',
  'AR'	      => 'ar',
  'ARFLAGS'     => 'ruv',

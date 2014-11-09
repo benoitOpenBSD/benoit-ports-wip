@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-src_tools_c,v 1.4 2014/09/03 09:46:46 benoit Exp $
 --- src/tools.c.orig	Fri Aug 22 05:06:47 2014
 +++ src/tools.c	Mon Aug 25 09:01:51 2014
 @@ -6,6 +6,7 @@
