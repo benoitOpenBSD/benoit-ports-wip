@@ -4,16 +4,16 @@
 
 COMMENT =		Ultimate packer for executables
 
-DISTNAME =		upx-3.09-src
+DISTNAME =		upx-3.91-src
 PKGNAME = 		${DISTNAME:S/-src//}
 CATEGORIES =		archivers
 
 HOMEPAGE =		http://upx.sourceforge.net/
 
-MAINTAINER =		Benoit Lecocq <blq@arcane-labs.net>
+MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes 
+PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c z stdc++ m
 
@@ -22,7 +22,7 @@ MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=upx/}
 EXTRACT_SUFX =		.tar.bz2
 
 BUILD_DEPENDS =		archivers/ucl \
-			archivers/lzma
+			archivers/xz
 
 USE_GMAKE =		Yes
 
@@ -34,10 +34,10 @@ UPXDOCSDIR =		${PREFIX}/share/doc/upx/
 
 do-install:
 			${INSTALL_MAN} ${WRKSRC}/doc/upx.1 ${PREFIX}/man/man1 
-			${INSTALL_PROGRAM} ${WRKSRC}/src/upx ${PREFIX}/bin/upx
+			${INSTALL_PROGRAM} ${WRKSRC}/src/upx.out ${PREFIX}/bin/upx
 			${INSTALL_DATA_DIR} ${UPXDOCSDIR}
-			.for file in ${UPXDOCS}
-				${INSTALL_DATA} ${WRKSRC}/doc/${file} ${UPXDOCSDIR}
-			.endfor
+.for file in ${UPXDOCS}
+				${INSTALL_DATA} ${WRKSRC}/${file} ${UPXDOCSDIR}
+.endfor
 			
 .include <bsd.port.mk>
