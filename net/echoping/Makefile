@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.4 2007/09/15 22:36:53 merdely Exp $
+# $OpenBSD: Makefile,v 1.8 2014/01/01 20:46:28 naddy Exp $
 
 COMMENT=	test performance of a remote TCP service
 
-VERSION=	6.0.2
+VERSION =	6.0.2
 DISTNAME=	echoping-${VERSION}
 CATEGORIES=	net
 
@@ -13,29 +13,26 @@ HOMEPAGE=	http://echoping.sourceforge.net/
 MAINTAINER=     Jakob Schlyter <jakob@openbsd.org>
 
 # GPLv2
-# See http://www.openssl.org/support/faq.html#LEGAL2 and
-# http://lists.debian.org/debian-legal/2002/debian-legal-200210/msg00113.html
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
-WANTLIB=		c crypto m ssl
 
-NO_REGRESS=		Yes
-USE_GROFF =		Yes
+WANTLIB=		c crypto m ssl popt
 
-LIB_DEPENDS=		devel/popt \
-			databases/postgresql
+MODULES =		devel/gettext
+
+LIB_DEPENDS =		devel/popt
+
+NO_TEST=		Yes
 
 CONFIGURE_STYLE=	gnu
-CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS+=	--enable-http \
 			--enable-icp \
 			--enable-smtp \
 			--enable-tos \
 			--without-libidn \
 			--with-ssl=/usr \
-			--enable-tcp-info
+			--enable-tcp-info \
+			--enable-plugin="random whois dns"
+CONFIGURE_ENV +=	CPPFLAGS="-I${LOCALBASE}/include" \
+			LDFLAGS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>
