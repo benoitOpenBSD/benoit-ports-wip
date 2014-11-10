@@ -31,7 +31,7 @@ CONFIGURE_ARGS+=	--enable-http \
 			--without-libidn \
 			--with-ssl=/usr \
 			--enable-tcp-info \
-			--enable-plugin="random whois dns"
+			--enable-plugin=""
 CONFIGURE_ENV +=	CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
