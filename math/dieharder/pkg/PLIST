@@ -1,5 +1,4 @@
 @comment $OpenBSD$
-%%SHARED%%
 @bin bin/dieharder
 include/dieharder/
 include/dieharder/Dtest.h
@@ -51,5 +50,6 @@ include/dieharder/tests.h
 include/dieharder/verbose.h
 lib/libdieharder.a
 lib/libdieharder.la
+@lib lib/libdieharder.so.${LIBdieharder_VERSION}
 @man man/man1/dieharder.1
 @man man/man3/libdieharder.3
