@@ -1,0 +1,14 @@
+@comment $OpenBSD$
+@bin bin/upx
+@man man/man1/upx.1
+share/doc/upx/
+share/doc/upx/BUGS
+share/doc/upx/COPYING
+share/doc/upx/LICENSE
+share/doc/upx/NEWS
+share/doc/upx/PROJECTS
+share/doc/upx/README
+share/doc/upx/README.1ST
+share/doc/upx/README.SRC
+share/doc/upx/THANKS
+share/doc/upx/TODO
