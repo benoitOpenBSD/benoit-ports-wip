@@ -2,12 +2,12 @@
 
 COMMENT=	tool for manipulating IPv6 addresses
 
-DISTNAME =	ipv6calc-0.96.0
+DISTNAME =	ipv6calc-0.97.4
 CATEGORIES=	net
 HOMEPAGE=	http://www.deepspace6.net/projects/ipv6calc.html
 
-MASTER_SITES=	http://ftp.uni-muenster.de/pub/ipv6/bieringer/software/ipv6calc/ \
-		ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/
+MASTER_SITES=	ftp://ftp.bieringer.de/pub/linux/IPv6/ipv6calc/ \
+		ftp://ftp.deepspace6.net/pub/ds6/sources/ipv6calc/
 
 # GPLv2 only
 PERMIT_PACKAGE_CDROM=	Yes
