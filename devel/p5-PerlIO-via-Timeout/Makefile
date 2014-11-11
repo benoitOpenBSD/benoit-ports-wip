@@ -13,7 +13,6 @@ PERMIT_PACKAGE_CDROM =	Yes
 MODULES =		cpan
 
 BUILD_DEPENDS =		devel/p5-Time-Out
-
 TEST_DEPENDS =		net/p5-Test-TCP
 
 .include <bsd.port.mk>
