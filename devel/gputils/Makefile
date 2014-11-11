@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.10 2013/03/11 10:50:05 espie Exp $
+# $OpenBSD: Makefile,v 1.11 2013/05/20 08:18:16 benoit Exp $
 
 COMMENT =		GNU PIC assembler and utilities
 
-VERSION =		1.2.0
+VERSION =		1.4.0-1
 DISTNAME =		gputils-${VERSION}
 CATEGORIES =		devel
 
@@ -22,11 +22,15 @@ DISTFILES =		${DISTNAME}${EXTRACT_SUFX} gputils-testsuite-${VERSION}${EXTRACT_SU
 DIST_SUBDIR =		gputils
 
 CONFIGURE_STYLE =	autoconf
-CONFIGURE_ENV =		"CC=${CC}" "CPP=${CPP}" "CFLAGS=${CFLAGS}" "CPPFLAGS=${CPPFLAGS}" "LDFLAGS=${LDFLAGS}"
+CONFIGURE_ENV =		"CC=${CC}" "CPP=${CPP}" "CFLAGS=${CFLAGS}" "CPPFLAGS=${CPPFLAGS}" "LDFLAGS=${LDFLAGS}" "YACC=bison"
 CONFIGURE_ARGS +=	--disable-html-doc
 
 USE_GROFF =		Yes
 USE_GMAKE =		Yes
+
+# XXX Need bison/flex update
+BUILD_DPENDS =		devel/bison \
+			devel/flex
 
 AUTOCONF_VERSION =	2.69
 
