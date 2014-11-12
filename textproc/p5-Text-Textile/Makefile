@@ -2,14 +2,14 @@
 
 COMMENT=	converts simple text to web constructs
 
-DISTNAME =	Text-Textile-2.12
+DISTNAME =	Text-Textile-2.13
 CATEGORIES=	textproc
 
-MAINTAINER=	Simon Bertrang <simon@openbsd.org>
+MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
-HOMEPAGE=	http://www.textism.com/tools/textile/
+HOMEPAGE =	https://github.com/bradchoate/text-textile/
 
-# Same as Perl
+# Perl
 PERMIT_PACKAGE_CDROM=	Yes
 
 MODULES=	cpan
