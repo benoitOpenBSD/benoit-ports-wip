@@ -12,9 +12,6 @@ HOMEPAGE =		http://www.jwdt.com/~paysan/gforth.html
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =	Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		c m
 
@@ -29,7 +26,7 @@ CFLAGS +=		-Dunix
 KERNEL = 		kernl${WORDSIZE}${ENDIAN}.fi
 SUBST_VARS +=		KERNEL
 
-REGRESS_TARGET =	check
+TEST_TARGET =		check
 
 # Remove a bunch of unused and unneeded directories
 post-install:
