@@ -18,9 +18,6 @@ WRKDIST=	${WRKDIR}/mcsim
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=		c m
 
@@ -40,7 +37,7 @@ ALL_TARGET=		one
 #do-regress:
 #	@(cd ${WRKSRC}/sim && chmod 755 Test_mcsim && ./Test_mcsim)
 
-REGRESS_TARGET=	check
+TEST_TARGET =	check
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mod/mod ${PREFIX}/bin/mod
