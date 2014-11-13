@@ -10,9 +10,6 @@ MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
-PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
 
 WANTLIB=	stdc++ m z
 
@@ -25,7 +22,7 @@ LIB_DEPENDS=	audio/taglib
 do-install:
 		${INSTALL_PROGRAM} ${WRKBUILD}/taginfo ${PREFIX}/bin
 
-NO_REGRESS=	Yes
+NO_TEST =	Yes
 
 ALL_TARGET=	main
         
