@@ -28,12 +28,12 @@ MODPY_VERSION=		${FLAVOR:S/python//}
 LIB_DEPENDS-main=	::databases/openldap \
 			::security/cyrus-sasl2
 
-FLAVORS=		python2.4 python2.6
+FLAVORS=		python2.4 python2.7
 FLAVOR?=		python2.6
 
 .if ${FLAVOR:L:Mpython2.4} && !${FLAVOR:L:Npython2.4}
 MULTI_PACKAGES= -main
-.elif ${FLAVOR:L:Mpython2.6} && !${FLAVOR:L:Npython2.6}
+.elif ${FLAVOR:L:Mpython2.7} && !${FLAVOR:L:Npython2.7}
 MULTI_PACKAGES= -main -examples
 .else
 ERRORS+=	"Fatal: You must select one version: ${FLAVORS}"
