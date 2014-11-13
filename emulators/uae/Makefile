@@ -8,9 +8,6 @@ HOMEPAGE=	http://www.amigaemulator.org/
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=	ICE SM X11 Xau Xcursor Xdmcp Xext Xfixes Xi Xinerama \
 		Xcomposite Xdamage gio-2.0 \
@@ -38,7 +35,7 @@ CONFIGURE_ARGS+=	--with-sdl-sound --with-sdl --with-sdl-gfx
 LIB_DEPENDS+=		SDL::devel/sdl
 .endif
 
-NO_REGRESS=	Yes
+NO_TEST=	Yes
 
 # Workaround compiler bug on hppa: cc1plus spinning forever
 .if ${MACHINE_ARCH} == "hppa"
