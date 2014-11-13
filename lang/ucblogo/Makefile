@@ -8,9 +8,6 @@ HOMEPAGE=	http://ucblogo.sourceforge.net/
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM= Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=	c m termcap ICE SM X11 pthread stdc++
 
@@ -23,7 +20,7 @@ CONFIGURE_STYLE= gnu
 CONFIGURE_ARGS+= --with-x
 CONFIGURE_ENV=	LDFLAGS="${LDFLAGS} -L${LOCALBASE}/lib -L${X11BASE}/lib"
 		          
-NO_REGRESS=	Yes
+NO_TEST =	Yes
 
 MAKE_FILE=	makefile
 ALL_TARGET=	logo makehelp helpfiles helpfiles/HELPCONTENTS
