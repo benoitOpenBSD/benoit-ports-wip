@@ -13,9 +13,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MODULES =	lang/python
 LIB_DEPENDS =	databases/postgresql
@@ -25,7 +22,7 @@ RUN_DEPENDS =	databases/postgresql,-main
 
 MASTER_SITES =	${MASTER_SITE_PYPI:=P/PyGreSQL/}
 EXTRACT_SUFX =	.tgz
-NO_REGRESS =	Yes
+NO_TEST =	Yes
 
 MODPY_SETUPTOOLS = Yes
 
