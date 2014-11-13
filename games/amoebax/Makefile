@@ -14,7 +14,7 @@ MASTER_SITES=	${HOMEPAGE}download/
 MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # GPL/LAL
-PERMIT_DISTFILES_CDROM=	Yes
+PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB=	SDL c m pthread stdc++ SDL_image SDL_mixer
 
