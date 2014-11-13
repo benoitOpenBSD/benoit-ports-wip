@@ -13,9 +13,6 @@ HOMEPAGE=	http://thc.org/thc-hydra/
 
 # GPLv3 + restrictions in LICENCE.HYDRA
 PERMIT_PACKAGE_CDROM=	no charge
-PERMIT_PACKAGE_FTP=	Yes 
-PERMIT_DISTFILES_CDROM=	no charge
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=	c m
 
