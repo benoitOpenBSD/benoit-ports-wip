@@ -29,7 +29,7 @@ LIB_DEPENDS-main=	::databases/openldap \
 			::security/cyrus-sasl2
 
 FLAVORS=		python2.4 python2.7
-FLAVOR?=		python2.6
+FLAVOR?=		python2.7
 
 .if ${FLAVOR:L:Mpython2.4} && !${FLAVOR:L:Npython2.4}
 MULTI_PACKAGES= -main
