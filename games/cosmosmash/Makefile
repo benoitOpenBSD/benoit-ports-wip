@@ -10,9 +10,6 @@ HOMEPAGE=	http://sarrazip.com/dev/cosmosmash.html
 
 # GPLv2
 PERMIT_PACKAGE_CDROM=   Yes
-PERMIT_PACKAGE_FTP=     Yes
-PERMIT_DISTFILES_CDROM= Yes
-PERMIT_DISTFILES_FTP=   Yes
 
 WANTLIB += SDL SDL_image SDL_mixer c m pthread stdc++ flatzebra-0.1>=1
 
