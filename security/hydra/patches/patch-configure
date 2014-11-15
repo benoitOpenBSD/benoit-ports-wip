@@ -1,10 +1,10 @@
-$OpenBSD: patch-configure,v 1.6 2011/11/05 15:24:39 nigel Exp $
+$OpenBSD$
 Remove tests for include files and libraries there are no
 configure options to disable support the build may fail or be altered
 if added
---- configure.orig	Sun Oct  2 09:06:15 2011
-+++ configure	Tue Nov  1 20:03:28 2011
-@@ -246,44 +246,6 @@ if [ "X" = "X$POSTGRES_PATH" -o "X" = "X$POSTGRES_IPAT
+--- configure.orig	Tue May 22 20:08:45 2012
++++ configure	Sat Nov 15 13:49:21 2014
+@@ -273,51 +273,6 @@
  fi
  
  echo "Checking for SVN (libsvn_client-1 libapr-1.so libaprutil-1.so) ..."
@@ -18,6 +18,13 @@ if added
 -    fi
 -    if [ "X" = "X$SVN_PATH" ]; then
 -        TMP_LIB=`/bin/ls $i/libsvn_client*.so* 2> /dev/null | grep libsvn_client.`
+-        if [ -n "$TMP_LIB" ]; then
+-          SVN_PATH="$i"
+-	  APR_PATH="$i"
+-        fi
+-    fi
+-    if [ "X" = "X$SVN_PATH" ]; then
+-        TMP_LIB=`/bin/ls $i/libsvn_client*.dll* 2> /dev/null | grep libsvn_client.`
 -        if [ -n "$TMP_LIB" ]; then
 -          SVN_PATH="$i"
 -	  APR_PATH="$i"
@@ -49,7 +56,7 @@ if added
  
  if [ "X" = "X$SVN_PATH" -o "X" = "X$SVN_IPATH" -o "X" = "X$APR_IPATH" ]; then
      SVN_PATH=""
-@@ -305,28 +267,7 @@ if [ "X" = "X$SVN_PATH" -o "X" = "X$APR_PATH" ]; then
+@@ -339,34 +294,7 @@
  fi
  
  echo "Checking for firebird (libfbclient.so) ..."
@@ -62,6 +69,12 @@ if added
 -    fi
 -    if [ "X" = "X$FIREBIRD_PATH" ]; then
 -        TMP_LIB=`/bin/ls $i/libfbclient.so.* 2> /dev/null | grep libfbclient.`
+-        if [ -n "$TMP_LIB" ]; then
+-          FIREBIRD_PATH="$i"
+-        fi
+-    fi
+-    if [ "X" = "X$FIREBIRD_PATH" ]; then
+-        TMP_LIB=`/bin/ls $i/libfbclient.dll* 2> /dev/null | grep libfbclient.`
 -        if [ -n "$TMP_LIB" ]; then
 -          FIREBIRD_PATH="$i"
 -        fi
@@ -79,7 +92,7 @@ if added
  if [ -n "$FIREBIRD_PATH" -a -n "$FIREBIRD_IPATH" ]; then
      echo "                                       ... found"
  fi
-@@ -373,28 +314,7 @@ else
+@@ -419,34 +347,6 @@
        echo "                                       ... math.h not found, module Mysql disabled"
  fi
  echo "Checking for AFP (libafpclient.so) ..."
@@ -96,6 +109,12 @@ if added
 -          AFP_PATH="$i"
 -        fi
 -    fi
+-    if [ "X" = "X$AFP_PATH" ]; then
+-        TMP_LIB=`/bin/ls $i/libafpclient.dll* 2> /dev/null | grep libafpclient.`
+-        if [ -n "$TMP_LIB" ]; then
+-          AFP_PATH="$i"
+-        fi
+-    fi
 -done
 -for i in $INCDIRS
 -do
@@ -105,11 +124,10 @@ if added
 -        fi
 -    fi
 -done
-+
  if [ -n "$AFP_PATH" -a -n "$AFP_IPATH" ]; then
      echo "                                   ... found"
  fi
-@@ -405,28 +325,7 @@ if [ "X" = "X$AFP_PATH" -o "X" = "X$AFP_IPATH" ]; then
+@@ -457,34 +357,7 @@
  fi
  
  echo "Checking for NCP (libncp.so / nwcalls.h) ..."
@@ -122,6 +140,12 @@ if added
 -    fi
 -    if [ "X" = "X$NCP_PATH" ]; then
 -        TMP_LIB=`/bin/ls $i/libncp.so.* 2> /dev/null | grep ncp.`
+-        if [ -n "$TMP_LIB" ]; then
+-            NCP_PATH="$i"
+-        fi
+-    fi
+-    if [ "X" = "X$NCP_PATH" ]; then
+-        TMP_LIB=`/bin/ls $i/libncp.dll* 2> /dev/null | grep ncp.`
 -        if [ -n "$TMP_LIB" ]; then
 -            NCP_PATH="$i"
 -        fi
@@ -139,7 +163,7 @@ if added
  if [ -n "$NCP_PATH" -a -n "$NCP_IPATH" ]; then
      echo "                                         ... found"
  fi
-@@ -437,28 +336,7 @@ if [ "X" = "X$NCP_PATH" -o "X" = "X$NCP_IPATH" ]; then
+@@ -495,28 +368,7 @@
  fi
  
  echo "Checking for SAP/R3 (librfc/saprfc.h) ..."
@@ -169,7 +193,7 @@ if added
  if [ "X" = "X$SAPR3_PATH" ]; then
      SAPR3_IPATH=""
  fi
-@@ -558,34 +436,6 @@ if [ "X" != "X$WORACLE_LIB_PATH" ]; then
+@@ -628,38 +480,6 @@
      LIBDIRS="$LIBDIRS $WORACLE_LIB_PATH"
  fi
  
@@ -192,19 +216,23 @@ if added
 -          fi
 -        fi
 -    fi
--done
--for i in $INCDIRS
--do
--    if [ "X" != "X$ORACLE_PATH" ]; then
--        if [ -f "$i/oci.h" ]; then
--            ORACLE_IPATH="$i"
+-    if [ "X" = "X$ORACLE_PATH" ]; then
+-        TMP_LIB=`/bin/ls $i/libocci.dll* 2> /dev/null | grep occi.`
+-        if [ -n "$TMP_LIB" ]; then
+-            ORACLE_PATH="$i"
+-        fi
+-        if [ "X" != "X$ORACLE_PATH" ]; then
+-          TMP_LIB=`/bin/ls $i/libclntsh.dll* 2> /dev/null | grep clntsh.`
+-          if [ -z "$TMP_LIB" ]; then
+-            ORACLE_PATH=""
+-          fi
 -        fi
 -    fi
 -done
- if [ -n "$ORACLE_PATH" -a -n "$ORACLE_IPATH" ]; then
-     echo "                                                      ... found"
- fi
-@@ -648,7 +498,7 @@ fi
+ #check for Kernel Asynchronous I/O (AIO) lib support
+ if [ "X" != "X$ORACLE_PATH" ]; then
+   LIBAIO="X"
+@@ -753,7 +573,7 @@
  
  echo
  XDEFINES=""

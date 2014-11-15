@@ -1,32 +1,36 @@
-$OpenBSD: patch-Makefile_am,v 1.2 2011/11/05 15:24:39 nigel Exp $
---- Makefile.am.orig	Sun Oct  2 09:06:16 2011
-+++ Makefile.am	Wed Nov  2 22:11:22 2011
-@@ -2,7 +2,7 @@
- # Makefile for Hydra - (c) 2001-2011 by van Hauser / THC <vh@thc.org>
+$OpenBSD$
+--- Makefile.am.orig	Tue May 22 20:08:45 2012
++++ Makefile.am	Sat Nov 15 13:43:34 2014
+@@ -1,7 +1,7 @@
  #
- 
+ # Makefile for Hydra - (c) 2001-2012 by van Hauser / THC <vh@thc.org>
+ #
 -OPTS=-I. -O3
-+OPTS=-I. $(CFLAGS) 
++OPTS=-I. $(CFLAGS)
  # -Wall -ggdb -pedantic
  LIBS=-lm
  DIR=/bin
-@@ -43,7 +43,7 @@ hydra:	hydra.c $(OBJ)
+@@ -42,7 +42,7 @@
  	@echo
  
  xhydra:	
 -	-cd hydra-gtk && sh ./make_xhydra.sh
-+	-cd hydra-gtk/src &&  $(MAKE)
++	-cd hydra-gtk/src && $(MAKE)
  
  pw-inspector: pw-inspector.c
- 	-$(CC) $(OPTS) -o pw-inspector $(PWI_LOGO) pw-inspector.c
-@@ -55,12 +55,11 @@ strip:	hydra
+ 	-$(CC) $(OPTS) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) -o pw-inspector $(PWI_LOGO) pw-inspector.c
+@@ -54,16 +54,11 @@
  	strip $(BINS)
  	-echo OK > /dev/null && test -x xhydra && strip xhydra || echo OK > /dev/null
  
 -install:	strip
 -	-mkdir -p $(PREFIX)$(DIR) 
--	cp $(BINS) dpl4hydra* $(PREFIX)$(DIR) && cd $(PREFIX)$(DIR) && chmod 755 $(BINS)
+-	cp -f $(BINS) $(PREFIX)$(DIR) && cd $(PREFIX)$(DIR) && chmod 755 $(BINS)
 -	-echo OK > /dev/null && test -x xhydra && cp xhydra $(PREFIX)$(DIR) && cd $(PREFIX)$(DIR) && chmod 755 xhydra || echo OK > /dev/null
+-#	-cp -f dpl4hydra.sh ($PREFIX)/dpl4hydra.sh
+-	-sed -e "s|^INSTALLDIR=.*|INSTALLDIR="$(PREFIX)"|" dpl4hydra.sh > $(PREFIX)/bin/dpl4hydra.sh
+-	-chmod 755 $(PREFIX)/bin/dpl4hydra.sh
+-	-cp -f *.csv $(PREFIX)/etc/
 -	-mkdir -p $(PREFIX)/man/man1
 -	-cp -f hydra.1 xhydra.1 pw-inspector.1 $(PREFIX)/man/man1
 +install:

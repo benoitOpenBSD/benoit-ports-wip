@@ -49,6 +49,8 @@ post-configure:
 	cd ${WRKSRC}/hydra-gtk && ./configure
 .endif
 
+WRKDIST =	${WRKDIR}/hydra-${VERSION}
+
 LIB_DEPENDS-main=	databases/mariadb,-main \
 			databases/postgresql,-main \
 			devel/libidn \
