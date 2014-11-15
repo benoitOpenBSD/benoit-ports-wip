@@ -1,9 +1,9 @@
-# $OpenBSD: Makefile,v 1.45 2011/11/04 08:43:32 jasper Exp $
+# $OpenBSD: Makefile,v 1.53 2014/09/13 18:09:22 brad Exp $
 
 COMMENT-main=	parallelized login hacker
 COMMENT-gui=	GTK frontend for hydra
 
-VERSION=	7.1
+VERSION=	7.3
 DISTNAME=	hydra-${VERSION}-src
 PKGNAME-main=	hydra-${VERSION}
 PKGNAME-gui=	hydra-gui-${VERSION}
@@ -13,6 +13,7 @@ HOMEPAGE=	http://thc.org/thc-hydra/
 
 # GPLv3 + restrictions in LICENCE.HYDRA
 PERMIT_PACKAGE_CDROM=	no charge
+PERMIT_PACKAGE_FTP=	Yes
 
 WANTLIB=	c m
 
@@ -27,11 +28,11 @@ MULTI_PACKAGES=	-main
 CONFIGURE_STYLE=gnu dest
 
 USE_GMAKE= 	Yes
-NO_REGRESS=	Yes
+NO_TEST=	Yes
 MAKE_FLAGS=	CC=${CC}
 CFLAGS +=	-I${LOCALBASE}/include
 
-.if ${FLAVOR:L:Mno_x11}
+.if ${FLAVOR:Mno_x11}
 ALL_TARGET=	hydra pw-inspector
 
 do-install:
@@ -48,7 +49,7 @@ post-configure:
 	cd ${WRKSRC}/hydra-gtk && ./configure
 .endif
 
-LIB_DEPENDS-main=	databases/mysql,-main \
+LIB_DEPENDS-main=	databases/mariadb,-main \
 			databases/postgresql,-main \
 			devel/libidn \
 			devel/pcre \
