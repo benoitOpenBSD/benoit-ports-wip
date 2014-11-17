@@ -1,3 +1,4 @@
+$OpenBSD: patch-tests_Makefile_in,v 1.1 2013/01/20 09:00:44 benoit Exp $
 --- tests/Makefile.in.orig	Sat Jan 12 09:52:56 2013
 +++ tests/Makefile.in	Sat Jan 12 09:53:11 2013
 @@ -239,7 +239,7 @@
