@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.1.1.1 2005/02/23 20:14:34 sturm Exp $
+@comment $OpenBSD: PLIST,v 1.2 2011/07/10 16:50:37 jasper Exp $
 ${P5SITE}/Net/
 ${P5SITE}/Net/SSH/
 ${P5SITE}/Net/SSH/Perl/
@@ -98,3 +98,10 @@ ${P5SITE}/Net/SSH/Perl/Util/Term.pm
 @man man/man3p/Net::SSH::Perl::Subsystem::Client.3p
 @man man/man3p/Net::SSH::Perl::Subsystem::Server.3p
 @man man/man3p/Net::SSH::Perl::Util.3p
+share/examples/p5-Net-SSH-Perl/
+share/examples/p5-Net-SSH-Perl/cmd.pl
+share/examples/p5-Net-SSH-Perl/pscp
+share/examples/p5-Net-SSH-Perl/pssh
+share/examples/p5-Net-SSH-Perl/pssh-keygen
+share/examples/p5-Net-SSH-Perl/remoteinteract.pl
+share/examples/p5-Net-SSH-Perl/remoteinteract2.pl
