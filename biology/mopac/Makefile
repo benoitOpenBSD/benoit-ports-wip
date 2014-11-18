@@ -13,9 +13,6 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes
-PERMIT_PACKAGE_FTP =		Yes
-PERMIT_DISTFILES_CDROM =	Yes
-PERMIT_DISTFILES_FTP =		Yes
 
 WANTLIB =		c m
 
@@ -35,6 +32,6 @@ USE_GMAKE=		Yes
 
 #MAKE_FLAGS+=	EXTRA_CFLAGS=${EXTRA_CFLAGS}
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 .include <bsd.port.mk>
