@@ -16,9 +16,6 @@ MAINTAINER=	Benoit Lecocq <blq@arcane-labs.net>
 
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=		c m
 
@@ -41,7 +38,7 @@ post-install:
 			${PREFIX}/share/doc/netcdf
 
 # Some utf8 tests are failing
-# NO_REGRESS=          Yes
-REGRESS_TARGET=		check
+# NO_TEST =          Yes
+TEST_TARGET=		check
 
 .include <bsd.port.mk>
