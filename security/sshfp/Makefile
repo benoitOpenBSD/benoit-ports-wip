@@ -11,9 +11,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		ftp://ftp.xelerance.com/sshfp/
 
@@ -22,7 +19,7 @@ MODULES =		lang/python
 BUILD_DEPENDS=		:py-dnspython-*:net/py-dnspython
 
 NO_BUILD =		Yes
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 pre-configure:
 		${SUBST_CMD} ${WRKSRC}/sshfp
