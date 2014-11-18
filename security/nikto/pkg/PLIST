@@ -1,6 +1,6 @@
-@comment $OpenBSD: PLIST,v 1.12 2011/03/27 16:41:37 jasper Exp $
-@newgroup _nikto:806
-@newuser _nikto:806:806:daemon:Nikto web scanner:/nonexistent:/sbin/nologin
+@comment $OpenBSD: PLIST,v 1.13 2013/01/12 17:38:14 nigel Exp $
+@newgroup _nikto:710
+@newuser _nikto:710:710:daemon:Nikto web scanner:/nonexistent:/sbin/nologin
 bin/nikto
 @man man/man1/nikto.1
 share/doc/nikto/
