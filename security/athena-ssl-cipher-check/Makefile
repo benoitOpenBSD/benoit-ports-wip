@@ -12,9 +12,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM=   Yes
-PERMIT_PACKAGE_FTP=     Yes
-PERMIT_DISTFILES_CDROM= Yes
-PERMIT_DISTFILES_FTP=   Yes
 
 MASTER_SITES =		${HOMEPAGE}
 
@@ -22,7 +19,7 @@ MODULES =		java
 MODJAVA_VER =		1.3+
 
 NO_BUILD =		Yes
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 do-install:
 			${INSTALL_DATA} ${WRKBUILD}/${DISTNAME}.jar ${PREFIX}/bin

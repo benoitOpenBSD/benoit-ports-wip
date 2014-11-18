@@ -11,9 +11,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=hostmap/}
 
@@ -23,7 +20,7 @@ MODULES =		lang/ruby
 #RUN_DEPENDS =		::devel/ruby-rake
 
 NO_BUILD =		Yes
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 PKG_ARCH =		*
 
