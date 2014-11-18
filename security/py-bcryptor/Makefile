@@ -14,9 +14,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		${MASTER_SITE_PYPI:=B/Bcryptor/}
 
@@ -26,7 +23,7 @@ MODPY_SETUPTOOLS =	Yes
 
 BUILD_DEPENDS =		lang/cython
 RUN_DEPENDS =		sysutils/py-yamlog
-REGRESS_DEPENDS =	devel/py-nose \
+TEST_DEPENDS =		devel/py-nose \
 			${RUN_DEPENDS}
 
 pre-build:
