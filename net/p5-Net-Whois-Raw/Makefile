@@ -7,9 +7,6 @@ CATEGORIES=	net
 
 # perl
 PERMIT_PACKAGE_CDROM=   Yes
-PERMIT_PACKAGE_FTP=     Yes
-PERMIT_DISTFILES_CDROM= Yes
-PERMIT_DISTFILES_FTP=   Yes
 
 MODULES=		cpan
 
@@ -20,6 +17,6 @@ RUN_DEPENDS=		www/p5-URI \
 			www/p5-libwww \
 			converters/p5-Net-IDN-Encode
 
-REGRESS_IS_INTERACTIVE	= Yes
+TEST_IS_INTERACTIVE	= Yes
 
 .include <bsd.port.mk>

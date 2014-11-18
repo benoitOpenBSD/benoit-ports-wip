@@ -1,44 +1,46 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.27 2014/07/09 10:28:49 sthen Exp $
 
-COMMENT =		client for Cisco's AnyConnect SSL VPN
+COMMENT=	client for Cisco AnyConnect SSL VPN
 
-DISTNAME =		openconnect-2.26
+DISTNAME=	openconnect-6.00
 
-CATEGORIES =		net
+SHARED_LIBS +=  openconnect               3.0 # 3.3
 
-HOMEPAGE =		http://www.infradead.org/openconnect.html
+CATEGORIES=	net
 
-# GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
+HOMEPAGE=	http://www.infradead.org/openconnect/
 
-WANTLIB +=		c crypto m ssl z iconv xml2
+MAINTAINER=	Stuart Henderson <sthen@openbsd.org>
 
-VPNCSCRIPT =		vpnc-script:0
+# LGPLv2.1 only
+PERMIT_PACKAGE_CDROM=	Yes
 
-MASTER_SITES =		ftp://ftp.infradead.org/pub/openconnect/
-MASTER_SITES0 =		http://git.infradead.org/users/dwmw2/vpnc-scripts.git/blob_plain/HEAD:/
+WANTLIB += c gmp gnutls hogweed m nettle oath p11-kit proxy pthread
+WANTLIB += stdc++ tasn1 xml2 z ffi
 
-DISTFILES =		${DISTNAME}${EXTRACT_SUFX} ${VPNCSCRIPT}
-EXTRACT_ONLY =		${DISTNAME}${EXTRACT_SUFX}
-EXTRACT_SUFX =		.tar.gz
+MASTER_SITES=	ftp://ftp.infradead.org/pub/openconnect/
 
-LIB_DEPENDS =		converters/libiconv \
-			textproc/libxml
-USE_GMAKE =		Yes
+MODULES=		devel/gettext \
+			lang/python
+MODPY_RUNDEP=		No
+# groff is used to format html during build, USE_GROFF not needed
+# XXX can probably convert to using mandoc?
+BUILD_DEPENDS=		textproc/groff \
+			textproc/py-xml
+LIB_DEPENDS=		security/gnutls \
+			textproc/libxml \
+			net/libproxy>=0.4.6p7 \
+			security/oath-toolkit>=2.0.2
+RUN_DEPENDS=		net/vpnc-scripts
 
-NO_REGRESS =		Yes
+FAKE_FLAGS=		pkgdatadir=${PREFIX}/share/doc/openconnect
 
-ALL_TARGET =		openconnect
+CONFIGURE_STYLE=	gnu
 
-post-extract:
-	cp ${FULLDISTDIR}/vpnc-script ${WRKSRC}/
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/openconnect ${PREFIX}/bin
-	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/openconnect
-	${INSTALL_DATA} ${WRKSRC}/vpnc-script ${PREFIX}/share/examples/openconnect/
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LDFLAGS="-L${LOCALBASE}/lib -liconv"
+CONFIGURE_ARGS=	--with-vpnc-script=${SYSCONFDIR}/vpnc-script \
+		--without-stoken
+# make sure libstoken isn't picked up automatically if we import it.
 
 .include <bsd.port.mk>
