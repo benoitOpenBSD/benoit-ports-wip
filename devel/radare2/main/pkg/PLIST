@@ -1,26 +1,24 @@
 @comment $OpenBSD: PLIST,v 1.2 2011/11/07 22:06:47 edd Exp $
 %%SHARED%%
 bin/r2
-@bin bin/r2agent
 @bin bin/rabin2
 @bin bin/radare2
 @bin bin/radiff2
 @bin bin/rafind2
 @bin bin/ragg2
-bin/ragg2-cc
 @bin bin/rahash2
+@bin bin/ranal2
 @bin bin/rarun2
+@bin bin/rasc2
 @bin bin/rasm2
 @bin bin/rax2
 include/libr/
 include/libr/btree.h
-include/libr/ht.h
 include/libr/list.h
 include/libr/r.h
 include/libr/r_anal.h
 include/libr/r_asm.h
 include/libr/r_bin.h
-include/libr/r_bin_dwarf.h
 include/libr/r_bp.h
 include/libr/r_cmd.h
 include/libr/r_config.h
@@ -38,6 +36,7 @@ include/libr/r_hash.h
 include/libr/r_io.h
 include/libr/r_lang.h
 include/libr/r_lib.h
+include/libr/r_line.h
 include/libr/r_list.h
 include/libr/r_magic.h
 include/libr/r_parse.h
@@ -46,7 +45,6 @@ include/libr/r_reg.h
 include/libr/r_regex.h
 include/libr/r_search.h
 include/libr/r_sign.h
-include/libr/r_slist.h
 include/libr/r_socket.h
 include/libr/r_syscall.h
 include/libr/r_th.h
@@ -54,63 +52,7 @@ include/libr/r_types.h
 include/libr/r_types_base.h
 include/libr/r_userconf.h
 include/libr/r_util.h
-include/libr/sdb/
-include/libr/sdb.h
-include/libr/sdb/buffer.h
-include/libr/sdb/cdb.h
-include/libr/sdb/cdb_make.h
-include/libr/sdb/config.h
-include/libr/sdb/ht.h
-include/libr/sdb/ls.h
-include/libr/sdb/sdb-version.h
-include/libr/sdb/sdb.h
-include/libr/sdb/types.h
-include/libr/sflib/
-include/libr/sflib/common/
-include/libr/sflib/common/sfsocketcall.h
-include/libr/sflib/common/sftypes.h
-include/libr/sflib/darwin-x86-32/
-include/libr/sflib/darwin-x86-32/sflib.h
-include/libr/sflib/darwin-x86-32/sfsyscall.h
-include/libr/sflib/darwin-x86-32/sfsysnr.h
-include/libr/sflib/linux-x86-32/
-include/libr/sflib/linux-x86-32/sflib.h
-include/libr/sflib/linux-x86-32/sfsyscall.h
-include/libr/sflib/linux-x86-32/sfsysnr.h
-include/libr/sflib/linux-x86-64/
-include/libr/sflib/linux-x86-64/sflib.h
-include/libr/sflib/linux-x86-64/sfsyscall.h
-include/libr/sflib/linux-x86-64/sfsysnr.h
-@lib lib/libr_anal.so.${LIBr_anal_VERSION}
-@lib lib/libr_asm.so.${LIBr_asm_VERSION}
-@lib lib/libr_bin.so.${LIBr_bin_VERSION}
-@lib lib/libr_bp.so.${LIBr_bp_VERSION}
-@lib lib/libr_cmd.so.${LIBr_cmd_VERSION}
-@lib lib/libr_config.so.${LIBr_config_VERSION}
-@lib lib/libr_cons.so.${LIBr_cons_VERSION}
-@lib lib/libr_core.so.${LIBr_core_VERSION}
-@lib lib/libr_crypto.so.${LIBr_crypto_VERSION}
-@lib lib/libr_db.so.${LIBr_db_VERSION}
-@lib lib/libr_debug.so.${LIBr_debug_VERSION}
-@lib lib/libr_diff.so.${LIBr_diff_VERSION}
-@lib lib/libr_egg.so.${LIBr_egg_VERSION}
-@lib lib/libr_flags.so.${LIBr_flags_VERSION}
-@lib lib/libr_fs.so.${LIBr_fs_VERSION}
-@lib lib/libr_hash.so.${LIBr_hash_VERSION}
-@lib lib/libr_io.so.${LIBr_io_VERSION}
-@lib lib/libr_lang.so.${LIBr_lang_VERSION}
-@lib lib/libr_lib.so.${LIBr_lib_VERSION}
-@lib lib/libr_magic.so.${LIBr_magic_VERSION}
-@lib lib/libr_parse.so.${LIBr_parse_VERSION}
-@lib lib/libr_reg.so.${LIBr_reg_VERSION}
-@lib lib/libr_search.so.${LIBr_search_VERSION}
-@lib lib/libr_sign.so.${LIBr_sign_VERSION}
-@lib lib/libr_socket.so.${LIBr_socket_VERSION}
-@lib lib/libr_syscall.so.${LIBr_syscall_VERSION}
-lib/libr_tcc.a
-@bin lib/libr_tcc.dylib
-lib/libr_tcc.h
-@lib lib/libr_util.so.${LIBr_util_VERSION}
+lib/libsdb.a
 lib/pkgconfig/
 lib/pkgconfig/r_anal.pc
 lib/pkgconfig/r_asm.pc
@@ -129,18 +71,19 @@ lib/pkgconfig/r_hash.pc
 lib/pkgconfig/r_io.pc
 lib/pkgconfig/r_lang.pc
 lib/pkgconfig/r_lib.pc
+lib/pkgconfig/r_line.pc
 lib/pkgconfig/r_magic.pc
 lib/pkgconfig/r_parse.pc
+lib/pkgconfig/r_print.pc
 lib/pkgconfig/r_reg.pc
 lib/pkgconfig/r_search.pc
 lib/pkgconfig/r_sign.pc
 lib/pkgconfig/r_socket.pc
 lib/pkgconfig/r_syscall.pc
+lib/pkgconfig/r_th.pc
 lib/pkgconfig/r_util.pc
 lib/radare2/
 lib/radare2/${V}/
-lib/radare2/${V}/hud/
-lib/radare2/${V}/hud/main
 lib/radare2/${V}/magic/
 lib/radare2/${V}/magic/OpenBSD
 lib/radare2/${V}/magic/archive
@@ -170,10 +113,6 @@ lib/radare2/${V}/magic/sniffer
 lib/radare2/${V}/magic/sql
 lib/radare2/${V}/magic/sun
 lib/radare2/${V}/magic/uuencode
-lib/radare2/${V}/opcodes/
-lib/radare2/${V}/opcodes/arm.sdb
-lib/radare2/${V}/opcodes/ppc.sdb
-lib/radare2/${V}/opcodes/x86.sdb
 lib/radare2/${V}/radare.lua
 lib/radare2/${V}/radare.py
 lib/radare2/${V}/radare.rb
@@ -191,19 +130,19 @@ lib/radare2/${V}/syscall/openbsd-x86-32.sdb
 lib/radare2/${V}/syscall/openbsd-x86-64.sdb
 lib/radare2/${V}/syscall/windows-x86-32.sdb
 lib/radare2/${V}/syscall/windows-x86-64.sdb
-lib/radare2/last
-@bin lib/t.2.0
 @man man/man1/r2.1
 @man man/man1/rabin2.1
 @man man/man1/radare2.1
 @man man/man1/radiff2.1
 @man man/man1/rafind2.1
-@man man/man1/ragg2-cc.1
 @man man/man1/ragg2.1
 @man man/man1/rahash2.1
+@man man/man1/ranal2.1
 @man man/man1/rarun2.1
+@man man/man1/rasc2.1
 @man man/man1/rasm2.1
 @man man/man1/rax2.1
+@man man/man1/rsc2.1
 share/doc/pkg-readmes/${FULLPKGNAME}
 share/doc/radare2/
 share/doc/radare2/android
@@ -211,104 +150,20 @@ share/doc/radare2/bindiff
 share/doc/radare2/brainfuck
 share/doc/radare2/changes-from-1.x
 share/doc/radare2/dospart
-share/doc/radare2/dwarf-line.rsc
-share/doc/radare2/emscripten
 share/doc/radare2/fortunes
-share/doc/radare2/gdb
-share/doc/radare2/haiku
-share/doc/radare2/hud
-share/doc/radare2/idc2r.py
 share/doc/radare2/idc2rdb.idc
 share/doc/radare2/idc2rdb.pl
 share/doc/radare2/iocache
 share/doc/radare2/iphone
 share/doc/radare2/lang-plugins
-share/doc/radare2/macros
 share/doc/radare2/maemo
 share/doc/radare2/oo
 share/doc/radare2/osx
 share/doc/radare2/plugins
-share/doc/radare2/qnx
 share/doc/radare2/releases
 share/doc/radare2/rgraph
 share/doc/radare2/solaris
 share/doc/radare2/static
 share/doc/radare2/static-plugins
 share/doc/radare2/syntax
-share/doc/radare2/vim
 share/doc/radare2/windows
-share/radare2/
-share/radare2/${V}/
-share/radare2/${V}/cons/
-share/radare2/${V}/cons/Makefile
-share/radare2/${V}/cons/dark
-share/radare2/${V}/cons/lima
-share/radare2/${V}/cons/white
-share/radare2/${V}/www/
-share/radare2/${V}/www/d3/
-share/radare2/${V}/www/d3/d3.js
-share/radare2/${V}/www/d3/d3.layout.js
-share/radare2/${V}/www/d3/index.html
-share/radare2/${V}/www/d3/packages.js
-share/radare2/${V}/www/d3/style.css
-share/radare2/${V}/www/enyo/
-share/radare2/${V}/www/enyo/Makefile
-share/radare2/${V}/www/enyo/build/
-share/radare2/${V}/www/enyo/build/app.css
-share/radare2/${V}/www/enyo/build/app.js
-share/radare2/${V}/www/enyo/build/enyo.css
-share/radare2/${V}/www/enyo/build/enyo.js
-share/radare2/${V}/www/enyo/favicon.ico
-share/radare2/${V}/www/enyo/icon.png
-share/radare2/${V}/www/enyo/index.css
-share/radare2/${V}/www/enyo/index.html
-share/radare2/${V}/www/enyo/index.js
-share/radare2/${V}/www/enyo/js/
-share/radare2/${V}/www/enyo/js/about.js
-share/radare2/${V}/www/enyo/js/assembler.js
-share/radare2/${V}/www/enyo/js/config.js
-share/radare2/${V}/www/enyo/js/console.js
-share/radare2/${V}/www/enyo/js/debugger.js
-share/radare2/${V}/www/enyo/js/disassembler.js
-share/radare2/${V}/www/enyo/js/graph.js
-share/radare2/${V}/www/enyo/js/hexdump.js
-share/radare2/${V}/www/enyo/js/leftpanel.js
-share/radare2/${V}/www/enyo/js/logs.js
-share/radare2/${V}/www/enyo/js/main.js
-share/radare2/${V}/www/enyo/js/mainpanel.js
-share/radare2/${V}/www/enyo/js/r2.js
-share/radare2/${V}/www/enyo/js/r2ui.js
-share/radare2/${V}/www/enyo/js/rightpanel.js
-share/radare2/${V}/www/enyo/js/script.js
-share/radare2/${V}/www/enyo/js/search.js
-share/radare2/${V}/www/enyo/js/settings.js
-share/radare2/${V}/www/enyo/lib/
-share/radare2/${V}/www/enyo/lib/onyx/
-share/radare2/${V}/www/enyo/lib/onyx/images/
-share/radare2/${V}/www/enyo/lib/onyx/images/gradient-invert.png
-share/radare2/${V}/www/enyo/lib/onyx/images/gradient.png
-share/radare2/${V}/www/enyo/r2ui.js
-share/radare2/${V}/www/enyo/two
-share/radare2/${V}/www/favicon.ico
-share/radare2/${V}/www/graph/
-share/radare2/${V}/www/graph/img/
-share/radare2/${V}/www/graph/img/arrow.gif
-share/radare2/${V}/www/graph/img/arrow_d.gif
-share/radare2/${V}/www/graph/img/arrow_l.gif
-share/radare2/${V}/www/graph/img/arrow_r.gif
-share/radare2/${V}/www/graph/img/arrow_u.gif
-share/radare2/${V}/www/graph/index.html
-share/radare2/${V}/www/graph/index.js
-share/radare2/${V}/www/graph/js-graph-it.css
-share/radare2/${V}/www/graph/js-graph-it.js
-share/radare2/${V}/www/graph/make.sh
-share/radare2/${V}/www/graph/sf-homepage.css
-share/radare2/${V}/www/index.html
-share/radare2/${V}/www/log.html
-share/radare2/${V}/www/old/
-share/radare2/${V}/www/old/index.html
-share/radare2/${V}/www/old/rlogo2.png
-share/radare2/${V}/www/old/script.js
-share/radare2/${V}/www/old/style.css
-share/radare2/${V}/www/rlogo.png
-share/radare2/${V}/www/upload.html

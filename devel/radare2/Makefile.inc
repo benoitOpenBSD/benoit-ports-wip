@@ -6,11 +6,11 @@ ONLY_FOR_ARCHS ?=	amd64 i386
 # that don't. We know powerpc is busted.
 #ONLY_FOR_ARCHS ?=	arm mips64 mips64el powerpc sparc sparc64
 
-V ?=			0.9.7
+V ?=			0.8.8
 SUBST_VARS +=		V
 
 CATEGORIES ?=		devel
-HOMEPAGE ?=		http://rada.re
+HOMEPAGE ?=		http://radare.nopcode.org/
 MAINTAINER ?=		Edd Barrett <edd@openbsd.org>
 
 # LGPLv3
@@ -19,7 +19,6 @@ PERMIT_PACKAGE_FTP ?=		Yes
 PERMIT_DISTFILES_FTP ?=		Yes
 
 MASTER_SITES ?=		${HOMEPAGE}/get/
-EXTRACT_SUFX =		.tar.xz
 
 USE_GMAKE ?=		Yes
 CONFIGURE_STYLE ?=	simple

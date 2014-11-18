@@ -2,7 +2,7 @@
 
 COMMENT =		Vala bindings for Radare2
 
-DISTNAME =		radare2-bindings-${V}
+DISTNAME =		r2-bindings-${V}
 PKGNAME =		radare-bindings2-${V}
 
 BUILD_DEPENDS =		devel/radare2/main>=${V}
