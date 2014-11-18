@@ -11,9 +11,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		SDL c m pthread ogg stdc++ mikmod smpeg SDL_image SDL_mixer
 WANTLIB +=		vorbis vorbisfile
@@ -33,7 +30,7 @@ CONFIGURE_STYLE =	gnu
 CONFIGURE_ENV =		LDFLAGS="-L${LOCALBASE}/lib" \
 			CPPFLAGS="${CXXFLAGS} -I${LOCALBASE}/include -I${LOCALBASE}/include/vorbis"
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 post-install:
 			${INSTALL_DATA_DIR} ${PREFIX}/share/tecnoballz/texts

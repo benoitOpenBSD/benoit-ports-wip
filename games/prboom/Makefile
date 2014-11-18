@@ -9,9 +9,6 @@ HOMEPAGE=	http://prboom.sourceforge.net/
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=     Yes
-PERMIT_DISTFILES_CDROM= Yes
-PERMIT_DISTFILES_FTP=   Yes
 
 WANTLIB=		SDL c m pthread GL GLU SDL_mixer>=3 SDL_net>=1 png>=4
 
