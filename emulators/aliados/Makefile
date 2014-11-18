@@ -11,9 +11,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM =		Yes 
-PERMIT_PACKAGE_FTP =		Yes
-PERMIT_DISTFILES_CDROM =	Yes 
-PERMIT_DISTFILES_FTP =		Yes 
 
 WANTLIB =		c m ncurses stdc++
 
@@ -21,7 +18,7 @@ MASTER_SITES =		http://www.arrakis.es/~ninsesabe/aliados/
 
 EXTRACT_SUFX =		.tgz
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 ALIADOSDOCS =		NEWS README aliados.doc
 ALIADOSDOCSDIR =	${PREFIX}/share/doc/aliados/
