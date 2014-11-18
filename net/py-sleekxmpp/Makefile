@@ -13,9 +13,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		http://github.com/fritzy/SleekXMPP/tarball/${MODPY_EGG_VERSION}/
 
@@ -24,7 +21,7 @@ MODPY_SETUPTOOLS =	Yes
 
 WRKDIST =		${WRKDIR}/${DISTNAME:S/-${MODPY_EGG_VERSION}/-79f1aa0/}
 
-do-regress:
+do-test:
 			cd ${WRKSRC} && ${MODPY_BIN} testall.py --verbose
                         
 .include <bsd.port.mk>

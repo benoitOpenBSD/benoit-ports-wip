@@ -13,9 +13,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # Python license
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 #WANTLIB =		???
 
@@ -26,6 +23,6 @@ MODULES =		lang/python
 
 RUN_DEPENDS =		devel/py-SOAPpy
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 .include <bsd.port.mk>
