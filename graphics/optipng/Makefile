@@ -11,9 +11,6 @@ MAINTAINER=		Benoit Lecocq <blq@arcane-labs.net>
 
 # Open-Source (zlib/libpng license)
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=		c
 
@@ -31,6 +28,6 @@ do-install:
 			${INSTALL_PROGRAM} ${WRKSRC}/src/optipng ${PREFIX}/bin
 			${INSTALL_MAN} ${WRKSRC}/man/optipng.1 ${PREFIX}/man/man1
 
-NO_REGRESS=		Yes
+NO_TEST =		Yes
 
 .include <bsd.port.mk>

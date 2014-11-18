@@ -16,10 +16,8 @@ HOMEPAGE=	http://kogs-www.informatik.uni-hamburg.de/~koethe/vigra/
 
 MAINTAINER=     Benoit Lecocq <blq@arcane-labs.net>
 
+#
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM= Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=		c m z
 
@@ -47,7 +45,7 @@ CONFIGURE_ARGS+=	 ${CONFIGURE_SHARED} \
 #CONFIGURE_ENV=		PKG_CONFIG_PATH="${LOCALBASE}/lib/pkgconfig"
 #BUILD_DEPENDS=		:autoconf-${AUTOCONF_VERSION}:devel/autoconf/${AUTOCONF_VERSION}
 
-NO_REGRESS=     Yes
+NO_TEST =     Yes
 
 #pre-configure:
 #			@cd ${WRKSRC}/config \

@@ -21,9 +21,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # LGPLv.2.1
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 #WANTLIB =		???
 
@@ -77,21 +74,6 @@ CONFIGURE_ENV =		CPPFLAGS="${CXXFLAGS} -I${LOCALBASE}/include -I${X11BASE}/inclu
 #AUTOMAKE_VERSION =	??? (defaults to 1.4)
 #MODGNU_CONFIG_GUESS_DIRS = ??? (defaults to ${WRKSRC}
 
-NO_REGRESS =		Yes
-
-# Overrides for default values
-#
-#CFLAGS =		???
-#LDFLAGS =		???
-#MAKE_FILE =		???
-#PKG_ARCH =		???
-#WRKDIST =		??? if other than ${WRKDIR}/$DISTNAME
-#WRKSRC =		??? if other than ${WRKDIST}
-#WRKBUILD =		??? if other than ${WRKSRC}
-#WRKCONF =		??? if other than ${WRKBUILD}
-
-#ALL_TARGET =		???
-#INSTALL_TARGET =	???
-#REGRESS_TARGET =	???
+NO_TEST =		Yes
 
 .include <bsd.port.mk>
