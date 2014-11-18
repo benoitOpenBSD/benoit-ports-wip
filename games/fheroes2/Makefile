@@ -12,9 +12,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		SDL c m png pthread z GL stdc++ SDL_image SDL_mixer \
 			SDL_net SDL_ttf ogg
@@ -37,7 +34,7 @@ USE_GMAKE =		Yes
 
 WRKDIST =               ${WRKDIR}/fheroes-src
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 do-install:
 			${INSTALL_PROGRAM} ${WRKSRC}/src/dist/fheroes2 ${PREFIX}/bin/

@@ -11,9 +11,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB +=		SDL c m stdc++ pthread z vorbisfile xcb vorbis
 WANTLIB +=		X11 Xau Xdmcp Xext Xrandr Xrender Xxf86dga Xxf86vm
@@ -33,6 +30,6 @@ CONFIGURE_STYLE =	gnu
 #CONFIGURE_ARGS +=	${CONFIGURE_SHARED}
 CONFIGURE_ENV =         CXXFLAGS="-O0"
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 .include <bsd.port.mk>

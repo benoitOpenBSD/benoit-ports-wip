@@ -14,9 +14,6 @@ MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
 # Public domain
 PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
-PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
 
 WANTLIB=	GL GLU X11 Xext Xi Xmu c m pthread-stubs xcb glut>=4
 
@@ -28,7 +25,7 @@ ALL_TARGET=	glsfcave
 
 CFLAGS+=	-I${X11BASE}/include -I${LOCALBASE}/include
 
-NO_REGRESS=	Yes
+NO_TEST =	Yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/glsfcave ${PREFIX}/bin

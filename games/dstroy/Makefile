@@ -13,9 +13,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB +=		c m pthread stdc++ SDL SDL_image SDL_mixer
 WANTLIB +=		mikmod ogg smpeg vorbis vorbisfile SDL_net
@@ -37,7 +34,7 @@ MAKE_ENV =		CXX="${CXX}" CPPFLAGS="${CXXFLAGS} \
 USE_GROFF =		Yes
 USE_GMAKE =		Yes
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 MAKE_FILE =		Makefile.linux
 #WRKSRC =		${WRKDIR}/dstroy_src

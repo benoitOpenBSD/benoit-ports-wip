@@ -12,14 +12,11 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # 
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		http://www.evl.uic.edu/aej/BATTALION/
 
 EXTRACT_SUFX =		.tar.bz2
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 .include <bsd.port.mk>
