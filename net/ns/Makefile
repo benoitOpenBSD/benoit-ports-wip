@@ -10,9 +10,6 @@ HOMEPAGE=	http://nsnam.isi.edu/nsnam/index.php/Main_Page
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=	X11 c m pcap stdc++ tcl84 tk84
 
@@ -37,7 +34,7 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/ns2
 	${INSTALL_DATA} ${WRKSRC}/tcl/ex/*.tcl ${PREFIX}/share/examples/ns2
 
-do-regress:
+do-test:
 	cd ${WRKSRC} && ./validate
 
 .include <bsd.port.mk>
