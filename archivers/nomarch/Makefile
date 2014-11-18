@@ -11,9 +11,6 @@ MAINTAINER =		Benoit Lecocq <blq@arcane-labs.net>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =		Yes 
-PERMIT_PACKAGE_FTP =		Yes
-PERMIT_DISTFILES_CDROM =	Yes 
-PERMIT_DISTFILES_FTP =		Yes 
 
 WANTLIB =		c
 
@@ -22,7 +19,7 @@ MASTER_SITES =		ftp://ftp.ibiblio.org/pub/Linux/utils/compress/ \
 
 MAKE_FLAGS +=		CC="${CC}" LD="${CC}" CFLAGS="${CFLAGS}"
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/nomarch ${PREFIX}/bin
