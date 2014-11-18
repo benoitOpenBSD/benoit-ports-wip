@@ -11,9 +11,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		SDL c m pthread SDL_mixer
 
@@ -28,7 +25,7 @@ LOCALSTATEDIR=  ${BASELOCALSTATEDIR}/games
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	--enable-ascii
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 post-install:
 		${INSTALL_DATA} ${WRKSRC}/src/empty.prfs /var/games/

@@ -14,9 +14,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		c SDL m pthread SDL_mixer
 
@@ -29,7 +26,7 @@ LIB_DEPENDS =		devel/sdl-mixer
 USE_GROFF =		Yes
 USE_GMAKE =		Yes
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 WRKSRC =		${WRKDIST}/hexen2
 

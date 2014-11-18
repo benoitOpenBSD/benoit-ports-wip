@@ -11,9 +11,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		SDL c m pthread Xext Xxf86dga SDL_mixer
 
@@ -32,7 +29,7 @@ CONFIGURE_ENV=  	AUTOMAKE_VERSION="${AUTOMAKE_VERSION}" AUTOCONF_VERSION="${AUTO
 			CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/libpng" \
                         LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib"
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 do-configure:
 			${SUBST_CMD} ${WRKSRC}/powermanga.6
