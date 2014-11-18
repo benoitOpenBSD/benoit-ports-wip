@@ -9,9 +9,6 @@ HOMEPAGE=		http://sourceforge.net/projects/ipcad/
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=		c pcap pthread
 
@@ -20,7 +17,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ipcad/}
 CONFIGURE_STYLE=	gnu
 USE_GROFF =		Yes
 
-NO_REGRESS=		Yes
+NO_TEST =		Yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKBUILD}/ipcad ${PREFIX}/sbin

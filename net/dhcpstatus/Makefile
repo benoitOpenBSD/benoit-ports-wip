@@ -11,16 +11,13 @@ HOMEPAGE =			http://dhcpstatus.sourceforge.net/
 
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes
-PERMIT_PACKAGE_FTP =		Yes
-PERMIT_DISTFILES_CDROM =	Yes
-PERMIT_DISTFILES_FTP =		Yes
 
 MASTER_SITES =			${MASTER_SITE_SOURCEFORGE:=dhcpstatus/}
 
 MODULES =			perl
 
 NO_BUILD =			Yes
-NO_REGRESS =			Yes
+NO_TEST =			Yes
 
 PKG_ARCH =			*
 

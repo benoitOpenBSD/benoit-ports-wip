@@ -11,9 +11,7 @@ MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
 
 # GPL
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
+
 WANTLIB=		c pcap
 
 MASTER_SITES=	${HOMEPAGE}
@@ -25,7 +23,7 @@ MAKE_FLAGS=	CC="${CC}" \
 
 CONFIGURE_STYLE=simple
 
-NO_REGRESS=	Yes
+NO_TEST =	Yes
 
 #pre-install:
 #	@perl -pi -e "s,hping2,hping," ${WRKSRC}/docs/hping2.8
