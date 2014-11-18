@@ -14,9 +14,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=libewf/}
 
@@ -36,6 +33,6 @@ USE_GROFF =		Yes
 
 WRKDIST =		${WRKDIR}/libewf-20111015
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 .include <bsd.port.mk>

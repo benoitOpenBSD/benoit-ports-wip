@@ -12,9 +12,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		c crypto ssl z
 
@@ -39,6 +36,6 @@ CONFIGURE_ARGS +=	--with-sasl2=/usr/local
 #CONFIGURE_ARGS +=	--enable-wsf
 CONFIGURE_ENV +=	PKG_CONFIG_PATH=${X11BASE}/lib/pkgconfig
 
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 .include <bsd.port.mk>
