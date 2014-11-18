@@ -16,9 +16,6 @@ MAINTAINER=	Tom Knienieder <tom@knienieder.com>
 
 # BSD-like
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=		c m
 
@@ -40,6 +37,6 @@ post-install:
 			@cd ${WRKSRC}/man && ${INSTALL_DATA} *.txt *.pdf \
 			${PREFIX}/share/doc/netcdf
 
-REGRESS_TARGET=		check
+TEST_TARGET =		check
 
 .include <bsd.port.mk>
