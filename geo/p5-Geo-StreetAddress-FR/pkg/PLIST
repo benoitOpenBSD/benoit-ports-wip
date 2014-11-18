@@ -1,5 +1,0 @@
-@comment $OpenBSD$
-${P5SITE}/Geo/
-${P5SITE}/Geo/StreetAddress/
-${P5SITE}/Geo/StreetAddress/FR.pm
-@man man/man3p/Geo::StreetAddress::FR.3p
