@@ -12,9 +12,6 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 MASTER_SITES		= ${MASTER_SITE_SOURCEFORGE:=pdfedit/}
 
@@ -39,6 +36,6 @@ CONFIGURE_ARGS +=	--with-parallel-make=off \
 #CONFIGURE_ENV = CPPFLAGS='-I${X11BASE}/include/freetype2 -I${X11BASE}/include -I${LOCALBASE}/include -DLOCALBASE="\"${LOCALBASE}\""' \
 #		LDFLAGS="-L${X11BASE}/lib -L${LOCALBASE}/lib -lm -lz"
  
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 
 .include <bsd.port.mk>
