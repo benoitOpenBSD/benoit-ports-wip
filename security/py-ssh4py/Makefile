@@ -14,9 +14,6 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # LGPL
 PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
 
 WANTLIB =		crypto ssl z
 
@@ -35,7 +32,7 @@ pre-build:
 do-build:
 			@cd ${WRKSRC} && ${MAKE_ENV} \
 			PYTHONPATH=${WRKINST}${MODPY_SITEPKG} ${MODPY_BIN} ./setup_ssh4.py build
-#do-regress: fake
+#do-test: fake
 #			@cd ${WRKSRC} && ${MAKE_ENV} \
 #			PYTHONPATH=${WRKINST}${MODPY_SITEPKG} ${MODPY_BIN} ./test_pydes.py
 
