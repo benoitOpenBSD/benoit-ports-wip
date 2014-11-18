@@ -1,22 +1,19 @@
-# $OpenBSD: Makefile,v 1.6 2010/12/03 11:46:47 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.10 2014/06/14 23:26:00 sthen Exp $
 
-SHARED_ONLY =	Yes
+SHARED_ONLY=	Yes
 
-COMMENT = 	interface to the Serpent encryption algorithm
+COMMENT= 	interface to the Serpent encryption algorithm
 
-DISTNAME =	Crypt-Serpent-1.01
-CATEGORIES =	security
+MODULES=	cpan
+DISTNAME=	Crypt-Serpent-1.01
+REVISION=	4
+CATEGORIES=	security
 
-REVISION =	3
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
+MAINTAINER=	Stephan A. Rickauer <stephan@openbsd.org>
 
 # perl
-PERMIT_PACKAGE_CDROM =	Yes
-PERMIT_PACKAGE_FTP =	Yes
-PERMIT_DISTFILES_CDROM =Yes
-PERMIT_DISTFILES_FTP =	Yes
+PERMIT_PACKAGE_CDROM=   Yes
 
-MODULES =	cpan
+WANTLIB += c
 
 .include <bsd.port.mk>
