@@ -11,16 +11,13 @@ HOMEPAGE =		http://download.microsoft.com/download
 
 # No redistribution
 PERMIT_PACKAGE_CDROM =	No redistribution
-PERMIT_PACKAGE_FTP =	No redistribution
-PERMIT_DISTFILES_CDROM =No redistribution
-PERMIT_DISTFILES_FTP =	No redistribution
 
 MASTER_SITES =		${HOMEPAGE}/f/5/a/f5a3df76-d856-4a61-a6bd-722f52a5be26/
 
 BUILD_DEPENDS =		archivers/cabextract
 
 NO_BUILD =		Yes
-NO_REGRESS =		Yes
+NO_TEST =		Yes
 PKG_ARCH =		*
 
 
