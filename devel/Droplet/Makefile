@@ -15,9 +15,6 @@ MAINTAINER=		Rafael Sadowski <rafael@sizeofvoid.org>
 
 # BSD
 PERMIT_PACKAGE_CDROM=	Yes
-PERMIT_PACKAGE_FTP=	Yes
-PERMIT_DISTFILES_CDROM=	Yes
-PERMIT_DISTFILES_FTP=	Yes
 
 WANTLIB=		ssl json xml2 pthread crypto z iconv m c
 
