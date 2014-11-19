@@ -1,0 +1,20 @@
+@comment $OpenBSD$
+bin/afl-clang
+bin/afl-clang++
+@bin bin/afl-fuzz
+bin/afl-g++
+@bin bin/afl-gcc
+@bin bin/afl-showmap
+lib/afl/
+@bin lib/afl/afl-as
+lib/afl/as
+share/doc/afl/
+share/doc/afl/ChangeLog
+share/doc/afl/README
+share/doc/afl/current_todo.txt
+share/doc/afl/env_variables.txt
+share/doc/afl/notes_for_asan.txt
+share/doc/afl/parallel_fuzzing.txt
+share/doc/afl/perf_tips.txt
+share/doc/afl/related_work.txt
+share/doc/afl/status_screen.txt

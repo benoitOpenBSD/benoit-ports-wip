@@ -1,0 +1,14 @@
+$OpenBSD$
+--- afl-as.c.orig	Mon Nov 17 20:18:26 2014
++++ afl-as.c	Tue Nov 18 21:04:18 2014
+@@ -71,6 +71,10 @@ static void edit_params(int argc, char** argv) {
+   for (i = 1; i < argc; i++)
+     if (!strcmp(as_params[i], "--64")) use_64bit = 1;
+ 
++#if defined(__OpenBSD__) && defined(__amd64__)
++	use_64bit = 1;
++#endif
++
+   input_file = as_params[argc - 1];
+ 
+   if (input_file[0] == '-') {
