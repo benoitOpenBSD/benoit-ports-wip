@@ -1,5 +1,12 @@
---- Makefile~	Wed Nov 19 10:56:04 2014
-+++ Makefile	Wed Nov 19 21:26:48 2014
+$OpenBSD$
+
+1. Do not force some compilation flags.
+2. Set library version, respecting OpenBSD policy.
+3. Avoid duplication of defines, linked to (2).
+4. Do not use $(INSTALL_*) at the build stage.
+
+--- Makefile.orig	Wed Nov 19 10:56:04 2014
++++ Makefile	Wed Nov 19 22:14:42 2014
 @@ -30,7 +30,7 @@
  CFLAGS ?= -Os
  CFLAGS += -DCAPSTONE_DIET
@@ -40,15 +47,6 @@
  endif
  endif
  
-@@ -299,7 +302,7 @@
- else ifeq ($(IS_CYGWIN),1)
- ARCHIVE = $(BLDIR)/$(LIBNAME).$(AR_EXT)
- else
--ARCHIVE = $(BLDIR)/lib$(LIBNAME).$(AR_EXT)
-+ARCHIVE = $(BLDIR)/lib$(LIBNAME).$(AR_EXT).$(LIBVER)
- endif
- endif
- 
 @@ -314,7 +317,7 @@
  	cd tests && $(MAKE) BUILDDIR=$(BLDIR)
  endif
@@ -58,3 +56,37 @@
  endif
  
  ifeq ($(CAPSTONE_SHARED),yes)
+@@ -360,13 +363,9 @@
+ install: $(PKGCFGF) $(ARCHIVE) $(LIBRARY)
+ 	mkdir -p $(LIBDIR)
+ ifeq ($(CAPSTONE_SHARED),yes)
+-	$(INSTALL_LIB) $(LIBRARY) $(LIBDIR)
+-ifneq ($(VERSION_EXT),)
+-	cd $(LIBDIR) && \
+-	mv lib$(LIBNAME).$(EXT) lib$(LIBNAME).$(VERSION_EXT) && \
+-	ln -s lib$(LIBNAME).$(VERSION_EXT) lib$(LIBNAME).$(EXT)
++	$(INSTALL_LIBRARY) $(LIBRARY) $(LIBDIR)
++	$(INSTALL_DATA) $(ARCHIVE) $(LIBDIR)
+ endif
+-endif
+ ifeq ($(CAPSTONE_STATIC),yes)
+ 	$(INSTALL_DATA) $(ARCHIVE) $(LIBDIR)
+ endif
+@@ -376,13 +375,12 @@
+ 	$(INSTALL_DATA) $(PKGCFGF) $(PKGCFGDIR)/
+ 
+ uninstall:
+-	rm -rf $(INCDIR)/$(LIBNAME)
+-	rm -f $(LIBDIR)/lib$(LIBNAME).*
+-	rm -f $(PKGCFGDIR)/$(LIBNAME).pc
++	rm -f $(LIBDIR)/$(LIBRARY)
++	rm -f $(LIBDIR)/$(ARCHIVE)
++	rm -f $(LIBDIR)/pkgconfig/$(PKGCFGF)
+ 
+ clean:
+-	rm -f $(LIBOBJ)
+-	rm -f $(BLDIR)/lib$(LIBNAME).* $(BLDIR)/$(LIBNAME).*
++	rm -f $(LIBOBJ) $(ARCHIVE) $(LIBRARY)
+ 	rm -f $(PKGCFGF)
+ 	cd tests && $(MAKE) clean
+ 	rm -f $(BLDIR)/tests/lib$(LIBNAME).$(EXT)
