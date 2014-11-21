@@ -1,0 +1,21 @@
+$OpenBSD$
+--- pfe/Makefile.in.orig	Sat Oct 17 20:11:30 2009
++++ pfe/Makefile.in	Fri Nov 21 23:56:05 2014
+@@ -324,7 +324,7 @@ CFLAGS = @CFLAGS@
+ CPP = @CPP@
+ CPPFLAGS = @CPPFLAGS@
+ CYGPATH_W = @CYGPATH_W@
+-DEBUG = @WITHOUT_OPT@ @DEBUG@
++DEBUG =
+ DEFS = @DEFS@ -I. -I.. -I$(srcdir)/..            # do not do -I$(srcdir) !!
+ DEPDIR = @DEPDIR@
+ DLLFLAGS = @DLLFLAGS@
+@@ -366,7 +366,7 @@ NMEDIT = @NMEDIT@
+ OBJDUMP = @OBJDUMP@
+ OBJEXT = @OBJEXT@
+ # $Id: Makefile.am,v 1.9 2008-12-22 09:37:22 guidod Exp $
+-OPTIM = @WITH_OPT@    @OPTIM@
++OPTIM =
+ OTOOL = @OTOOL@
+ OTOOL64 = @OTOOL64@
+ PACKAGE = @PACKAGE@
