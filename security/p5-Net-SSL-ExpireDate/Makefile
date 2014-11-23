@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2013/09/23 11:49:21 sthen Exp $
+# $OpenBSD: Makefile,v 1.2 2014/11/13 16:45:16 benoit Exp $
 
 COMMENT =		obtain expiration date of SSL certificate
 
