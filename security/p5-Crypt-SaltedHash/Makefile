@@ -1,17 +1,17 @@
-# $OpenBSD: Makefile,v 1.5 2011/01/03 08:25:17 jasper Exp $
+# $OpenBSD: Makefile,v 1.8 2014/10/28 08:23:06 jasper Exp $
 
 COMMENT =	object oriented interface to create salted hashes
 
 MODULES =	cpan
-DISTNAME =	Crypt-SaltedHash-0.06
+DISTNAME =	Crypt-SaltedHash-0.09
 CATEGORIES =	security
-USE_GROFF =	Yes
 
-MAINTAINER =	Jim Razmus II <jim@bonetruck.org>
-
-CPAN_AUTHOR =	ESSKAR
+CPAN_AUTHOR =	GSHANK
 
 # Perl
 PERMIT_PACKAGE_CDROM =	Yes
+
+TEST_DEPENDS =	devel/p5-Test-Fatal
+MAKE_ENV +=	TEST_POD=1
 
 .include <bsd.port.mk>
