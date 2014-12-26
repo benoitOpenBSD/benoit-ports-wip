@@ -2,20 +2,22 @@
 
 COMMENT=	library for balanced binary trees
 
-VERSION =	2.0.2a
+VERSION =	2.0.3
 DISTNAME=	avl-${VERSION}
 PKGNAME=	libavl-${VERSION}
 CATEGORIES=	devel
 
-HOMEPAGE=	http://adtinfo.org/
+HOMEPAGE =	http://adtinfo.org/
 
 MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
+# GPLv3
 PERMIT_PACKAGE_CDROM=   Yes
 
 MASTER_SITES=   ${MASTER_SITE_GNU:=avl/}
 
-BUILD_DEPENDS =	print/texlive/base
+BUILD_DEPENDS =	print/texlive/base \
+		graphics/ImageMagick
 
 USE_GMAKE =	Yes
 
