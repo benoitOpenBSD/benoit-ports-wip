@@ -14,17 +14,15 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
 
-RUN_DEPENDS =		devel/p5-Try-Tiny
+RUN_DEPENDS =		devel/p5-Try-Tiny \
+			net/p5-IO-Socket-Timeout
 
 BUILD_DEPENDS =		devel/p5-Test-CPAN-Meta
 
-TEST_DEPENDS =	devel/p5-Test-Deep \
+TEST_DEPENDS +=		devel/p5-Test-Deep \
 			devel/p5-Test-Fatal \
 			devel/p5-Test-SharedFork \
-			devel/p5-PerlIO-via-Timeout \
 			net/p5-Test-TCP \
-			net/p5-IO-Socket-Timeout \
-			devel/p5-Try-Tiny \
 			devel/p5-IO-String \
 			databases/redis
 
