@@ -1,8 +1,8 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.2 2014/12/26 14:59:55 benoit Exp $
 
-COMMENT =	Validate your CPAN META.yml files
+COMMENT =	validate your CPAN META.yml files
 
-DISTNAME =	Test-CPAN-Meta-0.23
+DISTNAME =	Test-CPAN-Meta-0.24
 CATEGORIES =	devel
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
