@@ -1,0 +1,2 @@
+NTP protocol client daemon which will synchronize a system's clock
+to some set of NTP servers.
