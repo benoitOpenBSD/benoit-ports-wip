@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT=	Network time synchronization software
+COMMENT =	network time synchronization software
 
 DISTNAME=	ntimed-0.0.2015.01.12
 CATEGORIES=	net
@@ -14,6 +14,8 @@ PERMIT_PACKAGE_CDROM=	Yes
 GH_ACCOUNT=	bsdphk
 GH_PROJECT=	Ntimed
 GH_COMMIT=	3da3e4bde33cf3eafe2158f358a47cbdd69e2c98
+
+WANTLIB =	c m
 
 CONFIGURE_STYLE=simple
 
