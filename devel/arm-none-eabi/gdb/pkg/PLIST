@@ -1,0 +1,8 @@
+@comment $OpenBSD: PLIST,v 1.3 2011/11/08 12:40:41 jasper Exp $
+@bin bin/arm-none-eabi-gdb
+@bin bin/arm-none-eabi-gdbtui
+@bin bin/arm-none-eabi-run
+lib/libarm-none-eabi-sim.a
+@man man/man1/arm-none-eabi-gdb.1
+@man man/man1/arm-none-eabi-gdbtui.1
+@man man/man1/arm-none-eabi-run.1

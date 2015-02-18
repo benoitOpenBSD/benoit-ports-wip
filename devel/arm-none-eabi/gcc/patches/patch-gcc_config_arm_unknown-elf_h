@@ -1,0 +1,12 @@
+$OpenBSD$
+--- gcc/config/arm/unknown-elf.h.orig	Thu Jan 10 12:38:27 2013
++++ gcc/config/arm/unknown-elf.h	Sat Aug 30 22:30:28 2014
+@@ -45,7 +45,7 @@
+ #define SUBTARGET_CPP_SPEC  "-D__USES_INITFINI__"
+ 
+ #undef  PREFERRED_DEBUGGING_TYPE
+-#define PREFERRED_DEBUGGING_TYPE DWARF2_DEBUG
++#define PREFERRED_DEBUGGING_TYPE DBX_DEBUG
+ 
+ /* Return a nonzero value if DECL has a section attribute.  */
+ #define IN_NAMED_SECTION_P(DECL)					\
