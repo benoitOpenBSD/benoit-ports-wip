@@ -29,13 +29,6 @@ lib/gcc/arm-none-eabi/${VERSION}/include/stdfix.h
 lib/gcc/arm-none-eabi/${VERSION}/include/tgmath.h
 lib/gcc/arm-none-eabi/${VERSION}/include/unwind.h
 lib/gcc/arm-none-eabi/${VERSION}/include/varargs.h
-lib/gcc/arm-none-eabi/${VERSION}/include/arm_acle.h
-lib/gcc/arm-none-eabi/${VERSION}/include/stdalign.h
-lib/gcc/arm-none-eabi/${VERSION}/include/stdatomic.h
-lib/gcc/arm-none-eabi/${VERSION}/include/stdint-gcc.h
-lib/gcc/arm-none-eabi/${VERSION}/include/stdint.h
-lib/gcc/arm-none-eabi/${VERSION}/include/stdnoreturn.h
-lib/gcc/arm-none-eabi/${VERSION}/include/unwind-arm-common.h
 lib/gcc/arm-none-eabi/${VERSION}/install-tools/
 lib/gcc/arm-none-eabi/${VERSION}/install-tools/fixinc_list
 lib/gcc/arm-none-eabi/${VERSION}/install-tools/gsyslimits.h
@@ -78,12 +71,6 @@ libexec/gcc/arm-none-eabi/${VERSION}/install-tools/fixinc.sh
 @bin libexec/gcc/arm-none-eabi/${VERSION}/install-tools/fixincl
 libexec/gcc/arm-none-eabi/${VERSION}/install-tools/mkheaders
 libexec/gcc/arm-none-eabi/${VERSION}/install-tools/mkinstalldirs
-libexec/gcc/arm-none-eabi/${VERSION}/liblto_plugin.la
-@lib libexec/gcc/arm-none-eabi/${VERSION}/liblto_plugin.so.${LIBlto_plugin_VERSION}
-@bin libexec/gcc/arm-none-eabi/${VERSION}/lto-wrapper
-@bin libexec/gcc/arm-none-eabi/${VERSION}/lto1
-libexec/gcc/arm-none-eabi/${VERSION}/plugin/
-@bin libexec/gcc/arm-none-eabi/${VERSION}/plugin/gengtype
 @man man/man1/arm-none-eabi-cpp.1
 @man man/man1/arm-none-eabi-g++.1
 @man man/man1/arm-none-eabi-gcc.1
