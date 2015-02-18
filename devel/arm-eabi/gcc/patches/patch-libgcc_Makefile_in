@@ -1,0 +1,48 @@
+$OpenBSD$
+
+Using $(INSTALL_DATA) and chmod generates errors as the operation
+is not permitted. So use plain copy mode and chown/chgrp
+in the post-install target.
+
+--- libgcc/Makefile.in.orig	Wed Jan  8 17:37:08 2014
++++ libgcc/Makefile.in	Wed Feb 18 11:30:56 2015
+@@ -1023,7 +1023,7 @@
+ 	parts="$(EXTRA_PARTS)";					\
+ 	for file in $$parts; do					\
+ 	  rm -f $(gcc_objdir)$(MULTISUBDIR)/$$file;		\
+-	  $(INSTALL_DATA) $$file $(gcc_objdir)$(MULTISUBDIR)/;	\
++	  install -c $$file $(gcc_objdir)$(MULTISUBDIR)/;	\
+ 	  case $$file in 					\
+ 	    *.a)						\
+ 	      $(RANLIB) $(gcc_objdir)$(MULTISUBDIR)/$$file ;;	\
+@@ -1086,8 +1086,7 @@
+ install-shared:
+ 	$(mkinstalldirs) $(DESTDIR)$(inst_libdir)
+ 
+-	$(INSTALL_DATA) libgcc_eh.a $(DESTDIR)$(inst_libdir)/
+-	chmod 644 $(DESTDIR)$(inst_libdir)/libgcc_eh.a
++	install -c libgcc_eh.a $(DESTDIR)$(inst_libdir)/
+ 	$(RANLIB) $(DESTDIR)$(inst_libdir)/libgcc_eh.a
+ 
+ 	$(subst @multilib_dir@,$(MULTIDIR),$(subst \
+@@ -1097,17 +1096,15 @@
+ install-leaf: $(install-shared) $(install-libunwind)
+ 	$(mkinstalldirs) $(DESTDIR)$(inst_libdir)
+ 
+-	$(INSTALL_DATA) libgcc.a $(DESTDIR)$(inst_libdir)/
+-	chmod 644 $(DESTDIR)$(inst_libdir)/libgcc.a
++	install -c libgcc.a $(DESTDIR)$(inst_libdir)/
+ 	$(RANLIB) $(DESTDIR)$(inst_libdir)/libgcc.a
+-	$(INSTALL_DATA) libgcov.a $(DESTDIR)$(inst_libdir)/
+-	chmod 644 $(DESTDIR)$(inst_libdir)/libgcov.a
++	install -c libgcov.a $(DESTDIR)$(inst_libdir)/
+ 	$(RANLIB) $(DESTDIR)$(inst_libdir)/libgcov.a
+ 
+ 	parts="$(INSTALL_PARTS)";				\
+ 	for file in $$parts; do					\
+ 	  rm -f $(DESTDIR)$(inst_libdir)/$$file;		\
+-	  $(INSTALL_DATA) $$file $(DESTDIR)$(inst_libdir)/;	\
++	  install -c $$file $(DESTDIR)$(inst_libdir)/;		\
+ 	  case $$file in 					\
+ 	    *.a)						\
+ 	      $(RANLIB) $(gcc_objdir)$(MULTISUBDIR)/$$file ;;	\
