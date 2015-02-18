@@ -2,9 +2,8 @@
 
 COMMENT =	Exif jpeg camera setting parser and thumbnail remover
 
-DISTNAME =	jhead-2.97
+DISTNAME =	jhead-3.00
 CATEGORIES =	graphics
-REVISION =	0
 
 HOMEPAGE =	http://www.sentex.net/~mwandel/jhead/
 MASTER_SITES =	${HOMEPAGE}

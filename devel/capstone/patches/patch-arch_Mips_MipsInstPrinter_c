@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-arch_Mips_MipsInstPrinter_c,v 1.2 2014/11/19 21:59:31 benoit Exp $
 
 The 'mips' symbol is special on MIPS platforms, so rename it to prevent a
 conflict.
