@@ -2,7 +2,8 @@
 
 COMMENT =	Open On-Chip Debugging
 
-DISTNAME =	openocd-0.8.0
+DISTNAME =	openocd-0.6.1
+REVISION =	2
 CATEGORIES =	devel
 
 SHARED_LIBS +=  openocd		1.0 # unknown
@@ -25,7 +26,7 @@ CONFIGURE_ARGS = --disable-werror \
 		--enable-arm-jtag-ew \
 		--enable-at91rm9200 \
 		--enable-ep93xx \
-		--enable-ftdi \
+		--enable-ft2232_libftdi \
 		--enable-jlink \
 		--enable-presto_libftdi \
 		--enable-rlink \
@@ -34,7 +35,7 @@ CONFIGURE_ARGS = --disable-werror \
 		--enable-ulink \
 		--enable-buspirate \
 		--disable-internal-jimtcl \
-		--disable-opendous
+		--enable-stlink
 
 CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/jim" \
 		LDFLAGS="-L${LOCALBASE}/lib -pthread"
