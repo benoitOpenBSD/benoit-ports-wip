@@ -1,4 +1,4 @@
-$OpenBSD: patch-include_capstone_h,v 1.1 2014/03/09 19:58:51 jasper Exp $
+$OpenBSD: patch-include_capstone_h,v 1.2 2015/02/04 07:33:11 benoit Exp $
 
 The 'mips' symbol is special on MIPS platforms, so rename it to prevent a
 conflict.
