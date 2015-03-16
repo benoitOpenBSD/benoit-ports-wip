@@ -1,6 +1,6 @@
 $OpenBSD$
---- src/makefile.orig	Thu Jan 29 21:35:04 2015
-+++ src/makefile	Tue Feb  3 10:44:16 2015
+--- src/makefile.orig	Thu Feb 19 20:49:03 2015
++++ src/makefile	Mon Mar 16 08:48:34 2015
 @@ -12,12 +12,12 @@
  
  # See src/gui-qt/highlight.pro for the Qt GUI compilation options

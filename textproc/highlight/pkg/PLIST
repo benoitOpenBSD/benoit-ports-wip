@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.14 2014/09/18 11:51:20 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.15 2015/02/03 13:26:21 benoit Exp $
 @bin bin/highlight
 @man man/man1/highlight.1
 share/doc/highlight/
