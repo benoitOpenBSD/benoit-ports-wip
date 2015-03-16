@@ -2,9 +2,9 @@
 
 COMMENT =		library implementing the SSH2 protocol
 
-DISTNAME =		libssh2-1.4.3
+DISTNAME =		libssh2-1.5.0
 CATEGORIES =		security
-SHARED_LIBS +=		ssh2	6.0	# .1.1
+SHARED_LIBS +=		ssh2	7.0	# .1.1
 
 HOMEPAGE =              http://www.libssh2.org/
 
