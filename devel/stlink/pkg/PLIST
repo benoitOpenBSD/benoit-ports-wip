@@ -1,0 +1,5 @@
+@comment $OpenBSD$
+@bin bin/st-flash
+@bin bin/st-info
+@bin bin/st-term
+@bin bin/st-util
