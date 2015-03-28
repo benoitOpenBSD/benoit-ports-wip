@@ -64,6 +64,7 @@ include/NTL/pair_ZZ_pX_long.h
 include/NTL/pair_lzz_pEX_long.h
 include/NTL/pair_lzz_pX_long.h
 include/NTL/quad_float.h
+include/NTL/sp_arith.h
 include/NTL/thread.h
 include/NTL/tools.h
 include/NTL/vec_GF2.h
