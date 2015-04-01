@@ -1,9 +1,9 @@
+/patch-Makefile/1.52/Sat Feb  7 18:19:41 2015//
+/patch-contrib_svn-fe_Makefile/1.1/Sat Feb  7 18:19:41 2015//
+/patch-gitweb_gitweb_perl/1.26/Tue Jan 13 09:40:56 2015//
 /patch-perl_Makefile_PL/1.5/Fri Nov 30 21:16:30 2012//
 /patch-t_t0000-basic_sh/1.8/Tue Aug 19 19:44:39 2014//
 /patch-t_t9117-git-svn-init-clone_sh/1.2/Sat Jan 24 14:31:29 2009//
 /patch-t_t9200-git-cvsexportcommit_sh/1.5/Mon Mar 10 20:56:53 2014//
-/patch-gitweb_gitweb_perl/1.26/Tue Jan 13 16:47:58 2015//
-/patch-Makefile/1.52/Mon Feb  9 16:38:14 2015//
-/patch-contrib_svn-fe_Makefile/1.1/Sat Feb  7 18:19:41 2015//
-/patch-t_test-lib_sh/1.7/Mon Feb  9 16:38:14 2015//
+/patch-t_test-lib_sh/1.7/Sat Feb  7 18:19:41 2015//
 D
