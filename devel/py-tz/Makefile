@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.31 2014/09/29 07:02:02 jasper Exp $
+# $OpenBSD: Makefile,v 1.34 2015/04/02 14:21:16 jasper Exp $
 
 COMMENT =		Python API for dealing with timezones
 
-MODPY_EGG_VERSION =	2014.9
+MODPY_EGG_VERSION =	2015.2
 DISTNAME =		pytz-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:S/^py/py-/}
 CATEGORIES =		devel
@@ -13,7 +13,7 @@ MAINTAINER =		frantisek holop <minusf@obiit.org>
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=p/pytz/}
+MODPY_PI =		Yes
 
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
