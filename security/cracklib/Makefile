@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.13 2014/10/06 08:19:26 benoit Exp $
+# $OpenBSD: Makefile,v 1.14 2015/04/12 08:42:30 benoit Exp $
 
 COMMENT =		sensible unix password cracker
 
-DISTNAME =		cracklib-2.9.3
+DISTNAME =		cracklib-2.9.4
 SHARED_LIBS =		crack	0.4	# 11.0
 CATEGORIES =		security
 
