@@ -1,4 +1,4 @@
-$OpenBSD: patch-t_test-lib_sh,v 1.7 2015/02/07 18:19:41 dcoppa Exp $
+$OpenBSD: patch-t_test-lib_sh,v 1.8 2015/04/22 05:56:23 benoit Exp $
 
 Force usage of GNU tar in the test suite: 't5004-archive-corner-cases.sh'
 wants it badly.
