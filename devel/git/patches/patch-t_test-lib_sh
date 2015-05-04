@@ -5,8 +5,8 @@ wants it badly.
 
 Fix sum() function
 
---- t/test-lib.sh.orig	Tue Apr 21 23:09:37 2015
-+++ t/test-lib.sh	Wed Apr 22 07:43:41 2015
+--- t/test-lib.sh.orig	Thu Apr 30 21:12:02 2015
++++ t/test-lib.sh	Mon May  4 10:47:48 2015
 @@ -51,6 +51,11 @@ fi
  . "$GIT_BUILD_DIR"/GIT-BUILD-OPTIONS
  export PERL_PATH SHELL_PATH
@@ -19,7 +19,7 @@ Fix sum() function
  # if --tee was passed, write the output not only to the terminal, but
  # additionally to the file test-results/$BASENAME.out, too.
  case "$GIT_TEST_TEE_STARTED, $* " in
-@@ -925,6 +930,12 @@ case $(uname -s) in
+@@ -941,6 +946,12 @@ case $(uname -s) in
  	test_set_prereq CYGWIN
  	test_set_prereq SED_STRIPS_CR
  	test_set_prereq GREP_STRIPS_CR
