@@ -1,11 +1,11 @@
-$OpenBSD: patch-Makefile,v 1.52 2015/02/07 18:19:41 dcoppa Exp $
+$OpenBSD: patch-Makefile,v 1.53 2015/05/07 20:45:35 dcoppa Exp $
 
 No need for librt on OpenBSD
 
 Workaround for ar(1) not having 's' on VAX by calling ranlib
 
 --- Makefile.orig	Thu Apr 30 21:12:02 2015
-+++ Makefile	Mon May  4 10:47:48 2015
++++ Makefile	Thu May  7 13:26:20 2015
 @@ -1426,7 +1426,6 @@ endif
  
  ifdef HAVE_CLOCK_GETTIME

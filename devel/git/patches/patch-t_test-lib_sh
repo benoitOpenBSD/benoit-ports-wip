@@ -1,4 +1,4 @@
-$OpenBSD: patch-t_test-lib_sh,v 1.8 2015/04/22 05:56:23 benoit Exp $
+$OpenBSD: patch-t_test-lib_sh,v 1.9 2015/05/07 20:45:35 dcoppa Exp $
 
 Force usage of GNU tar in the test suite: 't5004-archive-corner-cases.sh'
 wants it badly.
@@ -6,7 +6,7 @@ wants it badly.
 Fix sum() function
 
 --- t/test-lib.sh.orig	Thu Apr 30 21:12:02 2015
-+++ t/test-lib.sh	Mon May  4 10:47:48 2015
++++ t/test-lib.sh	Thu May  7 13:26:20 2015
 @@ -51,6 +51,11 @@ fi
  . "$GIT_BUILD_DIR"/GIT-BUILD-OPTIONS
  export PERL_PATH SHELL_PATH
