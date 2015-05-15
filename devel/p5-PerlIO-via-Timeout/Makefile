@@ -2,10 +2,8 @@
 
 COMMENT =	PerlIO layer that adds read & write timeout to a handle
 
-DISTNAME =	PerlIO-via-Timeout-0.29
+DISTNAME =	PerlIO-via-Timeout-0.30
 CATEGORIES =	devel
-
-REVISION =	1
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
@@ -14,6 +12,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =		cpan
 
+RUN_DEPENDS =		devel/p5-Time-Out
 TEST_DEPENDS =		net/p5-Test-TCP
 
 .include <bsd.port.mk>
