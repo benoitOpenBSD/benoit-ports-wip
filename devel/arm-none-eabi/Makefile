@@ -2,7 +2,7 @@
 
 SUBDIR =
 SUBDIR += binutils
-SUBDIR += gcc
+SUBDIR += gcc-linaro
 SUBDIR += gdb
 SUBDIR += newlib
 

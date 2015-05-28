@@ -1,9 +1,10 @@
-# $OpenBSD: Makefile,v 1.8 2011/11/11 18:33:03 jasper Exp $
+# $OpenBSD: Makefile,v 1.11 2013/11/09 23:19:02 naddy Exp $
 
 COMMENT=	gdb for arm-none-eabi cross-development
 
-VERSION=	7.8
-DISTNAME=	gdb-${VERSION}
+DISTNAME=	gdb-7.9.1
+#REVISION=	0
+EXTRACT_SUFX=	.tar.xz
 
 HOMEPAGE=	https://www.gnu.org/software/gdb/
 
@@ -16,10 +17,16 @@ USE_GMAKE=	Yes
 
 CFLAGS+=	-Dunix
 
-CONFIGURE_ARGS+=--enable-multilib	\
-		--enable-thumb		\
-		--enable-interwork
+CONFIGURE_ARGS+=	--enable-multilib \
+			--enable-thumb \
+			--enable-interwork
 
-TEST_DEPENDS=	devel/dejagnu
+MODULES=	lang/python
+
+TEST_DEPENDS=devel/dejagnu
+
+post-install:
+	${MODPY_BIN} ${MODPY_LIBDIR}/compileall.py \
+		${PREFIX}/share/gdb/system-gdbinit
 
 .include <bsd.port.mk>

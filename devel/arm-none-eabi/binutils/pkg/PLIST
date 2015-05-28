@@ -4,6 +4,7 @@ arm-none-eabi/bin/
 @bin arm-none-eabi/bin/ar
 @bin arm-none-eabi/bin/as
 @bin arm-none-eabi/bin/ld
+@bin arm-none-eabi/bin/ld.bfd
 @bin arm-none-eabi/bin/nm
 @bin arm-none-eabi/bin/objcopy
 @bin arm-none-eabi/bin/objdump
@@ -25,8 +26,10 @@ arm-none-eabi/lib/ldscripts/armelf.xw
 @bin bin/arm-none-eabi-ar
 @bin bin/arm-none-eabi-as
 @bin bin/arm-none-eabi-c++filt
+@bin bin/arm-none-eabi-elfedit
 @bin bin/arm-none-eabi-gprof
 @bin bin/arm-none-eabi-ld
+@bin bin/arm-none-eabi-ld.bfd
 @bin bin/arm-none-eabi-nm
 @bin bin/arm-none-eabi-objcopy
 @bin bin/arm-none-eabi-objdump
@@ -40,6 +43,7 @@ arm-none-eabi/lib/ldscripts/armelf.xw
 @man man/man1/arm-none-eabi-as.1
 @man man/man1/arm-none-eabi-c++filt.1
 @man man/man1/arm-none-eabi-dlltool.1
+@man man/man1/arm-none-eabi-elfedit.1
 @man man/man1/arm-none-eabi-gprof.1
 @man man/man1/arm-none-eabi-ld.1
 @man man/man1/arm-none-eabi-nlmconv.1

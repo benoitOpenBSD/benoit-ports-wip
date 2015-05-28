@@ -1,20 +1,22 @@
-# $OpenBSD: Makefile,v 1.7 2011/11/01 19:22:24 naddy Exp $
+# $OpenBSD: Makefile,v 1.8 2012/09/28 18:55:27 sthen Exp $
 
 COMMENT=	newlib for arm-none-eabi cross-development
 
-VERSION=	2.1.0
-DISTNAME=	newlib-${VERSION}
-# BROKEN-amd64 =	as: unrecognized option -mfpu=softfpa
+DISTNAME=	newlib-2.2.0-1
+VERSION=	2.2.0.1
+PKGNAME=	${CONFIG}-newlib-${VERSION}
+#REVISION=	0
 
-HOMEPAGE=	https://sourceware.org/newlib/
+HOMEPAGE=	http://sourceware.org/newlib/
 
-MASTER_SITES=	ftp://sources.redhat.com/pub/newlib/
+MASTER_SITES=	ftp://sourceware.org/pub/newlib/
+#MASTER_SITES=	ftp://sources.redhat.com/pub/newlib/
 
 EXTRACT_SUFX=	.tar.gz
 
 BUILD_DEPENDS=	devel/arm-none-eabi/binutils \
 		${RUN_DEPENDS}
-RUN_DEPENDS=	devel/arm-none-eabi/gcc
+RUN_DEPENDS=	devel/arm-none-eabi/gcc-linaro
 
 # cope with user settings in /etc/mk.conf
 MAKE_FLAGS=	CFLAGS="-I${LOCALBASE}/include"

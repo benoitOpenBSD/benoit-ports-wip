@@ -1,9 +1,10 @@
-# $OpenBSD: Makefile,v 1.6 2011/11/11 18:33:03 jasper Exp $
+# $OpenBSD: Makefile,v 1.11 2013/11/09 23:19:02 naddy Exp $
 
 COMMENT=	binutils for arm-none-eabi cross-development
 
-VERSION=	2.24
-DISTNAME=	binutils-${VERSION}
+V=		2.25
+#REVISION=	0
+DISTNAME=	binutils-${V}
 
 HOMEPAGE=	https://www.gnu.org/software/binutils/
 
