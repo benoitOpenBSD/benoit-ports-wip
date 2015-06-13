@@ -1,6 +1,6 @@
 $OpenBSD: patch-tests_Makefile_in,v 1.1 2013/01/20 09:00:44 benoit Exp $
---- tests/Makefile.in.orig	Thu Dec  4 22:45:44 2014
-+++ tests/Makefile.in	Tue Mar 17 07:55:32 2015
+--- tests/Makefile.in.orig	Fri Jun  5 16:40:35 2015
++++ tests/Makefile.in	Sat Jun 13 14:57:28 2015
 @@ -520,7 +520,7 @@ AM_CPPFLAGS = -I$(top_srcdir)/src -I$(top_srcdir)/incl
  LDADD = ../src/libssh2.la
  @SSHD_TRUE@ssh2_SOURCES = ssh2.c
