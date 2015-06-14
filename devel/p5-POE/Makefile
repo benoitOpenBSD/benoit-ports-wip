@@ -18,6 +18,7 @@ RUN_DEPENDS =	devel/p5-Curses \
 		devel/p5-IO-Tty \
 		devel/p5-POE-Test-Loops>=1.036 \
 		devel/p5-Term-ReadKey \
+		devel/p5-Time-HiRes \
 		net/p5-Socket6 \
 		www/p5-libwww
 
