@@ -1,0 +1,2 @@
+IO::Pipely provides a couple functions to portably create 
+one- and two-way pipes and pipe-like socket pairs.
