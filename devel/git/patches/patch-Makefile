@@ -1,4 +1,4 @@
-$OpenBSD: patch-Makefile,v 1.53 2015/05/07 20:45:35 dcoppa Exp $
+$OpenBSD: patch-Makefile,v 1.54 2015/06/07 07:59:42 benoit Exp $
 
 No need for librt on OpenBSD
 
