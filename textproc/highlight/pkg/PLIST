@@ -52,6 +52,7 @@ share/highlight/langDefs/clojure.lang
 share/highlight/langDefs/clp.lang
 share/highlight/langDefs/cobol.lang
 share/highlight/langDefs/coldfusion.lang
+share/highlight/langDefs/conf.lang
 share/highlight/langDefs/crk.lang
 share/highlight/langDefs/csharp.lang
 share/highlight/langDefs/css.lang
@@ -162,6 +163,7 @@ share/highlight/langDefs/rexx.lang
 share/highlight/langDefs/rnc.lang
 share/highlight/langDefs/rpg.lang
 share/highlight/langDefs/rpl.lang
+share/highlight/langDefs/rs.lang
 share/highlight/langDefs/ruby.lang
 share/highlight/langDefs/s.lang
 share/highlight/langDefs/sas.lang
