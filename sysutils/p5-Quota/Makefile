@@ -1,18 +1,18 @@
-# $OpenBSD: Makefile,v 1.21 2014/06/14 23:26:01 sthen Exp $
+# $OpenBSD: Makefile,v 1.22 2015/07/16 23:57:27 ajacoutot Exp $
 
-SHARED_ONLY=	Yes
+SHARED_ONLY =	Yes
 
-COMMENT=	quota manipulation module
+COMMENT =	quota manipulation module
 
-MODULES=	cpan
-DISTNAME =	Quota-1.7.1
-CATEGORIES=	sysutils
+MODULES =	cpan
+DISTNAME =	Quota-1.7.2
+CATEGORIES =	sysutils
 
 # perl
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += c rpcsvc
 
-TEST_IS_INTERACTIVE=	Yes
+TEST_IS_INTERACTIVE =	Yes
 
 .include <bsd.port.mk>
