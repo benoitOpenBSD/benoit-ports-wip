@@ -3,16 +3,15 @@
 COMMENT =	perl module for getting image information
 
 MODULES =	cpan
-DISTNAME =	Image-Info-1.37
+DISTNAME =	Image-Info-1.38
 CATEGORIES =	graphics
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # perl
-PERMIT_PACKAGE_CDROM =   Yes
+PERMIT_PACKAGE_CDROM =	Yes
 
 RUN_DEPENDS =	devel/p5-IO-String>=1.08
-BUILD_DEPENDS =	${RUN_DEPENDS}
 
 TEST_DEPENDS =	textproc/p5-XML-Simple
 

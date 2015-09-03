@@ -32,6 +32,7 @@ ${P5SITE}/Image/TIFF.pm
 @man man/man3p/Bundle::Image::Info::XPM.3p
 @man man/man3p/Image::Info.3p
 @man man/man3p/Image::Info::BMP.3p
+@man man/man3p/Image::Info::GIF.3p
 @man man/man3p/Image::Info::ICO.3p
 @man man/man3p/Image::Info::PPM.3p
 @man man/man3p/Image::Info::SVG.3p
