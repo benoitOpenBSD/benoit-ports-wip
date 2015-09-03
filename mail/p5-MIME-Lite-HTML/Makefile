@@ -10,7 +10,6 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 MODULES =	cpan
 RUN_DEPENDS =	mail/p5-MIME-Lite
-BUILD_DEPENDS =	${RUN_DEPENDS}
 TEST_DEPENDS =	www/p5-libwww
 
 .include <bsd.port.mk>
