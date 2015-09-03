@@ -2,8 +2,8 @@
 
 COMMENT =	Victor Shoup's Number Theory Library
 
-DISTNAME =	ntl-9.3.0
-SHARED_LIBS =	ntl	6.1	# 0.0
+DISTNAME =	ntl-9.3.1
+SHARED_LIBS =	ntl	6.2	# 0.0
 CATEGORIES =	math
 
 HOMEPAGE =	http://www.shoup.net/ntl/
