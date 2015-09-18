@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.4 2013/08/07 21:32:11 naddy Exp $
+# $OpenBSD: Makefile,v 1.6 2015/04/02 14:21:16 jasper Exp $
 
 COMMENT =		computer algebra system (CAS) in Python
 
-MODPY_EGG_VERSION =	0.7.5
+MODPY_EGG_VERSION =	0.7.6.1
 DISTNAME =		sympy-${MODPY_EGG_VERSION}
 PKGNAME =		py-sympy-${MODPY_EGG_VERSION}
 CATEGORIES =		math
@@ -12,8 +12,7 @@ HOMEPAGE =		http://sympy.org
 # New BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=s/sympy/} \
-			https://sympy.googlecode.com/files/
+MODPY_PI =		Yes
 
 MODULES =		lang/python
 RUN_DEPENDS =		devel/ipython
