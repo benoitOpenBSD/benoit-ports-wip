@@ -1,9 +1,0 @@
-@comment $OpenBSD$
-@bin bin/yara
-@bin bin/yarac
-include/yara.h
-lib/libyara.a
-lib/libyara.la
-@lib lib/libyara.so.${LIByara_VERSION}
-@man man/man1/yara.1
-@man man/man1/yarac.1
