@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.19 2013/03/11 11:23:53 espie Exp $
+# $OpenBSD: Makefile,v 1.22 2014/09/17 09:13:13 ajacoutot Exp $
 
 COMMENT =	Python interface to sendmail milter API
 
-MODPY_EGG_VERSION = 0.9.8
+MODPY_EGG_VERSION = 1.0
 DISTNAME =	pymilter-${MODPY_EGG_VERSION}
 PKGNAME =	${DISTNAME:S/py/py-/}
 CATEGORIES =	mail
@@ -18,6 +18,9 @@ MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=pymilter/}
 
 MODULES =	lang/python
 
+CFLAGS +=	-I${LOCALBASE}/include
+
+LIB_DEPENDS =	mail/sendmail,-libmilter
 TEST_DEPENDS = ${RUN_DEPENDS} \
 		  net/py-dns
 
