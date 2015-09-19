@@ -1,3 +1,0 @@
-@comment $OpenBSD$
-lib/python${MODPY_VERSION}/site-packages/yara.so
-lib/python${MODPY_VERSION}/site-packages/yara_python-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info
