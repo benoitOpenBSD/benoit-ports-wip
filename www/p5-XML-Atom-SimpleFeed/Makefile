@@ -1,19 +1,14 @@
-# $OpenBSD: Makefile,v 1.5 2011/01/17 11:57:10 benoit Exp $
+# $OpenBSD: Makefile,v 1.7 2015/01/18 20:41:44 benoit Exp $
 
 COMMENT =	no-fuss generation of Atom syndication feeds
 
 MODULES =	cpan
-DISTNAME =	XML-Atom-SimpleFeed-0.86
+DISTNAME =	XML-Atom-SimpleFeed-0.863
 CATEGORIES =	www textproc
-USE_GROFF =	Yes
-
-MAINTAINER =	Simon Bertrang <simon@openbsd.org>
 
 # Perl
 PERMIT_PACKAGE_CDROM =		Yes
 
 RUN_DEPENDS =		devel/p5-Carp-Clan
-
-CONFIGURE_STYLE =	modbuild
 
 .include <bsd.port.mk>
