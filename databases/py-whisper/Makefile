@@ -26,4 +26,6 @@ BIN_FILES=		rrd2whisper.py whisper-create.py whisper-dump.py \
 MODPY_ADJ_FILES+=	bin/$b
 .endfor
 
+NO_TEST =		Yes
+
 .include <bsd.port.mk>
