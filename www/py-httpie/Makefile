@@ -22,7 +22,4 @@ RUN_DEPENDS =	www/py-requests \
 		textproc/py-pygments
 TEST_DEPENDS =	${RUN_DEPENDS}
 
-#do-test:
-#	cd ${WRKBUILD} && ${MODPY_BIN} tests/tests.py
-
 .include <bsd.port.mk>
