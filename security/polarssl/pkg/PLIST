@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.7 2015/06/10 09:28:08 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.8 2015/09/12 20:30:00 sthen Exp $
 @conflict polarssl-*
 include/mbedtls/
 include/mbedtls/aes.h
@@ -74,7 +74,7 @@ lib/libmbedx509.a
 @lib lib/libmbedx509.so.${LIBmbedx509_VERSION}
 share/doc/mbedtls/
 share/doc/mbedtls/ChangeLog
-share/doc/mbedtls/README.rst
+share/doc/mbedtls/README.md
 share/examples/mbedtls/
 share/examples/mbedtls/README
 @bin share/examples/mbedtls/aescrypt2
