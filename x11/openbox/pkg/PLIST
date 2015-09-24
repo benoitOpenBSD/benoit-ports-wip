@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.27 2011/11/11 10:59:22 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.28 2013/10/08 11:18:58 dcoppa Exp $
 @bin bin/gdm-control
 @bin bin/gnome-panel-control
 @bin bin/obxprop
@@ -36,8 +36,8 @@ lib/libobrender.la
 lib/libobt.a
 lib/libobt.la
 @lib lib/libobt.so.${LIBobt_VERSION}
-lib/pkgconfig/obrender-${API_V}.pc
-lib/pkgconfig/obt-${API_V}.pc
+lib/pkgconfig/obrender-3.5.pc
+lib/pkgconfig/obt-3.5.pc
 libexec/openbox-autostart
 libexec/openbox-xdg-autostart
 @man man/man1/obxprop.1
@@ -97,11 +97,12 @@ share/locale/et/LC_MESSAGES/openbox.mo
 share/locale/eu/LC_MESSAGES/openbox.mo
 share/locale/fi/LC_MESSAGES/openbox.mo
 share/locale/fr/LC_MESSAGES/openbox.mo
+share/locale/gl_ES/
+share/locale/gl_ES/LC_MESSAGES/
+share/locale/gl_ES/LC_MESSAGES/openbox.mo
 share/locale/he/LC_MESSAGES/openbox.mo
 share/locale/hr/LC_MESSAGES/openbox.mo
 share/locale/hu/LC_MESSAGES/openbox.mo
-share/locale/ia/
-share/locale/ia/LC_MESSAGES/
 share/locale/ia/LC_MESSAGES/openbox.mo
 share/locale/it/LC_MESSAGES/openbox.mo
 share/locale/ja/LC_MESSAGES/openbox.mo
