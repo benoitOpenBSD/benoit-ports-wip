@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-src_DoConfig,v 1.7 2015/11/11 09:52:00 benoit Exp $
 --- src/DoConfig.orig	Tue Nov 10 13:12:04 2015
 +++ src/DoConfig	Wed Nov 11 10:39:42 2015
 @@ -29,24 +29,26 @@
