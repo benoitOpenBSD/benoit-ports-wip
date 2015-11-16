@@ -26,12 +26,14 @@ WANTLIB-main =	GL SDL2 X11 c m pthread z ogg vorbis vorbisfile \
 
 MASTER_SITES =	${HOMEPAGE}
 
-LIB_DEPENDS-main =	audio/libogg \
+LIB_DEPENDS-main =	${MODGETTEXT_LIB_DEPENDS} \
+			audio/libogg \
 			audio/libvorbis \
 			graphics/jpeg \
 			graphics/png \
 			devel/sdl2-ttf \
 			devel/physfs
+RUN_DEPENDS-data =
 LIB_DEPENDS-data =
 WANTLIB-data =
 
