@@ -2,7 +2,7 @@
 
 COMMENT =		Atari 2600 VCS emulator
 
-DISTNAME =		stella-3.9.3
+DISTNAME =		stella-4.6.7
 CATEGORIES =		emulators
 DISTFILES =		${DISTNAME}-src.tar.gz
 
@@ -13,11 +13,11 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c stdc++ m z pthread SDL>=1.2 png
+WANTLIB =		c stdc++ m z pthread SDL2 png
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=stella/}
 
-LIB_DEPENDS =		devel/sdl \
+LIB_DEPENDS =		devel/sdl2 \
 			graphics/png
 
 CXXFLAGS +=		-I${X11BASE}/include \
