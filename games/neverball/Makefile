@@ -21,9 +21,8 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-# XXX sdl2 Broken
 WANTLIB-main =	GL SDL2 X11 c m pthread z ogg vorbis vorbisfile \
-		jpeg png SDL_ttf physfs
+		jpeg png SDL2_ttf physfs
 
 MASTER_SITES =	${HOMEPAGE}
 
@@ -60,7 +59,7 @@ do-install:
 	cd ${WRKSRC}/data && find . -type f ! -perm 644 -exec chmod 644 {} \;
 	cd ${WRKSRC} && find data -type f | pax -rw ${PREFIX}/share/neverball 
 	cd ${WRKSRC} && find locale -type f | pax -rw ${PREFIX}/share
-	cd ${WRKSRC} && ${INSTALL_DATA} COPYING README doc/AUTHORS doc/MANUAL \
-		${PREFIX}/share/doc/neverball
+	cd ${WRKSRC} && ${INSTALL_DATA} LICENSE.md README.md doc/authors.txt \
+		doc/manual.txt ${PREFIX}/share/doc/neverball
 
 .include <bsd.port.mk>
