@@ -3,7 +3,7 @@
 COMMENT=	Perl interface to the DICT protocol
 
 MODULES=	cpan
-DISTNAME=	Net-Dict-2.18
+DISTNAME =	Net-Dict-2.19
 CATEGORIES=	net
 
 MAINTAINER=	Sam Smith <s@msmith.net>
@@ -12,6 +12,7 @@ MAINTAINER=	Sam Smith <s@msmith.net>
 PERMIT_PACKAGE_CDROM=	Yes
 
 RUN_DEPENDS=	devel/p5-AppConfig-Std
-TEST_DEPENDS =	devel/p5-Test-Differences
+
+TEST_DEPENDS = devel/p5-Test-Differences
 
 .include <bsd.port.mk>

@@ -1,21 +1,22 @@
-# $OpenBSD: Makefile,v 1.11 2013/03/11 11:44:48 espie Exp $
+# $OpenBSD: Makefile,v 1.14 2015/04/02 19:38:21 jasper Exp $
 
-COMMENT=	Python cgi/fastcgi/mod_python framework
+COMMENT =	Python cgi/fastcgi/mod_python framework
 
-DISTNAME =	jonpy-0.11
-PKGNAME=	py-${DISTNAME}
-CATEGORIES=    	www
+MODPY_EGG_VERSION =	0.12
+DISTNAME =		jonpy-${MODPY_EGG_VERSION}
+PKGNAME =		py-${DISTNAME}
+CATEGORIES =		www
 
-MASTER_SITES =	${MASTER_SITE_PYPI:=j/jonpy/}
+MODPY_PI =	Yes
 
-HOMEPAGE=	http://jonpy.sourceforge.net/
+HOMEPAGE =	http://jonpy.sourceforge.net/
 
 # Python License
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE_CDROM =	Yes
 
-MODULES=	lang/python
+MODULES =	lang/python
 
-NO_TEST=	Yes
+NO_TEST =	Yes
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/py-jonpy
