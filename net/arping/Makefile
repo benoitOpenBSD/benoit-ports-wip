@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.39 2014/10/22 15:59:00 gonzalo Exp $
+# $OpenBSD: Makefile,v 1.42 2015/10/08 21:19:22 sthen Exp $
 
 COMMENT =	ARP level ping utility
 
-DISTNAME =	arping-2.15
+DISTNAME =	arping-2.16
 CATEGORIES =	net
 
 HOMEPAGE =	http://www.habets.pp.se/synscan/programs.php?prog=ARPing
