@@ -1,4 +1,4 @@
-$OpenBSD: patch-htmldoc_file_c,v 1.4 2007/05/02 18:34:00 ajacoutot Exp $
+$OpenBSD: patch-htmldoc_file_c,v 1.5 2014/11/07 13:33:40 benoit Exp $
 --- htmldoc/file.c.orig	Fri Dec 30 06:03:21 2011
 +++ htmldoc/file.c	Sun Apr  6 17:57:37 2014
 @@ -66,7 +66,7 @@
