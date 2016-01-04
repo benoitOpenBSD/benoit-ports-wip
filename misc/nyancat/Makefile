@@ -1,27 +1,24 @@
-# $OpenBSD: Makefile,v 1.5 2013/12/08 22:02:18 benoit Exp $
+# $OpenBSD: Makefile,v 1.13 2015/12/29 19:49:40 jasper Exp $
 
-COMMENT=	nyancat in your terminal
+PORTROACH =	limit:^[0-9].*
 
-V =		1.4.4
-EPOCH=		0
-DISTNAME=	${V}
-DIST_SUBDIR=	nyancat
-PKGNAME=	nyancat-${V}
+COMMENT =	nyancat in your terminal
 
-CATEGORIES=	misc
+GH_ACCOUNT =	klange
+GH_PROJECT =	nyancat
+GH_TAGNAME =	1.5.1
+EPOCH =		0
 
-HOMEPAGE=	https://github.com/klange/nyancat
+CATEGORIES =	misc
 
-# BSD
-PERMIT_PACKAGE_CDROM=	Yes
+MAINTAINER =	Frederic Cambus <fred@statdns.com>
 
-WANTLIB += c
+# NCSA
+PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES=	${HOMEPAGE}/archive/
+WANTLIB +=	c
 
-NO_TEST=	Yes
-
-WRKDIST=	${WRKDIR}/${PKGNAME}
+NO_TEST =	Yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/nyancat ${PREFIX}/bin
