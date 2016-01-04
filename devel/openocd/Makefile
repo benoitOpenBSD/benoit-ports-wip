@@ -2,10 +2,9 @@
 
 COMMENT =	Open On-Chip Debugging
 
-DISTNAME =	openocd-0.7.0
+DISTNAME =	openocd-0.9.0
+REVISION =	0
 CATEGORIES =	devel
-
-SHARED_LIBS +=  openocd		1.0 # unknown
 
 HOMEPAGE =	http://openocd.sourceforge.net/
 
@@ -22,19 +21,24 @@ EXTRACT_SUFX =	.tar.bz2
 CONFIGURE_STYLE = gnu
 CONFIGURE_ARGS = --disable-werror \
 		--disable-wextra \
-		--enable-arm-jtag-ew \
+		--enable-armjtagew \
 		--enable-at91rm9200 \
 		--enable-ep93xx \
-		--enable-ft2232_libftdi \
+		--enable-ftdi \
 		--enable-jlink \
 		--enable-presto_libftdi \
 		--enable-rlink \
 		--enable-usbprog \
 		--enable-vsllink \
 		--enable-ulink \
+		--enable-stlink \
+		--enable-ti-icdi \
+		--enable-usb-blaster-2 \
+		--enable-osbdm \
+		--enable-opendous \
+		--enable-aice \
 		--enable-buspirate \
-		--disable-internal-jimtcl \
-		--enable-stlink
+		--disable-internal-jimtcl
 
 CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/jim" \
 		LDFLAGS="-L${LOCALBASE}/lib -pthread"
@@ -43,6 +47,7 @@ LIB_DEPENDS =	devel/libftdi>=0.20 \
 		lang/jimtcl>=0.75
 
 USE_GMAKE =	Yes
+USE_LIBTOOL = 	gnu
 NO_TEST =	Yes
 
 .include <bsd.port.mk>
