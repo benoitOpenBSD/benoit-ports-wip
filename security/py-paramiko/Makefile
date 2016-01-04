@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.37 2014/10/15 17:15:37 rpe Exp $
+# $OpenBSD: Makefile,v 1.40 2015/09/29 10:52:34 sthen Exp $
 
 COMMENT = 	Python module that implements the SSH2 protocol
 
-MODPY_EGG_VERSION = 	1.15.2
+MODPY_EGG_VERSION = 	1.16.0
 DISTNAME = 		paramiko-${MODPY_EGG_VERSION}
 PKGNAME = 		py-${DISTNAME}
 CATEGORIES = 		security
@@ -14,27 +14,28 @@ MAINTAINER = 		Benoit Lecocq <benoit@openbsd.org>
 # LGPL
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES = 		${MASTER_SITE_PYPI:=p/paramiko/}
+MODPY_PI = 		Yes
 
 MODULES = 		lang/python
 
 MODPY_SETUPTOOLS = 	Yes
 
-RUN_DEPENDS = 		security/py-crypto \
-			security/py-ecdsa
+RUN_DEPENDS = 		security/py-crypto${MODPY_FLAVOR} \
+			security/py-ecdsa${MODPY_FLAVOR}
 TEST_DEPENDS =		${RUN_DEPENDS}
 
-pre-build:
-	@perl -pi -e "s,^\#\!/usr/bin/env python,#!${MODPY_BIN}," \
-	  ${WRKSRC}/demos/*.py
+FLAVORS =		python3
+FLAVOR ?=
+
+MODPY_ADJ_FILES =	demos/*.py
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/py-paramiko
-	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/py-paramiko
-	cp -R ${WRKSRC}/docs/* ${PREFIX}/share/doc/py-paramiko
-	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/doc/py-paramiko
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/${MODPY_PY_PREFIX}paramiko
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/${MODPY_PY_PREFIX}paramiko
+	cp -R ${WRKSRC}/docs/* ${PREFIX}/share/doc/${MODPY_PY_PREFIX}paramiko
+	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/doc/${MODPY_PY_PREFIX}paramiko
 	${INSTALL_DATA} ${WRKSRC}/demos/* \
-	  ${PREFIX}/share/examples/py-paramiko
+	  ${PREFIX}/share/examples/${MODPY_PY_PREFIX}paramiko
 
 do-test:
 	cd ${WRKSRC} && ${MODPY_BIN} test.py --verbose
