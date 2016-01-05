@@ -157,6 +157,7 @@ libexec/git/git-stash
 @bin libexec/git/git-status
 @bin libexec/git/git-stripspace
 libexec/git/git-submodule
+@bin libexec/git/git-submodule--helper
 @bin libexec/git/git-symbolic-ref
 @bin libexec/git/git-tag
 @bin libexec/git/git-unpack-file
