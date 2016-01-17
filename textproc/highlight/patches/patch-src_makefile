@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-src_makefile,v 1.14 2015/12/23 10:56:48 benoit Exp $
 --- src/makefile.orig	Mon Dec 21 19:31:57 2015
 +++ src/makefile	Wed Dec 23 11:24:06 2015
 @@ -12,12 +12,12 @@
