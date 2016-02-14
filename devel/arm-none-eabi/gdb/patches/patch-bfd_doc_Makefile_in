@@ -1,4 +1,4 @@
-$OpenBSD: patch-bfd_doc_Makefile_in,v 1.2 2010/10/22 15:20:21 jasper Exp $
+$OpenBSD: patch-bfd_doc_Makefile_in,v 1.1.1.1 2015/05/28 23:28:26 bmercer Exp $
 --- bfd/doc/Makefile.in.orig	Wed May 13 13:36:05 2015
 +++ bfd/doc/Makefile.in	Fri May 15 16:04:28 2015
 @@ -86,7 +86,7 @@ CONFIG_CLEAN_VPATH_FILES =

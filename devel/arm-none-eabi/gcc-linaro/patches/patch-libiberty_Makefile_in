@@ -1,4 +1,4 @@
-$OpenBSD: patch-libiberty_Makefile_in,v 1.3 2010/10/22 15:20:04 jasper Exp $
+$OpenBSD: patch-libiberty_Makefile_in,v 1.1.1.1 2015/05/28 23:28:25 bmercer Exp $
 --- libiberty/Makefile.in.orig	Fri May 31 20:20:49 2013
 +++ libiberty/Makefile.in	Wed May 13 16:42:27 2015
 @@ -344,7 +344,7 @@ libiberty.html : $(srcdir)/libiberty.texi $(TEXISRC)

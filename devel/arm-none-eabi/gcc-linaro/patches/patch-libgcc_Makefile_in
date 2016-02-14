@@ -1,4 +1,4 @@
-$OpenBSD: patch-libgcc_Makefile_in,v 1.1 2010/10/22 15:20:04 jasper Exp $
+$OpenBSD: patch-libgcc_Makefile_in,v 1.1.1.1 2015/05/28 23:28:25 bmercer Exp $
 
 Using $(INSTALL_DATA) and chmod generates errors as the operation
 is not permitted. So use plain copy mode and chown/chgrp

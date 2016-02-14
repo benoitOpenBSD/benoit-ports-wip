@@ -1,4 +1,4 @@
-$OpenBSD: patch-gcc_Makefile_in,v 1.3 2010/10/22 15:20:04 jasper Exp $
+$OpenBSD: patch-gcc_Makefile_in,v 1.1.1.1 2015/05/28 23:28:25 bmercer Exp $
 --- gcc/Makefile.in.orig	Tue Jan 13 03:10:04 2015
 +++ gcc/Makefile.in	Wed May 13 16:31:55 2015
 @@ -3233,13 +3233,7 @@ install-driver: installdirs xgcc$(exeext)

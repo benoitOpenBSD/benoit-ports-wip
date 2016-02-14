@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.2 2010/02/01 17:00:13 espie Exp $
+# $OpenBSD: Makefile,v 1.1.1.1 2015/05/28 23:28:25 bmercer Exp $
 
 SUBDIR =
 SUBDIR += binutils
 SUBDIR += gcc-linaro
+SUBDIR += gcc-linaro-bootstrap
 SUBDIR += gdb
 SUBDIR += newlib
 

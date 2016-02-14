@@ -1,4 +1,4 @@
-$OpenBSD: patch-libiberty_testsuite_Makefile_in,v 1.1 2010/10/22 15:19:28 jasper Exp $
+$OpenBSD: patch-libiberty_testsuite_Makefile_in,v 1.1.1.1 2015/05/28 23:28:25 bmercer Exp $
 
 check-expandargv randomly succeeds or fails w/o a reason.
 
