@@ -2,7 +2,8 @@
 
 COMMENT =	stm32 discovery line programmer
 
-DISTNAME =	stlink-1.0.0.150320
+V =		1.1.0
+DISTNAME =	stlink-${V}
 CATEGORIES =	devel
 
 HOMEPAGE =	https://github.com/texane/stlink
@@ -14,7 +15,12 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c usb-1.0
 
-MASTER_SITES =		http://www.arcane-labs.net/download/OpenBSD/
+# MASTER_SITES =		http://www.arcane-labs.net/download/OpenBSD/
+
+MASTER_SITES =          ${MASTER_SITES_GITHUB}
+GH_ACCOUNT =            texane
+GH_PROJECT =            stlink
+GH_TAGNAME =            $V
 
 AUTOCONF_VERSION =	2.61
 AUTOMAKE_VERSION =	1.10
