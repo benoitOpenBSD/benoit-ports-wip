@@ -2,10 +2,12 @@
 
 COMMENT=	AVR microcontroller hardware in-system programmer
 
-V=		6.0.1
+V =		6.3
 DISTNAME=	avrdude-${V}
 DISTFILES+=	avrdude-${V}.tar.gz avrdude-doc-${V}.pdf
 CATEGORIES=	devel
+
+SHARED_LIBS =	avrdude    0.0	# 1.0
 
 HOMEPAGE=	http://www.nongnu.org/avrdude/
 
