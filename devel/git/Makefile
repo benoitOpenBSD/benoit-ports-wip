@@ -26,6 +26,10 @@ MASTER_SITES =		https://www.kernel.org/pub/software/scm/git/
 
 MODULES =		devel/gettext x11/tk lang/python
 
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c
+
 MODPY_BUILDDEP =	No
 MODPY_RUNDEP =		No
 MODPY_ADJ_FILES =	contrib/hooks/multimail/git_multimail.py \
