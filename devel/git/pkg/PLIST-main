@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST-main,v 1.68 2016/03/16 08:50:39 landry Exp $
+@comment $OpenBSD: PLIST-main,v 1.69 2016/03/18 20:56:07 benoit Exp $
 @pkgpath devel/git
 @bin bin/git
 bin/git-cvsserver
