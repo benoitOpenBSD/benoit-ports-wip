@@ -12,7 +12,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =		${MASTER_SITES_GITHUB}
 
-HOMEPAGE =		https://github.com/cc65/wiki/wiki
+HOMEPAGE =		https://cc65.github.io/cc65/
 
 GH_ACCOUNT =		cc65
 GH_PROJECT =		cc65
