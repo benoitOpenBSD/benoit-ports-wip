@@ -1,0 +1,12 @@
+@comment $OpenBSD$
+@bin bin/ar65
+@bin bin/ca65
+@bin bin/cc65
+@bin bin/cl65
+@bin bin/co65
+@bin bin/da65
+@bin bin/grc65
+@bin bin/ld65
+@bin bin/od65
+@bin bin/sim65
+@bin bin/sp65

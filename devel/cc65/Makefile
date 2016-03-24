@@ -7,7 +7,7 @@ CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# BSD
+# BSD ?
 PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =		${MASTER_SITES_GITHUB}
@@ -23,5 +23,8 @@ WANTLIB +=		c m
 USE_GMAKE =		Yes
 
 NO_TEST =		Yes
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/bin/* ${PREFIX}/bin/
 
 .include <bsd.port.mk>
