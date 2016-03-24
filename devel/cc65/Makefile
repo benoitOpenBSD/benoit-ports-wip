@@ -25,7 +25,7 @@ USE_GMAKE =		Yes
 NO_TEST =		Yes
 	
 do-build:
-	cd ${WRKBUILD} && ${GMAKE} bin
+	cd ${WRKBUILD} && env GIT_SHA=${GH_COMMIT} ${GMAKE} bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/* ${PREFIX}/bin/
