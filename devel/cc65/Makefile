@@ -7,7 +7,7 @@ CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# BSD ?
+# zlib
 PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =		${MASTER_SITES_GITHUB}
@@ -23,8 +23,15 @@ WANTLIB +=		c m
 USE_GMAKE =		Yes
 
 NO_TEST =		Yes
+	
+do-build:
+	cd ${WRKBUILD} && ${GMAKE} bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/* ${PREFIX}/bin/
+	${INSTALL_DATA_DIR} ${PREFIX}/include/cc65
+	cp -R ${WRKSRC}/include/* ${PREFIX}/include/cc65
+	${INSTALL_DATA_DIR} ${PREFIX}/share/cc65/samples
+	cp -R ${WRKSRC}/samples/* ${PREFIX}/share/cc65/samples
 
 .include <bsd.port.mk>
