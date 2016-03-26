@@ -1,12 +1,9 @@
-@comment $OpenBSD: PLIST,v 1.15 2015/03/31 12:26:40 bcallah Exp $
+@comment $OpenBSD: PLIST,v 1.16 2015/10/03 17:58:07 jca Exp $
 bin/jmacs
 @bin bin/joe
 bin/jpico
 bin/jstar
 bin/rjoe
-@bin bin/stringify
-@bin bin/termidx
-@bin bin/uniproc
 @man man/man1/joe.1
 man/ru/
 man/ru/man1/
@@ -46,13 +43,9 @@ share/joe/charmaps/klingon
 share/joe/lang/
 @sample ${SYSCONFDIR}/joe/lang/
 share/joe/lang/de.po
-@sample ${SYSCONFDIR}/joe/lang/de.po
 share/joe/lang/fr.po
-@sample ${SYSCONFDIR}/joe/lang/fr.po
 share/joe/lang/ru.po
-@sample ${SYSCONFDIR}/joe/lang/ru.po
 share/joe/lang/uk.po
-@sample ${SYSCONFDIR}/joe/lang/uk.po
 share/joe/lang/zh.po
 share/joe/syntax/
 @sample ${SYSCONFDIR}/joe/syntax/
@@ -94,6 +87,8 @@ share/joe/syntax/debian.jsf
 @sample ${SYSCONFDIR}/joe/syntax/debian.jsf
 share/joe/syntax/diff.jsf
 @sample ${SYSCONFDIR}/joe/syntax/diff.jsf
+share/joe/syntax/dockerfile.jsf
+@sample ${SYSCONFDIR}/joe/syntax/dockerfile.jsf
 share/joe/syntax/elixir.jsf
 @sample ${SYSCONFDIR}/joe/syntax/elixir.jsf
 share/joe/syntax/erb.jsf
