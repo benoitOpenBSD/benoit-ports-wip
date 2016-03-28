@@ -1,0 +1,5 @@
+The libopencm3 project (previously known as libopenstm32) aims to create 
+a free/libre/open-source (LGPL v3, or later) firmware library for various 
+ARM Cortex-M0(+)/M3/M4 microcontrollers, including ST STM32, Ti Tiva and 
+Stellaris, NXP LPC 11xx, 13xx, 15xx, 17xx parts, Atmel SAM3, Energy 
+Micro EFM32 and others.
