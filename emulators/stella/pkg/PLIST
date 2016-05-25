@@ -16,6 +16,8 @@ share/doc/stella/graphics/debugger_dataops.png
 share/doc/stella/graphics/debugger_globalbuttons.png
 share/doc/stella/graphics/debugger_iotab.png
 share/doc/stella/graphics/debugger_main.png
+share/doc/stella/graphics/debugger_ram-dpc.png
+share/doc/stella/graphics/debugger_ram-f8sc.png
 share/doc/stella/graphics/debugger_ram.png
 share/doc/stella/graphics/debugger_ramsearch.png
 share/doc/stella/graphics/debugger_rom.png
