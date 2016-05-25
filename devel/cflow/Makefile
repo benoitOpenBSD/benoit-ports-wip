@@ -2,8 +2,7 @@
 
 COMMENT =	analyze C source files and print a call graph
 
-DISTNAME =	cflow-1.4
-REVISION =	0
+DISTNAME =	cflow-1.5
 CATEGORIES =	devel
 
 HOMEPAGE =	https://www.gnu.org/software/cflow/
