@@ -12,11 +12,11 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE_CDROM =		Yes
 
-WANTLIB =		c
+WANTLIB =		c iconv intl
 
 MASTER_SITES =		${MASTER_SITE_GNU:=cflow/}
 
-MODULES =		devel/gettext
+LIB_DEPENDS =		devel/gettext
 
 MAKE_FLAGS =		LIBINTL="-L${LOCALBASE}/lib -liconv -lintl"
 
