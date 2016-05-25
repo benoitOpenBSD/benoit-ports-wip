@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.35 2016/01/22 08:24:06 benoit Exp $
+# $OpenBSD: Makefile,v 1.36 2016/03/07 09:06:18 benoit Exp $
 
 COMMENT =		convert source code to markup formats
 
-DISTNAME =		highlight-3.28
+DISTNAME =		highlight-3.29
 CATEGORIES =		textproc converters
 
 HOMEPAGE =		http://www.andre-simon.de/
@@ -25,6 +25,11 @@ MODLUA_VERSION =	5.2
 
 BUILD_DEPENDS =		devel/boost
 LIB_DEPENDS =		${MODLUA_LIB_DEPENDS}
+
+# c++11
+MODULES +=		gcc4
+MODGCC4_ARCHS =		*
+MODGCC4_LANGS =		c++
 
 MAKE_FILE =		makefile
 MAKE_FLAGS =		CXX=${CXX} \
