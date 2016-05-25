@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.150 2016/04/02 15:03:37 benoit Exp $
+# $OpenBSD: Makefile,v 1.153 2016/05/17 11:54:58 jca Exp $
 
 COMMENT-main =	GIT - Tree History Storage Tool
 COMMENT-svn =	GIT - subversion interoperability tools
 COMMENT-x11 =	GIT - graphical tools
 
-V =		2.8.1
+V =		2.8.3
 DISTNAME =	git-${V}
 PKGNAME-main =	${DISTNAME}
 PKGNAME-svn =	git-svn-${V}
@@ -30,7 +30,7 @@ MODPY_BUILDDEP =	No
 MODPY_RUNDEP =		No
 MODPY_ADJ_FILES =	contrib/hooks/multimail/git_multimail.py \
 			contrib/hooks/multimail/migrate-mailhook-config \
-			contrib/hooks/multimail/post-receive
+			contrib/hooks/multimail/post-receive.example
 
 BUILD_DEPENDS =		devel/p5-Error
 
@@ -45,7 +45,6 @@ LIB_DEPENDS-main =	net/curl \
 			${MODGETTEXT_LIB_DEPENDS}
 
 RUN_DEPENDS-svn =	${BASE_PKGPATH} \
-			devel/p5-Term-ReadKey \
 			devel/subversion,-perl \
 			www/p5-URI \
 			www/p5-libwww
@@ -101,7 +100,7 @@ post-install:
 	${INSTALL_DATA} ${WRKBUILD}/contrib/hooks/post-receive-email \
 		${PREFIX}/share/git-core/templates/hooks/post-receive-email.sample
 	${INSTALL_DATA_DIR} ${PREFIX}/share/git-core/templates/hooks/multimail
-.for f in git_multimail.py migrate-mailhook-config
+.for f in git_multimail.py migrate-mailhook-config post-receive.example
 	${INSTALL_DATA} ${WRKBUILD}/contrib/hooks/multimail/$f \
 		${PREFIX}/share/git-core/templates/hooks/multimail
 .endfor
