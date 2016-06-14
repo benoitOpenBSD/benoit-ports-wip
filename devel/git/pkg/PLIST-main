@@ -185,6 +185,7 @@ libexec/git/mergetools/diffmerge
 libexec/git/mergetools/diffuse
 libexec/git/mergetools/ecmerge
 libexec/git/mergetools/emerge
+libexec/git/mergetools/examdiff
 libexec/git/mergetools/gvimdiff
 libexec/git/mergetools/gvimdiff2
 libexec/git/mergetools/gvimdiff3
