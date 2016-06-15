@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.23 2014/10/15 17:15:37 rpe Exp $
+@comment $OpenBSD: PLIST,v 1.24 2016/01/04 12:25:50 shadchin Exp $
 lib/python${MODPY_VERSION}/site-packages/paramiko/
 lib/python${MODPY_VERSION}/site-packages/paramiko-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/
 lib/python${MODPY_VERSION}/site-packages/paramiko-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info/PKG-INFO
