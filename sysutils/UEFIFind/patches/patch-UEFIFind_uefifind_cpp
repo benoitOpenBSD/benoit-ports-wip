@@ -1,0 +1,11 @@
+--- UEFIFind/uefifind.cpp.orig	Mon Jun 20 21:20:47 2016
++++ UEFIFind/uefifind.cpp	Tue Jun 21 16:32:26 2016
+@@ -11,6 +11,8 @@
+ 
+ */
+ 
++#include <QCoreApplication>
++#include <iostream>
+ #include "uefifind.h"
+ 
+ UEFIFind::UEFIFind()
