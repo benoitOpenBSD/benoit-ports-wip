@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =		parse and dump UEFI firmware image
+COMMENT =		UEFI firmware image viewer and editor
 
 V =			0.11.0
 PKGNAME =		UEFITool-${V}
@@ -21,7 +21,8 @@ GH_PROJECT =		UEFITool
 
 WRKDIST =		${WRKDIR}/${GH_PROJECT}-${DISTNAME}
 
-WANTLIB +=		c m pthread stdc++
+WANTLIB +=		c m pthread stdc++ freetype
+WANTLIB +=		ICE QtGui SM X11 Xext Xi Xinerama Xrender fontconfig
 
 MODULES =		x11/qt4 devel/qmake
 
