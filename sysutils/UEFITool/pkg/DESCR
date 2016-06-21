@@ -1,0 +1,8 @@
+UEFITool is a cross-platform C++/Qt program for parsing, extracting and 
+modifying UEFI firmware images.
+It supports parsing of full BIOS images starting with the flash descriptor 
+or any binary files containing UEFI volumes.
+Original development was started here at MDL forums as a cross-platform analog
+to PhoenixTool's structure mode with some additional features, but the program's
+engine was proven to be usefull for another projects like UEFIPatch, UBU and
+OZMTool.
