@@ -2,7 +2,7 @@
 
 COMMENT =	stm32 discovery line programmer
 
-V =		1.1.0
+V =		1.2.0
 DISTNAME =	stlink-${V}
 CATEGORIES =	devel
 
