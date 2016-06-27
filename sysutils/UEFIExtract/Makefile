@@ -2,7 +2,7 @@
 
 COMMENT =		parse and dump UEFI firmware image
 
-V =			0.11.0
+V =			0.12.0
 PKGNAME =		UEFIExtract-${V}
 DISTNAME =		UE.$V
 CATEGORIES =		sysutils
