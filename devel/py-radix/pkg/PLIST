@@ -1,3 +1,0 @@
-@comment $OpenBSD: PLIST,v 1.1.1.1 2005/05/30 22:50:22 djm Exp $
-lib/python${MODPY_VERSION}/site-packages/radix-0.5-py${MODPY_VERSION}.egg-info
-lib/python${MODPY_VERSION}/site-packages/radix.so
