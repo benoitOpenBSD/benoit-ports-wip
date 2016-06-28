@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.156 2016/06/09 19:07:54 benoit Exp $
+# $OpenBSD: Makefile,v 1.157 2016/06/21 21:56:43 jung Exp $
 
 COMMENT-main =	GIT - Tree History Storage Tool
 COMMENT-svn =	GIT - subversion interoperability tools
