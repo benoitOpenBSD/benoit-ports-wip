@@ -2,6 +2,7 @@
 @bin bin/ar65
 @bin bin/ca65
 @bin bin/cc65
+@bin bin/chrcvt65
 @bin bin/cl65
 @bin bin/co65
 @bin bin/da65
