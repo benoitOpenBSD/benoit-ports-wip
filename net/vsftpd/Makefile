@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.36 2014/03/23 21:36:51 sthen Exp $
+# $OpenBSD: Makefile,v 1.37 2015/07/26 08:18:24 benoit Exp $
 
 COMMENT=		FTP daemon which aims to be secure
 
