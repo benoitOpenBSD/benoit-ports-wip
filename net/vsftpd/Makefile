@@ -5,6 +5,8 @@ COMMENT=		FTP daemon which aims to be secure
 DISTNAME =		vsftpd-3.0.3
 CATEGORIES=		net
 
+REVISION =		0
+
 HOMEPAGE=		http://vsftpd.beasts.org/
 
 MAINTAINER=		Benoit Lecocq <benoit@openbsd.org>
