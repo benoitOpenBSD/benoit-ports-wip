@@ -7,8 +7,6 @@ CATEGORIES=		security
 
 HOMEPAGE=		http://sourceforge.net/projects/aide
 
-MAINTAINER=		Benoit Lecocq <benoit@openbsd.org>
-
 # GPLv2
 PERMIT_PACKAGE_CDROM=	Yes
 
