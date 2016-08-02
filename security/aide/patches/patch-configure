@@ -1,0 +1,21 @@
+$OpenBSD$
+--- configure.orig	Mon Jul 25 23:09:47 2016
++++ configure	Tue Aug  2 12:36:59 2016
+@@ -827,7 +827,7 @@
+ datadir='${datarootdir}'
+ sysconfdir='${prefix}/etc'
+ sharedstatedir='${prefix}/com'
+-localstatedir='${prefix}/var'
++localstatedir='/var'
+ runstatedir='${localstatedir}/run'
+ includedir='${prefix}/include'
+ oldincludedir='/usr/include'
+@@ -7003,7 +7003,7 @@
+ 
+ 
+ saved_CFLAGS="$CFLAGS"
+-CFLAGS="$CFLAGS $AIDE_DEFS"
++CFLAGS="$CFLAGS"
+ { $as_echo "$as_me:${as_lineno-$LINENO}: checking for LFS ino_t" >&5
+ $as_echo_n "checking for LFS ino_t... " >&6; }
+ if ${ac_cv_ino_type+:} false; then :
