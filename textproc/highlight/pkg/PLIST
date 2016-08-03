@@ -45,6 +45,7 @@ share/highlight/langDefs/c.lang
 share/highlight/langDefs/ceylon.lang
 share/highlight/langDefs/charmm.lang
 share/highlight/langDefs/chill.lang
+share/highlight/langDefs/chpl.lang
 share/highlight/langDefs/clean.lang
 share/highlight/langDefs/clearbasic.lang
 share/highlight/langDefs/clipper.lang
@@ -207,6 +208,7 @@ share/highlight/langDefs/vhd.lang
 share/highlight/langDefs/xml.lang
 share/highlight/langDefs/xpp.lang
 share/highlight/langDefs/yaiff.lang
+share/highlight/langDefs/yaml.lang
 share/highlight/langDefs/yang.lang
 share/highlight/langDefs/znn.lang
 share/highlight/themes/

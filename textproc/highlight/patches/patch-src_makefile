@@ -1,15 +1,15 @@
 $OpenBSD$
---- src/makefile.orig	Tue May 24 17:39:50 2016
-+++ src/makefile	Wed May 25 09:56:38 2016
+--- src/makefile.orig	Mon Aug  1 10:10:51 2016
++++ src/makefile	Wed Aug  3 08:47:22 2016
 @@ -12,13 +12,13 @@
  
  # See src/gui-qt/highlight.pro for the Qt GUI compilation options
  
--CXX=c++
-+#CXX=c++
+-CXX=g++
++#CXX=g++
  
- # Added -qt4 because of Arch Linux Qt5 migration
- QMAKE=qmake-qt5
+ # was: qmake-qt5
+ QMAKE=qmake
  
  # Added -std=c++11 because of auto_ptr to unique_ptr transition
 -CFLAGS:=-Wall -O2 ${CFLAGS} -DNDEBUG -std=c++11

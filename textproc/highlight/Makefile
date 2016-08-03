@@ -2,7 +2,7 @@
 
 COMMENT =		convert source code to markup formats
 
-DISTNAME =		highlight-3.29
+DISTNAME =		highlight-3.31
 CATEGORIES =		textproc converters
 
 HOMEPAGE =		http://www.andre-simon.de/
@@ -34,7 +34,7 @@ MODGCC4_LANGS =		c++
 MAKE_FILE =		makefile
 MAKE_FLAGS =		CXX=${CXX} \
 			LDFLAGS="-L${LOCALBASE}/lib" \
-			CFLAGS+="`pkg-config --cflags ${MODLUA_DEP}`" \
+			CFLAGS+="`pkg-config --cflags ${MODLUA_DEP}` -std=c++11 " \
 			LUA_LIBS="`pkg-config --libs ${MODLUA_DEP}`"
 
 NO_TEST =		Yes
