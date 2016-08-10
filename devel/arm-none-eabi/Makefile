@@ -3,7 +3,6 @@
 SUBDIR =
 SUBDIR += binutils
 SUBDIR += gcc-linaro
-SUBDIR += gcc-linaro-bootstrap
 SUBDIR += gdb
 SUBDIR += newlib
 
