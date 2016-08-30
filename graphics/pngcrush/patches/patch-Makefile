@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.orig	Tue Aug 30 09:00:47 2016
++++ Makefile	Tue Aug 30 09:01:10 2016
+@@ -37,7 +37,7 @@
+ 
+ # Enable timers
+ CPPFLAGS += -DPNGCRUSH_TIMERS=11
+-LIBS += -lrt
++# LIBS += -lrt
+ 
+ # Cannot use this with libpng15 and later.
+ # CPPFLAGS += -DINFLATE_ALLOW_INVALID_DISTANCE_TOOFAR_ARRR
