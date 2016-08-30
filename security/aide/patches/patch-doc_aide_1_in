@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-doc_aide_1_in,v 1.2 2016/08/03 06:38:47 benoit Exp $
 --- doc/aide.1.in.orig	Mon Jul 25 22:58:12 2016
 +++ doc/aide.1.in	Tue Aug  2 14:40:57 2016
 @@ -103,9 +103,9 @@

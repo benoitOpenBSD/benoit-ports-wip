@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-configure,v 1.7 2016/08/03 06:38:47 benoit Exp $
 --- configure.orig	Mon Jul 25 23:09:47 2016
 +++ configure	Tue Aug  2 12:36:59 2016
 @@ -827,7 +827,7 @@
