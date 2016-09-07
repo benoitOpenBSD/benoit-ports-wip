@@ -1,12 +1,20 @@
 $OpenBSD$
---- Makefile.orig	Tue Aug 30 09:00:47 2016
-+++ Makefile	Tue Aug 30 09:01:10 2016
-@@ -37,7 +37,7 @@
+--- Makefile.orig	Sun Sep  4 17:16:37 2016
++++ Makefile	Wed Sep  7 08:48:31 2016
+@@ -60,13 +60,13 @@
+ 	 trees$(O) uncompr$(O) zutil$(O)
  
- # Enable timers
- CPPFLAGS += -DPNGCRUSH_TIMERS=11
--LIBS += -lrt
-+# LIBS += -lrt
+ # Enable ARM_NEON support
+-CPPFLAGS += -DPNGCRUSH_USE_ARM_NEON
++# CPPFLAGS += -DPNGCRUSH_USE_ARM_NEON
  
- # Cannot use this with libpng15 and later.
- # CPPFLAGS += -DINFLATE_ALLOW_INVALID_DISTANCE_TOOFAR_ARRR
+ # Enable MIPS-NSA support
+-CPPFLAGS += -DPNGCRUSH_USE_MPS_MSA
++# CPPFLAGS += -DPNGCRUSH_USE_MPS_MSA
+ 
+ # Enable INTEL SSE support
+-CPPFLAGS += -DPNGCRUSH_USE_INTEL_SSE -DPNG_INTEL_SSE
++# CPPFLAGS += -DPNGCRUSH_USE_INTEL_SSE -DPNG_INTEL_SSE
+ 
+ # unified libpng with separate zlib *.o
+ OBJS  = pngcrush$(O) $(ZOBJS)
