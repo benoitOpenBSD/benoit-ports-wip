@@ -1,7 +1,7 @@
 $OpenBSD$
 --- Makefile.orig	Sun Sep  4 17:16:37 2016
-+++ Makefile	Wed Sep  7 08:48:31 2016
-@@ -60,13 +60,13 @@
++++ Makefile	Wed Sep  7 09:00:10 2016
+@@ -60,13 +60,13 @@ ZOBJS  = adler32$(O) compress$(O) crc32$(O) deflate$(O
  	 trees$(O) uncompr$(O) zutil$(O)
  
  # Enable ARM_NEON support
