@@ -37,6 +37,8 @@ include/cc65/apple2enh.h
 include/cc65/assert.h
 include/cc65/atari.h
 include/cc65/atari5200.h
+include/cc65/atari_atascii_charmap.h
+include/cc65/atari_screen_charmap.h
 include/cc65/atmos.h
 include/cc65/c128.h
 include/cc65/c16.h
