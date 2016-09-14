@@ -2,7 +2,7 @@
 
 COMMENT=	SSL port scanner
 
-V=		1.11.7
+V=		1.11.6
 DISTNAME=	sslscan-$V
 DISTFILES=	${DISTNAME}{$V-rbsec}.tar.gz
 WRKDIST=	${WRKDIR}/${DISTNAME}-rbsec
