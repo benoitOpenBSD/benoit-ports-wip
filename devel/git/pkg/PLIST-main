@@ -391,6 +391,7 @@ share/git-core/templates/hooks/pre-applypatch.sample
 share/git-core/templates/hooks/pre-commit.sample
 share/git-core/templates/hooks/pre-push.sample
 share/git-core/templates/hooks/pre-rebase.sample
+share/git-core/templates/hooks/pre-receive.sample
 share/git-core/templates/hooks/prepare-commit-msg.sample
 share/git-core/templates/hooks/setgitperms.perl
 share/git-core/templates/hooks/update.sample
