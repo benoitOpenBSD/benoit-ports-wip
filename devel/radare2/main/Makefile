@@ -5,27 +5,32 @@ COMMENT =		reverse engineers disassembler and debugger
 DISTNAME =		radare2-${V}
 
 # In radare, all libs have the same version
-LIBV =			2.0	# 0.10.2
-.for _lib in r_anal r_asm r_bin r_bp r_config r_cons r_core r_crypto r_db \
-	r_debug r_egg r_flags r_fs r_hash r_io r_lang \
-	r_magic r_parse r_reg r_search r_socket r_syscall \
-	r_util
+LIBV =			2.0	# 0.10.5
+.for _lib in r_anal r_asm r_bin r_bp r_config r_cons r_core \
+	r_crypto r_debug r_egg r_flags r_fs r_hash r_io r_lang \
+	r_magic r_parse r_reg r_search r_socket r_syscall r_util
 SHARED_LIBS+=		${_lib} ${LIBV}
 .endfor
 
-EXTRACT_SUFX =		.tar.xz
+WANTLIB =		c capstone crypto kvm m pthread ssl util z zip
 
-WANTLIB =		c crypto m pthread ssl
+LIB_DEPENDS =		archivers/libzip \
+			devel/capstone
 
-CONFIGURE_ARGS +=	--with-libversion=${LIBV} \
-			--mandir=${PREFIX}/man
+# --with-sysmagic triggers build error
+CONFIGURE_ARGS +=	--mandir=${PREFIX}/man \
+			--with-libversion=${LIBV} \
+			--with-openssl \
+			--with-syscapstone \
+			--with-syszip
+
+CONFIGURE_ENV +=	LDFLAGS="-L${LOCALBASE}/lib"
+
+post-patch:
+	sed -i 's/>mips/>mipsen/' ${WRKSRC}/libr/anal/p/anal_mips_cs.c
+
+# https://github.com/radare/radare2/blob/master/doc/capstone.md
+post-configure:
+	sed -i 's|include/capstone|include|' ${WRKSRC}/config-user.mk
 
 .include <bsd.port.mk>
-
-WARNING: didn't find any library to match SHARED_LIBS r_cmd
-WARNING: didn't find any library to match SHARED_LIBS r_diff
-WARNING: didn't find any library to match SHARED_LIBS r_lib
-WARNING: didn't find any library to match SHARED_LIBS r_line
-WARNING: didn't find any library to match SHARED_LIBS r_print
-WARNING: didn't find any library to match SHARED_LIBS r_sign
-WARNING: didn't find any library to match SHARED_LIBS r_th

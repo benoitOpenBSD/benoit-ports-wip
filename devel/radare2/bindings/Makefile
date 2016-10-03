@@ -10,8 +10,6 @@ RUN_DEPENDS =		lang/vala \
 
 PKG_ARCH =		*
 
-EXTRACT_SUFX =		.tar.xz
-
 # This would go if we wanted to package other bindings.
 NO_BUILD =		Yes
 
