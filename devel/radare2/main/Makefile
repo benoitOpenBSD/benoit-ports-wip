@@ -1,21 +1,22 @@
-# $OpenBSD: Makefile,v 1.5 2016/04/04 22:57:45 naddy Exp $
+# $OpenBSD: Makefile,v 1.6 2016/10/10 12:20:17 feinerer Exp $
 
 COMMENT =		reverse engineers disassembler and debugger
 
 DISTNAME =		radare2-${V}
 
 # In radare, all libs have the same version
-LIBV =			2.0	# 0.10.5
+LIBV =			2.0	# 0.10.6
 .for _lib in r_anal r_asm r_bin r_bp r_config r_cons r_core \
 	r_crypto r_debug r_egg r_flags r_fs r_hash r_io r_lang \
 	r_magic r_parse r_reg r_search r_socket r_syscall r_util
 SHARED_LIBS+=		${_lib} ${LIBV}
 .endfor
 
+# uses pledge()
 WANTLIB =		c capstone crypto kvm m pthread ssl util z zip
 
 LIB_DEPENDS =		archivers/libzip \
-			devel/capstone
+			devel/capstone>=3.0.4p0
 
 # --with-sysmagic triggers build error
 CONFIGURE_ARGS +=	--mandir=${PREFIX}/man \

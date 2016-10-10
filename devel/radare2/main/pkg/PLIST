@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.4 2016/04/04 22:57:45 naddy Exp $
+@comment $OpenBSD: PLIST,v 1.5 2016/10/10 12:20:17 feinerer Exp $
 bin/r2
 @bin bin/r2agent
 bin/r2pm
