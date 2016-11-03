@@ -1,0 +1,17 @@
+--- Makefile.in.orig	Thu Nov  3 16:53:25 2016
++++ Makefile.in	Thu Nov  3 16:54:16 2016
+@@ -30,10 +30,10 @@
+ 	rm -f config.log config.cache config.status Makefile
+ 
+ install: simpleproxy
+-	$(top_srcdir)/mkinstalldirs $(bindir)
+-	$(INSTALL)   simpleproxy $(bindir)
+-	$(top_srcdir)/mkinstalldirs $(mandir)/man1
+-	$(INSTALL)   simpleproxy.man $(mandir)/man1/simpleproxy.1
++	$(top_srcdir)/mkinstalldirs $(DESTDIR)$(bindir)
++	$(INSTALL)   simpleproxy $(DESTDIR)$(bindir)
++	$(top_srcdir)/mkinstalldirs $(DESTDIR)$(mandir)/man1
++	$(INSTALL)   simpleproxy.man $(DESTDIR)$(mandir)/man1/simpleproxy.1
+ 
+ simpleproxy: simpleproxy.o cfg.o Makefile
+ 	$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) -o simpleproxy simpleproxy.o cfg.o $(LIBS)

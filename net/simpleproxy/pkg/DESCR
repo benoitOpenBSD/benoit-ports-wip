@@ -1,0 +1,7 @@
+Simpleproxy is a simple TCP proxy. It accepts connections on a local
+TCP port and forward them to anoter port on a remote host via TCP.
+
+It could be used as standalone daemon, or run via `inetd`.
+
+For various options such as POP3 user screening, logging, HTTP proxy
+support, see man page (man simpleproxy).
