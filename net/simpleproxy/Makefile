@@ -2,12 +2,12 @@
 
 COMMENT =		simple tcp proxy
 
-V =			3.5
+V =			v.3.5
 GH_ACCOUNT =		vzaliva
 GH_PROJECT =		simpleproxy
 GH_TAGNAME =		$V
-DISTNAME =		${GH_PROJECT}-v.${V}
-PKGNAME =		${GH_PROJECT}-${V}
+DISTNAME =		${GH_PROJECT}-${V}
+PKGNAME =		${GH_PROJECT}-${V:S/v.//}
 
 CATEGORIES =		net
 
