@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST,v 1.10 2014/12/01 14:28:29 benoit Exp $
+@comment $OpenBSD: PLIST,v 1.11 2015/09/03 14:35:28 benoit Exp $
 ${P5SITE}/Bundle/
 ${P5SITE}/Bundle/Image/
 ${P5SITE}/Bundle/Image/Info/
