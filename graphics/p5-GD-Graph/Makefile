@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.27 2016/03/20 19:56:43 naddy Exp $
+# $OpenBSD: Makefile,v 1.28 2016/08/02 08:52:11 benoit Exp $
 
 COMMENT =	module for graph plotting
 
-VERSION =	1.53
+VERSION =	1.54
 DISTNAME =	GDGraph-${VERSION}
 PKGNAME =	p5-GD-Graph-${VERSION}
 CATEGORIES =	graphics
