@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT = 	Perl interface to Git repositories
+COMMENT = 	check your test against the available version of Git
 
 MODULES =	cpan
 PKG_ARCH =	*
