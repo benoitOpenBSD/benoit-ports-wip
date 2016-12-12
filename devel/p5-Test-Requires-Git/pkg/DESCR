@@ -1,0 +1,2 @@
+Test::Requires::Git checks if the version of Git available for testing meets 
+the given requirements. If the checks fail, then all tests will be skipped.
