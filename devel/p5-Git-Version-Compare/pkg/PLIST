@@ -1,0 +1,5 @@
+@comment $OpenBSD$
+${P5SITE}/Git/
+${P5SITE}/Git/Version/
+${P5SITE}/Git/Version/Compare.pm
+@man man/man3p/Git::Version::Compare.3p
