@@ -14,7 +14,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =	SDL c m pthread smpeg SDL_mixer SDL_image SDL_net
+WANTLIB =	SDL c m pthread SDL_mixer SDL_image SDL_net
 
 MASTER_SITES =	http://www.artsoft.org/RELEASES/unix/rocksndiamonds/
 
