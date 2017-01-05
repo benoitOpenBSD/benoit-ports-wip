@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.41 2016/01/04 12:25:50 shadchin Exp $
+# $OpenBSD: Makefile,v 1.42 2017/01/03 19:26:14 landry Exp $
 
 COMMENT = 	Python module that implements the SSH2 protocol
 
-MODPY_EGG_VERSION = 	2.0.2
+MODPY_EGG_VERSION = 	2.1.1
 DISTNAME = 		paramiko-${MODPY_EGG_VERSION}
 PKGNAME = 		py-${DISTNAME}
 CATEGORIES = 		security
