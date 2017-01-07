@@ -2,7 +2,7 @@
 
 COMMENT=	open-source electronics prototyping platform
 
-V=		1.6.7
+V=		1.6.13
 PKGNAME=	arduino-${V}
 DISTNAME=	arduino-${V}-src
 EPOCH=		0
