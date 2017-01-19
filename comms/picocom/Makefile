@@ -2,7 +2,7 @@
 
 COMMENT =		minimal dumb-terminal emulation program
 
-DISTNAME =		picocom-2.2
+DISTNAME =		picocom-${GH_TAGNAME}
 CATEGORIES =		comms
 
 HOMEPAGE =		https://github.com/npat-efault/picocom
@@ -13,7 +13,6 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += c
 
-#MASTER_SITES =		${MASTER_SITE_GOOGLECODE:=picocom/}
 GH_TAGNAME =            2.2
 GH_ACCOUNT =            npat-efault
 GH_PROJECT =            picocom
