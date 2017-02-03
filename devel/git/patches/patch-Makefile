@@ -1,6 +1,6 @@
 $OpenBSD: patch-Makefile,v 1.66 2016/12/04 15:29:46 dcoppa Exp $
 --- Makefile.orig	Thu Feb  2 22:54:13 2017
-+++ Makefile	Fri Feb  3 10:06:13 2017
++++ Makefile	Fri Feb  3 10:27:23 2017
 @@ -2287,7 +2287,7 @@ export TEST_NO_MALLOC_CHECK
  
  ### Testing rules
