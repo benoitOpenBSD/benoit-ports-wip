@@ -1,0 +1,12 @@
+$OpenBSD$
+--- pelican/tests/test_pelican.py.orig	Tue Jan 10 22:34:09 2017
++++ pelican/tests/test_pelican.py	Thu Feb  9 09:45:49 2017
+@@ -59,7 +59,7 @@
+ 
+     def assertDirsEqual(self, left_path, right_path):
+         out, err = subprocess.Popen(
+-            ['git', 'diff', '--no-ext-diff', '--exit-code',
++            ['${LOCALBASE}/bin/git', 'diff', '--no-ext-diff', '--exit-code',
+              '-w', left_path, right_path],
+             env={str('PAGER'): str('')},
+             stdout=subprocess.PIPE,
