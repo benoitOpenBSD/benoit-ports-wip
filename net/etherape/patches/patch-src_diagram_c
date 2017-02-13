@@ -1,11 +1,11 @@
 $OpenBSD$
---- src/diagram.c.orig	Mon Mar  7 10:20:53 2016
-+++ src/diagram.c	Mon Mar  7 10:21:19 2016
-@@ -22,6 +22,7 @@
+--- src/diagram.c.orig	Wed Dec 21 19:54:44 2016
++++ src/diagram.c	Mon Feb 13 10:02:12 2017
+@@ -21,6 +21,7 @@
+ #include <config.h>
  #endif
  
- #include <arpa/inet.h>
 +#include <sys/socket.h>
- 
  #include <gnome.h>
- #include <regex.h>
+ 
+ #include "appdata.h"
