@@ -37,6 +37,7 @@ CONFIGURE_ARGS = --disable-werror \
 		--enable-opendous \
 		--enable-aice \
 		--enable-buspirate \
+		--enable-bcm2835gpio \
 		--disable-internal-jimtcl
 
 CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/jim" \
