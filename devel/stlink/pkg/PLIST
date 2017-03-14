@@ -1,5 +1,24 @@
 @comment $OpenBSD$
 @bin bin/st-flash
 @bin bin/st-info
-@bin bin/st-term
 @bin bin/st-util
+include/stlink/
+include/stlink.h
+include/stlink/backend.h
+include/stlink/chipid.h
+include/stlink/commands.h
+include/stlink/flash_loader.h
+include/stlink/logging.h
+include/stlink/mmap.h
+include/stlink/reg.h
+include/stlink/sg.h
+include/stlink/usb.h
+include/stlink/version.h
+@lib lib/libstlink-shared.so.${LIBstlink-shared_VERSION}
+lib/libstlink.a
+lib/pkgconfig/stlink.pc
+share/man/
+share/man/man1/
+@man share/man/man1/st-flash.1
+@man share/man/man1/st-info.1
+@man share/man/man1/st-util.1

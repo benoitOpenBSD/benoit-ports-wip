@@ -2,9 +2,11 @@
 
 COMMENT =	stm32 discovery line programmer
 
-V =		1.2.0
+V =		1.3.1
 DISTNAME =	stlink-${V}
 CATEGORIES =	devel
+
+SHARED_LIBS +=	stlink-shared	0.0
 
 HOMEPAGE =	https://github.com/texane/stlink
 
@@ -22,20 +24,9 @@ GH_ACCOUNT =            texane
 GH_PROJECT =            stlink
 GH_TAGNAME =            $V
 
-AUTOCONF_VERSION =	2.61
-AUTOMAKE_VERSION =	1.10
-CONFIGURE_STYLE =	gnu
-
-BUILD_DEPENDS =		${MODGNU_AUTOCONF_DEPENDS} \
-			${MODGNU_AUTOMAKE_DEPENDS}
+MODULES =		devel/cmake
 
 LIB_DEPENDS =		devel/libusb1
-
-pre-configure:
-	cd ${WRKSRC} && \
-	env AUTOMAKE_VERSION=${AUTOMAKE_VERSION} \
-	AUTOCONF_VERSION=${AUTOCONF_VERSION} \
-		autoreconf -f -i
 
 NO_TEST =		Yes
 
