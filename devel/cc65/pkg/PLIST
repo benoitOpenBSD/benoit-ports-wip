@@ -25,9 +25,11 @@ include/cc65/_mikey.h
 include/cc65/_pbi.h
 include/cc65/_pia.h
 include/cc65/_pokey.h
+include/cc65/_riot.h
 include/cc65/_sid.h
 include/cc65/_suzy.h
 include/cc65/_ted.h
+include/cc65/_tia.h
 include/cc65/_vdc.h
 include/cc65/_vic.h
 include/cc65/_vic2.h
@@ -36,6 +38,7 @@ include/cc65/apple2.h
 include/cc65/apple2enh.h
 include/cc65/assert.h
 include/cc65/atari.h
+include/cc65/atari2600.h
 include/cc65/atari5200.h
 include/cc65/atari_atascii_charmap.h
 include/cc65/atari_screen_charmap.h
@@ -50,6 +53,7 @@ include/cc65/cbm610.h
 include/cc65/cbm_filetype.h
 include/cc65/cc65.h
 include/cc65/conio.h
+include/cc65/creativision.h
 include/cc65/ctype.h
 include/cc65/dbg.h
 include/cc65/device.h
@@ -109,6 +113,7 @@ include/cc65/supervision.h
 include/cc65/sys/
 include/cc65/sys/types.h
 include/cc65/sys/utsname.h
+include/cc65/telestrat.h
 include/cc65/tgi/
 include/cc65/tgi.h
 include/cc65/tgi/tgi-error.h
@@ -123,6 +128,7 @@ share/cc65/samples/
 share/cc65/samples/Makefile
 share/cc65/samples/README
 share/cc65/samples/ascii.c
+share/cc65/samples/atari2600hello.c
 share/cc65/samples/diodemo.c
 share/cc65/samples/enumdevdir.c
 share/cc65/samples/fire.c
@@ -155,7 +161,7 @@ share/cc65/samples/geos/yesnores.grc
 share/cc65/samples/gunzip65.c
 share/cc65/samples/hello.c
 share/cc65/samples/mandelbrot.c
-share/cc65/samples/mousetest.c
+share/cc65/samples/mousedemo.c
 share/cc65/samples/multidemo.c
 share/cc65/samples/nachtm.c
 share/cc65/samples/overlaydemo.c
