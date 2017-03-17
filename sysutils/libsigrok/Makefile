@@ -28,7 +28,8 @@ LIB_DEPENDS =		comms/libserialport \
 			devel/libusb1 \
 			devel/libftdi \
 			devel/glib2 \
-			devel/glib2mm
+			devel/glib2mm \
+			archivers/libzip
 
 MODULES +=		lang/python
 
