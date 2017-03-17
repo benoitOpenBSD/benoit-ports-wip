@@ -16,6 +16,10 @@ MASTER_SITES =	http://sigrok.org/download/source/libsigrok/
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
+WANTLIB +=		ffi ftdi glib-2.0 gmodule-2.0 gobject-2.0 iconv intl
+WANTLIB +=		m pcre pthread python2.7 serialport usb usb-1.0 z
+WANTLIB +=		glibmm-2.4 sigc-2.0 zip
+
 CONFIGURE_ARGS +=	--enable-python
 
 BUILD_DEPENDS =		devel/swig \
@@ -23,7 +27,8 @@ BUILD_DEPENDS =		devel/swig \
 LIB_DEPENDS =		comms/libserialport \
 			devel/libusb1 \
 			devel/libftdi \
-			devel/glib2
+			devel/glib2 \
+			devel/glib2mm
 
 MODULES +=		lang/python
 
