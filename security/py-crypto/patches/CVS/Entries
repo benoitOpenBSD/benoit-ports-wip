@@ -1,9 +1,0 @@
-/patch-lib_Crypto_Cypher___init___py/1.5/Fri May 25 12:13:01 2012//
-/patch-lib_Crypto_Hash___init___py/1.6/Fri Nov  8 15:26:05 2013//
-/patch-lib_Crypto_SelfTest_Cipher___init___py/1.5/Fri May 25 12:13:01 2012//
-/patch-lib_Crypto_SelfTest_Cipher_test_pkcs1_oaep_py/1.2/Fri May 25 12:13:01 2012//
-/patch-lib_Crypto_SelfTest_Hash___init__py/1.5/Fri May 25 12:13:01 2012//
-/patch-lib_Crypto_SelfTest_Signature_test_pkcs1_15_py/1.2/Fri May 25 12:13:01 2012//
-/patch-lib_Crypto_SelfTest_Signature_test_pkcs1_pss_py/1.2/Fri May 25 12:13:01 2012//
-/patch-setup_py/1.9/Fri May 25 12:13:01 2012//
-D
