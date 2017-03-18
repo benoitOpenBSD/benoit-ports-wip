@@ -1,5 +1,0 @@
-@comment $OpenBSD: PLIST,v 1.8 2012/05/29 23:43:47 sthen Exp $
-!%%gtk%%
-@man man/man8/mtr.8
-@mode 4555
-@bin sbin/mtr
