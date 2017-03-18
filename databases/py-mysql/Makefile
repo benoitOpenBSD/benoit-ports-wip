@@ -1,12 +1,11 @@
-# $OpenBSD: Makefile,v 1.44 2013/06/12 20:36:33 brad Exp $
-
-SHARED_ONLY =	Yes
+# $OpenBSD: Makefile,v 1.52 2016/04/16 16:35:59 shadchin Exp $
 
 COMMENT =	Python interface to MySQL
 
 MODPY_EGG_VERSION = 1.2.5
 DISTNAME =	MySQL-python-${MODPY_EGG_VERSION}
 PKGNAME =	py-mysql-${MODPY_EGG_VERSION}
+REVISION =	4
 
 CATEGORIES =	databases
 
@@ -20,13 +19,13 @@ PERMIT_PACKAGE_CDROM =	Yes
 EXTRACT_SUFX =	.zip
 
 WANTLIB +=	crypto m pthread ssl z ${MODPY_WANTLIB}
-WANTLIB +=	lib/mysql/mysqlclient_r>=14
+WANTLIB +=	lib/mysql/mysqlclient_r
 
-MASTER_SITES =	${MASTER_SITE_PYPI:=M/MySQL-python/}
+MODPY_PI =	Yes
 
 MODULES =	lang/python
 BUILD_DEPENDS =	textproc/py-sphinx
-LIB_DEPENDS =	databases/mysql
+LIB_DEPENDS =	databases/mariadb
 
 NO_TEST =	Yes
 
@@ -38,7 +37,9 @@ post-extract:
 DOCSRC =	${WRKSRC}/doc
 
 post-build:
-	cd ${DOCSRC} && ${LOCALBASE}/bin/sphinx-build -N . _build/html
+	${MODPY_CMD} build_ext --inplace
+	cd ${DOCSRC} && PYTHONPATH=${WRKSRC} \
+		${LOCALBASE}/bin/sphinx-build -N . _build/html
 
 DOCS =		${PREFIX}/share/doc/py-mysql
 

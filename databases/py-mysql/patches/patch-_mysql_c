@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: patch-_mysql_c,v 1.4 2014/09/03 13:43:39 benoit Exp $
 --- _mysql.c.orig	Thu Jan  2 13:52:50 2014
 +++ _mysql.c	Wed Sep  3 13:57:17 2014
 @@ -2079,7 +2079,7 @@
