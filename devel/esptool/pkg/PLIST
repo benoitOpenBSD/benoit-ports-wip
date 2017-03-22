@@ -1,0 +1,5 @@
+@comment $OpenBSD$
+@bin bin/esptool
+share/doc/esptool/
+share/doc/esptool/LICENSE
+share/doc/esptool/README

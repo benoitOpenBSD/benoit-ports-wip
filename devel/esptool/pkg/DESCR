@@ -1,0 +1,2 @@
+esptool is a tool to allow the creation and handling of firmware
+files suitable for the ESP8266 chip.
