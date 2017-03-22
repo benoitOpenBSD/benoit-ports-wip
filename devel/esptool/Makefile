@@ -22,6 +22,7 @@ GH_PROJECT =            esptool-ck
 GH_TAGNAME =            v$V
 
 USE_GMAKE =		Yes
+MAKE_FLAGS =		CC="${CC}" CFLAGS="${CFLAGS}"
 
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/esptool ${PREFIX}/bin
