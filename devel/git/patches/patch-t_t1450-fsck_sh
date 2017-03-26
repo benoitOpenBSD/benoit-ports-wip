@@ -1,4 +1,4 @@
-$OpenBSD: patch-t_t1450-fsck_sh,v 1.1 2016/12/04 15:29:46 dcoppa Exp $
+$OpenBSD: patch-t_t1450-fsck_sh,v 1.2 2017/02/25 20:35:31 benoit Exp $
 
 Avoid GNU grep syntax
 

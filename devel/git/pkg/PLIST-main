@@ -1,4 +1,4 @@
-@comment $OpenBSD: PLIST-main,v 1.75 2016/11/14 08:11:00 dcoppa Exp $
+@comment $OpenBSD: PLIST-main,v 1.76 2017/02/25 20:35:31 benoit Exp $
 @newgroup _gitdaemon:778
 @newuser _gitdaemon:778:_gitdaemon:daemon:GIT Daemon:/nonexistent:/sbin/nologin
 @pkgpath devel/git
