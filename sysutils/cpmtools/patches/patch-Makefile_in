@@ -1,3 +1,4 @@
+$OpenBSD$
 --- Makefile.in.orig	Tue Apr 18 10:47:42 2017
 +++ Makefile.in	Tue Apr 18 10:49:09 2017
 @@ -80,27 +80,27 @@
