@@ -1,0 +1,11 @@
+--- htmldoc/htmlsep.cxx.orig	Tue Apr 18 21:47:10 2017
++++ htmldoc/htmlsep.cxx	Tue Apr 18 21:49:15 2017
+@@ -524,7 +524,7 @@
+     if (t->markup >= MARKUP_H1 && t->markup < (MARKUP_H1 + TocLevels) &&
+         htmlGetVariable(t, (uchar *)"_HD_OMIT_TOC") == NULL)
+     {
+-      if (heading >= 0)
++      if (*heading >= 0)
+         write_footer(out, *heading);
+ 
+       (*heading) ++;
