@@ -13,7 +13,7 @@ MASTER_SITES =	http://www.moria.de/~michael/cpmtools/files/
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=		c
+WANTLIB +=		c curses
 
 CONFIGURE_STYLE =	gnu
 
