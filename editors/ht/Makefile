@@ -1,8 +1,9 @@
-# $OpenBSD: Makefile,v 1.22 2013/03/11 11:02:50 espie Exp $
+# $OpenBSD: Makefile,v 1.25 2017/04/10 11:45:27 sthen Exp $
 
 COMMENT =		file editor/viewer/analyzer for executables
 
-DISTNAME =		ht-2.0.22
+DISTNAME =		ht-2.1.0
+REVISION=		0
 CATEGORIES =		editors
 
 HOMEPAGE =		http://hte.sourceforge.net/
@@ -12,9 +13,11 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m ncursesw stdc++
+WANTLIB =		c m ncurses ${LIBCXX}
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=hte/}
+
+EXTRACT_SUFX =		.tar.bz2
 
 CONFIGURE_STYLE =	gnu
 USE_GMAKE =		Yes
@@ -41,7 +44,7 @@ WANTLIB +=		X11
 
 do-install:
 	chmod +x ${WRKSRC}/install-sh
-	 
+
 post-install:
 	${INSTALL_PROGRAM} ${WRKBUILD}/ht ${PREFIX}/bin/hte
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ht
