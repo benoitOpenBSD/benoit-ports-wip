@@ -2,11 +2,12 @@
 
 COMMENT =		Atari 2600 VCS emulator
 
-DISTNAME =		stella-4.7.2
+V =			4.7.3
+DISTNAME =		stella-${V}
 CATEGORIES =		emulators
-DISTFILES =		${DISTNAME}-src.tar.xz
+DISTFILES =		stella-${V}-src.tar.xz
 
-HOMEPAGE =		http://stella.sourceforge.net/
+HOMEPAGE =		https://stella-emu.github.io/
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
@@ -15,7 +16,11 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c m z pthread SDL2 png
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=stella/}
+MASTER_SITES =		https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/releases/download/release-${GH_TAGNAME}/
+
+GH_ACCOUNT =            stella-emu
+GH_PROJECT =            stella
+GH_TAGNAME =            $V
 
 EXTRACT_SUFX =		.tar.xz
 
