@@ -3,7 +3,7 @@
 COMMENT =		file editor/viewer/analyzer for executables
 
 DISTNAME =		ht-2.1.0
-REVISION=		0
+REVISION=		1
 CATEGORIES =		editors
 
 HOMEPAGE =		http://hte.sourceforge.net/
