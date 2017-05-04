@@ -1,0 +1,12 @@
+$OpenBSD$
+--- config.mak.uname.orig	Thu May  4 16:12:19 2017
++++ config.mak.uname	Thu May  4 16:12:57 2017
+@@ -203,8 +203,6 @@
+ 	PAGER_ENV = LESS=FRX LV=-c MORE=FRX
+ endif
+ ifeq ($(uname_S),OpenBSD)
+-	NO_STRCASESTR = YesPlease
+-	NO_MEMMEM = YesPlease
+ 	USE_ST_TIMESPEC = YesPlease
+ 	NEEDS_LIBICONV = YesPlease
+ 	BASIC_CFLAGS += -I/usr/local/include
