@@ -1,0 +1,43 @@
+@comment $OpenBSD: PLIST,v 1.3 2015/01/05 14:52:02 benoit Exp $
+${P5SITE}/Paranoid/
+${P5SITE}/Paranoid.pm
+${P5SITE}/Paranoid/Args.pm
+${P5SITE}/Paranoid/Data.pm
+${P5SITE}/Paranoid/Debug.pm
+${P5SITE}/Paranoid/Filesystem.pm
+${P5SITE}/Paranoid/Glob.pm
+${P5SITE}/Paranoid/IO/
+${P5SITE}/Paranoid/IO.pm
+${P5SITE}/Paranoid/IO/Line.pm
+${P5SITE}/Paranoid/IO/Lockfile.pm
+${P5SITE}/Paranoid/Input.pm
+${P5SITE}/Paranoid/Log/
+${P5SITE}/Paranoid/Log.pm
+${P5SITE}/Paranoid/Log/Buffer.pm
+${P5SITE}/Paranoid/Log/File.pm
+${P5SITE}/Paranoid/Module.pm
+${P5SITE}/Paranoid/Network/
+${P5SITE}/Paranoid/Network.pm
+${P5SITE}/Paranoid/Network/IPv4.pm
+${P5SITE}/Paranoid/Network/IPv6.pm
+${P5SITE}/Paranoid/Network/Socket.pm
+${P5SITE}/Paranoid/Process.pm
+@man man/man3p/Paranoid.3p
+@man man/man3p/Paranoid::Args.3p
+@man man/man3p/Paranoid::Data.3p
+@man man/man3p/Paranoid::Debug.3p
+@man man/man3p/Paranoid::Filesystem.3p
+@man man/man3p/Paranoid::Glob.3p
+@man man/man3p/Paranoid::IO.3p
+@man man/man3p/Paranoid::IO::Line.3p
+@man man/man3p/Paranoid::IO::Lockfile.3p
+@man man/man3p/Paranoid::Input.3p
+@man man/man3p/Paranoid::Log.3p
+@man man/man3p/Paranoid::Log::Buffer.3p
+@man man/man3p/Paranoid::Log::File.3p
+@man man/man3p/Paranoid::Module.3p
+@man man/man3p/Paranoid::Network.3p
+@man man/man3p/Paranoid::Network::IPv4.3p
+@man man/man3p/Paranoid::Network::IPv6.3p
+@man man/man3p/Paranoid::Network::Socket.3p
+@man man/man3p/Paranoid::Process.3p
