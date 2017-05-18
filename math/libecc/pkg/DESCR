@@ -1,0 +1,2 @@
+This software implements a library for elliptic curves based cryptography (ECC). 
+The API supports signature algorithms specified in the ISO 14888-3:2016 standard.
