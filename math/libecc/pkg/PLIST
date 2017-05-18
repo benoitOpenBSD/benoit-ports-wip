@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+@bin bin/ec_self_tests
+@bin bin/ec_utils
+lib/libarith.a
+lib/libec.a
+lib/libsign.a

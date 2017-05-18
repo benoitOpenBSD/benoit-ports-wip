@@ -16,4 +16,14 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 USE_GMAKE =		Yes
 
+# XXX need to include *.h file
+do-install:
+		${INSTALL_PROGRAM} ${WRKSRC}/build/ec_self_tests ${PREFIX}/bin
+		${INSTALL_PROGRAM} ${WRKSRC}/build/ec_utils ${PREFIX}/bin
+		${INSTALL_DATA} ${WRKSRC}/build/libarith.a ${PREFIX}/lib
+		${INSTALL_DATA} ${WRKSRC}/build/libec.a ${PREFIX}/lib
+		${INSTALL_DATA} ${WRKSRC}/build/libsign.a ${PREFIX}/lib
+
+NO_TEST =		Yes
+
 .include <bsd.port.mk>
