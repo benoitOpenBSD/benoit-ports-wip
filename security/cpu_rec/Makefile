@@ -23,6 +23,9 @@ MODPY_VERSION =		${MODPY_DEFAULT_VERSION_3}
 NO_TEST =		Yes
 NO_BUILD =		Yes
 
+pre-configure:
+		${SUBST_CMD} ${WRKSRC}/cpu_rec.py
+
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/cpu_rec.py ${PREFIX}/bin
 		${INSTALL_DATA_DIR} ${PREFIX}/share/cpu_rec_corpus
