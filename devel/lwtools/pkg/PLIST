@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+@bin bin/lwar
+@bin bin/lwasm
+@bin bin/lwlink
+@bin bin/lwobjdump
+lib/liblw.a
