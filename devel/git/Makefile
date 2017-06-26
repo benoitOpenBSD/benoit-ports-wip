@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.168 2017/03/26 19:07:10 benoit Exp $
+# $OpenBSD: Makefile,v 1.173 2017/06/13 15:02:23 dcoppa Exp $
 
 COMMENT-main =	GIT - Tree History Storage Tool
 COMMENT-svn =	GIT - subversion interoperability tools
 COMMENT-x11 =	GIT - graphical tools
 
-V =		2.13.0
+V =		2.13.2
 DISTNAME =	git-${V}
 PKGNAME-main =	${DISTNAME}
 PKGNAME-svn =	git-svn-${V}
@@ -76,7 +76,6 @@ CONFIGURE_ENV =		CPPFLAGS="-I${WRKSRC} -I${LOCALBASE}/include" \
 			DIFF=diff TAR=tar
 
 USE_GMAKE =		Yes
-USE_GROFF =		Yes
 
 TEST_DEPENDS =		archivers/gtar \
 			archivers/unzip \
@@ -113,7 +112,7 @@ post-install:
 	${INSTALL_DATA} ${WRKBUILD}/gitweb/README ${PREFIX}/share/gitweb
 
 do-test:
-	cd ${WRKSRC} && ${MAKE_ENV} ${MAKE_PROGRAM} \
+	cd ${WRKSRC} && ${MAKE_ENV} GIT_TEST_OPTS="--immediate" ${MAKE_PROGRAM} \
 		HOME=${WRKDIST}/t test
 
 .include <bsd.port.mk>

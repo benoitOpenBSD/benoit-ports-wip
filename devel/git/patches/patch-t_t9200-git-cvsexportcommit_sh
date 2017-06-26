@@ -1,4 +1,4 @@
-$OpenBSD: patch-t_t9200-git-cvsexportcommit_sh,v 1.7 2016/05/25 07:13:05 benoit Exp $
+$OpenBSD: patch-t_t9200-git-cvsexportcommit_sh,v 1.8 2017/05/10 08:05:04 benoit Exp $
 Index: t/t9200-git-cvsexportcommit.sh
 --- t/t9200-git-cvsexportcommit.sh.orig
 +++ t/t9200-git-cvsexportcommit.sh
