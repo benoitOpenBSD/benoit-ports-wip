@@ -1,0 +1,4 @@
+dnssearch takes an input domain ( -domain parameter ) and a wordlist 
+( -wordlist parameter ), it will then perform concurrent DNS requests 
+using the lines of the wordlist as sub domains eventually bruteforcing 
+every sub domain available on the top level domain.
