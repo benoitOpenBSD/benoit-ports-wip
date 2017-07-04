@@ -1,7 +1,7 @@
 # $OpenBSD$
 
 COMMENT =		a subdomain enumeration tool
-DISTNAME =		dnssearch-20170704
+DISTNAME =		dnssearch-1.0.1-20170704
 CATEGORIES =		net
 HOMEPAGE =		https://github.com/evilsocket/dnssearch
 
