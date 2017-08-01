@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.41 2017/02/21 09:12:57 benoit Exp $
+# $OpenBSD: Makefile,v 1.49 2017/07/26 22:45:30 sthen Exp $
 
 COMMENT =		convert source code to markup formats
 
-DISTNAME =		highlight-3.36
+DISTNAME =		highlight-3.39
 CATEGORIES =		textproc converters
 
 HOMEPAGE =		http://www.andre-simon.de/
@@ -12,7 +12,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m stdc++ ${MODLUA_WANTLIB}
+WANTLIB =		c m ${LIBCXX} ${MODLUA_WANTLIB}
 
 MASTER_SITES =		${HOMEPAGE}/zip/
 EXTRACT_SUFX =		.tar.bz2
@@ -27,9 +27,7 @@ BUILD_DEPENDS =		devel/boost
 LIB_DEPENDS =		${MODLUA_LIB_DEPENDS}
 
 # c++11
-MODULES +=		gcc4
-MODGCC4_ARCHS =		*
-MODGCC4_LANGS =		c++
+COMPILER =		gcc
 
 MAKE_FILE =		makefile
 MAKE_FLAGS =		CXX=${CXX} \
