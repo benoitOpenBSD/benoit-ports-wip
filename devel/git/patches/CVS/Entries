@@ -2,7 +2,6 @@
 /patch-gitweb_gitweb_perl/1.28/Sun Dec  4 15:29:46 2016//
 /patch-perl_Makefile_PL/1.5/Fri Nov 30 21:16:30 2012//
 /patch-t_t0000-basic_sh/1.8/Tue Aug 19 19:44:39 2014//
-/patch-t_t1450-fsck_sh/1.2/Sat Feb 25 20:35:31 2017//
 /patch-t_t4062-diff-pickaxe_sh/1.1/Sun Dec  4 15:29:46 2016//
 /patch-t_t9117-git-svn-init-clone_sh/1.2/Sat Jan 24 14:31:29 2009//
 /patch-t_t9200-git-cvsexportcommit_sh/1.8/Wed May 10 08:05:04 2017//
@@ -11,4 +10,5 @@
 /patch-t_t0001-init_sh/1.1/Tue Jun 13 15:02:23 2017//
 /patch-t_t7004-tag_sh/1.1/Tue Jun 13 15:02:23 2017//
 /patch-t_test-lib_sh/1.20/Mon Jun 26 16:51:37 2017//
+/patch-t_t1450-fsck_sh/1.3/Sun Jul 16 17:17:29 2017//
 D
