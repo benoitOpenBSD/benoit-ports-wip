@@ -1,0 +1,12 @@
+$OpenBSD$
+--- binimage/esptool_binimage.c.orig	Tue Aug  8 10:07:14 2017
++++ binimage/esptool_binimage.c	Tue Aug  8 10:11:48 2017
+@@ -156,7 +156,7 @@
+             iprintf(-1, "cant write data block for segment  #%i to binimage file, aborting\r\n", cnt);
+             close(b_image.image_file);
+             b_image.image_file = 0;
+-            return;
++            return 0;
+         }
+         
+         total_size += b_image.segments[cnt].size;

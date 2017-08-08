@@ -1,0 +1,19 @@
+$OpenBSD$
+--- elf/esptool_elf_object.c~	Thu Nov 13 09:00:23 2014
++++ elf/esptool_elf_object.c	Tue Aug  8 10:05:16 2017
+@@ -249,13 +249,13 @@
+             if(fseek(e_object.e_file, e_object.sections[secnum-1].offset, SEEK_SET) != 0)
+             {
+                 iprintf(-1, "can't seek to ELF file section %i binary datai\r\n", secnum);
+-                return;
++                return 0;
+             }
+             
+             if(fread(bindata, 1, e_object.sections[secnum-1].size, e_object.e_file) != e_object.sections[secnum-1].size)
+             {
+                 iprintf(-1, "can't read section #%i binary data from ELF file\r\n", secnum);
+-                return;
++                return 0;
+             }
+             
+             
