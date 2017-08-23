@@ -2,7 +2,7 @@
 
 COMMENT =		Atari 2600 VCS emulator
 
-V =			4.7.3
+V =			5.0.2
 DISTNAME =		stella-${V}
 CATEGORIES =		emulators
 DISTFILES =		stella-${V}-src.tar.xz
@@ -14,10 +14,9 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		c m z pthread SDL2 png
+WANTLIB =		c ${COMPILER_LIBCXX} m z pthread SDL2 png
 
-MASTER_SITES =		https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/releases/download/release-${GH_TAGNAME}/
-
+MASTER_SITES =		https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/releases/download/${GH_TAGNAME}/
 GH_ACCOUNT =            stella-emu
 GH_PROJECT =            stella
 GH_TAGNAME =            $V
@@ -28,12 +27,13 @@ LIB_DEPENDS =		devel/sdl2 \
 			graphics/png
 
 # c++11
-MODULES +=		gcc4
-MODGCC4_ARCHS =		*
-MODGCC4_LANGS =		c c++
+#MODULES +=		gcc4
+#MODGCC4_ARCHS =		*
+#MODGCC4_LANGS =		c c++
 
-CXXFLAGS +=		-I${X11BASE}/include \
-			-L${LOCALBASE}/lib
+CXXFLAGS +=		-I${X11BASE}/include -I${LOCALBASE}/include
+LDFLAGS +=		-L${LOCALBASE}/lib
+
 CONFIGURE_STYLE =	simple
 CONFIGURE_ARGS +=	--disable-gl --with-libpng-prefix=${LOCALBASE}
 

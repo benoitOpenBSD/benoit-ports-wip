@@ -42,10 +42,10 @@ share/doc/stella/graphics/options.png
 share/doc/stella/graphics/options_audio.png
 share/doc/stella/graphics/options_debugger.png
 share/doc/stella/graphics/options_gameinfo.png
-share/doc/stella/graphics/options_input.png
 share/doc/stella/graphics/options_misc.png
 share/doc/stella/graphics/options_ui.png
 share/doc/stella/graphics/options_video.png
+share/doc/stella/graphics/options_video_dbgcolors.png
 share/doc/stella/graphics/options_video_tv.png
 share/doc/stella/graphics/pacman.png
 share/doc/stella/graphics/rom_browser.png
