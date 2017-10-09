@@ -23,20 +23,6 @@ MODULES =		lang/python
 FLAVORS =		python3
 FLAVOR ?=
 
-BUILD_DEPENDS =		textproc/py-sphinx${MODPY_FLAVOR}
-
-DOCSRC =		${WRKSRC}/doc/source
-
-post-build:
-	cd ${DOCSRC} && PYTHONPATH=${WRKSRC} \
-		${LOCALBASE}/bin/sphinx-build${MODPY_BIN_SUFFIX} -N . _build/html
-
-#DOCSDIR =	${PREFIX}/share/doc/${MODPY_PY_PREFIX}asn1
-
-#post-install:
-#	${INSTALL_DATA_DIR} ${DOCSDIR}
-#	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${DOCSDIR}
-
 TEST_DEPENDS =		devel/py-test${MODPY_FLAVOR}
 
 do-test: fake
