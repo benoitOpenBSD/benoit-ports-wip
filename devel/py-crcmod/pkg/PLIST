@@ -1,0 +1,14 @@
+@comment $OpenBSD$
+lib/python${MODPY_VERSION}/site-packages/crcmod/
+lib/python${MODPY_VERSION}/site-packages/crcmod-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info
+lib/python${MODPY_VERSION}/site-packages/crcmod/__init__.py
+lib/python${MODPY_VERSION}/site-packages/crcmod/__init__.pyc
+lib/python${MODPY_VERSION}/site-packages/crcmod/_crcfunext.so
+lib/python${MODPY_VERSION}/site-packages/crcmod/_crcfunpy.py
+lib/python${MODPY_VERSION}/site-packages/crcmod/_crcfunpy.pyc
+lib/python${MODPY_VERSION}/site-packages/crcmod/crcmod.py
+lib/python${MODPY_VERSION}/site-packages/crcmod/crcmod.pyc
+lib/python${MODPY_VERSION}/site-packages/crcmod/predefined.py
+lib/python${MODPY_VERSION}/site-packages/crcmod/predefined.pyc
+lib/python${MODPY_VERSION}/site-packages/crcmod/test.py
+lib/python${MODPY_VERSION}/site-packages/crcmod/test.pyc
