@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.29 2017/03/17 08:56:31 benoit Exp $
+# $OpenBSD: Makefile,v 1.30 2017/04/19 11:16:03 sthen Exp $
 
-ONLY_FOR_ARCHS =	${GCC4_ARCHS}
+ONLY_FOR_ARCHS =	${GCC4_ARCHS} ${CLANG_ARCHS}
 
 COMMENT =	maze game resembling boulderdash
 
-DISTNAME =	rocksndiamonds-4.0.0.2
+DISTNAME =	rocksndiamonds-4.0.1.0
 CATEGORIES =	games x11
 
 HOMEPAGE =	http://www.artsoft.org/rocksndiamonds/
