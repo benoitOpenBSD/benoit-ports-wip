@@ -1,11 +1,11 @@
-# $OpenBSD: Makefile,v 1.23 2013/07/04 12:44:29 benoit Exp $
+# $OpenBSD: Makefile,v 1.28 2017/07/26 22:45:20 sthen Exp $
 
 COMMENT =		Atari 2600 VCS emulator
 
 V =			5.0.2
 DISTNAME =		stella-${V}
 CATEGORIES =		emulators
-DISTFILES =		stella-${V}-src.tar.xz
+DISTFILES =		${DISTNAME}-src.tar.xz
 
 HOMEPAGE =		https://stella-emu.github.io/
 
@@ -14,29 +14,21 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
+COMPILER=		base-clang
+
 WANTLIB =		c ${COMPILER_LIBCXX} m z pthread SDL2 png
 
-MASTER_SITES =		https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/releases/download/${GH_TAGNAME}/
-GH_ACCOUNT =            stella-emu
-GH_PROJECT =            stella
-GH_TAGNAME =            $V
-
-EXTRACT_SUFX =		.tar.xz
+MASTER_SITES =		https://github.com/stella-emu/stella/releases/download/${V}/
 
 LIB_DEPENDS =		devel/sdl2 \
 			graphics/png
 
-# c++11
-#MODULES +=		gcc4
-#MODGCC4_ARCHS =		*
-#MODGCC4_LANGS =		c c++
-
 CXXFLAGS +=		-I${X11BASE}/include -I${LOCALBASE}/include
-LDFLAGS +=		-L${LOCALBASE}/lib
+LDFLAGS += 		-L${LOCALBASE}/lib
 
 CONFIGURE_STYLE =	simple
-CONFIGURE_ARGS +=	--disable-gl --with-libpng-prefix=${LOCALBASE}
-
+CONFIGURE_ARGS +=	--disable-gl \
+			--with-libpng-prefix=${PREFIX}/lib/
 USE_GMAKE =		Yes
 
 NO_TEST =		Yes
