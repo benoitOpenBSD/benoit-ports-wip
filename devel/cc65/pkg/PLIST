@@ -35,6 +35,7 @@ include/cc65/_vic.h
 include/cc65/_vic2.h
 include/cc65/ace.h
 include/cc65/apple2.h
+include/cc65/apple2_filetype.h
 include/cc65/apple2enh.h
 include/cc65/assert.h
 include/cc65/atari.h
@@ -87,6 +88,7 @@ include/cc65/joystick/joy-kernel.h
 include/cc65/limits.h
 include/cc65/locale.h
 include/cc65/lynx.h
+include/cc65/lz4.h
 include/cc65/modload.h
 include/cc65/mouse/
 include/cc65/mouse.h
