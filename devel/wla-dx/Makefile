@@ -22,6 +22,9 @@ WANTLIB +=		c m
 
 MODULES =		devel/cmake
 
+# XXX problem doc/sphinx/singletext.py
+#BUILD_DEPENDS =		textproc/py-sphinx
+
 NO_TEST =		Yes
 
 post-install:

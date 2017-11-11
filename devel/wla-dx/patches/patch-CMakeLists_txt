@@ -1,0 +1,12 @@
+$OpenBSD$
+--- CMakeLists.txt.orig	Sat Nov 11 11:19:46 2017
++++ CMakeLists.txt	Sat Nov 11 11:19:54 2017
+@@ -81,7 +81,7 @@
+ add_subdirectory (wlalink)
+ 
+ # Generate documentation
+-add_subdirectory (doc)
++# add_subdirectory (doc)
+ 
+ # --- WLA executables ---
+ set(CFILES main.c hashmap.c parse.c include_file.c pass_1.c pass_2.c pass_3.c pass_4.c stack.c listfile.c)
