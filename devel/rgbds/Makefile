@@ -29,5 +29,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/rgbfix ${PREFIX}/bin/
 	${INSTALL_PROGRAM} ${WRKSRC}/rgbgfx ${PREFIX}/bin/
 	${INSTALL_PROGRAM} ${WRKSRC}/rgblink ${PREFIX}/bin/
+	${INSTALL_MAN} ${WRKSRC}/src/rgbds.5 ${PREFIX}/man/man5
+	${INSTALL_MAN} ${WRKSRC}/src/rgbds.7 ${PREFIX}/man/man7
 
 .include <bsd.port.mk>

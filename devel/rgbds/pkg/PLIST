@@ -3,3 +3,5 @@
 @bin bin/rgbfix
 @bin bin/rgbgfx
 @bin bin/rgblink
+@man man/man5/rgbds.5
+@man man/man7/rgbds.7
