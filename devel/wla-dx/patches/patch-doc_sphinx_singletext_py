@@ -1,7 +1,7 @@
 $OpenBSD$
---- doc/sphinx/singletext.py~	Sat Oct 28 21:49:35 2017
-+++ doc/sphinx/singletext.py	Sat Nov 11 11:32:32 2017
-@@ -9,11 +9,11 @@
+--- doc/sphinx/singletext.py.orig	Sat Oct 28 21:49:35 2017
++++ doc/sphinx/singletext.py	Sat Nov 11 11:46:41 2017
+@@ -9,19 +9,19 @@
  from sphinx.writers.text import TextWriter, TextTranslator
  
  logger = None # Declare it
@@ -16,5 +16,20 @@ $OpenBSD$
 +#except ImportError:
 +#    logger = None # Set later
  
- try: # Sphinx 1.2.3 compatibility
-     from sphinx.environment.adapters.toctree import TocTree
+-try: # Sphinx 1.2.3 compatibility
+-    from sphinx.environment.adapters.toctree import TocTree
+-    def getTocTree(self, *args, **kwargs):
+-        return TocTree(self.env).get_toctree_for(*args, **kwargs)
+-except ImportError:
+-    def getTocTree(self, *args, **kwargs):
+-        return self.env.get_toctree_for(*args, **kwargs)
++#try: # Sphinx 1.2.3 compatibility
++#    from sphinx.environment.adapters.toctree import TocTree
++#    def getTocTree(self, *args, **kwargs):
++#        return TocTree(self.env).get_toctree_for(*args, **kwargs)
++#except ImportError:
++#    def getTocTree(self, *args, **kwargs):
++#        return self.env.get_toctree_for(*args, **kwargs)
+ 
+ class SingleFileTextWriter(TextWriter):
+     supported = ('singletext',)
