@@ -1,0 +1,5 @@
+@comment $OpenBSD$
+@bin bin/rgbasm
+@bin bin/rgbfix
+@bin bin/rgbgfx
+@bin bin/rgblink
