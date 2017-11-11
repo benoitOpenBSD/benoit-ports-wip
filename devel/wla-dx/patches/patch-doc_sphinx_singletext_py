@@ -1,7 +1,7 @@
 $OpenBSD$
 --- doc/sphinx/singletext.py.orig	Sat Oct 28 21:49:35 2017
-+++ doc/sphinx/singletext.py	Sat Nov 11 11:46:41 2017
-@@ -9,19 +9,19 @@
++++ doc/sphinx/singletext.py	Sat Nov 11 11:54:44 2017
+@@ -9,11 +9,11 @@
  from sphinx.writers.text import TextWriter, TextTranslator
  
  logger = None # Declare it
@@ -16,20 +16,33 @@ $OpenBSD$
 +#except ImportError:
 +#    logger = None # Set later
  
--try: # Sphinx 1.2.3 compatibility
--    from sphinx.environment.adapters.toctree import TocTree
--    def getTocTree(self, *args, **kwargs):
--        return TocTree(self.env).get_toctree_for(*args, **kwargs)
--except ImportError:
--    def getTocTree(self, *args, **kwargs):
+ try: # Sphinx 1.2.3 compatibility
+     from sphinx.environment.adapters.toctree import TocTree
+@@ -21,7 +21,7 @@
+         return TocTree(self.env).get_toctree_for(*args, **kwargs)
+ except ImportError:
+     def getTocTree(self, *args, **kwargs):
 -        return self.env.get_toctree_for(*args, **kwargs)
-+#try: # Sphinx 1.2.3 compatibility
-+#    from sphinx.environment.adapters.toctree import TocTree
-+#    def getTocTree(self, *args, **kwargs):
-+#        return TocTree(self.env).get_toctree_for(*args, **kwargs)
-+#except ImportError:
-+#    def getTocTree(self, *args, **kwargs):
-+#        return self.env.get_toctree_for(*args, **kwargs)
++         return self.env.get_toctree_for(*args, **kwargs)
  
  class SingleFileTextWriter(TextWriter):
      supported = ('singletext',)
+@@ -63,12 +63,12 @@
+         logger.info('done')
+ 
+         logger.info(bold('assembling single document... '), nonl=True)
+-        if logger is self:
+-            tree = inline_all_toctrees(self, set(), mastername,
+-                    mastertree, darkgreen)
+-        else:
+-            tree = inline_all_toctrees(self, set(), mastername,
+-                    mastertree, darkgreen, [mastername])
++#        if logger is self:
++#        tree = inline_all_toctrees(self, set(), mastername,
++#            mastertree, darkgreen)
++#        else:
++        tree = inline_all_toctrees(self, set(), mastername,
++            mastertree, darkgreen, [mastername])
+         tree['docname'] = mastername
+         toctree = getTocTree(self, mastername, self, False)
+         tree.insert(0, nodes.section() + nodes.title(mastertitle, mastertitle))

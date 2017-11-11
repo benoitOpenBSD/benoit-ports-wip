@@ -7,6 +7,18 @@
 @bin bin/wla-spc700
 @bin bin/wla-z80
 @bin bin/wlalink
+@man man/man1/wla-6502.1
+@man man/man1/wla-6510.1
+@man man/man1/wla-65816.1
+@man man/man1/wla-65c02.1
+@man man/man1/wla-gb.1
+@man man/man1/wla-huc6280.1
+@man man/man1/wla-spc700.1
+@man man/man1/wla-z80.1
+@man man/man1/wlab.1
+@man man/man1/wlad.1
+@man man/man1/wlalink.1
+@man man/man7/wla-dx.7
 share/doc/wla-dx/
 share/doc/wla-dx/CMakeLists.txt
 share/doc/wla-dx/README.md
@@ -35,12 +47,16 @@ share/doc/wla-dx/man/wlad.rst
 share/doc/wla-dx/man/wlalink.rst
 share/doc/wla-dx/sphinx/
 share/doc/wla-dx/sphinx/globalindex.py
+share/doc/wla-dx/sphinx/globalindex.pyc
 share/doc/wla-dx/sphinx/singletext.py
+share/doc/wla-dx/sphinx/singletext.pyc
 share/doc/wla-dx/tempfiles.rst
 share/doc/wla-dx/theme/
 share/doc/wla-dx/theme/layout.html
 share/doc/wla-dx/theme/theme.conf
+share/doc/wla-dx/wla-dx.html
 share/doc/wla-dx/wla-dx.rst
+share/doc/wla-dx/wla-dx.txt
 share/doc/wla-dx/wlaflags.rst
 share/wla-dx/
 share/wla-dx/examples/
