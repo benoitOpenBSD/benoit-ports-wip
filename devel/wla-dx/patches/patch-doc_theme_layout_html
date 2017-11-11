@@ -1,0 +1,11 @@
+$OpenBSD$
+--- doc/theme/layout.html.orig	Sat Oct 28 21:49:35 2017
++++ doc/theme/layout.html	Sat Nov 11 11:34:20 2017
+@@ -1,6 +1,6 @@
+ {%- extends "haiku/layout.html" %}
+ {% set script_files = [] %}
+-{% set metatags = metatags + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" %}
++{% set metatags = "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">" %}
+ {%- block csss %}
+     <style>
+         {% include 'basic/static/basic.css_t' %}

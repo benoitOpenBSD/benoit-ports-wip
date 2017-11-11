@@ -1,0 +1,20 @@
+$OpenBSD$
+--- doc/sphinx/singletext.py~	Sat Oct 28 21:49:35 2017
++++ doc/sphinx/singletext.py	Sat Nov 11 11:32:32 2017
+@@ -9,11 +9,11 @@
+ from sphinx.writers.text import TextWriter, TextTranslator
+ 
+ logger = None # Declare it
+-try: # Sphinx 1.2.3 compatibility
+-    from sphinx.util import logging
+-    logger = logging.getLogger(__name__)
+-except ImportError:
+-    logger = None # Set later
++#try: # Sphinx 1.2.3 compatibility
++#    from sphinx.util import logging
++#    logger = logging.getLogger(__name__)
++#except ImportError:
++#    logger = None # Set later
+ 
+ try: # Sphinx 1.2.3 compatibility
+     from sphinx.environment.adapters.toctree import TocTree
