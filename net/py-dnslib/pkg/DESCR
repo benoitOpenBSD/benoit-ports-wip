@@ -1,2 +1,0 @@
-A library to encode/decode DNS wire-format packets supporting both
-Python 2.7 and Python 3.2+.

@@ -1,8 +1,0 @@
-THe hping security tool is available in different versions and for different
-systems. Hping2 is the old version of the tool supporting the command line
-interfiace, while the new hping3 is the evolution that adds a Tcl scripting
-engine. Note that hping3 even if used in command line mode (hping2
-compatible mode) contains some fix, so if available for your system download
-hping3 instead of hping2. If you plan to use hping in order to perform
-automated networks scans and security tests you can use hping3 scripts
-instead of hping2 + shell scripts, it is much more powerful! 
