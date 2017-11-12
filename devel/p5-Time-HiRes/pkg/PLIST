@@ -1,9 +1,0 @@
-@comment $OpenBSD$
-${P5ARCH}/
-${P5ARCH}/Time/
-${P5ARCH}/Time/HiRes.pm
-${P5ARCH}/auto/
-${P5ARCH}/auto/Time/
-${P5ARCH}/auto/Time/HiRes/
-${P5ARCH}/auto/Time/HiRes/HiRes.so
-@man man/man3p/Time::HiRes.3p
