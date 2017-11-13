@@ -1,0 +1,15 @@
+@comment $OpenBSD$
+@bin bin/z80asm
+@man man/man1/z80asm.1
+share/z80asm/
+share/z80asm/examples/
+share/z80asm/examples/Makefile
+share/z80asm/examples/hello.asm
+share/z80asm/examples/macro.asm
+share/z80asm/examples/seek.asm
+share/z80asm/headers/
+share/z80asm/headers/msx-bios.asm
+share/z80asm/headers/msx2+-bios.asm
+share/z80asm/headers/msx2-bios.asm
+share/z80asm/headers/msx2-subrom.asm
+share/z80asm/headers/msxturbor-bios.asm
