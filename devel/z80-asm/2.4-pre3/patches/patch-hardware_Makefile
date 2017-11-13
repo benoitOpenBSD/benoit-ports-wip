@@ -1,0 +1,63 @@
+$OpenBSD$
+--- hardware/Makefile.orig	Mon Nov 13 11:31:28 2017
++++ hardware/Makefile	Mon Nov 13 11:31:38 2017
+@@ -1,27 +1,27 @@
+ #--------- You shouldn't need to change anything under this line ---------------
+ 
+-ifeq (UNIX, $(SYSTEM))
++#ifeq (UNIX, $(SYSTEM))
+  RM=rm -f
+  CLK=hardware_clock
+  LCD=lcd_display
+  MKP=make_ports
+  IOP=port_io
+  MON=monitor_cpu
+-else
+- RM=del
+- CLK=hw_clk.exe
+- LCD=lcd_dis.exe
+- MKP=mk_ports.exe
+- IOP=port_io.exe
+- MON=monitor_cpu.exe
+-endif
++#else
++# RM=del
++# CLK=hw_clk.exe
++# LCD=lcd_dis.exe
++# MKP=mk_ports.exe
++# IOP=port_io.exe
++# MON=monitor_cpu.exe
++#endif
+ 
+-CC=		gcc
+-CFLAGS=-O2 -Wall -D$(SYSTEM) $(DEFINES) -W -Wstrict-prototypes \
++CC=		cc
++CFLAGS += -Wall -D$(SYSTEM) $(DEFINES) -W -Wstrict-prototypes \
+        -Wno-parentheses -fomit-frame-pointer -falign-functions=0
+ LDFLAGS=
+ 
+-all: $(CLK) $(LCD) $(MKP) $(IOP) $(MON) quartz.o daisy_chain.o z80-ctc.o \
++all: $(CLK) $(MKP) $(IOP) $(MON) quartz.o daisy_chain.o z80-ctc.o \
+      port_buffer.o analyzer.o ssl_zds.o
+ 
+ hard.a:	quartz.o daisy_chain.o z80-ctc.o port_buffer.o analyzer.o ssl_zds.o
+@@ -58,13 +58,13 @@
+ 
+ ssl_zds.o: ssl_zds.c ../z80-cpu.h ../z80-global zds_token
+ 
+-$(LCD): lcd_display.o ../dummy.o ../cpu.a ../console.o ../asm.a hard.a
+-	gcc -lc -o $(LCD) lcd_display.o ../dummy.o ../cpu.a ../console.o ../asm.a hard.a
++#$(LCD): lcd_display.o ../dummy.o ../cpu.a ../console.o ../asm.a hard.a
++#	cc -lc -o $(LCD) lcd_display.o ../dummy.o ../cpu.a ../console.o ../asm.a hard.a
+ $(CLK): hardware_clock.o
+-	gcc -lc -o $(CLK) hardware_clock.o
++	cc -lc -o $(CLK) hardware_clock.o
+ $(MKP): make_ports.o
+-	gcc -lc -o $(MKP) make_ports.o
++	cc -lc -o $(MKP) make_ports.o
+ $(IOP): port_io.o
+-	gcc -lc -o $(IOP) port_io.o
++	cc -lc -o $(IOP) port_io.o
+ $(MON): monitor_cpu.o ../cpu.a ../console.o ../asm.a
+-	gcc -lc -o $(MON) monitor_cpu.o ../cpu.a ../console.o ../asm.a
++	cc -lc -o $(MON) monitor_cpu.o ../cpu.a ../console.o ../asm.a

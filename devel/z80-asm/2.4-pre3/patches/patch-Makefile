@@ -1,0 +1,39 @@
+$OpenBSD$
+--- Makefile.orig	Mon Nov 13 11:31:14 2017
++++ Makefile	Mon Nov 13 11:31:21 2017
+@@ -20,18 +20,18 @@
+ ZZ=Z80_PORTS="\"$(Z80_PORTS)\""
+ ZZZ=Z80_PORTS="\\\"$(Z80_PORTS)\\\""
+ HW=hardware/hard.a
+-ifeq (UNIX, $(SYSTEM))
++#ifeq (UNIX, $(SYSTEM))
+  RM=rm -f
+  ASM=z80-asm
+  MONI=z80-mon
+-else
+- RM=del
+- ASM=z80-asm.exe
+- MONI=z80-mon.exe
+-endif
++#else
++# RM=del
++# ASM=z80-asm.exe
++# MONI=z80-mon.exe
++#endif
+ 
+-CC=	gcc
+-CFLAGS=-O2 -Wall -D$(ZZ) -D$(SYSTEM) $(DEFINES) -W -Wstrict-prototypes \
++CC=	cc
++CFLAGS += -Wall -D$(ZZ) -D$(SYSTEM) $(DEFINES) -W -Wstrict-prototypes \
+        -Wno-parentheses -fomit-frame-pointer -falign-functions=0
+ LDFLAGS=
+ 
+@@ -118,6 +118,6 @@
+ 
+ 
+ $(ASM): z80-asm.o dummy.o asm.a $(HW)
+-	gcc -lc -o $(ASM) z80-asm.o dummy.o asm.a $(HW)
++	cc -lc -o $(ASM) z80-asm.o dummy.o asm.a $(HW)
+ $(MONI): z80-mon.o cpu.a console.o asm.a $(HW)
+-	gcc -lc -o $(MONI) z80-mon.o cpu.a console.o asm.a $(HW)
++	cc -lc -o $(MONI) z80-mon.o cpu.a console.o asm.a $(HW)

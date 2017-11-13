@@ -1,0 +1,62 @@
+@comment $OpenBSD$
+@bin bin/z80-asm
+@bin bin/z80-mon
+@man man/man1/z80-asm.1
+@man man/man1/z80-mon.1
+share/doc/z80-asm/
+share/doc/z80-asm/dizz80.ps
+share/doc/z80-asm/execute_timing.txt
+share/doc/z80-asm/z80-asm.html
+share/doc/z80-asm/z80-mon.html
+share/doc/z80-asm/z80instructions.txt
+share/doc/z80-asm/z80mnemonics.txt
+share/z80-asm/
+share/z80-asm/examples/
+share/z80-asm/examples/Makefile
+share/z80-asm/examples/ROMS/
+share/z80-asm/examples/ROMS/pc-e220_rom.z80
+share/z80-asm/examples/ROMS/pc-e220_rom0.bin
+share/z80-asm/examples/ROMS/pc-e220_rom1.bin
+share/z80-asm/examples/ROMS/pc-e220_rom2.bin
+share/z80-asm/examples/ROMS/pc-e220_rom3.bin
+share/z80-asm/examples/ROMS/pc-e220_rom4.bin
+share/z80-asm/examples/ROMS/pc-e220_rom5.bin
+share/z80-asm/examples/ROMS/pc-e220_rom6.bin
+share/z80-asm/examples/ROMS/pc-e220_rom7.bin
+share/z80-asm/examples/ROMS/ti83_rom0.bin
+share/z80-asm/examples/ROMS/ti83_rom0.z80
+share/z80-asm/examples/ROMS/ti83_rom1.bin
+share/z80-asm/examples/ROMS/ti83_rom2.bin
+share/z80-asm/examples/ROMS/ti83_rom3.bin
+share/z80-asm/examples/ROMS/ti83_rom4.bin
+share/z80-asm/examples/ROMS/ti83_rom5.bin
+share/z80-asm/examples/ROMS/ti83_rom6.bin
+share/z80-asm/examples/ROMS/ti83_rom7.bin
+share/z80-asm/examples/ROMS/ti83_rom8.bin
+share/z80-asm/examples/ROMS/ti83_rom9.bin
+share/z80-asm/examples/ROMS/ti83_romA.bin
+share/z80-asm/examples/ROMS/ti83_romB.bin
+share/z80-asm/examples/ROMS/ti83_romC.bin
+share/z80-asm/examples/ROMS/ti83_romD.bin
+share/z80-asm/examples/ROMS/ti83_romE.bin
+share/z80-asm/examples/ROMS/ti83_romF.bin
+share/z80-asm/examples/ROMS/ti86v16.bin
+share/z80-asm/examples/clock.asm
+share/z80-asm/examples/clock.z80
+share/z80-asm/examples/divi.asm
+share/z80-asm/examples/divi.z80
+share/z80-asm/examples/example.asm
+share/z80-asm/examples/example.z80
+share/z80-asm/examples/lcd_test.asm
+share/z80-asm/examples/lcd_test.z80
+share/z80-asm/examples/make_header.c
+share/z80-asm/examples/multi.asm
+share/z80-asm/examples/multi.z80
+share/z80-asm/examples/opc.z80
+share/z80-asm/examples/opcodes.c
+share/z80-asm/examples/ti86_link2.asm
+share/z80-asm/examples/ti86_link2.z80
+share/z80-asm/examples/timer.asm
+share/z80-asm/examples/timer.z80
+share/z80-asm/examples/wait_tics.asm
+share/z80-asm/examples/wait_tics.z80
