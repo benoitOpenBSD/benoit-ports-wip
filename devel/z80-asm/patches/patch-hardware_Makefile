@@ -1,0 +1,30 @@
+$OpenBSD$
+--- hardware/Makefile.orig	Mon Nov 13 10:15:35 2017
++++ hardware/Makefile	Mon Nov 13 10:16:55 2017
+@@ -21,7 +21,7 @@
+  MON=monitor_cpu.exe
+ endif
+ 
+-CC=		gcc
++CC=		cc
+ CFLAGS=-O2 -Wall -D$(SYSTEM) $(DEFINES) -W -Wstrict-prototypes \
+        -Wno-parentheses -fomit-frame-pointer -falign-functions=0
+ LDFLAGS=
+@@ -64,12 +64,12 @@
+ ssl_zds.o: ssl_zds.c ../z80-cpu.h ../z80-global zds_token
+ 
+ $(LCD): lcd_display.o ../dummy.o ../cpu.a ../console.o ../asm.a hard.a
+-	gcc -lc -o $(LCD) lcd_display.o ../dummy.o ../cpu.a ../console.o ../asm.a hard.a
++	cc -lc -o $(LCD) lcd_display.o ../dummy.o ../cpu.a ../console.o ../asm.a hard.a
+ $(CLK): hardware_clock.o
+-	gcc -lc -o $(CLK) hardware_clock.o
++	cc -lc -o $(CLK) hardware_clock.o
+ $(MKP): make_ports.o
+-	gcc -lc -o $(MKP) make_ports.o
++	cc -lc -o $(MKP) make_ports.o
+ $(IOP): port_io.o
+-	gcc -lc -o $(IOP) port_io.o
++	cc -lc -o $(IOP) port_io.o
+ $(MON): monitor_cpu.o ../cpu.a ../console.o ../asm.a
+-	gcc -lc -o $(MON) monitor_cpu.o ../cpu.a ../console.o ../asm.a
++	cc -lc -o $(MON) monitor_cpu.o ../cpu.a ../console.o ../asm.a

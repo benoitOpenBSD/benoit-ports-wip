@@ -1,0 +1,37 @@
+$OpenBSD$
+--- Makefile.orig	Mon Nov 13 10:13:10 2017
++++ Makefile	Mon Nov 13 10:14:14 2017
+@@ -18,17 +18,17 @@
+ #--------- You shouldn't need to change anything under this line ---------------
+ 
+ HW=hardware/hard.a
+-ifeq (UNIX, $(SYSTEM))
++#ifeq (UNIX, $(SYSTEM))
+  RM=rm -f
+  ASM=z80-asm
+  MONI=z80-mon
+-else
+- RM=del
+- ASM=z80-asm.exe
+- MONI=z80-mon.exe
+-endif
++#else
++# RM=del
++# ASM=z80-asm.exe
++# MONI=z80-mon.exe
++#endif
+ 
+-CC=	gcc
++CC=	cc
+ CFLAGS=-O2 -Wall -D$(ZZ) -D$(SYSTEM) $(DEFINES) -W -Wstrict-prototypes \
+        -Wno-parentheses -fomit-frame-pointer -falign-functions=0
+ LDFLAGS=
+@@ -116,6 +116,6 @@
+ 
+ 
+ $(ASM): z80-asm.o dummy.o asm.a $(HW)
+-	gcc -lc -o $(ASM) z80-asm.o dummy.o asm.a $(HW)
++	cc -lc -o $(ASM) z80-asm.o dummy.o asm.a $(HW)
+ $(MONI): z80-mon.o cpu.a console.o asm.a $(HW)
+-	gcc -lc -o $(MONI) z80-mon.o cpu.a console.o asm.a $(HW)
++	cc -lc -o $(MONI) z80-mon.o cpu.a console.o asm.a $(HW)
