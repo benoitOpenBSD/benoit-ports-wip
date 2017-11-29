@@ -1,4 +1,4 @@
-$OpenBSD: patch-gitweb_gitweb_perl,v 1.29 2017/09/27 15:06:08 danj Exp $
+$OpenBSD: patch-gitweb_gitweb_perl,v 1.30 2017/11/08 09:17:14 benoit Exp $
 
 This prevents the following error: '-T and -B not implemented on filehandles'
 
