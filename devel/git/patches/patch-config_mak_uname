@@ -5,7 +5,7 @@ OpenBSD wants DIR_HAS_BSD_GROUP_SEMANTICS, just like FreeBSD
 Index: config.mak.uname
 --- config.mak.uname.orig
 +++ config.mak.uname
-@@ -211,6 +211,7 @@ endif
+@@ -212,6 +212,7 @@ endif
  ifeq ($(uname_S),OpenBSD)
  	NO_STRCASESTR = YesPlease
  	NO_MEMMEM = YesPlease
