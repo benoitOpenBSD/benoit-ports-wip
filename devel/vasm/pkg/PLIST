@@ -1,0 +1,3 @@
+@comment $OpenBSD$
+@bin bin/vasmm68k_mot
+@bin bin/vobjdump

@@ -1,0 +1,10 @@
+vasm is a portable and retargetable assembler to create linkable objects 
+in various formats or absolute code. Multiple CPU-, syntax and output-modules 
+can be selected.
+Many common directives/pseudo-opcodes are supported (depending on the syntax 
+module) as well as CPU-specific extensions.
+The assembler supports optimizations (e.g. choosing the shortest possible 
+branch instruction or addressing mode) and relaxations (e.g. converting a 
+branch to an absolute jump when necessary).
+Most syntax modules support macros, include directives, repetitions, 
+conditional assembly and local symbols.
