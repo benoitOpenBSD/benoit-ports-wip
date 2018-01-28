@@ -1,4 +1,4 @@
-$OpenBSD: patch-t_t0000-basic_sh,v 1.8 2014/08/19 19:44:39 pascal Exp $
+$OpenBSD: patch-t_t0000-basic_sh,v 1.9 2018/01/20 09:24:57 benoit Exp $
 Index: t/t0000-basic.sh
 --- t/t0000-basic.sh.orig
 +++ t/t0000-basic.sh

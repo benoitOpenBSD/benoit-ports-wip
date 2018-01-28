@@ -1,4 +1,4 @@
-$OpenBSD: patch-Makefile,v 1.75 2017/12/02 15:24:31 benoit Exp $
+$OpenBSD: patch-Makefile,v 1.76 2018/01/20 09:24:57 benoit Exp $
 Index: Makefile
 --- Makefile.orig
 +++ Makefile
