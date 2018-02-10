@@ -33,7 +33,6 @@ include/cc65/_tia.h
 include/cc65/_vdc.h
 include/cc65/_vic.h
 include/cc65/_vic2.h
-include/cc65/ace.h
 include/cc65/apple2.h
 include/cc65/apple2_filetype.h
 include/cc65/apple2enh.h
@@ -115,6 +114,7 @@ include/cc65/supervision.h
 include/cc65/sys/
 include/cc65/sys/types.h
 include/cc65/sys/utsname.h
+include/cc65/target.h
 include/cc65/telestrat.h
 include/cc65/tgi/
 include/cc65/tgi.h
