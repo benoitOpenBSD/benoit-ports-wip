@@ -2,12 +2,12 @@
 
 COMMENT =		rednex Game Boy Development System
 
-DISTNAME =		rgbds-0.3.3
+DISTNAME =		rgbds-0.3.5
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# MIT / ISC / BSD
+# MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =		${MASTER_SITES_GITHUB}
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/rednex/rgbds
 
 GH_ACCOUNT =		rednex
 GH_PROJECT =		rgbds
-GH_TAGNAME =		v0.3.3
+GH_TAGNAME =		v0.3.5
 
 WANTLIB +=		c m png z
 
