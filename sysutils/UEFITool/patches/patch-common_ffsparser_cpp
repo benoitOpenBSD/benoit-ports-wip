@@ -1,9 +1,0 @@
-$OpenBSD$
---- common/ffsparser.cpp.orig	Tue Jun 21 14:47:09 2016
-+++ common/ffsparser.cpp	Tue Jun 21 14:47:16 2016
-@@ -1,4 +1,4 @@
--﻿/* ffsparser.cpp
-+/* ffsparser.cpp
- 
- Copyright (c) 2016, Nikolaj Schlej. All rights reserved.
- This program and the accompanying materials
