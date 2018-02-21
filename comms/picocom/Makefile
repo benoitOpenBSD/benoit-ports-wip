@@ -13,7 +13,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB += c
 
-GH_TAGNAME =            2.2
+GH_TAGNAME =            3.1
 GH_ACCOUNT =            npat-efault
 GH_PROJECT =            picocom
 
