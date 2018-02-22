@@ -1,4 +1,0 @@
-This is the the client and protocol library for the Drizzle project. The
-server, drizzled, will use this as for the protocol library, as well as the
-client utilities and any new projects that require low-level protocol
-communication (like proxies).
