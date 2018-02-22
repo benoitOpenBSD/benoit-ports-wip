@@ -2,7 +2,7 @@
 
 COMMENT =	use Math::Pari for Math::BigInt routines
 
-DISTNAME =	Math-BigInt-Pari-1.19
+DISTNAME =	Math-BigInt-Pari-1.3003
 CATEGORIES =	math
 
 # perl
