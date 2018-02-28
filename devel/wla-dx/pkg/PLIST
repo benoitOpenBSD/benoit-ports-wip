@@ -16,7 +16,6 @@
 @man man/man1/wla-spc700.1
 @man man/man1/wla-z80.1
 @man man/man1/wlab.1
-@man man/man1/wlad.1
 @man man/man1/wlalink.1
 @man man/man7/wla-dx.7
 share/doc/wla-dx/
@@ -31,7 +30,6 @@ share/doc/wla-dx/bugs.rst
 share/doc/wla-dx/codetoknow.rst
 share/doc/wla-dx/compiling.rst
 share/doc/wla-dx/conf.py
-share/doc/wla-dx/disassembling.rst
 share/doc/wla-dx/errormsg.rst
 share/doc/wla-dx/extraflags.rst
 share/doc/wla-dx/files.rst
@@ -43,7 +41,6 @@ share/doc/wla-dx/linking.rst
 share/doc/wla-dx/man/
 share/doc/wla-dx/man/wla-cpu.rst
 share/doc/wla-dx/man/wlab.rst
-share/doc/wla-dx/man/wlad.rst
 share/doc/wla-dx/man/wlalink.rst
 share/doc/wla-dx/sphinx/
 share/doc/wla-dx/sphinx/globalindex.py
