@@ -9,6 +9,7 @@ DISTNAME =	git-${V}
 PKGNAME-main =	${DISTNAME}
 PKGNAME-svn =	git-svn-${V}
 PKGNAME-x11 =	git-x11-${V}
+REVISION-main = 0
 CATEGORIES =	devel
 
 HOMEPAGE =	https://git-scm.com/
@@ -33,7 +34,10 @@ MODPY_ADJ_FILES =	contrib/hooks/multimail/git_multimail.py \
 			contrib/hooks/multimail/post-receive.example
 
 BUILD_DEPENDS =		devel/gettext-tools \
-			devel/p5-Error
+			devel/p5-Error \
+			textproc/asciidoc \
+			textproc/xmlto \
+			textproc/docbook
 
 MULTI_PACKAGES =	-main -svn -x11
 
@@ -111,6 +115,11 @@ post-install:
 		${MAKE_ENV} ${MAKE_PROGRAM} gitwebdir=${TRUEPREFIX}/share/gitweb install
 	perl -pi -e "s|${WRKINST}||g" ${PREFIX}/share/gitweb/gitweb.cgi
 	${INSTALL_DATA} ${WRKBUILD}/gitweb/README ${PREFIX}/share/gitweb
+	cd ${WRKBUILD}/contrib/subtree && \
+		${MAKE_ENV} ${MAKE_PROGRAM} git-subtree doc
+	${INSTALL_DATA} ${WRKBUILD}/contrib/subtree/git-subtree.1 ${PREFIX}/man/man1
+	${INSTALL_DATA} ${WRKBUILD}/contrib/subtree/git-subtree \
+		${PREFIX}/libexec/git/
 
 do-test:
 	cd ${WRKSRC} && ${MAKE_ENV} GIT_TEST_OPTS="--immediate" ${MAKE_PROGRAM} \

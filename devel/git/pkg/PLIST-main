@@ -161,6 +161,7 @@ libexec/git/git-stash
 @bin libexec/git/git-stripspace
 libexec/git/git-submodule
 @bin libexec/git/git-submodule--helper
+libexec/git/git-subtree
 @bin libexec/git/git-symbolic-ref
 @bin libexec/git/git-tag
 @bin libexec/git/git-unpack-file
@@ -331,6 +332,7 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-status.1
 @man man/man1/git-stripspace.1
 @man man/man1/git-submodule.1
+@man man/man1/git-subtree.1
 @man man/man1/git-symbolic-ref.1
 @man man/man1/git-tag.1
 @man man/man1/git-unpack-file.1
