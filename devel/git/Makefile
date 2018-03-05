@@ -118,7 +118,7 @@ post-install:
 	cd ${WRKBUILD}/contrib/subtree && \
 		${MAKE_ENV} ${MAKE_PROGRAM} git-subtree doc
 	${INSTALL_DATA} ${WRKBUILD}/contrib/subtree/git-subtree.1 ${PREFIX}/man/man1
-	${INSTALL_DATA} ${WRKBUILD}/contrib/subtree/git-subtree \
+	${INSTALL_SCRIPT} ${WRKBUILD}/contrib/subtree/git-subtree \
 		${PREFIX}/libexec/git/
 
 do-test:
