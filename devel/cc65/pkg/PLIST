@@ -142,6 +142,8 @@ share/cc65/samples/geos/filesel.c
 share/cc65/samples/geos/fileselres.grc
 share/cc65/samples/geos/geosconio.c
 share/cc65/samples/geos/geosconiores.grc
+share/cc65/samples/geos/geosver.c
+share/cc65/samples/geos/geosverres.grc
 share/cc65/samples/geos/getid.c
 share/cc65/samples/geos/getidres.grc
 share/cc65/samples/geos/grphstr.c
