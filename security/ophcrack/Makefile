@@ -2,7 +2,7 @@
 
 COMMENT =		password cracker based on rainbow tables
 
-DISTNAME =		ophcrack-3.7.0
+DISTNAME =		ophcrack-3.8.0
 CATEGORIES =		security
 
 HOMEPAGE =		http://ophcrack.sourceforge.net/
@@ -31,20 +31,18 @@ FLAVOR ?=
 
 .if ${FLAVOR:Mgui}
 WANTLIB +=		ICE SM X11 Xext Xi Xinerama Xrender fontconfig
-WANTLIB +=		freetype stdc++ QtGui>=8 QtCore>=7 qwt
+WANTLIB +=		freetype stdc++ QtGui>=8 QtCore>=7
 
-MODULES +=		x11/qt4
+MODULES +=		x11/qt5
 
-LIB_DEPENDS +=		x11/qt4 \
-			x11/qwt
-CONFIGURE_ARGS +=	--enable-gui \
-			--with-libqt4=${MODQT_LIBDIR} \
-			--with-libqwt=${LOCALBASE} \
-			--enable-graph
-CONFIGURE_ENV +=	QTDIR="${MODQT4_QTDIR}" \
+LIB_DEPENDS +=		x11/qt5/qtcharts
+
+CONFIGURE_ARGS +=	--enable-gui
+
+CONFIGURE_ENV +=	QTDIR="${MODQT5_QTDIR}" \
 			CPPFLAGS="${CPPFLAGS} -I${X11BASE}/include"
 .else
-CONFIGURE_ARGS =	--disable-gui --disable-graph
+CONFIGURE_ARGS =	--disable-gui
 .endif
 
 NO_TEST =		Yes
