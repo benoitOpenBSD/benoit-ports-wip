@@ -1,0 +1,5 @@
+@comment $OpenBSD$
+@bin bin/atr
+@bin bin/atr2imd
+@bin bin/detok
+@bin bin/imd2atr

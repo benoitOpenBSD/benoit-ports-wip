@@ -1,0 +1,28 @@
+$OpenBSD$
+--- Makefile.orig	Mon Mar 12 10:46:56 2018
++++ Makefile	Mon Mar 12 10:47:00 2018
+@@ -1,3 +1,22 @@
+ 
+-atr : atr.o
+-	cc -o atr atr.o
++.SUFFIXES: .c .o
++
++.c.o:
++	${CC} ${CFLAGS} -c $<
++
++all: atr atr2imd detok imd2atr
++
++atr: atr.o
++	${CC} ${CFLAGS} -o $@ atr.o
++
++atr2imd: atr2imd.o
++	${CC} ${CFLAGS} -o $@ atr2imd.o
++
++detok: detok.o
++	${CC} ${CFLAGS} -o $@ atr2imd.o
++
++imd2atr: imd2atr.o
++	${CC} ${CFLAGS} -o $@ imd2atr.o
++
++clean:
++	rm *.o
