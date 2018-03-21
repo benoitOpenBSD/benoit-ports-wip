@@ -2,7 +2,7 @@
 
 COMMENT =		firmware library for various ARM Cortex microcontrollers
 
-DISTNAME =		libopencm3-20160319
+DISTNAME =		libopencm3-20180306
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		http://libopencm3.org/wiki/Main_Page
 
 GH_ACCOUNT =		libopencm3
 GH_PROJECT =		libopencm3
-GH_COMMIT =		d3fff11c1f68b706591c0d51c82d18a0bc88dc17
+GH_COMMIT =		fb28b4cb7ccc9b157bedf9a506fc893f14a40969
 
 # WANTLIB +=		c m
 
