@@ -2,8 +2,8 @@
 
 COMMENT =		portable and retargetable assembler
 
-PKGNAME =		vasm-1.8a
-DISTNAME =      	vasm1_8a
+PKGNAME =		vasm-1.8c
+DISTNAME =      	vasm1_8c
 
 CATEGORIES =		devel
 
@@ -12,7 +12,8 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # XXX A voir
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		http://server.owl.de/~frank/tags/
+MASTER_SITES =		http://server.owl.de/~frank/tags/ \
+			http://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://sun.hasenbraten.de/vasm/index.php?view=main
 
