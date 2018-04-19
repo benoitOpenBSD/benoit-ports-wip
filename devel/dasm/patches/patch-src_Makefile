@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/Makefile.orig	Thu Apr 19 09:45:04 2018
++++ src/Makefile	Thu Apr 19 09:45:44 2018
+@@ -63,6 +63,7 @@
+ 	$(CC) $(OBJS) -o dasm $(LDFLAGS)
+ 
+ ftohex: ftohex.o
++	$(CC) ftohex.o -o ftohex $(LDFLAGS)
+ 
+ obj: $(OBJS)
+ 

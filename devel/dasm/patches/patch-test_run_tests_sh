@@ -1,0 +1,9 @@
+$OpenBSD$
+--- test/run_tests.sh.orig	Thu Apr 19 10:05:47 2018
++++ test/run_tests.sh	Thu Apr 19 10:05:54 2018
+@@ -1,4 +1,4 @@
+-#!/bin/bash
++#!/bin/sh
+ 
+ # $Id: run_tests.sh 327 2014-02-09 13:06:55Z adavie $
+ #

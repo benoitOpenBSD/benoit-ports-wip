@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+@bin bin/dasm
+@bin bin/ftohex
+@man man/man1/dasm.1
