@@ -1,0 +1,18 @@
+$OpenBSD$
+--- Source/linux_makefile.orig	Thu Apr 19 11:51:39 2018
++++ Source/linux_makefile	Thu Apr 19 11:52:19 2018
+@@ -1,4 +1,4 @@
+-CC = gcc
++#CC = gcc
+ CFLAGS += -Icompat -Werror -DUNIX
+ 
+ SOURCES = a65816_Code.c a65816_Cond.c a65816_Data.c a65816_File.c \
+@@ -8,7 +8,7 @@
+ OBJECTS=$(SOURCES:.c=.o)
+ 
+ Merlin32: $(OBJECTS)
+-	gcc $^ -o $@
++	$(CC) $^ -o $@
+ 
+ clean:
+ 	rm -f $(OBJECTS) Merlin32

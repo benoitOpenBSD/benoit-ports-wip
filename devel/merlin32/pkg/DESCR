@@ -1,0 +1,17 @@
+Merlin 32 is a multi-pass Cross Assembler running under Windows, Linux 
+and Mac OS X targeting 8 bit processors in the 6502 series (such as 
+6502 and 65c02) and the 16 bit 65c816 processor.
+
+It is compatible with Glen Bredon's Merlin 16+ syntax, including support 
+for Macros, Pre-processor,  Logical Expressions, Conditional Operations, 
+Variables, Loops, Local Labels...
+
+It can build fixed position object code or relocatable executables 
+(OMF v2.1) as we can find on 16 bits Apple IIgs operating systems like 
+Prodos 16 or GS/OS (S16, Exe, CDA, NDA, FST, PIF, Library, Tool...).
+
+Merlin 32 is part of the Brutal Deluxe's Cross Development Tools Project, 
+a full set of utilities available on Windows (and other) platforms to 
+enable the creation of new Apple IIgs software : 65c816 Assembler, 
+65c816 Disassembler, 65c816 Simulator, Graphic File Converter, Resource 
+Catcher...

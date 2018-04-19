@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Source/a65816_Macro.c.orig	Thu Apr 19 12:58:37 2018
++++ Source/a65816_Macro.c	Thu Apr 19 12:58:46 2018
+@@ -17,7 +17,7 @@
+ #include <math.h>
+ #include <stdlib.h>
+ #include <setjmp.h>
+-#include <sys/timeb.h>
++/* #include <sys/timeb.h> */
+ 
+ #include "Dc_Library.h"
+ #include "a65816_File.h"

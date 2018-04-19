@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Source/a65816_Lup.c.orig	Thu Apr 19 12:57:16 2018
++++ Source/a65816_Lup.c	Thu Apr 19 12:57:27 2018
+@@ -17,7 +17,7 @@
+ #include <stdlib.h>
+ #include <stdint.h>
+ #include <setjmp.h>
+-#include <sys/timeb.h>
++/* #include <sys/timeb.h> */
+ 
+ #include "Dc_Library.h"
+ #include "a65816_File.h"
