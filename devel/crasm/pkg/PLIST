@@ -1,0 +1,3 @@
+@comment $OpenBSD$
+@bin bin/crasm
+@man man/man1/crasm.1
