@@ -1,0 +1,11 @@
+@comment $OpenBSD$
+@bin bin/atasm
+share/atasm/
+share/atasm/docs/
+share/atasm/docs/atasm.blurb
+share/atasm/docs/atasm.pdf
+share/atasm/examples/
+share/atasm/examples/iomac.lib
+share/atasm/examples/sample.m65
+share/atasm/examples/sysequ.m65
+share/atasm/examples/test.m65
