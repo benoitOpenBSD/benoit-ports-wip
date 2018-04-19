@@ -33,6 +33,7 @@ include/cc65/_tia.h
 include/cc65/_vdc.h
 include/cc65/_vic.h
 include/cc65/_vic2.h
+include/cc65/accelerator.h
 include/cc65/apple2.h
 include/cc65/apple2_filetype.h
 include/cc65/apple2enh.h
