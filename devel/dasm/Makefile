@@ -8,7 +8,7 @@ CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# zlib
+# GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
 MASTER_SITES =		${MASTER_SITES_GITHUB}
