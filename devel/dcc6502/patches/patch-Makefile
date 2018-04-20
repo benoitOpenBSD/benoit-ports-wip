@@ -1,0 +1,11 @@
+$OpenBSD$
+--- Makefile.orig	Fri Apr 20 09:07:16 2018
++++ Makefile	Fri Apr 20 09:07:31 2018
+@@ -1,5 +1,5 @@
+-CC=gcc
+-CFLAGS=-O
++#CC=gcc
++#CFLAGS=-O
+ 
+ dcc6502: dcc6502.c
+ 	$(CC) -o $@ $^ $(CFLAGS)

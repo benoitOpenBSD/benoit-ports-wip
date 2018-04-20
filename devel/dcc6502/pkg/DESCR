@@ -1,0 +1,9 @@
+Disassembler for 6502 processors.
+
+Features
+
+    Simple command-line interface
+    Single file, ANSI C source
+    Annotation for addresses of Nintendo Entertainment System (NES) system registers
+    Cycle-counting output
+    Machine code display inline with the disassembly
