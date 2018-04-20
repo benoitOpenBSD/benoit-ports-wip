@@ -2,7 +2,7 @@
 
 COMMENT =		manipulate Atari 800 .ATR images
 
-DISTNAME =		atari-tools-20161007
+DISTNAME =		atari-tools-20180418
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/jhallen/atari-tools/
 
 GH_ACCOUNT =		jhallen
 GH_PROJECT =		atari-tools
-GH_COMMIT =		5aa49f4a9654d6beb1e7e6791bec3915c9145f61
+GH_COMMIT =		ec5812343b19166d4139b9ae7c15756ae4d8f26b
 
 WANTLIB +=		c
 
