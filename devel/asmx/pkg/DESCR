@@ -1,0 +1,12 @@
+The asmx cross assembler is a multi-CPU macro assembler written by Bruce 
+Tomlin and available from his xi6.com Web site. The version I downloaded, 
+is "asmx-2.0b5.zip" Version 2.0 beta 5, from 2009 I believe, which I 
+downloaded early 2012. There's no specific terms of use or licence 
+described on site. Bruce seems to support a lot of classic video-game 
+project with hardware and software. There's other tools on his site 
+which may be of interest.
+
+The cross-assemble supports "macro" capability; that's a feature I 
+wanted to make available for M/S card owners; in a cross-assembler 
+with sources freely available. It supports many 8-bit microprocessors; 
+my interest on this page is the RCA COSMAC 1802 and related support. 

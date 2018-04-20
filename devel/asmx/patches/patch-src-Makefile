@@ -1,0 +1,16 @@
+$OpenBSD$
+--- src/Makefile.orig	Fri Apr 20 10:57:12 2018
++++ src/Makefile	Fri Apr 20 11:01:04 2018
+@@ -9,10 +9,10 @@
+ #   comment it out if you aren't running OS X for Intel
+ #TARGET_ARCH = -arch ppc
+ #TARGET_ARCH = -arch ppc -arch i686
+-TARGET_ARCH = -march=amdfam10
++#TARGET_ARCH = -march=amdfam10
+ 
+ # C compiler flags
+-CFLAGS = -Wall -O2 -DVERSION=\"$(VERSION)\"
++CFLAGS += -Wall -DVERSION=\"$(VERSION)\"
+ 
+ # install directory in ~/bin or wherever you want it
+ #INSTALL_DIR = ~/bin

@@ -1,0 +1,11 @@
+--- src/asmz80.c.orig	Fri Apr 20 11:21:41 2018
++++ src/asmz80.c	Fri Apr 20 11:21:54 2018
+@@ -194,7 +194,7 @@
+ }
+ 
+ 
+-inline int DDFD(int reg)
++int DDFD(int reg)
+ {
+     if (reg == reg_IX)
+         return 0xDD;
