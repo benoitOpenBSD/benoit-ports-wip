@@ -3,7 +3,7 @@
 COMMENT =		assembler and monitor for the Z80 CPU
 
 DISTNAME =		z80-asm-current
-PKGNAME =		z80-asm-2.4-pre3
+PKGNAME =		z80-asm-2.4-pre4
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -19,7 +19,7 @@ WANTLIB +=		c
 
 USE_GMAKE =		Yes
 
-WRKDIST =		${WRKDIR}/z80-asm-2.4-pre3
+WRKDIST =		${WRKDIR}/z80-asm-2.4-pre4
 
 NO_TEST =		Yes
 
