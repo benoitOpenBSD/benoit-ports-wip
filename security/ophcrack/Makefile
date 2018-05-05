@@ -30,8 +30,7 @@ FLAVORS =		gui
 FLAVOR ?=
 
 .if ${FLAVOR:Mgui}
-WANTLIB +=		ICE SM X11 Xext Xi Xinerama Xrender fontconfig
-WANTLIB +=		freetype stdc++ QtGui>=8 QtCore>=7
+WANTLIB +=		${COMPILER_LIBCXX} GL Qt5Charts Qt5Core Qt5Gui Qt5Widgets
 
 MODULES +=		x11/qt5
 
