@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/SteveFosdick/dis6502
 
 GH_ACCOUNT =		SteveFosdick
 GH_PROJECT =		dis6502
-GH_COMMIT =		77b198509e8deb6af6844f60f9a0ad180219d6f9
+GH_COMMIT =		e2394af28d6f6df4ad472b2ce9c081fb6548fddf
 
 WANTLIB +=		c
 
