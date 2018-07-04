@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 @bin bin/wla-6510
 @bin bin/wla-65816
 @bin bin/wla-65c02
@@ -208,6 +208,10 @@ share/wla-dx/examples/spc-700/linker_test/main.s
 share/wla-dx/examples/spc-700/linker_test/makefile
 share/wla-dx/examples/spc-700/linker_test/setup.s
 share/wla-dx/examples/z80/
+share/wla-dx/examples/z80/caddr_test/
+share/wla-dx/examples/z80/caddr_test/linkfile
+share/wla-dx/examples/z80/caddr_test/makefile
+share/wla-dx/examples/z80/caddr_test/sms.s
 share/wla-dx/examples/z80/features_test/
 share/wla-dx/examples/z80/features_test/features_test.s
 share/wla-dx/examples/z80/features_test/sorority.bin
