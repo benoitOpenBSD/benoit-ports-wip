@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 @bin bin/ar65
 @bin bin/ca65
 @bin bin/cc65
