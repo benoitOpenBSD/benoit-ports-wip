@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 @bin bin/z80-asm
 @bin bin/z80-mon
 @man man/man1/z80-asm.1
@@ -47,6 +47,7 @@ share/z80-asm/examples/divi.asm
 share/z80-asm/examples/divi.z80
 share/z80-asm/examples/example.asm
 share/z80-asm/examples/example.z80
+share/z80-asm/examples/extract_data
 share/z80-asm/examples/lcd_test.asm
 share/z80-asm/examples/lcd_test.z80
 share/z80-asm/examples/make_header.c
