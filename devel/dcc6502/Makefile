@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/tcarmelveilleux/dcc6502
 
 GH_ACCOUNT =		tcarmelveilleux
 GH_PROJECT =		dcc6502
-GH_COMMIT =		c003395dd7ab054340e88960515e22228e86d32a
+GH_COMMIT =		680c21299241133449056c2ddfbc0dd087dc3807
 
 WANTLIB +=		c
 
