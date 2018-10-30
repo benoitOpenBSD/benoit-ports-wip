@@ -113,6 +113,7 @@ include/cc65/stdlib.h
 include/cc65/string.h
 include/cc65/supervision.h
 include/cc65/sys/
+include/cc65/sys/stat.h
 include/cc65/sys/types.h
 include/cc65/sys/utsname.h
 include/cc65/target.h
