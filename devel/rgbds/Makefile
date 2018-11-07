@@ -2,7 +2,7 @@
 
 COMMENT =		rednex Game Boy Development System
 
-DISTNAME =		rgbds-0.3.6
+DISTNAME =		rgbds-0.3.7
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/rednex/rgbds
 
 GH_ACCOUNT =		rednex
 GH_PROJECT =		rgbds
-GH_TAGNAME =		v0.3.6
+GH_TAGNAME =		v0.3.7
 
 WANTLIB +=		c m png z
 
