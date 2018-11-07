@@ -1,0 +1,4 @@
+BeebAsm is a 6502 assembler designed specially for developing assembler 
+programs for the BBC Micro. It uses syntax reminiscent of BBC BASIC's 
+built-in assembler, and is able to output its object code directly into 
+emulator-ready DFS disc images.
