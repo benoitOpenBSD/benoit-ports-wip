@@ -1,0 +1,17 @@
+$OpenBSD$
+--- z80asm/Makefile.orig	Tue Nov 27 22:00:44 2018
++++ z80asm/Makefile	Tue Nov 27 22:02:35 2018
+@@ -1,9 +1,9 @@
+-#CC = cc
+-CC = gcc
++CC = cc
++#CC = gcc
+ 
+-CFLAGS = -c -O3 -Wall
++CFLAGS = -c -O2 -pipe
+ 
+-LFLAGS =
++#LFLAGS =
+ 
+ OBJ =   z80amain.o \
+ 	z80atab.o \
