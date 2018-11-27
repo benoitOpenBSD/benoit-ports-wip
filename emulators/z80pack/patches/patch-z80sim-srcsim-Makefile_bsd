@@ -1,0 +1,12 @@
+$OpenBSD$
+--- z80sim/srcsim/Makefile.bsd.orig	Tue Nov 27 22:08:38 2018
++++ z80sim/srcsim/Makefile.bsd	Tue Nov 27 22:09:04 2018
+@@ -4,7 +4,7 @@
+ #CFLAGS = -O3 -c -Wall -Wextra -Wno-self-assign -fstack-protector-all -D_FORTIFY_SOURCE=2
+ 
+ # Production
+-CFLAGS = -O3 -c -Wall -Wextra -Wno-self-assign -U_FORTIFY_SOURCE
++CFLAGS = -O2 -pipe -c -Wall -Wextra -Wno-self-assign -U_FORTIFY_SOURCE
+ 
+ LFLAGS =
+ 
