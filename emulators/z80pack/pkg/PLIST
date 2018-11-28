@@ -9,6 +9,30 @@ z80pack/bin/
 @bin z80pack/bin/send
 @bin z80pack/bin/z80asm
 @bin z80pack/bin/z80sim
+z80pack/cpmsim/
+z80pack/cpmsim/conf/
+z80pack/cpmsim/conf/net_client.conf.example
+z80pack/cpmsim/conf/net_server.conf.example
+z80pack/cpmsim/disks/
+z80pack/cpmsim/disks/library/
+z80pack/cpmsim/disks/library/cpm13.dsk
+z80pack/cpmsim/disks/library/cpm14.dsk
+z80pack/cpmsim/disks/library/cpm1975.dsk
+z80pack/cpmsim/disks/library/cpm2-1.dsk
+z80pack/cpmsim/disks/library/cpm2-2.dsk
+z80pack/cpmsim/disks/library/cpm3-1.dsk
+z80pack/cpmsim/disks/library/cpm3-2.dsk
+z80pack/cpmsim/disks/library/cpm3-8080-1.dsk
+z80pack/cpmsim/disks/library/cpm3-8080-2.dsk
+z80pack/cpmsim/disks/library/fuzix.dsk
+z80pack/cpmsim/disks/library/hd-fuzix1.dsk
+z80pack/cpmsim/disks/library/hd-fuzix2.dsk
+z80pack/cpmsim/disks/library/hd-tools.dsk
+z80pack/cpmsim/disks/library/hd-toolsrc.dsk
+z80pack/cpmsim/disks/library/i8080tests.dsk
+z80pack/cpmsim/disks/library/mpm-1.dsk
+z80pack/cpmsim/disks/library/mpm-2.dsk
+z80pack/cpmsim/disks/library/z80tests.dsk
 z80pack/doc/
 z80pack/doc/CREDITS
 z80pack/doc/FrontPanel_User_Manual_2.0.pdf

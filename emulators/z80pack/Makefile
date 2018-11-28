@@ -41,7 +41,9 @@ do-install:
 		${PREFIX}/z80pack/bin/
 	${INSTALL_PROGRAM} ${WRKBUILD}/cpmsim/cpmsim ${PREFIX}/z80pack/bin/
 	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/cpmsim/disks
+	cp -R ${WRKSRC}/cpmsim/disks/* ${PREFIX}/z80pack/cpmsim/disks
 	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/cpmsim/conf
+	cp -R ${WRKSRC}/cpmsim/conf/* ${PREFIX}/z80pack/cpmsim/conf
 	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/examples
 	cp -R ${WRKSRC}/z80src/* ${PREFIX}/z80pack/examples
 	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/doc
