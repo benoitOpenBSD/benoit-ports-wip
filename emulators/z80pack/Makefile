@@ -29,13 +29,22 @@ NO_TEST =		Yes
 do-build:
 	cd ${WRKBUILD}/z80asm && ${MAKE}
 	cd ${WRKBUILD}/z80sim/srcsim && ${MAKE} -f Makefile.bsd
+	cd ${WRKBUILD}/cpmsim/srctools && ${MAKE}
+	cd ${WRKBUILD}/cpmsim/srcsim && ${MAKE} -f Makefile.bsd
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKBUILD}/z80asm/z80asm ${PREFIX}/bin/
-	${INSTALL_PROGRAM} ${WRKBUILD}/z80sim/srcsim/z80sim ${PREFIX}/bin/
-#	${INSTALL_DATA_DIR} ${PREFIX}/include/cc65
-#	cp -R ${WRKSRC}/include/* ${PREFIX}/include/cc65
-#	${INSTALL_DATA_DIR} ${PREFIX}/share/cc65/samples
-#	cp -R ${WRKSRC}/samples/* ${PREFIX}/share/cc65/samples
+	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/bin
+	${INSTALL_PROGRAM} ${WRKBUILD}/z80asm/z80asm ${PREFIX}/z80pack/bin/z80asm
+	${INSTALL_PROGRAM} ${WRKBUILD}/z80sim/srcsim/z80sim ${PREFIX}/z80pack/bin/
+	${INSTALL_PROGRAM} \
+		${WRKBUILD}/cpmsim/srctools/{bin2hex,mkdskimg,ptp2bin,receive,send} \
+		${PREFIX}/z80pack/bin/
+	${INSTALL_PROGRAM} ${WRKBUILD}/cpmsim/cpmsim ${PREFIX}/z80pack/bin/
+	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/cpmsim/disks
+	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/cpmsim/conf
+	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/examples
+	cp -R ${WRKSRC}/z80src/* ${PREFIX}/z80pack/examples
+	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/doc
+	cp -R ${WRKSRC}/doc/* ${PREFIX}/z80pack/doc
 
 .include <bsd.port.mk>

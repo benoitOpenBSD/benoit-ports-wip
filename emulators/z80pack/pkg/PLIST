@@ -1,3 +1,23 @@
 @comment $OpenBSD: PLIST,v$
-@bin bin/z80asm
-@bin bin/z80sim
+z80pack/
+z80pack/bin/
+@bin z80pack/bin/bin2hex
+@bin z80pack/bin/cpmsim
+@bin z80pack/bin/mkdskimg
+@bin z80pack/bin/ptp2bin
+@bin z80pack/bin/receive
+@bin z80pack/bin/send
+@bin z80pack/bin/z80asm
+@bin z80pack/bin/z80sim
+z80pack/doc/
+z80pack/doc/CREDITS
+z80pack/doc/FrontPanel_User_Manual_2.0.pdf
+z80pack/doc/README-asm.txt
+z80pack/doc/README-cpm.txt
+z80pack/doc/README-frontpanel.txt
+z80pack/doc/z80-documented.pdf
+z80pack/examples/
+z80pack/examples/float.asm
+z80pack/examples/z80dis.asm
+z80pack/examples/z80main.asm
+z80pack/examples/z80ops.asm

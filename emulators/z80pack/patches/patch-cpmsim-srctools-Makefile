@@ -1,0 +1,17 @@
+$OpenBSD$
+--- cpmsim/srctools/Makefile.orig	Wed Nov 28 22:22:27 2018
++++ cpmsim/srctools/Makefile	Wed Nov 28 22:22:41 2018
+@@ -4,10 +4,10 @@
+ INSTALLDIR=${HOME}/bin
+ #INSTALLDIR=/usr/local/bin
+ 
+-#CC = cc
+-CC = gcc
++CC = cc
++#CC = gcc
+ 
+-CFLAGS= -O3 -Wall
++CFLAGS= -O2 -Wall
+ 
+ all: test mkdskimg bin2hex send receive ptp2bin
+ 	@echo

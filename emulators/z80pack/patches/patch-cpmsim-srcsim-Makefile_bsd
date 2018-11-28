@@ -1,0 +1,23 @@
+$OpenBSD$
+--- cpmsim/srcsim/Makefile.bsd.orig	Wed Nov 28 22:24:37 2018
++++ cpmsim/srcsim/Makefile.bsd	Wed Nov 28 22:25:32 2018
+@@ -1,8 +1,8 @@
+ # system wide location for machines configuration files
+-CONF=/usr/local/share/cpmsim/conf
++CONF=/usr/local/z80pack/cpmsim/conf
+ 
+ # system wide location for disk images
+-DISKS=/usr/local/share/cpmsim/disks
++DISKS=/usr/local/z80pack/cpmsim/disks
+ 
+ CC = cc
+ 
+@@ -10,7 +10,7 @@
+ #CFLAGS = -O3 -c -Wall -Wextra -Wno-self-assign -fstack-protector-all -D_FORTIFY_SOURCE=2 -DCONFDIR=\"${CONF}\" -DDISKSDIR=\"${DISKS}\"
+ 
+ # Production
+-CFLAGS = -O3 -c -Wall -Wextra -Wno-self-assign -U_FORTIFY_SOURCE -DCONFDIR=\"${CONF}\" -DDISKSDIR=\"${DISKS}\"
++CFLAGS = -O2 -c -Wall -Wextra -Wno-self-assign -U_FORTIFY_SOURCE -DCONFDIR=\"${CONF}\" -DDISKSDIR=\"${DISKS}\"
+ 
+ LFLAGS =
+ 
