@@ -1,0 +1,18 @@
+$OpenBSD$
+--- Makefile.orig	Wed Nov 28 11:42:29 2018
++++ Makefile	Wed Nov 28 11:43:10 2018
+@@ -1,4 +1,4 @@
+-CC = gcc
++CC = cc
+ CFLAGS = -O2 -Wall
+ 
+ z80as:	as0.o as1.o as2.o as3.o as4.o as5.o as6.o
+@@ -6,7 +6,7 @@
+ 
+ install:
+ 	strip z80as.x86
+-	cp z80as.x86 ${HOME}/bin/z80as
++	cp z80as.x86 ${PREFIX}/bin/z80as
+ 
+ clean:
+ 	rm -f z80as.x86 *.o

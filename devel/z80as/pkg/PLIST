@@ -1,0 +1,7 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/z80as
+share/z80as/
+share/z80as/examples/
+share/z80as/examples/basic.hex
+share/z80as/examples/basic.lis
+share/z80as/examples/basic.s
