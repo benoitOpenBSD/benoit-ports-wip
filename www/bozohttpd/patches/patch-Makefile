@@ -1,0 +1,26 @@
+$OpenBSD$
+--- Makefile.orig	Fri Nov 23 22:10:04 2018
++++ Makefile	Thu Nov 29 09:32:41 2018
+@@ -23,17 +23,17 @@
+ # for setting CFLAGS relevant to your make, eg
+ #   % make COPTS="-DDO_HTPASSWD"
+ 
+-COPTS+=	-DDO_HTPASSWD
++COPTS+=	-DDO_HTPASSWD -DNO_LUA_SUPPORT
+ PROG=	bozohttpd
+-LINKS=	${BINDIR}/bozohttpd ${BINDIR}/httpd
++#LINKS=	${BINDIR}/bozohttpd ${BINDIR}/httpd
+ MAN=	bozohttpd.8
+-MLINKS+=bozohttpd.8 httpd.8
++#MLINKS+=bozohttpd.8 httpd.8
+ SRCS=	bozohttpd.c ssl-bozo.c auth-bozo.c cgi-bozo.c daemon-bozo.c \
+ 	tilde-luzah-bozo.c dir-index-bozo.c content-bozo.c lua-bozo.c
+ SRCS+=	main.c
+ 
+-LDADD=	-lcrypt -llua -lm
+-DPADD=	${LIBCRYPT} ${LIBLUA} ${LIBM}
++LDADD=	-lm
++DPADD=	${LIBM}
+ 
+ WARNS?=	4
+ 

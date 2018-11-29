@@ -1,9 +1,14 @@
 $OpenBSD$
---- cpmsim/srctools/Makefile.orig	Wed Nov 28 22:22:27 2018
-+++ cpmsim/srctools/Makefile	Wed Nov 28 22:22:41 2018
-@@ -4,10 +4,10 @@
- INSTALLDIR=${HOME}/bin
- #INSTALLDIR=/usr/local/bin
+--- cpmsim/srctools/Makefile.orig	Fri Feb 23 22:15:37 2018
++++ cpmsim/srctools/Makefile	Thu Nov 29 09:27:02 2018
+@@ -1,13 +1,13 @@
+ #
+ # some places where the tools usually are installed
+ #
+-INSTALLDIR=${HOME}/bin
+-#INSTALLDIR=/usr/local/bin
++#INSTALLDIR=${HOME}/bin
++INSTALLDIR=/usr/local/bin
  
 -#CC = cc
 -CC = gcc
