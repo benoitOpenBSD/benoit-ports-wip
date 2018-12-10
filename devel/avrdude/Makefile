@@ -14,7 +14,8 @@ HOMEPAGE=	http://www.nongnu.org/avrdude/
 # GPLv2+
 PERMIT_PACKAGE_CDROM=	Yes
 
-WANTLIB += c ftdi m ncurses pthread readline termcap usb usb-1.0
+WANTLIB += 	c ftdi1 m ncurses pthread readline 
+WANTLIB +=	termcap usb usb-1.0 curses elf
 
 MASTER_SITES=	${MASTER_SITE_SAVANNAH:=avrdude/}
 EXTRACT_ONLY=	avrdude-${V}${EXTRACT_SUFX}
@@ -23,7 +24,7 @@ CONFIGURE_STYLE=	gnu
 CONFIGURE_ARGS+=	CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib -pthread"
 
-LIB_DEPENDS=		devel/libftdi \
+LIB_DEPENDS=		devel/libftdi1 \
 			devel/libusb-compat \
 			devel/libelf
 
