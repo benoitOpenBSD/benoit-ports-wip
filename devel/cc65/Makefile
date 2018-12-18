@@ -25,13 +25,21 @@ USE_GMAKE =		Yes
 NO_TEST =		Yes
 	
 do-build:
-	cd ${WRKBUILD} && env GIT_SHA=${GH_COMMIT} ${GMAKE} bin
+	cd ${WRKBUILD} && env GIT_SHA=${GH_COMMIT} ${GMAKE} bin lib
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/* ${PREFIX}/bin/
-	${INSTALL_DATA_DIR} ${PREFIX}/include/cc65
-	cp -R ${WRKSRC}/include/* ${PREFIX}/include/cc65
+	${INSTALL_DATA_DIR} ${PREFIX}/share/cc65/include
+	cp -R ${WRKSRC}/include/* ${PREFIX}/share/cc65/include
 	${INSTALL_DATA_DIR} ${PREFIX}/share/cc65/samples
 	cp -R ${WRKSRC}/samples/* ${PREFIX}/share/cc65/samples
+	${INSTALL_DATA_DIR} ${PREFIX}/share/cc65/lib
+	cp -R ${WRKSRC}/lib/* ${PREFIX}/share/cc65/lib
+	${INSTALL_DATA_DIR} ${PREFIX}/share/cc65/target
+	cp -R ${WRKSRC}/target/* ${PREFIX}/share/cc65/target
+	${INSTALL_DATA_DIR} ${PREFIX}/share/cc65/cfg
+	cp -R ${WRKSRC}/cfg/* ${PREFIX}/share/cc65/cfg
+	${INSTALL_DATA_DIR} ${PREFIX}/share/cc65/asminc
+	cp -R ${WRKSRC}/asminc/* ${PREFIX}/share/cc65/asminc
 
 .include <bsd.port.mk>
