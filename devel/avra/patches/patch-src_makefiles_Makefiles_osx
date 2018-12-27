@@ -1,3 +1,4 @@
+$OpenBSD$
 --- src/makefiles/Makefile.osx.orig	Thu Dec 27 09:29:11 2018
 +++ src/makefiles/Makefile.osx	Thu Dec 27 09:29:30 2018
 @@ -1,5 +1,5 @@
