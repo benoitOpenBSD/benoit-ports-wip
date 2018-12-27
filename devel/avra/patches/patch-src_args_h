@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/args.h.orig	Thu Dec 27 15:48:34 2018
++++ src/args.h	Thu Dec 27 15:48:44 2018
+@@ -74,7 +74,7 @@
+ };
+ 
+ struct args *alloc_args(int arg_count);
+-int read_args(struct args *args, int argc, const char *argv[]);
++int read_args(struct args *args, int argc, char *argv[]);
+ int add_arg(struct data_list **last_data, const char *argv);
+ void free_args(struct args *args);
+ void define_arg(struct args *args, int index, int type, char letter, char *longarg, const char *def_value, const struct dataset dataset[]);

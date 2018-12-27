@@ -2,7 +2,8 @@
 
 COMMENT =		assembler for the Atmel AVR microcontroller family
 
-V =			1.3.0
+#V =			1.3.0
+V =			1.3.0.20120818
 DISTNAME =		avra-${V}
 CATEGORIES =		devel
 
@@ -11,11 +12,12 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		https://sourceforge.net/projects/avra/files/${V}/
+#MASTER_SITES =		https://sourceforge.net/projects/avra/files/${V}/
+MASTER_SITES =		http://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://avra.sourceforge.net/index.html
 
-EXTRACT_SUFX =		.tar.bz2
+#EXTRACT_SUFX =		.tar.bz2
 
 WANTLIB +=		c
 
