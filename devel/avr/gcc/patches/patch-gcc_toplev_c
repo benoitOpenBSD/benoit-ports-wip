@@ -1,0 +1,13 @@
+$OpenBSD$
+--- gcc/toplev.c~	Thu Jan 17 09:27:03 2019
++++ gcc/toplev.c	Thu Jan 17 09:38:08 2019
+@@ -1386,8 +1386,7 @@
+ 
+       if (flag_sanitize & SANITIZE_THREAD)
+ 	{
+-	  error (UNKNOWN_LOCATION,
+-		 "%<-fcheck-pointer-bounds%> is not supported with "
++	  error ("%<-fcheck-pointer-bounds%> is not supported with "
+ 		 "Thread Sanitizer");
+ 
+ 	  flag_check_pointer_bounds = 0;
