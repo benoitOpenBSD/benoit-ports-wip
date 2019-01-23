@@ -1,0 +1,14 @@
+$OpenBSD$
+--- Makefile.orig	Wed Jan 23 16:00:32 2019
++++ Makefile	Wed Jan 23 16:04:34 2019
+@@ -33,6 +33,10 @@
+ else ifeq ($(PLATFORM),FreeBSD)
+ 	LIBS = `pkg-config --libs libusb-1.0`
+ 	LIBUSB_CFLAGS = `pkg-config --cflags libusb-1.0`
++else ifeq ($(PLATFORM),OpenBSD)
++	LIBS = `pkg-config --libs libusb-1.0`
++	LIBUSB_CFLAGS = `pkg-config --cflags libusb-1.0`
++	BASE_CFLAGS = --std=gnu99 --pedantic -Wall
+ else
+ # 	Generic case is Windows
+ 
