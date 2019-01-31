@@ -1,7 +1,0 @@
-@comment $OpenBSD$
-%%SHARED%%
-include/maa.h
-lib/libmaa.a
-lib/libmaa.la
-share/doc/libmaa/
-share/doc/libmaa/libmaa.600dpi.ps
