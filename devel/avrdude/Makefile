@@ -25,8 +25,7 @@ CONFIGURE_ARGS+=	CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib -pthread"
 
 LIB_DEPENDS=		devel/libftdi1 \
-			devel/libusb-compat \
-			devel/libelf
+			devel/libusb-compat
 
 SUBST_VARS+=		V
 
