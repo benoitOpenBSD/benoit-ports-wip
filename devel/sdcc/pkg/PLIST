@@ -13,7 +13,6 @@ bin/as2gbmap
 @bin bin/sdastlcs90
 @bin bin/sdasz80
 @bin bin/sdcc
-@bin bin/sdcclib
 @bin bin/sdcdb
 bin/sdcdb.el
 bin/sdcdbsrc.el
