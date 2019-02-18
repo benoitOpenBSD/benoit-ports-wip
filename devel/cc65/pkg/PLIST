@@ -168,6 +168,7 @@ share/cc65/include/atmos.h
 share/cc65/include/c128.h
 share/cc65/include/c16.h
 share/cc65/include/c64.h
+share/cc65/include/c64_screen_charmap.h
 share/cc65/include/cbm.h
 share/cc65/include/cbm264.h
 share/cc65/include/cbm510.h
