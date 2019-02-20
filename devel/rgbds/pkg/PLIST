@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 @bin bin/rgbasm
 @bin bin/rgbfix
 @bin bin/rgbgfx
