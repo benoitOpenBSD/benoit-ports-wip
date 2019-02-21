@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.orig	Sun Dec 16 10:53:18 2018
++++ Makefile	Thu Feb 21 16:15:47 2019
+@@ -10,7 +10,7 @@
+ all: delinker
+ 
+ delinker: $(SRC_UNLINKER)
+-	gcc $(CFLAGS) $(SRC_UNLINKER) -ludis86 -o delinker
++	cc $(CFLAGS) $(SRC_UNLINKER) -I/usr/local/include -L/usr/local/lib -ludis86 -o delinker
+ 
+ clean:
+ 	rm -rf $(OBJS_UNLINKER) delinker $(OBJS_OTOC) otoc
