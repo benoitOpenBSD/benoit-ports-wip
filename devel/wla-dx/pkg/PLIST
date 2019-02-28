@@ -239,6 +239,7 @@ share/wla-dx/examples/z80/linker_test_2/main.s
 share/wla-dx/examples/z80/linker_test_2/makefile
 share/wla-dx/examples/z80/linker_test_2/setup.s
 share/wla-dx/examples/z80/ram_sections/
+share/wla-dx/examples/z80/ram_sections/library.s
 share/wla-dx/examples/z80/ram_sections/linkfile
 share/wla-dx/examples/z80/ram_sections/makefile
 share/wla-dx/examples/z80/ram_sections/sms.s
