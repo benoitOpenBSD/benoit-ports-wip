@@ -15,7 +15,7 @@ MAINTAINER =	Charles Daniels <charles@cdaniels.net>
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB +=	c++ GL Qt5Svg Qt5Core Qt5Gui Qt5Widgets c c++abi m pthread
+WANTLIB +=	c++ GL Qt5Core Qt5Gui Qt5Widgets c c++abi m pthread
 
 MODULES =	devel/qmake x11/qt5
 
