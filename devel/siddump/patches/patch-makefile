@@ -1,0 +1,16 @@
+--- makefile.orig	Thu Mar  7 22:40:02 2019
++++ makefile	Thu Mar  7 22:41:58 2019
+@@ -1,8 +1,8 @@
+-CC=gcc
+-CXX=g++
+-CFLAGS+=-O3 -Wall
++CC=cc
++CXX=c++
++CFLAGS+=-Wall
+ CXXFLAGS=$(CFLAGS)
+ 
+-siddump.exe: siddump.o cpu.o
+-	gcc -o $@ $^
++siddump: siddump.o cpu.o
++	${CC} -o $@ $^ -lm
+ 	strip $@
