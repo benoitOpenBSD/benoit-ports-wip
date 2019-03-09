@@ -1,25 +1,25 @@
-# $OpenBSD: Makefile,v 1.38 2017/04/10 11:46:33 sthen Exp $
+# $OpenBSD: Makefile,v 1.43 2018/10/24 14:28:09 sthen Exp $
 
 COMMENT =		convert HTML pages to PDF/PS format
 
-V =			1.8.29
+V =			1.9.5
 DISTNAME =		htmldoc-${V}
 CATEGORIES =		print www
-REVISION =		0
 
-HOMEPAGE =		http://www.msweet.org/projects.php?Z1
+HOMEPAGE =		https://www.msweet.org/htmldoc/
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB += c crypto m ssl z jpeg png ${LIBCXX}
+WANTLIB += c crypto m ssl z jpeg png ${COMPILER_LIBCXX}
 
-DISTFILES =		${DISTNAME}-source${EXTRACT_SUFX}
-MASTER_SITES =		http://www.msweet.org/files/project1/ \
-			ftp://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/htmldoc/${V}/
+COMPILER =		base-clang ports-gcc base-gcc
 
+GH_ACCOUNT =            michaelrsweet
+GH_PROJECT =            htmldoc
+GH_TAGNAME =		v${V}
 
 LIB_DEPENDS =		graphics/jpeg \
 			graphics/png
@@ -29,7 +29,7 @@ CONFIGURE_ARGS +=	--without-gui --disable-gnutls
 CONFIGURE_ENV =		LDFLAGS="-L${LOCALBASE}/lib" \
 			CXXFLAGS="${CXXFLAGS} -I${LOCALBASE}/include" \
 			CPPFLAGS="-I${LOCALBASE}/include"
-PORTHOME =		${WRKDIR}
+#PORTHOME =		${WRKDIR}
 
 post-extract:
 	rm -r ${WRKSRC}/jpeg ${WRKSRC}/png ${WRKSRC}/zlib
