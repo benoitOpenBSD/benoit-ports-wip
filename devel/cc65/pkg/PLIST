@@ -176,6 +176,7 @@ share/cc65/include/cbm264.h
 share/cc65/include/cbm510.h
 share/cc65/include/cbm610.h
 share/cc65/include/cbm_filetype.h
+share/cc65/include/cbm_petscii_charmap.h
 share/cc65/include/cbm_screen_charmap.h
 share/cc65/include/cc65.h
 share/cc65/include/conio.h
