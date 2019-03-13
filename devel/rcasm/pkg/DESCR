@@ -1,0 +1,3 @@
+Rc/Asm is a cross-platform table-driven cross-assembler. The assembly 
+process is controlled by special definition tables that allow the 
+assembler to identify assembly sequences and produce object code. 
