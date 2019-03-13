@@ -1,0 +1,5 @@
+A18 is one of a number of cross-assemblers, freely distributed by the 
+developer William C Colley III, through the "C Users Group"library of 
+C programs of the 1980's and later. A18 supports the RCA 1802, 1804, 
+1805 and 1806 microprocessors. The syntax is similar to other 8-bit 
+microprocessor assemblers; it's different from RCA's original 1802 syntax. 

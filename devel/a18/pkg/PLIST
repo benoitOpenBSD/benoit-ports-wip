@@ -1,0 +1,7 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/a18
+share/a18/
+share/a18/README
+share/a18/a18.txt
+share/a18/blinkq.asm
+share/a18/test18.asm

@@ -1,0 +1,13 @@
+$OpenBSD$
+--- Makefile.orig	Mon Mar  5 07:11:36 2018
++++ Makefile	Wed Mar 13 10:28:16 2019
+@@ -1,7 +1,7 @@
+-CC=gcc
++CC=cc
+ A18SRC=a18.c  a18eval.c  a18util.c
+ A18H=a18.h
+-DEFS= -DMODERN $(ADEF)
++DEFS= $(CFLAGS) -DMODERN $(ADEF)
+ 
+ a18: $(A18SRC) $(A18H)
+ 	$(CC) -o a18 $(DEFS)  $(A18SRC) 
