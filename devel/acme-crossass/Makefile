@@ -2,7 +2,7 @@
 
 COMMENT =		cross assembler for 6502/6510/65816 CPU
 
-DISTNAME =		acme-crossass-20170329
+DISTNAME =		acme-crossass-20190219
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/meonwax/acme
 
 GH_ACCOUNT =		meonwax
 GH_PROJECT =		acme
-GH_COMMIT =		6f42edb13c4040707590ead8ed3927b361391f77
+GH_COMMIT =		99fae48b1fc44a3fc25b84d51857d36c1d6967e1
 
 WANTLIB +=		c m
 
