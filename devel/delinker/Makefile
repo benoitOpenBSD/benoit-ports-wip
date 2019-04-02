@@ -2,7 +2,7 @@
 
 COMMENT =		Unlinks a binary executable to get back a set of .o files
 
-DISTNAME =		delinker-20181216
+DISTNAME =		delinker-20190225
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/jnider/delinker
 
 GH_ACCOUNT =		jnider
 GH_PROJECT =		delinker
-GH_COMMIT =		0cbb0336d52ab7f9fa4687a08d15bd05a2233f46
+GH_COMMIT =		9c0f492b4083ad4975e0cea374445b7be0d9441a
 
 WANTLIB +=		c udis86
 
