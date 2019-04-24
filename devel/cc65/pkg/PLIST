@@ -260,6 +260,7 @@ share/cc65/lib/apple2enh-iobuf-0800.o
 share/cc65/lib/apple2enh.lib
 share/cc65/lib/atari.lib
 share/cc65/lib/atari2600.lib
+share/cc65/lib/atari5200-conioscreen-20x12.o
 share/cc65/lib/atari5200.lib
 share/cc65/lib/atarixl.lib
 share/cc65/lib/atmos.lib
