@@ -34,8 +34,8 @@ CONFIGURE_ENV =		LDFLAGS="-L${LOCALBASE}/lib" \
 post-extract:
 	rm -r ${WRKSRC}/jpeg ${WRKSRC}/png ${WRKSRC}/zlib
 
-post-configure:
-	@sed -i "s,\\${DESTDIR},," ${WRKSRC}/config.h
+#post-configure:
+#	@sed -i "s,\\${DESTDIR},," ${WRKSRC}/config.h
 
 NO_TEST =		Yes
 
