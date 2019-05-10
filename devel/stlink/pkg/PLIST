@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 @bin bin/st-flash
 @bin bin/st-info
 @bin bin/st-util
@@ -14,10 +14,10 @@ include/stlink/reg.h
 include/stlink/sg.h
 include/stlink/usb.h
 include/stlink/version.h
-@lib lib/libstlink-shared.so.${LIBstlink-shared_VERSION}
 lib/libstlink.a
+@lib lib/libstlink.so.${LIBstlink_VERSION}
 lib/pkgconfig/stlink.pc
-share/man/
+@mandir share/man/
 share/man/man1/
 @man share/man/man1/st-flash.1
 @man share/man/man1/st-info.1

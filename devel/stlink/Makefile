@@ -2,11 +2,11 @@
 
 COMMENT =	stm32 discovery line programmer
 
-V =		1.5.0
+V =		1.5.1
 DISTNAME =	stlink-${V}
 CATEGORIES =	devel
 
-SHARED_LIBS +=	stlink-shared	0.0
+SHARED_LIBS +=	stlink		1.5
 
 HOMEPAGE =	https://github.com/texane/stlink
 
