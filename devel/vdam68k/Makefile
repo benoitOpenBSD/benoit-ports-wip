@@ -2,9 +2,7 @@
 
 COMMENT =		portable M68k disasm for 68000-68060,68851,68881,68882
 
-PKGNAME =		vdam68k-1.4
-DISTNAME =      	vdam68k
-
+DISTNAME =		vdam68k-1.5
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
