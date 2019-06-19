@@ -1,0 +1,16 @@
+$OpenBSD$
+--- Makefile.orig	Wed Jun 19 10:31:12 2019
++++ Makefile	Wed Jun 19 10:34:40 2019
+@@ -30,10 +30,10 @@
+ #---------------------------------------
+ 
+ # c compiler
+-export CC = gcc
++export CC = cc
+ 
+ # Options for c compiler, *** NO DEBUG ***
+-export CFLAGS_REL = -Wall -Wextra -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -Wcast-align -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -DVERSION_ALL=\"$(VERSION_ALL)\" -O3 -g0
++export CFLAGS_REL = -Wall -Wextra -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -Wcast-align -Wpointer-arith -Wmissing-prototypes -Wstrict-prototypes -DVERSION_ALL=\"$(VERSION_ALL)\" -O2 -g0
+ 
+ # Options for c compiler, *** DEBUG *** with dump terms
+ export CFLAGS_DBG = -Wall -DVERSION_ALL=\"$(VERSION_ALL)\" -DDEBUG -D__DUMP_TERMS__ -O0 -g3
