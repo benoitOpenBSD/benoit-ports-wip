@@ -22,13 +22,17 @@ WANTLIB +=		c
 
 USE_GMAKE =		Yes
 
+BUILD_DEPENDS =		print/texinfo
+
 post-build:
-		cd ${WRKSRC}/docs && ${GMAKE} 
+		cd ${WRKSRC}/docs && ${GMAKE} && \
+		rm history.texi && touch history.texi && \
+		${GMAKE} dreamass.pdf
         
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/dreamass ${PREFIX}/bin/
 		${INSTALL_DATA_DIR} ${PREFIX}/share/doc/dreamass
-		cp -R ${WRKSRC}/docs/*.{html,txt,info} ${PREFIX}/share/doc/dreamass
+		cp -R ${WRKSRC}/docs/*.{html,txt,info,pdf} ${PREFIX}/share/doc/dreamass
 
 do-test:
 		@cd ${WRKSRC}/test && ${GMAKE} all
