@@ -22,8 +22,13 @@ WANTLIB +=		c
 
 USE_GMAKE =		Yes
 
+post-build:
+		cd ${WRKSRC}/docs && ${GMAKE} 
+        
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/dreamass ${PREFIX}/bin/
+		${INSTALL_DATA_DIR} ${PREFIX}/share/doc/dreamass
+		cp -R ${WRKSRC}/docs/*.{html,txt,info} ${PREFIX}/share/doc/dreamass
 
 do-test:
 		@cd ${WRKSRC}/test && ${GMAKE} all
