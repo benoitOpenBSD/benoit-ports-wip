@@ -1,0 +1,21 @@
+$OpenBSD$
+--- gcc/config.host.orig	Wed Nov  8 18:20:32 2017
++++ gcc/config.host	Mon Jul  1 17:03:29 2019
+@@ -99,7 +99,7 @@
+ esac
+ 
+ case ${host} in
+-  aarch64*-*-freebsd* | aarch64*-*-linux* | aarch64*-*-fuchsia*)
++  aarch64*-*-*)
+     case ${target} in
+       aarch64*-*-*)
+ 	host_extra_gcc_objs="driver-aarch64.o"
+@@ -107,7 +107,7 @@
+ 	;;
+     esac
+     ;;
+-  arm*-*-freebsd* | arm*-*-linux* | arm*-*-fuchsia*)
++  arm*-*-*)
+     case ${target} in
+       arm*-*-*)
+ 	host_extra_gcc_objs="driver-arm.o"
