@@ -13,6 +13,18 @@ ${CONFIG}/bin/
 @bin ${CONFIG}/bin/ranlib
 @bin ${CONFIG}/bin/readelf
 @bin ${CONFIG}/bin/strip
+${CONFIG}/lib/ldscripts/armelf.xce
+${CONFIG}/lib/ldscripts/armelf.xd
+${CONFIG}/lib/ldscripts/armelf.xdc
+${CONFIG}/lib/ldscripts/armelf.xdce
+${CONFIG}/lib/ldscripts/armelf.xde
+${CONFIG}/lib/ldscripts/armelf.xdw
+${CONFIG}/lib/ldscripts/armelf.xdwe
+${CONFIG}/lib/ldscripts/armelf.xe
+${CONFIG}/lib/ldscripts/armelf.xsce
+${CONFIG}/lib/ldscripts/armelf.xse
+${CONFIG}/lib/ldscripts/armelf.xswe
+${CONFIG}/lib/ldscripts/armelf.xwe
 @bin bin/${CONFIG}-addr2line
 @bin bin/${CONFIG}-ar
 @bin bin/${CONFIG}-as
