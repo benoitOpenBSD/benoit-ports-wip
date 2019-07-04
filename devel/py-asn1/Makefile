@@ -2,7 +2,7 @@
 
 COMMENT =	ASN.1 library for Python
 
-MODPY_EGG_VERSION =	0.4.3
+MODPY_EGG_VERSION =	0.4.5
 DISTNAME =		pyasn1-${MODPY_EGG_VERSION}
 PKGNAME =		${DISTNAME:S/py/py-/}
 CATEGORIES =		devel
