@@ -12,7 +12,7 @@ HOMEPAGE =	https://github.com/tommie/esptool-ck
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c
 

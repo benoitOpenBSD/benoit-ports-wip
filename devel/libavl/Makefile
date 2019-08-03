@@ -12,7 +12,7 @@ HOMEPAGE =	http://adtinfo.org/
 MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 
 # GPLv3
-PERMIT_PACKAGE_CDROM=   Yes
+PERMIT_PACKAGE =   Yes
 
 MASTER_SITES=   ${MASTER_SITE_GNU:=avl/}
 

@@ -11,7 +11,7 @@ HOMEPAGE =	https://github.com/capiman/lpc21isp
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # LPGLv3
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =          ${MASTER_SITES_GITHUB}
 GH_ACCOUNT =            capiman

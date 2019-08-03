@@ -8,7 +8,7 @@ CATEGORIES =		devel
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # LGPLv3
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		${MASTER_SITES_GITHUB}
 
