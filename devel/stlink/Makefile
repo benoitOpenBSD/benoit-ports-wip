@@ -13,7 +13,7 @@ HOMEPAGE =	https://github.com/texane/stlink
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c usb-1.0
 
