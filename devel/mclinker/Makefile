@@ -12,7 +12,7 @@ HOMEPAGE =	http://code.google.com/p/mclinker/
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =	http://mclinker.googlecode.com/files/
 

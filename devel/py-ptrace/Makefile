@@ -12,7 +12,7 @@ HOMEPAGE =		http://bitbucket.org/haypo/python-ptrace/wiki/Home
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		${MASTER_SITE_PYPI:=p/python-ptrace/}
 

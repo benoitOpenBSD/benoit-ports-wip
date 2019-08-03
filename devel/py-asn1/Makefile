@@ -14,7 +14,7 @@ HOMEPAGE =		https://github.com/etingof/pyasn1
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # BSD 2-Clause
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MODPY_PI =		Yes
 MODPY_SETUPTOOLS =	Yes

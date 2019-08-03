@@ -8,7 +8,7 @@ DISTNAME =	Paranoid-2.05
 CATEGORIES =	devel
 
 # Perl
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MAKE_ENV +=		TEST_POD=1
 

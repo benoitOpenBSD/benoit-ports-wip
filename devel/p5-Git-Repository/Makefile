@@ -10,7 +10,7 @@ CATEGORIES =	devel
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # perl
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 RUN_DEPENDS =		devel/p5-System-Command \
 			devel/p5-namespace-clean \

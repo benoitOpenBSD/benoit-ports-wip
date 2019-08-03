@@ -12,7 +12,7 @@ HOMEPAGE =		http://crcmod.sourceforge.net/
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # MIT
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MODULES =		lang/python
 

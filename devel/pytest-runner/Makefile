@@ -11,7 +11,7 @@ HOMEPAGE =		https://bitbucket.org/jaraco/pytest-runner
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # MIT
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		${MASTER_SITE_PYPI:=p/pytest-runner/}
 EXTRACT_SUFX =		.zip

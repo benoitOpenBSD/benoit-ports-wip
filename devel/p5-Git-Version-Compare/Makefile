@@ -10,7 +10,7 @@ CATEGORIES =	devel
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # perl
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 TEST_DEPENDS =	devel/p5-Test-NoWarnings
 

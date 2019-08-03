@@ -11,7 +11,7 @@ CATEGORIES =		devel
 HOMEPAGE =		http://bitbucket.org/ianb/scripttest/
 
 # MIT
-PERMIT_PACKAGE_CDROM =		Yes
+PERMIT_PACKAGE =		Yes
 
 MASTER_SITES=		${MASTER_SITE_PYPI:=S/ScriptTest/}
 
