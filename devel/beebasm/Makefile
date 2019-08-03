@@ -11,7 +11,7 @@ HOMEPAGE =	https://github.com/stardot/beebasm
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB +=		c m ${COMPILER_LIBCXX}
 

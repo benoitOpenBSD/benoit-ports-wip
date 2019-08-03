@@ -12,7 +12,7 @@ SHARED_LIBS =	avrdude    0.0	# 1.0
 HOMEPAGE=	http://www.nongnu.org/avrdude/
 
 # GPLv2+
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB += 	c ftdi1 m ncurses pthread readline 
 WANTLIB +=	termcap usb usb-1.0 curses elf

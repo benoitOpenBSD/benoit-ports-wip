@@ -10,7 +10,7 @@ CATEGORIES =		devel
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 #MASTER_SITES =		https://sourceforge.net/projects/avra/files/${V}/
 MASTER_SITES =		http://www.arcane-labs.net/download/OpenBSD/

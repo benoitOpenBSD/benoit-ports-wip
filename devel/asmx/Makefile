@@ -9,7 +9,7 @@ CATEGORIES =		devel
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # XXX A voir
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		http://www.retrotechnology.com/memship/ \
 			http://www.arcane-labs.net/download/OpenBSD/
