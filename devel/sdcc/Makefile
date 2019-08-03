@@ -14,7 +14,7 @@ HOMEPAGE=	http://sdcc.sourceforge.net/
 MAINTAINER=	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB += ${COMPILER_LIBCXX} c m readline z
 

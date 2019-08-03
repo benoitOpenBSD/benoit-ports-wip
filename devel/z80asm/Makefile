@@ -8,7 +8,7 @@ CATEGORIES =		devel
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		http://download.savannah.nongnu.org/releases/z80asm/
 

@@ -13,7 +13,7 @@ GH_TAGNAME =	v.1.0.3
 MAINTAINER =	Charles Daniels <charles@cdaniels.net>
 
 # MIT
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB +=	c++ GL Qt5Core Qt5Gui Qt5Widgets c c++abi m pthread
 

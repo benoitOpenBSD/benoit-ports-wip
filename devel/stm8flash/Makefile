@@ -10,7 +10,7 @@ HOMEPAGE =	https://github.com/vdudouyt/stm8flash
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 GH_ACCOUNT =	vdudouyt
 GH_PROJECT =	stm8flash

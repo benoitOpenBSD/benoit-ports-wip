@@ -8,7 +8,7 @@ CATEGORIES =		devel
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # Freeware
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		http://sun.hasenbraten.de/~frank/projects/download/ \
 			http://www.arcane-labs.net/download/OpenBSD/

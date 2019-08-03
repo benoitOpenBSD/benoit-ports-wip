@@ -11,7 +11,7 @@ HOMEPAGE =	http://www.elf-emulation.com/rcasm.html
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Freeware ?
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB +=		c
 

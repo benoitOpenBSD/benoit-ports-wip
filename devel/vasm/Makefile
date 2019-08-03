@@ -10,7 +10,7 @@ CATEGORIES =		devel
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # XXX A voir
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		http://server.owl.de/~frank/tags/ \
 			http://www.arcane-labs.net/download/OpenBSD/
