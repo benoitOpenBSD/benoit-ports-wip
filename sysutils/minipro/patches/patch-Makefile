@@ -1,0 +1,17 @@
+$OpenBSD$
+--- Makefile.orig	Tue Aug  6 10:43:52 2019
++++ Makefile	Tue Aug  6 10:53:26 2019
+@@ -1,11 +1,11 @@
+ # Install Configuration
+ 
+ # Your C compiler
+-CC=gcc
++CC=cc
+ #CC=clang
+ 
+ # Compiler options
+-CFLAGS = -g -O0 -Wall
++# CFLAGS=-g -O0 -Wall
+ 
+ # Normally minipro is installed to /usr/local.  If you want to put it
+ # somewhere else, define that location here.
