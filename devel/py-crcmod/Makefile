@@ -18,6 +18,6 @@ MODULES =		lang/python
 
 MODPY_PI =		Yes
 
-#NO_TEST =		Yes
+NO_TEST =		Yes
 
 .include <bsd.port.mk>

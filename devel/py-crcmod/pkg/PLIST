@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 lib/python${MODPY_VERSION}/site-packages/crcmod/
 lib/python${MODPY_VERSION}/site-packages/crcmod-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info
 lib/python${MODPY_VERSION}/site-packages/crcmod/__init__.py
