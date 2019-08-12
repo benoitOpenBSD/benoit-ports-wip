@@ -2,6 +2,6 @@ The software in this package is a Python module for generating objects
 that compute the Cyclic Redundancy Check (CRC). There is no attempt in 
 this package to explain how the CRC works. There are a number of 
 resources on the web that give a good explanation of the algorithms. 
-Just do a Google search for “crc calculation” and browse till you find 
+Just do a Google search for 'crc calculation' and browse till you find 
 what you need. Another resource can be found in chapter 20 of the book 
-“Numerical Recipes in C” by Press et. al.
+'Numerical Recipes in C' by Press et. al.
