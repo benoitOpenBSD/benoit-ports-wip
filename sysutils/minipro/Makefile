@@ -2,7 +2,7 @@
 
 COMMENT =		program for controlling the MiniPRO TL866xx
 
-DISTNAME =		minipro-20190820
+DISTNAME =		minipro-20190827
 CATEGORIES =		sysutils
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
