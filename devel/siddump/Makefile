@@ -2,7 +2,7 @@
 
 COMMENT =		C64 music debug output utility
 
-DISTNAME =		siddump-20181216
+DISTNAME =		siddump-20190814
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/cadaver/siddump
 
 GH_ACCOUNT =		cadaver
 GH_PROJECT =		siddump
-GH_COMMIT =		f698a0698ca26b93643260eb4dbfdf74b19f6c49
+GH_COMMIT =		7264a4ff20d98f0ace1d98dae47800199c415def
 
 WANTLIB +=		c m
 
