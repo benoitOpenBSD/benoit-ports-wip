@@ -161,6 +161,7 @@ share/cc65/include/accelerator.h
 share/cc65/include/apple2.h
 share/cc65/include/apple2_filetype.h
 share/cc65/include/apple2enh.h
+share/cc65/include/ascii_charmap.h
 share/cc65/include/assert.h
 share/cc65/include/atari.h
 share/cc65/include/atari2600.h
