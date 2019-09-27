@@ -39,6 +39,7 @@ share/cc65/asminc/cbm_kernal.inc
 share/cc65/asminc/cpu.mac
 share/cc65/asminc/creativision.inc
 share/cc65/asminc/ctype.inc
+share/cc65/asminc/cx16.inc
 share/cc65/asminc/em-error.inc
 share/cc65/asminc/em-kernel.inc
 share/cc65/asminc/errno.inc
@@ -109,6 +110,9 @@ share/cc65/cfg/c64.cfg
 share/cc65/cfg/cbm510.cfg
 share/cc65/cfg/cbm610.cfg
 share/cc65/cfg/creativision.cfg
+share/cc65/cfg/cx16-asm.cfg
+share/cc65/cfg/cx16-bank.cfg
+share/cc65/cfg/cx16.cfg
 share/cc65/cfg/gamate.cfg
 share/cc65/cfg/geos-apple.cfg
 share/cc65/cfg/geos-cbm.cfg
@@ -183,6 +187,7 @@ share/cc65/include/cc65.h
 share/cc65/include/conio.h
 share/cc65/include/creativision.h
 share/cc65/include/ctype.h
+share/cc65/include/cx16.h
 share/cc65/include/dbg.h
 share/cc65/include/device.h
 share/cc65/include/dio.h
@@ -274,6 +279,7 @@ share/cc65/lib/c64.lib
 share/cc65/lib/cbm510.lib
 share/cc65/lib/cbm610.lib
 share/cc65/lib/creativision.lib
+share/cc65/lib/cx16.lib
 share/cc65/lib/gamate.lib
 share/cc65/lib/geos-apple.lib
 share/cc65/lib/geos-cbm.lib
@@ -527,6 +533,10 @@ share/cc65/target/creativision/
 share/cc65/target/creativision/drv/
 share/cc65/target/creativision/drv/joy/
 share/cc65/target/creativision/drv/joy/creativision-stdjoy.joy
+share/cc65/target/cx16/
+share/cc65/target/cx16/drv/
+share/cc65/target/cx16/drv/joy/
+share/cc65/target/cx16/drv/joy/cx16-stdjoy.joy
 share/cc65/target/gamate/
 share/cc65/target/gamate/drv/
 share/cc65/target/gamate/drv/joy/
