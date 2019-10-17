@@ -341,6 +341,7 @@ share/cc65/samples/nachtm.c
 share/cc65/samples/overlaydemo.c
 share/cc65/samples/plasma.c
 share/cc65/samples/sieve.c
+share/cc65/samples/supervisionhello.c
 share/cc65/samples/tgidemo.c
 share/cc65/samples/tutorial/
 share/cc65/samples/tutorial/hello.c
