@@ -7,6 +7,7 @@
 @bin bin/wla-6801
 @bin bin/wla-6809
 @bin bin/wla-8008
+@bin bin/wla-8080
 @bin bin/wla-gb
 @bin bin/wla-huc6280
 @bin bin/wla-spc700
@@ -111,6 +112,26 @@ share/wla-dx/examples/65816/base_test_4/
 share/wla-dx/examples/65816/base_test_4/linkfile
 share/wla-dx/examples/65816/base_test_4/main.s
 share/wla-dx/examples/65816/base_test_4/makefile
+share/wla-dx/examples/65816/checksum_12mbit_lorom/
+share/wla-dx/examples/65816/checksum_12mbit_lorom/linkfile
+share/wla-dx/examples/65816/checksum_12mbit_lorom/main.s
+share/wla-dx/examples/65816/checksum_12mbit_lorom/makefile
+share/wla-dx/examples/65816/checksum_12mbit_lorom/testsfile
+share/wla-dx/examples/65816/checksum_24mbit_lorom/
+share/wla-dx/examples/65816/checksum_24mbit_lorom/linkfile
+share/wla-dx/examples/65816/checksum_24mbit_lorom/main.s
+share/wla-dx/examples/65816/checksum_24mbit_lorom/makefile
+share/wla-dx/examples/65816/checksum_24mbit_lorom/testsfile
+share/wla-dx/examples/65816/checksum_8mbit_hirom/
+share/wla-dx/examples/65816/checksum_8mbit_hirom/linkfile
+share/wla-dx/examples/65816/checksum_8mbit_hirom/main.s
+share/wla-dx/examples/65816/checksum_8mbit_hirom/makefile
+share/wla-dx/examples/65816/checksum_8mbit_hirom/testsfile
+share/wla-dx/examples/65816/checksum_8mbit_lorom/
+share/wla-dx/examples/65816/checksum_8mbit_lorom/linkfile
+share/wla-dx/examples/65816/checksum_8mbit_lorom/main.s
+share/wla-dx/examples/65816/checksum_8mbit_lorom/makefile
+share/wla-dx/examples/65816/checksum_8mbit_lorom/testsfile
 share/wla-dx/examples/65816/include/
 share/wla-dx/examples/65816/include/snes_memory.i
 share/wla-dx/examples/65816/linker_test/
@@ -125,6 +146,10 @@ share/wla-dx/examples/65816/name_test/
 share/wla-dx/examples/65816/name_test/linkfile
 share/wla-dx/examples/65816/name_test/main.s
 share/wla-dx/examples/65816/name_test/makefile
+share/wla-dx/examples/65816/nocashsns_symbol_file/
+share/wla-dx/examples/65816/nocashsns_symbol_file/check_symbols.sh
+share/wla-dx/examples/65816/nocashsns_symbol_file/main.s
+share/wla-dx/examples/65816/nocashsns_symbol_file/makefile
 share/wla-dx/examples/65816/operand_hint_test/
 share/wla-dx/examples/65816/operand_hint_test/linkfile
 share/wla-dx/examples/65816/operand_hint_test/main.s
@@ -161,6 +186,20 @@ share/wla-dx/examples/8008/linker_test/library.s
 share/wla-dx/examples/8008/linker_test/linkfile
 share/wla-dx/examples/8008/linker_test/main.s
 share/wla-dx/examples/8008/linker_test/makefile
+share/wla-dx/examples/8008/rst_test/
+share/wla-dx/examples/8008/rst_test/main.s
+share/wla-dx/examples/8008/rst_test/makefile
+share/wla-dx/examples/8008/rst_test/testsfile
+share/wla-dx/examples/8080/
+share/wla-dx/examples/8080/linker_test/
+share/wla-dx/examples/8080/linker_test/library.s
+share/wla-dx/examples/8080/linker_test/main.s
+share/wla-dx/examples/8080/linker_test/makefile
+share/wla-dx/examples/8080/linker_test/testsfile
+share/wla-dx/examples/8080/rst_test/
+share/wla-dx/examples/8080/rst_test/main.s
+share/wla-dx/examples/8080/rst_test/makefile
+share/wla-dx/examples/8080/rst_test/testsfile
 share/wla-dx/examples/README
 share/wla-dx/examples/gb-z80/
 share/wla-dx/examples/gb-z80/appendto_test/
@@ -213,14 +252,16 @@ share/wla-dx/examples/gb-z80/namespace_test/linkfile
 share/wla-dx/examples/gb-z80/namespace_test/main.s
 share/wla-dx/examples/gb-z80/namespace_test/makefile
 share/wla-dx/examples/gb-z80/namespace_test/setup.s
+share/wla-dx/examples/gb-z80/rst_test/
+share/wla-dx/examples/gb-z80/rst_test/main.s
+share/wla-dx/examples/gb-z80/rst_test/makefile
+share/wla-dx/examples/gb-z80/rst_test/testsfile
 share/wla-dx/examples/gb-z80/sintest/
 share/wla-dx/examples/gb-z80/sintest/linkfile
 share/wla-dx/examples/gb-z80/sintest/main.s
 share/wla-dx/examples/gb-z80/sintest/makefile
 share/wla-dx/examples/gb-z80/union_test/
 share/wla-dx/examples/gb-z80/union_test/cgb_hardware.i
-share/wla-dx/examples/gb-z80/union_test/expected.sym
-share/wla-dx/examples/gb-z80/union_test/linked.md5
 share/wla-dx/examples/gb-z80/union_test/linkfile
 share/wla-dx/examples/gb-z80/union_test/main.s
 share/wla-dx/examples/gb-z80/union_test/makefile
@@ -281,6 +322,10 @@ share/wla-dx/examples/z80/rept_test/
 share/wla-dx/examples/z80/rept_test/linkfile
 share/wla-dx/examples/z80/rept_test/main.s
 share/wla-dx/examples/z80/rept_test/makefile
+share/wla-dx/examples/z80/rst_test/
+share/wla-dx/examples/z80/rst_test/makefile
+share/wla-dx/examples/z80/rst_test/sms.s
+share/wla-dx/examples/z80/rst_test/testsfile
 share/wla-dx/examples/z80/sdsc_test/
 share/wla-dx/examples/z80/sdsc_test/linkfile
 share/wla-dx/examples/z80/sdsc_test/makefile
