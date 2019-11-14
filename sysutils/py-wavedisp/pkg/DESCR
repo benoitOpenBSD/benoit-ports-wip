@@ -1,0 +1,4 @@
+Wavedisp is a package to help you in displaying waveforms for different HDL 
+simulators or VCD viewers in a portable way. It generates waveform files for 
+GTKWave, Modelsim and RivierPro by genereting tcl scripts loaded by the HDL 
+viewer from a unique representation described in python.
