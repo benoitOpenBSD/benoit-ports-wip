@@ -537,7 +537,9 @@ share/cc65/target/creativision/drv/joy/creativision-stdjoy.joy
 share/cc65/target/cx16/
 share/cc65/target/cx16/drv/
 share/cc65/target/cx16/drv/joy/
-share/cc65/target/cx16/drv/joy/cx16-stdjoy.joy
+share/cc65/target/cx16/drv/joy/cx16-std.joy
+share/cc65/target/cx16/drv/mou/
+share/cc65/target/cx16/drv/mou/cx16-std.mou
 share/cc65/target/gamate/
 share/cc65/target/gamate/drv/
 share/cc65/target/gamate/drv/joy/
