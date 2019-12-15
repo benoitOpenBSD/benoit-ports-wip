@@ -1,8 +1,8 @@
-# $OpenBSD: Makefile,v 1.20 2013/03/11 11:10:53 espie Exp $
+# $OpenBSD: Makefile,v 1.24 2019/07/12 20:47:01 sthen Exp $
 
 COMMENT =	Exif jpeg camera setting parser and thumbnail remover
 
-DISTNAME =	jhead-3.00
+DISTNAME =	jhead-3.04
 CATEGORIES =	graphics
 
 HOMEPAGE =	http://www.sentex.net/~mwandel/jhead/
@@ -11,7 +11,7 @@ MASTER_SITES =	${HOMEPAGE}
 MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
 
 # public domain
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB =	c m
 
