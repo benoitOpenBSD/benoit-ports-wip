@@ -29,15 +29,11 @@ CONFIGURE_ARGS +=	--without-gui --disable-gnutls
 CONFIGURE_ENV =		LDFLAGS="-L${LOCALBASE}/lib" \
 			CXXFLAGS="${CXXFLAGS} -I${LOCALBASE}/include" \
 			CPPFLAGS="-I${LOCALBASE}/include"
-#PORTHOME =		${WRKDIR}
 
 DEBUG_PACKAGES =	${BUILD_PACKAGES}
 
 post-extract:
 	rm -r ${WRKSRC}/jpeg ${WRKSRC}/png ${WRKSRC}/zlib
-
-#post-configure:
-#	@sed -i "s,\\${DESTDIR},," ${WRKSRC}/config.h
 
 NO_TEST =		Yes
 
