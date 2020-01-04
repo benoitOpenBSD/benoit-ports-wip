@@ -31,6 +31,8 @@ CONFIGURE_ENV =		LDFLAGS="-L${LOCALBASE}/lib" \
 			CPPFLAGS="-I${LOCALBASE}/include"
 #PORTHOME =		${WRKDIR}
 
+DEBUG_PACKAGES =	${BUILD_PACKAGES}
+
 post-extract:
 	rm -r ${WRKSRC}/jpeg ${WRKSRC}/png ${WRKSRC}/zlib
 
