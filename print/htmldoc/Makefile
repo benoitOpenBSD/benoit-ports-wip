@@ -2,7 +2,7 @@
 
 COMMENT =		convert HTML pages to PDF/PS format
 
-V =			1.9.5
+V =			1.9.7
 DISTNAME =		htmldoc-${V}
 CATEGORIES =		print www
 
@@ -11,7 +11,7 @@ HOMEPAGE =		https://www.msweet.org/htmldoc/
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB += c crypto m ssl z jpeg png ${COMPILER_LIBCXX}
 
