@@ -1,0 +1,4 @@
+Scalene is a high-performance CPU and memory profiler for Python that does 
+a few things that other Python profilers do not and cannot do. It runs orders 
+of magnitude faster than other profilers while delivering far more detailed 
+information.
