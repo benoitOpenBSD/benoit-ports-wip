@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.43 2018/10/24 14:28:09 sthen Exp $
+# $OpenBSD: Makefile,v 1.45 2019/06/23 22:54:06 naddy Exp $
 
 COMMENT =		convert HTML pages to PDF/PS format
 
@@ -17,9 +17,8 @@ WANTLIB += c crypto m ssl z jpeg png ${COMPILER_LIBCXX}
 
 COMPILER =		base-clang ports-gcc base-gcc
 
-GH_ACCOUNT =            michaelrsweet
-GH_PROJECT =            htmldoc
-GH_TAGNAME =		v${V}
+DISTFILES =		${DISTNAME}-source${EXTRACT_SUFX}
+MASTER_SITES =		https://github.com/michaelrsweet/htmldoc/releases/download/v${V}/
 
 LIB_DEPENDS =		graphics/jpeg \
 			graphics/png

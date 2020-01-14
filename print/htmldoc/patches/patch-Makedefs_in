@@ -1,8 +1,7 @@
 $OpenBSD$
-Index: Makedefs.in
---- Makedefs.in.orig
-+++ Makedefs.in
-@@ -43,7 +43,7 @@ INSTALL_MAN	=	$(INSTALL) -c -m 444
+--- Makedefs.in.orig	Tue Oct  8 20:56:34 2019
++++ Makedefs.in	Tue Jan 14 13:58:42 2020
+@@ -43,7 +43,7 @@
  # Directories...
  #
  
@@ -11,7 +10,7 @@ Index: Makedefs.in
  bindir		=	@bindir@
  datadir		=	@datadir@
  datarootdir	=	@datarootdir@
-@@ -80,11 +80,8 @@ OPTIM		=	@OPTIM@ @SSLFLAGS@
+@@ -80,11 +80,8 @@
  # Rules...
  #
  

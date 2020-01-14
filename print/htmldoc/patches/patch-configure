@@ -1,10 +1,9 @@
 $OpenBSD: patch-configure,v 1.5 2016/01/03 10:18:36 benoit Exp $
-Index: configure
---- configure.orig
-+++ configure
-@@ -5624,7 +5624,7 @@ if test -n "$GXX"; then
-     fi
+--- configure.orig	Sun Jan  3 01:59:41 2016
++++ configure	Sun Jan  3 10:59:10 2016
+@@ -5562,7 +5562,7 @@ _ACEOF
  
+ if test -n "$GXX"; then
          if test -z "$OPTIM"; then
 -        OPTIM="-Os -g"
 +        OPTIM=""
