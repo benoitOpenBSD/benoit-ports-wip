@@ -10,7 +10,7 @@ HOMEPAGE =		http://ophcrack.sourceforge.net/
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c m pthread ssl crypto expat
 

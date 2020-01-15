@@ -1,11 +1,11 @@
+/patch-configure/1.6/Fri Jun  7 10:03:27 2013//
+/patch-src_bswap_h/1.2/Fri Jun  7 10:03:27 2013//
 /patch-src_gui_main_cpp/1.2/Fri Jun  7 10:03:27 2013//
 /patch-src_gui_ophcrackgui_cpp/1.2/Fri Jun  7 10:03:27 2013//
+/patch-src_misc_c/1.2/Fri Jun  7 10:03:27 2013//
 /patch-src_samdump2_bkhive_c/1.1/Sun May 20 20:13:39 2012//
 /patch-src_samdump2_hive_c/1.1/Sun May 20 20:13:39 2012//
-/patch-src_samdump2_samdump2_c/1.3/Wed Aug  3 06:18:18 2016//
-/patch-src_core_misc_c/0/dummy timestamp//
-/patch-src_misc_c/-1.2/dummy timestamp//
-/patch-configure/-1.6/dummy timestamp//
-/patch-src_bswap_h/-1.2/dummy timestamp//
+/patch-src_samdump2_samdump2_c/1.3/Fri Aug  5 12:19:34 2016//
 /patch-src_core_bswap_h/0/dummy timestamp//
+/patch-src_core_misc_c/0/dummy timestamp//
 D

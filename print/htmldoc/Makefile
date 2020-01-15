@@ -34,6 +34,9 @@ DEBUG_PACKAGES =	${BUILD_PACKAGES}
 post-extract:
 	rm -r ${WRKSRC}/jpeg ${WRKSRC}/png ${WRKSRC}/zlib
 
+#post-configure:
+#	@sed -i "s,\\${DESTDIR},," ${WRKSRC}/config.h
+
 NO_TEST =		Yes
 
 .include <bsd.port.mk>
