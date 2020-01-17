@@ -1,0 +1,13 @@
+--- src/appdata.h.orig	Fri Jan 17 14:01:01 2020
++++ src/appdata.h	Fri Jan 17 14:01:18 2020
+@@ -31,8 +31,8 @@
+   GtkStatusbar *statusbar;        /* Main window statusbar */
+ 
+   /* These two are different for offline (file-based) capture/replay */
+-  struct timeval now; /* Where in packet-capture time we are */
+-  struct timeval gui_now; /* Real (as in wall-clock gettimeofday()) time */
++  struct bpf_timeval now; /* Where in packet-capture time we are */
++  struct bpf_timeval gui_now; /* Real (as in wall-clock gettimeofday()) time */
+ 
+   gchar *itf_file;            /* fullspec of xml glade file */
+   gchar *export_file;		/* file to export to */

@@ -1,15 +1,16 @@
---- src/names/eth_resolv.c.orig	Mon Sep 12 07:46:48 2016
-+++ src/names/eth_resolv.c	Mon Feb 13 12:17:21 2017
-@@ -26,8 +26,10 @@
+--- src/names/eth_resolv.c.orig	Sat Apr 14 18:45:39 2018
++++ src/names/eth_resolv.c	Fri Jan 17 11:26:14 2020
+@@ -26,8 +26,11 @@
  #include <stdlib.h>
  #include <string.h>
  
 -#include <net/ethernet.h>
 -#include <netinet/ether.h>
-+#include <unistd.h>
++/* #include <sys/types.h> */
 +#include <net/if.h>
 +#include <netinet/in.h>
 +#include <netinet/if_ether.h>
++#include <net/if_arp.h>
  
  #include <glib.h>
  

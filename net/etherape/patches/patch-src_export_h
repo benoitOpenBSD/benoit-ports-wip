@@ -1,0 +1,11 @@
+--- src/export.h.orig	Fri Jan 17 11:28:22 2020
++++ src/export.h	Fri Jan 17 11:28:33 2020
+@@ -18,7 +18,7 @@
+  */
+ 
+ #ifndef __EXPORT_H__
+-#define __EXPORT__
++#define __EXPORT_H__
+ 
+ #include "appdata.h"
+ 

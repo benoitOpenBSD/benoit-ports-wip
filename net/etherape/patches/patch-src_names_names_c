@@ -1,11 +1,9 @@
 $OpenBSD$
---- src/names/names.c~	Mon Sep 12 07:46:48 2016
-+++ src/names/names.c	Mon Feb 13 09:59:51 2017
-@@ -21,7 +21,9 @@
- #include <config.h>
+--- src/names/names.c.orig	Fri Jan 17 09:21:17 2020
++++ src/names/names.c	Fri Jan 17 09:21:40 2020
+@@ -20,6 +20,7 @@
  #endif
  
-+#include <unistd.h>
  #include <netinet/in.h>
 +#include <sys/socket.h>
  #ifdef HAVE_UNISTD_H
