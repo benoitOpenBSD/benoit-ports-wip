@@ -2,7 +2,7 @@
 
 COMMENT =		tool to audit PKCS12 files passwords
 
-DISTNAME =		crackpkcs12-0.2.9
+DISTNAME =		crackpkcs12-0.2.11
 CATEGORIES =		security
 
 HOMEPAGE =		http://crackpkcs12.sourceforge.net/
@@ -10,7 +10,7 @@ HOMEPAGE =		http://crackpkcs12.sourceforge.net/
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv3
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c crypto pthread
 
