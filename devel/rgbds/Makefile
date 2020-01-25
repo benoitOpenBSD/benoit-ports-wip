@@ -2,7 +2,7 @@
 
 COMMENT =		rednex Game Boy Development System
 
-DISTNAME =		rgbds-0.3.8
+DISTNAME =		rgbds-0.3.9
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
