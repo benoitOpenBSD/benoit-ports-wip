@@ -8,7 +8,7 @@ CATEGORIES =		emulators
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		${MASTER_SITES_GITHUB}
 
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/udo-munk/z80pack
 
 GH_ACCOUNT =		udo-munk
 GH_PROJECT =		z80pack
-GH_COMMIT =		aca63ff0164e292467a80572d97842214e607024
+GH_COMMIT =		d57e3b50cd796e3f562c569a8270b4586999b12a
 
 WANTLIB +=		c
 
