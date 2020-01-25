@@ -71,6 +71,7 @@ share/wla-dx/examples/6502/linker_test/linkfile
 share/wla-dx/examples/6502/linker_test/makefile
 share/wla-dx/examples/6502/linker_test/nop.s
 share/wla-dx/examples/6502/linker_test/setup.s
+share/wla-dx/examples/6502/linker_test/testsfile
 share/wla-dx/examples/6502/operand_hint_test/
 share/wla-dx/examples/6502/operand_hint_test/linkfile
 share/wla-dx/examples/6502/operand_hint_test/main.s
@@ -80,6 +81,11 @@ share/wla-dx/examples/6502/struct_test/linkfile
 share/wla-dx/examples/6502/struct_test/main.s
 share/wla-dx/examples/6502/struct_test/makefile
 share/wla-dx/examples/6510/
+share/wla-dx/examples/6510/c64_prg_test/
+share/wla-dx/examples/6510/c64_prg_test/linkfile
+share/wla-dx/examples/6510/c64_prg_test/main.s
+share/wla-dx/examples/6510/c64_prg_test/makefile
+share/wla-dx/examples/6510/c64_prg_test/testsfile
 share/wla-dx/examples/6510/linker_test/
 share/wla-dx/examples/6510/linker_test/defines.i
 share/wla-dx/examples/6510/linker_test/linkfile
@@ -148,8 +154,14 @@ share/wla-dx/examples/65816/name_test/main.s
 share/wla-dx/examples/65816/name_test/makefile
 share/wla-dx/examples/65816/nocashsns_symbol_file/
 share/wla-dx/examples/65816/nocashsns_symbol_file/check_symbols.sh
+share/wla-dx/examples/65816/nocashsns_symbol_file/linkfile
 share/wla-dx/examples/65816/nocashsns_symbol_file/main.s
 share/wla-dx/examples/65816/nocashsns_symbol_file/makefile
+share/wla-dx/examples/65816/opcode_test/
+share/wla-dx/examples/65816/opcode_test/linkfile
+share/wla-dx/examples/65816/opcode_test/main.s
+share/wla-dx/examples/65816/opcode_test/makefile
+share/wla-dx/examples/65816/opcode_test/testsfile
 share/wla-dx/examples/65816/operand_hint_test/
 share/wla-dx/examples/65816/operand_hint_test/linkfile
 share/wla-dx/examples/65816/operand_hint_test/main.s
@@ -187,16 +199,19 @@ share/wla-dx/examples/8008/linker_test/linkfile
 share/wla-dx/examples/8008/linker_test/main.s
 share/wla-dx/examples/8008/linker_test/makefile
 share/wla-dx/examples/8008/rst_test/
+share/wla-dx/examples/8008/rst_test/linkfile
 share/wla-dx/examples/8008/rst_test/main.s
 share/wla-dx/examples/8008/rst_test/makefile
 share/wla-dx/examples/8008/rst_test/testsfile
 share/wla-dx/examples/8080/
 share/wla-dx/examples/8080/linker_test/
 share/wla-dx/examples/8080/linker_test/library.s
+share/wla-dx/examples/8080/linker_test/linkfile
 share/wla-dx/examples/8080/linker_test/main.s
 share/wla-dx/examples/8080/linker_test/makefile
 share/wla-dx/examples/8080/linker_test/testsfile
 share/wla-dx/examples/8080/rst_test/
+share/wla-dx/examples/8080/rst_test/linkfile
 share/wla-dx/examples/8080/rst_test/main.s
 share/wla-dx/examples/8080/rst_test/makefile
 share/wla-dx/examples/8080/rst_test/testsfile
@@ -243,6 +258,7 @@ share/wla-dx/examples/gb-z80/linker_test/main.s
 share/wla-dx/examples/gb-z80/linker_test/makefile
 share/wla-dx/examples/gb-z80/linker_test/setup.s
 share/wla-dx/examples/gb-z80/linker_test/test.i
+share/wla-dx/examples/gb-z80/linker_test/testsfile
 share/wla-dx/examples/gb-z80/namespace_test/
 share/wla-dx/examples/gb-z80/namespace_test/cgb_hardware.i
 share/wla-dx/examples/gb-z80/namespace_test/defines1.i
@@ -283,6 +299,7 @@ share/wla-dx/examples/spc-700/linker_test/linkfile
 share/wla-dx/examples/spc-700/linker_test/main.s
 share/wla-dx/examples/spc-700/linker_test/makefile
 share/wla-dx/examples/spc-700/linker_test/setup.s
+share/wla-dx/examples/spc-700/linker_test/testsfile
 share/wla-dx/examples/z80/
 share/wla-dx/examples/z80/caddr_test/
 share/wla-dx/examples/z80/caddr_test/linkfile
@@ -307,6 +324,7 @@ share/wla-dx/examples/z80/linker_test_1/linkfile
 share/wla-dx/examples/z80/linker_test_1/main.s
 share/wla-dx/examples/z80/linker_test_1/makefile
 share/wla-dx/examples/z80/linker_test_1/setup.s
+share/wla-dx/examples/z80/linker_test_1/testsfile
 share/wla-dx/examples/z80/linker_test_2/
 share/wla-dx/examples/z80/linker_test_2/defines.i
 share/wla-dx/examples/z80/linker_test_2/linkfile
@@ -323,6 +341,7 @@ share/wla-dx/examples/z80/rept_test/linkfile
 share/wla-dx/examples/z80/rept_test/main.s
 share/wla-dx/examples/z80/rept_test/makefile
 share/wla-dx/examples/z80/rst_test/
+share/wla-dx/examples/z80/rst_test/linkfile
 share/wla-dx/examples/z80/rst_test/makefile
 share/wla-dx/examples/z80/rst_test/sms.s
 share/wla-dx/examples/z80/rst_test/testsfile
