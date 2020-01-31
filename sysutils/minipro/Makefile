@@ -22,6 +22,8 @@ USE_GMAKE =		Yes
 
 WRKDIST =		${WRKDIR}/minipro
 
+DEBUG_PACKAGES =	${BUILD_PACKAGES}
+
 NO_TEST =		Yes
 
 do-install:
