@@ -10,7 +10,7 @@ REVISION=	9
 HOMEPAGE=	https://www.gnu.org/software/gdb/gdb.html
 
 # GPLv2+
-PERMIT_PACKAGE_CDROM=   Yes
+PERMIT_PACKAGE =	Yes
 WANTLIB=		c expat m ncurses
 
 MASTER_SITES=   	${MASTER_SITE_GNU:=gdb/}

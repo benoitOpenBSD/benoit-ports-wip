@@ -7,7 +7,7 @@ DISTNAME=	avr-libc-2.0.0
 HOMEPAGE=	http://www.nongnu.org/avr-libc/
 
 # Modified BSD License
-PERMIT_PACKAGE_CDROM=   Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES=		${MASTER_SITE_SAVANNAH:=avr-libc/}
 EXTRACT_SUFX=		.tar.bz2

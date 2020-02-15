@@ -9,7 +9,7 @@ SHARED_LIBS +=  cc1plugin                 0.0 # 0.0
 SHARED_LIBS +=  cc1                       0.0 # 0.0
 
 # GPLv3
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB=		c gmp mpfr ${COMPILER_LIBCXX} m mpc
 
