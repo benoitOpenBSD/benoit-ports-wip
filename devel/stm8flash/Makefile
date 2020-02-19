@@ -2,7 +2,7 @@
 
 COMMENT =	program your stm8 devices with SWIM/stlinkv(1,2)
 
-DISTNAME =	stm8flash-190210
+DISTNAME =	stm8flash-191006
 CATEGORIES =	devel
 
 HOMEPAGE =	https://github.com/vdudouyt/stm8flash
@@ -14,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 
 GH_ACCOUNT =	vdudouyt
 GH_PROJECT =	stm8flash
-GH_COMMIT =	74d013c3e24f535e36f3227a7975d32470af0ae8
+GH_COMMIT =	3ad9500a04c21f08182439425b19d900c2315217
 
 WANTLIB +=	c usb-1.0 pthread
 
