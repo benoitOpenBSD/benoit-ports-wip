@@ -39,6 +39,8 @@ share/cc65/asminc/cbm_kernal.inc
 share/cc65/asminc/cpu.mac
 share/cc65/asminc/creativision.inc
 share/cc65/asminc/ctype.inc
+share/cc65/asminc/ctype_common.inc
+share/cc65/asminc/ctypetable.inc
 share/cc65/asminc/cx16.inc
 share/cc65/asminc/em-error.inc
 share/cc65/asminc/em-kernel.inc

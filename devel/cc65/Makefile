@@ -2,7 +2,7 @@
 
 COMMENT =		a freeware C compiler for 6502 based systems
 
-DISTNAME =		cc65-20200127
+DISTNAME =		cc65-20200217
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://cc65.github.io/cc65/
 
 GH_ACCOUNT =		cc65
 GH_PROJECT =		cc65
-GH_COMMIT =		f68cc06ec746ff6cc889d1a7b07ebd8769d7909c
+GH_COMMIT =		857a566a2ee2202a392471fd86e4129c9076d695
 
 WANTLIB +=		c m
 
