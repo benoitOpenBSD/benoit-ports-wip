@@ -76,6 +76,10 @@ share/wla-dx/examples/6502/operand_hint_test/
 share/wla-dx/examples/6502/operand_hint_test/linkfile
 share/wla-dx/examples/6502/operand_hint_test/main.s
 share/wla-dx/examples/6502/operand_hint_test/makefile
+share/wla-dx/examples/6502/slots_test/
+share/wla-dx/examples/6502/slots_test/linkfile
+share/wla-dx/examples/6502/slots_test/main.s
+share/wla-dx/examples/6502/slots_test/makefile
 share/wla-dx/examples/6502/struct_test/
 share/wla-dx/examples/6502/struct_test/linkfile
 share/wla-dx/examples/6502/struct_test/main.s
@@ -102,6 +106,11 @@ share/wla-dx/examples/6510/zero_page/linkfile
 share/wla-dx/examples/6510/zero_page/main.s
 share/wla-dx/examples/6510/zero_page/makefile
 share/wla-dx/examples/65816/
+share/wla-dx/examples/65816/bank_number/
+share/wla-dx/examples/65816/bank_number/linkfile
+share/wla-dx/examples/65816/bank_number/main.s
+share/wla-dx/examples/65816/bank_number/makefile
+share/wla-dx/examples/65816/bank_number/testsfile
 share/wla-dx/examples/65816/base_test_1/
 share/wla-dx/examples/65816/base_test_1/linkfile
 share/wla-dx/examples/65816/base_test_1/main.s
@@ -148,6 +157,11 @@ share/wla-dx/examples/65816/linker_test/main.s
 share/wla-dx/examples/65816/linker_test/makefile
 share/wla-dx/examples/65816/linker_test/snes_memory.i
 share/wla-dx/examples/65816/linker_test/test.s
+share/wla-dx/examples/65816/macro_test/
+share/wla-dx/examples/65816/macro_test/linkfile
+share/wla-dx/examples/65816/macro_test/main.s
+share/wla-dx/examples/65816/macro_test/makefile
+share/wla-dx/examples/65816/macro_test/testsfile
 share/wla-dx/examples/65816/name_test/
 share/wla-dx/examples/65816/name_test/linkfile
 share/wla-dx/examples/65816/name_test/main.s
@@ -166,6 +180,7 @@ share/wla-dx/examples/65816/operand_hint_test/
 share/wla-dx/examples/65816/operand_hint_test/linkfile
 share/wla-dx/examples/65816/operand_hint_test/main.s
 share/wla-dx/examples/65816/operand_hint_test/makefile
+share/wla-dx/examples/65816/operand_hint_test/testsfile
 share/wla-dx/examples/65c02/
 share/wla-dx/examples/65c02/linker_test/
 share/wla-dx/examples/65c02/linker_test/defines.i
@@ -205,6 +220,7 @@ share/wla-dx/examples/8008/rst_test/makefile
 share/wla-dx/examples/8008/rst_test/testsfile
 share/wla-dx/examples/8080/
 share/wla-dx/examples/8080/linker_test/
+share/wla-dx/examples/8080/linker_test/extras.s
 share/wla-dx/examples/8080/linker_test/library.s
 share/wla-dx/examples/8080/linker_test/linkfile
 share/wla-dx/examples/8080/linker_test/main.s
@@ -229,6 +245,12 @@ share/wla-dx/examples/gb-z80/background_test/linkfile
 share/wla-dx/examples/gb-z80/background_test/main.s
 share/wla-dx/examples/gb-z80/background_test/makefile
 share/wla-dx/examples/gb-z80/background_test/old.gb
+share/wla-dx/examples/gb-z80/bank_number/
+share/wla-dx/examples/gb-z80/bank_number/cgb_hardware.i
+share/wla-dx/examples/gb-z80/bank_number/linkfile
+share/wla-dx/examples/gb-z80/bank_number/main.s
+share/wla-dx/examples/gb-z80/bank_number/makefile
+share/wla-dx/examples/gb-z80/bank_number/testsfile
 share/wla-dx/examples/gb-z80/include/
 share/wla-dx/examples/gb-z80/include/cgb_hardware.i
 share/wla-dx/examples/gb-z80/include/gb_banks.i
@@ -336,6 +358,7 @@ share/wla-dx/examples/z80/ram_sections/library.s
 share/wla-dx/examples/z80/ram_sections/linkfile
 share/wla-dx/examples/z80/ram_sections/makefile
 share/wla-dx/examples/z80/ram_sections/sms.s
+share/wla-dx/examples/z80/ram_sections/testsfile
 share/wla-dx/examples/z80/rept_test/
 share/wla-dx/examples/z80/rept_test/linkfile
 share/wla-dx/examples/z80/rept_test/main.s
@@ -359,6 +382,7 @@ share/wla-dx/examples/z80/sms_test/data3/data.txt
 share/wla-dx/examples/z80/sms_test/linkfile
 share/wla-dx/examples/z80/sms_test/makefile
 share/wla-dx/examples/z80/sms_test/sms.s
+share/wla-dx/examples/z80/sms_test/testsfile
 share/wla-dx/examples/z80/smsheader_test/
 share/wla-dx/examples/z80/smsheader_test/data1/
 share/wla-dx/examples/z80/smsheader_test/data1/data.txt
