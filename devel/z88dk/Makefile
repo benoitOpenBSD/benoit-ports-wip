@@ -23,4 +23,6 @@ USE_GMAKE =		Yes
 
 WRKDIST=		${WRKDIR}/z88dk
 
+DEBUG_PACKAGES =	${BUILD_PACKAGES}
+
 .include <bsd.port.mk>
