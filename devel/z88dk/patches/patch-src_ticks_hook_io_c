@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/ticks/hook_io.c.orig	Wed Feb 26 15:43:57 2020
++++ src/ticks/hook_io.c	Wed Feb 26 15:45:34 2020
+@@ -12,6 +12,7 @@
+ #include        <sys/stat.h>
+ #else
+ #include        <unistd.h>
++#include	<sys/stat.h>
+ #endif
+ 
+ #define CHECK_FD() do {                 \
