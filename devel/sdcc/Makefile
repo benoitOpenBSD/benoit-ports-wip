@@ -5,7 +5,7 @@ BROKEN-sparc64=	illegal operands building SDCCval.c
 BROKEN-alpha=	sdcc segfaults when building the device library
 BROKEN-aarch64=	*** BFD does not support target aarch64-unknown-openbsd6.2.
 
-DISTNAME=	sdcc-src-3.8.5.190210
+DISTNAME=	sdcc-src-3.9.0
 PKGNAME=	${DISTNAME:S/-src//}
 #EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	devel
@@ -49,6 +49,6 @@ MAKE_ENV=		AUTOCONF_VERSION="${AUTOCONF_VERSION}" \
 AUTOCONF_VERSION=	2.69
 AUTOMAKE_VERSION=	1.16
 
-#WRKDIST=		${WRKDIR}/${PKGNAME}
+WRKDIST=		${WRKDIR}/${PKGNAME}
 
 .include <bsd.port.mk>
