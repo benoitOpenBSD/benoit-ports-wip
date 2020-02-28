@@ -7,7 +7,7 @@ Index: sim/ucsim/cmd.src/Makefile.in
 +++ sim/ucsim/cmd.src/Makefile.in
 @@ -96,13 +96,13 @@ installdirs:
  # ---------------------
- dep: Makefile.dep
+ dep: $(LOCAL_SOURCES) Makefile.dep
  
 -Makefile.dep: $(SOURCES) $(LOCAL_SOURCES) $(srcdir)/*.h cmdpars.hh cmdpars.cc
 +Makefile.dep: $(SOURCES) $(LOCAL_SOURCES) $(srcdir)/*.h cmdpars.h cmdpars.cc
