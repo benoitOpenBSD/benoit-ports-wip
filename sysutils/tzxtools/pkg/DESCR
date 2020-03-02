@@ -1,0 +1,5 @@
+This is a collection of command line tools for processing TZX files.
+
+TZX is a common file format for preserving computer tapes of the ZX 
+Spectrum, but also Amstrad CPC and C64. tzxtools mainly supports ZX 
+Spectrum TZX files, but raw file operations can be applied on any TZX file.
