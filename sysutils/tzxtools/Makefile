@@ -21,11 +21,13 @@ GH_ACCOUNT =            shred
 GH_PROJECT =            tzxtools
 GH_TAGNAME =            $V
 
-MODPY_SETUPTOOLS =	Yes
+#MODPY_SETUPTOOLS =	Yes
+#BUILD_DEPENDS = devel/py-distutils-extra${MODPY_FLAVOR}
 
 FLAVORS =		python3
 FLAVOR =		python3
 
+BUILD_DEPENDS =		devel/py-distutils-extra${MODPY_FLAVOR}
 RUN_DEPENDS =		graphics/py-png
 
 NO_TEST =		Yes
