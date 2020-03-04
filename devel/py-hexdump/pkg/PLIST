@@ -1,0 +1,6 @@
+@comment $OpenBSD: PLIST,v$
+lib/python${MODPY_VERSION}/site-packages/${MODPY_PYCACHE}hexdump.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/data/
+lib/python${MODPY_VERSION}/site-packages/data/hexfile.bin
+lib/python${MODPY_VERSION}/site-packages/hexdump-${MODPY_EGG_VERSION}-py${MODPY_VERSION}.egg-info
+lib/python${MODPY_VERSION}/site-packages/hexdump.py
