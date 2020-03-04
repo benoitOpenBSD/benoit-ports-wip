@@ -10,7 +10,7 @@ HOMEPAGE=		http://optipng.sourceforge.net/
 MAINTAINER=		Benoit Lecocq <blq@arcane-labs.net>
 
 # Open-Source (zlib/libpng license)
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB=		c
 

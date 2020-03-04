@@ -18,7 +18,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB += ${COMPILER_LIBCXX} c m readline z
 
-MASTER_SITES=		http://www.arcane-labs.net/download/OpenBSD/ \
+MASTER_SITES=		https://www.arcane-labs.net/download/OpenBSD/ \
 			${MASTER_SITE_SOURCEFORGE:=sdcc/}
 
 # clang6 makes sdcc regenerate its configure scripts at *BUILD* time

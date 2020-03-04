@@ -10,7 +10,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		http://www.arcane-labs.net/download/OpenBSD/
+MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		https://gitlab.com/DavidGriffith/minipro/
 

@@ -18,7 +18,7 @@ WANTLIB =	ICE SM X11 Xau Xcursor Xdmcp Xext Xfixes Xi Xinerama \
 		m pango-1.0 pangocairo-1.0 pangoft2-1.0 pixman-1 png pthread z
 
 MASTER_SITES =		http://www.rcdrummond.net/uae/e-uae-0.8.29-WIP4/ \
-			http://www.arcane-labs.net/download/OpenBSD/
+			https://www.arcane-labs.net/download/OpenBSD/
 
 EXTRACT_SUFX =		.tar.bz2
 

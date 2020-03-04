@@ -15,7 +15,7 @@ PERMIT_PACKAGE =	Yes
 WANTLIB +=		c m
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=z88dk/} \
-			http://www.arcane-labs.net/download/OpenBSD/
+			https://www.arcane-labs.net/download/OpenBSD/
 
 EXTRACT_SUFX =		.tgz
 

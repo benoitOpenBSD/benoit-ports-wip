@@ -14,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB +=	c
 
-# MASTER_SITES =	http://www.arcane-labs.net/download/OpenBSD/
+# MASTER_SITES =	https://www.arcane-labs.net/download/OpenBSD/
 MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=stm32flash/}
 
 WRKDIST =	${WRKDIR}/stm32flash

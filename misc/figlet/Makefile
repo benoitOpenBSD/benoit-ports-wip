@@ -15,7 +15,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =		c
 
 MASTER_SITES =	ftp://ftp.figlet.org/pub/figlet/program/unix/
-MASTER_SITES0 =	http://www.arcane-labs.net/download/OpenBSD/
+MASTER_SITES0 =	https://www.arcane-labs.net/download/OpenBSD/
 
 DISTFILES =	${DISTNAME}${EXTRACT_SUFX} \
 		figlet-contributed-06092002${EXTRACT_SUFX}:0

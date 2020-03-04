@@ -17,7 +17,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB +=		c m pthread stdc++ SDL SDL_image SDL_mixer
 WANTLIB +=		mikmod ogg smpeg vorbis vorbisfile SDL_net
 
-MASTER_SITES =		http://www.arcane-labs.com/download/OpenBSD/
+MASTER_SITES =		https://www.arcane-labs.com/download/OpenBSD/
 #MASTER_SITES =		http://narroin.free.fr/dstroy/res/
 #MASTER_SITES0 =	http://narroin.free.fr/dstroy/res/
 #DISTFILES =		dstroySrc_20090214.zip DstroyDS_20090130.rar:0

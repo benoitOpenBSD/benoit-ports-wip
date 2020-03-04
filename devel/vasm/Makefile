@@ -13,7 +13,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		http://server.owl.de/~frank/tags/ \
-			http://www.arcane-labs.net/download/OpenBSD/
+			https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://sun.hasenbraten.de/vasm/index.php?view=main
 

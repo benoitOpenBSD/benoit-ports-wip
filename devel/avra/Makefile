@@ -13,7 +13,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 PERMIT_PACKAGE =	Yes
 
 #MASTER_SITES =		https://sourceforge.net/projects/avra/files/${V}/
-MASTER_SITES =		http://www.arcane-labs.net/download/OpenBSD/
+MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://avra.sourceforge.net/index.html
 

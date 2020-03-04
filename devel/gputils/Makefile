@@ -16,7 +16,7 @@ PERMIT_PACKAGE =	Yes
 WANTLIB =		c
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=gputils/}
-MASTER_SITES0 =		http://www.arcane-labs.net/download/OpenBSD/
+MASTER_SITES0 =		https://www.arcane-labs.net/download/OpenBSD/
 
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} gputils-testsuite-${VERSION}${EXTRACT_SUFX}:0
 DIST_SUBDIR =		gputils

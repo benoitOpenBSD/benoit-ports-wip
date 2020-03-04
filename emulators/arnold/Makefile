@@ -16,7 +16,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =		c X11 Xext Xi m pthread
 
 MASTER_SITES =		http://arnold.emuunlim.com/download/ \
-			http://www.arcane-labs.net/download/OpenBSD/
+			https://www.arcane-labs.net/download/OpenBSD/
 			
 EXTRACT_SUFX =		.zip
 

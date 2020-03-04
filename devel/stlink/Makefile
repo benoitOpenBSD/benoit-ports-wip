@@ -17,7 +17,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c usb-1.0
 
-# MASTER_SITES =		http://www.arcane-labs.net/download/OpenBSD/
+# MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/
 
 MASTER_SITES =          ${MASTER_SITES_GITHUB}
 GH_ACCOUNT =            texane

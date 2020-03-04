@@ -12,7 +12,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		http://www.retrotechnology.com/memship/ \
-			http://www.arcane-labs.net/download/OpenBSD/
+			https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://www.retrotechnology.com/memship/asmx.html
 

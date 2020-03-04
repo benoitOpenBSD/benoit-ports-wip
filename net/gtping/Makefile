@@ -10,12 +10,12 @@ HOMEPAGE =		http://www.habets.pp.se/synscan/programs.php?prog=gtping
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c m
 
 MASTER_SITES =		http://www.habets.pp.se/synscan/files/ \
-			http://www.arcane-labs.net/download/OpenBSD/
+			https://www.arcane-labs.net/download/OpenBSD/
 
 USE_GROFF =		Yes
 
