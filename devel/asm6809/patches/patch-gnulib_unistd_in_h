@@ -1,0 +1,17 @@
+$OpenBSD$
+--- gnulib/unistd.in.h.orig	Sun Mar  8 00:42:39 2020
++++ gnulib/unistd.in.h	Sun Mar  8 00:43:14 2020
+@@ -34,11 +34,13 @@
+ /* Normal invocation convention.  */
+ 
+ /* The include_next requires a split double-inclusion guard.  */
++/*
+ #if @HAVE_UNISTD_H@
+ # define _GL_INCLUDING_UNISTD_H
+ # @INCLUDE_NEXT@ @NEXT_UNISTD_H@
+ # undef _GL_INCLUDING_UNISTD_H
+ #endif
++*/
+ 
+ /* Get all possible declarations of gethostname().  */
+ #if @GNULIB_GETHOSTNAME@ && @UNISTD_H_HAVE_WINSOCK2_H@ \
