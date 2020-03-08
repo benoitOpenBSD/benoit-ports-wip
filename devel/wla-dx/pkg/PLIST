@@ -181,6 +181,11 @@ share/wla-dx/examples/65816/operand_hint_test/linkfile
 share/wla-dx/examples/65816/operand_hint_test/main.s
 share/wla-dx/examples/65816/operand_hint_test/makefile
 share/wla-dx/examples/65816/operand_hint_test/testsfile
+share/wla-dx/examples/65816/wdc_test/
+share/wla-dx/examples/65816/wdc_test/linkfile
+share/wla-dx/examples/65816/wdc_test/main.s
+share/wla-dx/examples/65816/wdc_test/makefile
+share/wla-dx/examples/65816/wdc_test/testsfile
 share/wla-dx/examples/65c02/
 share/wla-dx/examples/65c02/linker_test/
 share/wla-dx/examples/65c02/linker_test/defines.i
@@ -393,3 +398,7 @@ share/wla-dx/examples/z80/smsheader_test/data3/data.txt
 share/wla-dx/examples/z80/smsheader_test/linkfile
 share/wla-dx/examples/z80/smsheader_test/makefile
 share/wla-dx/examples/z80/smsheader_test/sms.s
+share/wla-dx/examples/z80/z81_test/
+share/wla-dx/examples/z80/z81_test/linkfile
+share/wla-dx/examples/z80/z81_test/main.s
+share/wla-dx/examples/z80/z81_test/makefile
