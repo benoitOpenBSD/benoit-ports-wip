@@ -2,7 +2,7 @@
 
 COMMENT =	tools for encoding and decoding dumps of NAND memory chips
 
-MODPY_EGG_VERSION =	200312
+MODPY_EGG_VERSION =	0.2
 DISTNAME =	nand-dump-tools-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
 
