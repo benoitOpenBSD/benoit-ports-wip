@@ -25,6 +25,8 @@ MODPY_SETUPTOOLS = Yes
 FLAVORS =	python3
 FLAVOR ?=	python3
 
+RUN_DEPENDS =	archivers/py-lzo2
+
 pre-install:
 		${INSTALL_DATA_DIR} ${PREFIX}/share/doc/py-ubi_reader
 		${INSTALL_DATA} ${WRKSRC}/README.md ${PREFIX}/share/doc/py-ubi_reader
