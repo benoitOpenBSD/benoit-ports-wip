@@ -1,0 +1,12 @@
+$OpenBSD$
+--- setup.py.orig	Thu May 24 06:27:55 2018
++++ setup.py	Thu Mar 12 15:51:33 2020
+@@ -55,7 +55,7 @@
+     extra_objects.append(lib_file)
+ else:
+     libraries = ["lzo2"]
+-    include_dirs.append(os.environ.get("PREFIX", "/usr")+"/include/lzo")
++    include_dirs.append(os.environ.get("PREFIX", "/usr/local")+"/include")
+     ##library_dirs.append("/usr/local/lib")
+     ##runtime_library_dirs.append("/usr/local/lib")
+ 
