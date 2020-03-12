@@ -2,6 +2,7 @@
 bin/nand_dump_decoder.py
 bin/nand_dump_encoder.py
 share/doc/nand-dump-tools/
+share/doc/nand-dump-tools/README.md
 share/doc/nand-dump-tools/conf/
 share/doc/nand-dump-tools/conf/29F2F108_Micron.conf
 share/doc/nand-dump-tools/conf/29F4G08_Micron_ATMEL.conf

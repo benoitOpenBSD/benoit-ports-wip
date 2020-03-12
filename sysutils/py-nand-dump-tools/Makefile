@@ -33,6 +33,7 @@ do-install:
 		${INSTALL_SCRIPT} ${WRKBUILD}/nand_dump_encoder.py ${PREFIX}/bin
 		${INSTALL_DATA_DIR} ${PREFIX}/share/doc/nand-dump-tools/conf
 		${INSTALL_DATA} ${WRKSRC}/*.sh ${PREFIX}/share/doc/nand-dump-tools
+		${INSTALL_DATA} ${WRKSRC}/*.md ${PREFIX}/share/doc/nand-dump-tools
 		${INSTALL_DATA} ${WRKSRC}/images/* ${PREFIX}/share/doc/nand-dump-tools
 		${INSTALL_DATA} ${WRKSRC}/conf/* ${PREFIX}/share/doc/nand-dump-tools/conf
 
