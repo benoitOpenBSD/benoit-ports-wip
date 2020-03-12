@@ -11,7 +11,7 @@ HOMEPAGE =		https://github.com/jkent/python-bchlib
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# MIT
+# GPLv2
 PERMIT_PACKAGE =	Yes
 
 MODULES =		lang/python
