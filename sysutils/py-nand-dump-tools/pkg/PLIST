@@ -1,0 +1,13 @@
+@comment $OpenBSD: PLIST,v$
+bin/nand_dump_decoder.py
+bin/nand_dump_encoder.py
+share/doc/nand-dump-tools/
+share/doc/nand-dump-tools/conf/
+share/doc/nand-dump-tools/conf/29F2F108_Micron.conf
+share/doc/nand-dump-tools/conf/29F4G08_Micron_ATMEL.conf
+share/doc/nand-dump-tools/conf/MX30LF2G18AC_NXP_IMX28.conf
+share/doc/nand-dump-tools/conf/S34ML01G2_ATMEL.conf
+share/doc/nand-dump-tools/exploiting_unencrypted_nand_poc_video.jpg
+share/doc/nand-dump-tools/nand_dump_decoder.sh
+share/doc/nand-dump-tools/nand_dump_encoder.sh
+share/doc/nand-dump-tools/setup.sh

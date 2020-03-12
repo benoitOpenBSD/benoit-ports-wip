@@ -1,0 +1,15 @@
+The SySS NAND Dump Tools are a collection of software tools for working 
+with raw NAND flash memory dumps and images.
+
+By using error-correcting codes, for instance BCH codes 
+(Bose-Chaudhuri-Hocquenghem Codes), supporting different configurations, 
+the NAND Dump Decoder can create error-corrected data dumps from raw NAND 
+flash memory dumps, which can then be used with other tools, for instance 
+the ubireader tools.
+
+The NAND Dump Encoder can be used to create raw NAND flash memory images 
+from binary input files for supported target platforms, which can then 
+be directly written to corresponding NAND memory chips.
+
+The NAND Dump Tools are based on and inspired by the open source software 
+tool PMECC Reader and Decoder by Mickael Walter (@MickaelWalter).
