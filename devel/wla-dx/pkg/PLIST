@@ -3,6 +3,7 @@
 @bin bin/wla-6510
 @bin bin/wla-65816
 @bin bin/wla-65c02
+@bin bin/wla-65ce02
 @bin bin/wla-6800
 @bin bin/wla-6801
 @bin bin/wla-6809
@@ -193,6 +194,12 @@ share/wla-dx/examples/65c02/linker_test/linkfile
 share/wla-dx/examples/65c02/linker_test/main.s
 share/wla-dx/examples/65c02/linker_test/makefile
 share/wla-dx/examples/65c02/linker_test/setup.s
+share/wla-dx/examples/65ce02/
+share/wla-dx/examples/65ce02/linker_test/
+share/wla-dx/examples/65ce02/linker_test/linkfile
+share/wla-dx/examples/65ce02/linker_test/main.s
+share/wla-dx/examples/65ce02/linker_test/makefile
+share/wla-dx/examples/65ce02/linker_test/testsfile
 share/wla-dx/examples/6800/
 share/wla-dx/examples/6800/linker_test/
 share/wla-dx/examples/6800/linker_test/library.s
