@@ -2,7 +2,7 @@
 
 COMMENT =	displaying waveforms for different HDL simulators
 
-MODPY_EGG_VERSION =	1.0.5
+MODPY_EGG_VERSION =	1.0.6
 DISTNAME =	wavedisp-${MODPY_EGG_VERSION}
 PKGNAME =	py-${DISTNAME}
 
@@ -15,17 +15,13 @@ PERMIT_PACKAGE =	Yes
 
 GH_ACCOUNT =    cclienti
 GH_PROJECT =    wavedisp
-GH_COMMIT =	7f4ff3a32e74b73341f59bc294cc9ebb71d08b1e
+GH_COMMIT =	66bc7909638891fa34afe8af21c61acaa6e4eb91
 
 MODULES =	lang/python
 MODPY_SETUPTOOLS = Yes
 
 FLAVORS =	python3
-FLAVOR ?=
-
-.if !${FLAVOR:Mpython3}
-ERRORS += "Fatal: Flavors other than python3 are not supported at the moment"
-.endif
+FLAVOR ?=	python3
 
 NO_TEST =	Yes
 
