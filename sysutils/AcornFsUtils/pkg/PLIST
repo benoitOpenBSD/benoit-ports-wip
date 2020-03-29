@@ -1,0 +1,5 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/afschk
+@bin bin/afscp
+@bin bin/afsls
+@bin bin/afstree
