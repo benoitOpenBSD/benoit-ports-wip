@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/dasmxx.c.orig	Tue Jul  9 12:27:48 2019
++++ src/dasmxx.c	Sat Apr 18 00:21:44 2020
+@@ -1452,7 +1452,7 @@
+     insn_byte_idx = 0;
+     
+     if ( params.outputfile )
+-        stdout = freopen( params.outputfile, "w", stdout );
++        freopen( params.outputfile, "w", stdout );
+ 
+     emit_page_header();
+     display_banner( params );

@@ -1,0 +1,44 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/dasm1802
+@bin bin/txt2bin
+share/dasmxx/
+share/dasmxx/test/
+share/dasmxx/test/dasm1802/
+share/dasmxx/test/dasm1802/Makefile
+share/dasmxx/test/dasm1802/test.d1802
+share/dasmxx/test/dasm1802/test.txt
+share/dasmxx/test/dasm48/
+share/dasmxx/test/dasm48/Makefile
+share/dasmxx/test/dasm48/test.d48
+share/dasmxx/test/dasm48/test.txt
+share/dasmxx/test/dasm51/
+share/dasmxx/test/dasm51/8051regs.inc
+share/dasmxx/test/dasm51/pm21_2.obj
+share/dasmxx/test/dasm51/test.bin
+share/dasmxx/test/dasm51/test.d51
+share/dasmxx/test/dasm7000/
+share/dasmxx/test/dasm7000/attphone.d7000
+share/dasmxx/test/dasm78k3/
+share/dasmxx/test/dasm78k3/78310_regs.d78
+share/dasmxx/test/dasm78k3/README.txt
+share/dasmxx/test/dasm78k3/k4_v14.d78
+share/dasmxx/test/dasm78k3/k4_v14_controls.d78
+share/dasmxx/test/dasm78k3/k4_v14_lcd.d78
+share/dasmxx/test/dasm78k3/k4_v14_midi.d78
+share/dasmxx/test/dasm85/
+share/dasmxx/test/dasm85/Makefile
+share/dasmxx/test/dasm85/test.d85
+share/dasmxx/test/dasm85/test.txt
+share/dasmxx/test/dasm96/
+share/dasmxx/test/dasm96/w30.d96
+share/dasmxx/test/dasmavr/
+share/dasmxx/test/dasmavr/test.bin
+share/dasmxx/test/dasmavr/test.davr
+share/dasmxx/test/dasmx86/
+share/dasmxx/test/dasmx86/Makefile
+share/dasmxx/test/dasmx86/test.dx86
+share/dasmxx/test/dasmx86/test.txt
+share/dasmxx/test/dasmz80/
+share/dasmxx/test/dasmz80/Makefile
+share/dasmxx/test/dasmz80/test.dz80
+share/dasmxx/test/dasmz80/test.txt
