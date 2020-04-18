@@ -1,6 +1,6 @@
 # $OpenBSD$
 
-COMMENT =		converting hexdecimal files to binary files
+COMMENT =		converting intel/motorola hexadecimal files to binary
 
 DISTNAME =		Hex2bin-2.5
 PKGNAME =		${DISTNAME:S/Hex2bin/hex2bin/}
