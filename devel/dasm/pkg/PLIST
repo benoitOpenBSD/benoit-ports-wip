@@ -1,4 +1,7 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 @bin bin/dasm
 @bin bin/ftohex
-@man man/man1/dasm.1
+share/dasm/
+share/dasm/doc/
+share/dasm/doc/dasm.txt
+share/dasm/doc/ftohex.txt

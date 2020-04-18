@@ -2,8 +2,7 @@
 
 COMMENT =		the dillon dasm macro assembler
 
-PKGNAME =		dasm-2.20.11
-DISTNAME =		dasm-2.20.11-2014.03.04-source
+DISTNAME =		dasm-2.20.14
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -13,19 +12,22 @@ PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		${MASTER_SITES_GITHUB}
 
-HOMEPAGE =		http://dasm-dillon.sourceforge.net/
+HOMEPAGE =		https://github.com/dasm-assembler/dasm
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=dasm-dillon/}
+GH_ACCOUNT =            dasm-assembler
+GH_PROJECT =            dasm
+GH_COMMIT =		275e257f7f051d88aa52951c9fe38815d3180b46
 
 WANTLIB +=		c
 
-WRKSRC =		${WRKDIR}/dasm-2.20.11-20140304
+WRKSRC =		${WRKDIR}/dasm-${GH_COMMIT}
 WRKDIST =		${WRKSRC}
 
 USE_GMAKE =		Yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/* ${PREFIX}/bin/
-	${INSTALL_MAN} ${WRKSRC}/doc/dasm.1 ${PREFIX}/man/man1
+	${INSTALL_DATA_DIR} ${PREFIX}/share/dasm/doc
+	${INSTALL_MAN} ${WRKSRC}/doc/*.txt ${PREFIX}/share/dasm/doc
 
 .include <bsd.port.mk>
