@@ -12,7 +12,7 @@ PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		${MASTER_SITES_GITHUB}
 
-HOMEPAGE =		https://github.com/dasm-assembler/dasm
+HOMEPAGE =		https://dasm-assembler.github.io/
 
 GH_ACCOUNT =            dasm-assembler
 GH_PROJECT =            dasm
