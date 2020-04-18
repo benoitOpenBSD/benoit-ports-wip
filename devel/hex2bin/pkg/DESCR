@@ -1,0 +1,11 @@
+This tool is used for converting hexadecimal files (either Motorola or 
+Intel format) into a binary file. It's a command line tool with basic 
+capabilities.
+
+Hex2bin/mot2bin Features
+
+It can handle the extended Intel hex format in segmented and linear address 
+modes. Records need not be sorted and there can be gaps between records.  
+Holes/unused bytes can be specified as any other value than FF. 
+A checksum can be inserted into the binary file.
+
