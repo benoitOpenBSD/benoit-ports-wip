@@ -19,7 +19,7 @@ EXTRACT_SUFX =		.tar.bz2
 
 WANTLIB +=		c
 
-#USE_GMAKE =		Yes
+MAKE_FLAGS =		CC="${CC}" CFLAGS="${CFLAGS}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/hex2bin ${PREFIX}/bin/
