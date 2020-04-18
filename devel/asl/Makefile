@@ -3,6 +3,7 @@
 COMMENT =		the macroassembler as
 
 DISTNAME =		asl-1.42-200412
+PKGNAME =		asl-1.42-current
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -26,10 +27,17 @@ USE_GMAKE =		Yes
 
 NO_TEST =		Yes
 
-#do-install:
-#	${INSTALL_PROGRAM} ${WRKSRC}/asl ${PREFIX}/bin/
-#	${INSTALL_PROGRAM} ${WRKSRC}/asl ${PREFIX}/bin/
-#	${INSTALL_DATA_DIR} ${PREFIX}/share/asl/test
-#	cp -R ${WRKDIST}/test/* ${PREFIX}/share/asl/test
+DEBUG_PACKAGES =	${BUILD_PACKAGES}
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/asl ${PREFIX}/bin/
+	${INSTALL_PROGRAM} ${WRKSRC}/plist ${PREFIX}/bin/
+	${INSTALL_PROGRAM} ${WRKSRC}/alink ${PREFIX}/bin/
+	${INSTALL_PROGRAM} ${WRKSRC}/pbind ${PREFIX}/bin/
+	${INSTALL_PROGRAM} ${WRKSRC}/p2hex ${PREFIX}/bin/
+	${INSTALL_PROGRAM} ${WRKSRC}/p2bin ${PREFIX}/bin/
+#	${INSTALL_DATA_DIR} ${PREFIX}/share/asl/doc
+	${INSTALL_DATA_DIR} ${PREFIX}/include/asl
+	cp -R ${WRKDIST}/include/* ${PREFIX}/include/asl/
 
 .include <bsd.port.mk>
