@@ -1,6 +1,24 @@
 $OpenBSD$
 --- src/dasmxx.c.orig	Tue Jul  9 12:27:48 2019
-+++ src/dasmxx.c	Sat Apr 18 00:21:44 2020
++++ src/dasmxx.c	Sat Apr 18 11:31:25 2020
+@@ -491,7 +491,7 @@
+                 continue;
+             
+             /* Remove trailing newline char */
+-            if ( q = strchr( pbuf, '\n' ) )
++            if ( (q = strchr( pbuf, '\n' )) )
+                 *q = '\0';
+ 
+             /* Peel off command code, then do something about it */
+@@ -913,7 +913,7 @@
+                     printf( params.want_stripped ? "   " : "\n   " );
+                 printf( "DB      '" );
+ 
+-                while ( c = next( f, &addr ) )
++                while ( (c = next( f, &addr )) )
+                 {
+                     if ( c == string_terminator )
+                         break;
 @@ -1452,7 +1452,7 @@
      insn_byte_idx = 0;
      
