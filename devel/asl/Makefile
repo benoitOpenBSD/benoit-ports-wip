@@ -19,13 +19,11 @@ MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://john.ccac.rwth-aachen.de:8000/as/
 
-WANTLIB +=		c
+WANTLIB +=		c m
 
 MAKE_FLAGS =		CC="${CC}" CFLAGS="${CFLAGS}"
 
 USE_GMAKE =		Yes
-
-NO_TEST =		Yes
 
 DEBUG_PACKAGES =	${BUILD_PACKAGES}
 
@@ -39,5 +37,8 @@ do-install:
 #	${INSTALL_DATA_DIR} ${PREFIX}/share/asl/doc
 	${INSTALL_DATA_DIR} ${PREFIX}/include/asl
 	cp -R ${WRKDIST}/include/* ${PREFIX}/include/asl/
+
+do-test:
+	@cd ${WRKSRC}/tests && ${SETENV} sh ./testall
 
 .include <bsd.port.mk>
