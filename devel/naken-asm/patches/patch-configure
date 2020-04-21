@@ -1,0 +1,29 @@
+$OpenBSD$
+--- configure.orig	Sun Apr 19 14:07:34 2020
++++ configure	Tue Apr 21 22:00:52 2020
+@@ -1,6 +1,6 @@
+ #!/usr/bin/env bash
+ 
+-CC=gcc
++CC=cc
+ COMPILER_PREFIX=
+ DEBUG=
+ CFLAGS="-Wall"
+@@ -568,7 +568,7 @@
+ 
+ if test_compiler "gcc"
+ then
+-  CC="gcc"
++  CC="cc"
+ elif test_compiler "cc"
+ then
+   CC="cc"
+@@ -588,7 +588,7 @@
+ 
+ if [ "${DEBUG}" = "" ]
+ then
+-  CFLAGS="${CFLAGS} -O3"
++  CFLAGS="${CFLAGS} -O2"
+ else
+   CFLAGS="${CFLAGS} ${DEBUG}"
+ fi
