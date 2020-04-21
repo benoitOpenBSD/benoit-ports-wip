@@ -1,0 +1,11 @@
+$OpenBSD$
+--- tests/disasm/Makefile.orig	Tue Apr 21 22:55:29 2020
++++ tests/disasm/Makefile	Tue Apr 21 22:55:41 2020
+@@ -1,5 +1,5 @@
+ 
+ default:
+-	python pic32.py
+-	python ps2_ee.py
++	python2 pic32.py
++	python2 ps2_ee.py
+ 
