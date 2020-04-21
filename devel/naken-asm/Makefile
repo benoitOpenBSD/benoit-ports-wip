@@ -20,6 +20,8 @@ GH_COMMIT =		adcc1a8f52b977166c5abd175945bbacb3bd4fec
 
 WANTLIB +=		c curses readline
 
+MODULES =		lang/python
+
 CONFIGURE_STYLE =	simple
 CONFIGURE_ARGS =	--enable-all
 
