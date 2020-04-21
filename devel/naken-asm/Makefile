@@ -27,10 +27,12 @@ BUILD_DEPENDS =		shells/bash
 
 USE_GMAKE =		Yes
 
-NO_TEST =		Yes
-
 do-install:
 			${INSTALL_PROGRAM} ${WRKSRC}/naken_asm ${PREFIX}/bin
 			${INSTALL_PROGRAM} ${WRKSRC}/naken_util ${PREFIX}/bin
+
+do-test:
+			@cd ${WRKSRC} && exec ${SETENV} ${MAKE_ENV} \
+			${MAKE_PROGRAM} tests
 
 .include <bsd.port.mk>
