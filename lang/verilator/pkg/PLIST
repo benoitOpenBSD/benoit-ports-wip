@@ -1,0 +1,56 @@
+@comment $OpenBSD: PLIST,v 1.7 2018/05/29 08:12:26 espie Exp $
+bin/verilator
+@bin bin/verilator_bin
+@bin bin/verilator_bin_dbg
+bin/verilator_coverage
+@bin bin/verilator_coverage_bin_dbg
+bin/verilator_profcfunc
+@man man/man1/verilator.1
+@man man/man1/verilator_coverage.1
+@man man/man1/verilator_profcfunc.1
+share/pkgconfig/verilator.pc
+share/verilator/
+share/verilator/bin/
+share/verilator/bin/verilator_includer
+share/verilator/examples/
+share/verilator/examples/test_c/
+share/verilator/examples/test_c/Makefile
+share/verilator/examples/test_c/Makefile_obj
+share/verilator/examples/test_c/sim_main.cpp
+share/verilator/examples/test_sc/
+share/verilator/examples/test_sc/Makefile
+share/verilator/examples/test_sc/Makefile_obj
+share/verilator/examples/test_sc/sc_main.cpp
+share/verilator/examples/test_v/
+share/verilator/examples/test_v/input.vc
+share/verilator/examples/test_v/t.v
+share/verilator/examples/test_v/top.v
+share/verilator/include/
+share/verilator/include/verilated.cpp
+share/verilator/include/verilated.h
+share/verilator/include/verilated.mk
+share/verilator/include/verilated.v
+share/verilator/include/verilated_config.h
+share/verilator/include/verilated_config.h.in
+share/verilator/include/verilated_cov.cpp
+share/verilator/include/verilated_cov.h
+share/verilator/include/verilated_cov_key.h
+share/verilator/include/verilated_dpi.cpp
+share/verilator/include/verilated_dpi.h
+share/verilator/include/verilated_heavy.h
+share/verilator/include/verilated_imp.h
+share/verilator/include/verilated_save.cpp
+share/verilator/include/verilated_save.h
+share/verilator/include/verilated_sc.h
+share/verilator/include/verilated_syms.h
+share/verilator/include/verilated_vcd_c.cpp
+share/verilator/include/verilated_vcd_c.h
+share/verilator/include/verilated_vcd_sc.cpp
+share/verilator/include/verilated_vcd_sc.h
+share/verilator/include/verilated_vpi.cpp
+share/verilator/include/verilated_vpi.h
+share/verilator/include/verilatedos.h
+@comment share/verilator/include/verilatedos.h.orig
+share/verilator/include/vltstd/
+share/verilator/include/vltstd/svdpi.h
+share/verilator/include/vltstd/vpi_user.h
