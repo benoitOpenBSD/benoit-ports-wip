@@ -17,7 +17,7 @@ PERMIT_PACKAGE =	Yes
 
 GH_ACCOUNT =    SySS-Research
 GH_PROJECT =    nand-dump-tools
-GH_COMMIT =	b1238f645b4e529510d7e4d141a5e34b68ff4736
+GH_COMMIT =	153c797544f2aae5f1db9d1c49c0fc13e34a66d5
 
 MODULES =	lang/python
 
