@@ -2,7 +2,7 @@
 
 COMMENT =		high performance profiler for python
 
-MODPY_EGG_VERSION =	0.5.6
+MODPY_EGG_VERSION =	0.8.5
 DISTNAME =		scalene-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		sysutils
