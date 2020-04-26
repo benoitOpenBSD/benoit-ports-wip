@@ -18,6 +18,4 @@ MODPY_PI =		Yes
 MODPY_SETUPTOOLS =	Yes
 MODPY_VERSION =		${MODPY_DEFAULT_VERSION_3}
 
-#NO_TEST =		Yes
-
 .include <bsd.port.mk>
