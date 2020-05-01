@@ -1,0 +1,4 @@
+The Atari++ Emulator is a Unix based emulator of the Atari eight bit 
+computers, namely the Atari 400 and 800, the Atari 400XL, 800XL and 
+130XE, and the Atari 5200 game console. The emulator is auto-configurable 
+and will compile on a variety of systems (Linux, Solaris, Irix).
