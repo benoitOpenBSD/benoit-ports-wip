@@ -2,7 +2,7 @@
 
 COMMENT =		asm for programming GAL devices
 
-DISTNAME =		GALasm-2.1-200121
+DISTNAME =		GALasm-2.1
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -14,6 +14,7 @@ MASTER_SITES =		${MASTER_SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/daveho/GALasm
 
+# 2020/01/21
 GH_ACCOUNT =		daveho
 GH_PROJECT =		GALasm
 GH_COMMIT =		acee511cbd879791a4e8029edb27e141a8df90ce
