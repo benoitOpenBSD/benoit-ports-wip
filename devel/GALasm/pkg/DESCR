@@ -1,0 +1,4 @@
+GALasm was created simply because there were no other
+open source GAL assemblers. The assembler core
+is basically the one of GALer, a GAL development
+environment for the Amiga platform.

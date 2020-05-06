@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/Makefile.orig	Thu May  7 00:09:24 2020
++++ src/Makefile	Thu May  7 00:09:40 2020
+@@ -9,7 +9,7 @@
+ all: $(TARGET)
+ 
+ $(TARGET): $(OBJS)
+-	gcc -o $@ $(OBJS)
++	cc -o $@ $(OBJS)
+ 
+ clean:
+ 	-rm $(OBJS)
