@@ -3,6 +3,10 @@
 @bin bin/txt2bin
 share/dasmxx/
 share/dasmxx/test/
+share/dasmxx/test/dasm05/
+share/dasmxx/test/dasm05/Makefile
+share/dasmxx/test/dasm05/test.d05
+share/dasmxx/test/dasm05/test.txt
 share/dasmxx/test/dasm1802/
 share/dasmxx/test/dasm1802/Makefile
 share/dasmxx/test/dasm1802/test.d1802

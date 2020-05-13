@@ -1,6 +1,6 @@
 $OpenBSD$
---- src/dasmxx.c.orig	Tue Jul  9 12:27:48 2019
-+++ src/dasmxx.c	Sat Apr 18 11:31:25 2020
+--- src/dasmxx.c.orig	Tue Apr 21 17:09:08 2020
++++ src/dasmxx.c	Wed May 13 21:39:35 2020
 @@ -491,7 +491,7 @@
                  continue;
              
@@ -19,12 +19,3 @@ $OpenBSD$
                  {
                      if ( c == string_terminator )
                          break;
-@@ -1452,7 +1452,7 @@
-     insn_byte_idx = 0;
-     
-     if ( params.outputfile )
--        stdout = freopen( params.outputfile, "w", stdout );
-+        freopen( params.outputfile, "w", stdout );
- 
-     emit_page_header();
-     display_banner( params );
