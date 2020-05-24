@@ -233,10 +233,13 @@ share/wla-dx/examples/8008/rst_test/testsfile
 share/wla-dx/examples/8080/
 share/wla-dx/examples/8080/linker_test/
 share/wla-dx/examples/8080/linker_test/extras.s
+share/wla-dx/examples/8080/linker_test/include.s
+share/wla-dx/examples/8080/linker_test/include2.s
 share/wla-dx/examples/8080/linker_test/library.s
 share/wla-dx/examples/8080/linker_test/linkfile
 share/wla-dx/examples/8080/linker_test/main.s
 share/wla-dx/examples/8080/linker_test/makefile
+share/wla-dx/examples/8080/linker_test/namespace.s
 share/wla-dx/examples/8080/linker_test/testsfile
 share/wla-dx/examples/8080/rst_test/
 share/wla-dx/examples/8080/rst_test/linkfile
