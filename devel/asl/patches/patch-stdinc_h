@@ -1,0 +1,12 @@
+$OpenBSD$
+--- stdinc.h.orig	Sun May 24 10:35:58 2020
++++ stdinc.h	Sun May 24 10:36:15 2020
+@@ -37,7 +37,7 @@
+ #include <alloc.h>
+ #else
+ #include <memory.h>
+-#if !defined (__FreeBSD__) && !defined(__APPLE__)
++#if !defined (__FreeBSD__) && !defined (__OpenBSD__) && !defined(__APPLE__)
+ #include <malloc.h>
+ #endif
+ #endif

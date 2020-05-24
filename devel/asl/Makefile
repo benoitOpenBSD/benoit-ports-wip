@@ -2,7 +2,7 @@
 
 COMMENT =		the macroassembler as
 
-DISTNAME =		asl-1.42-200412
+DISTNAME =		asl-1.42-200518
 PKGNAME =		asl-1.42-current
 CATEGORIES =		devel
 
@@ -11,10 +11,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2 / GPLv3
 PERMIT_PACKAGE =	Yes
 
-# http://john.ccac.rwth-aachen.de:8000/ftp/as/source/c_version/asl-current.tar.gz
-# http://john.ccac.rwth-aachen.de:8000/ftp/as/source/c_version/asl-1.41r8.tar.gz
 # MASTER_SITES =		http://john.ccac.rwth-aachen.de:8000/ftp/as/source/c_version/
-# Add Makefile.def and patch stdinc.h & sysdefs.h
 MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://john.ccac.rwth-aachen.de:8000/as/
@@ -26,6 +23,9 @@ MAKE_FLAGS =		CC="${CC}" CFLAGS="${CFLAGS}"
 USE_GMAKE =		Yes
 
 DEBUG_PACKAGES =	${BUILD_PACKAGES}
+
+pre-build:
+	@cp ${FILESDIR}/Makefile.def ${WRKSRC}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/asl ${PREFIX}/bin/
