@@ -1,0 +1,7 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/Smalltalk
+share/Smalltalk/
+share/Smalltalk/files/
+share/Smalltalk/files/Smalltalk-80.changes
+share/Smalltalk/files/Smalltalk-80.sources
+share/Smalltalk/files/snapshot.im

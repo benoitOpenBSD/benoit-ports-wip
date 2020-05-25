@@ -1,0 +1,25 @@
+$OpenBSD$
+--- linux/Makefile.orig	Mon May 25 20:07:04 2020
++++ linux/Makefile	Mon May 25 20:07:58 2020
+@@ -1,6 +1,6 @@
+-CFLAGS	:=  -std=c++17 -O3
++CFLAGS	:= -std=c++17 -O2
+ 
+-CC = g++ 
++CC = c++ 
+ SRC := ../src
+ OBJS := objmemory.o bitblt.o main.o interpreter.o
+ 
+@@ -8,10 +8,10 @@
+ 	$(CC) -o $@ $^ -L/usr/local/lib -lSDL2main -lSDL2
+ 	
+ main.o: $(SRC)/main.cpp
+-	$(CC) $(CFLAGS) -c $(SRC)/main.cpp
++	$(CC) $(CFLAGS) -I/usr/local/include -c $(SRC)/main.cpp
+ 
+ %.o: $(SRC)/%.cpp
+-	$(CC) $(CFLAGS) -c $<  -o $@
++	$(CC) $(CFLAGS) -I/usr/local/include -c $<  -o $@
+ 
+ 
+ clean:

@@ -1,0 +1,12 @@
+Welcome to my "by the Bluebook" C++ implementation of the Smalltalk-80 
+system that runs on OS X, Windows, and Linux! Since first reading about 
+Smalltalk in the August 1981 issue of Byte magazine, I have always been 
+intrigued by it. At that time all we had were slow 8-bit computers with 
+4K of RAM barely running fast enough to do anything useful. I was stunned 
+as I read through the article -- this was futuristic alien technology 
+that was surely beyond my reach. In 1988, while attending the University 
+of Washington, I was exposed to two memorable pieces of technology: 
+The first was Steve Job's NeXTCube and the other was a Tektronix (4400?) 
+workstation running Smalltalk-80. Both were, and still are, amazing. 
+It was only fitting that I implemented this Smalltalk on a descendent 
+of the NeXTCube -- a MacBook Pro laptop.
