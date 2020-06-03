@@ -148,6 +148,11 @@ share/wla-dx/examples/65816/checksum_8mbit_lorom/linkfile
 share/wla-dx/examples/65816/checksum_8mbit_lorom/main.s
 share/wla-dx/examples/65816/checksum_8mbit_lorom/makefile
 share/wla-dx/examples/65816/checksum_8mbit_lorom/testsfile
+share/wla-dx/examples/65816/dlm_test/
+share/wla-dx/examples/65816/dlm_test/linkfile
+share/wla-dx/examples/65816/dlm_test/main.s
+share/wla-dx/examples/65816/dlm_test/makefile
+share/wla-dx/examples/65816/dlm_test/testsfile
 share/wla-dx/examples/65816/include/
 share/wla-dx/examples/65816/include/snes_memory.i
 share/wla-dx/examples/65816/linker_test/
@@ -232,6 +237,7 @@ share/wla-dx/examples/8008/rst_test/makefile
 share/wla-dx/examples/8008/rst_test/testsfile
 share/wla-dx/examples/8080/
 share/wla-dx/examples/8080/linker_test/
+share/wla-dx/examples/8080/linker_test/binaryfile
 share/wla-dx/examples/8080/linker_test/extras.s
 share/wla-dx/examples/8080/linker_test/include.s
 share/wla-dx/examples/8080/linker_test/include2.s
