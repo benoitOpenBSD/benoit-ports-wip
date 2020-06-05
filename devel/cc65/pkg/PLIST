@@ -592,6 +592,8 @@ share/cc65/target/supervision/drv/joy/
 share/cc65/target/supervision/drv/joy/supervision-stdjoy.joy
 share/cc65/target/telestrat/
 share/cc65/target/telestrat/drv/
+share/cc65/target/telestrat/drv/joy/
+share/cc65/target/telestrat/drv/joy/telestrat.joy
 share/cc65/target/telestrat/drv/tgi/
 share/cc65/target/telestrat/drv/tgi/telestrat-228-200-3.tgi
 share/cc65/target/telestrat/drv/tgi/telestrat-240-200-2.tgi
