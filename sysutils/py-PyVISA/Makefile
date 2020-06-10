@@ -21,6 +21,7 @@ MODPY_SETUPTOOLS =	Yes
 MODPY_VERSION =		${MODPY_DEFAULT_VERSION_3}
 
 RUN_DEPENDS =		devel/py-serial${MODPY_FLAVOR} \
-			devel/pyusb${MODPY_FLAVOR}
+			devel/pyusb${MODPY_FLAVOR} \
+			sysutils/py-VISA${MODPY_FLAVOR}
 
 .include <bsd.port.mk>
