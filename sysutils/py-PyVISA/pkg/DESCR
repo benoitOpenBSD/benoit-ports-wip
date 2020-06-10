@@ -1,0 +1,3 @@
+A PyVISA backend that implements a large part of the "Virtual Instrument 
+Software Architecture" (VISA) in pure Python (with the help of some nice 
+cross platform libraries python packages!).
