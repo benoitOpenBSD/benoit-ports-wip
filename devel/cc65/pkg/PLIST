@@ -496,6 +496,7 @@ share/cc65/target/c64/drv/emd/c64-c256k.emd
 share/cc65/target/c64/drv/emd/c64-dqbb.emd
 share/cc65/target/c64/drv/emd/c64-georam.emd
 share/cc65/target/c64/drv/emd/c64-isepic.emd
+share/cc65/target/c64/drv/emd/c64-kerberos.emd
 share/cc65/target/c64/drv/emd/c64-ram.emd
 share/cc65/target/c64/drv/emd/c64-ramcart.emd
 share/cc65/target/c64/drv/emd/c64-reu.emd
