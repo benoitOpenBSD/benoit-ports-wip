@@ -467,4 +467,4 @@ include/asl/z8/f6482.inc
 include/asl/z8/f64xx.inc
 include/asl/z8/z86cxx.inc
 include/asl/z8/z86xx.inc
-include/asl/z8/z88c00xx.inc
+include/asl/z8/z88c0x.inc
