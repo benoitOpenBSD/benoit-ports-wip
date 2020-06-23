@@ -2,7 +2,7 @@
 
 COMMENT =		yet Another Multi Platform Cross Assembler
 
-DISTNAME =		wla-dx-20200531
+DISTNAME =		wla-dx-20200622
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/vhelin/wla-dx
 
 GH_ACCOUNT =		vhelin
 GH_PROJECT =		wla-dx
-GH_COMMIT =		adceb1cf7c8c3523c742d659e7e060a147c2f534
+GH_COMMIT =		6cf0d7e06916de763bcbcecbbfcea7af81a80e30
 
 WANTLIB +=		c m
 

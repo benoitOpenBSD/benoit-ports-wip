@@ -239,8 +239,11 @@ share/wla-dx/examples/8080/
 share/wla-dx/examples/8080/linker_test/
 share/wla-dx/examples/8080/linker_test/binaryfile
 share/wla-dx/examples/8080/linker_test/extras.s
-share/wla-dx/examples/8080/linker_test/include.s
+share/wla-dx/examples/8080/linker_test/include1.s
 share/wla-dx/examples/8080/linker_test/include2.s
+share/wla-dx/examples/8080/linker_test/include3.s
+share/wla-dx/examples/8080/linker_test/include4.s
+share/wla-dx/examples/8080/linker_test/include5.s
 share/wla-dx/examples/8080/linker_test/library.s
 share/wla-dx/examples/8080/linker_test/linkfile
 share/wla-dx/examples/8080/linker_test/main.s
