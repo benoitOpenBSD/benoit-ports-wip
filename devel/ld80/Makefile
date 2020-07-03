@@ -28,5 +28,6 @@ do-install:
 	${INSTALL_MAN_DIR} ${PREFIX}/man/man1
 	${INSTALL_MAN} ${WRKSRC}/ld80.1 ${PREFIX}/man/man1
 
+DEBUG_PACKAGES =	${BUILD_PACKAGES}
 
 .include <bsd.port.mk>
