@@ -1,0 +1,2 @@
+ld80 is a linker for .rel object files as seen on CP/M and TRS-80 machines. 
+It is a clone of Microsoft's original L80 linker and was written by Gabor Kiss.
