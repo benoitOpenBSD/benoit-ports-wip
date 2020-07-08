@@ -139,6 +139,7 @@ share/cc65/cfg/supervision-64k.cfg
 share/cc65/cfg/supervision.cfg
 share/cc65/cfg/telestrat.cfg
 share/cc65/cfg/vic20-32k.cfg
+share/cc65/cfg/vic20-tgi.cfg
 share/cc65/cfg/vic20.cfg
 share/cc65/include/
 share/cc65/include/6502.h
@@ -606,3 +607,5 @@ share/cc65/target/vic20/drv/emd/vic20-rama.emd
 share/cc65/target/vic20/drv/joy/
 share/cc65/target/vic20/drv/joy/vic20-ptvjoy.joy
 share/cc65/target/vic20/drv/joy/vic20-stdjoy.joy
+share/cc65/target/vic20/drv/tgi/
+share/cc65/target/vic20/drv/tgi/vic20-hi.tgi
