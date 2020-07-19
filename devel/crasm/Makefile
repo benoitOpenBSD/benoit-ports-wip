@@ -2,7 +2,7 @@
 
 COMMENT =		portable cross-asm for the 6800,6801,6803,6502,65C02,Z80
 
-DISTNAME =		crasm-1.9.20200427
+DISTNAME =		crasm-1.9.20200526
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/colinbourassa/crasm
 
 GH_ACCOUNT =		colinbourassa
 GH_PROJECT =		crasm
-GH_COMMIT =		6c68b0c949c655460f236edd47653906211b2881
+GH_COMMIT =		a681595db2d2b99bc748f5013c9b5cecfb4f5bac
 
 WANTLIB +=		c m
 

@@ -1,10 +1,10 @@
 $OpenBSD$
---- src/Makefile~	Sat Oct 14 20:58:55 2017
-+++ src/Makefile	Thu Apr 19 11:10:36 2018
+--- src/Makefile.orig	Tue May 26 06:01:45 2020
++++ src/Makefile	Sun Jul 19 11:36:20 2020
 @@ -1,5 +1,5 @@
  SHELL   =/bin/sh
--CFLAGS  = -O
-+# CFLAGS  = -O
+-CFLAGS  = -O -Wall
++#CFLAGS  = -O -Wall
  LDFLAGS	= 
  LIBS    = -lm
  RM	= rm
