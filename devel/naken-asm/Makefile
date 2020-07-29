@@ -2,7 +2,7 @@
 
 COMMENT =		assembler for MSP430, dsPIC and others
 
-DISTNAME =		naken-asm-20200612
+DISTNAME =		naken-asm-20200718
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/mikeakohn/naken_asm
 
 GH_ACCOUNT =		mikeakohn
 GH_PROJECT =		naken_asm
-GH_COMMIT =		e81ccb93f9f713bf07227fb57e19e7ba75b1b843
+GH_COMMIT =		56069d27cd949b88c3c3a8a7c524c2021faddc00
 
 WANTLIB +=		c curses readline
 
