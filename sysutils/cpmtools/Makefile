@@ -11,7 +11,7 @@ HOMEPAGE =	http://www.moria.de/~michael/cpmtools/
 MASTER_SITES =	http://www.moria.de/~michael/cpmtools/files/
 
 # GPLv3
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB +=		c curses
 
