@@ -7,10 +7,16 @@ lib/python${MODPY_VERSION}/site-packages/makeelf/${MODPY_PYCACHE}__init__.${MODP
 lib/python${MODPY_VERSION}/site-packages/makeelf/${MODPY_PYCACHE}elf.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/makeelf/${MODPY_PYCACHE}elfsect.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/makeelf/${MODPY_PYCACHE}elfstruct.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/makeelf/${MODPY_PYCACHE}test_elf.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/makeelf/${MODPY_PYCACHE}test_elfsect.${MODPY_PYC_MAGIC_TAG}pyc
+lib/python${MODPY_VERSION}/site-packages/makeelf/${MODPY_PYCACHE}test_elfstruct.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/makeelf/${MODPY_PYCACHE}utils.${MODPY_PYC_MAGIC_TAG}pyc
 lib/python${MODPY_VERSION}/site-packages/makeelf/elf.py
 lib/python${MODPY_VERSION}/site-packages/makeelf/elfsect.py
 lib/python${MODPY_VERSION}/site-packages/makeelf/elfstruct.py
+lib/python${MODPY_VERSION}/site-packages/makeelf/test_elf.py
+lib/python${MODPY_VERSION}/site-packages/makeelf/test_elfsect.py
+lib/python${MODPY_VERSION}/site-packages/makeelf/test_elfstruct.py
 lib/python${MODPY_VERSION}/site-packages/makeelf/type/
 lib/python${MODPY_VERSION}/site-packages/makeelf/type/__init__.py
 ${MODPY_COMMENT}lib/python${MODPY_VERSION}/site-packages/makeelf/type/${MODPY_PYCACHE}/

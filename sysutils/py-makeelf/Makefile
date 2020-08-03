@@ -2,7 +2,7 @@
 
 COMMENT =		ELF reader-writer library for Python3
 
-MODPY_EGG_VERSION = 	0.3.2
+MODPY_EGG_VERSION = 	0.3.4
 DISTNAME =		makeelf-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 CATEGORIES =		sysutils
