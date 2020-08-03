@@ -18,8 +18,9 @@ MODPY_PI =		Yes
 MODPY_SETUPTOOLS =	Yes
 MODPY_VERSION =		${MODPY_DEFAULT_VERSION_3}
 
-# Not working...
-TEST_DEPENDS =		devel/py-typing-extensions${MODPY_FLAVOR} \
-			textproc/py-pygments${MODPY_FLAVOR}
+# The 'pygments<3.0.0,>=2.6.0' distribution was not found and is required by rich
+RUN_DEPENDS =		textproc/py-pygments${MODPY_FLAVOR}
+
+TEST_DEPENDS =		devel/py-typing-extensions${MODPY_FLAVOR}
 
 .include <bsd.port.mk>
