@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/Makefile.orig	Wed Aug  5 23:37:51 2020
++++ src/Makefile	Wed Aug  5 23:38:07 2020
+@@ -60,7 +60,7 @@
+ endif
+ $(info BUILD_ID: $(BUILD_ID))
+ 
+-CFLAGS += -MMD -MP -O3 -I common \
++CFLAGS += -std=c99 -MMD -MP -O2 -I common \
+           -Wall -Wextra -Wno-char-subscripts $(USER_CFLAGS) \
+           -DCA65_INC="$(CA65_INC)" -DCC65_INC="$(CC65_INC)" -DCL65_TGT="$(CL65_TGT)" \
+           -DLD65_LIB="$(LD65_LIB)" -DLD65_OBJ="$(LD65_OBJ)" -DLD65_CFG="$(LD65_CFG)" \
