@@ -1,0 +1,4 @@
+lbrate extracts and decompresses files from CP/M LBR archives. 
+It can also list and test such archives. It transparently deals 
+with all the compressed/renamed file types usually found in LBRs, 
+making them much less awkward to deal with.
