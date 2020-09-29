@@ -1,0 +1,29 @@
+$OpenBSD$
+--- RunCPM/Makefile.posix.orig	Mon Sep 14 19:59:08 2020
++++ RunCPM/Makefile.posix	Tue Sep 29 15:43:41 2020
+@@ -5,21 +5,21 @@
+ MFILE = Makefile.posix
+ 
+ # Compiler command
+-CC = gcc
++CC = cc
+ #CC = gcc -DDEBUG=1 -DDEBUGLOG=1
+ 
+ # Flags to pass to the compiler - add "-g" to include debug information
+-CFLAGS = -Wall -O3 -fPIC -Wno-unused-variable
++CFLAGS = -Wall -O2 -fPIC -Wno-unused-variable
+ #CFLAGS = -Wall -O0 -fPIC -Wno-unused-variable -g
+ 
+ # Flags to pass to the linker
+-LDFLAGS = -lncurses -lm -ldl
++LDFLAGS = -lncurses -lm
+ 
+ # Objects to build
+ OBJS = main.o lua/liblua.a
+ 
+ # Lua building
+-LUABUILD = $(MAKE) -C lua linux
++LUABUILD = $(MAKE) -C lua freebsd
+ LUACLEAN = $(MAKE) -C lua clean
+ 
+ # Clean up program

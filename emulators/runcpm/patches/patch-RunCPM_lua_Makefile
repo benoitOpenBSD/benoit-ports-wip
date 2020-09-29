@@ -1,0 +1,21 @@
+$OpenBSD$
+--- RunCPM/lua/Makefile.orig	Mon Sep 14 19:59:08 2020
++++ RunCPM/lua/Makefile	Tue Sep 29 15:51:10 2020
+@@ -6,7 +6,7 @@
+ # Your platform. See PLATS for possible values.
+ PLAT= none
+ 
+-CC= gcc -std=gnu99
++CC= cc -std=gnu99
+ CFLAGS= -O2 -Wall -Wextra -DLUA_COMPAT_5_2 $(SYSCFLAGS) $(MYCFLAGS)
+ LDFLAGS= $(SYSLDFLAGS) $(MYLDFLAGS)
+ LIBS= -lm $(SYSLIBS) $(MYLIBS)
+@@ -119,7 +119,7 @@
+ 	$(MAKE) "LUAC_T=luac.exe" luac.exe
+ 
+ posix:
+-	$(MAKE) $(ALL) SYSCFLAGS="-DLUA_USE_POSIX"
++	$(MAKE) $(ALL) SYSCFLAGS="-DLUA_USE_POSIX" SYSLIBS="-Wl,-E -ledit" CC="cc"
+ 
+ solaris:
+ 	$(MAKE) $(ALL) SYSCFLAGS="-DLUA_USE_POSIX -DLUA_USE_DLOPEN -D_REENTRANT" SYSLIBS="-ldl"
