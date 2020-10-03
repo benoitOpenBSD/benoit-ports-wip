@@ -1,6 +1,6 @@
 $OpenBSD$
---- Makefile.orig	Tue Aug  6 10:43:52 2019
-+++ Makefile	Tue Aug  6 10:53:26 2019
+--- Makefile.orig	Sat Oct  3 22:13:21 2020
++++ Makefile	Sat Oct  3 22:18:36 2020
 @@ -1,11 +1,11 @@
  # Install Configuration
  
@@ -10,8 +10,8 @@ $OpenBSD$
  #CC=clang
  
  # Compiler options
--CFLAGS = -g -O0 -Wall
-+# CFLAGS=-g -O0 -Wall
+-CFLAGS = -g -O0 -Wall -DSHARE_INSTDIR="\"$(SHARE_INSTDIR)\""
++CFLAGS += -DSHARE_INSTDIR="\"$(SHARE_INSTDIR)\""
  
  # Normally minipro is installed to /usr/local.  If you want to put it
  # somewhere else, define that location here.
