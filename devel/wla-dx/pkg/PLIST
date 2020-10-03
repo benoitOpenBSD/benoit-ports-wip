@@ -407,6 +407,17 @@ share/wla-dx/examples/z80/sms_test/linkfile
 share/wla-dx/examples/z80/sms_test/makefile
 share/wla-dx/examples/z80/sms_test/sms.s
 share/wla-dx/examples/z80/sms_test/testsfile
+share/wla-dx/examples/z80/smschecksum_test_1/
+share/wla-dx/examples/z80/smschecksum_test_1/linkfile
+share/wla-dx/examples/z80/smschecksum_test_1/makefile
+share/wla-dx/examples/z80/smschecksum_test_1/randomData.rom
+share/wla-dx/examples/z80/smschecksum_test_1/sms.s
+share/wla-dx/examples/z80/smschecksum_test_1/testsfile
+share/wla-dx/examples/z80/smschecksum_test_2/
+share/wla-dx/examples/z80/smschecksum_test_2/linkfile
+share/wla-dx/examples/z80/smschecksum_test_2/makefile
+share/wla-dx/examples/z80/smschecksum_test_2/sms.s
+share/wla-dx/examples/z80/smschecksum_test_2/testsfile
 share/wla-dx/examples/z80/smsheader_test/
 share/wla-dx/examples/z80/smsheader_test/data1/
 share/wla-dx/examples/z80/smsheader_test/data1/data.txt
