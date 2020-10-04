@@ -16,7 +16,7 @@ HOMEPAGE =		https://cc65.github.io/cc65/
 
 GH_ACCOUNT =		cc65
 GH_PROJECT =		cc65
-GH_COMMIT =		fd208fdf0b6f968ba7491dcec1f53be71af08abd
+GH_COMMIT =		dbba5f3fc9ec1256b7226f458531b81bac25e983
 
 WANTLIB +=		c m
 
