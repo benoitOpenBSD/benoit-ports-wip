@@ -2,7 +2,7 @@
 
 COMMENT =	access CP/M file systems
 
-DISTNAME =	cpmtools-2.20
+DISTNAME =	cpmtools-2.21
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 CATEGORIES =	sysutils
@@ -16,5 +16,7 @@ PERMIT_PACKAGE =	Yes
 WANTLIB +=		c curses
 
 CONFIGURE_STYLE =	gnu
+
+NO_TEST =		Yes
 
 .include <bsd.port.mk>
