@@ -1,6 +1,15 @@
 $OpenBSD$
---- src/Makefile.orig	Wed Aug  5 23:37:51 2020
-+++ src/Makefile	Wed Aug  5 23:38:07 2020
+--- src/Makefile.orig	Sat Oct  3 19:35:23 2020
++++ src/Makefile	Sun Oct  4 12:21:25 2020
+@@ -40,7 +40,7 @@
+   RMDIR = $(RM) -r $1
+ endif
+ 
+-CC = $(CROSS_COMPILE)gcc
++CC = $(CROSS_COMPILE)cc
+ AR = $(CROSS_COMPILE)ar
+ 
+ ifdef CROSS_COMPILE
 @@ -60,7 +60,7 @@
  endif
  $(info BUILD_ID: $(BUILD_ID))
