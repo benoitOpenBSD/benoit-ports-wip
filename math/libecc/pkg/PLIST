@@ -1,6 +1,6 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 @bin bin/ec_self_tests
 @bin bin/ec_utils
-lib/libarith.a
-lib/libec.a
-lib/libsign.a
+@static-lib lib/libarith.a
+@static-lib lib/libec.a
+@static-lib lib/libsign.a
