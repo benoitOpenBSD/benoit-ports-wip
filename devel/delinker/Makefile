@@ -2,7 +2,7 @@
 
 COMMENT =		Unlinks a binary executable to get back a set of .o files
 
-DISTNAME =		delinker-20190225
+DISTNAME =		delinker-20200306
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -10,18 +10,20 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # ???
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+#MASTER_SITES =		${MASTER_SITES_GITHUB}
+MASTER_SITES =          https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		https://github.com/jnider/delinker
 
-GH_ACCOUNT =		jnider
-GH_PROJECT =		delinker
-GH_COMMIT =		9c0f492b4083ad4975e0cea374445b7be0d9441a
+#GH_ACCOUNT =		jnider
+#GH_PROJECT =		delinker
+#GH_COMMIT =		47ed3c890e947d451939d61d1fb95464a5579c35
 
-WANTLIB +=		c udis86
+WANTLIB +=		c
 
-BUILD_DEPENDS =		devel/udis86
-RUN_DEPENDS =		devel/udis86
+WRKDIST=	${WRKDIR}/delinker
+
+USE_GMAKE =		Yes
 
 NO_TEST =		Yes
 

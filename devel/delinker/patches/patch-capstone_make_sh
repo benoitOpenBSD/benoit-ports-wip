@@ -1,0 +1,12 @@
+$OpenBSD$
+--- capstone/make.sh.orig	Mon Oct  5 15:13:14 2020
++++ capstone/make.sh	Mon Oct  5 15:13:45 2020
+@@ -109,6 +109,8 @@
+ TARGET="$1"
+ [ -n "$TARGET" ] && shift
+ 
++MAKE=gmake
++
+ case "$TARGET" in
+   "" ) ${MAKE} $*;;
+   "default" ) ${MAKE} $*;;
