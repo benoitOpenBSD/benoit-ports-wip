@@ -1,4 +1,4 @@
-$OpenBSD: patch-src_VERSION_INFO,v 1.14 2016/06/27 09:37:55 benoit Exp $
+$OpenBSD: patch-src_VERSION_INFO,v 1.15 2016/08/30 06:52:57 benoit Exp $
 --- src/VERSION_INFO.orig	Mon Aug 22 20:31:38 2016
 +++ src/VERSION_INFO	Tue Aug 30 08:38:29 2016
 @@ -1 +1 @@

@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/udo-munk/z80as
 
 GH_ACCOUNT =		udo-munk
 GH_PROJECT =		z80as
-GH_COMMIT =		5f0507502b8026c75ab8150ee55488663a941353
+GH_COMMIT =		5c1b44daaa75cf042637d03ffe59add94f815f1a
 
 WANTLIB +=		c
 

@@ -1,19 +1,21 @@
-# $OpenBSD: Makefile,v 1.44 2016/06/27 09:37:55 benoit Exp $
+# $OpenBSD: Makefile,v 1.53 2020/02/06 08:10:00 benoit Exp $
 
 COMMENT =	Victor Shoup's Number Theory Library
 
-DISTNAME =	ntl-9.11.0
-SHARED_LIBS =	ntl	9.2	# 0.0
+DISTNAME =	ntl-11.4.3
+SHARED_LIBS =	ntl	10.0	# 0.0
 CATEGORIES =	math
 
-HOMEPAGE =	http://www.shoup.net/ntl/
+HOMEPAGE =	https://www.shoup.net/ntl/
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
-WANTLIB =		m gmp stdc++
+WANTLIB =		m gmp ${COMPILER_LIBCXX}
+
+COMPILER =		base-clang ports-gcc base-gcc
 
 MASTER_SITES =		${HOMEPAGE}
 
@@ -36,7 +38,8 @@ do-install:
 	@${INSTALL_DATA_DIR} ${PREFIX}/include/NTL
 	@cd ${WRKSRC}/include/NTL; ${INSTALL_DATA} *.h ${PREFIX}/include/NTL
 	@cd ${WRKBUILD}; ${INSTALL_DATA} .libs/libntl.a  ${PREFIX}/lib/libntl.a
-	@cd ${WRKBUILD}; ${INSTALL_DATA} .libs/libntl.so.${LIBntl_VERSION} ${PREFIX}/lib/libntl.so.${LIBntl_VERSION}
+	@cd ${WRKBUILD}; ${INSTALL_DATA} .libs/libntl.so.${LIBntl_VERSION} \
+		${PREFIX}/lib/libntl.so.${LIBntl_VERSION}
 	@${INSTALL_DATA_DIR} ${PREFIX}/share/doc/NTL
 	@cd ${WRKSRC}/doc; ${INSTALL_DATA} * ${PREFIX}/share/doc/NTL
 
