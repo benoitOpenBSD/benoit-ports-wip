@@ -1,8 +1,12 @@
 $OpenBSD$
 --- Makefile.orig	Mon Oct  5 13:20:45 2020
-+++ Makefile	Mon Oct  5 13:46:21 2020
-@@ -22,7 +22,7 @@
- 	make -C nucleus libnucleus.a
++++ Makefile	Mon Oct  5 17:44:27 2020
+@@ -19,10 +19,10 @@
+ 	cd capstone && ./make.sh
+ 
+ nucleus/libnucleus.a:
+-	make -C nucleus libnucleus.a
++	gmake -C nucleus libnucleus.a
  
  delinker: capstone/libcapstone.a nucleus/libnucleus.a $(C_SRC_UNLINKER) $(CPP_SRC_UNLINKER)
 -	g++ $(CPPFLAGS) $(C_SRC_UNLINKER) $(CPP_SRC_UNLINKER) $(INCLUDE_PATH) $(LIBRARY_PATH) -lcapstone -lnucleus -o delinker
