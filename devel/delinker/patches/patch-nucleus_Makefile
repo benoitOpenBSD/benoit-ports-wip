@@ -1,0 +1,9 @@
+$OpenBSD$
+--- nucleus/Makefile.orig	Mon Oct  5 17:41:32 2020
++++ nucleus/Makefile	Mon Oct  5 17:41:43 2020
+@@ -1,4 +1,4 @@
+-CXX=g++
++CXX=c++
+ CXXFLAGS=-Wall -std=c++11 -O2 -DNDEBUG -fpermissive
+ LDFLAGS=-lcapstone -lbfd-multiarch
+ INCLUDE_PATH = -I../capstone/include
