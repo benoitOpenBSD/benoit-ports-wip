@@ -2,7 +2,7 @@
 
 COMMENT =		Network authentication cracking tool
 
-DISTNAME =		ncrack-0.4ALPHA
+DISTNAME =		ncrack-0.7
 CATEGORIES =		security
 
 HOMEPAGE =              http://ncrack.org
@@ -10,7 +10,7 @@ HOMEPAGE =              http://ncrack.org
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		http://nmap.org/ncrack/dist/
 
