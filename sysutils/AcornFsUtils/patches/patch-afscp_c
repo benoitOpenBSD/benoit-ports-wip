@@ -1,0 +1,10 @@
+$OpenBSD$
+--- afscp.c.orig	Wed Oct  7 21:34:53 2020
++++ afscp.c	Wed Oct  7 21:41:23 2020
+@@ -1,5 +1,5 @@
+ #include "acorn-fs.h"
+-#include <alloca.h>
++// #include <alloca.h>
+ #include <ctype.h>
+ #include <stdlib.h>
+ #include <string.h>

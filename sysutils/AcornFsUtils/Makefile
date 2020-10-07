@@ -2,7 +2,7 @@
 
 COMMENT =		command-line utilities for Acorn 8-bit ADFS and DFS
 
-DISTNAME =		AcornFsUtils-20191107
+DISTNAME =		AcornFsUtils-20201004
 CATEGORIES =		sysutils
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -19,6 +19,8 @@ WANTLIB +=		c
 WRKDIST =		${WRKDIR}/AcornFsUtils
 
 DEBUG_PACKAGES =	${BUILD_PACKAGES}
+
+USE_GMAKE =		Yes
 
 NO_TEST =		Yes
 
