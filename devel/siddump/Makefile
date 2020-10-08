@@ -2,7 +2,7 @@
 
 COMMENT =		C64 music debug output utility
 
-DISTNAME =		siddump-20190814
+DISTNAME =		siddump-20201004
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,13 +16,11 @@ HOMEPAGE =		https://github.com/cadaver/siddump
 
 GH_ACCOUNT =		cadaver
 GH_PROJECT =		siddump
-GH_COMMIT =		7264a4ff20d98f0ace1d98dae47800199c415def
+GH_COMMIT =		ef58ac47edcf35e6ef09aa17b5c23ea4bb9a079d
 
 WANTLIB +=		c m
 
-# XXX Makefile to re-create
 USE_GMAKE =		Yes
-MAKE_FILE =		makefile
 ALL_TARGET =		siddump
 
 NO_TEST =		Yes

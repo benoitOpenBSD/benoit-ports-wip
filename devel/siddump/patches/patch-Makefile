@@ -1,5 +1,5 @@
---- makefile.orig	Thu Mar  7 22:40:02 2019
-+++ makefile	Thu Mar  7 22:41:58 2019
+--- Makefile.orig	Thu Mar  7 22:40:02 2019
++++ Makefile	Thu Mar  7 22:41:58 2019
 @@ -1,8 +1,8 @@
 -CC=gcc
 -CXX=g++
