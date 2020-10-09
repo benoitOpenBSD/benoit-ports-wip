@@ -2,7 +2,7 @@
 
 COMMENT =	by the Bluebook implementation of Smalltalk-80 
 
-DISTNAME =	Smalltalk-200524
+DISTNAME =	Smalltalk-200717
 CATEGORIES =	lang
 
 HOMEPAGE =	https://github.com/dbanay/Smalltalk
@@ -16,7 +16,7 @@ MASTER_SITES =          ${MASTER_SITES_GITHUB}
 
 GH_ACCOUNT =            dbanay
 GH_PROJECT =            Smalltalk
-GH_COMMIT =		81f8f14850cf98ebdbe205f6842f6284447cea76
+GH_COMMIT =		f647e589cfa84551899b61b48a638dae2d4e77d9
 
 WANTLIB +=		${COMPILER_LIBCXX} c m SDL2
 
