@@ -129,6 +129,7 @@ share/cc65/cfg/none.cfg
 share/cc65/cfg/osic1p-asm.cfg
 share/cc65/cfg/osic1p.cfg
 share/cc65/cfg/pce.cfg
+share/cc65/cfg/pet-overlay.cfg
 share/cc65/cfg/pet.cfg
 share/cc65/cfg/plus4.cfg
 share/cc65/cfg/sim6502.cfg
