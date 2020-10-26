@@ -203,6 +203,7 @@ include/asl/coldfire/mcf547x.inc
 include/asl/ctype.inc
 include/asl/emulmsp.inc
 include/asl/h8_3048.inc
+include/asl/kenbak.inc
 include/asl/reg166.inc
 include/asl/reg251.inc
 include/asl/reg29k.inc
