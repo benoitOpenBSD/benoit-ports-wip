@@ -1,0 +1,10 @@
+$OpenBSD$
+--- cmake/modules/c_flags.cmake.orig	Mon Jun  1 00:00:20 2020
++++ cmake/modules/c_flags.cmake	Tue Oct 27 11:05:12 2020
+@@ -48,6 +48,5 @@
+     add_cflag_if_supported("-ggdb")
+     add_cflag_if_supported("-O0")
+ else ()
+-    add_cflag_if_supported("-O2")
+     add_cflag_if_supported("-Werror")
+ endif ()
