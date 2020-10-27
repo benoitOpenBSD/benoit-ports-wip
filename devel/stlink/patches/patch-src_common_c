@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: src/common.c
+--- src/common.c.orig
++++ src/common.c
+@@ -1563,7 +1563,7 @@ static int map_file(mapped_file_t* mf, const char* pat
+         goto on_error;
+     }
+ 
+-    mf->len = st.st_size;
++    mf->len = (size_t)st.st_size;
+ 
+     /* success */
+     error = 0;

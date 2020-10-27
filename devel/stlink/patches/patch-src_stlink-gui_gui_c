@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: src/stlink-gui/gui.c
+--- src/stlink-gui/gui.c.orig
++++ src/stlink-gui/gui.c
+@@ -298,7 +298,7 @@ static gpointer stlink_gui_populate_filemem_view (gpoi
+         }
+         if (gui->file_mem.memory)
+             g_free (gui->file_mem.memory);
+-        gui->file_mem.size   = g_file_info_get_size (file_info);
++        gui->file_mem.size   = (gsize)g_file_info_get_size (file_info);
+         gui->file_mem.memory = g_malloc (gui->file_mem.size);
+ 
+         for (off = 0; off < (gint) gui->file_mem.size; off += MEM_READ_SIZE) {

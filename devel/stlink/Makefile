@@ -1,33 +1,31 @@
-# $OpenBSD$
+# $OpenBSD:$ 
 
-COMMENT =	stm32 discovery line programmer
+COMMENT =	toolset to program and debug STM32 devices
 
-V =		1.5.1
-DISTNAME =	stlink-${V}
+GH_ACCOUNT =	stlink-org
+GH_PROJECT =	stlink
+GH_TAGNAME =	v1.6.1
+
+SHARED_LIBS =	stlink	0.0 # 1.6.1
 CATEGORIES =	devel
-
-SHARED_LIBS +=	stlink		1.5
-
-HOMEPAGE =	https://github.com/texane/stlink
-
-MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
 PERMIT_PACKAGE =	Yes
 
-WANTLIB =		c usb-1.0
+WANTLIB += atk-1.0 c cairo cairo-gobject gdk-3 gdk_pixbuf-2.0
+WANTLIB += gio-2.0 glib-2.0 gobject-2.0 gtk-3 harfbuzz intl pango-1.0
+WANTLIB += pangocairo-1.0 usb-1.0
 
-# MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/
-
-MASTER_SITES =          ${MASTER_SITES_GITHUB}
-GH_ACCOUNT =            texane
-GH_PROJECT =            stlink
-GH_TAGNAME =            $V
-
+COMPILER =		base-clang ports-gcc base-gcc
 MODULES =		devel/cmake
 
-LIB_DEPENDS =		devel/libusb1
+LIB_DEPENDS =		x11/gtk+3 \
+			devel/libusb1
 
-NO_TEST =		Yes
+CONFIGURE_ARGS =	-DCMAKE_INSTALL_MANDIR=${PREFIX}/man/man1
+
+# Fix dos line-endings in files needing patches
+pre-patch:
+	@cd ${WRKSRC} && perl -i -pe 's/\r$$//' src/libusb_settings.h
 
 .include <bsd.port.mk>
