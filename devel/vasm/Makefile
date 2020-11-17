@@ -2,8 +2,8 @@
 
 COMMENT =		portable and retargetable assembler
 
-PKGNAME =		vasm-1.8h
-DISTNAME =      	vasm1_8h
+PKGNAME =		vasm-1.8i
+DISTNAME =      	vasm1_8i
 
 CATEGORIES =		devel
 
@@ -24,7 +24,7 @@ USE_GMAKE =		Yes
 # gmake CPU=m68k SYNTAX=mot
 MAKE_ENV +=		CPU=m68k SYNTAX=mot
 
-WRKDIST =       ${WRKDIR}/vasm
+WRKDIST =		${WRKDIR}/vasm
 
 NO_TEST =		Yes
 
