@@ -25,11 +25,12 @@ ALL_TARGET =		prod
 
 DEBUG_PACKAGES =	${BUILD_PACKAGES}
 
-NO_TEST =		Yes
-	
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/rasm ${PREFIX}/bin/
 		${INSTALL_DATA_DIR} ${PREFIX}/share/rasm/decrunch
 		cp -R ${WRKSRC}/decrunch/* ${PREFIX}/share/rasm/decrunch
+
+do-test:
+		cd ${WRKSRC} && ./rasm -autotest
 
 .include <bsd.port.mk>
