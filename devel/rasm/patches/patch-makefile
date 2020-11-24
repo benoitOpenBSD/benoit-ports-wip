@@ -1,0 +1,29 @@
+--- makefile.orig	Tue Nov 24 09:18:42 2020
++++ makefile	Tue Nov 24 08:36:57 2020
+@@ -1,14 +1,14 @@
+ CC=cc
+-EXEC=rasm.exe
++EXEC=rasm
+ 
+-CFLAGS=-lm -lrt -march=native -o $(EXEC)
++CFLAGS=-lm -march=native -o $(EXEC)
+ CFLAGS_OPT = $(CFLAGS) -O2
+ CFLAGS_DBG = $(CFLAGS) -g -pthread -DRDD
+ 
+ SRC_APUDIR=./apultra-master/src
+ SRC_LZSADIR=./lzsa-master/src
+ 
+-APU_FLAGS=-c -O3 -fomit-frame-pointer -I$(SRC_LZSADIR)/libdivsufsort/include -I$(SRC_APUDIR)
++APU_FLAGS=-c -O2 -fomit-frame-pointer -I$(SRC_LZSADIR)/libdivsufsort/include -I$(SRC_APUDIR)
+ 
+ APU_OBJ =$(SRC_APUDIR)/expand.o
+ APU_OBJ+=$(SRC_APUDIR)/matchfinder.o
+@@ -18,7 +18,7 @@
+ APU_OBJ+=$(SRC_APUDIR)/libdivsufsort/lib/sssort.o
+ APU_OBJ+=$(SRC_APUDIR)/libdivsufsort/lib/trsort.o
+ 
+-LZSA_FLAGS=-c -O3 -fomit-frame-pointer -I$(SRC_LZSADIR)/libdivsufsort/include -I$(SRC_LZSADIR)
++LZSA_FLAGS=-c -O2 -fomit-frame-pointer -I$(SRC_LZSADIR)/libdivsufsort/include -I$(SRC_LZSADIR)
+ 
+ LZSA_OBJ =$(SRC_LZSADIR)/dictionary.o
+ LZSA_OBJ+=$(SRC_LZSADIR)/expand_block_v1.o
