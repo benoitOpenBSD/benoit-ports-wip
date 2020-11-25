@@ -1,0 +1,8 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/linapple
+linapple/
+linapple/Master.dsk
+linapple/ftp/
+linapple/ftp/cache/
+linapple/images/
+linapple/linapple.conf

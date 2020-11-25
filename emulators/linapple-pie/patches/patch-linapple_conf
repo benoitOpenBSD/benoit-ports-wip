@@ -1,0 +1,12 @@
+$OpenBSD$
+--- linapple.conf.orig	Wed Nov 25 22:09:34 2020
++++ linapple.conf	Wed Nov 25 22:10:26 2020
+@@ -248,7 +248,7 @@
+ #
+ # Show Leds 1/0 - show leds while accessing disks (140Kb and HDD) or not, default - 1
+ 
+-	Fullscreen =	1
++	Fullscreen =	0
+ 	Boot at Startup =	1
+ 	Show Leds	= 1
+ 

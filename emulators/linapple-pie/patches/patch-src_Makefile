@@ -1,0 +1,11 @@
+$OpenBSD$
+--- src/Makefile.orig	Wed Nov 25 21:55:46 2020
++++ src/Makefile	Wed Nov 25 21:56:07 2020
+@@ -1,5 +1,5 @@
+-CXX ?= c++
+-CXXFLAGS ?= -O3
++CXX = c++
++CXXFLAGS ?= -O2
+ CXXFLAGS += -w
+ 
+ OBJS := $(filter-out Applewin.cpp Util_MemoryTextFile.cpp,$(wildcard *.cpp))
