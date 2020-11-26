@@ -1,15 +1,15 @@
-# $OpenBSD: Makefile,v 1.14 2019/02/27 15:33:13 naddy Exp $
+# $OpenBSD: Makefile,v 1.15 2019/07/12 20:43:46 sthen Exp $
 
 COMMENT =		device firmware update (DFU) USB programmer
 
-DISTNAME =		dfu-util-0.9
+DISTNAME =		dfu-util-0.10
 
 CATEGORIES =		comms
 
 HOMEPAGE =		http://dfu-util.sourceforge.net
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		${HOMEPAGE}/releases/
 
@@ -17,10 +17,5 @@ LIB_DEPENDS =		devel/libusb1
 WANTLIB =		c usb-1.0
 
 CONFIGURE_STYLE =	gnu
-
-NO_TEST =		Yes
-
-post-install:
-	${INSTALL_MAN} ${WRKSRC}/doc/dfu-util.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
