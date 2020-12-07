@@ -2,7 +2,7 @@
 
 COMMENT =		command-line utilities for Acorn 8-bit ADFS and DFS
 
-DISTNAME =		AcornFsUtils-20201004
+DISTNAME =		AcornFsUtils-20201018
 CATEGORIES =		sysutils
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
