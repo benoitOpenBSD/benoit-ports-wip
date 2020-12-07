@@ -406,6 +406,7 @@ share/wla-dx/examples/z80/sms_test/data3/data.txt
 share/wla-dx/examples/z80/sms_test/linkfile
 share/wla-dx/examples/z80/sms_test/makefile
 share/wla-dx/examples/z80/sms_test/sms.s
+share/wla-dx/examples/z80/sms_test/table-UTF8.tbl
 share/wla-dx/examples/z80/sms_test/testsfile
 share/wla-dx/examples/z80/smschecksum_test_1/
 share/wla-dx/examples/z80/smschecksum_test_1/linkfile
