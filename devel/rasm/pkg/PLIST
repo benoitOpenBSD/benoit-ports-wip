@@ -10,3 +10,5 @@ share/rasm/decrunch/lz49decrunch_v001.asm
 share/rasm/decrunch/lz4_docent.asm
 share/rasm/decrunch/unaplib.asm
 share/rasm/decrunch/unaplib_fast.asm
+share/rasm/decrunch/unlzsa1_fast.asm
+share/rasm/decrunch/unlzsa2_fast.asm
