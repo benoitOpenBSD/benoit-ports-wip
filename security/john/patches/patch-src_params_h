@@ -1,0 +1,31 @@
+$OpenBSD$
+--- src/params.h.orig	Fri Apr 12 03:00:35 2019
++++ src/params.h	Sun Dec 13 09:07:43 2020
+@@ -75,15 +75,15 @@
+  * notes above.
+  */
+ #ifndef JOHN_SYSTEMWIDE
+-#define JOHN_SYSTEMWIDE			0
++#define JOHN_SYSTEMWIDE			1
+ #endif
+ 
+ #if JOHN_SYSTEMWIDE
+ #ifndef JOHN_SYSTEMWIDE_EXEC /* please refer to the notes above */
+-#define JOHN_SYSTEMWIDE_EXEC		"/usr/libexec/john"
++#define JOHN_SYSTEMWIDE_EXEC		"${PREFIX}/bin/john"
+ #endif
+ #ifndef JOHN_SYSTEMWIDE_HOME
+-#define JOHN_SYSTEMWIDE_HOME		"/usr/share/john"
++#define JOHN_SYSTEMWIDE_HOME		"${PREFIX}/share/john"
+ #endif
+ #define JOHN_PRIVATE_HOME		"~/.john"
+ #endif
+@@ -138,7 +138,7 @@
+ #ifdef __DJGPP__
+ #define CFG_FULL_NAME			"$JOHN/john.ini"
+ #else
+-#define CFG_FULL_NAME			"$JOHN/john.conf"
++#define CFG_FULL_NAME			"${SYSCONFDIR}/john.conf"
+ #endif
+ #if JOHN_SYSTEMWIDE
+ #ifdef __DJGPP__
