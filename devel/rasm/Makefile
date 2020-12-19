@@ -2,7 +2,7 @@
 
 COMMENT =		Yes Another Z80 assembler
 
-DISTNAME =		rasm-20201204
+DISTNAME =		rasm-20201218
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -14,7 +14,7 @@ HOMEPAGE =		https://github.com/EdouardBERGE/rasm
 
 GH_ACCOUNT =		EdouardBERGE
 GH_PROJECT =		rasm
-GH_COMMIT =		3a93e76b0b5c2de6831f0f196a11dc6f94d6c65a
+GH_COMMIT =		d75d79fe0d7389996aaf783ca8e68a60236db916
 
 WANTLIB +=		c m
 
