@@ -1,0 +1,31 @@
+LIBDSK is a library for accessing discs and disc image files. It is intended for
+use in:
+
+Emulator tools - converting between real floppy discs and disc images, as
+  CPCTRANS / PCWTRANS do under DOS.
+Filesystem utilities - CPMTOOLS is configurable to use LIBDSK, thus allowing the
+  use of CPMTOOLS on emulator .DSK images.
+Emulators - it is possible to use LIBDSK as part of an emulator's floppy
+  controller emulation, thus giving the emulator transparent access to .DSK
+  files or real discs.
+
+LIBDSK has drivers for:
+
+Raw files (including /dev/fdn).
+Raw files, rearranged into logical filesystem order.
+.DSK files, as used in CPCEMU, JOYCE and other Sinclair/Amstrad emulators.
+MYZ80 hard drive image files.
+NanoWasp floppy image files.
+.CFI (Compressed Floppy Image) files, as created by FDCOPY.COM under DOS.
+The Linux floppy drive (supports CPC System and Data formats, which the standard
+  "Raw file" driver does not).
+The Windows 3.x/95/98/ME/NT/2000 floppy drive.
+The DOS floppy drive (via the PC BIOS).
+CopyQM files
+TeleDisk files
+Compaq QRST files
+APRIDISK image files
+The LDBS format
+rcpmfs - a backend that makes a Unix/Windows directory appear to be a CP/M disc
+  image.
+Another instance of LibDsk over a serial line.

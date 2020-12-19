@@ -1,0 +1,18 @@
+$OpenBSD$
+
+Index: lib/Makefile.in
+--- lib/Makefile.in.orig
++++ lib/Makefile.in
+@@ -828,12 +828,6 @@ $(CLASSDPRE)/%.class:   $(srcdir)/$(CLASSDPRE)/%.java
+ %.class:        $(srcdir)/%.java
+ 	here=`pwd` && cd $(srcdir) && $(JAVAC) $(JAVACFLAGS) -d $$here $<
+ 
+-$(HEADERPRE)_%.h:         $(CLASSDPRE)/%.class
+-	$(JAVAH) -jni $(CLASSCPRE).`basename $< .class`
+-	touch $@
+-
+-$(srcdir)/dskjni.c:	$(JARHEADERS)
+-
+ install-exec-local:
+ 	$(mkinstalldirs) $(libdir)
+ 	if test x@LIBDSKJAR@ = x; then true; else $(INSTALL_DATA) @LIBDSKJAR@ $(DESTDIR)/$(libdir); fi

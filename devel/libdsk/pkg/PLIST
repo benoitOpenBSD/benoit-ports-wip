@@ -1,0 +1,22 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/apriboot
+@bin bin/dskdump
+@bin bin/dskform
+@bin bin/dskid
+@bin bin/dskscan
+@bin bin/dsktrans
+@bin bin/dskutil
+@bin bin/md3serial
+include/libdsk.h
+@static-lib lib/libdsk.a
+lib/libdsk.la
+@lib lib/libdsk.so.${LIBdsk_VERSION}
+@man man/man1/apriboot.1
+@man man/man1/dskdump.1
+@man man/man1/dskform.1
+@man man/man1/dskid.1
+@man man/man1/dskscan.1
+@man man/man1/dsktrans.1
+@man man/man1/dskutil.1
+@man man/man1/md3serial.1
+@man man/man5/libdskrc.5
