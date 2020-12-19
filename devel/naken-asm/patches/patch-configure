@@ -10,7 +10,7 @@ Index: configure
  COMPILER_PREFIX=
  DEBUG=
  CFLAGS="-Wall"
-@@ -577,7 +577,7 @@ fi
+@@ -585,7 +585,7 @@ fi
  
  if test_compiler "gcc"
  then
@@ -19,7 +19,7 @@ Index: configure
  elif test_compiler "cc"
  then
    CC="cc"
-@@ -597,7 +597,7 @@ fi
+@@ -605,7 +605,7 @@ fi
  
  if [ "${DEBUG}" = "" ]
  then
