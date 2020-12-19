@@ -16,11 +16,13 @@ HOMEPAGE =		https://github.com/SteveFosdick/dis6502
 
 GH_ACCOUNT =		SteveFosdick
 GH_PROJECT =		dis6502
-GH_COMMIT =		e2394af28d6f6df4ad472b2ce9c081fb6548fddf
+GH_COMMIT =		a9bb52e3e5f1eec56c361ca23a008e32f8cb869d
 
 WANTLIB +=		c
 
 USE_GMAKE =		Yes
+
+BUILD_DEPENDS =		textproc/py-docutils
 
 NO_TEST =		Yes
 
