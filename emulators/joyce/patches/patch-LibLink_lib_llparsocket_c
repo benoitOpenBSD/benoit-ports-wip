@@ -1,0 +1,13 @@
+$OpenBSD$
+
+--- LibLink/lib/llparsocket.c.orig	Sat Dec 19 11:33:28 2020
++++ LibLink/lib/llparsocket.c	Sat Dec 19 11:34:21 2020
+@@ -21,6 +21,8 @@
+ #include "llparsocket.h"
+ #include "llspacket.h"
+ 
++#include <errno.h>
++
+ #ifdef HAVE_WINSOCK_H
+ #define AGAIN (WSAGetLastError() == WSAEWOULDBLOCK)
+ #else

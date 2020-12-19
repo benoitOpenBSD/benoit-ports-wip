@@ -1,0 +1,13 @@
+$OpenBSD$
+
+--- LibDsk/lib/dskerror.c.orig	Thu Mar  2 23:22:56 2017
++++ LibDsk/lib/dskerror.c	Sat Dec 19 11:11:43 2020
+@@ -27,6 +27,8 @@
+ #include <errno.h>
+ #endif
+ 
++#define DSK_ERR_CORRUPT  (-32)	/* Disk image file is corrupt */
++
+ LDPUBLIC32 char * LDPUBLIC16 dsk_strerror(dsk_err_t err)
+ {
+ 	switch(err)

@@ -1,0 +1,12 @@
+$OpenBSD$
+
+--- LibDsk/lib/drvcpcem.c.orig	Sat Dec 19 11:15:37 2020
++++ LibDsk/lib/drvcpcem.c	Sat Dec 19 11:16:29 2020
+@@ -31,6 +31,7 @@
+ #include "drvldbs.h"
+ #include "drvcpcem.h"
+ 
++#define DSK_ERR_CORRUPT  (-32)
+ 
+ /* This struct contains function pointers to the driver's functions, and the
+  * size of its DSK_DRIVER subclass */
