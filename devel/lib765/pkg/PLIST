@@ -1,0 +1,5 @@
+@comment $OpenBSD: PLIST,v$
+include/765.h
+@static-lib lib/lib765.a
+lib/lib765.la
+@lib lib/lib765.so.${LIB765_VERSION}
