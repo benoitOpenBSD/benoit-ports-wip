@@ -9,10 +9,13 @@ HOMEPAGE =	https://www.seasip.info/Unix/Joyce/
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
+SHARED_LIBS +=	link                 1.0      # 1.0
+
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-WANTLIB =	c dsk png xml2
+WANTLIB +=	c dsk m png xml2 z
+WANTLIB +=	${COMPILER_LIBCXX} 765 SDL bz2 iconv lzma sndio usbhid
 
 MASTER_SITES =	https://www.seasip.info/Unix/Joyce/
 
