@@ -1,0 +1,20 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/xanne
+@bin bin/xjoyce
+include/cpmredir.h
+include/liblink.h
+@static-lib lib/libcpmredir.a
+@static-lib lib/liblink.a
+lib/liblink.la
+@lib lib/liblink.so.${LIBlink_VERSION}
+share/Joyce/
+share/Joyce/16power2.bmp
+share/Joyce/16power3.bmp
+share/Joyce/Boot/
+share/Joyce/Boot/bootfile.emj
+share/Joyce/Disks/
+share/Joyce/Disks/utils.dsk
+share/Joyce/Disks/utils16.dsk
+share/Joyce/pcw.bmp
+share/Joyce/pcw16.bmp
+share/Joyce/pcwkey.bmp
