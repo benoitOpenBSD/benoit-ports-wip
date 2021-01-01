@@ -150,6 +150,7 @@ share/cc65/include/_6526.h
 share/cc65/include/_6545.h
 share/cc65/include/_6551.h
 share/cc65/include/_antic.h
+share/cc65/include/_atari5200os.h
 share/cc65/include/_atarios.h
 share/cc65/include/_gtia.h
 share/cc65/include/_heap.h
