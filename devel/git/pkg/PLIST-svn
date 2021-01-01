@@ -1,21 +1,15 @@
-@comment $OpenBSD: PLIST-svn,v 1.4 2012/11/30 21:16:30 pascal Exp $
-libdata/perl5/site_perl/Git/SVN/
-libdata/perl5/site_perl/Git/SVN.pm
-libdata/perl5/site_perl/Git/SVN/Editor.pm
-libdata/perl5/site_perl/Git/SVN/Fetcher.pm
-libdata/perl5/site_perl/Git/SVN/GlobSpec.pm
-libdata/perl5/site_perl/Git/SVN/Log.pm
-libdata/perl5/site_perl/Git/SVN/Memoize/
-libdata/perl5/site_perl/Git/SVN/Memoize/YAML.pm
-libdata/perl5/site_perl/Git/SVN/Migration.pm
-libdata/perl5/site_perl/Git/SVN/Prompt.pm
-libdata/perl5/site_perl/Git/SVN/Ra.pm
-libdata/perl5/site_perl/Git/SVN/Utils.pm
+@comment $OpenBSD: PLIST-svn,v 1.6 2020/01/27 23:49:12 abieber Exp $
+${P5SITE}/Git/SVN/
+${P5SITE}/Git/SVN.pm
+${P5SITE}/Git/SVN/Editor.pm
+${P5SITE}/Git/SVN/Fetcher.pm
+${P5SITE}/Git/SVN/GlobSpec.pm
+${P5SITE}/Git/SVN/Log.pm
+${P5SITE}/Git/SVN/Memoize/
+${P5SITE}/Git/SVN/Memoize/YAML.pm
+${P5SITE}/Git/SVN/Migration.pm
+${P5SITE}/Git/SVN/Prompt.pm
+${P5SITE}/Git/SVN/Ra.pm
+${P5SITE}/Git/SVN/Utils.pm
 libexec/git/git-svn
 @man man/man1/git-svn.1
-@man man/man3p/Git::SVN::Editor.3p
-@man man/man3p/Git::SVN::Fetcher.3p
-@man man/man3p/Git::SVN::Memoize::YAML.3p
-@man man/man3p/Git::SVN::Prompt.3p
-@man man/man3p/Git::SVN::Ra.3p
-@man man/man3p/Git::SVN::Utils.3p

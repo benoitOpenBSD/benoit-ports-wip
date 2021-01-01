@@ -1,20 +1,25 @@
-@comment $OpenBSD: PLIST-main,v 1.80 2018/01/20 09:24:57 benoit Exp $
+@comment $OpenBSD: PLIST-main,v 1.99 2020/12/29 20:23:05 kn Exp $
 @pkgpath devel/git
 @newgroup _gitdaemon:778
 @newuser _gitdaemon:778:_gitdaemon:daemon:GIT Daemon:/nonexistent:/sbin/nologin
+@rcscript ${RCDIR}/gitdaemon
 @bin bin/git
 bin/git-cvsserver
 @bin bin/git-receive-pack
-@bin bin/git-shell
+@shell bin/git-shell
 @bin bin/git-upload-archive
 @bin bin/git-upload-pack
-lib/libgit.a
-libdata/perl5/site_perl/Git/
-libdata/perl5/site_perl/Git.pm
-libdata/perl5/site_perl/Git/I18N.pm
-libdata/perl5/site_perl/Git/IndexInfo.pm
-libdata/perl5/site_perl/Git/Packet.pm
-libdata/perl5/site_perl/${MACHINE_ARCH}-openbsd/
+@static-lib lib/libgit.a
+${P5SITE}/Git/
+${P5SITE}/Git.pm
+${P5SITE}/Git/I18N.pm
+${P5SITE}/Git/IndexInfo.pm
+${P5SITE}/Git/LoadCPAN/
+${P5SITE}/Git/LoadCPAN.pm
+${P5SITE}/Git/LoadCPAN/Error.pm
+${P5SITE}/Git/LoadCPAN/Mail/
+${P5SITE}/Git/LoadCPAN/Mail/Address.pm
+${P5SITE}/Git/Packet.pm
 libexec/git/
 @bin libexec/git/git
 @bin libexec/git/git-add
@@ -28,6 +33,7 @@ libexec/git/git-bisect
 @bin libexec/git/git-bisect--helper
 @bin libexec/git/git-blame
 @bin libexec/git/git-branch
+@bin libexec/git/git-bugreport
 @bin libexec/git/git-bundle
 @bin libexec/git/git-cat-file
 @bin libexec/git/git-check-attr
@@ -42,6 +48,7 @@ libexec/git/git-bisect
 @bin libexec/git/git-clone
 @bin libexec/git/git-column
 @bin libexec/git/git-commit
+@bin libexec/git/git-commit-graph
 @bin libexec/git/git-commit-tree
 @bin libexec/git/git-config
 @bin libexec/git/git-count-objects
@@ -60,6 +67,7 @@ libexec/git/git-cvsserver
 @bin libexec/git/git-diff-tree
 @bin libexec/git/git-difftool
 libexec/git/git-difftool--helper
+@bin libexec/git/git-env--helper
 @bin libexec/git/git-fast-export
 @bin libexec/git/git-fast-import
 @bin libexec/git/git-fetch
@@ -67,6 +75,7 @@ libexec/git/git-difftool--helper
 libexec/git/git-filter-branch
 @bin libexec/git/git-fmt-merge-msg
 @bin libexec/git/git-for-each-ref
+@bin libexec/git/git-for-each-repo
 @bin libexec/git/git-format-patch
 @bin libexec/git/git-fsck
 @bin libexec/git/git-fsck-objects
@@ -90,6 +99,7 @@ libexec/git/git-instaweb
 @bin libexec/git/git-ls-tree
 @bin libexec/git/git-mailinfo
 @bin libexec/git/git-mailsplit
+@bin libexec/git/git-maintenance
 @bin libexec/git/git-merge
 @bin libexec/git/git-merge-base
 @bin libexec/git/git-merge-file
@@ -105,6 +115,7 @@ libexec/git/git-mergetool
 libexec/git/git-mergetool--lib
 @bin libexec/git/git-mktag
 @bin libexec/git/git-mktree
+@bin libexec/git/git-multi-pack-index
 @bin libexec/git/git-mv
 @bin libexec/git/git-name-rev
 @bin libexec/git/git-notes
@@ -112,19 +123,16 @@ libexec/git/git-p4
 @bin libexec/git/git-pack-objects
 @bin libexec/git/git-pack-redundant
 @bin libexec/git/git-pack-refs
-libexec/git/git-parse-remote
 @bin libexec/git/git-patch-id
 @bin libexec/git/git-prune
 @bin libexec/git/git-prune-packed
 @bin libexec/git/git-pull
 @bin libexec/git/git-push
 libexec/git/git-quiltimport
+@bin libexec/git/git-range-diff
 @bin libexec/git/git-read-tree
-libexec/git/git-rebase
-libexec/git/git-rebase--am
-@bin libexec/git/git-rebase--helper
-libexec/git/git-rebase--interactive
-libexec/git/git-rebase--merge
+@bin libexec/git/git-rebase
+libexec/git/git-rebase--preserve-merges
 @bin libexec/git/git-receive-pack
 @bin libexec/git/git-reflog
 @bin libexec/git/git-remote
@@ -134,12 +142,12 @@ libexec/git/git-rebase--merge
 @bin libexec/git/git-remote-ftps
 @bin libexec/git/git-remote-http
 @bin libexec/git/git-remote-https
-@bin libexec/git/git-remote-testsvn
 @bin libexec/git/git-repack
 @bin libexec/git/git-replace
 libexec/git/git-request-pull
 @bin libexec/git/git-rerere
 @bin libexec/git/git-reset
+@bin libexec/git/git-restore
 @bin libexec/git/git-rev-list
 @bin libexec/git/git-rev-parse
 @bin libexec/git/git-revert
@@ -155,13 +163,15 @@ libexec/git/git-sh-setup
 @bin libexec/git/git-show-branch
 @bin libexec/git/git-show-index
 @bin libexec/git/git-show-ref
+@bin libexec/git/git-sparse-checkout
 @bin libexec/git/git-stage
-libexec/git/git-stash
+@bin libexec/git/git-stash
 @bin libexec/git/git-status
 @bin libexec/git/git-stripspace
 libexec/git/git-submodule
 @bin libexec/git/git-submodule--helper
 libexec/git/git-subtree
+@bin libexec/git/git-switch
 @bin libexec/git/git-symbolic-ref
 @bin libexec/git/git-tag
 @bin libexec/git/git-unpack-file
@@ -182,7 +192,6 @@ libexec/git/git-web--browse
 libexec/git/mergetools/
 libexec/git/mergetools/araxis
 libexec/git/mergetools/bc
-libexec/git/mergetools/bc3
 libexec/git/mergetools/codecompare
 libexec/git/mergetools/deltawalker
 libexec/git/mergetools/diffmerge
@@ -190,19 +199,18 @@ libexec/git/mergetools/diffuse
 libexec/git/mergetools/ecmerge
 libexec/git/mergetools/emerge
 libexec/git/mergetools/examdiff
+libexec/git/mergetools/guiffy
 libexec/git/mergetools/gvimdiff
-libexec/git/mergetools/gvimdiff2
-libexec/git/mergetools/gvimdiff3
 libexec/git/mergetools/kdiff3
 libexec/git/mergetools/kompare
 libexec/git/mergetools/meld
+libexec/git/mergetools/nvimdiff
 libexec/git/mergetools/opendiff
 libexec/git/mergetools/p4merge
+libexec/git/mergetools/smerge
 libexec/git/mergetools/tkdiff
 libexec/git/mergetools/tortoisemerge
 libexec/git/mergetools/vimdiff
-libexec/git/mergetools/vimdiff2
-libexec/git/mergetools/vimdiff3
 libexec/git/mergetools/winmerge
 libexec/git/mergetools/xxdiff
 @man man/man1/git-add.1
@@ -214,6 +222,7 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-bisect.1
 @man man/man1/git-blame.1
 @man man/man1/git-branch.1
+@man man/man1/git-bugreport.1
 @man man/man1/git-bundle.1
 @man man/man1/git-cat-file.1
 @man man/man1/git-check-attr.1
@@ -227,6 +236,7 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-clean.1
 @man man/man1/git-clone.1
 @man man/man1/git-column.1
+@man man/man1/git-commit-graph.1
 @man man/man1/git-commit-tree.1
 @man man/man1/git-commit.1
 @man man/man1/git-config.1
@@ -252,6 +262,7 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-filter-branch.1
 @man man/man1/git-fmt-merge-msg.1
 @man man/man1/git-for-each-ref.1
+@man man/man1/git-for-each-repo.1
 @man man/man1/git-format-patch.1
 @man man/man1/git-fsck-objects.1
 @man man/man1/git-fsck.1
@@ -275,6 +286,7 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-ls-tree.1
 @man man/man1/git-mailinfo.1
 @man man/man1/git-mailsplit.1
+@man man/man1/git-maintenance.1
 @man man/man1/git-merge-base.1
 @man man/man1/git-merge-file.1
 @man man/man1/git-merge-index.1
@@ -285,6 +297,7 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-mergetool.1
 @man man/man1/git-mktag.1
 @man man/man1/git-mktree.1
+@man man/man1/git-multi-pack-index.1
 @man man/man1/git-mv.1
 @man man/man1/git-name-rev.1
 @man man/man1/git-notes.1
@@ -292,26 +305,26 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-pack-objects.1
 @man man/man1/git-pack-redundant.1
 @man man/man1/git-pack-refs.1
-@man man/man1/git-parse-remote.1
 @man man/man1/git-patch-id.1
 @man man/man1/git-prune-packed.1
 @man man/man1/git-prune.1
 @man man/man1/git-pull.1
 @man man/man1/git-push.1
 @man man/man1/git-quiltimport.1
+@man man/man1/git-range-diff.1
 @man man/man1/git-read-tree.1
 @man man/man1/git-rebase.1
 @man man/man1/git-receive-pack.1
 @man man/man1/git-reflog.1
 @man man/man1/git-remote-ext.1
 @man man/man1/git-remote-fd.1
-@man man/man1/git-remote-testgit.1
 @man man/man1/git-remote.1
 @man man/man1/git-repack.1
 @man man/man1/git-replace.1
 @man man/man1/git-request-pull.1
 @man man/man1/git-rerere.1
 @man man/man1/git-reset.1
+@man man/man1/git-restore.1
 @man man/man1/git-rev-list.1
 @man man/man1/git-rev-parse.1
 @man man/man1/git-revert.1
@@ -327,12 +340,14 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-show-index.1
 @man man/man1/git-show-ref.1
 @man man/man1/git-show.1
+@man man/man1/git-sparse-checkout.1
 @man man/man1/git-stage.1
 @man man/man1/git-stash.1
 @man man/man1/git-status.1
 @man man/man1/git-stripspace.1
 @man man/man1/git-submodule.1
 @man man/man1/git-subtree.1
+@man man/man1/git-switch.1
 @man man/man1/git-symbolic-ref.1
 @man man/man1/git-tag.1
 @man man/man1/git-unpack-file.1
@@ -351,10 +366,7 @@ libexec/git/mergetools/xxdiff
 @man man/man1/git-worktree.1
 @man man/man1/git-write-tree.1
 @man man/man1/git.1
-@man man/man1/gitremote-helpers.1
 @man man/man1/gitweb.1
-@man man/man3p/Git.3p
-@man man/man3p/Git::I18N.3p
 @man man/man5/gitattributes.5
 @man man/man5/githooks.5
 @man man/man5/gitignore.5
@@ -367,14 +379,16 @@ libexec/git/mergetools/xxdiff
 @man man/man7/gitcvs-migration.7
 @man man/man7/gitdiffcore.7
 @man man/man7/giteveryday.7
+@man man/man7/gitfaq.7
 @man man/man7/gitglossary.7
 @man man/man7/gitnamespaces.7
+@man man/man7/gitremote-helpers.7
 @man man/man7/gitrevisions.7
 @man man/man7/gitsubmodules.7
-@man man/man7/gittutorial-${MODPY_VERSION}
+@man man/man7/gittutorial-2.7
 @man man/man7/gittutorial.7
 @man man/man7/gitworkflows.7
-share/doc/pkg-readmes/${FULLPKGNAME}
+share/doc/pkg-readmes/${PKGSTEM}
 share/emacs/
 share/emacs/site-lisp/
 share/emacs/site-lisp/git-blame.el
@@ -395,14 +409,17 @@ share/git-core/templates/hooks/post-receive-email.sample
 share/git-core/templates/hooks/post-update.sample
 share/git-core/templates/hooks/pre-applypatch.sample
 share/git-core/templates/hooks/pre-commit.sample
+share/git-core/templates/hooks/pre-merge-commit.sample
 share/git-core/templates/hooks/pre-push.sample
 share/git-core/templates/hooks/pre-rebase.sample
 share/git-core/templates/hooks/pre-receive.sample
 share/git-core/templates/hooks/prepare-commit-msg.sample
+share/git-core/templates/hooks/push-to-checkout.sample
 share/git-core/templates/hooks/setgitperms.perl
 share/git-core/templates/hooks/update.sample
 share/git-core/templates/info/
 share/git-core/templates/info/exclude
+share/gitk/lib/msgs/zh_cn.msg
 share/gitweb/
 share/gitweb/README
 share/gitweb/gitweb.cgi
@@ -414,6 +431,7 @@ share/gitweb/static/gitweb.js
 share/locale/bg/LC_MESSAGES/git.mo
 share/locale/ca/LC_MESSAGES/git.mo
 share/locale/de/LC_MESSAGES/git.mo
+share/locale/el/LC_MESSAGES/git.mo
 share/locale/es/LC_MESSAGES/git.mo
 share/locale/fr/LC_MESSAGES/git.mo
 share/locale/is/
@@ -421,11 +439,13 @@ share/locale/is/LC_MESSAGES/
 share/locale/is/LC_MESSAGES/git.mo
 share/locale/it/LC_MESSAGES/git.mo
 share/locale/ko/LC_MESSAGES/git.mo
+share/locale/pl/LC_MESSAGES/git.mo
 share/locale/pt_PT/
 share/locale/pt_PT/LC_MESSAGES/
 share/locale/pt_PT/LC_MESSAGES/git.mo
 share/locale/ru/LC_MESSAGES/git.mo
 share/locale/sv/LC_MESSAGES/git.mo
+share/locale/tr/LC_MESSAGES/git.mo
 share/locale/vi/LC_MESSAGES/git.mo
 share/locale/zh_CN/LC_MESSAGES/git.mo
-@rcscript ${RCDIR}/gitdaemon
+share/locale/zh_TW/LC_MESSAGES/git.mo
