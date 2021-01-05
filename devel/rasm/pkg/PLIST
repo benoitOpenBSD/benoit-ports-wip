@@ -2,7 +2,6 @@
 @bin bin/rasm
 share/rasm/
 share/rasm/decrunch/
-share/rasm/decrunch/aplib_z80_todo.asm
 share/rasm/decrunch/deexo.asm
 share/rasm/decrunch/dzx7_turbo.asm
 share/rasm/decrunch/lz48decrunch_v006b.asm

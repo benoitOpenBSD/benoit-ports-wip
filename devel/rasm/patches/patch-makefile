@@ -1,6 +1,7 @@
---- makefile.orig	Tue Nov 24 09:18:42 2020
-+++ makefile	Tue Nov 24 08:36:57 2020
-@@ -1,14 +1,14 @@
+$OpenBSD$
+--- makefile.orig	Tue Jan  5 18:29:01 2021
++++ makefile	Tue Jan  5 20:58:11 2021
+@@ -1,7 +1,7 @@
  CC=cc
 -EXEC=rasm.exe
 +EXEC=rasm
@@ -9,7 +10,8 @@
 +CFLAGS=-lm -march=native -o $(EXEC)
  CFLAGS_OPT = $(CFLAGS) -O2
  CFLAGS_DBG = $(CFLAGS) -g -pthread -DRDD
- 
+ CFLAGS_3RD = $(CFLAGS) -g -pthread -DNO_3RD_PARTIES
+@@ -9,7 +9,7 @@
  SRC_APUDIR=./apultra-master/src
  SRC_LZSADIR=./lzsa-master/src
  
@@ -18,7 +20,7 @@
  
  APU_OBJ =$(SRC_APUDIR)/expand.o
  APU_OBJ+=$(SRC_APUDIR)/matchfinder.o
-@@ -18,7 +18,7 @@
+@@ -19,7 +19,7 @@
  APU_OBJ+=$(SRC_APUDIR)/libdivsufsort/lib/sssort.o
  APU_OBJ+=$(SRC_APUDIR)/libdivsufsort/lib/trsort.o
  
