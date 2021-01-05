@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: src/trs_uart.c
+--- src/trs_uart.c.orig
++++ src/trs_uart.c
+@@ -97,6 +97,7 @@ static struct {
+ 
+ static int trs_uart_wordbits[] = TRS_UART_WORDBITS_TABLE;
+ static float trs_uart_baud[] = TRS_UART_BAUD_TABLE;
++char trs_uart_name[FILENAME_MAX];
+ 
+ static int
+ xlate_baud(int trs_baud)

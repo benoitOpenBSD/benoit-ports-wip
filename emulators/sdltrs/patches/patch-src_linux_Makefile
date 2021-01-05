@@ -1,0 +1,17 @@
+$OpenBSD$
+--- src/linux/Makefile.orig	Sun Feb 14 01:38:35 2010
++++ src/linux/Makefile	Tue Jan  5 16:41:56 2021
+@@ -1,10 +1,10 @@
+ # Project: sdltrs
+ 
+-CC   = gcc
++CC   = cc
+ OBJ  = blit.o debug.o dis.o error.o load_cmd.o load_hex.o main.o trs_mkdisk.o trs_cassette.o trs_chars.o trs_disk.o trs_hard.o trs_imp_exp.o trs_interrupt.o trs_io.o trs_memory.o trs_printer.o trs_rom1.o trs_rom3.o trs_rom4p.o trs_sdl_gui.o trs_sdl_interface.o trs_sdl_keyboard.o trs_state_save.o trs_uart.o z80.o sdltrs_main.o PasteManager.o
+ LINKOBJ  = blit.o debug.o dis.o error.o load_cmd.o load_hex.o main.o trs_mkdisk.o trs_cassette.o trs_chars.o trs_disk.o trs_hard.o trs_imp_exp.o trs_interrupt.o trs_io.o trs_memory.o trs_printer.o trs_rom1.o trs_rom3.o trs_rom4p.o trs_sdl_gui.o trs_sdl_interface.o trs_sdl_keyboard.o trs_state_save.o  trs_uart.o z80.o sdltrs_main.o PasteManager.o
+-LIBS =  -lSDL -lXt
+-INCS =  
++LIBS =  -L/usr/local/lib -L/usr/X11R6/lib -lSDL -lXt -lX11
++INCS =  -I/usr/local/include -I/usr/X11R6/include
+ BIN  = sdltrs
+ CFLAGS = $(INCS) -g 
+ 

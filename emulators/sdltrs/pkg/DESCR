@@ -1,0 +1,17 @@
+sdltrs is a Radio Shack TRS-80 Model I/III/4/4P emulator for Macintosh OSX,
+Windows, and Linux. It has been ported from Tim Mann's excellent X-Windows
+UNIX emulator xtrs. Instead of using the X-Window system for graphics, it uses
+the portable SDL library.
+
+1) Create a 'sdltrs' directory somewhere and cd into it
+2) Grab this TRS-80 Model III file: http://www.tim-mann.org/trs80/ld4-631.iii
+and rename it to model3.rom
+3) Run sdltrs (you will get a black screen pop up with 'You do not have a ROM
+image installed for Model I)
+4) Press F8 to quit the emulator
+5) Edit the sdltrs.t8c file the program created in that directory and change
+'model=1' in the file to 'model=3' and rerun sdltrs
+6) Re-run sdltrs and you'll get a 'Cass?' prompt (hit ENTER on that)
+7) You'll also get a Memory Size? prompt, you can specify memory here or hit ENTER
+8) It should drop into a READY > prompt
+(Press F8 to quit)

@@ -1,0 +1,16 @@
+$OpenBSD$
+
+Index: src/linux/PasteManager.c
+--- src/linux/PasteManager.c.orig
++++ src/linux/PasteManager.c
+@@ -2,8 +2,8 @@
+ #include <limits.h>
+ #include <X11/Xutil.h>
+ 
+-#include "SDL/SDL.h"
+-#include "SDL/SDL_syswm.h"
++#include <SDL/SDL.h>
++#include <SDL/SDL_syswm.h>
+ 
+ /* forward declarations */
+ static int init_scrap(void);

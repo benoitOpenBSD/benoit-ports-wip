@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: src/trs_sdl_gui.c
+--- src/trs_sdl_gui.c.orig
++++ src/trs_sdl_gui.c
+@@ -69,6 +69,8 @@
+ #define MENU_MOD KMOD_ALT
+ #endif
+ 
++char trs_uart_name[FILENAME_MAX];
++
+ typedef struct menu_entry_type {
+   char title[80];
+   int type;
