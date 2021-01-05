@@ -1,0 +1,13 @@
+Based on Lennart Benschop's C core that can be found somewhere on the 'net 
+(last address known to me was http://koti.mbnet.fi/~atjs/mc6809/Assembler/A09.c), 
+I built a complete Macro Assembler that is functionally better than the 
+TSC Flex9 Assembler (no wonder, I got multimegabytes to play with, 
+whereas this excellent piece of software works within 50K or so!). 
+It can deliver binary, Intel Hex, Motorola S1, and Flex9 binary 
+output files, plus Flex9 RELASMB-compatible relocatable object modules.
+
+I taylored the original to my taste by working through the source 
+code; since A09 has reached a level of complexity that doesn't 
+really lend itself to following the "Use the Source, Luke!" 
+principle if you just want to hack a little 6809 assembly 
+program, I've added this documentation. Have fun!

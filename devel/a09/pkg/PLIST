@@ -1,0 +1,4 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/a09
+share/a09/
+share/a09/a09.htm
