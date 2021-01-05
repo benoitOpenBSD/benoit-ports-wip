@@ -1,0 +1,12 @@
+Based on Arto Salmi's C core that can be found somewhere on the 'net 
+(last address known to me was http://koti.mbnet.fi/~atjs/mc6809/Disassembler/dasm09.TGZ), 
+I built a complete 6800/6809/6309 disassembler that can handle input files 
+in a variety of formats (Intel Hex / Motorola S09 / Flex9 Binary / Binary). 
+Since disassembly without guidance produces measly results, it can load 
+information files with quite a lot of directives, too.
+
+I taylored the original to my taste by working through the source code; 
+since F9DASM has reached a level of complexity that doesn't really lend 
+itself to following the "Use the Source, Luke!" principle if you just 
+want to disassemble a little 6809 program, I've added this documentation. 
+Have fun!

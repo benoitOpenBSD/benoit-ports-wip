@@ -1,0 +1,7 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/f9dasm
+@bin bin/hex2bin
+@bin bin/mot2bin
+share/f9dasm/
+share/f9dasm/f9dasm.htm
+share/f9dasm/sample.zip
