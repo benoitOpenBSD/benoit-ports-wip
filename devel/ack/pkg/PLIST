@@ -1,0 +1,470 @@
+@comment $OpenBSD: PLIST,v$
+ack/
+ack/bin/
+@bin ack/bin/aal
+@bin ack/bin/abmodules
+@bin ack/bin/ack
+@bin ack/bin/aelflod
+@bin ack/bin/anm
+@bin ack/bin/ashow
+@bin ack/bin/asize
+@bin ack/bin/aslod
+@bin ack/bin/astrip
+@bin ack/bin/esize
+@bin ack/bin/int
+ack/lib/
+ack/lib/ack/
+ack/lib/ack/cpm/
+@bin ack/lib/ack/cpm/as
+@bin ack/lib/ack/cpm/ncg
+@bin ack/lib/ack/cpm/top
+@bin ack/lib/ack/cpp.ansi
+@bin ack/lib/ack/cvmach
+ack/lib/ack/ego/
+@bin ack/lib/ack/ego/bo
+@bin ack/lib/ack/ego/ca
+@bin ack/lib/ack/ego/cf
+@bin ack/lib/ack/ego/cj
+@bin ack/lib/ack/ego/cs
+@bin ack/lib/ack/ego/ic
+@bin ack/lib/ack/ego/il
+@bin ack/lib/ack/ego/lv
+@bin ack/lib/ack/ego/ra
+@bin ack/lib/ack/ego/sp
+@bin ack/lib/ack/ego/sr
+@bin ack/lib/ack/ego/ud
+@bin ack/lib/ack/em_ass
+@bin ack/lib/ack/em_b
+@bin ack/lib/ack/em_bem
+@bin ack/lib/ack/em_cemcom.ansi
+@bin ack/lib/ack/em_decode
+@bin ack/lib/ack/em_ego
+@bin ack/lib/ack/em_encode
+@bin ack/lib/ack/em_led
+@bin ack/lib/ack/em_m2
+@bin ack/lib/ack/em_opt
+@bin ack/lib/ack/em_opt2
+@bin ack/lib/ack/em_pc
+ack/lib/ack/linux386/
+@bin ack/lib/ack/linux386/as
+@bin ack/lib/ack/linux386/ncg
+ack/lib/ack/linux68k/
+@bin ack/lib/ack/linux68k/as
+@bin ack/lib/ack/linux68k/ncg
+ack/lib/ack/linuxmips/
+@bin ack/lib/ack/linuxmips/as
+@bin ack/lib/ack/linuxmips/mcg
+@bin ack/lib/ack/linuxmips/top
+ack/lib/ack/linuxppc/
+@bin ack/lib/ack/linuxppc/as
+@bin ack/lib/ack/linuxppc/ncg
+@bin ack/lib/ack/linuxppc/top
+ack/lib/ack/osx386/
+@bin ack/lib/ack/osx386/as
+@bin ack/lib/ack/osx386/ncg
+ack/lib/ack/osxppc/
+@bin ack/lib/ack/osxppc/as
+@bin ack/lib/ack/osxppc/ncg
+@bin ack/lib/ack/osxppc/top
+ack/lib/ack/pc86/
+@bin ack/lib/ack/pc86/as
+@bin ack/lib/ack/pc86/ncg
+ack/lib/ack/pdpv7/
+@bin ack/lib/ack/pdpv7/as
+@bin ack/lib/ack/pdpv7/cg
+@bin ack/lib/ack/pdpv7/cv
+@bin ack/lib/ack/pdpv7/top
+ack/lib/ack/rpi/
+@bin ack/lib/ack/rpi/as
+@bin ack/lib/ack/rpi/ncg
+ack/share/
+ack/share/ack/
+ack/share/ack/cpm/
+ack/share/ack/cpm/boot.o
+ack/share/ack/cpm/c-ansi.o
+ack/share/ack/cpm/include/
+ack/share/ack/cpm/include/ack/
+ack/share/ack/cpm/include/ack/file.h
+ack/share/ack/cpm/include/ack/plat.h
+ack/share/ack/cpm/include/cpm.h
+ack/share/ack/cpm/include/sys/
+ack/share/ack/cpm/include/sys/types.h
+ack/share/ack/cpm/libb.a
+ack/share/ack/cpm/libbasic.a
+ack/share/ack/cpm/libc.a
+ack/share/ack/cpm/libem.a
+ack/share/ack/cpm/libend.a
+ack/share/ack/cpm/libfp.a
+ack/share/ack/cpm/libmodula2.a
+ack/share/ack/cpm/libpascal.a
+ack/share/ack/cpm/libsys.a
+ack/share/ack/cpm/modula2.o
+ack/share/ack/cpm/pascal.o
+ack/share/ack/descr/
+ack/share/ack/descr/cpm
+ack/share/ack/descr/em22
+ack/share/ack/descr/fe
+ack/share/ack/descr/linux386
+ack/share/ack/descr/linux68k
+ack/share/ack/descr/linuxmips
+ack/share/ack/descr/linuxppc
+ack/share/ack/descr/osx386
+ack/share/ack/descr/osxppc
+ack/share/ack/descr/pc86
+ack/share/ack/descr/pdpv7
+ack/share/ack/descr/rpi
+ack/share/ack/ego/
+ack/share/ack/ego/i386.descr
+ack/share/ack/ego/i86.descr
+ack/share/ack/ego/m68020.descr
+ack/share/ack/ego/powerpc.descr
+ack/share/ack/em/
+ack/share/ack/em/include/
+ack/share/ack/em/include/ack/
+ack/share/ack/em/include/ack/plat.h
+ack/share/ack/em/include/ack/signal.h
+ack/share/ack/em/include/sgtty.h
+ack/share/ack/em/include/sys/
+ack/share/ack/em/include/sys/timeb.h
+ack/share/ack/em/include/sys/types.h
+ack/share/ack/em22/
+ack/share/ack/em22/c-ansi.m
+ack/share/ack/em22/libb.a
+ack/share/ack/em22/libbasic.a
+ack/share/ack/em22/libc.a
+ack/share/ack/em22/libem.a
+ack/share/ack/em22/libend.a
+ack/share/ack/em22/libmodula2.a
+ack/share/ack/em22/libpascal.a
+ack/share/ack/em22/libsys.a
+ack/share/ack/em22/modula2.m
+ack/share/ack/em22/pascal.m
+ack/share/ack/examples/
+ack/share/ack/examples/hilo.b
+ack/share/ack/examples/hilo.bas
+ack/share/ack/examples/hilo.c
+ack/share/ack/examples/hilo.mod
+ack/share/ack/examples/hilo.p
+ack/share/ack/examples/hilo_b.cpm
+ack/share/ack/examples/hilo_b.em22
+ack/share/ack/examples/hilo_b.linux386
+ack/share/ack/examples/hilo_b.linux68k
+ack/share/ack/examples/hilo_b.linuxmips
+ack/share/ack/examples/hilo_b.linuxppc
+ack/share/ack/examples/hilo_b.osx386
+ack/share/ack/examples/hilo_b.osxppc
+ack/share/ack/examples/hilo_b.pc86
+ack/share/ack/examples/hilo_b.pdpv7
+ack/share/ack/examples/hilo_bas.cpm
+ack/share/ack/examples/hilo_bas.em22
+ack/share/ack/examples/hilo_bas.linux386
+ack/share/ack/examples/hilo_bas.linux68k
+ack/share/ack/examples/hilo_bas.linuxmips
+ack/share/ack/examples/hilo_bas.linuxppc
+ack/share/ack/examples/hilo_bas.osx386
+ack/share/ack/examples/hilo_bas.osxppc
+ack/share/ack/examples/hilo_bas.pc86
+ack/share/ack/examples/hilo_bas.pdpv7
+ack/share/ack/examples/hilo_c.cpm
+ack/share/ack/examples/hilo_c.em22
+ack/share/ack/examples/hilo_c.linux386
+ack/share/ack/examples/hilo_c.linux68k
+ack/share/ack/examples/hilo_c.linuxmips
+ack/share/ack/examples/hilo_c.linuxppc
+ack/share/ack/examples/hilo_c.osx386
+ack/share/ack/examples/hilo_c.osxppc
+ack/share/ack/examples/hilo_c.pc86
+ack/share/ack/examples/hilo_c.pdpv7
+ack/share/ack/examples/hilo_c.rpi
+ack/share/ack/examples/hilo_mod.cpm
+ack/share/ack/examples/hilo_mod.em22
+ack/share/ack/examples/hilo_mod.linux386
+ack/share/ack/examples/hilo_mod.linux68k
+ack/share/ack/examples/hilo_mod.linuxmips
+ack/share/ack/examples/hilo_mod.linuxppc
+ack/share/ack/examples/hilo_mod.osx386
+ack/share/ack/examples/hilo_mod.osxppc
+ack/share/ack/examples/hilo_mod.pc86
+ack/share/ack/examples/hilo_mod.pdpv7
+ack/share/ack/examples/hilo_p.cpm
+ack/share/ack/examples/hilo_p.em22
+ack/share/ack/examples/hilo_p.linux386
+ack/share/ack/examples/hilo_p.linux68k
+ack/share/ack/examples/hilo_p.linuxmips
+ack/share/ack/examples/hilo_p.linuxppc
+ack/share/ack/examples/hilo_p.osx386
+ack/share/ack/examples/hilo_p.osxppc
+ack/share/ack/examples/hilo_p.pc86
+ack/share/ack/examples/hilo_p.pdpv7
+ack/share/ack/examples/mandelbrot.c
+ack/share/ack/examples/mandelbrot_c.cpm
+ack/share/ack/examples/mandelbrot_c.em22
+ack/share/ack/examples/mandelbrot_c.linux386
+ack/share/ack/examples/mandelbrot_c.linux68k
+ack/share/ack/examples/mandelbrot_c.linuxmips
+ack/share/ack/examples/mandelbrot_c.linuxppc
+ack/share/ack/examples/mandelbrot_c.osx386
+ack/share/ack/examples/mandelbrot_c.osxppc
+ack/share/ack/examples/mandelbrot_c.pc86
+ack/share/ack/examples/mandelbrot_c.pdpv7
+ack/share/ack/examples/mandelbrot_c.rpi
+ack/share/ack/examples/paranoia.c
+ack/share/ack/examples/paranoia_c.cpm
+ack/share/ack/examples/paranoia_c.em22
+ack/share/ack/examples/paranoia_c.linux386
+ack/share/ack/examples/paranoia_c.linux68k
+ack/share/ack/examples/paranoia_c.linuxmips
+ack/share/ack/examples/paranoia_c.linuxppc
+ack/share/ack/examples/paranoia_c.osx386
+ack/share/ack/examples/paranoia_c.osxppc
+ack/share/ack/examples/paranoia_c.pc86
+ack/share/ack/examples/paranoia_c.pdpv7
+ack/share/ack/examples/paranoia_c.rpi
+ack/share/ack/examples/startrek.c
+ack/share/ack/examples/startrek_c.cpm
+ack/share/ack/examples/startrek_c.em22
+ack/share/ack/examples/startrek_c.linux386
+ack/share/ack/examples/startrek_c.linux68k
+ack/share/ack/examples/startrek_c.linuxmips
+ack/share/ack/examples/startrek_c.linuxppc
+ack/share/ack/examples/startrek_c.osx386
+ack/share/ack/examples/startrek_c.osxppc
+ack/share/ack/examples/startrek_c.pc86
+ack/share/ack/examples/startrek_c.pdpv7
+ack/share/ack/examples/startrek_c.rpi
+ack/share/ack/include/
+ack/share/ack/include/ansi/
+ack/share/ack/include/ansi/ack/
+ack/share/ack/include/ansi/ack/config.h
+ack/share/ack/include/ansi/ack/emufile.h
+ack/share/ack/include/ansi/assert.h
+ack/share/ack/include/ansi/ctype.h
+ack/share/ack/include/ansi/errno.h
+ack/share/ack/include/ansi/fcntl.h
+ack/share/ack/include/ansi/float.h
+ack/share/ack/include/ansi/iso646.h
+ack/share/ack/include/ansi/limits.h
+ack/share/ack/include/ansi/locale.h
+ack/share/ack/include/ansi/math.h
+ack/share/ack/include/ansi/setjmp.h
+ack/share/ack/include/ansi/signal.h
+ack/share/ack/include/ansi/stdarg.h
+ack/share/ack/include/ansi/stdbool.h
+ack/share/ack/include/ansi/stddef.h
+ack/share/ack/include/ansi/stdint.h
+ack/share/ack/include/ansi/stdio.h
+ack/share/ack/include/ansi/stdlib.h
+ack/share/ack/include/ansi/string.h
+ack/share/ack/include/ansi/sys/
+ack/share/ack/include/ansi/sys/time.h
+ack/share/ack/include/ansi/sys/times.h
+ack/share/ack/include/ansi/time.h
+ack/share/ack/include/ansi/unistd.h
+ack/share/ack/include/modula2/
+ack/share/ack/include/modula2/ASCII.def
+ack/share/ack/include/modula2/Arguments.def
+ack/share/ack/include/modula2/ArraySort.def
+ack/share/ack/include/modula2/CSP.def
+ack/share/ack/include/modula2/Conversions.def
+ack/share/ack/include/modula2/EM.def
+ack/share/ack/include/modula2/Epilogue.def
+ack/share/ack/include/modula2/InOut.def
+ack/share/ack/include/modula2/MathLib0.def
+ack/share/ack/include/modula2/Mathlib.def
+ack/share/ack/include/modula2/PascalIO.def
+ack/share/ack/include/modula2/Processes.def
+ack/share/ack/include/modula2/RealConversions.def
+ack/share/ack/include/modula2/RealInOut.def
+ack/share/ack/include/modula2/Semaphores.def
+ack/share/ack/include/modula2/Storage.def
+ack/share/ack/include/modula2/Streams.def
+ack/share/ack/include/modula2/Strings.def
+ack/share/ack/include/modula2/StripUnix.def
+ack/share/ack/include/modula2/Termcap.def
+ack/share/ack/include/modula2/Terminal.def
+ack/share/ack/include/modula2/Traps.def
+ack/share/ack/include/modula2/Unix.def
+ack/share/ack/include/modula2/XXTermcap.def
+ack/share/ack/include/modula2/random.def
+ack/share/ack/linux/
+ack/share/ack/linux/include/
+ack/share/ack/linux/include/ack/
+ack/share/ack/linux/include/ack/fcntl.h
+ack/share/ack/linux/include/ack/plat.h
+ack/share/ack/linux/include/ack/signal.h
+ack/share/ack/linux/include/sys/
+ack/share/ack/linux/include/sys/ioctl.h
+ack/share/ack/linux/include/sys/types.h
+ack/share/ack/linux386/
+ack/share/ack/linux386/boot.o
+ack/share/ack/linux386/c-ansi.o
+ack/share/ack/linux386/libb.a
+ack/share/ack/linux386/libbasic.a
+ack/share/ack/linux386/libc.a
+ack/share/ack/linux386/libem.a
+ack/share/ack/linux386/libend.a
+ack/share/ack/linux386/libmodula2.a
+ack/share/ack/linux386/libpascal.a
+ack/share/ack/linux386/libsys.a
+ack/share/ack/linux386/modula2.o
+ack/share/ack/linux386/pascal.o
+ack/share/ack/linux68k/
+ack/share/ack/linux68k/boot.o
+ack/share/ack/linux68k/c-ansi.o
+ack/share/ack/linux68k/libb.a
+ack/share/ack/linux68k/libbasic.a
+ack/share/ack/linux68k/libc.a
+ack/share/ack/linux68k/libem.a
+ack/share/ack/linux68k/libend.a
+ack/share/ack/linux68k/libmodula2.a
+ack/share/ack/linux68k/libpascal.a
+ack/share/ack/linux68k/libsys.a
+ack/share/ack/linux68k/modula2.o
+ack/share/ack/linux68k/pascal.o
+ack/share/ack/linuxmips/
+ack/share/ack/linuxmips/boot.o
+ack/share/ack/linuxmips/c-ansi.o
+ack/share/ack/linuxmips/libb.a
+ack/share/ack/linuxmips/libbasic.a
+ack/share/ack/linuxmips/libc.a
+ack/share/ack/linuxmips/libem.a
+ack/share/ack/linuxmips/libend.a
+ack/share/ack/linuxmips/libmodula2.a
+ack/share/ack/linuxmips/libpascal.a
+ack/share/ack/linuxmips/libsys.a
+ack/share/ack/linuxmips/modula2.o
+ack/share/ack/linuxmips/pascal.o
+ack/share/ack/linuxppc/
+ack/share/ack/linuxppc/boot.o
+ack/share/ack/linuxppc/c-ansi.o
+ack/share/ack/linuxppc/libb.a
+ack/share/ack/linuxppc/libbasic.a
+ack/share/ack/linuxppc/libc.a
+ack/share/ack/linuxppc/libem.a
+ack/share/ack/linuxppc/libend.a
+ack/share/ack/linuxppc/libmodula2.a
+ack/share/ack/linuxppc/libpascal.a
+ack/share/ack/linuxppc/libsys.a
+ack/share/ack/linuxppc/modula2.o
+ack/share/ack/linuxppc/pascal.o
+ack/share/ack/osx/
+ack/share/ack/osx/include/
+ack/share/ack/osx/include/ack/
+ack/share/ack/osx/include/ack/fcntl.h
+ack/share/ack/osx/include/ack/plat.h
+ack/share/ack/osx/include/ack/signal.h
+ack/share/ack/osx/include/sys/
+ack/share/ack/osx/include/sys/dirent.h
+ack/share/ack/osx/include/sys/ioctl.h
+ack/share/ack/osx/include/sys/mman.h
+ack/share/ack/osx/include/sys/stat.h
+ack/share/ack/osx/include/sys/types.h
+ack/share/ack/osx386/
+ack/share/ack/osx386/boot.o
+ack/share/ack/osx386/c-ansi.o
+ack/share/ack/osx386/libb.a
+ack/share/ack/osx386/libbasic.a
+ack/share/ack/osx386/libc.a
+ack/share/ack/osx386/libem.a
+ack/share/ack/osx386/libend.a
+ack/share/ack/osx386/libmodula2.a
+ack/share/ack/osx386/libpascal.a
+ack/share/ack/osx386/libsys.a
+ack/share/ack/osx386/modula2.o
+ack/share/ack/osx386/pascal.o
+ack/share/ack/osxppc/
+ack/share/ack/osxppc/boot.o
+ack/share/ack/osxppc/c-ansi.o
+ack/share/ack/osxppc/libb.a
+ack/share/ack/osxppc/libbasic.a
+ack/share/ack/osxppc/libc.a
+ack/share/ack/osxppc/libem.a
+ack/share/ack/osxppc/libend.a
+ack/share/ack/osxppc/libmodula2.a
+ack/share/ack/osxppc/libpascal.a
+ack/share/ack/osxppc/libsys.a
+ack/share/ack/osxppc/modula2.o
+ack/share/ack/osxppc/pascal.o
+ack/share/ack/pc86/
+ack/share/ack/pc86/boot.o
+ack/share/ack/pc86/c-ansi.o
+ack/share/ack/pc86/include/
+ack/share/ack/pc86/include/ack/
+ack/share/ack/pc86/include/ack/plat.h
+ack/share/ack/pc86/include/sys/
+ack/share/ack/pc86/include/sys/types.h
+ack/share/ack/pc86/libb.a
+ack/share/ack/pc86/libbasic.a
+ack/share/ack/pc86/libc.a
+ack/share/ack/pc86/libem.a
+ack/share/ack/pc86/libend.a
+ack/share/ack/pc86/libmodula2.a
+ack/share/ack/pc86/libpascal.a
+ack/share/ack/pc86/libsys.a
+ack/share/ack/pc86/modula2.o
+ack/share/ack/pc86/pascal.o
+ack/share/ack/pdpv7/
+ack/share/ack/pdpv7/boot.o
+ack/share/ack/pdpv7/c-ansi.o
+ack/share/ack/pdpv7/include/
+ack/share/ack/pdpv7/include/ack/
+ack/share/ack/pdpv7/include/ack/plat.h
+ack/share/ack/pdpv7/include/sys/
+ack/share/ack/pdpv7/include/sys/select.h
+ack/share/ack/pdpv7/include/sys/types.h
+ack/share/ack/pdpv7/include/termios.h
+ack/share/ack/pdpv7/libb.a
+ack/share/ack/pdpv7/libbasic.a
+ack/share/ack/pdpv7/libc.a
+ack/share/ack/pdpv7/libem.a
+ack/share/ack/pdpv7/libend.a
+ack/share/ack/pdpv7/libmodula2.a
+ack/share/ack/pdpv7/libpascal.a
+ack/share/ack/pdpv7/libsys.a
+ack/share/ack/pdpv7/modula2.o
+ack/share/ack/pdpv7/pascal.o
+ack/share/ack/rpi/
+ack/share/ack/rpi/boot.o
+ack/share/ack/rpi/c-ansi.o
+ack/share/ack/rpi/include/
+ack/share/ack/rpi/include/ack/
+ack/share/ack/rpi/include/ack/plat.h
+ack/share/ack/rpi/include/pi.h
+ack/share/ack/rpi/include/sys/
+ack/share/ack/rpi/include/sys/select.h
+ack/share/ack/rpi/include/sys/types.h
+ack/share/ack/rpi/include/termios.h
+ack/share/ack/rpi/libb.a
+ack/share/ack/rpi/libbasic.a
+ack/share/ack/rpi/libc.a
+ack/share/ack/rpi/libem.a
+ack/share/ack/rpi/libend.a
+ack/share/ack/rpi/libmodula2.a
+ack/share/ack/rpi/libpascal.a
+ack/share/ack/rpi/libsys.a
+ack/share/ack/rpi/modula2.o
+ack/share/ack/rpi/pascal.o
+@mandir ack/share/man/
+ack/share/man/man1/
+@man ack/share/man/man1/aal.1
+@man ack/share/man/man1/abmodules.1
+@man ack/share/man/man1/ack.1
+@man ack/share/man/man1/aelflod.1
+@man ack/share/man/man1/anm.1
+@man ack/share/man/man1/ashow.1
+@man ack/share/man/man1/asize.1
+@man ack/share/man/man1/aslod.1
+@man ack/share/man/man1/astrip.1
+@man ack/share/man/man1/esize.1
+@man ack/share/man/man1/int.1
+ack/share/man/man5/
+@man ack/share/man/man5/ack.out.5
+ack/share/man/man6/
+@man ack/share/man/man6/cpp.ansi.6
+@man ack/share/man/man6/em_ass.6
+@man ack/share/man/man6/em_b.6
+@man ack/share/man/man6/em_decode.6
+@man ack/share/man/man6/em_m2.6
+@man ack/share/man/man6/em_opt.6
+@man ack/share/man/man6/em_pc.6
+@man ack/share/man/man6/led.6
