@@ -1,0 +1,10 @@
+--- third_party/emu2/src/main.c.orig	Thu Dec 31 00:42:35 2020
++++ third_party/emu2/src/main.c	Wed Jan  6 17:17:33 2021
+@@ -17,6 +17,7 @@
+ #include <string.h>
+ #include <sys/time.h>
+ #include <sys/wait.h>
++#include <sys/signal.h>
+ #include <unistd.h>
+ 
+ uint8_t read_port(unsigned port)

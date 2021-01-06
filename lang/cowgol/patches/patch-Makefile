@@ -1,0 +1,12 @@
+--- Makefile.orig	Thu Dec 31 00:42:35 2020
++++ Makefile	Wed Jan  6 16:09:21 2021
+@@ -1,8 +1,6 @@
+ export OBJ = .obj
+-export LUA = lua
+-export CFLAGS = -g -O0
+-export LDFLAGS = -g
+ export NINJAFLAGS = -k0
++export LUA = ${MODLUA_BIN}
+ 
+ all: $(OBJ)/build.ninja
+ 	@ninja -f $(OBJ)/build.ninja $(NINJAFLAGS)

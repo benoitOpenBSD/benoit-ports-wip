@@ -1,0 +1,20 @@
+--- toolchains.lua.orig	Thu Dec 31 00:42:35 2020
++++ toolchains.lua	Wed Jan  6 17:27:06 2021
+@@ -193,17 +193,11 @@
+ }
+ 
+ ALL_TOOLCHAINS = {
+-	toolchain_ataritos,
+ 	toolchain_bbct,
+ 	toolchain_bbct6502,
+ 	toolchain_bbcti,
+ 	toolchain_bbctiny,
+ 	toolchain_fuzix6303,
+-	toolchain_lxthumb2,
+-	toolchain_lx386,
+-	toolchain_lx68k,
+-	toolchain_lxppc,
+-	toolchain_msdos,
+ 	toolchain_ncgen,
+ 	toolchain_ncpm,
+ 	toolchain_ncpmz,

@@ -1,0 +1,10 @@
+--- src/cowlink/build.lua.orig	Thu Dec 31 00:42:35 2020
++++ src/cowlink/build.lua	Wed Jan  6 17:01:11 2021
+@@ -7,7 +7,6 @@
+ 	"bbctn",
+ 	"cgen",
+ 	"fuzix6303",
+-	"lx386",
+ 	"lx68k",
+ 	"lxppc",
+ 	"lxthumb2",

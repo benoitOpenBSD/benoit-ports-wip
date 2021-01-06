@@ -1,0 +1,29 @@
+--- mkninja.lua.orig	Thu Dec 31 00:42:35 2020
++++ mkninja.lua	Wed Jan  6 17:30:17 2021
+@@ -129,26 +129,16 @@
+ include "src/cowasm/build.lua"
+ include "src/cowdis/build.lua"
+ include "src/misc/build.lua"
+-include "rt/ataritos/build.lua"
+ include "rt/cpm/build.lua"
+ include "rt/cpmz/build.lua"
+ include "rt/cgen/build.lua"
+-include "rt/lx386/build.lua"
+-include "rt/lx68k/build.lua"
+-include "rt/lxthumb2/build.lua"
+-include "rt/lxppc/build.lua"
+ include "rt/bbct/build.lua"
+ include "rt/bbcti/build.lua"
+ include "rt/unixv7/build.lua"
+ include "rt/fuzix6303/build.lua"
+-include "rt/msdos/build.lua"
+ include "examples/build.lua"
+ include "tests/build.lua"
+ include "dist/bbct/build.lua"
+ include "dist/cpm/build.lua"
+ include "dist/cpmz/build.lua"
+ include "dist/cpmbasic/build.lua"
+-include "dist/msdos/build.lua"
+-include "dist/ataritos/build.lua"
+-
+-
