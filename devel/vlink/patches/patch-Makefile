@@ -1,0 +1,15 @@
+$OpenBSD$
+--- Makefile.orig	Wed Jan  6 19:48:25 2021
++++ Makefile	Wed Jan  6 19:48:37 2021
+@@ -4,9 +4,9 @@
+ DIR = objects
+ MD = mkdir
+ 
+-CC = gcc
++CC = cc
+ CCOUT = -o $(DUMMYVARIABLE)	# produces the string "-o "
+-COPTS = -std=c99 -Wpedantic -O2 -fomit-frame-pointer -c
++COPTS = -std=c99 -O2 -fomit-frame-pointer -c
+ CONFIG =
+ 
+ LD = $(CC)

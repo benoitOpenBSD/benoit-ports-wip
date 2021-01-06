@@ -1,0 +1,4 @@
+vlink is a portable linker which can be configured to support multiple
+input and output file formats at once. It even allows to link input files
+with a different format in a single run and generate the output file format
+of your choice from it.
