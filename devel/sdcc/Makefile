@@ -1,16 +1,17 @@
 # $OpenBSD: Makefile,v 1.25 2018/11/14 20:48:21 sthen Exp $
 
 COMMENT=	Small Device C Compiler
+
 BROKEN-sparc64=	illegal operands building SDCCval.c
 BROKEN-alpha=	sdcc segfaults when building the device library
 BROKEN-aarch64=	*** BFD does not support target aarch64-unknown-openbsd6.2.
 
-DISTNAME=	sdcc-src-3.9.0
+DISTNAME =	sdcc-src-4.0.0
 PKGNAME=	${DISTNAME:S/-src//}
-#EXTRACT_SUFX=	.tar.bz2
 CATEGORIES=	devel
 
 HOMEPAGE=	http://sdcc.sourceforge.net/
+
 MAINTAINER=	Brian Callahan <bcallah@openbsd.org>
 
 # GPLv2+
@@ -20,6 +21,8 @@ WANTLIB += ${COMPILER_LIBCXX} c m readline z
 
 MASTER_SITES=		https://www.arcane-labs.net/download/OpenBSD/ \
 			${MASTER_SITE_SOURCEFORGE:=sdcc/}
+
+EXTRACT_SUFX =	.tar.bz2
 
 # clang6 makes sdcc regenerate its configure scripts at *BUILD* time
 # so we need to add the autoconf/automake depends. We don't know
