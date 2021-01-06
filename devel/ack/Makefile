@@ -21,7 +21,7 @@ GH_COMMIT =		7c51d86c4ebb688f32f7886a5c4fdd9b8129f05d
 WANTLIB +=		c
 
 USE_GMAKE =		Yes
-MAKE_FLAGS =		BUILDDIR=${WRKSRC}/ack-build
+MAKE_FLAGS =		BUILDDIR=${WRKSRC}/ack-build PREFIX=/usr/local/ack
 
 NO_TEST =		Yes
 

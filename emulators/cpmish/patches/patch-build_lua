@@ -1,0 +1,11 @@
+$OpenBSD$
+--- build.lua.orig	Wed Jan  6 08:41:55 2021
++++ build.lua	Wed Jan  6 14:43:06 2021
+@@ -1,5 +1,5 @@
+-vars.cflags = { "-g", "-Og" }
+-vars.ldflags = { "-lm" }
++vars.cflags = { "-g -std=c99" }
++vars.ldflags = { "-lm -lstdc++" }
+ vars.cpmcflags = { "-O6" }
+ vars.cpmldflags = {}
+ 

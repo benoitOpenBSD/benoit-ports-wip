@@ -1,0 +1,6 @@
+@comment $OpenBSD: PLIST,v$
+share/cpmish/
+share/cpmish/brotherop2.img
+share/cpmish/kayproii.img
+share/cpmish/nc200.img
+share/cpmish/wp2450ds.img

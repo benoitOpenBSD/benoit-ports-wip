@@ -1,0 +1,7 @@
+CP/Mish is an open source sort-of-CP/M distribution for the 8080 and 
+Z80 architectures (although for technical reasons currently it only 
+works on the Z80).
+
+It contains no actual Digital Research code. Instead, it's a collection 
+of third party modules which replicate it, all with proper open source 
+licenses, integrated with a build system that should make it easy to work with.
