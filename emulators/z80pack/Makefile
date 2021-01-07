@@ -2,7 +2,7 @@
 
 COMMENT =		a Zilog Z80 and Intel 8080 systems emulation
 
-DISTNAME =		z80pack-1.36
+DISTNAME =		z80pack-1.37
 CATEGORIES =		emulators
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,11 +16,9 @@ HOMEPAGE =		https://github.com/udo-munk/z80pack
 
 GH_ACCOUNT =		udo-munk
 GH_PROJECT =		z80pack
-GH_COMMIT =		d57e3b50cd796e3f562c569a8270b4586999b12a
+GH_COMMIT =		a64d0ddd2a6299380c737302ffe2c45e51e6ec56
 
 WANTLIB +=		c
-
-#USE_GMAKE =		Yes
 
 WRKDIST =		${WRKDIR}/z80pack-${GH_COMMIT}
 
@@ -34,8 +32,8 @@ do-build:
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/bin
-	${INSTALL_PROGRAM} ${WRKBUILD}/z80asm/z80asm ${PREFIX}/z80pack/bin/z80asm
-	${INSTALL_PROGRAM} ${WRKBUILD}/z80sim/srcsim/z80sim ${PREFIX}/z80pack/bin/
+	${INSTALL_PROGRAM} ${WRKBUILD}/z80asm/z80asm ${PREFIX}/z80pack/bin/
+	${INSTALL_PROGRAM} ${WRKBUILD}/z80sim/z80sim ${PREFIX}/z80pack/bin/
 	${INSTALL_PROGRAM} \
 		${WRKBUILD}/cpmsim/srctools/{bin2hex,mkdskimg,ptp2bin,receive,send} \
 		${PREFIX}/z80pack/bin/
@@ -45,7 +43,7 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/cpmsim/conf
 	cp -R ${WRKSRC}/cpmsim/conf/* ${PREFIX}/z80pack/cpmsim/conf
 	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/examples
-	cp -R ${WRKSRC}/z80src/* ${PREFIX}/z80pack/examples
+	cp -R ${WRKSRC}/z80sim/*.asm ${PREFIX}/z80pack/examples
 	${INSTALL_DATA_DIR} ${PREFIX}/z80pack/doc
 	cp -R ${WRKSRC}/doc/* ${PREFIX}/z80pack/doc
 
