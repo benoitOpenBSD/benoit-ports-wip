@@ -1,0 +1,31 @@
+--- src/dms/u_heavy.c.orig	Thu Jan  7 15:57:32 2021
++++ src/dms/u_heavy.c	Thu Jan  7 15:58:08 2021
+@@ -30,8 +30,8 @@
+ 
+ static USHORT read_tree_c(void);
+ static USHORT read_tree_p(void);
+-INLINE USHORT decode_c(void);
+-INLINE USHORT decode_p(void);
++USHORT decode_c(void);
++USHORT decode_p(void);
+ 
+ 
+ 
+@@ -74,7 +74,7 @@
+ 
+ 
+ 
+-INLINE USHORT decode_c(void){
++USHORT decode_c(void){
+ 	USHORT i, j, m;
+ 
+ 	j = c_table[GETBITS(12)];
+@@ -96,7 +96,7 @@
+ 
+ 
+ 
+-INLINE USHORT decode_p(void){
++USHORT decode_p(void){
+ 	USHORT i, j, m;
+ 
+ 	j = pt_table[GETBITS(8)];
