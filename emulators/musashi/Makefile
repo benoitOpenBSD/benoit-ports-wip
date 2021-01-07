@@ -25,8 +25,8 @@ NO_TEST =		Yes
 USE_GMAKE =		Yes
 
 do-install:
-			${INSTALL_DATA_DIR} ${PREFIX}/share/musashi
-			cp ${WRKSRC}/*.{o,txt} ${PREFIX}/share/musashi
-			cp -R ${WRKSRC}/example/ ${PREFIX}/share/musashi
+			${INSTALL_DATA_DIR} ${PREFIX}/share/musashi/example
+			cp ${WRKSRC}/*.{o,txt,c,h} ${PREFIX}/share/musashi
+			cp -R ${WRKSRC}/example/* ${PREFIX}/share/musashi/example/
 
 .include <bsd.port.mk>
