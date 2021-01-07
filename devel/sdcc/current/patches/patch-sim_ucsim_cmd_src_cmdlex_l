@@ -1,0 +1,11 @@
+--- sim/ucsim/cmd.src/cmdlex.l.orig	Sat Jan  2 21:38:26 2021
++++ sim/ucsim/cmd.src/cmdlex.l	Wed Jan  6 21:36:36 2021
+@@ -3,7 +3,7 @@
+ //#include <stdint.h>
+ #include <unistd.h>
+ #include "cmdlexcl.h"
+-#include "cmdpars.hh"
++#include "cmdpars.h"
+ #include "cmdutil.h"
+ 
+ static int uc_yy_check_id(char *token);
