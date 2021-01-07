@@ -2,8 +2,8 @@
 
 COMMENT =		amstrad CPC, amstrad CPC+ and KC Compact emulator
 
-DISTNAME =		arnsrc27012002
-PKGNAME =		arnold-20020127
+DISTNAME =		arnsrc04012004
+PKGNAME =		arnold-20040104
 CATEGORIES =		emulators
 
 HOMEPAGE =		http://arnold.emuunlim.com/
@@ -11,7 +11,7 @@ HOMEPAGE =		http://arnold.emuunlim.com/
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c X11 Xext Xi m pthread
 
