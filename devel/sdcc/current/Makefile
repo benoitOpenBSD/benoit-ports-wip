@@ -40,7 +40,8 @@ BUILD_DEPENDS=		${RUN_DEPENDS} \
 RUN_DEPENDS=		devel/gputils
 
 CONFIGURE_STYLE=	gnu
-CONFIGURE_ARGS+=	docdir=${PREFIX}/share/doc/sdcc
+CONFIGURE_ARGS+=	docdir=${PREFIX}/share/doc/sdcc \
+			--enable-ucsim
 CONFIGURE_ENV+=		sdcc_cv_CCggdb=no \
                         sdcc_cv_c_fms_extensions=no \
 			CPPFLAGS="${CPPFLAGS} -I${LOCALBASE}/include" \
