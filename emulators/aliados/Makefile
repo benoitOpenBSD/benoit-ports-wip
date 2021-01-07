@@ -10,7 +10,7 @@ HOMEPAGE =		http://www.arrakis.es/~ninsesabe/aliados/
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPL
-PERMIT_PACKAGE_CDROM =		Yes 
+PERMIT_PACKAGE =	Yes 
 
 WANTLIB =		c m ncurses stdc++
 
