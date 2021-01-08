@@ -2,14 +2,14 @@
 
 COMMENT =	Bandwidth measurement tool.
 
-DISTNAME =	bwping-1.7
+DISTNAME =	bwping-2.2
 PKGNAME =	${DISTNAME}
 CATEGORIES =	net
 
 HOMEPAGE =	http://bwping.sourceforge.net/
 
 # BSD
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB =	c
 

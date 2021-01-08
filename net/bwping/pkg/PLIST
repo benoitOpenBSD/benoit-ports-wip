@@ -1,5 +1,5 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 @man man/man8/bwping.8
 @man man/man8/bwping6.8
 @bin sbin/bwping
-@bin sbin/bwping6
+sbin/bwping6
