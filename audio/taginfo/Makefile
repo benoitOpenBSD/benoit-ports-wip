@@ -9,7 +9,7 @@ HOMEPAGE= 	http://grecni.com/software/taginfo/
 MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_DISTFILES_CDROM=	Yes
+PERMIT_DISTFILES =	Yes
 
 WANTLIB=	stdc++ m z
 
