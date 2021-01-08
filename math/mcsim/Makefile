@@ -2,9 +2,8 @@
 
 COMMENT=	monte carlo simulation software
 
-V=		5.3.1
-DISTNAME=	MCSim-v${V}
-PKGNAME=	mcsim-${V}
+V=		6.2.0
+DISTNAME =	mcsim-${V}
 CATEGORIES=	math
 
 HOMEPAGE=	http://www.gnu.org/software/mcsim/
@@ -14,10 +13,10 @@ MASTER_SITES=	${MASTER_SITE_GNU:=mcsim/}
 MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 
 FAKE_FLAGS=	PREFIX="${WRKINST}${PREFIX}"
-WRKDIST=	${WRKDIR}/mcsim
+#WRKDIST=	${WRKDIR}/mcsim
 
 # GPLv2
-PERMIT_PACKAGE_CDROM=	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB=		c m
 
@@ -25,7 +24,7 @@ CONFIGURE_STYLE=        gnu
 CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/gsl" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
-LIB_DEPENDS+=		gsl.>=7,gslcblas:gsl->=1.6:devel/gsl
+LIB_DEPENDS +=		devel/gsl
 
 USE_GMAKE=		Yes
 ALL_TARGET=		one
