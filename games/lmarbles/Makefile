@@ -10,7 +10,7 @@ HOMEPAGE =		http://lgames.sourceforge.net/index.php?project=LMarbles
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB =		SDL c m pthread SDL_mixer
 
