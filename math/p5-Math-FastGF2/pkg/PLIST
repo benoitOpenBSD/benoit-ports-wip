@@ -1,6 +1,4 @@
-@comment $OpenBSD$
-%%SHARED%%
-bin/benchmark-Math-FastGF2.pl
+@comment $OpenBSD: PLIST,v$
 bin/shamir-combine.pl
 bin/shamir-split.pl
 ${P5ARCH}/
@@ -11,6 +9,6 @@ ${P5ARCH}/Math/FastGF2/Matrix.pm
 ${P5ARCH}/auto/
 ${P5ARCH}/auto/Math/
 ${P5ARCH}/auto/Math/FastGF2/
-${P5ARCH}/auto/Math/FastGF2/FastGF2.bs
+@so ${P5ARCH}/auto/Math/FastGF2/FastGF2.so
 @man man/man3p/Math::FastGF2.3p
 @man man/man3p/Math::FastGF2::Matrix.3p
