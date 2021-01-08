@@ -2,13 +2,13 @@
 
 COMMENT =	interface to bzip2 compression library
 
-DISTNAME =	Compress-Bzip2-2.26
+DISTNAME =	Compress-Bzip2-2.28
 CATEGORIES =	archivers
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # Perl
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 MODULES =	cpan
 LIB_DEPENDS =	archivers/bzip2
