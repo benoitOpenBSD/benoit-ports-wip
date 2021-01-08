@@ -2,9 +2,9 @@
 
 COMMENT =		python GUIs for humans
 
-DISTNAME =		PySimpleGUI-4.30.0
+DISTNAME =		PySimpleGUI-4.33.0
 CATEGORIES =		x11
-PKGNAME =		py-SimpleGUI-4.30.0
+PKGNAME =		py-SimpleGUI-4.33.0
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
