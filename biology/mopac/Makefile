@@ -12,7 +12,7 @@ HOMEPAGE =	http://server.ccl.net/cca/software/LINUX/mopac7/index.shtml
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =		Yes
+PERMIT_PACKAGE =		Yes
 
 WANTLIB =		c m
 
