@@ -1,12 +1,15 @@
-$OpenBSD: patch-Makefile_PL,v 1.3 2014/12/17 10:22:47 benoit Exp $
---- Makefile.PL.orig	Fri Apr  4 08:57:54 2014
-+++ Makefile.PL	Mon Dec 15 22:07:21 2014
-@@ -28,6 +28,7 @@
-                            Math::BigInt => 1.9993,
-                            XSLoader => 0.02,
-                           },
--   'LIBS'              => ['-lgmp'],
-+   'LIBS'     => ["$ENV{LDFLAGS} -lgmp"],   # e.g., '-lm' 
-+   'INC'      => "$ENV{CPPFLAGS}",
-    'SIGN'              => 1,
-   );
+$OpenBSD$
+--- Makefile.PL.orig	Fri Oct 11 16:23:09 2019
++++ Makefile.PL	Fri Jan  8 21:18:22 2021
+@@ -49,9 +49,9 @@
+                            },
+ 
+    'LICENSE'            => 'perl_5',
+-   'LIBS'               => ['-lgmp'],   # e.g., '-lm'
++   'LIBS'		=> ["$ENV{LDFLAGS} -lgmp"],   # e.g., '-lm' 
++   'INC'		=> "$ENV{CPPFLAGS}",
+    'DEFINE'             => '',          # e.g., '-DHAVE_SOMETHING'
+-   'INC'                => '',          # e.g., '-I/usr/include/other'
+    'SIGN'               => 1,
+ 
+    'META_MERGE'         => {
