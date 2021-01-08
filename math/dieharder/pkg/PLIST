@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 @bin bin/dieharder
 include/dieharder/
 include/dieharder/Dtest.h
@@ -48,7 +48,7 @@ include/dieharder/sts_runs.h
 include/dieharder/sts_serial.h
 include/dieharder/tests.h
 include/dieharder/verbose.h
-lib/libdieharder.a
+@static-lib lib/libdieharder.a
 lib/libdieharder.la
 @lib lib/libdieharder.so.${LIBdieharder_VERSION}
 @man man/man1/dieharder.1
