@@ -1,0 +1,3 @@
+This is a rewrite of Arto Salmi's 6809 simulator.  Many changes
+have been made to it.  This program remains licensed under the
+GNU General Public License.

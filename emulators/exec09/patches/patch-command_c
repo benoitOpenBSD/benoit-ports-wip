@@ -1,0 +1,12 @@
+$OpenBSD$
+--- command.c.orig	Sat Jan  9 08:54:42 2021
++++ command.c	Sat Jan  9 08:54:51 2021
+@@ -2,7 +2,7 @@
+ #include "6809.h"
+ #include "monitor.h"
+ #include "machine.h"
+-#include <sys/errno.h>
++#include <errno.h>
+ #ifdef HAVE_TERMIOS_H
+ # include <termios.h>
+ #else
