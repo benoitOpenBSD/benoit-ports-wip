@@ -1,0 +1,6 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/sim6809
+share/sim6809/
+share/sim6809/README
+share/sim6809/example.asm
+share/sim6809/example.hex

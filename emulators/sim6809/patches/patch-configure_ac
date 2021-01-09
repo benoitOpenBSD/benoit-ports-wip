@@ -1,0 +1,12 @@
+$OpenBSD$
+--- configure.ac.orig	Sat Jan  9 10:13:52 2021
++++ configure.ac	Sat Jan  9 10:14:13 2021
+@@ -12,7 +12,7 @@
+ AC_PROG_CC
+ 
+ # Checks for libraries.
+-PKG_CHECK_MODULES([ALSA], [alsa], [], [AC_MSG_ERROR([*** ALSA lib required.])])
++# PKG_CHECK_MODULES([ALSA], [alsa], [], [AC_MSG_ERROR([*** ALSA lib required.])])
+ AC_CHECK_LIB([util],[openpty])
+ # Checks for header files.
+ AC_CHECK_HEADERS([stdlib.h string.h unistd.h])
