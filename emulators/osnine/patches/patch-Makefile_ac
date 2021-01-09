@@ -1,0 +1,11 @@
+--- configure.ac.orig	Sat Jan  9 11:18:06 2021
++++ configure.ac	Sat Jan  9 11:18:15 2021
+@@ -6,7 +6,7 @@
+ AC_CONFIG_SRCDIR([os9l1.cpp])
+ AC_CONFIG_HEADERS([config.h])
+ AM_INIT_AUTOMAKE([-Wall -Werror foreign])
+-AM_PATH_CPPUNIT(1.12.1)
++# AM_PATH_CPPUNIT(1.12.1)
+ 
+ # Checks for programs.
+ AC_PROG_CXX

@@ -1,0 +1,11 @@
+--- disassemos9.c.orig	Sat Jan  9 11:22:34 2021
++++ disassemos9.c	Sat Jan  9 11:23:10 2021
+@@ -37,7 +37,7 @@
+ ****************************************************************************/
+ 
+ extern int errno;
+-extern const char * const sys_errlist[];
++extern char * sys_errlist[];
+ 
+ static unsigned char prog[65536];
+ 

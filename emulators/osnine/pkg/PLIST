@@ -1,0 +1,9 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/disassemos9
+@bin bin/os9l1
+@bin bin/usim
+@bin bin/v6809
+share/osnine/
+share/osnine/NEWS
+share/osnine/README
+share/osnine/TODO
