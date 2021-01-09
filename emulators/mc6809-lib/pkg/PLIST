@@ -1,0 +1,6 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/mc09disasm
+@bin bin/mc09emulator
+include/mc6809.h
+include/mc6809dis.h
+@static-lib lib/libmc6809.a
