@@ -1,13 +1,15 @@
 --- Makefile.orig	Thu Sep 24 17:50:15 1998
-+++ Makefile	Sat Jan  9 12:47:05 2021
-@@ -1,8 +1,8 @@
++++ Makefile	Sat Jan  9 12:58:16 2021
+@@ -1,8 +1,10 @@
 -all: os9
 +all: os9 emulator
  
  HERE=$(PWD)
  
 -INCLUDES=-I$(HERE) -O3 -fomit-frame-pointer
-+INCLUDES=-I$(HERE)
++DEBUG = -g
++
++INCLUDES=-I$(HERE) $(DEBUG)
  LIBS=-L$(HERE)
  
  libocem.a:
