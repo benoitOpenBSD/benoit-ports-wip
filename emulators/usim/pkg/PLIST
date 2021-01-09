@@ -1,0 +1,10 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/usim
+share/usim/
+share/usim/CVu.doc
+share/usim/README.announce
+share/usim/monitor.hex
+share/usim/monitor.s
+share/usim/tbasic.hex
+share/usim/tbasic.s
+share/usim/test.s
