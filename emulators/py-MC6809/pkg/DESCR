@@ -1,0 +1,5 @@
+MC6809 CPU emulator written in Python
+
+MC6809 is a Open source (GPL v3 or later) emulator for the legendary 
+6809 CPU, used old homecomputer Dragon 32/64 and Tandy TRS-80 Color 
+Computer (CoCo) built in the 1980s...
