@@ -1,0 +1,8 @@
+--- mc6809/external.h.orig	Sat Jan  9 12:04:28 2021
++++ mc6809/external.h	Sat Jan  9 12:06:15 2021
+@@ -13,4 +13,4 @@
+ extern void nmi(void);
+ extern void reset(void);
+ 
+-#endif __EXTERNAL_H
++#endif 

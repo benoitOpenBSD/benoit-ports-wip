@@ -1,0 +1,8 @@
+--- mc6809/display.h.orig	Sat Jan  9 11:57:13 2021
++++ mc6809/display.h	Sat Jan  9 11:57:22 2021
+@@ -16,4 +16,4 @@
+ extern void D_Register1(char *buffer);
+ extern void D_Register2(char *buffer);
+ 
+-#endif __DISPLAY_H
++#endif

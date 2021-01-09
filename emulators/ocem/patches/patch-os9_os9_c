@@ -1,0 +1,9 @@
+--- os9/os9.c.orig	Sat Jan  9 12:35:31 2021
++++ os9/os9.c	Sat Jan  9 12:35:46 2021
+@@ -1,5 +1,6 @@
+ #include <stdio.h>
+ #include <errno.h>
++#include <string.h>
+ 
+ #include <ocem/ocem.h>
+ 

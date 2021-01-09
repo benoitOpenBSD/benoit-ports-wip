@@ -1,0 +1,8 @@
+--- os9/os9.h.orig	Sat Jan  9 12:34:10 2021
++++ os9/os9.h	Sat Jan  9 12:34:20 2021
+@@ -201,4 +201,4 @@
+ #define CONVERT_CR2LF
+ #include <errno.h>
+ 
+-#endif __OS9_H
++#endif

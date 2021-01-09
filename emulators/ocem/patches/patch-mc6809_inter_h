@@ -1,0 +1,8 @@
+--- mc6809/inter.h.orig	Sat Jan  9 12:00:24 2021
++++ mc6809/inter.h	Sat Jan  9 12:00:31 2021
+@@ -4,4 +4,4 @@
+ extern void exg(void);
+ extern void tfr(void);
+ 
+-#endif __INTER_H
++#endif

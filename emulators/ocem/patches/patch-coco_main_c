@@ -1,0 +1,9 @@
+--- coco/main.c.orig	Sat Jan  9 12:49:29 2021
++++ coco/main.c	Sat Jan  9 12:49:57 2021
+@@ -1,5 +1,6 @@
+ #include <stdio.h>
+ #include <stdlib.h>
++#include <string.h>
+ 
+ #include "coco.h"
+ 

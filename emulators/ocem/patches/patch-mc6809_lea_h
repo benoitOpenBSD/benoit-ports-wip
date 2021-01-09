@@ -1,0 +1,8 @@
+--- mc6809/lea.h.orig	Sat Jan  9 11:58:40 2021
++++ mc6809/lea.h	Sat Jan  9 11:58:47 2021
+@@ -17,4 +17,4 @@
+ extern void lea_x_mode(memory_access_t *mode);
+ extern void lea_y_mode(memory_access_t *mode);
+ 
+-#endif __LEA_H
++#endif 

@@ -1,0 +1,8 @@
+--- ocem/ocem.h.orig	Sat Jan  9 12:07:58 2021
++++ ocem/ocem.h	Sat Jan  9 12:08:06 2021
+@@ -139,4 +139,4 @@
+ extern void delete_swi(int type);
+ 
+ 
+-#endif __OCEM_H
++#endif

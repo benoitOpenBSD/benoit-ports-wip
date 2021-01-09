@@ -1,0 +1,8 @@
+--- coco/coco.h.orig	Sat Jan  9 12:48:12 2021
++++ coco/coco.h	Sat Jan  9 12:48:18 2021
+@@ -20,4 +20,4 @@
+   GIME_KEYBOARD,
+ } coco_irq_t;
+ 
+-#endif __COCO_H
++#endif 

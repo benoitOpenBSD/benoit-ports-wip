@@ -1,0 +1,20 @@
+--- mc6809/misc.c.orig	Sat Jan  9 12:16:48 2021
++++ mc6809/misc.c	Sat Jan  9 12:27:09 2021
+@@ -120,7 +120,7 @@
+   byte mask = r_immediate_byte();
+ 
+   if (mask & 0x01)
+-    regs.cc = r_byte(regs.s++);
++    regs.cc.all = r_byte(regs.s++);
+   if (mask & 0x02)
+     regs.acca = r_byte(regs.s++);
+   if (mask & 0x04)
+@@ -172,7 +172,7 @@
+   byte mask = r_immediate_byte();
+ 
+   if (mask & 0x01)
+-    regs.cc = r_byte(regs.u++);
++    regs.cc.all = r_byte(regs.u++);
+   if (mask & 0x02)
+     regs.acca = r_byte(regs.u++);
+   if (mask & 0x04)

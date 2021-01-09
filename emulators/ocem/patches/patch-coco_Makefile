@@ -1,0 +1,18 @@
+--- coco/Makefile.orig	Sat Jan  9 12:42:57 2021
++++ coco/Makefile	Sat Jan  9 12:44:01 2021
+@@ -1,12 +1,12 @@
+ OBJS=main.o vdg.o pia0.o pia1.o
+ 
+-CFLAGS = $(INCLUDES)
++CFLAGS += $(INCLUDES)
+ 
+ all: emulator
+ 
+ emulator: $(OBJS) ../ocem/libocem.a ../mc6809/libmc6809.a
+-	$(CC) $(OBJS) -L../ocem -locem -L../mc6809 -lmc6809 -o emulator
++	$(CC) $(CFLAGS) $(OBJS) -L../ocem -locem -L../mc6809 -lmc6809 -o emulator.coco
+ 
+ 
+ clean:
+-	rm -f *~ *.o emulator
++	rm -f *~ *.o emulator.coco

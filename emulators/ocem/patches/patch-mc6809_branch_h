@@ -1,0 +1,8 @@
+--- mc6809/branch.h.orig	Sat Jan  9 11:58:26 2021
++++ mc6809/branch.h	Sat Jan  9 11:58:33 2021
+@@ -37,4 +37,4 @@
+ extern void lbgt(void);
+ extern void lble(void);
+ 
+-#endif __BRANCH_H
++#endif

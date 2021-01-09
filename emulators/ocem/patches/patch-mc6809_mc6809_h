@@ -1,0 +1,8 @@
+--- mc6809/mc6809.h.orig	Sat Jan  9 12:04:49 2021
++++ mc6809/mc6809.h	Sat Jan  9 12:05:57 2021
+@@ -135,4 +135,4 @@
+ extern unsigned char cc_inc[256];
+ 
+ 
+-#endif __MC6809_H
++#endif

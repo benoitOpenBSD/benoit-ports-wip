@@ -1,0 +1,10 @@
+--- os9/syscall.c.orig	Sun Sep 13 16:25:52 1998
++++ os9/syscall.c	Sat Jan  9 12:38:30 2021
+@@ -1,5 +1,7 @@
+ #include <stdio.h>
+ #include <time.h>
++#include <string.h>
++#include <stdlib.h>
+ #include <ocem/ocem.h>
+ #include <mc6809/mc6809.h>
+ 

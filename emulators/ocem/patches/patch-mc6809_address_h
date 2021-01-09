@@ -1,0 +1,8 @@
+--- mc6809/address.h.orig	Sat Jan  9 12:04:37 2021
++++ mc6809/address.h	Sat Jan  9 12:06:06 2021
+@@ -100,4 +100,4 @@
+  * Catch illegal instructions
+  **********************************************************************/
+ extern void trap(void);
+-#endif __ADDRESS_H
++#endif 

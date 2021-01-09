@@ -1,0 +1,10 @@
+--- mc6809/address.c.orig	Sat Jan  9 12:15:21 2021
++++ mc6809/address.c	Sat Jan  9 12:15:38 2021
+@@ -1,5 +1,7 @@
+ #include "my_6809.h"
+ 
++#include <stdlib.h>
++
+ extern addr_t protected;
+ 
+ /**********************************************************************

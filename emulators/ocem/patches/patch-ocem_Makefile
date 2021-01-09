@@ -1,0 +1,10 @@
+--- ocem/Makefile.orig	Sat Jan  9 12:13:45 2021
++++ ocem/Makefile	Sat Jan  9 12:14:03 2021
+@@ -1,6 +1,6 @@
+ OBJS=callback.o hardware.o
+ 
+-CFLAGS= $(INCLUDES)
++CFLAGS += $(INCLUDES)
+ 
+ all: libocem.a
+ 

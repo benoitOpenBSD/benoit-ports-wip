@@ -1,0 +1,11 @@
+--- mc6809/Makefile.orig	Sat Jan  9 12:10:00 2021
++++ mc6809/Makefile	Sat Jan  9 12:10:18 2021
+@@ -9,7 +9,7 @@
+ 
+ all: libmc6809.a
+ 
+-CFLAGS = $(INCLUDES) -O3 -Wall
++CFLAGS += $(INCLUDES) -Wall
+ #CFLAGS = -DFAST -O6 -fcaller-saves -fcse-follow-jumps -fexpensive-optimizations -finline-functions -frerun-cse-after-loop -fstrength-reduce -O3 -fforce-mem -fomit-frame-pointer -finline-functions -fcaller-saves -fcse-skip-blocks
+ #CFLAGS = -DFAST -O3
+ 

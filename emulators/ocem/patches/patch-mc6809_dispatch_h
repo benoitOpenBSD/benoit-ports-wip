@@ -1,0 +1,8 @@
+--- mc6809/dispatch.h.orig	Sat Jan  9 12:00:17 2021
++++ mc6809/dispatch.h	Sat Jan  9 12:00:41 2021
+@@ -5,4 +5,4 @@
+ extern dispatch_t opcode10[256];
+ extern dispatch_t opcode11[256];
+ 
+-#endif __DISPATCH_H
++#endif

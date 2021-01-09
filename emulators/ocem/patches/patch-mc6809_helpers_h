@@ -1,0 +1,8 @@
+--- mc6809/helpers.h.orig	Sat Jan  9 12:02:33 2021
++++ mc6809/helpers.h	Sat Jan  9 12:02:43 2021
+@@ -477,4 +477,4 @@
+   tmp |= memory[regs.pc++];
+   return tmp;
+ }
+-#endif __HELPERS_H
++#endif
