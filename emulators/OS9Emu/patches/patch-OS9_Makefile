@@ -1,0 +1,27 @@
+$OpenBSD$
+--- OS9/Makefile.orig	Sat Jan  9 14:01:55 2021
++++ OS9/Makefile	Sat Jan  9 14:03:08 2021
+@@ -1,16 +1,18 @@
+ TARGET=os9emu
+-CPPFLAGS=-g -I/sw/include/root
+-LDFLAGS=-g
+-LDLIBS=
++
++CPPFLAGS += -g
++LDFLAGS += -g
++CC = cc
++LDLIBS += -lstdc++
+ SOURCES=$(wildcard *.cc)
+ OBJS=$(SOURCES:.cc=.o)
+ 
+ 
+ $(TARGET): $(OBJS)
+-	g++ $(LDFLAGS) -o $@ $^ $(LDLIBS)
++	$(CC) $(LDFLAGS) -o $@ $^ $(LDLIBS)
+ 
+ %.o: %.cc
+-	g++ $(CPPFLAGS) -c $< -o $@
++	$(CC) $(CPPFLAGS) -c $< -o $@
+ 
+ install:
+ 	cp $(TARGET) /usr/local/bin
