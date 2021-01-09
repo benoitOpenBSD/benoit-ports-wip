@@ -1,0 +1,13 @@
+--- makefile.orig	Fri Feb  9 07:21:02 2018
++++ makefile	Sat Jan  9 13:48:51 2021
+@@ -4,8 +4,8 @@
+ TEST_TARGET = $(BUILD_DIR)6809_tests
+ TEST_LIBS = -l cmocka -l png
+ MON_TARGET = $(BUILD_DIR)mon
+-CC = gcc
+-CFLAGS = -I. -Wall -g -D TESTS
++CC = cc
++CFLAGS += -I. -I/usr/local/include -Wall -D TESTS 
+ LWASM = lwasm
+ LWASMFLAGS = --6809 --format=decb
+ 
