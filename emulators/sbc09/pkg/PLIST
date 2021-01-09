@@ -1,0 +1,5 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/a09
+@bin bin/v09
+@bin bin/v09s
+@bin bin/v09st

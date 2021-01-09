@@ -1,0 +1,12 @@
+$OpenBSD$
+--- src/Makefile.orig	Sat Jan  9 09:12:33 2021
++++ src/Makefile	Sat Jan  9 09:13:13 2021
+@@ -9,7 +9,7 @@
+ # license: GNU General Public License version 2, see LICENSE for more details.
+ #
+ 
+-CFLAGS=-O3 -fomit-frame-pointer -DTERM_CONTROL
++CFLAGS += -DTERM_CONTROL
+ 
+ V09FLAGS= -DUSE_TERMIOS #-DBIG_ENDIAN
+ 

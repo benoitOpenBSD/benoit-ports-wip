@@ -1,0 +1,5 @@
+6809 Simulator/Emulator
+=======================
+
+sbc09 stands for Lennart Benschop 6809 Single Board Computer.
+It contains a assembler and simulator for the Motorola M6809 processor.
