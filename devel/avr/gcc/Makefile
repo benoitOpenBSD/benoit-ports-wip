@@ -1,15 +1,15 @@
-# $OpenBSD: Makefile,v 1.31 2018/10/24 14:27:59 sthen Exp $
+# $OpenBSD: Makefile,v 1.36 2021/01/09 21:41:16 jasper Exp $
 
-COMMENT=	Atmel AVR 8-bit RISC microcontrollers' XGCC #'
+COMMENT =	Atmel AVR 8-bit RISC microcontrollers' XGCC #'
 
-V=		5.5.0
+V =		8.4.0
 DISTNAME =	gcc-$V
-PKGNAME=	avr-gcc-${V}
+PKGNAME =	avr-gcc-${V}
 SHARED_LIBS +=  cc1plugin                 0.0 # 0.0
 SHARED_LIBS +=  cc1                       0.0 # 0.0
 
 # GPLv3
-PERMIT_PACKAGE =	Yes
+PERMIT_PACKAGE=	Yes
 
 WANTLIB=		c gmp mpfr ${COMPILER_LIBCXX} m mpc
 
@@ -18,6 +18,10 @@ COMPILER =		base-clang ports-gcc base-gcc
 MASTER_SITES= 	${MASTER_SITE_GCC:=releases/gcc-$(V)/}
 EXTRACT_SUFX=	.tar.xz
 DIST_SUBDIR=	gcc
+
+.if ${MACHINE_ARCH} == "powerpc64"
+PATCH_LIST =	patch-* vecstep-*
+.endif
 
 BUILD_DEPENDS+=		devel/autoconf/2.13 \
 			devel/bison		\
@@ -34,6 +38,7 @@ CONFIGURE_ENV=	INSTALL="install -c" \
 CONFIGURE_ARGS+= --disable-libssp \
 		--enable-languages="c,c++" \
 		--enable-cpp \
+		--disable-libcc1 \
 		--with-gmp=${LOCALBASE} \
 		--with-mpfr=${LOCALBASE}
 
@@ -50,8 +55,8 @@ SUBST_VARS=	V
 
 # Fix build with clang in c++11 mode
 post-patch:
-	find ${WRKSRC} -type f \( -name '*.[ch]' -o -name '*.cc' \) | \
-		xargs egrep -l '"(HOST_WIDE|PLUGIN_COND|PRId64)' | \
+	find ${WRKSRC} -type f \( -name '*.[ch]' -o -name '*.cc' \) \
+		-exec egrep -l '"(HOST_WIDE|PLUGIN_COND|PRId64)' {} + | \
 		xargs sed -i -E -e 's/"(HOST_WIDE|PLUGIN_COND|PRId64)/" \1/g'
 
 # XXX
