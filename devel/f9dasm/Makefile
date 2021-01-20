@@ -2,7 +2,7 @@
 
 COMMENT =		680x/630x Disassembler
 
-DISTNAME =		f9dasm-20210103
+DISTNAME =		f9dasm-20210118
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/Arakula/f9dasm
 
 GH_ACCOUNT =		Arakula
 GH_PROJECT =		f9dasm
-GH_COMMIT =		566210ec0e096ea33c067d1bce58c59cd2270a49
+GH_COMMIT =		13327c3cbbcc97496da0ef3ce5c5f98bf41343af
 
 WANTLIB +=		c
 
