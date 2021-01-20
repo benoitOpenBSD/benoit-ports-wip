@@ -3,4 +3,4 @@
 @bin bin/lwasm
 @bin bin/lwlink
 @bin bin/lwobjdump
-lib/liblw.a
+@static-lib lib/liblw.a
