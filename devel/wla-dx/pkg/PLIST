@@ -85,6 +85,7 @@ share/wla-dx/examples/6502/struct_test/
 share/wla-dx/examples/6502/struct_test/linkfile
 share/wla-dx/examples/6502/struct_test/main.s
 share/wla-dx/examples/6502/struct_test/makefile
+share/wla-dx/examples/6502/struct_test/testsfile
 share/wla-dx/examples/6510/
 share/wla-dx/examples/6510/c64_prg_test/
 share/wla-dx/examples/6510/c64_prg_test/linkfile
@@ -158,6 +159,10 @@ share/wla-dx/examples/65816/include/snes_memory.i
 share/wla-dx/examples/65816/linker_test/
 share/wla-dx/examples/65816/linker_test/can_you_tell_this_name_is_intended_to_test_the_capability_of_wla_to_handle_long_filenames_and_stufffffffff.s
 share/wla-dx/examples/65816/linker_test/defines.i
+share/wla-dx/examples/65816/linker_test/include_dir_1/
+share/wla-dx/examples/65816/linker_test/include_dir_1/include_me_1.s
+share/wla-dx/examples/65816/linker_test/include_dir_2/
+share/wla-dx/examples/65816/linker_test/include_dir_2/include_me_2.s
 share/wla-dx/examples/65816/linker_test/linkfile
 share/wla-dx/examples/65816/linker_test/main.s
 share/wla-dx/examples/65816/linker_test/makefile
