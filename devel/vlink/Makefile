@@ -20,6 +20,7 @@ HOMEPAGE =		http://sun.hasenbraten.de/vlink/
 WANTLIB +=		c m
 
 USE_GMAKE =		Yes
+ALL_TARGET =		vlink
 
 WRKDIST =		${WRKDIR}/vlink
 
