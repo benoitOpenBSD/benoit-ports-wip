@@ -2,7 +2,7 @@
 
 COMMENT =	emulates the Amstrad PCW
 
-DISTNAME =	joyce-2.2.13
+DISTNAME =	joyce-2.2.14
 CATEGORIES =	emulators
 
 HOMEPAGE =	https://www.seasip.info/Unix/Joyce/
