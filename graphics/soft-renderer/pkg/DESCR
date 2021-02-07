@@ -1,0 +1,9 @@
+A software 3D model renderer of 2k lines of code, features include:
+
+    Reading in OBJ model
+    Ray tracing
+    Phong smoothing
+    Bump mapping
+
+All features are implemented from scratch, xlib is the only dependent library. 
+xlib is used only for drawing pixels.

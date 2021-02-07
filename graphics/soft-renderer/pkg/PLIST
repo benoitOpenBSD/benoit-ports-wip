@@ -1,0 +1,24 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/render
+share/soft-renderer/
+share/soft-renderer/model/
+share/soft-renderer/model/README.md
+share/soft-renderer/model/airboat.obj
+share/soft-renderer/model/al.obj
+share/soft-renderer/model/cessna.obj
+share/soft-renderer/model/diamond.obj
+share/soft-renderer/model/dodecahedron.obj
+share/soft-renderer/model/humanoid_quad.obj
+share/soft-renderer/model/icosahedron.obj
+share/soft-renderer/model/iron.obj
+share/soft-renderer/model/lamp.obj
+share/soft-renderer/model/model0.obj
+share/soft-renderer/model/model0_1.obj
+share/soft-renderer/model/model1.obj
+share/soft-renderer/model/model1_1.obj
+share/soft-renderer/model/model2.obj
+share/soft-renderer/model/mothership.obj
+share/soft-renderer/model/pyramid.obj
+share/soft-renderer/model/roi.obj
+share/soft-renderer/model/teapot.obj
+share/soft-renderer/model/violin_case.obj
