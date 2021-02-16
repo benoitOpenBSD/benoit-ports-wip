@@ -2,7 +2,7 @@
 
 COMMENT =		yet Another Multi Platform Cross Assembler
 
-DISTNAME =		wla-dx-20210124
+DISTNAME =		wla-dx-20210214
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/vhelin/wla-dx
 
 GH_ACCOUNT =		vhelin
 GH_PROJECT =		wla-dx
-GH_COMMIT =		3565166dc6a623a9ba375b4a81d915412db279e9
+GH_COMMIT =		3047b69aaf4796b9791bf1ed57100cc200176e84
 
 WANTLIB +=		c m
 
@@ -28,8 +28,8 @@ BUILD_DEPENDS =		textproc/py-sphinx
 NO_TEST =		Yes
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/wla-dx/examples
-	cp -R ${WRKSRC}/examples/* ${PREFIX}/share/wla-dx/examples
+	${INSTALL_DATA_DIR} ${PREFIX}/share/wla-dx/tests
+	cp -R ${WRKSRC}/tests/* ${PREFIX}/share/wla-dx/tests
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/wla-dx
 	cp -R ${WRKSRC}/doc/* ${PREFIX}/share/doc/wla-dx
 
