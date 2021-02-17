@@ -2,7 +2,7 @@
 
 COMMENT =		mc6809 emulator
 
-DISTNAME =		usim-20210205
+DISTNAME =		usim-20210215
 CATEGORIES =		emulators
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -14,7 +14,7 @@ HOMEPAGE =		https://github.com/raybellis/usim
 
 GH_ACCOUNT =		raybellis
 GH_PROJECT =		usim
-GH_COMMIT =		f181563cb862cd5d2dd3e6027dbe965affb9b0a6
+GH_COMMIT =		ac985cce95d08cbb14e8b78667d94c5d52d6ef9e
 
 WANTLIB +=		c ${COMPILER_LIBCXX}
 
