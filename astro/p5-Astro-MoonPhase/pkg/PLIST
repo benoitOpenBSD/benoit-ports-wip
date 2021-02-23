@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 ${P5SITE}/Astro/
 ${P5SITE}/Astro/MoonPhase.pm
 @man man/man3p/Astro::MoonPhase.3p
