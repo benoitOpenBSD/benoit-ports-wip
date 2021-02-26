@@ -1,0 +1,26 @@
+$OpenBSD$
+--- Makefile.orig	Fri Feb 26 21:25:39 2021
++++ Makefile	Fri Feb 26 21:45:10 2021
+@@ -1,10 +1,10 @@
+-CXX      = g++
+-CXXFLAGS = -g -Wall
+-CFLAGS	= -O2 -Wall
++CXX      = c++
++CXXFLAGS += -g -Wall
++CFLAGS	+=  -Wall
+ 
+ LIB_MODULES = acorn-fs.o acorn-adfs.o acorn-dfs.o
+ 
+-all: afsls afstree afscp afschk afstitle ide2scsi scsi2ide acunzip
++all: afsls afstree afscp afschk afstitle acunzip
+ 
+ afsls: afsls.o $(LIB_MODULES)
+ 
+@@ -17,6 +17,6 @@
+ afstitle: afstitle.o  $(LIB_MODULES)
+ 
+ acunzip: acunzip.c
+-	$(CC) $(CFLAGS) -o acunzip acunzip.c -lzip
++	$(CC) $(CFLAGS) $(LDFLAGS) -o acunzip acunzip.c -lzip
+ 
+ *.o: acorn-fs.h
