@@ -1,4 +1,4 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 ${P5SITE}/DBIx/
 ${P5SITE}/DBIx/SQLite/
 ${P5SITE}/DBIx/SQLite/Simple/
