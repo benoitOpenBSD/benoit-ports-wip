@@ -1,27 +1,32 @@
-# $OpenBSD: Makefile,v 1.19 2014/08/14 07:06:00 ajacoutot Exp $
+# $OpenBSD: Makefile,v 1.25 2021/01/04 14:06:33 sthen Exp $
 
 COMMENT =	package for creating PostScript/PDF graphics
 
-MODPY_EGG_VERSION = 0.13
+MODPY_EGG_VERSION = 0.15
 DISTNAME =	PyX-${MODPY_EGG_VERSION}
 PKGNAME =	py-pyx-${MODPY_EGG_VERSION}
 CATEGORIES =	graphics devel
+REVISION =	0
 
 HOMEPAGE =	http://pyx.sourceforge.net/
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB +=	${MODPY_WANTLIB} pthread
 
 MODULES =	lang/python
 
-MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=pyx/}
+FLAVORS =	python3
+FLAVOR  =	python3
+
+MODPY_PI =		Yes
+MODPY_SETUPTOOLS =	Yes
 
 RUN_DEPENDS =	print/texlive/base \
-		graphics/py-Pillow
+		graphics/py-Pillow${MODPY_FLAVOR}
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/py-pyx
