@@ -382,6 +382,7 @@ share/cc65/target/apple2/drv/tgi/
 share/cc65/target/apple2/drv/tgi/a2.hi.tgi
 share/cc65/target/apple2/drv/tgi/a2.lo.tgi
 share/cc65/target/apple2/util/
+share/cc65/target/apple2/util/convert.system
 share/cc65/target/apple2/util/loader.system
 share/cc65/target/apple2enh/
 share/cc65/target/apple2enh/drv/
@@ -397,6 +398,7 @@ share/cc65/target/apple2enh/drv/tgi/
 share/cc65/target/apple2enh/drv/tgi/a2e.hi.tgi
 share/cc65/target/apple2enh/drv/tgi/a2e.lo.tgi
 share/cc65/target/apple2enh/util/
+share/cc65/target/apple2enh/util/convert.system
 share/cc65/target/apple2enh/util/loader.system
 share/cc65/target/atari/
 share/cc65/target/atari/drv/
@@ -568,9 +570,6 @@ share/cc65/target/gamate/
 share/cc65/target/gamate/drv/
 share/cc65/target/gamate/drv/joy/
 share/cc65/target/gamate/drv/joy/gamate-stdjoy.joy
-share/cc65/target/geos-apple/
-share/cc65/target/geos-apple/util/
-share/cc65/target/geos-apple/util/convert.system
 share/cc65/target/geos-cbm/
 share/cc65/target/geos-cbm/drv/
 share/cc65/target/geos-cbm/drv/emd/
