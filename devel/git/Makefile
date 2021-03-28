@@ -1,10 +1,10 @@
-# $OpenBSD: Makefile,v 1.225 2020/12/29 20:23:05 kn Exp $
+# $OpenBSD: Makefile,v 1.230 2021/03/16 19:06:52 kn Exp $
 
 COMMENT-main =	distributed version control system
 COMMENT-svn =	subversion interoperability tools
 COMMENT-x11 =	graphical tools
 
-V =		2.30.0
+V =		2.31.1
 DISTNAME =	git-${V}
 PKGNAME-main =	${DISTNAME}
 PKGNAME-svn =	git-svn-${V}
@@ -31,7 +31,6 @@ MODULES =		lang/python \
 
 MODTK_VERSION =		8.6
 
-MODPY_VERSION =		${MODPY_DEFAULT_VERSION_3}
 MODPY_BUILDDEP =	No
 MODPY_RUNDEP =		No
 MODPY_ADJ_FILES =	contrib/hooks/multimail/git_multimail.py \
