@@ -18,6 +18,7 @@ share/cc65/asminc/_heap.inc
 share/cc65/asminc/accelerator.inc
 share/cc65/asminc/apple2.inc
 share/cc65/asminc/apple2.mac
+share/cc65/asminc/ascii_charmap.inc
 share/cc65/asminc/atari.inc
 share/cc65/asminc/atari.mac
 share/cc65/asminc/atari2600.inc
@@ -25,8 +26,10 @@ share/cc65/asminc/atari2600_riot.inc
 share/cc65/asminc/atari2600_tia.inc
 share/cc65/asminc/atari5200.inc
 share/cc65/asminc/atari_antic.inc
+share/cc65/asminc/atari_atascii_charmap.inc
 share/cc65/asminc/atari_gtia.inc
 share/cc65/asminc/atari_pokey.inc
+share/cc65/asminc/atari_screen_charmap.inc
 share/cc65/asminc/atmos.inc
 share/cc65/asminc/c128.inc
 share/cc65/asminc/c16.inc
@@ -36,6 +39,8 @@ share/cc65/asminc/cbm510.inc
 share/cc65/asminc/cbm610.inc
 share/cc65/asminc/cbm_filetype.inc
 share/cc65/asminc/cbm_kernal.inc
+share/cc65/asminc/cbm_petscii_charmap.inc
+share/cc65/asminc/cbm_screen_charmap.inc
 share/cc65/asminc/cpu.mac
 share/cc65/asminc/creativision.inc
 share/cc65/asminc/ctype.inc
