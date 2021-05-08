@@ -5,12 +5,13 @@ COMMENT =		Replacement for the arc program
 DISTNAME =		nomarch-1.4
 CATEGORIES =		archivers
 
-HOMEPAGE =		ftp://ftp.ibiblio.org/pub/Linux/utils/compress/
+#HOMEPAGE =		ftp://ftp.ibiblio.org/pub/Linux/utils/compress/
+HOMEPAGE =		https://www.ibiblio.org/pub/Linux/utils/compress/
 
 MAINTAINER =		Benoit Lecocq <blq@arcane-labs.net>
 
 # GPLv2
-PERMIT_PACKAGE_CDROM =		Yes 
+PERMIT_PACKAGE =	Yes 
 
 WANTLIB =		c
 
