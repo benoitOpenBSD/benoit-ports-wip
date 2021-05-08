@@ -9,10 +9,10 @@ CATEGORIES =	audio
 
 HOMEPAGE =	https://github.com/np1/mps
 
-#MAINTAINER =	James Lecocq <james@james.cx>
+MAINTAINER =	James Lecocq <james@james.cx>
 
 # Public Domain
-PERMIT_PACKAGE_CDROM =		Yes
+PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =	${MASTER_SITE_PYPI:=m/mps/}
 
