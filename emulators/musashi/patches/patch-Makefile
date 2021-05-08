@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.orig	Sun Jun 14 10:40:13 2020
++++ Makefile	Sat May  8 10:46:44 2021
+@@ -12,7 +12,7 @@
+ .CFILES   = $(MAINFILES) $(OSDFILES) $(MUSASHIFILES) $(MUSASHIGENCFILES)
+ .OFILES   = $(.CFILES:%.c=%.o)
+ 
+-CC        = gcc
++CC        = cc
+ WARNINGS  = -Wall -Wextra -pedantic
+ CFLAGS    = $(WARNINGS)
+ LFLAGS    = $(WARNINGS)
