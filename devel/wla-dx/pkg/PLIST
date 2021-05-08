@@ -12,6 +12,7 @@
 @bin bin/wla-gb
 @bin bin/wla-huc6280
 @bin bin/wla-spc700
+@bin bin/wla-superfx
 @bin bin/wla-z80
 @bin bin/wlab
 @bin bin/wlalink
@@ -60,16 +61,29 @@ share/doc/wla-dx/wlaflags.rst
 share/wla-dx/
 share/wla-dx/tests/
 share/wla-dx/tests/6502/
+share/wla-dx/tests/6502/after_test/
+share/wla-dx/tests/6502/after_test/linkfile
+share/wla-dx/tests/6502/after_test/main.s
+share/wla-dx/tests/6502/after_test/makefile
+share/wla-dx/tests/6502/after_test/more.s
+share/wla-dx/tests/6502/after_test/testsfile
 share/wla-dx/tests/6502/append_to_test/
+share/wla-dx/tests/6502/append_to_test/last.s
 share/wla-dx/tests/6502/append_to_test/linkfile
 share/wla-dx/tests/6502/append_to_test/main.s
 share/wla-dx/tests/6502/append_to_test/makefile
+share/wla-dx/tests/6502/append_to_test/more.s
 share/wla-dx/tests/6502/append_to_test/testsfile
 share/wla-dx/tests/6502/array_test/
 share/wla-dx/tests/6502/array_test/linkfile
 share/wla-dx/tests/6502/array_test/main.s
 share/wla-dx/tests/6502/array_test/makefile
 share/wla-dx/tests/6502/array_test/testsfile
+share/wla-dx/tests/6502/bits_test/
+share/wla-dx/tests/6502/bits_test/linkfile
+share/wla-dx/tests/6502/bits_test/main.s
+share/wla-dx/tests/6502/bits_test/makefile
+share/wla-dx/tests/6502/bits_test/testsfile
 share/wla-dx/tests/6502/compiler_test/
 share/wla-dx/tests/6502/compiler_test/linkfile
 share/wla-dx/tests/6502/compiler_test/main.s
@@ -100,6 +114,11 @@ share/wla-dx/tests/6502/operand_hint_test/linkfile
 share/wla-dx/tests/6502/operand_hint_test/main.s
 share/wla-dx/tests/6502/operand_hint_test/makefile
 share/wla-dx/tests/6502/operand_hint_test/testsfile
+share/wla-dx/tests/6502/precedence_and_if_test/
+share/wla-dx/tests/6502/precedence_and_if_test/linkfile
+share/wla-dx/tests/6502/precedence_and_if_test/main.s
+share/wla-dx/tests/6502/precedence_and_if_test/makefile
+share/wla-dx/tests/6502/precedence_and_if_test/testsfile
 share/wla-dx/tests/6502/slots_test/
 share/wla-dx/tests/6502/slots_test/linkfile
 share/wla-dx/tests/6502/slots_test/main.s
@@ -456,6 +475,12 @@ share/wla-dx/tests/spc-700/mnemonics_test/linkfile
 share/wla-dx/tests/spc-700/mnemonics_test/main.s
 share/wla-dx/tests/spc-700/mnemonics_test/makefile
 share/wla-dx/tests/spc-700/mnemonics_test/testsfile
+share/wla-dx/tests/superfx/
+share/wla-dx/tests/superfx/mnemonics_test/
+share/wla-dx/tests/superfx/mnemonics_test/linkfile
+share/wla-dx/tests/superfx/mnemonics_test/main.s
+share/wla-dx/tests/superfx/mnemonics_test/makefile
+share/wla-dx/tests/superfx/mnemonics_test/testsfile
 share/wla-dx/tests/z80/
 share/wla-dx/tests/z80/caddr_test/
 share/wla-dx/tests/z80/caddr_test/linkfile
@@ -487,6 +512,10 @@ share/wla-dx/tests/z80/linker_test_2/linkfile
 share/wla-dx/tests/z80/linker_test_2/main.s
 share/wla-dx/tests/z80/linker_test_2/makefile
 share/wla-dx/tests/z80/linker_test_2/setup.s
+share/wla-dx/tests/z80/mnemonics_test/
+share/wla-dx/tests/z80/mnemonics_test/linkfile
+share/wla-dx/tests/z80/mnemonics_test/main.s
+share/wla-dx/tests/z80/mnemonics_test/makefile
 share/wla-dx/tests/z80/ram_sections/
 share/wla-dx/tests/z80/ram_sections/library.s
 share/wla-dx/tests/z80/ram_sections/linkfile
