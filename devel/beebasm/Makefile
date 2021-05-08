@@ -20,8 +20,6 @@ GH_ACCOUNT =            stardot
 GH_PROJECT =            beebasm
 GH_TAGNAME =            v$V
 
-COMPILER =		base-clang ports-gcc base-gcc
-
 USE_GMAKE =		Yes
 
 do-build:

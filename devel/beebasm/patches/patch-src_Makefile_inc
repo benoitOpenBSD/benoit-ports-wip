@@ -1,0 +1,16 @@
+$OpenBSD$
+--- src/Makefile.inc.orig	Sat May  8 10:11:23 2021
++++ src/Makefile.inc	Sat May  8 10:11:44 2021
+@@ -52,9 +52,9 @@
+ 
+ # Declare executable names
+ 
+-CC				:=		gcc
+-CXX				:=		g++
+-LD				:=		g++
++CC				:=		clang
++CXX				:=		clang++
++LD				:=		clang++
+ MKDIR			:=		mkdir -p
+ RM				:=		rm -f
+ ECHO			:=		@@echo -e
