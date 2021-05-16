@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.orig	Sun May 16 20:05:09 2021
++++ Makefile	Sun May 16 20:05:14 2021
+@@ -30,7 +30,7 @@
+ # Various commands.
+ 
+ AR = ar
+-CC = gcc
++CC = cc
+ 
+ # Which build system to use; use 'ninja' or 'make' (in lower case). Leave
+ # blank to autodetect.
