@@ -1,6 +1,6 @@
 $OpenBSD$
---- Makefile.orig	Wed Jan  6 08:40:31 2021
-+++ Makefile	Wed Jan  6 14:18:56 2021
+--- Makefile.orig	Tue Jan  5 23:49:25 2021
++++ Makefile	Sun May 16 20:09:19 2021
 @@ -1,5 +1,5 @@
  OBJDIR = .obj
 -LUA_5_1 = lua5.1
@@ -8,3 +8,11 @@ $OpenBSD$
  
  all: $(OBJDIR)/build.ninja
  	@ninja -f $(OBJDIR)/build.ninja
+@@ -17,6 +17,6 @@
+ 		build.lua \
+ 		--ninja \
+ 		OBJDIR=$(OBJDIR) \
+-		CC=gcc \
++		CC=cc \
+ 		AR=ar \
+ 		> $@
