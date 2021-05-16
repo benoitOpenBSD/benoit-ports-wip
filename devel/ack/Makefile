@@ -2,7 +2,7 @@
 
 COMMENT =		the Amsterdam Compiler Kit
 
-DISTNAME =		ack-20201009
+DISTNAME =		ack-20210504
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/davidgiven/ack
 
 GH_ACCOUNT =		davidgiven
 GH_PROJECT =		ack
-GH_COMMIT =		7c51d86c4ebb688f32f7886a5c4fdd9b8129f05d
+GH_COMMIT =		8b53004031c3b44063c2260ebf352eaae643b23f
 
 WANTLIB +=		c
 

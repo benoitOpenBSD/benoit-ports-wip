@@ -59,6 +59,9 @@ ack/lib/ack/linuxppc/
 @bin ack/lib/ack/linuxppc/as
 @bin ack/lib/ack/linuxppc/ncg
 @bin ack/lib/ack/linuxppc/top
+ack/lib/ack/msdos86/
+@bin ack/lib/ack/msdos86/as
+@bin ack/lib/ack/msdos86/ncg
 ack/lib/ack/osx386/
 @bin ack/lib/ack/osx386/as
 @bin ack/lib/ack/osx386/ncg
@@ -108,6 +111,7 @@ ack/share/ack/descr/linux386
 ack/share/ack/descr/linux68k
 ack/share/ack/descr/linuxmips
 ack/share/ack/descr/linuxppc
+ack/share/ack/descr/msdos86
 ack/share/ack/descr/osx386
 ack/share/ack/descr/osxppc
 ack/share/ack/descr/pc86
@@ -151,6 +155,7 @@ ack/share/ack/examples/hilo_b.linux386
 ack/share/ack/examples/hilo_b.linux68k
 ack/share/ack/examples/hilo_b.linuxmips
 ack/share/ack/examples/hilo_b.linuxppc
+ack/share/ack/examples/hilo_b.msdos86
 ack/share/ack/examples/hilo_b.osx386
 ack/share/ack/examples/hilo_b.osxppc
 ack/share/ack/examples/hilo_b.pc86
@@ -161,6 +166,7 @@ ack/share/ack/examples/hilo_bas.linux386
 ack/share/ack/examples/hilo_bas.linux68k
 ack/share/ack/examples/hilo_bas.linuxmips
 ack/share/ack/examples/hilo_bas.linuxppc
+ack/share/ack/examples/hilo_bas.msdos86
 ack/share/ack/examples/hilo_bas.osx386
 ack/share/ack/examples/hilo_bas.osxppc
 ack/share/ack/examples/hilo_bas.pc86
@@ -171,6 +177,7 @@ ack/share/ack/examples/hilo_c.linux386
 ack/share/ack/examples/hilo_c.linux68k
 ack/share/ack/examples/hilo_c.linuxmips
 ack/share/ack/examples/hilo_c.linuxppc
+ack/share/ack/examples/hilo_c.msdos86
 ack/share/ack/examples/hilo_c.osx386
 ack/share/ack/examples/hilo_c.osxppc
 ack/share/ack/examples/hilo_c.pc86
@@ -182,6 +189,7 @@ ack/share/ack/examples/hilo_mod.linux386
 ack/share/ack/examples/hilo_mod.linux68k
 ack/share/ack/examples/hilo_mod.linuxmips
 ack/share/ack/examples/hilo_mod.linuxppc
+ack/share/ack/examples/hilo_mod.msdos86
 ack/share/ack/examples/hilo_mod.osx386
 ack/share/ack/examples/hilo_mod.osxppc
 ack/share/ack/examples/hilo_mod.pc86
@@ -192,6 +200,7 @@ ack/share/ack/examples/hilo_p.linux386
 ack/share/ack/examples/hilo_p.linux68k
 ack/share/ack/examples/hilo_p.linuxmips
 ack/share/ack/examples/hilo_p.linuxppc
+ack/share/ack/examples/hilo_p.msdos86
 ack/share/ack/examples/hilo_p.osx386
 ack/share/ack/examples/hilo_p.osxppc
 ack/share/ack/examples/hilo_p.pc86
@@ -203,6 +212,7 @@ ack/share/ack/examples/mandelbrot_c.linux386
 ack/share/ack/examples/mandelbrot_c.linux68k
 ack/share/ack/examples/mandelbrot_c.linuxmips
 ack/share/ack/examples/mandelbrot_c.linuxppc
+ack/share/ack/examples/mandelbrot_c.msdos86
 ack/share/ack/examples/mandelbrot_c.osx386
 ack/share/ack/examples/mandelbrot_c.osxppc
 ack/share/ack/examples/mandelbrot_c.pc86
@@ -215,6 +225,7 @@ ack/share/ack/examples/paranoia_c.linux386
 ack/share/ack/examples/paranoia_c.linux68k
 ack/share/ack/examples/paranoia_c.linuxmips
 ack/share/ack/examples/paranoia_c.linuxppc
+ack/share/ack/examples/paranoia_c.msdos86
 ack/share/ack/examples/paranoia_c.osx386
 ack/share/ack/examples/paranoia_c.osxppc
 ack/share/ack/examples/paranoia_c.pc86
@@ -227,6 +238,7 @@ ack/share/ack/examples/startrek_c.linux386
 ack/share/ack/examples/startrek_c.linux68k
 ack/share/ack/examples/startrek_c.linuxmips
 ack/share/ack/examples/startrek_c.linuxppc
+ack/share/ack/examples/startrek_c.msdos86
 ack/share/ack/examples/startrek_c.osx386
 ack/share/ack/examples/startrek_c.osxppc
 ack/share/ack/examples/startrek_c.pc86
@@ -347,6 +359,24 @@ ack/share/ack/linuxppc/libpascal.a
 ack/share/ack/linuxppc/libsys.a
 ack/share/ack/linuxppc/modula2.o
 ack/share/ack/linuxppc/pascal.o
+ack/share/ack/msdos86/
+ack/share/ack/msdos86/boot.o
+ack/share/ack/msdos86/c-ansi.o
+ack/share/ack/msdos86/include/
+ack/share/ack/msdos86/include/ack/
+ack/share/ack/msdos86/include/ack/plat.h
+ack/share/ack/msdos86/include/sys/
+ack/share/ack/msdos86/include/sys/types.h
+ack/share/ack/msdos86/libb.a
+ack/share/ack/msdos86/libbasic.a
+ack/share/ack/msdos86/libc.a
+ack/share/ack/msdos86/libem.a
+ack/share/ack/msdos86/libend.a
+ack/share/ack/msdos86/libmodula2.a
+ack/share/ack/msdos86/libpascal.a
+ack/share/ack/msdos86/libsys.a
+ack/share/ack/msdos86/modula2.o
+ack/share/ack/msdos86/pascal.o
 ack/share/ack/osx/
 ack/share/ack/osx/include/
 ack/share/ack/osx/include/ack/
