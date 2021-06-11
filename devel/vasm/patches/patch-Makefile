@@ -1,15 +1,13 @@
 $OpenBSD$
---- Makefile.orig	Thu Nov 26 11:16:58 2020
-+++ Makefile	Wed Jan  6 19:19:15 2021
-@@ -1,13 +1,13 @@
+--- Makefile.orig	Wed Feb 24 20:57:13 2021
++++ Makefile	Fri Jun 11 21:13:03 2021
+@@ -1,11 +1,11 @@
  # Unix, using gcc
  
 -CC = gcc
 +CC = cc
  TARGET =
  TARGETEXTENSION =
- OUTFMTS = -DOUTAOUT -DOUTBIN -DOUTELF -DOUTHUNK -DOUTSREC -DOUTTOS -DOUTVOBJ \
-           -DOUTXFIL -DOUTIHEX
  
  CCOUT = -o
 -COPTS = -c -std=c99 -O2 -Wpedantic -DUNIX $(OUTFMTS)
