@@ -2,8 +2,8 @@
 
 COMMENT =		a mostly Mac/65 compatible cross-assembler
 
-PKGNAME =		atasm-1.07d
-DISTNAME =		atasm107d
+PKGNAME =		atasm-1.09
+DISTNAME =		atasm109
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -21,7 +21,7 @@ WANTLIB +=		c z
 
 USE_GMAKE =		Yes
 
-WRKSRC =                ${WRKDIR}/atasm107
+WRKSRC =                ${WRKDIR}/atasm109
 WRKDIST =               ${WRKSRC}
 
 do-build:

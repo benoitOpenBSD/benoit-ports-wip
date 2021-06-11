@@ -1,9 +1,10 @@
-@comment $OpenBSD$
+@comment $OpenBSD: PLIST,v$
 @bin bin/atasm
 share/atasm/
 share/atasm/docs/
 share/atasm/docs/atasm.blurb
 share/atasm/docs/atasm.pdf
+share/atasm/docs/atasm.txt
 share/atasm/examples/
 share/atasm/examples/iomac.lib
 share/atasm/examples/sample.m65

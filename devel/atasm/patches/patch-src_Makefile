@@ -1,16 +1,16 @@
 $OpenBSD$
---- src/Makefile.orig	Tue Mar 17 21:39:26 2009
-+++ src/Makefile	Thu Apr 19 15:52:16 2018
+--- src/Makefile.orig	Sat Mar 20 16:15:32 2021
++++ src/Makefile	Fri Jun 11 20:58:03 2021
 @@ -17,13 +17,13 @@
  
  # Compiler flags, if you are using egcs, pgcs, or gcc >2.8.1 use:
- #CFLAGS  = -g -Wall $(USEZ) $(DOS) $(UNIX) 
--CFLAGS  = -Wall $(USEZ) $(DOS) $(UNIX) -O3 -fomit-frame-pointer -march=pentiumpro 
-+CFLAGS  += -Wall $(USEZ) $(UNIX)
+ #CFLAGS  = -g -Wall $(USEZ) $(DOS) $(UNIX) $(ARCH)
+-CFLAGS  = -Wall $(USEZ) $(DOS) $(UNIX) -O3 -fomit-frame-pointer $(ARCH)
++CFLAGS  = -Wall $(USEZ) $(UNIX)
  
- L       =  $(ZLIB) 
+ L       =  $(ZLIB)
 -CC      = gcc
-+#CC      = gcc
++CC      = cc
  DESTDIR	= /usr/local/bin
  MANDIR	= /usr/local/man/man1
 -DOCDIR	= /usr/local/doc/atasm
@@ -18,9 +18,3 @@ $OpenBSD$
  
  .c.o:
  	$(CC) $(CFLAGS) -c $<
-@@ -62,5 +62,3 @@
- 	cp atasm.1 $(MANDIR)
- 	chown root.root $(MANDIR)/atasm.1 || true
- 	chmod 644 $(MANDIR)/atasm.1
--
--
