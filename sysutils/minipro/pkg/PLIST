@@ -1,3 +1,5 @@
 @comment $OpenBSD: PLIST,v$
 @bin bin/minipro
 @man man/man1/minipro.1
+share/minipro/
+share/minipro/infoic.xml
