@@ -1,0 +1,11 @@
+$OpenBSD$
+--- qh.c.orig	Sun Jun 13 17:56:09 2021
++++ qh.c	Sun Jun 13 17:56:44 2021
+@@ -18,6 +18,7 @@
+ #include <netinet/in.h>
+ #include <stdlib.h>
+ #include <string.h>
++#include <sys/stat.h>
+ #include <sys/socket.h>
+ #include <sys/types.h>
+ #include <fcntl.h>
