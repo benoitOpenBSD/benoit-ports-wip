@@ -1,0 +1,35 @@
+--- Makefile.in.orig	Thu Jun  8 11:20:12 2017
++++ Makefile.in	Sat Jul  3 06:23:12 2021
+@@ -67,7 +67,7 @@ bwbasic:	$(OFILES)
+ 
+ # Added by JBV
+ renum:
+-	$(CC) renum.c -o renum
++	$(CC) renum.c -o renum $(LDFLAGS)
+ 
+ $(OFILES):      $(HFILES)
+ 
+@@ -75,10 +75,12 @@ $(OFILES):      $(HFILES)
+ 	$(CC) -c $(CPPFLAGS) -I$(srcdir) $(DEFS) $(CFLAGS) $<
+ 
+ install: all
+-	$(INSTALL_PROGRAM) bwbasic $(bindir)/bwbasic
++	$(INSTALL_PROGRAM) bwbasic $(DESTDIR)/$(bindir)/bwbasic
++	$(INSTALL_PROGRAM) renum $(DESTDIR)/$(bindir)/renum
+ 
+ uninstall:
+-	rm -f $(bindir)/bwbasic
++	rm -f $(DESTDIR)/$(bindir)/bwbasic
++	rm -f $(DESTDIR)/$(bindir)/renum
+ 
+ Makefile: Makefile.in config.status
+ 	$(SHELL) config.status
+@@ -91,7 +93,7 @@ TAGS:	$(CFILES)
+ 	etags $(CFILES)
+ 
+ clean:
+-	rm -f *.o bwbasic core
++	rm -f *.o bwbasic core renum
+ 
+ mostlyclean: clean
+ 

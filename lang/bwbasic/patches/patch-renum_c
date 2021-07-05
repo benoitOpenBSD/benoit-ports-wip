@@ -1,0 +1,19 @@
+--- renum.c.orig	Thu Jun  8 11:20:14 2017
++++ renum.c	Sat Jul  3 05:35:07 2021
+@@ -6,6 +6,7 @@
+ /*-------------------------------------------------------------------*/
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <string.h>
+ 
+ #define MAX_LINE_LENGTH  255
+@@ -20,7 +21,7 @@ int f2, l2, n, x;
+ int sidx[MAX_LINE_COUNT][2];
+ char rstr[MAX_LINE_LENGTH];
+ 
+-main(argc, argv)
++int main(argc, argv)
+    int argc;
+    char *argv[];
+ {
