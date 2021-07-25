@@ -32,5 +32,6 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/man/minipro.1 ${PREFIX}/man/man1
 	${INSTALL_DATA_DIR} ${PREFIX}/share/minipro
 	${INSTALL_DATA} ${WRKSRC}/infoic.xml ${PREFIX}/share/minipro
+	${INSTALL_DATA} ${WRKSRC}/logicic.xml ${PREFIX}/share/minipro
 
 .include <bsd.port.mk>

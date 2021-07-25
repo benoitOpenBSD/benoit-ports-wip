@@ -3,3 +3,4 @@
 @man man/man1/minipro.1
 share/minipro/
 share/minipro/infoic.xml
+share/minipro/logicic.xml
