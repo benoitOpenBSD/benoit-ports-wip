@@ -835,7 +835,7 @@ libexec/gcc/avr/${V}/install-tools/fixinc.sh
 libexec/gcc/avr/${V}/install-tools/mkheaders
 libexec/gcc/avr/${V}/install-tools/mkinstalldirs
 libexec/gcc/avr/${V}/liblto_plugin.la
-@so libexec/gcc/avr/${V}/liblto_plugin.so
+libexec/gcc/avr/${V}/liblto_plugin.so
 @bin libexec/gcc/avr/${V}/lto-wrapper
 @bin libexec/gcc/avr/${V}/lto1
 libexec/gcc/avr/${V}/plugin/
