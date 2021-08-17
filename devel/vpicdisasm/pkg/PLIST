@@ -1,0 +1,5 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/vpicdisasm
+share/doc/vpicdisasm/
+share/doc/vpicdisasm/README
+share/doc/vpicdisasm/disasm_flow.txt
