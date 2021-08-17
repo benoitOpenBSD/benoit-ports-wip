@@ -1,0 +1,2 @@
+A lean disassembler targeting small architectures, currently 
+supporting Atmel AVR-8, Microchip PIC, and 8051. 

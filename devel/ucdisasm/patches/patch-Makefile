@@ -1,0 +1,11 @@
+$OpenBSD$
+--- Makefile.orig	Tue Aug 17 21:09:29 2021
++++ Makefile	Tue Aug 17 21:09:54 2021
+@@ -1,5 +1,5 @@
+-CC = gcc
+-CFLAGS = -Wall -g -D_GNU_SOURCE -I.
++CC = cc
++CFLAGS += -Wall -g -D_GNU_SOURCE -I.
+ #CFLAGS = -Wall -O3 -D_GNU_SOURCE -I.
+ LDFLAGS=
+ LIBGIS_OBJECTS = file/libGIS-1.0.5/atmel_generic.o file/libGIS-1.0.5/ihex.o file/libGIS-1.0.5/srecord.o
