@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.13 2016/08/04 04:38:01 bentley Exp $
+# $OpenBSD: Makefile,v 1.16 2019/11/18 03:16:45 kmos Exp $
 
 COMMENT =		GNU PIC assembler and utilities
 
@@ -16,7 +16,7 @@ PERMIT_PACKAGE =	Yes
 WANTLIB =		c
 
 MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=gputils/}
-MASTER_SITES0 =		https://www.arcane-labs.net/download/OpenBSD/
+MASTER_SITES0 =		http://www.arcane-labs.net/download/OpenBSD/
 
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} gputils-testsuite-${VERSION}${EXTRACT_SUFX}:0
 DIST_SUBDIR =		gputils
@@ -29,7 +29,7 @@ USE_GMAKE =		Yes
 
 AUTOCONF_VERSION =	2.69
 
-do-test: fake
+do-test:
 	cd ${WRKSRC}/gpasm/testsuite && sh ./test all
 
 
