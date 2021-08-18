@@ -26,8 +26,6 @@ man/fr/man1/
 @man man/man1/gpvo.1
 share/doc/gputils/
 share/doc/gputils/gputils.lyx
-share/doc/gputils/gputils.pdf
-share/doc/gputils/gputils.ps
 share/gputils/
 share/gputils/header/
 share/gputils/header/coff.inc
@@ -194,8 +192,17 @@ share/gputils/header/p16f1518.inc
 share/gputils/header/p16f1519.inc
 share/gputils/header/p16f1526.inc
 share/gputils/header/p16f1527.inc
+share/gputils/header/p16f15324.inc
+share/gputils/header/p16f15325.inc
+share/gputils/header/p16f15344.inc
+share/gputils/header/p16f15345.inc
 share/gputils/header/p16f15354.inc
 share/gputils/header/p16f15355.inc
+share/gputils/header/p16f15356.inc
+share/gputils/header/p16f15375.inc
+share/gputils/header/p16f15376.inc
+share/gputils/header/p16f15385.inc
+share/gputils/header/p16f15386.inc
 share/gputils/header/p16f1574.inc
 share/gputils/header/p16f1575.inc
 share/gputils/header/p16f1578.inc
@@ -256,6 +263,8 @@ share/gputils/header/p16f18857.inc
 share/gputils/header/p16f18875.inc
 share/gputils/header/p16f18876.inc
 share/gputils/header/p16f18877.inc
+share/gputils/header/p16f19195.inc
+share/gputils/header/p16f19196.inc
 share/gputils/header/p16f19197.inc
 share/gputils/header/p16f1933.inc
 share/gputils/header/p16f1934.inc
@@ -365,8 +374,17 @@ share/gputils/header/p16lf1518.inc
 share/gputils/header/p16lf1519.inc
 share/gputils/header/p16lf1526.inc
 share/gputils/header/p16lf1527.inc
+share/gputils/header/p16lf15324.inc
+share/gputils/header/p16lf15325.inc
+share/gputils/header/p16lf15344.inc
+share/gputils/header/p16lf15345.inc
 share/gputils/header/p16lf15354.inc
 share/gputils/header/p16lf15355.inc
+share/gputils/header/p16lf15356.inc
+share/gputils/header/p16lf15375.inc
+share/gputils/header/p16lf15376.inc
+share/gputils/header/p16lf15385.inc
+share/gputils/header/p16lf15386.inc
 share/gputils/header/p16lf1554.inc
 share/gputils/header/p16lf1559.inc
 share/gputils/header/p16lf1566.inc
@@ -436,6 +454,9 @@ share/gputils/header/p16lf1903.inc
 share/gputils/header/p16lf1904.inc
 share/gputils/header/p16lf1906.inc
 share/gputils/header/p16lf1907.inc
+share/gputils/header/p16lf19195.inc
+share/gputils/header/p16lf19196.inc
+share/gputils/header/p16lf19197.inc
 share/gputils/header/p16lf1933.inc
 share/gputils/header/p16lf1934.inc
 share/gputils/header/p16lf1936.inc
@@ -537,6 +558,7 @@ share/gputils/header/p18f24k20.inc
 share/gputils/header/p18f24k22.inc
 share/gputils/header/p18f24k40.inc
 share/gputils/header/p18f24k50.inc
+share/gputils/header/p18f24q10.inc
 share/gputils/header/p18f2510.inc
 share/gputils/header/p18f2515.inc
 share/gputils/header/p18f252.inc
@@ -557,6 +579,7 @@ share/gputils/header/p18f25k22.inc
 share/gputils/header/p18f25k40.inc
 share/gputils/header/p18f25k50.inc
 share/gputils/header/p18f25k80.inc
+share/gputils/header/p18f25q10.inc
 share/gputils/header/p18f2610.inc
 share/gputils/header/p18f2620.inc
 share/gputils/header/p18f2680.inc
@@ -570,6 +593,7 @@ share/gputils/header/p18f26k20.inc
 share/gputils/header/p18f26k22.inc
 share/gputils/header/p18f26k40.inc
 share/gputils/header/p18f26k80.inc
+share/gputils/header/p18f26q10.inc
 share/gputils/header/p18f27j13.inc
 share/gputils/header/p18f27j53.inc
 share/gputils/header/p18f27k40.inc
@@ -616,6 +640,7 @@ share/gputils/header/p18f45k22.inc
 share/gputils/header/p18f45k40.inc
 share/gputils/header/p18f45k50.inc
 share/gputils/header/p18f45k80.inc
+share/gputils/header/p18f45q10.inc
 share/gputils/header/p18f4610.inc
 share/gputils/header/p18f4620.inc
 share/gputils/header/p18f4680.inc
@@ -629,6 +654,7 @@ share/gputils/header/p18f46k20.inc
 share/gputils/header/p18f46k22.inc
 share/gputils/header/p18f46k40.inc
 share/gputils/header/p18f46k80.inc
+share/gputils/header/p18f46q10.inc
 share/gputils/header/p18f47j13.inc
 share/gputils/header/p18f47j53.inc
 share/gputils/header/p18f47k40.inc
@@ -1092,8 +1118,17 @@ share/gputils/lkr/16f1518_g.lkr
 share/gputils/lkr/16f1519_g.lkr
 share/gputils/lkr/16f1526_g.lkr
 share/gputils/lkr/16f1527_g.lkr
+share/gputils/lkr/16f15324_g.lkr
+share/gputils/lkr/16f15325_g.lkr
+share/gputils/lkr/16f15344_g.lkr
+share/gputils/lkr/16f15345_g.lkr
 share/gputils/lkr/16f15354_g.lkr
 share/gputils/lkr/16f15355_g.lkr
+share/gputils/lkr/16f15356_g.lkr
+share/gputils/lkr/16f15375_g.lkr
+share/gputils/lkr/16f15376_g.lkr
+share/gputils/lkr/16f15385_g.lkr
+share/gputils/lkr/16f15386_g.lkr
 share/gputils/lkr/16f1574_g.lkr
 share/gputils/lkr/16f1575_g.lkr
 share/gputils/lkr/16f1578_g.lkr
@@ -1154,6 +1189,8 @@ share/gputils/lkr/16f18857_g.lkr
 share/gputils/lkr/16f18875_g.lkr
 share/gputils/lkr/16f18876_g.lkr
 share/gputils/lkr/16f18877_g.lkr
+share/gputils/lkr/16f19195_g.lkr
+share/gputils/lkr/16f19196_g.lkr
 share/gputils/lkr/16f19197_g.lkr
 share/gputils/lkr/16f1933_g.lkr
 share/gputils/lkr/16f1934_g.lkr
@@ -1261,8 +1298,17 @@ share/gputils/lkr/16lf1518_g.lkr
 share/gputils/lkr/16lf1519_g.lkr
 share/gputils/lkr/16lf1526_g.lkr
 share/gputils/lkr/16lf1527_g.lkr
+share/gputils/lkr/16lf15324_g.lkr
+share/gputils/lkr/16lf15325_g.lkr
+share/gputils/lkr/16lf15344_g.lkr
+share/gputils/lkr/16lf15345_g.lkr
 share/gputils/lkr/16lf15354_g.lkr
 share/gputils/lkr/16lf15355_g.lkr
+share/gputils/lkr/16lf15356_g.lkr
+share/gputils/lkr/16lf15375_g.lkr
+share/gputils/lkr/16lf15376_g.lkr
+share/gputils/lkr/16lf15385_g.lkr
+share/gputils/lkr/16lf15386_g.lkr
 share/gputils/lkr/16lf1554_g.lkr
 share/gputils/lkr/16lf1559_g.lkr
 share/gputils/lkr/16lf1566_g.lkr
@@ -1332,6 +1378,9 @@ share/gputils/lkr/16lf1903_g.lkr
 share/gputils/lkr/16lf1904_g.lkr
 share/gputils/lkr/16lf1906_g.lkr
 share/gputils/lkr/16lf1907_g.lkr
+share/gputils/lkr/16lf19195_g.lkr
+share/gputils/lkr/16lf19196_g.lkr
+share/gputils/lkr/16lf19197_g.lkr
 share/gputils/lkr/16lf1933_g.lkr
 share/gputils/lkr/16lf1934_g.lkr
 share/gputils/lkr/16lf1936_g.lkr
@@ -1432,6 +1481,7 @@ share/gputils/lkr/18f24k20_g.lkr
 share/gputils/lkr/18f24k22_g.lkr
 share/gputils/lkr/18f24k40_g.lkr
 share/gputils/lkr/18f24k50_g.lkr
+share/gputils/lkr/18f24q10_g.lkr
 share/gputils/lkr/18f2510_g.lkr
 share/gputils/lkr/18f2515_g.lkr
 share/gputils/lkr/18f2520_g.lkr
@@ -1452,6 +1502,7 @@ share/gputils/lkr/18f25k22_g.lkr
 share/gputils/lkr/18f25k40_g.lkr
 share/gputils/lkr/18f25k50_g.lkr
 share/gputils/lkr/18f25k80_g.lkr
+share/gputils/lkr/18f25q10_g.lkr
 share/gputils/lkr/18f2610_g.lkr
 share/gputils/lkr/18f2620_g.lkr
 share/gputils/lkr/18f2680_g.lkr
@@ -1465,6 +1516,7 @@ share/gputils/lkr/18f26k20_g.lkr
 share/gputils/lkr/18f26k22_g.lkr
 share/gputils/lkr/18f26k40_g.lkr
 share/gputils/lkr/18f26k80_g.lkr
+share/gputils/lkr/18f26q10_g.lkr
 share/gputils/lkr/18f27j13_g.lkr
 share/gputils/lkr/18f27j53_g.lkr
 share/gputils/lkr/18f27k40_g.lkr
@@ -1511,6 +1563,7 @@ share/gputils/lkr/18f45k22_g.lkr
 share/gputils/lkr/18f45k40_g.lkr
 share/gputils/lkr/18f45k50_g.lkr
 share/gputils/lkr/18f45k80_g.lkr
+share/gputils/lkr/18f45q10_g.lkr
 share/gputils/lkr/18f4610_g.lkr
 share/gputils/lkr/18f4620_g.lkr
 share/gputils/lkr/18f4680_g.lkr
@@ -1524,6 +1577,7 @@ share/gputils/lkr/18f46k20_g.lkr
 share/gputils/lkr/18f46k22_g.lkr
 share/gputils/lkr/18f46k40_g.lkr
 share/gputils/lkr/18f46k80_g.lkr
+share/gputils/lkr/18f46q10_g.lkr
 share/gputils/lkr/18f47j13_g.lkr
 share/gputils/lkr/18f47j53_g.lkr
 share/gputils/lkr/18f47k40_g.lkr

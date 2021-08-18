@@ -2,7 +2,7 @@
 
 COMMENT =		GNU PIC assembler and utilities
 
-VERSION =		1.5.0
+VERSION =		1.5.2
 DISTNAME =		gputils-${VERSION}
 CATEGORIES =		devel
 
@@ -15,10 +15,11 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=gputils/}
-MASTER_SITES0 =		http://www.arcane-labs.net/download/OpenBSD/
+#MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=gputils/}
+#MASTER_SITES0 =		http://www.arcane-labs.net/download/OpenBSD/
+MASTER_SITES =		http://www.arcane-labs.net/download/OpenBSD/
 
-DISTFILES =		${DISTNAME}${EXTRACT_SUFX} gputils-testsuite-${VERSION}${EXTRACT_SUFX}:0
+#DISTFILES =		${DISTNAME}${EXTRACT_SUFX} gputils-testsuite-${VERSION}${EXTRACT_SUFX}:0
 DIST_SUBDIR =		gputils
 
 CONFIGURE_STYLE =	autoconf
@@ -33,7 +34,8 @@ do-test:
 	cd ${WRKSRC}/gpasm/testsuite && sh ./test all
 
 
-DOCFILES =	gputils.lyx gputils.pdf gputils.ps
+#DOCFILES =	gputils.lyx gputils.pdf gputils.ps
+DOCFILES =	gputils.lyx
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/gputils
