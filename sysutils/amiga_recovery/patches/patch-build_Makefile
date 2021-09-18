@@ -1,0 +1,12 @@
+$OpenBSD$
+--- build/Makefile.orig	Sat Sep 18 08:19:02 2021
++++ build/Makefile	Sat Sep 18 08:19:13 2021
+@@ -1,6 +1,6 @@
+ 
+-CC=gcc
+-CFLAGS=-Wall -O3
++CC=cc
++CFLAGS=-Wall -O2
+ #CC=i386-mingw32msvc-gcc
+ #PATH=/opt/xmingw/bin:/usr/bin
+ VPATH=../src

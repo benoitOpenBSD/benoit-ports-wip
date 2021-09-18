@@ -1,0 +1,13 @@
+$OpenBSD$
+--- Makefile.orig	Sat Sep 18 08:18:41 2021
++++ Makefile	Sat Sep 18 08:18:53 2021
+@@ -1,7 +1,7 @@
+ 
+ DEBUG=-DDEBUG -g
+-CFLAGS=-O2 -Wall $(DEBUG)
+-CC=gcc
++CFLAGS=-O2 -Wall $(DEBUG)
++CC=cc
+ #CC=i686-mingw32-gcc
+ 
+ default:

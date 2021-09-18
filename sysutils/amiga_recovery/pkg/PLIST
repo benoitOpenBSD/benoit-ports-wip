@@ -1,0 +1,5 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/amiga_recovery
+@bin bin/find_partitions
+@bin bin/find_root_block
+@bin bin/parse_hunk
