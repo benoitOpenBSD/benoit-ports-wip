@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/udo-munk/z80pack
 
 GH_ACCOUNT =		udo-munk
 GH_PROJECT =		z80pack
-GH_COMMIT =		ba1ba20994ca031d1d9b3afd1f642eb2ff47f8d3
+GH_COMMIT =		53a343015aa28cb9b393ff6f18f20f6984018808
 
 WANTLIB +=		c
 
