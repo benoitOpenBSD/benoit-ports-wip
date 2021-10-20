@@ -2,7 +2,7 @@
 
 COMMENT =		a cross-assembler targetting the C64
 
-DISTNAME =		dreamass-20140504
+DISTNAME =		dreamass-20210412
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/docbacardi/dreamass
 
 GH_ACCOUNT =		docbacardi
 GH_PROJECT =		dreamass
-GH_COMMIT =		ba43fe1a1cc038a617e6afc11363a72606e2f91e
+GH_COMMIT =		bc34eb3d622b0e29cf8688986efcf77b3bf89420
 
 WANTLIB +=		c
 
