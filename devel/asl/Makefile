@@ -2,7 +2,7 @@
 
 COMMENT =		the macroassembler as
 
-DISTNAME =		asl-1.42-210919
+DISTNAME =		asl-1.42-211003
 PKGNAME =		asl-1.42-current
 CATEGORIES =		devel
 
