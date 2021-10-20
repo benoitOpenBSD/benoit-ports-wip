@@ -2,7 +2,7 @@
 
 COMMENT =		portable Motorola M680x0 processor emulation engine
 
-DISTNAME =		musashi-4.10pl20200614
+DISTNAME =		musashi-4.10pl20210816
 CATEGORIES =		emulators
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/kstenerud/Musashi
 
 GH_ACCOUNT =		kstenerud
 GH_PROJECT =		Musashi
-GH_COMMIT =		66d00ece8a994c73031d71e3d67f3f6fd5cd6a27
+GH_COMMIT =		fc7a6fc602e2fbcd24851670a5242358765feacf
 
 WANTLIB +=		c
 
