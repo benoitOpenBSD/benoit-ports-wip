@@ -1,0 +1,8 @@
+--- src/Makefile.orig	Mon Nov  8 21:58:59 2021
++++ src/Makefile	Mon Nov  8 21:59:13 2021
+@@ -1,4 +1,4 @@
+-CC=g++
++CC=c++
+ FLAGS=-ggdb -Wall
+ 
+ 
