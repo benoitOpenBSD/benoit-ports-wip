@@ -7,7 +7,7 @@ CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
-# GPLv2
+# MIT Licence
 PERMIT_PACKAGE =	Yes
 
 MASTER_SITES =		${MASTER_SITES_GITHUB}
