@@ -1,0 +1,10 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/asm85
+share/asm85/
+share/asm85/README.md
+share/asm85/examples/
+share/asm85/examples/errors.asm
+share/asm85/examples/led1.asm
+share/asm85/examples/sertest.asm
+share/asm85/examples/syntax.asm
+share/asm85/examples/testexpr.asm

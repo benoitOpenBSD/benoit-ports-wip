@@ -28,7 +28,8 @@ NO_TEST =		Yes
 
 do-install:
 			${INSTALL_PROGRAM} ${WRKSRC}/asm85  ${PREFIX}/bin/
-			${INSTALL_DATA_DIR} ${PREFIX}/share/asm85
-			cp ${WRKSRC}/examples/* ${PREFIX}/share/asm85
+			${INSTALL_DATA_DIR} ${PREFIX}/share/asm85/examples
+			cp ${WRKDIST}/README.md  ${PREFIX}/share/asm85/
+			cp ${WRKDIST}/examples/* ${PREFIX}/share/asm85/examples/
 
 .include <bsd.port.mk>
