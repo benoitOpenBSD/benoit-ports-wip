@@ -18,7 +18,7 @@ GH_ACCOUNT =		TomNisbet
 GH_PROJECT =		asm85
 GH_COMMIT =		c98cc8cbe2548b5ed85e64f04f5af1ed7bb7bfdb
 
-WANTLIB +=		c
+WANTLIB +=		${COMPILER_LIBCXX} c m
 
 USE_GMAKE =		Yes
 
