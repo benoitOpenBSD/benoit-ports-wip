@@ -2,7 +2,8 @@
 
 COMMENT =		rednex Game Boy Development System
 
-DISTNAME =		rgbds-0.4.2
+V =			0.5.1
+DISTNAME =		rgbds-${V}
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -10,13 +11,12 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # MIT
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+HOMEPAGE =		https://rgbds.gbdev.io/
 
-HOMEPAGE =		https://github.com/rednex/rgbds
+MASTER_SITES =		https://github.com/gbdev/rgbds/releases/download/v$V/
 
-GH_ACCOUNT =		rednex
-GH_PROJECT =		rgbds
-GH_TAGNAME =		v0.4.2
+COMPILER =		base-clang ports-gcc
+COMPILER_LANGS =	c
 
 WANTLIB +=		c m png z
 
