@@ -3,12 +3,9 @@
 share/rasm/
 share/rasm/decrunch/
 share/rasm/decrunch/deexo.asm
-share/rasm/decrunch/dzx0_mega.asm
-share/rasm/decrunch/dzx0_mega_back.asm
+share/rasm/decrunch/dzx0_fast.asm
 share/rasm/decrunch/dzx0_standard.asm
 share/rasm/decrunch/dzx0_standard_back.asm
-share/rasm/decrunch/dzx0_standard_firmware.asm
-share/rasm/decrunch/dzx0_turbo.asm
 share/rasm/decrunch/dzx0_turbo_back.asm
 share/rasm/decrunch/dzx7_turbo.asm
 share/rasm/decrunch/lz48decrunch_v006b.asm
