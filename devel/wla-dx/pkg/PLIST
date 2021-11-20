@@ -46,8 +46,8 @@ share/doc/wla-dx/man/wlab.rst
 share/doc/wla-dx/man/wlalink.rst
 share/doc/wla-dx/sphinx/
 share/doc/wla-dx/sphinx/__pycache__/
-share/doc/wla-dx/sphinx/__pycache__/globalindex.cpython-38.pyc
-share/doc/wla-dx/sphinx/__pycache__/singletext.cpython-38.pyc
+share/doc/wla-dx/sphinx/__pycache__/globalindex.cpython-39.pyc
+share/doc/wla-dx/sphinx/__pycache__/singletext.cpython-39.pyc
 share/doc/wla-dx/sphinx/globalindex.py
 share/doc/wla-dx/sphinx/singletext.py
 share/doc/wla-dx/symbols.rst
