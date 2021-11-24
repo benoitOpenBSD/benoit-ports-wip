@@ -73,6 +73,7 @@ share/cc65/asminc/signal.inc
 share/cc65/asminc/smc.inc
 share/cc65/asminc/stdio.inc
 share/cc65/asminc/supervision.inc
+share/cc65/asminc/sym1.inc
 share/cc65/asminc/telestrat.inc
 share/cc65/asminc/tgi-error.inc
 share/cc65/asminc/tgi-kernel.inc
@@ -107,6 +108,7 @@ share/cc65/cfg/atarixl-xex.cfg
 share/cc65/cfg/atarixl.cfg
 share/cc65/cfg/atmos.cfg
 share/cc65/cfg/bbc.cfg
+share/cc65/cfg/c128-asm.cfg
 share/cc65/cfg/c128-overlay.cfg
 share/cc65/cfg/c128.cfg
 share/cc65/cfg/c16-32k.cfg
@@ -143,8 +145,12 @@ share/cc65/cfg/supervision-128k.cfg
 share/cc65/cfg/supervision-16k.cfg
 share/cc65/cfg/supervision-64k.cfg
 share/cc65/cfg/supervision.cfg
+share/cc65/cfg/sym1-32k.cfg
+share/cc65/cfg/sym1-4k.cfg
+share/cc65/cfg/sym1.cfg
 share/cc65/cfg/telestrat.cfg
 share/cc65/cfg/vic20-32k.cfg
+share/cc65/cfg/vic20-asm.cfg
 share/cc65/cfg/vic20-tgi.cfg
 share/cc65/cfg/vic20.cfg
 share/cc65/include/
@@ -254,6 +260,7 @@ share/cc65/include/stdio.h
 share/cc65/include/stdlib.h
 share/cc65/include/string.h
 share/cc65/include/supervision.h
+share/cc65/include/sym1.h
 share/cc65/include/sys/
 share/cc65/include/sys/stat.h
 share/cc65/include/sys/types.h
@@ -304,6 +311,7 @@ share/cc65/lib/plus4.lib
 share/cc65/lib/sim6502.lib
 share/cc65/lib/sim65c02.lib
 share/cc65/lib/supervision.lib
+share/cc65/lib/sym1.lib
 share/cc65/lib/telestrat.lib
 share/cc65/lib/vic20.lib
 share/cc65/samples/
