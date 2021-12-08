@@ -1,0 +1,7 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/xgpro-logic
+share/examples/xgpro-logic/
+share/examples/xgpro-logic/test.lgc
+share/examples/xgpro-logic/test_1.json
+share/examples/xgpro-logic/test_1.toml
+share/examples/xgpro-logic/test_1j.lgc
