@@ -4,10 +4,11 @@ COMMENT =	commandline utility xgpro-logic
 
 MODGO_MODNAME =	github.com/evolutional/xgpro-logic
 MODGO_VERSION = v0.0.0-20210323030233-868ac3e5d6d2
-GH_ACCOUNT =	evolutional
-GH_PROJECT =	xgpro-logic
-GH_COMMIT =	868ac3e5d6d2856713c08d1ffc5c29df5c82c2d9
-DISTNAME =	xgpro-logic-${MODGO_VERSION}
+#GH_ACCOUNT =	evolutional
+#GH_PROJECT =	xgpro-logic
+#GH_COMMIT =	868ac3e5d6d2856713c08d1ffc5c29df5c82c2d9
+#DISTNAME =	xgpro-logic-${MODGO_VERSION}
+DISTNAME =	xgpro-logic-v210323
 
 CATEGORIES =	sysutils
 

@@ -51,7 +51,7 @@ SHA256 (go_modules/gopkg.in/check.v1/@v/v0.0.0-20161208181325-20d25e280405.mod) 
 SHA256 (go_modules/gopkg.in/check.v1/@v/v0.0.0-20161208181325-20d25e280405.zip) = ThgX+WTKNOVFuBr9oDJaXonPWN4uQT2CB8Cv3dD9wVw=
 SHA256 (go_modules/gopkg.in/yaml.v3/@v/v3.0.0-20200313102051-9f266ea9e77c.mod) = IVeYYKIDBvz0OxvSNNH7oxlJnHdhG3HAX5vzupDauTk=
 SHA256 (go_modules/gopkg.in/yaml.v3/@v/v3.0.0-20200313102051-9f266ea9e77c.zip) = rPGcy0/KmDsjSjnvAy+vmrcOdZaAZzuz3/B353/uIP4=
-SHA256 (xgpro-logic-v0.0.0-20210323030233-868ac3e5d6d2.zip) = /kNSafGRvztNTfK/j9pIO8q8qLmlLhfaNHbRTMu0RDM=
+SHA256 (xgpro-logic-v210323.zip) = /kNSafGRvztNTfK/j9pIO8q8qLmlLhfaNHbRTMu0RDM=
 SIZE (go_modules/github.com/!burnt!sushi/toml/@v/v0.3.1.mod) = 34
 SIZE (go_modules/github.com/!burnt!sushi/toml/@v/v0.3.1.zip) = 56132
 SIZE (go_modules/github.com/alecthomas/kong/@v/v0.2.16.mod) = 219
@@ -105,4 +105,4 @@ SIZE (go_modules/gopkg.in/check.v1/@v/v0.0.0-20161208181325-20d25e280405.mod) = 
 SIZE (go_modules/gopkg.in/check.v1/@v/v0.0.0-20161208181325-20d25e280405.zip) = 39844
 SIZE (go_modules/gopkg.in/yaml.v3/@v/v3.0.0-20200313102051-9f266ea9e77c.mod) = 95
 SIZE (go_modules/gopkg.in/yaml.v3/@v/v3.0.0-20200313102051-9f266ea9e77c.zip) = 101467
-SIZE (xgpro-logic-v0.0.0-20210323030233-868ac3e5d6d2.zip) = 11912
+SIZE (xgpro-logic-v210323.zip) = 11912
