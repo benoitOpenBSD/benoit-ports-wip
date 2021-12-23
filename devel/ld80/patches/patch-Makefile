@@ -1,0 +1,12 @@
+$OpenBSD$
+--- Makefile.orig	Thu Dec 23 09:44:09 2021
++++ Makefile	Thu Dec 23 09:44:24 2021
+@@ -9,7 +9,7 @@
+ PSFILES = ld80.ps
+ 
+ ld80:		$(OBJS)
+-		gcc -g -o ld80 $(OBJS)
++		$(CC) -g -o ld80 $(OBJS)
+ 
+ main.o:		ld80.h
+ 

@@ -2,7 +2,7 @@
 
 COMMENT =	linker for .rel object files
 
-DISTNAME =	ld80-0.5
+DISTNAME =	ld80-0.6.1
 CATEGORIES =	devel
 
 HOMEPAGE =	http://48k.ca/ld80.html
