@@ -2,8 +2,8 @@
 
 COMMENT =		the macroassembler as
 
-DISTNAME =		asl-1.42-211003
-PKGNAME =		asl-1.42-current
+DISTNAME =		asl-1.42-211122
+PKGNAME =		asl-1.42.211122
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -22,7 +22,7 @@ MAKE_FLAGS =		CC="${CC}" CFLAGS="${CFLAGS}"
 
 USE_GMAKE =		Yes
 
-DEBUG_PACKAGES =	${BUILD_PACKAGES}
+# DEBUG_PACKAGES =	${BUILD_PACKAGES}
 
 pre-build:
 	@cp ${FILESDIR}/Makefile.def ${WRKSRC}
