@@ -2,10 +2,14 @@
 
 COMMENT=	AVR microcontroller hardware in-system programmer
 
-V =		6.3
+V =		6.4
 DISTNAME=	avrdude-${V}
-DISTFILES+=	avrdude-${V}.tar.gz avrdude-doc-${V}.pdf
+# DISTFILES+=	avrdude-${V}.tar.gz avrdude-doc-${V}.pdf
 CATEGORIES=	devel
+GH_ACCOUNT =	avrdudes
+GH_PROJECT =	avrdude
+GH_TAGNAME =	v6.4
+
 
 SHARED_LIBS =	avrdude    0.0	# 1.0
 
@@ -17,17 +21,17 @@ PERMIT_PACKAGE =	Yes
 WANTLIB += 	c ftdi1 m ncurses pthread readline 
 WANTLIB +=	termcap usb usb-1.0 curses elf
 
-MASTER_SITES=	${MASTER_SITE_SAVANNAH:=avrdude/}
-EXTRACT_ONLY=	avrdude-${V}${EXTRACT_SUFX}
+AUTOCONF_VERSION =	2.69
+AUTOMAKE_VERSION =	1.16
 
-CONFIGURE_STYLE=	gnu
-CONFIGURE_ARGS+=	CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_STYLE =	autoreconf
+CONFIGURE_ARGS +=	CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib -pthread"
 
-LIB_DEPENDS=		devel/libftdi1 \
+LIB_DEPENDS =		devel/libftdi1 \
 			devel/libusb-compat
 
-SUBST_VARS+=		V
+SUBST_VARS +=		V
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/avrdude
