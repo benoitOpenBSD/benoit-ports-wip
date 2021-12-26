@@ -11,7 +11,7 @@ GH_PROJECT =	avrdude
 GH_TAGNAME =	v6.4
 
 
-SHARED_LIBS =	avrdude    0.0	# 1.0
+SHARED_LIBS =	avrdude    1.0	# 1.0
 
 HOMEPAGE=	http://www.nongnu.org/avrdude/
 
@@ -23,6 +23,8 @@ WANTLIB +=	termcap usb usb-1.0 curses elf
 
 AUTOCONF_VERSION =	2.69
 AUTOMAKE_VERSION =	1.16
+
+USE_GMAKE =		Yes
 
 CONFIGURE_STYLE =	autoreconf
 CONFIGURE_ARGS +=	CPPFLAGS="-I${LOCALBASE}/include" \
@@ -37,7 +39,7 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/avrdude
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/avrdude
 	${INSTALL_DATA} ${WRKSRC}/avrdude.conf ${PREFIX}/share/examples/avrdude
-	${INSTALL_DATA} ${FULLDISTDIR}/avrdude-doc-${V}.pdf \
-		${PREFIX}/share/doc/avrdude
+#	${INSTALL_DATA} ${FULLDISTDIR}/avrdude-doc-${V}.pdf \
+#		${PREFIX}/share/doc/avrdude
 
 .include <bsd.port.mk>
