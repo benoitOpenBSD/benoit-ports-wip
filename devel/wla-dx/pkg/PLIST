@@ -279,6 +279,12 @@ share/wla-dx/tests/65816/operand_hint_test/linkfile
 share/wla-dx/tests/65816/operand_hint_test/main.s
 share/wla-dx/tests/65816/operand_hint_test/makefile
 share/wla-dx/tests/65816/operand_hint_test/testsfile
+share/wla-dx/tests/65816/sizeof_test/
+share/wla-dx/tests/65816/sizeof_test/linkfile
+share/wla-dx/tests/65816/sizeof_test/main.inc
+share/wla-dx/tests/65816/sizeof_test/main.s
+share/wla-dx/tests/65816/sizeof_test/makefile
+share/wla-dx/tests/65816/sizeof_test/ram.s
 share/wla-dx/tests/65816/struct_test/
 share/wla-dx/tests/65816/struct_test/linkfile
 share/wla-dx/tests/65816/struct_test/main.s
