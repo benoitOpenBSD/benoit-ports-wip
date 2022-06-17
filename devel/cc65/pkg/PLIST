@@ -1,4 +1,3 @@
-@comment $OpenBSD: PLIST,v$
 @bin bin/ar65
 @bin bin/ca65
 @bin bin/cc65
@@ -25,6 +24,10 @@ share/cc65/asminc/atari2600.inc
 share/cc65/asminc/atari2600_riot.inc
 share/cc65/asminc/atari2600_tia.inc
 share/cc65/asminc/atari5200.inc
+share/cc65/asminc/atari7800.inc
+share/cc65/asminc/atari7800_maria.inc
+share/cc65/asminc/atari7800_riot.inc
+share/cc65/asminc/atari7800_tia.inc
 share/cc65/asminc/atari_antic.inc
 share/cc65/asminc/atari_atascii_charmap.inc
 share/cc65/asminc/atari_gtia.inc
@@ -102,6 +105,7 @@ share/cc65/cfg/atari-xex.cfg
 share/cc65/cfg/atari.cfg
 share/cc65/cfg/atari2600.cfg
 share/cc65/cfg/atari5200.cfg
+share/cc65/cfg/atari7800.cfg
 share/cc65/cfg/atarixl-largehimem.cfg
 share/cc65/cfg/atarixl-overlay.cfg
 share/cc65/cfg/atarixl-xex.cfg
@@ -165,6 +169,7 @@ share/cc65/include/_atari5200os.h
 share/cc65/include/_atarios.h
 share/cc65/include/_gtia.h
 share/cc65/include/_heap.h
+share/cc65/include/_maria.h
 share/cc65/include/_mikey.h
 share/cc65/include/_pbi.h
 share/cc65/include/_pia.h
@@ -186,6 +191,7 @@ share/cc65/include/assert.h
 share/cc65/include/atari.h
 share/cc65/include/atari2600.h
 share/cc65/include/atari5200.h
+share/cc65/include/atari7800.h
 share/cc65/include/atari_atascii_charmap.h
 share/cc65/include/atari_screen_charmap.h
 share/cc65/include/atmos.h
@@ -285,6 +291,8 @@ share/cc65/lib/atari.lib
 share/cc65/lib/atari2600.lib
 share/cc65/lib/atari5200-conioscreen-20x12.o
 share/cc65/lib/atari5200.lib
+share/cc65/lib/atari7800-mono.o
+share/cc65/lib/atari7800.lib
 share/cc65/lib/atarixl.lib
 share/cc65/lib/atmos.lib
 share/cc65/lib/c128.lib
@@ -347,6 +355,7 @@ share/cc65/samples/cbm/Makefile
 share/cc65/samples/cbm/fire.c
 share/cc65/samples/cbm/nachtm.c
 share/cc65/samples/cbm/plasma.c
+share/cc65/samples/checkversion.c
 share/cc65/samples/diodemo.c
 share/cc65/samples/disasm/
 share/cc65/samples/disasm/.gitignore
@@ -398,6 +407,11 @@ share/cc65/samples/geos/yesnores.grc
 share/cc65/samples/getsp.s
 share/cc65/samples/gunzip65.c
 share/cc65/samples/hello.c
+share/cc65/samples/lynx/
+share/cc65/samples/lynx/Makefile
+share/cc65/samples/lynx/hello.c
+share/cc65/samples/lynx/mandelbrot.c
+share/cc65/samples/lynx/tgidemo.c
 share/cc65/samples/mandelbrot.c
 share/cc65/samples/mousedemo.c
 share/cc65/samples/multidemo.c
@@ -410,6 +424,7 @@ share/cc65/samples/supervision/hello.c
 share/cc65/samples/sym1/
 share/cc65/samples/sym1/Makefile
 share/cc65/samples/sym1/symDisplay.c
+share/cc65/samples/sym1/symExtendedMemory.c
 share/cc65/samples/sym1/symHello.c
 share/cc65/samples/sym1/symIO.c
 share/cc65/samples/sym1/symNotepad.c
@@ -490,6 +505,10 @@ share/cc65/target/atari5200/
 share/cc65/target/atari5200/drv/
 share/cc65/target/atari5200/drv/joy/
 share/cc65/target/atari5200/drv/joy/atr5200std.joy
+share/cc65/target/atari7800/
+share/cc65/target/atari7800/drv/
+share/cc65/target/atari7800/drv/joy/
+share/cc65/target/atari7800/drv/joy/atari7800-stdjoy.joy
 share/cc65/target/atarixl/
 share/cc65/target/atarixl/drv/
 share/cc65/target/atarixl/drv/emd/
