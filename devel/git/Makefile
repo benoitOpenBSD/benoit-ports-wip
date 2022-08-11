@@ -1,14 +1,9 @@
-# $OpenBSD: Makefile,v 1.230 2021/03/16 19:06:52 kn Exp $
-
 COMMENT-main =	distributed version control system
 COMMENT-svn =	subversion interoperability tools
 COMMENT-x11 =	graphical tools
 
-V =		2.31.1
+V =		2.37.2
 DISTNAME =	git-${V}
-PKGNAME-main =	${DISTNAME}
-PKGNAME-svn =	git-svn-${V}
-PKGNAME-x11 =	git-x11-${V}
 CATEGORIES =	devel
 
 HOMEPAGE =	https://git-scm.com/
@@ -25,17 +20,10 @@ EXTRACT_ONLY =		${DISTNAME}${EXTRACT_SUFX}
 
 MASTER_SITES =		https://www.kernel.org/pub/software/scm/git/
 
-MODULES =		lang/python \
-			perl \
+MODULES =		perl \
 			x11/tk
 
 MODTK_VERSION =		8.6
-
-MODPY_BUILDDEP =	No
-MODPY_RUNDEP =		No
-MODPY_ADJ_FILES =	contrib/hooks/multimail/git_multimail.py \
-			contrib/hooks/multimail/migrate-mailhook-config \
-			contrib/hooks/multimail/post-receive.example
 
 BUILD_DEPENDS =		devel/gettext,-tools \
 			devel/p5-Error \
@@ -67,15 +55,12 @@ LIB_DEPENDS-x11 =
 WANTLIB-x11 =
 PKG_ARCH-x11 =		*
 
-UPDATE_PLIST_ARGS += -i MODPY_VERSION
-
 MAKE_FLAGS =		V=1 \
 			gitexecdir=${TRUEPREFIX}/libexec/git \
 			perllibdir=${TRUEPREFIX}/${P5SITE} \
 			NO_PERL_CPAN_FALLBACKS=1 \
 			TCLTK_PATH=${MODTK_BIN} \
 			TCL_PATH=${MODTCL_BIN}
-MAKE_ENV =		TEST_TAR=${LOCALBASE}/bin/gtar
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS =	--sysconfdir=${SYSCONFDIR} \
@@ -92,11 +77,34 @@ DEBUG_PACKAGES =	-main
 
 USE_GMAKE =		Yes
 
-TEST_DEPENDS =		archivers/gtar \
-			archivers/unzip \
+TEST_DEPENDS =		archivers/unzip \
 			archivers/zip \
 			devel/cvsps \
 			devel/subversion,-perl
+
+# see ${WRKSRC}/t/README for test documentation (GIT_TEST_*, etc.)
+
+# "test" is too verbose and parallel jobs print out of order; allow for
+# `make GIT_TEST_TARGET=prove test' to use prove(1) with better output
+GIT_TEST_TARGET ?=	test
+
+GIT_TEST_OPTS =		--root=${WRKDIR}/t/ \
+			--immediate
+
+GIT_PROVE_OPTS =	-j${MAKE_JOBS} \
+			--nocolor \
+			--norc \
+			-W
+
+GIT_SKIP_TESTS ?=	# empty
+
+TEST_ENV =		GIT_TEST_OPTS=${GIT_TEST_OPTS:Q} \
+			GIT_PROVE_OPTS=${GIT_PROVE_OPTS:Q} \
+			GIT_SKIP_TESTS=${GIT_SKIP_TESTS:Q} \
+			DEFAULT_TEST_TARGET=${GIT_TEST_TARGET}
+
+# one expensive test needs explicit enabling
+TEST_ENV +=		GIT_TEST_CLONE_2GB=true
 
 # ${WRKSRC}/t/t4256/1/mailinfo.c.orig
 PATCHORIG =		.pat.orig
@@ -116,11 +124,6 @@ post-install:
 		pax -rw . ${PREFIX}/man
 	${INSTALL_DATA} ${WRKBUILD}/contrib/hooks/post-receive-email \
 		${PREFIX}/share/git-core/templates/hooks/post-receive-email.sample
-	${INSTALL_DATA_DIR} ${PREFIX}/share/git-core/templates/hooks/multimail
-.for f in git_multimail.py migrate-mailhook-config post-receive.example
-	${INSTALL_DATA} ${WRKBUILD}/contrib/hooks/multimail/$f \
-		${PREFIX}/share/git-core/templates/hooks/multimail
-.endfor
 	${INSTALL_DATA} ${WRKBUILD}/contrib/hooks/setgitperms.perl \
 		${PREFIX}/share/git-core/templates/hooks/setgitperms.perl
 	chown -R ${BINOWN}:${BINGRP} ${PREFIX}/libexec/git
@@ -131,9 +134,5 @@ post-install:
 	perl -pi -e "s|${WRKINST}||g" ${PREFIX}/share/gitweb/gitweb.cgi
 	${INSTALL_DATA} ${WRKBUILD}/gitweb/README ${PREFIX}/share/gitweb
 	${MODTCL_WISH_ADJ} ${PREFIX}/libexec/git/git-gui--askpass
-
-do-test:
-	${MAKE_ENV} GIT_TEST_OPTS="--immediate" ${MAKE_PROGRAM} -C ${WRKSRC}/t \
-		HOME=${WRKDIST}/t test
 
 .include <bsd.port.mk>
