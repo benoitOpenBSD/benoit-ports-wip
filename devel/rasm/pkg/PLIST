@@ -1,4 +1,3 @@
-@comment $OpenBSD: PLIST,v$
 @bin bin/rasm
 share/rasm/
 share/rasm/decrunch/
