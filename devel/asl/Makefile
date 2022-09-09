@@ -2,8 +2,8 @@
 
 COMMENT =		the macroassembler as
 
-DISTNAME =		asl-1.42-211122
-PKGNAME =		asl-1.42.211122
+DISTNAME =		asl-1.42-220824
+PKGNAME =		asl-1.42.220824
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>

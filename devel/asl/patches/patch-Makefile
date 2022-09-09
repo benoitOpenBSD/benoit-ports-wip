@@ -1,7 +1,7 @@
-$OpenBSD$
---- Makefile.orig	Sat Apr 18 23:22:22 2020
-+++ Makefile	Sat Apr 18 23:22:29 2020
-@@ -18,7 +18,7 @@
+Index: Makefile
+--- Makefile.orig
++++ Makefile
+@@ -18,7 +18,7 @@ binaries: $(ALLTARGETS)
  
  binaries-das: $(DASLTARGET) $(DASMSGTARGETS)
  

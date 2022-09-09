@@ -1,7 +1,7 @@
-$OpenBSD$
---- stdinc.h.orig	Sun May 24 10:35:58 2020
-+++ stdinc.h	Sun May 24 10:36:15 2020
-@@ -37,7 +37,7 @@
+Index: stdinc.h
+--- stdinc.h.orig
++++ stdinc.h
+@@ -28,7 +28,7 @@
  #include <alloc.h>
  #else
  #include <memory.h>
