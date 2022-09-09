@@ -2,7 +2,7 @@
 
 COMMENT =		cross-development tools for the Motorola 6809/Hitachi 6309
 
-DISTNAME =		lwtools-4.19
+DISTNAME =		lwtools-4.20
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
