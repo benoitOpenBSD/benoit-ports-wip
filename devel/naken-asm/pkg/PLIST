@@ -1,3 +1,2 @@
-@comment $OpenBSD: PLIST,v$
 @bin bin/naken_asm
 @bin bin/naken_util
