@@ -2,7 +2,7 @@
 
 COMMENT =		rednex Game Boy Development System
 
-V =			0.5.1
+V =			0.5.2
 DISTNAME =		rgbds-${V}
 CATEGORIES =		devel
 
@@ -19,6 +19,10 @@ COMPILER =		base-clang ports-gcc
 COMPILER_LANGS =	c
 
 WANTLIB +=		c m png z
+
+WRKDIST =		${WRKDIR}/rgbds
+
+USE_GMAKE =		Yes
 
 LIB_DEPENDS =		graphics/png
 
