@@ -593,6 +593,7 @@ share/cc65/target/c64/drv/emd/c64-kerberos.emd
 share/cc65/target/c64/drv/emd/c64-ram.emd
 share/cc65/target/c64/drv/emd/c64-ramcart.emd
 share/cc65/target/c64/drv/emd/c64-reu.emd
+share/cc65/target/c64/drv/emd/c64-rrr.emd
 share/cc65/target/c64/drv/emd/c64-vdc.emd
 share/cc65/target/c64/drv/emd/dtv-himem.emd
 share/cc65/target/c64/drv/joy/
