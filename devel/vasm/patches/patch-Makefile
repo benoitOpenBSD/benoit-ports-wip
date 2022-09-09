@@ -1,6 +1,5 @@
-$OpenBSD$
---- Makefile.orig	Thu Jun 10 20:49:45 2021
-+++ Makefile	Sat Aug  7 08:52:57 2021
+--- Makefile.orig	Fri Sep  9 18:53:25 2022
++++ Makefile	Fri Sep  9 18:54:10 2022
 @@ -1,11 +1,11 @@
  # Unix, using gcc
  
@@ -10,8 +9,8 @@ $OpenBSD$
  TARGETEXTENSION =
  
  CCOUT = -o $(DUMMY)
--COPTS = -c -std=c99 -O2 -Wpedantic -DUNIX $(OUTFMTS)
-+COPTS = -c -std=c99 -O2 -DUNIX $(OUTFMTS)
+-COPTS = -c -std=c90 -O2 -pedantic -Wno-long-long -DUNIX $(OUTFMTS)
++COPTS = -c -std=c90 -O2 -Wno-long-long -DUNIX $(OUTFMTS)
  
  LD = $(CC)
  LDOUT = $(CCOUT)
