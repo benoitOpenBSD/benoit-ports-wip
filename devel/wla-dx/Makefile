@@ -2,7 +2,7 @@
 
 COMMENT =		yet Another Multi Platform Cross Assembler
 
-DISTNAME =		wla-dx-20220216
+DISTNAME =		wla-dx-20220908
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,13 +16,13 @@ HOMEPAGE =		https://github.com/vhelin/wla-dx
 
 GH_ACCOUNT =		vhelin
 GH_PROJECT =		wla-dx
-GH_COMMIT =		c5e3ee2d5fd921891c19ecafa66f9d98e59a5e44
+GH_COMMIT =		3355ef4e2b56bf9283394f4bfd5deac7557d787b
 
 WANTLIB +=		c m
 
 MODULES =		devel/cmake
 
-# XXX problem doc/sphinx/singletext.py WIP
+# XXX problem doc/sphinx/singletext.py WIP -> doas pkg_add py3-sphinx
 BUILD_DEPENDS =		textproc/py-sphinx
 
 NO_TEST =		Yes
