@@ -1,4 +1,3 @@
-@comment $OpenBSD: PLIST,v$
 @bin bin/dasm1802
 @bin bin/txt2bin
 share/dasmxx/
@@ -20,6 +19,10 @@ share/dasmxx/test/dasm51/8051regs.inc
 share/dasmxx/test/dasm51/pm21_2.obj
 share/dasmxx/test/dasm51/test.bin
 share/dasmxx/test/dasm51/test.d51
+share/dasmxx/test/dasm68k/
+share/dasmxx/test/dasm68k/Makefile
+share/dasmxx/test/dasm68k/test.d68k
+share/dasmxx/test/dasm68k/test.txt
 share/dasmxx/test/dasm7000/
 share/dasmxx/test/dasm7000/attphone.d7000
 share/dasmxx/test/dasm78k3/
