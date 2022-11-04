@@ -1,14 +1,14 @@
---- vlink.h.orig	Wed Jan  6 19:50:30 2021
-+++ vlink.h	Wed Jan  6 19:51:27 2021
-@@ -763,9 +763,11 @@
- extern char *check_name(char *);
- extern bool checkrange(lword,bool,int);
- extern int8_t host_endianess(void);
+--- vlink.h.orig	Sun Jun 26 20:27:01 2022
++++ vlink.h	Fri Nov  4 22:34:53 2022
+@@ -769,9 +769,11 @@
+ char *check_name(char *);
+ bool checkrange(lword,bool,int);
+ int8_t host_endianness(void);
 +/*
- extern uint16_t swap16(uint16_t);
- extern uint32_t swap32(uint32_t);
- extern uint64_t swap64(uint64_t);
+ uint16_t swap16(uint16_t);
+ uint32_t swap32(uint32_t);
+ uint64_t swap64(uint64_t);
 +*/
- extern uint16_t read16be(void *);
- extern uint32_t read32be(void *);
- extern uint64_t read64be(void *);
+ uint16_t read16be(void *);
+ uint32_t read32be(void *);
+ uint64_t read64be(void *);
