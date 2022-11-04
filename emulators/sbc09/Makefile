@@ -2,7 +2,7 @@
 
 COMMENT =		Lennart Benschop 6809 Single Board Computer
 
-DISTNAME =		sbc09-20210623
+DISTNAME =		sbc09-20220111
 CATEGORIES =		emulators
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -14,7 +14,7 @@ HOMEPAGE =		https://github.com/6809/sbc09
 
 GH_ACCOUNT =		6809
 GH_PROJECT =		sbc09
-GH_COMMIT =		4b772ecfe0c04e7b752d20d57359849b0a8aa781
+GH_COMMIT =		39181b46a058fe23f6606ee2fe5e6d237f7d4ba0
 
 WANTLIB +=		c
 
