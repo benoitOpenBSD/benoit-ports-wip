@@ -154,6 +154,7 @@ include/asl/avr/usimb8.inc
 include/asl/avr/wdm21.inc
 include/asl/avr/wdm60.inc
 include/asl/avr/wdme.inc
+include/asl/bcdic.inc
 include/asl/bitfuncs.inc
 include/asl/coldfire/
 include/asl/coldfire/52xxcan.inc
@@ -200,6 +201,7 @@ include/asl/coldfire/mcf5474.inc
 include/asl/coldfire/mcf5475.inc
 include/asl/coldfire/mcf547x.inc
 include/asl/ctype.inc
+include/asl/ebcdic.inc
 include/asl/emulmsp.inc
 include/asl/h8_3048.inc
 include/asl/kenbak.inc
@@ -217,6 +219,7 @@ include/asl/pdk/pmx232.inc
 include/asl/pdk/pmx234.inc
 include/asl/pdk/pmx271.inc
 include/asl/pdk/pxs154.inc
+include/asl/radix50.inc
 include/asl/reg166.inc
 include/asl/reg251.inc
 include/asl/reg29k.inc
