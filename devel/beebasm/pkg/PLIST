@@ -1,4 +1,3 @@
-@comment $OpenBSD: PLIST,v$
 @bin bin/beebasm
 share/beebasm/
 share/beebasm/docs/
@@ -9,18 +8,11 @@ share/beebasm/examples/autolinenumdemo.6502
 share/beebasm/examples/autolinenumdemo.bas
 share/beebasm/examples/callstackdemo.6502
 share/beebasm/examples/demo.6502
-share/beebasm/examples/invalidbasic1.6502
-share/beebasm/examples/invalidbasic1.bas
-share/beebasm/examples/invalidbasic2.6502
-share/beebasm/examples/invalidbasic2.bas
-share/beebasm/examples/local-forward-branch-1.6502
-share/beebasm/examples/local-forward-branch-2.6502
-share/beebasm/examples/local-forward-branch-3.6502
-share/beebasm/examples/local-forward-branch-4.6502
-share/beebasm/examples/local-forward-branch-5.6502
-share/beebasm/examples/putbasicnonexistentdemo.6502
-share/beebasm/examples/putfilenonexistentdemo.6502
+share/beebasm/examples/filelinecallstackdemo.6502
+share/beebasm/examples/jump_table_at_end.6502
+share/beebasm/examples/jump_table_at_end.md
 share/beebasm/examples/relocdemo.6502
 share/beebasm/examples/scopejumpdemo1.6502
 share/beebasm/examples/scopejumpdemo2.6502
 share/beebasm/examples/scopejumpdemo2foo.6502
+share/beebasm/examples/stringfunctions.6502

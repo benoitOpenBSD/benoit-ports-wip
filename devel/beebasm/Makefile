@@ -2,7 +2,7 @@
 
 COMMENT =	portable 6502 assembler with BBC Micro style syntax
 
-V =		1.09
+V =		1.10
 DISTNAME =	beebasm-${V}
 CATEGORIES =	devel
 
