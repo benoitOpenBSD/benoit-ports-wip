@@ -1,6 +1,5 @@
-$OpenBSD$
---- Makefile.orig	Sat Jun 12 15:41:48 2021
-+++ Makefile	Sat Jun 12 15:44:52 2021
+--- Makefile.orig	Fri Nov  4 23:43:45 2022
++++ Makefile	Fri Nov  4 23:48:23 2022
 @@ -1,12 +1,12 @@
  # Install Configuration
  
@@ -11,9 +10,9 @@ $OpenBSD$
 +CC=clang
  
  # Compiler options
--CFLAGS = -g -O0 -Wall
+-CFLAGS = -g -O0 -Wall -Wextra -W -Wno-sign-compare -Wno-unused-parameter
 -CPPFLAGS = -DSHARE_INSTDIR="\"$(SHARE_INSTDIR)\""
-+CFLAGS += 
++CFLAGS +=
 +CPPFLAGS += -DSHARE_INSTDIR="\"$(SHARE_INSTDIR)\""
  LDFLAGS =
  
