@@ -2,7 +2,7 @@
 
 COMMENT =		6809 emulator library
 
-DISTNAME =		mc6809-lib-20200528
+DISTNAME =		mc6809-lib-20220831
 CATEGORIES =		emulators
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -14,7 +14,7 @@ HOMEPAGE =		https://github.com/spc476/mc6809
 
 GH_ACCOUNT =		spc476
 GH_PROJECT =		mc6809
-GH_COMMIT =		9944689179c50719fe34645f06104e9dde7e6fb5
+GH_COMMIT =		d3a33e0daedcda85a5300b6e2b3dac67b3cd179e
 
 WANTLIB +=		c
 
