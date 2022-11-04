@@ -1,0 +1,17 @@
+--- Makefile.orig	Fri Nov  4 23:19:44 2022
++++ Makefile	Fri Nov  4 23:20:19 2022
+@@ -8,11 +8,11 @@
+ INSTALL_PREFIX := $(PREFIX)
+ TOOLS_PREFIX :=
+ 
+-CC := $(TOOLS_PREFIX)gcc 
+-LINKER := $(TOOLS_PREFIX)gcc
++CC := $(TOOLS_PREFIX)cc 
++LINKER := $(TOOLS_PREFIX)cc
+ AR := $(TOOLS_PREFIX)ar
+ 
+-ALL_CFLAGS := -fPIC -fno-common -ansi -pedantic -Wall -pipe -O2 -I. -I./include 
++ALL_CFLAGS := -fPIC -fno-common -ansi -Wall -pipe -O2 -I. -I./include 
+ 
+ #endianness (one of: WORDS_LITTLE_ENDIAN, WORDS_BIG_ENDIAN)
+ ENDIANNESS := WORDS_LITTLE_ENDIAN
