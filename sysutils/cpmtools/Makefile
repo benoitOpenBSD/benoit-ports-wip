@@ -2,7 +2,7 @@
 
 COMMENT =	access CP/M file systems
 
-DISTNAME =	cpmtools-2.22
+DISTNAME =	cpmtools-2.23
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 CATEGORIES =	sysutils

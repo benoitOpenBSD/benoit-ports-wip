@@ -1,4 +1,3 @@
-@comment $OpenBSD: PLIST,v$
 @bin bin/cpmchattr
 @bin bin/cpmchmod
 @bin bin/cpmcp
