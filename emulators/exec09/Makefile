@@ -2,7 +2,7 @@
 
 COMMENT =		6809 emulator
 
-DISTNAME =		exec09-20190722
+DISTNAME =		exec09-20090722
 CATEGORIES =		emulators
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
