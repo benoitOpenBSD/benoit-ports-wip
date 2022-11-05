@@ -2,7 +2,7 @@
 
 COMMENT =		CP/M 80 emulator
 
-DISTNAME =		aliados-0.1.1
+DISTNAME =		aliados-0.2.0
 CATEGORIES =		emulators
 
 HOMEPAGE =		http://www.arrakis.es/~ninsesabe/aliados/
@@ -12,15 +12,20 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPL
 PERMIT_PACKAGE =	Yes 
 
-WANTLIB =		c m ncurses stdc++
+COMPILER =		base-clang ports-gcc base-gcc
 
-MASTER_SITES =		http://www.arrakis.es/~ninsesabe/aliados/
+WANTLIB =		c m ncurses ${COMPILER_LIBCXX}
 
-EXTRACT_SUFX =		.tgz
+MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/ \
+			http://www.arrakis.es/~ninsesabe/aliados/
+
+CONFIGURE_STYLE =	gnu
+
+CXXFLAGS +=		-std=c++03
 
 NO_TEST =		Yes
 
-ALIADOSDOCS =		NEWS README aliados.doc
+ALIADOSDOCS =		NEWS README aliadosdoc.html
 ALIADOSDOCSDIR =	${PREFIX}/share/doc/aliados/
 
 do-install:

@@ -1,0 +1,10 @@
+--- cpm.cpp.orig	Sat Nov  5 10:13:35 2022
++++ cpm.cpp	Sat Nov  5 10:13:50 2022
+@@ -19,6 +19,7 @@
+ #include <memory>
+ 
+ #include <stdio.h>
++#include <string.h>
+ #include <unistd.h>
+ #include <errno.h>
+ #include <ctype.h>
