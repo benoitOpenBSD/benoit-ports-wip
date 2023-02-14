@@ -1,0 +1,5 @@
+PSID64 is a program that automatically generates a C64 self extracting
+executable from a PSID file. The executable contains the PSID data, a
+pre-relocated player and may also - if there is enough space available in the
+C64 environment - contain a demonstration program with information about the
+PSID file.

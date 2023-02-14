@@ -1,0 +1,4 @@
+@bin bin/psid64
+include/psid64/
+include/psid64/psid64.h
+@static-lib lib/libpsid64.a
