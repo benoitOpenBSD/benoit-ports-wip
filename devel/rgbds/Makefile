@@ -1,8 +1,6 @@
-# $OpenBSD$
-
 COMMENT =		rednex Game Boy Development System
 
-V =			0.6.0
+V =			0.6.1
 DISTNAME =		rgbds-${V}
 CATEGORIES =		devel
 
