@@ -3,6 +3,7 @@
 @bin bin/wla-65c02
 @bin bin/wla-65ce02
 @bin bin/wla-6800
+@bin bin/wla-68000
 @bin bin/wla-6801
 @bin bin/wla-6809
 @bin bin/wla-8008
@@ -45,8 +46,8 @@ share/doc/wla-dx/man/wlalink.rst
 share/doc/wla-dx/requirements.txt
 share/doc/wla-dx/sphinx/
 share/doc/wla-dx/sphinx/__pycache__/
-share/doc/wla-dx/sphinx/__pycache__/globalindex.cpython-39.pyc
-share/doc/wla-dx/sphinx/__pycache__/singletext.cpython-39.pyc
+share/doc/wla-dx/sphinx/__pycache__/globalindex.cpython-310.pyc
+share/doc/wla-dx/sphinx/__pycache__/singletext.cpython-310.pyc
 share/doc/wla-dx/sphinx/globalindex.py
 share/doc/wla-dx/sphinx/singletext.py
 share/doc/wla-dx/symbols.rst
@@ -316,6 +317,15 @@ share/wla-dx/tests/6800/linker_test/linkfile
 share/wla-dx/tests/6800/linker_test/main.s
 share/wla-dx/tests/6800/linker_test/makefile
 share/wla-dx/tests/6800/linker_test/testsfile
+share/wla-dx/tests/68000/
+share/wla-dx/tests/68000/linker_test/
+share/wla-dx/tests/68000/linker_test/linkfile
+share/wla-dx/tests/68000/linker_test/main.s
+share/wla-dx/tests/68000/linker_test/makefile
+share/wla-dx/tests/68000/rom_test/
+share/wla-dx/tests/68000/rom_test/linkfile
+share/wla-dx/tests/68000/rom_test/main.s
+share/wla-dx/tests/68000/rom_test/makefile
 share/wla-dx/tests/6801/
 share/wla-dx/tests/6801/div_16bit/
 share/wla-dx/tests/6801/div_16bit/linkfile
@@ -470,6 +480,10 @@ share/wla-dx/tests/gb-z80/rst_test/
 share/wla-dx/tests/gb-z80/rst_test/linkfile
 share/wla-dx/tests/gb-z80/rst_test/main.s
 share/wla-dx/tests/gb-z80/rst_test/makefile
+share/wla-dx/tests/gb-z80/section_test/
+share/wla-dx/tests/gb-z80/section_test/linkfile
+share/wla-dx/tests/gb-z80/section_test/main.s
+share/wla-dx/tests/gb-z80/section_test/makefile
 share/wla-dx/tests/gb-z80/sintest/
 share/wla-dx/tests/gb-z80/sintest/linkfile
 share/wla-dx/tests/gb-z80/sintest/main.s
