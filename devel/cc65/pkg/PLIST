@@ -59,6 +59,7 @@ share/cc65/asminc/generic.mac
 share/cc65/asminc/get_tv.inc
 share/cc65/asminc/joy-error.inc
 share/cc65/asminc/joy-kernel.inc
+share/cc65/asminc/kim1.inc
 share/cc65/asminc/longbranch.mac
 share/cc65/asminc/lynx.inc
 share/cc65/asminc/modload.inc
@@ -129,6 +130,8 @@ share/cc65/cfg/cx16.cfg
 share/cc65/cfg/gamate.cfg
 share/cc65/cfg/geos-apple.cfg
 share/cc65/cfg/geos-cbm.cfg
+share/cc65/cfg/kim1-60k.cfg
+share/cc65/cfg/kim1.cfg
 share/cc65/cfg/lunix.cfg
 share/cc65/cfg/lynx-bll.cfg
 share/cc65/cfg/lynx-coll.cfg
@@ -239,6 +242,7 @@ share/cc65/include/iso646.h
 share/cc65/include/joystick/
 share/cc65/include/joystick.h
 share/cc65/include/joystick/joy-kernel.h
+share/cc65/include/kim1.h
 share/cc65/include/limits.h
 share/cc65/include/locale.h
 share/cc65/include/lynx.h
@@ -308,6 +312,7 @@ share/cc65/lib/cx16.lib
 share/cc65/lib/gamate.lib
 share/cc65/lib/geos-apple.lib
 share/cc65/lib/geos-cbm.lib
+share/cc65/lib/kim1.lib
 share/cc65/lib/lynx.lib
 share/cc65/lib/nes.lib
 share/cc65/lib/none.lib
@@ -407,6 +412,10 @@ share/cc65/samples/geos/yesnores.grc
 share/cc65/samples/getsp.s
 share/cc65/samples/gunzip65.c
 share/cc65/samples/hello.c
+share/cc65/samples/kim1/
+share/cc65/samples/kim1/Makefile
+share/cc65/samples/kim1/kimHello.c
+share/cc65/samples/kim1/kimSieve.c
 share/cc65/samples/lynx/
 share/cc65/samples/lynx/Makefile
 share/cc65/samples/lynx/hello.c
@@ -429,6 +438,7 @@ share/cc65/samples/sym1/symHello.c
 share/cc65/samples/sym1/symIO.c
 share/cc65/samples/sym1/symNotepad.c
 share/cc65/samples/sym1/symTiny.c
+share/cc65/samples/terminal.c
 share/cc65/samples/tgidemo.c
 share/cc65/samples/tinyshell.c
 share/cc65/samples/tutorial/
