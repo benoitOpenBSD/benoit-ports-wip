@@ -1,23 +1,23 @@
-# $OpenBSD: Makefile,v 1.2 2020/04/01 11:49:50 mglocker Exp $
+COMMENT =	turbo assembler compatible cross-assembler for 65xx
 
-COMMENT=	turbo assembler compatible cross-assembler for 65xx
+DISTNAME =	64tass-1.58.2974-src
+PKGNAME =	${DISTNAME:S/-src//}
+EXTRACT_SUFX =	.zip
+CATEGORIES =	devel
 
-DISTNAME=	64tass-1.56.2625-src
-PKGNAME=	${DISTNAME:S/-src//}
-EXTRACT_SUFX=	.zip
-CATEGORIES=	devel
-
-HOMEPAGE=	http://tass64.sourceforge.net/
-MAINTAINER=	Marcus Glocker <marcus@nazgul.ch> 
+HOMEPAGE =	http://tass64.sourceforge.net/
+MAINTAINER =	Marcus Glocker <marcus@nazgul.ch> 
 
 # GPLv2
 PERMIT_PACKAGE=	Yes
 
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tass64/}
+MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=tass64/}
 
-ALL_TARGET=
+ALL_TARGET =
 
-NO_TEST=	Yes
+WANTLIB += c m
+
+NO_TEST =	Yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDIST}/64tass ${PREFIX}/bin
