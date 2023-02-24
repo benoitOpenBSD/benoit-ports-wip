@@ -1,0 +1,8 @@
+@bin bin/xroar
+@info info/xroar.info
+@man man/man1/xroar.1
+share/doc/xroar/
+share/doc/xroar/xroar-screens.png
+share/doc/xroar/xroar-timebandit-af.png
+share/doc/xroar/xroar.html
+share/doc/xroar/xroar.pdf
