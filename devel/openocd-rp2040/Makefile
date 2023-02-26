@@ -19,12 +19,16 @@ MASTER_SITES =	https://www.arcane-labs.net/download/OpenBSD/
 AUTOCONF_VERSION =      2.69
 AUTOMAKE_VERSION =      1.16
 
-CONFIGURE_STYLE = gnu
+MAKE_ENV =		AUTOCONF_VERSION="${AUTOCONF_VERSION}" \
+			AUTOMAKE_VERSION="${AUTOMAKE_VERSION}"
+
+CONFIGURE_STYLE = autoreconf
 
 CONFIGURE_ARGS = --disable-werror \
 		--disable-wextra \
 		--disable-internal-jimtcl \
 		--without-capstone \
+		--disable-internal-libjaylink \
 		-enable-picoprobe
 
 CONFIGURE_ENV =	CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/include/jim" \
@@ -35,13 +39,8 @@ LIB_DEPENDS =	comms/libhidapi \
 		devel/libusb-compat \
 		lang/jimtcl>=0.75
 
+WRKDIST=	${WRKDIR}/${PKGNAME}
 WRKSRC =	${WRKDIR}/${PKGNAME}
-
-pre-configure:
-		cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} \
-                AUTOCONF_VERSION=${AUTOCONF_VERSION} \
-                AUTOMAKE_VERSION=${AUTOMAKE_VERSION} \
-                ./bootstrap
 		
 USE_GMAKE =	Yes
 # Fails to link main.o and libopenocd.a properly resulting in undefined reference in the gdb_server.o
