@@ -2,7 +2,7 @@ COMMENT =	software development kit for the Raspberry Pi Pico
 
 GH_ACCOUNT =	raspberrypi
 GH_PROJECT =	pico-sdk
-GH_TAGNAME =	1.4.0
+GH_TAGNAME =	1.5.0
 PKGNAME =	${GH_ACCOUNT}-${GH_PROJECT}-${GH_TAGNAME}
 
 CATEGORIES =	devel
@@ -22,17 +22,20 @@ MASTER_SITES0 = https://github.com/georgerobotics/cyw43-driver/archive/
 MASTER_SITES1 = https://github.com/lwip-tcpip/lwip/archive/
 MASTER_SITES2 = https://github.com/hathach/tinyusb/archive/
 MASTER_SITES3 = https://github.com/raspberrypi/pico-examples/archive/
+MASTER_SITES4 = https://github.com/sekigon-gonnoc/Pico-PIO-USB/archive/
 
-CYW43_V =	195dfcc10bb6f379e3dea45147590db2203d3c7b
-LWIP_V =	239918ccc173cb2c2a62f41a40fd893f57faf1d6
-TUSB_V =	4bfab30c02279a0530e1a56f4a7c539f2d35a293
-EX_V =		a7ad17156bf60842ee55c8f86cd39e9cd7427c1d
+CYW43_V =	38238aefb6f59ce92681d83aa47d3a48d77b2f6e
+LWIP_V =	eaf49262393d23842232bafc6ff0a24ee06d8b20
+TUSB_V =	34798ff85ec819bafc09da57f7853a1d116a7fff
+EX_V =		1c5d9aa567598e6e3eadf6d7f2d8a9342b44dab4
+PIO_USB_V =	9ff3f52fd3c1f81532bce8dd311aa8fc8d9b2665
 
 DISTFILES =	${GH_PROJECT}-${GH_TAGNAME}.tar.gz
 DISTFILES +=	cyw43-${CYW43_V:C/(........).*/\1/}{${CYW43_V}}.tar.gz:0
 DISTFILES +=	lwip-${LWIP_V:C/(........).*/\1/}{${LWIP_V}}.tar.gz:1
 DISTFILES +=	tinyusb-${TUSB_V:C/(........).*/\1/}{${TUSB_V}}.tar.gz:2
 DISTFILES +=	pico-examples-${EX_V:C/(........).*/\1/}{${EX_V}}.tar.gz:3
+DISTFILES +=	Pico-PIO-USB-${PIO_USB_V:C/(........).*/\1/}{${PIO_USB_V}}.tar.gz:4
 INSTALLDIR =	${PREFIX}/raspberrypi-pico-sdk
 
 NO_TEST =	Yes
@@ -46,6 +49,8 @@ post-extract:
 	rmdir ${WRKSRC}/lib/tinyusb
 	mv ${WRKDIR}/tinyusb* ${WRKSRC}/lib/tinyusb
 	mv ${WRKDIR}/pico-examples* ${WRKSRC}/pico-examples
+	rmdir ${WRKSRC}/lib/tinyusb/hw/mcu/raspberry_pi/Pico-PIO-USB
+	mv ${WRKDIR}/Pico-PIO-USB* ${WRKSRC}/lib/tinyusb/hw/mcu/raspberry_pi/Pico-PIO-USB
 
 do-install:
 	@mkdir -p ${INSTALLDIR}

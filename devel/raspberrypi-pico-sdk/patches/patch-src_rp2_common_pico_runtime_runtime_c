@@ -1,18 +1,15 @@
-_exit is defined in our libc.a and this conflicts, so change it here
-
-Index: src/rp2_common/pico_runtime/runtime.c
---- src/rp2_common/pico_runtime/runtime.c.orig
-+++ src/rp2_common/pico_runtime/runtime.c
-@@ -175,7 +175,7 @@ void runtime_init(void) {
+--- src/rp2_common/pico_runtime/runtime.c.orig	Sat Feb 11 01:27:36 2023
++++ src/rp2_common/pico_runtime/runtime.c	Wed Mar  1 16:41:52 2023
+@@ -178,7 +178,7 @@
  
  }
  
--void __attribute__((noreturn)) _exit(__unused int status) {
-+void __attribute__((noreturn)) _atexit(__unused int status) {
+-void __attribute__((noreturn)) __attribute__((weak)) _exit(__unused int status) {
++void __attribute__((noreturn)) __attribute__((weak)) _atexit(__unused int status) {
  #if PICO_ENTER_USB_BOOT_ON_EXIT
      reset_usb_boot(0,0);
  #else
-@@ -214,7 +214,7 @@ void *_sbrk(int incr) {
+@@ -256,7 +256,7 @@
  
  // exit is not useful... no desire to pull in __call_exitprocs
  void exit(int status) {
@@ -21,7 +18,7 @@ Index: src/rp2_common/pico_runtime/runtime.c
  }
  
  // incorrect warning from GCC 6
-@@ -225,7 +225,7 @@ void __assert_func(const char *file, int line, const c
+@@ -267,7 +267,7 @@
             failedexpr, file, line, func ? ", function: " : "",
             func ? func : "");
  
@@ -30,7 +27,7 @@ Index: src/rp2_common/pico_runtime/runtime.c
  }
  
  #pragma GCC diagnostic pop
-@@ -280,7 +280,7 @@ void __attribute__((noreturn)) __printflike(1, 0) pani
+@@ -322,7 +322,7 @@
  #endif
      }
  
