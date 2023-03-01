@@ -1,10 +1,19 @@
-# $OpenBSD: Makefile,v 1.5 2017/06/02 23:17:08 schwarze Exp $
+COMMENT=	newlib for ${CONFIG} cross-development
 
-COMMENT=	newlib for arm-none-eabi cross-development
-
-DISTNAME=	newlib-2.4.0
-VERSION=	2.4.0
+DISTNAME=	newlib-3.3.0
+VERSION=	3.3.0
 PKGNAME=	${CONFIG}-newlib-${VERSION}
+
+FLAVORS=	aarch64 arm
+FLAVOR?=	arm
+
+.if "${FLAVOR}" == "aarch64"
+CONFIG=		aarch64-none-elf
+.elif "${FLAVOR}" == "arm"
+CONFIG=		arm-none-eabi
+.else
+ERRORS+=	"either aarch64 or arm FLAVOR should be set"
+.endif
 
 MAKE_ENV+=	${CONFIGURE_ENV}
 
@@ -15,19 +24,29 @@ MASTER_SITES=	ftp://sourceware.org/pub/newlib/
 
 EXTRACT_SUFX=	.tar.gz
 
-BUILD_DEPENDS=	devel/arm-none-eabi/binutils \
-		${RUN_DEPENDS}
-RUN_DEPENDS=	devel/arm-none-eabi/gcc-linaro
+.if ${FLAVOR:Maarch64}
+BUILD_DEPENDS+=	devel/arm-none-eabi/binutils,aarch64 \
+		devel/arm-none-eabi/gcc-bootstrap,aarch64
+RUN_DEPENDS+=	devel/arm-none-eabi/binutils,aarch64
+.elif ${FLAVOR:Marm}
+BUILD_DEPENDS+=	devel/arm-none-eabi/binutils,arm \
+		devel/arm-none-eabi/gcc-bootstrap,arm
+RUN_DEPENDS+=	devel/arm-none-eabi/binutils,arm
+.else
+ERRORS+=	"either aarch64 or arm FLAVOR should be set"
+.endif
 
-# cope with user settings in /etc/mk.conf
-MAKE_FLAGS=	CFLAGS="-I${LOCALBASE}/include"
-USE_GMAKE=	Yes
+CONFIGURE_ENV=	CC_FOR_TARGET="${INSTALLDIR}/bootstrap/bin/${CONFIG}-gcc" \
+		AR_FOR_TARGET="${INSTALLDIR}/bin/${CONFIG}-ar" \
+		RANLIB_FOR_TARGET="${INSTALLDIR}/bin/${CONFIG}-ranlib"
 CONFIGURE_ARGS+=--enable-interwork \
+		--with-as="${INSTALLDIR}/bin/${CONFIG}-as" \
+		--with-ld="${INSTALLDIR}/bin/${CONFIG}-ld" \
 		--enable-multilib
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/arm-none-eabi/newlib
+	${INSTALL_DATA_DIR} ${PREFIX}/${CONFIG}/share/doc/${CONFIG}/newlib
 	${INSTALL_DATA} ${WRKDIST}/COPYING.NEWLIB \
-		${PREFIX}/share/doc/arm-none-eabi/newlib
+		${PREFIX}/${CONFIG}/share/doc/${CONFIG}/newlib
 
 .include <bsd.port.mk>

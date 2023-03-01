@@ -1,62 +1,53 @@
-@comment $OpenBSD: PLIST,v 1.3 2017/07/16 12:44:19 kettenis Exp $
 %%aarch64%%
 %%arm%%
 ${CONFIG}/
+${CONFIG}/${CONFIG}/
+${CONFIG}/${CONFIG}/bin/
+@bin ${CONFIG}/${CONFIG}/bin/ar
+@bin ${CONFIG}/${CONFIG}/bin/as
+@bin ${CONFIG}/${CONFIG}/bin/ld
+@bin ${CONFIG}/${CONFIG}/bin/ld.bfd
+@bin ${CONFIG}/${CONFIG}/bin/nm
+@bin ${CONFIG}/${CONFIG}/bin/objcopy
+@bin ${CONFIG}/${CONFIG}/bin/objdump
+@bin ${CONFIG}/${CONFIG}/bin/ranlib
+@bin ${CONFIG}/${CONFIG}/bin/readelf
+@bin ${CONFIG}/${CONFIG}/bin/strip
 ${CONFIG}/bin/
-@bin ${CONFIG}/bin/ar
-@bin ${CONFIG}/bin/as
-@bin ${CONFIG}/bin/ld
-@bin ${CONFIG}/bin/ld.bfd
-@bin ${CONFIG}/bin/nm
-@bin ${CONFIG}/bin/objcopy
-@bin ${CONFIG}/bin/objdump
-@bin ${CONFIG}/bin/ranlib
-@bin ${CONFIG}/bin/readelf
-@bin ${CONFIG}/bin/strip
-${CONFIG}/lib/ldscripts/armelf.xce
-${CONFIG}/lib/ldscripts/armelf.xd
-${CONFIG}/lib/ldscripts/armelf.xdc
-${CONFIG}/lib/ldscripts/armelf.xdce
-${CONFIG}/lib/ldscripts/armelf.xde
-${CONFIG}/lib/ldscripts/armelf.xdw
-${CONFIG}/lib/ldscripts/armelf.xdwe
-${CONFIG}/lib/ldscripts/armelf.xe
-${CONFIG}/lib/ldscripts/armelf.xsce
-${CONFIG}/lib/ldscripts/armelf.xse
-${CONFIG}/lib/ldscripts/armelf.xswe
-${CONFIG}/lib/ldscripts/armelf.xwe
-@bin bin/${CONFIG}-addr2line
-@bin bin/${CONFIG}-ar
-@bin bin/${CONFIG}-as
-@bin bin/${CONFIG}-c++filt
-@bin bin/${CONFIG}-elfedit
-@bin bin/${CONFIG}-gprof
-@bin bin/${CONFIG}-ld
-@bin bin/${CONFIG}-ld.bfd
-@bin bin/${CONFIG}-nm
-@bin bin/${CONFIG}-objcopy
-@bin bin/${CONFIG}-objdump
-@bin bin/${CONFIG}-ranlib
-@bin bin/${CONFIG}-readelf
-@bin bin/${CONFIG}-size
-@bin bin/${CONFIG}-strings
-@bin bin/${CONFIG}-strip
-@man man/man1/${CONFIG}-addr2line.1
-@man man/man1/${CONFIG}-ar.1
-@man man/man1/${CONFIG}-as.1
-@man man/man1/${CONFIG}-c++filt.1
-@man man/man1/${CONFIG}-dlltool.1
-@man man/man1/${CONFIG}-elfedit.1
-@man man/man1/${CONFIG}-gprof.1
-@man man/man1/${CONFIG}-ld.1
-@man man/man1/${CONFIG}-nlmconv.1
-@man man/man1/${CONFIG}-nm.1
-@man man/man1/${CONFIG}-objcopy.1
-@man man/man1/${CONFIG}-objdump.1
-@man man/man1/${CONFIG}-ranlib.1
-@man man/man1/${CONFIG}-readelf.1
-@man man/man1/${CONFIG}-size.1
-@man man/man1/${CONFIG}-strings.1
-@man man/man1/${CONFIG}-strip.1
-@man man/man1/${CONFIG}-windmc.1
-@man man/man1/${CONFIG}-windres.1
+@bin ${CONFIG}/bin/${CONFIG}-addr2line
+@bin ${CONFIG}/bin/${CONFIG}-ar
+@bin ${CONFIG}/bin/${CONFIG}-as
+@bin ${CONFIG}/bin/${CONFIG}-c++filt
+@bin ${CONFIG}/bin/${CONFIG}-elfedit
+@bin ${CONFIG}/bin/${CONFIG}-gprof
+@bin ${CONFIG}/bin/${CONFIG}-ld
+@bin ${CONFIG}/bin/${CONFIG}-ld.bfd
+@bin ${CONFIG}/bin/${CONFIG}-nm
+@bin ${CONFIG}/bin/${CONFIG}-objcopy
+@bin ${CONFIG}/bin/${CONFIG}-objdump
+@bin ${CONFIG}/bin/${CONFIG}-ranlib
+@bin ${CONFIG}/bin/${CONFIG}-readelf
+@bin ${CONFIG}/bin/${CONFIG}-size
+@bin ${CONFIG}/bin/${CONFIG}-strings
+@bin ${CONFIG}/bin/${CONFIG}-strip
+${CONFIG}/share/
+@mandir ${CONFIG}/share/man/
+${CONFIG}/share/man/man1/
+@man ${CONFIG}/share/man/man1/${CONFIG}-addr2line.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-ar.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-as.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-c++filt.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-dlltool.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-elfedit.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-gprof.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-ld.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-nm.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-objcopy.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-objdump.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-ranlib.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-readelf.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-size.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-strings.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-strip.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-windmc.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-windres.1

@@ -1,0 +1,60 @@
+@comment include/gdb/
+@comment include/gdb/jit-reader.h
+@comment lib/charset.alias
+@comment share/gdb/syscalls/
+@comment share/gdb/syscalls/aarch64-linux.xml
+@comment share/gdb/syscalls/amd64-linux.xml
+@comment share/gdb/syscalls/arm-linux.xml
+@comment share/gdb/syscalls/freebsd.xml
+@comment share/gdb/syscalls/gdb-syscalls.dtd
+@comment share/gdb/syscalls/i386-linux.xml
+@comment share/gdb/syscalls/mips-n32-linux.xml
+@comment share/gdb/syscalls/mips-n64-linux.xml
+@comment share/gdb/syscalls/mips-o32-linux.xml
+@comment share/gdb/syscalls/ppc-linux.xml
+@comment share/gdb/syscalls/ppc64-linux.xml
+@comment share/gdb/syscalls/s390-linux.xml
+@comment share/gdb/syscalls/s390x-linux.xml
+@comment share/gdb/syscalls/sparc-linux.xml
+@comment share/gdb/syscalls/sparc64-linux.xml
+@comment share/gdb/system-gdbinit/
+@comment share/gdb/system-gdbinit/elinos.py
+@comment share/gdb/system-gdbinit/wrs-linux.py
+aarch64-none-elf/
+aarch64-none-elf/bin/
+@bin aarch64-none-elf/bin/aarch64-none-elf-gdb
+@bin aarch64-none-elf/bin/aarch64-none-elf-run
+aarch64-none-elf/include/
+aarch64-none-elf/include/gdb/
+aarch64-none-elf/include/gdb/jit-reader.h
+aarch64-none-elf/lib/
+aarch64-none-elf/lib/charset.alias
+@static-lib aarch64-none-elf/lib/libaarch64-none-elf-sim.a
+aarch64-none-elf/share/
+aarch64-none-elf/share/gdb/
+aarch64-none-elf/share/gdb/syscalls/
+aarch64-none-elf/share/gdb/syscalls/aarch64-linux.xml
+aarch64-none-elf/share/gdb/syscalls/amd64-linux.xml
+aarch64-none-elf/share/gdb/syscalls/arm-linux.xml
+aarch64-none-elf/share/gdb/syscalls/freebsd.xml
+aarch64-none-elf/share/gdb/syscalls/gdb-syscalls.dtd
+aarch64-none-elf/share/gdb/syscalls/i386-linux.xml
+aarch64-none-elf/share/gdb/syscalls/mips-n32-linux.xml
+aarch64-none-elf/share/gdb/syscalls/mips-n64-linux.xml
+aarch64-none-elf/share/gdb/syscalls/mips-o32-linux.xml
+aarch64-none-elf/share/gdb/syscalls/ppc-linux.xml
+aarch64-none-elf/share/gdb/syscalls/ppc64-linux.xml
+aarch64-none-elf/share/gdb/syscalls/s390-linux.xml
+aarch64-none-elf/share/gdb/syscalls/s390x-linux.xml
+aarch64-none-elf/share/gdb/syscalls/sparc-linux.xml
+aarch64-none-elf/share/gdb/syscalls/sparc64-linux.xml
+aarch64-none-elf/share/gdb/system-gdbinit/
+aarch64-none-elf/share/gdb/system-gdbinit/elinos.py
+aarch64-none-elf/share/gdb/system-gdbinit/wrs-linux.py
+aarch64-none-elf/share/info/
+@mandir aarch64-none-elf/share/man/
+aarch64-none-elf/share/man/man1/
+@man aarch64-none-elf/share/man/man1/aarch64-none-elf-gdb.1
+@man aarch64-none-elf/share/man/man1/aarch64-none-elf-gdbserver.1
+aarch64-none-elf/share/man/man5/
+@man aarch64-none-elf/share/man/man5/aarch64-none-elf-gdbinit.5

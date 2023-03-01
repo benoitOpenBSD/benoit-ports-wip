@@ -1,10 +1,9 @@
-$OpenBSD$
-
 check-expandargv randomly succeeds or fails w/o a reason.
 
---- libiberty/testsuite/Makefile.in.orig	Sat Jan 13 14:31:16 2018
-+++ libiberty/testsuite/Makefile.in	Wed Jul  3 09:11:46 2019
-@@ -45,7 +45,7 @@
+Index: libiberty/testsuite/Makefile.in
+--- libiberty/testsuite/Makefile.in.orig
++++ libiberty/testsuite/Makefile.in
+@@ -45,7 +45,7 @@ all:
  check: @CHECK@
  
  really-check: check-cplus-dem check-d-demangle check-rust-demangle \

@@ -1,0 +1,41 @@
+%%aarch64%%
+%%arm%%
+${CONFIG}/bootstrap/
+${CONFIG}/bootstrap/bin/
+@bin ${CONFIG}/bootstrap/bin/${CONFIG}-cpp
+@bin ${CONFIG}/bootstrap/bin/${CONFIG}-gcc
+@bin ${CONFIG}/bootstrap/bin/${CONFIG}-gcc-${GCC_VERSION}
+@bin ${CONFIG}/bootstrap/bin/${CONFIG}-gcc-ar
+@bin ${CONFIG}/bootstrap/bin/${CONFIG}-gcc-nm
+@bin ${CONFIG}/bootstrap/bin/${CONFIG}-gcc-ranlib
+@bin ${CONFIG}/bootstrap/bin/${CONFIG}-gcov
+@bin ${CONFIG}/bootstrap/bin/${CONFIG}-gcov-dump
+@bin ${CONFIG}/bootstrap/bin/${CONFIG}-gcov-tool
+${CONFIG}/bootstrap/lib/
+${CONFIG}/bootstrap/lib/gcc/
+${CONFIG}/bootstrap/libexec/
+${CONFIG}/bootstrap/libexec/gcc/
+${CONFIG}/bootstrap/libexec/gcc/${CONFIG}/
+${CONFIG}/bootstrap/libexec/gcc/${CONFIG}/${GCC_VERSION}/
+@bin ${CONFIG}/bootstrap/libexec/gcc/${CONFIG}/${GCC_VERSION}/cc1
+@bin ${CONFIG}/bootstrap/libexec/gcc/${CONFIG}/${GCC_VERSION}/collect2
+${CONFIG}/bootstrap/libexec/gcc/${CONFIG}/${GCC_VERSION}/install-tools/
+${CONFIG}/bootstrap/libexec/gcc/${CONFIG}/${GCC_VERSION}/install-tools/fixinc.sh
+@bin ${CONFIG}/bootstrap/libexec/gcc/${CONFIG}/${GCC_VERSION}/install-tools/fixincl
+${CONFIG}/bootstrap/libexec/gcc/${CONFIG}/${GCC_VERSION}/install-tools/mkheaders
+${CONFIG}/bootstrap/libexec/gcc/${CONFIG}/${GCC_VERSION}/install-tools/mkinstalldirs
+@bin ${CONFIG}/bootstrap/libexec/gcc/${CONFIG}/${GCC_VERSION}/lto-wrapper
+@comment @man ${CONFIG}/boostrap/man/man7/fsf-funding.7
+@comment @man ${CONFIG}/boostrap/man/man7/gfdl.7
+@comment @man ${CONFIG}/boostrap/man/man7/gpl.7
+${CONFIG}/include/
+${CONFIG}/share/info/
+@man ${CONFIG}/share/man/man1/${CONFIG}-cpp.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-gcc.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-gcov-dump.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-gcov-tool.1
+@man ${CONFIG}/share/man/man1/${CONFIG}-gcov.1
+${CONFIG}/share/man/man7/
+@man ${CONFIG}/share/man/man7/fsf-funding.7
+@man ${CONFIG}/share/man/man7/gfdl.7
+@man ${CONFIG}/share/man/man7/gpl.7

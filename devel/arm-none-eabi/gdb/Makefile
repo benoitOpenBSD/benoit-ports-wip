@@ -1,33 +1,37 @@
-# $OpenBSD: Makefile,v 1.6 2019/05/20 20:52:31 sthen Exp $
+COMMENT=	gdb for ${CONFIG} cross-development
 
-COMMENT=	gdb for arm-none-eabi cross-development
-
-DISTNAME=	gdb-7.9.1
+DISTNAME=	gdb-7.12.1
 EXTRACT_SUFX=	.tar.xz
-REVISION=	3
+REVISION=	1
+
+FLAVORS=	aarch64 arm
+FLAVOR?=	arm
+
+.if "${FLAVOR}" == "aarch64"
+CONFIG=		aarch64-none-elf
+.elif "${FLAVOR}" == "arm"
+CONFIG=		arm-none-eabi
+.else
+ERRORS+=	"either aarch64 or arm FLAVOR should be set"
+.endif
 
 HOMEPAGE=	https://www.gnu.org/software/gdb/
 
-WANTLIB=	c expat m curses pthread z
+WANTLIB=	${COMPILER_LIBCXX} c expat m curses pthread
 
 MASTER_SITES=	${MASTER_SITE_GNU:=gdb/}
 DIST_SUBDIR=	gdb
 
-USE_GMAKE=	Yes
-
 CFLAGS+=	-Dunix
 
-CONFIGURE_ARGS+=	--enable-multilib \
-			--enable-thumb \
-			--enable-interwork \
-			--without-guile
+CONFIGURE_ARGS+=--enable-multilib \
+		--enable-thumb \
+		--enable-interwork \
+		--without-guile
 
 MODULES=	lang/python
+MODPY_VERSION =	${MODPY_DEFAULT_VERSION_2}
 
 TEST_DEPENDS=devel/dejagnu
-
-post-install:
-	${MODPY_BIN} ${MODPY_LIBDIR}/compileall.py \
-		${PREFIX}/share/gdb/system-gdbinit
 
 .include <bsd.port.mk>
