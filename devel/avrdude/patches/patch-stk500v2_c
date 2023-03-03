@@ -1,7 +1,6 @@
-$OpenBSD$
---- stk500v2.c.orig	Wed Nov 19 18:23:15 2014
-+++ stk500v2.c	Mon Mar  7 15:34:26 2016
-@@ -350,6 +350,7 @@ static void stk500v2_jtag3_setup(PROGRAMMER * pgm)
+--- src/stk500v2.c.orig	Sun Jan  8 22:28:14 2023
++++ src/stk500v2.c	Fri Mar  3 08:04:25 2023
+@@ -339,6 +339,7 @@
  void stk500v2_teardown(PROGRAMMER * pgm)
  {
    free(pgm->cookie);
@@ -9,7 +8,7 @@ $OpenBSD$
  }
  
  static void stk500v2_jtagmkII_teardown(PROGRAMMER * pgm)
-@@ -361,6 +362,7 @@ static void stk500v2_jtagmkII_teardown(PROGRAMMER * pg
+@@ -353,6 +354,7 @@
    jtagmkII_teardown(pgm);
  
    free(mycookie);
@@ -17,11 +16,11 @@ $OpenBSD$
  }
  
  static void stk500v2_jtag3_teardown(PROGRAMMER * pgm)
-@@ -1409,6 +1411,7 @@ static int stk500v2_jtag3_initialize(PROGRAMMER * pgm,
-   if ((PDATA(pgm)->flash_pagecache = malloc(PDATA(pgm)->flash_pagesize)) == NULL) {
-     avrdude_message(MSG_INFO, "%s: stk500hv_initialize(): Out of memory\n",
- 	    progname);
-+    PDATA(pgm)->eeprom_pagecache = NULL;
-     return -1;
-   }
-   if ((PDATA(pgm)->eeprom_pagecache = malloc(PDATA(pgm)->eeprom_pagesize)) == NULL) {
+@@ -364,6 +366,7 @@
+   jtag3_teardown(pgm);
+ 
+   free(mycookie);
++  pgm->cookie = NULL;
+ }
+ 
+ 

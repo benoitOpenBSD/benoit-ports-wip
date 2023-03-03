@@ -1,0 +1,13 @@
+--- build.sh.orig	Sun Jan  8 22:28:14 2023
++++ build.sh	Fri Mar  3 08:33:48 2023
+@@ -69,6 +69,10 @@
+ 	build_flags="${build_flags} -D CMAKE_C_FLAGS=-I/usr/pkg/include -D CMAKE_EXE_LINKER_FLAGS=-R/usr/pkg/lib -D CMAKE_INSTALL_PREFIX:PATH=/usr/pkg"
+ 	;;
+ 
++    openbsd)
++	build_flags="${build_flags} -D CMAKE_C_FLAGS=-I/usr/local/include -D CMAKE_EXE_LINKER_FLAGS=-L/usr/local/lib -D CMAKE_INSTALL_PREFIX:PATH=/usr/local"
++	;;
++
+     *bsd)
+ 	build_flags="${build_flags} -D CMAKE_C_FLAGS=-I/usr/local/include -D CMAKE_EXE_LINKER_FLAGS=-L/usr/local/lib"
+ 	;;
