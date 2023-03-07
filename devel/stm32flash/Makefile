@@ -2,7 +2,7 @@
 
 COMMENT =	flashing utility for STM32 and STM32W through UART or I2C
 
-DISTNAME =	stm32flash-0.6
+DISTNAME =	stm32flash-0.7
 CATEGORIES =	devel
 
 HOMEPAGE =	https://sourceforge.net/projects/stm32flash/
