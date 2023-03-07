@@ -1,0 +1,13 @@
+--- src/stlink-lib/libusb_settings.h.orig	Tue Mar  7 20:37:07 2023
++++ src/stlink-lib/libusb_settings.h	Tue Mar  7 20:38:07 2023
+@@ -29,7 +29,9 @@
+     #endif
+ #endif
+ 
+-#if defined (__FreeBSD__)
++#if defined (__OpenBSD__)
++    #define MINIMAL_API_VERSION 0x01000107 // v1.0.23
++#elif defined (__FreeBSD__)
+     #define MINIMAL_API_VERSION 0x01000102 // v1.0.16
+ #elif defined (__linux__)
+     #define MINIMAL_API_VERSION 0x01000104 // v1.0.20
