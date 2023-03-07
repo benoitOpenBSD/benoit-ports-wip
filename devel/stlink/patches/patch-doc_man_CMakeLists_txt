@@ -1,14 +1,11 @@
-$OpenBSD$
-
-Index: doc/man/CMakeLists.txt
---- doc/man/CMakeLists.txt.orig
-+++ doc/man/CMakeLists.txt
-@@ -30,7 +30,10 @@ foreach (manpage ${MANPAGES})
+--- doc/man/CMakeLists.txt.orig.port	Sun Apr 25 00:24:02 2021
++++ doc/man/CMakeLists.txt	Tue Mar  7 17:24:43 2023
+@@ -30,7 +30,10 @@
      endif ()
  
      if (f AND NOT WIN32)
--        install(FILES ${f} DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}/man/man1)
-+	if (NOT DEFINED CMAKE_INSTALL_MANDIR)
+-        install(FILES ${f} DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/man/man1)
++        if (NOT DEFINED CMAKE_INSTALL_MANDIR)
 +	  set(CMAKE_INSTALL_MANDIR "${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME}/man/man1")
 +	endif ()
 +        install(FILES ${f} DESTINATION ${CMAKE_INSTALL_MANDIR})

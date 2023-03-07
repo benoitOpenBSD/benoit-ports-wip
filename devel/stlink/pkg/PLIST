@@ -1,28 +1,31 @@
-@comment $OpenBSD: PLIST,v$
 @bin bin/st-flash
 @bin bin/st-info
+@bin bin/st-trace
 @bin bin/st-util
 @bin bin/stlink-gui
-bin/stlink-gui.ui
 include/stlink/
-include/stlink.h
 include/stlink/backend.h
 include/stlink/chipid.h
 include/stlink/commands.h
 include/stlink/flash_loader.h
+include/stlink/helper.h
+include/stlink/libusb_settings.h
+include/stlink/logging.h
+include/stlink/md5.h
 include/stlink/reg.h
+include/stlink/sg.h
+include/stlink/stlink.h
+include/stlink/stm32.h
+include/stlink/usb.h
 include/stlink/version.h
-include/stm32.h
 @static-lib lib/libstlink.a
 @lib lib/libstlink.so.${LIBstlink_VERSION}
 @man man/man1/st-flash.1
 @man man/man1/st-info.1
 @man man/man1/st-util.1
+share/applications/stlink-gui.desktop
+share/icons/hicolor/scalable/apps/stlink-gui.svg
 share/stlink/
-share/stlink/applications/
-share/stlink/applications/stlink-gui.desktop
-share/stlink/icons/
-share/stlink/icons/hicolor/
-share/stlink/icons/hicolor/scalable/
-share/stlink/icons/hicolor/scalable/apps/
-share/stlink/icons/hicolor/scalable/apps/stlink-gui.svg
+share/stlink/stlink-gui.ui
+@tag gtk-update-icon-cache %D/share/icons/hicolor
+@tag update-desktop-database
