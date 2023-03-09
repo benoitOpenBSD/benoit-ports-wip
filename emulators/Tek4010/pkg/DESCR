@@ -1,0 +1,20 @@
+This is a Tektronix 4010, 4013, 4014 and 4015 terminal emulator for the 
+Raspberry Pi and other Linux systems.
+
+tek4010 can also display historical data for the MIT Project MAC 's 
+ARDS (Advanced Remote Display Station).
+
+There is a file "dodekagon.plt" in the repo, which you can use to 
+test the tek4010 emulator. "dodekagon.plt" was produced in 2.11 BSD 
+using my program "dodekagon". Type
+
+./tek4010 -noexit cat dodekagon.plt
+
+Or, for a ARDS display example, type
+
+./tek4010 -noexit -ARDS cat ardsfiles/trek.pic
+
+If you want to test an animation, type
+
+./tek4010 cat animation.plt
+
