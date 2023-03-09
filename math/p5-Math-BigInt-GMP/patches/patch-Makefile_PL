@@ -1,15 +1,15 @@
-$OpenBSD$
---- Makefile.PL.orig	Fri Oct 11 16:23:09 2019
-+++ Makefile.PL	Fri Jan  8 21:18:22 2021
-@@ -49,9 +49,9 @@
+Index: Makefile.PL
+--- Makefile.PL.orig
++++ Makefile.PL
+@@ -49,9 +49,9 @@ WriteMakefile
                             },
  
     'LICENSE'            => 'perl_5',
 -   'LIBS'               => ['-lgmp'],   # e.g., '-lm'
-+   'LIBS'		=> ["$ENV{LDFLAGS} -lgmp"],   # e.g., '-lm' 
-+   'INC'		=> "$ENV{CPPFLAGS}",
++   'LIBS'               => ["$ENV{LDFLAGS} -lgmp"],   # e.g., '-lm'
     'DEFINE'             => '',          # e.g., '-DHAVE_SOMETHING'
 -   'INC'                => '',          # e.g., '-I/usr/include/other'
++   'INC'                => "$ENV{CPPFLAGS}",          # e.g., '-I/usr/include/other'
     'SIGN'               => 1,
  
     'META_MERGE'         => {
