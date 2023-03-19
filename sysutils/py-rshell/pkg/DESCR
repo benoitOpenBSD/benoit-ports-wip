@@ -1,0 +1,8 @@
+Remote MicroPython shell.
+
+This is a simple shell which runs on the host and uses MicroPython's raw-REPL 
+to send python snippets to the pyboard in order to get filesystem information, 
+and to copy files to and from MicroPython's filesystem.
+
+It also has the ability to invoke the regular REPL, so rshell can be used as 
+a terminal emulator as well.
