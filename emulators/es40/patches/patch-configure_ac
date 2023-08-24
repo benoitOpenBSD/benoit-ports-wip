@@ -1,0 +1,21 @@
+--- configure.ac.orig	Thu Aug 24 14:20:05 2023
++++ configure.ac	Thu Aug 24 14:20:22 2023
+@@ -90,18 +90,6 @@
+ LDFLAGS="$LDFLAGS $PTHREAD_LDFLAGS"
+ LIBS="$LIBS $PTHREAD_LIBS"
+ 
+-# Use our own method to search for PCAP
+-AM_PATH_PCAP(
+-  CXXFLAGS="$CXXFLAGS $PCAP_CFLAGS -DHAVE_PCAP"
+-  LIBS="$LIBS $PCAP_LIBS"
+-  ,:)
+-
+-# Use our own method to search for X11
+-AM_PATH_X11(
+-  CXXFLAGS="$CXXFLAGS $X11_CFLAGS -DHAVE_X11"
+-  LIBS="$LIBS $X11_LIBS"
+-  ,:)
+-
+ # Use pkg-config to find SDL
+ PKG_CHECK_MODULES([SDL],[sdl >= 1.2.0],
+     [
