@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	information about the phase of the Moon
 

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Astronomical computations for Python
 
@@ -14,7 +13,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv3 - LGPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=p/pyephem/}
+SITES =			${SITE_PYPI:=p/pyephem/}
 
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes

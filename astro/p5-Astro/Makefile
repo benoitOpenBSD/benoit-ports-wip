@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	assorted astronomical routines
 

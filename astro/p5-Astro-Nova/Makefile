@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	perl interface to libnova 
 
