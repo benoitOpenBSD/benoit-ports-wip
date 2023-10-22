@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile$
 
 COMMENT =		use Markdown for your project description
 

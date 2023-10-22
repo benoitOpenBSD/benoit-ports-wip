@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		another graphical (SDL-based) hexadecimal dump tool
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c SDL iconv m pthread sndio usbhid
 
-MASTER_SITES =		http://actinid.org/outcoming/
+SITES =			http://actinid.org/outcoming/
 
 MODULES =		converters/libiconv
 

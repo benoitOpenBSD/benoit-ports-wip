@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	library for manipulating PDF documents
 
@@ -13,7 +12,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES		= ${MASTER_SITE_SOURCEFORGE:=pdfedit/}
+SITES			= ${SITE_SOURCEFORGE:=pdfedit/}
 
 WANTLIB =		c m z stdc++ freetype t1 ICE X11
 

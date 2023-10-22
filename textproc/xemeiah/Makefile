@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		???
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		stdc++
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=xemeiah/}
+SITES =			${SITE_SOURCEFORGE:=xemeiah/}
 
 EXTRACT_SUFX =		.tar.bz2
 
