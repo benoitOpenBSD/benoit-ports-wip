@@ -1,7 +1,7 @@
 
 COMMENT =		tool for inspecting RP2040 binaries
 
-V =			1.1.1
+V =			1.1.2
 DISTNAME =		picotool-${V}
 CATEGORIES =		devel
 
@@ -14,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB +=		c m usb-1.0 ${COMPILER_LIBCXX}
 
-MASTER_SITES =          ${MASTER_SITES_GITHUB}
+SITES =                 ${SITES_GITHUB}
 GH_ACCOUNT =            raspberrypi
 GH_PROJECT =            picotool
 GH_TAGNAME =            $V
