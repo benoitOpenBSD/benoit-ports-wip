@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		firmware library for various ARM Cortex microcontrollers
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # LGPLv3
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		http://libopencm3.org/wiki/Main_Page
 

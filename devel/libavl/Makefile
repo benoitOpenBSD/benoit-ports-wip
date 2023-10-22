@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.7 2013/03/11 10:50:09 espie Exp $
 
 COMMENT=	library for balanced binary trees
 
@@ -14,7 +13,7 @@ MAINTAINER=	Kevin Lo <kevlo@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE =   Yes
 
-MASTER_SITES=   ${MASTER_SITE_GNU:=avl/}
+SITES=   	${SITE_GNU:=avl/}
 
 BUILD_DEPENDS =	print/texlive/base \
 		graphics/ImageMagick

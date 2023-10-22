@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	a library for accessing discs and disc image files
 
@@ -16,7 +15,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =	bz2 dsk z
 
-MASTER_SITES =	https://www.seasip.info/Unix/LibDsk/
+SITES =		https://www.seasip.info/Unix/LibDsk/
 
 LIB_DEPENDS =	archivers/bzip2
 

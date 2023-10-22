@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	linker for .rel object files
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 WANTLIB +=	${COMPILER_LIBCXX} c
 
 # http://48k.ca/
-MASTER_SITES =	https://www.arcane-labs.net/download/OpenBSD/
+SITES =		https://www.arcane-labs.net/download/OpenBSD/
 
 COMPILER =	base-clang ports-gcc
 

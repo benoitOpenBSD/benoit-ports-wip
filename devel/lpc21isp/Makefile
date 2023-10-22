@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	portable command line ISP for LPC family and ADUC70xx
 
@@ -13,7 +12,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # LPGLv3
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =          ${MASTER_SITES_GITHUB}
+SITES =                 ${SITES_GITHUB}
 GH_ACCOUNT =            capiman
 GH_PROJECT =            lpc21isp
 GH_COMMIT =		cf89d0b122ef02358e0f130b8f32cb804c11a54e

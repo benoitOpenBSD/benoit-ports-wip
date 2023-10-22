@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		z80 CPU emulation library
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE =	Yes
 
 HOMEPAGE =		https://github.com/wyan/libz80ex
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 GH_ACCOUNT =            wyan
 GH_PROJECT =            libz80ex
