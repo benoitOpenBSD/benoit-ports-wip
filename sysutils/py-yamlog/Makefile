@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		logging in YAML format
 
@@ -15,7 +14,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=Y/Yamlog/}
+SITES =			${SITE_PYPI:=Y/Yamlog/}
 
 MODULES =		lang/python
 

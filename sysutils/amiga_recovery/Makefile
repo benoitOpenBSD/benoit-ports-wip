@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	view and copy files from Amiga file system images
 

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		command-line utilities for Acorn 8-bit ADFS and DFS
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # ??
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/
+SITES =			https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		https://github.com/SteveFosdick/AcornFsUtils
 

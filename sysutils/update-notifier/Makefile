@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2009/10/11 14:20:15 landry Exp $
 
 COMMENT =	systray icon showing newer OpenBSD snapshots
 
@@ -10,7 +9,7 @@ MAINTAINER =	Landry Breuil <gaston@gcu.info>
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =	http://rhaalovely.net/stuff/
+SITES =		http://rhaalovely.net/stuff/
 
 NO_BUILD=	yes
 NO_REGRESS=	yes

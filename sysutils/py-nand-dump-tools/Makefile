@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	tools for encoding and decoding dumps of NAND memory chips
 

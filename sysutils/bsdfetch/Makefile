@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	tool to show information about a running OpenBSD system
 

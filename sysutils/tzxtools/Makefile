@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	collection of command line tools for processing TZX files
 

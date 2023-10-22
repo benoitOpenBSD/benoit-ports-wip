@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		vSphere SDK for python.
 
@@ -14,7 +13,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		http://pysphere.googlecode.com/files/
+SITES =			http://pysphere.googlecode.com/files/
 EXTRACT_SUFX =		.zip
 UNZIP =			unzip -a
 

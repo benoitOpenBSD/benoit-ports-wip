@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	convert Apple II/III DSK images to ProDOS orderer images
 

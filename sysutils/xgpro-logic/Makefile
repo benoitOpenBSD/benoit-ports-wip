@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	commandline utility xgpro-logic
 

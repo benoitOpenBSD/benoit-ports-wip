@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	reading information and extracting from UBI-UBIFS images
 

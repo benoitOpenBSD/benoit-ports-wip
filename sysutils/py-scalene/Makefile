@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		high performance profiler for python
 

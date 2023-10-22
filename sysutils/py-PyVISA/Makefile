@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		python VISA bindings for GPIB, RS232, USB instruments
 

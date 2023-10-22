@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	ESP32 Firmware Image to ELF
 

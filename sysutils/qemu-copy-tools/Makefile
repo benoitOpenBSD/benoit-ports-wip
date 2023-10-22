@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		transferring files between a qemu host and guest
 

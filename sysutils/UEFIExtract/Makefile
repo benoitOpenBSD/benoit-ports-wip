@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		parse and dump UEFI firmware image
 
@@ -12,7 +11,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # BSD
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/LongSoft/UEFITool
 

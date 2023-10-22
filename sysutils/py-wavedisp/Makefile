@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	displaying waveforms for different HDL simulators
 

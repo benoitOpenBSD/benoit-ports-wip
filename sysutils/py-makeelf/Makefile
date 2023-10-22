@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		ELF reader-writer library for Python3
 

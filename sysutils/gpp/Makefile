@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 V =		2.27
 COMMENT =	generic preprocessor
@@ -15,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB += c
 
-MASTER_SITES =	https://github.com/logological/gpp/releases/download/${V}/
+SITES =			https://github.com/logological/gpp/releases/download/${V}/
 
 DEBUG_PACKAGES =	${BUILD_PACKAGES}
 

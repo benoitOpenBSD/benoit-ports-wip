@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		recover deleted files from FAT filesystems
 DISTNAME =		fatback-1.3
@@ -10,7 +9,7 @@ MAINTAINER =		Dmitri Alenichev <mitya@sdf.lonestar.org>
 PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=fatback/}
+SITES =			${SITE_SOURCEFORGE:=fatback/}
 CONFIGURE_STYLE =	gnu
 
 .include <bsd.port.mk>

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	access CP/M file systems
 
@@ -8,7 +7,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 CATEGORIES =	sysutils
 
 HOMEPAGE =	http://www.moria.de/~michael/cpmtools/
-MASTER_SITES =	http://www.moria.de/~michael/cpmtools/files/
+SITES =		http://www.moria.de/~michael/cpmtools/files/
 
 # GPLv3
 PERMIT_PACKAGE =	Yes

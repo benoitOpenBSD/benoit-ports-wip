@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		python VISA bindings
 
