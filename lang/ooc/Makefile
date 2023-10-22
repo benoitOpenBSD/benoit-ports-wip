@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		ooc object-oriented programming language
 
@@ -13,7 +12,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # In case of GPL, version number must be appended (e.g. v2, v2+, v3).
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		http://ooc-language.googlecode.com/files/
+SITES =			http://ooc-language.googlecode.com/files/
 
 EXTRACT_SUFX =		.tar.bz2
 

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		BASIC interpreter/compiler for UNIX
 
@@ -11,7 +10,7 @@ HOMEPAGE =		http://x11-basic.sourceforge.net/
 # GPLv2
 PERMIT_PACKAGE		= Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 GH_ACCOUNT =            kollokollo
 GH_PROJECT =            X11Basic

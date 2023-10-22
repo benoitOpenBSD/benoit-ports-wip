@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 # rt/cgen/cowgol.h:14:
 # "Sorry, cowgol cgen doesn't work on big endian machines yet."

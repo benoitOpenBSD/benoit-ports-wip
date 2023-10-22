@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.17 2019/07/12 20:47:24 sthen Exp $
 
 COMMENT=	very fast free Verilog HDL simulator
 
@@ -10,7 +9,7 @@ HOMEPAGE=	https://www.veripool.org/wiki/verilator/Intro
 # LGPLv3 or Perl
 PERMIT_PACKAGE=	Yes
 
-MASTER_SITES=		https://www.veripool.org/ftp/
+SITES =			https://www.veripool.org/ftp/
 EXTRACT_SUFX=		.tgz
 
 WANTLIB=		c m ${COMPILER_LIBCXX}

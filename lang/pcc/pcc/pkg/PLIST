@@ -1,7 +1,6 @@
 @pkgpath lang/pcc
 @bin bin/pcc
 @bin bin/pcpp
-libexec/cc2
 @bin libexec/ccom
 @bin libexec/cpp
 @man man/man1/ccom.1

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 ONLY_FOR_ARCHS =	amd64
 

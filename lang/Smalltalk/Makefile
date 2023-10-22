@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	by the Bluebook implementation of Smalltalk-80 
 
@@ -12,7 +11,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # MIT
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =          ${MASTER_SITES_GITHUB}
+SITES =                 ${SITES_GITHUB}
 
 GH_ACCOUNT =            dbanay
 GH_PROJECT =            Smalltalk

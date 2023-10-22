@@ -1,5 +1,10 @@
+/patch-arch_powerpc_code_c/1.1/Mon Sep 11 02:49:15 2023//
+/patch-arch_powerpc_local2_c/1.3/Mon Sep 11 02:49:15 2023//
+/patch-arch_powerpc_local_c/1.4/Mon Sep 11 02:49:15 2023//
+/patch-arch_powerpc_macdefs_h/1.3/Mon Sep 11 02:49:15 2023//
+/patch-arch_powerpc_table_c/1.2/Mon Sep 11 02:49:15 2023//
 /patch-cc_Makefile_in/1.2/Fri Mar 11 19:29:10 2022//
-/patch-cc_cc_Makefile_in/1.3/Fri Mar 11 19:29:10 2022//
-/patch-cc_cc_cc_c/1.3/Fri Mar 11 19:29:10 2022//
+/patch-cc_cc_Makefile_in/1.4/Mon Feb 13 00:55:43 2023//
+/patch-cc_cc_cc_c/1.5/Sun Aug 13 02:43:15 2023//
 /patch-cc_driver_platform_c/1.2/Fri Mar 11 19:29:10 2022//
 D
