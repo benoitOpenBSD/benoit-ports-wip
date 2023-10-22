@@ -189,6 +189,8 @@ share/cc65/include/accelerator.h
 share/cc65/include/apple2.h
 share/cc65/include/apple2_filetype.h
 share/cc65/include/apple2enh.h
+share/cc65/include/arpa/
+share/cc65/include/arpa/inet.h
 share/cc65/include/ascii_charmap.h
 share/cc65/include/assert.h
 share/cc65/include/atari.h
@@ -316,6 +318,7 @@ share/cc65/lib/kim1.lib
 share/cc65/lib/lynx.lib
 share/cc65/lib/nes.lib
 share/cc65/lib/none.lib
+share/cc65/lib/osic1p-screen-c1p-48x12.o
 share/cc65/lib/osic1p-screen-s3-32x28.o
 share/cc65/lib/osic1p.lib
 share/cc65/lib/pce.lib
@@ -415,6 +418,7 @@ share/cc65/samples/hello.c
 share/cc65/samples/kim1/
 share/cc65/samples/kim1/Makefile
 share/cc65/samples/kim1/kimHello.c
+share/cc65/samples/kim1/kimKeyDisp.c
 share/cc65/samples/kim1/kimSieve.c
 share/cc65/samples/lynx/
 share/cc65/samples/lynx/Makefile
@@ -455,6 +459,7 @@ share/cc65/target/apple2/drv/joy/a2.stdjoy.joy
 share/cc65/target/apple2/drv/mou/
 share/cc65/target/apple2/drv/mou/a2.stdmou.mou
 share/cc65/target/apple2/drv/ser/
+share/cc65/target/apple2/drv/ser/a2.gs.ser
 share/cc65/target/apple2/drv/ser/a2.ssc.ser
 share/cc65/target/apple2/drv/tgi/
 share/cc65/target/apple2/drv/tgi/a2.hi.tgi
@@ -471,6 +476,7 @@ share/cc65/target/apple2enh/drv/joy/a2e.stdjoy.joy
 share/cc65/target/apple2enh/drv/mou/
 share/cc65/target/apple2enh/drv/mou/a2e.stdmou.mou
 share/cc65/target/apple2enh/drv/ser/
+share/cc65/target/apple2enh/drv/ser/a2e.gs.ser
 share/cc65/target/apple2enh/drv/ser/a2e.ssc.ser
 share/cc65/target/apple2enh/drv/tgi/
 share/cc65/target/apple2enh/drv/tgi/a2e.hi.tgi
