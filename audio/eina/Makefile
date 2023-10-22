@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		a classic player for a modern era
 
@@ -23,7 +22,7 @@ WANTLIB +=		atk-1.0 cairo gio-2.0 glib-2.0 glitz gmodule-2.0 gobject-2.0
 WANTLIB +=		gthread-2.0 pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre
 WANTLIB +=		dbus-1 dbus-glib-1 gstreamer-0.10
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=eina/}
+SITES =			${SITE_SOURCEFORGE:=eina/}
 
 MODULES =		devel/gettext
 

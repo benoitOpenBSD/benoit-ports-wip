@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.97 2014/09/03 06:03:40 dcoppa Exp $
 
 COMMENT =	CLI program to download videos from YouTube and other sites
 
@@ -14,7 +13,7 @@ MAINTAINER =	James Lecocq <james@james.cx>
 # Public Domain
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =	${MASTER_SITE_PYPI:=m/mps/}
+SITES =		${SITE_PYPI:=m/mps/}
 
 MODULES =	lang/python
 

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT=	quick implementation of the TagLib API
 DISTNAME=	taginfo-1.2
@@ -13,7 +12,7 @@ PERMIT_DISTFILES =	Yes
 
 WANTLIB=	stdc++ m z
 
-MASTER_SITES=	http://grecni.com/software/taginfo/
+SITES =		http://grecni.com/software/taginfo/
 
 EXTRACT_SUFX=	.tar.bz2
 

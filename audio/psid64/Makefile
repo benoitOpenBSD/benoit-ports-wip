@@ -8,7 +8,7 @@ HOMEPAGE =		https://psid64.sourceforge.net/
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=psid64/}
+SITES =			${SITE_SOURCEFORGE:=psid64/}
 
 WANTLIB +=		${COMPILER_LIBCXX} c m
 
