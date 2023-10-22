@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT-main =		plugins for OpenVAS security scanner
 COMMENT-scripts =	plugins scripts for OpenVAS security scanner
@@ -10,7 +9,7 @@ FULLPKGNAME-scripts =	openvas-plugins-scripts-${V}
 
 WANTLIB-main =		glib-2.0 iconv intl m pcap pcre util
 
-MASTER_SITES =		${MASTER_SITES_OPENVAS:=539/}
+SITES =			${SITES_OPENVAS:=539/}
 
 BUILD_DEPENDS =		::security/openvas/server
 RUN_DEPENDS-scripts = 	::security/openvas/plugins,-main

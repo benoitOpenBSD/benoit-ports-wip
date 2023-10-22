@@ -1,4 +1,3 @@
-# $OpenBSD$
 
     SUBDIR += libraries
     SUBDIR += libnasl

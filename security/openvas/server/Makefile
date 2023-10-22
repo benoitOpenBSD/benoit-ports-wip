@@ -1,11 +1,10 @@
-# $OpenBSD$
 
 COMMENT =		OpenVAS server security scanner
 DISTNAME =		openvas-server-2.0.3
 
 WANTLIB =		c gcrypt glib-2.0 gpg-error gpgme m pcap util
 
-MASTER_SITES =		${MASTER_SITES_OPENVAS:=562/}
+SITES =			${SITES_OPENVAS:=562/}
 
 LIB_DEPENDS =		openvas,openvas_hg::security/openvas/libraries \
 			openvasnasl::security/openvas/libnasl

@@ -1,9 +1,8 @@
-# $OpenBSD$
 
 COMMENT =		OpenVAS security scanner client
 DISTNAME =		openvas-client-2.0.5
 
-MASTER_SITES =		${MASTER_SITES_OPENVAS:=570/}
+SITES =			${SITES_OPENVAS:=570/}
 
 WANTLIB +=		X11 Xau Xcomposite Xcursor Xdamage Xdmcp Xext Xfixes
 WANTLIB +=		Xi Xinerama Xrandr Xrender atk-1.0 c cairo crypto expat

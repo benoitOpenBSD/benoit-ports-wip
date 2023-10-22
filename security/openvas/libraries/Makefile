@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		libraries for OpenVAS security scanner
 
@@ -15,7 +14,7 @@ LIB_DEPENDS +=		glib-2.0::devel/glib2
 
 MODULES =		devel/gettext
 
-MASTER_SITES =		${MASTER_SITES_OPENVAS:=600/}
+SITES =			${SITES_OPENVAS:=600/}
 
 CONFIGURE_STYLE =	gnu
 CONFIGURE_ARGS +=	--localstatedir="/var"
