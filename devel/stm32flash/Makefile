@@ -13,7 +13,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB +=	c
 
-# MASTER_SITES =	https://www.arcane-labs.net/download/OpenBSD/
+# SITES =	https://www.arcane-labs.net/download/OpenBSD/
 SITES =		${SITE_SOURCEFORGE:=stm32flash/}
 
 USE_GMAKE =	Yes

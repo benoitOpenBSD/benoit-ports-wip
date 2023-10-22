@@ -1,14 +1,12 @@
 @conflict git-x11-<2.33.1p0
 @pkgpath devel/git
 @newgroup _gitdaemon:778
-@newuser _gitdaemon:778:_gitdaemon:daemon:Git Daemon:/nonexistent:/sbin/nologin
+@newuser _gitdaemon:778:_gitdaemon::Git Daemon:/nonexistent:/sbin/nologin
 @rcscript ${RCDIR}/gitdaemon
 @bin bin/git
 bin/git-cvsserver
-@bin bin/git-receive-pack
 @shell bin/git-shell
 @bin bin/git-upload-archive
-@bin bin/git-upload-pack
 @bin bin/scalar
 @static-lib lib/libgit.a
 ${P5SITE}/Git/
@@ -24,14 +22,12 @@ ${P5SITE}/Git/Packet.pm
 libexec/git/
 @bin libexec/git/git
 @bin libexec/git/git-add
-libexec/git/git-add--interactive
 @bin libexec/git/git-am
 @bin libexec/git/git-annotate
 @bin libexec/git/git-apply
 libexec/git/git-archimport
 @bin libexec/git/git-archive
-libexec/git/git-bisect
-@bin libexec/git/git-bisect--helper
+@bin libexec/git/git-bisect
 @bin libexec/git/git-blame
 @bin libexec/git/git-branch
 @bin libexec/git/git-bugreport
@@ -70,7 +66,6 @@ libexec/git/git-cvsserver
 @bin libexec/git/git-diff-tree
 @bin libexec/git/git-difftool
 libexec/git/git-difftool--helper
-@bin libexec/git/git-env--helper
 @bin libexec/git/git-fast-export
 @bin libexec/git/git-fast-import
 @bin libexec/git/git-fetch
@@ -434,6 +429,7 @@ share/git-core/templates/hooks/pre-rebase.sample
 share/git-core/templates/hooks/pre-receive.sample
 share/git-core/templates/hooks/prepare-commit-msg.sample
 share/git-core/templates/hooks/push-to-checkout.sample
+share/git-core/templates/hooks/sendemail-validate.sample
 share/git-core/templates/hooks/setgitperms.perl
 share/git-core/templates/hooks/update.sample
 share/git-core/templates/info/
@@ -465,6 +461,7 @@ share/locale/pt_PT/LC_MESSAGES/git.mo
 share/locale/ru/LC_MESSAGES/git.mo
 share/locale/sv/LC_MESSAGES/git.mo
 share/locale/tr/LC_MESSAGES/git.mo
+share/locale/uk/LC_MESSAGES/git.mo
 share/locale/vi/LC_MESSAGES/git.mo
 share/locale/zh_CN/LC_MESSAGES/git.mo
 share/locale/zh_TW/LC_MESSAGES/git.mo

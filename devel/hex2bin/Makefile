@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		converting intel/motorola hexadecimal files to binary
 
@@ -13,7 +12,7 @@ PERMIT_PACKAGE =	Yes
 
 HOMEPAGE =		http://hex2bin.sourceforge.net/
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=hex2bin/}
+SITES =			${SITE_SOURCEFORGE:=hex2bin/}
 
 EXTRACT_SUFX =		.tar.bz2
 

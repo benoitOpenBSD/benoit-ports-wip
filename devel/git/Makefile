@@ -2,7 +2,7 @@ COMMENT-main =	distributed version control system
 COMMENT-svn =	subversion interoperability tools
 COMMENT-x11 =	graphical tools
 
-V =		2.38.1
+V =		2.42.0
 DISTNAME =	git-${V}
 CATEGORIES =	devel
 
@@ -18,12 +18,15 @@ DOC_DISTFILE =		git-manpages-${V}${EXTRACT_SUFX}
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} ${DOC_DISTFILE}
 EXTRACT_ONLY =		${DISTNAME}${EXTRACT_SUFX}
 
-MASTER_SITES =		https://www.kernel.org/pub/software/scm/git/
+SITES =			https://www.kernel.org/pub/software/scm/git/
 
 MODULES =		perl \
 			x11/tk
 
 MODTK_VERSION =		8.6
+
+COMPILER =		base-clang ports-gcc
+COMPILER_LANGS =	c
 
 BUILD_DEPENDS =		devel/gettext,-tools \
 			devel/p5-Error \
@@ -32,12 +35,16 @@ BUILD_DEPENDS =		devel/gettext,-tools \
 
 MULTI_PACKAGES =	-main -svn -x11
 
-WANTLIB-main =		c charset crypto curl expat iconv intl nghttp2 pthread \
-			ssl z
+WANTLIB-main =		c crypto curl expat iconv intl pthread ssl z
+# for curl
+WANTLIB-main +=		nghttp2
+
 
 RUN_DEPENDS-main =	devel/cvsps \
+			devel/got,-gitwrapper \
 			devel/p5-Error \
 			mail/p5-Mail-Tools
+
 LIB_DEPENDS-main =	devel/gettext,-runtime \
 			net/curl
 
@@ -106,9 +113,6 @@ TEST_ENV =		GIT_TEST_OPTS=${GIT_TEST_OPTS:Q} \
 # one expensive test needs explicit enabling
 TEST_ENV +=		GIT_TEST_CLONE_2GB=true
 
-# ${WRKSRC}/t/t4256/1/mailinfo.c.orig
-PATCHORIG =		.pat.orig
-
 post-extract:
 	@mkdir -p ${WRKSRC}/doc
 	${TAR} -C ${WRKSRC}/doc -xzf ${FULLDISTDIR}/${DOC_DISTFILE}
@@ -132,5 +136,7 @@ post-install:
 	perl -pi -e "s|${WRKINST}||g" ${PREFIX}/share/gitweb/gitweb.cgi
 	${INSTALL_DATA} ${WRKBUILD}/gitweb/README ${PREFIX}/share/gitweb
 	${MODTCL_WISH_ADJ} ${PREFIX}/libexec/git/git-gui--askpass
+	rm ${PREFIX}/bin/git-receive-pack	# handled by gitwrapper
+	rm ${PREFIX}/bin/git-upload-pack	# handled by gitwrapper
 
 .include <bsd.port.mk>

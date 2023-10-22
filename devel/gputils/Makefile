@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.16 2019/11/18 03:16:45 kmos Exp $
 
 COMMENT =		GNU PIC assembler and utilities
 
@@ -15,9 +14,9 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c
 
-#MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=gputils/}
-#MASTER_SITES0 =		http://www.arcane-labs.net/download/OpenBSD/
-MASTER_SITES =		http://www.arcane-labs.net/download/OpenBSD/
+#SITES =		${SITE_SOURCEFORGE:=gputils/}
+#SITES0 =		http://www.arcane-labs.net/download/OpenBSD/
+SITES =			http://www.arcane-labs.net/download/OpenBSD/
 
 #DISTFILES =		${DISTNAME}${EXTRACT_SUFX} gputils-testsuite-${VERSION}${EXTRACT_SUFX}:0
 DIST_SUBDIR =		gputils
