@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.10 2007/09/15 18:44:36 steven Exp $
 
 COMMENT=	monte carlo simulation software
 
@@ -8,7 +7,7 @@ CATEGORIES=	math
 
 HOMEPAGE=	http://www.gnu.org/software/mcsim/
 
-MASTER_SITES=	${MASTER_SITE_GNU:=mcsim/}
+SITES =		${SITE_GNU:=mcsim/}
 
 MAINTAINER=	Peter Valchev <pvalchev@openbsd.org>
 

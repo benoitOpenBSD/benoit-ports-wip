@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	perl extension for fast Galois Field arithmetic
 
@@ -11,7 +10,5 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 PERMIT_PACKAGE =	Yes
 
 MODULES =		cpan
-
-#USE_GROFF =		Yes
 
 .include <bsd.port.mk>

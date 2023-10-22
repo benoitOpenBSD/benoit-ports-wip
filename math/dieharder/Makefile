@@ -1,4 +1,3 @@
-#	$OpenBSD$
 
 COMMENT=	random number test suite
 DISTNAME=	dieharder-3.31.1
@@ -7,7 +6,7 @@ CATEGORIES=	math
 EXTRACT_SUFX=	.tgz
 
 HOMEPAGE=	http://www.phy.duke.edu/~rgb/General/dieharder.php
-MASTER_SITES=	https://www.phy.duke.edu/~rgb/General/dieharder/
+SITES =		https://www.phy.duke.edu/~rgb/General/dieharder/
 
 MAINTAINER=	Jonathan Gray <jsg@openbsd.org>
 

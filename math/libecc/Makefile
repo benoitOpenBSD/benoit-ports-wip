@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		library for elliptic curves cryptography
 

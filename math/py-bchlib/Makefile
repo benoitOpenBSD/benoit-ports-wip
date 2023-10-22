@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		BCH library C Python module 
 
