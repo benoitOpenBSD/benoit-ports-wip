@@ -2,7 +2,7 @@
 
 COMMENT =	collection of command line tools for processing TZX files
 
-V =		1.9.1
+V =		1.9.2
 DISTNAME =	tsxtools-${V}
 CATEGORIES =	sysutils
 
