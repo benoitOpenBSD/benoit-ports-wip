@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	perl easy access to SQLite databases using objects
 

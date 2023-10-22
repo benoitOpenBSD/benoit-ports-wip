@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	Molecular energy calculation program
 
@@ -16,8 +15,8 @@ PERMIT_PACKAGE =		Yes
 
 WANTLIB =		c m
 
-MASTER_SITES =		http://server.ccl.net/cca/software/LINUX/mopac7/
-MASTER_SITES0 =		http://server.ccl.net/cca/software/LINUX/mopac7/old-version-95.06.21/
+SITES =			http://server.ccl.net/cca/software/LINUX/mopac7/
+SITES0 =		http://server.ccl.net/cca/software/LINUX/mopac7/old-version-95.06.21/
 
 DISTFILES =		${DISTNAME}${EXTRACT_SUFX} mopac7-man.tar.gz
 
