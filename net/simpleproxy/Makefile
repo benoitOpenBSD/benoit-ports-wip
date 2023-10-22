@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		simple tcp proxy
 

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	Bandwidth measurement tool.
 
@@ -13,7 +12,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =	c
 
-MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=bwping/}
+SITES =		${SITE_SOURCEFORGE:=bwping/}
 
 MAINTAINER =	Federico Fazzi <ocredef@gmail.com>
 

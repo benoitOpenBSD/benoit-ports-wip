@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	perl Framework to easily send and receive frames
 

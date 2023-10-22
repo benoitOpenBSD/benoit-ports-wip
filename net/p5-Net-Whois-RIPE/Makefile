@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.20 2015/03/27 06:31:33 benoit Exp $
 
 COMMENT =	perl implementation of RIPE whois
 

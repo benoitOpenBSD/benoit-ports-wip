@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	free fast traffic generator
 
@@ -14,7 +13,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${HOMEPAGE}
+SITES =			${HOMEPAGE}
 
 WANTLIB =		c pcap lib/libnet-1.1/net=11
 

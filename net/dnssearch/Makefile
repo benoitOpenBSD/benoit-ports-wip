@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		a subdomain enumeration tool
 DISTNAME =		dnssearch-1.0.1-20170704

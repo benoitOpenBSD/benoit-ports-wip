@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Python XMPP (Jabber) Library
 
@@ -14,7 +13,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # MIT
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		http://github.com/fritzy/SleekXMPP/tarball/${MODPY_EGG_VERSION}/
+SITES =			http://github.com/fritzy/SleekXMPP/tarball/${MODPY_EGG_VERSION}/
 
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes

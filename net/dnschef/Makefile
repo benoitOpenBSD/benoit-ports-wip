@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		highly configurable DNS proxy
 
@@ -13,7 +12,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		https://thesprawl.org/media/projects/
+SITES =			https://thesprawl.org/media/projects/
 EXTRACT_SUFX =		.zip
 
 MODULES =		lang/python

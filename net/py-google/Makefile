@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Python Interface to the Google API
 
@@ -16,7 +15,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 #WANTLIB =		???
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=pygoogle/}
+SITES =			${SITE_SOURCEFORGE:=pygoogle/}
 
 MODULES =		lang/python
 #MODPY_SETUPTOOLS =	Yes

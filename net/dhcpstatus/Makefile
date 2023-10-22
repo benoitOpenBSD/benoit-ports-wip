@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =			display dhcp lease information
 
@@ -12,7 +11,7 @@ HOMEPAGE =			http://dhcpstatus.sourceforge.net/
 # GPLv2+
 PERMIT_PACKAGE_CDROM =		Yes
 
-MASTER_SITES =			${MASTER_SITE_SOURCEFORGE:=dhcpstatus/}
+SITES =				${SITE_SOURCEFORGE:=dhcpstatus/}
 
 MODULES =			perl
 

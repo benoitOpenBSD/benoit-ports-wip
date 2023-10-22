@@ -1,5 +1,3 @@
-# $OpenBSD: Makefile,v 1.31 2007/11/17 20:39:03 steven Exp $
-# $FreeBSD: ports/net/ns/Makefile,v 1.3 1999/11/28 18:31:26 steve Exp $
 
 COMMENT=	UCB/LBNL Network Simulator Version 2
 
@@ -13,7 +11,7 @@ PERMIT_PACKAGE_CDROM=	Yes
 
 WANTLIB=	X11 c m pcap stdc++ tcl84 tk84
 
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nsnam/}
+SITES =		${SITE_SOURCEFORGE:=nsnam/}
 
 BUILD_DEPENDS=	devel/tclcl>=1.0b13p0
 LIB_DEPENDS=	lang/otcl

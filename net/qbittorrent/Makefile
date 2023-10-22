@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		free and reliable P2P Bittorrent client
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 #WANTLIB =		???
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=qbittorrent/}
+SITES =			${SITE_SOURCEFORGE:=qbittorrent/}
 
 MODULES +=              x11/qt4
 MODULES +=		devel/gettext

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	An object for all network related stuff 
 

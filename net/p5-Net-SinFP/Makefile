@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	a full operating system stack fingerprinting suite
 

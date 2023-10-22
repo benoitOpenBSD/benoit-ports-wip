@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	perl portable interface to open and send raw data to network 
 

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		GTP ping
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c m
 
-MASTER_SITES =		http://www.habets.pp.se/synscan/files/ \
+SITES =			http://www.habets.pp.se/synscan/files/ \
 			https://www.arcane-labs.net/download/OpenBSD/
 
 USE_GROFF =		Yes
