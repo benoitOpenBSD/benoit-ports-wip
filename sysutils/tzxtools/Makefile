@@ -14,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 
 MODULES =		lang/python
 
-MASTER_SITES =          ${MASTER_SITES_GITHUB}
+SITES =                 ${SITES_GITHUB}
 GH_ACCOUNT =            shred
 GH_PROJECT =            tzxtools
 GH_TAGNAME =            $V
