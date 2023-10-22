@@ -14,10 +14,10 @@ MASTER_SITES =		${MASTER_SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/daveho/GALasm
 
-# 2020/10/22
+# 2022/03/30
 GH_ACCOUNT =		daveho
 GH_PROJECT =		GALasm
-GH_COMMIT =		1fa74e520715e1a99fcb03ad8683b8b266ced6db
+GH_COMMIT =		290d0cf9dcd0d9749167c9019ad694db2c3360dd
 
 WANTLIB +=		c
 
