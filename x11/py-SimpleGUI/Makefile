@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		python GUIs for humans
 
@@ -13,7 +12,7 @@ PERMIT_PACKAGE =	Yes
 
 HOMEPAGE =		https://github.com/PySimpleGUI/PySimpleGUI
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=P/PySimpleGUI/}
+SITES =			${SITE_PYPI:=P/PySimpleGUI/}
 
 WANTLIB +=		${MODPY_WANTLIB}
 

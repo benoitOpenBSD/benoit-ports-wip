@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	top-down terminal for Gnome
 
@@ -20,7 +19,7 @@ WANTLIB += gtk-x11-2.0 harfbuzz icudata icule icuuc m pango-1.0
 WANTLIB += pangocairo-1.0 pangoft2-1.0 pcre pixman-1 png pthread
 WANTLIB += pthread-stubs python2.7 xcb xcb-render xcb-shm z
 
-MASTER_SITES =	${HOMEPAGE}files/
+SITES =		${HOMEPAGE}files/
 
 MODULES =	devel/gettext \
 		textproc/intltool \

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	does your process have access to the web
 
