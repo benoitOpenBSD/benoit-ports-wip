@@ -1,4 +1,3 @@
-# $OpenBSD:$ 
 
 COMMENT =	toolset to program and debug STM32 devices
 

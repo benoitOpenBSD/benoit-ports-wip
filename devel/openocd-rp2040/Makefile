@@ -12,7 +12,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB += c ftdi1 hidapi-libusb iconv jim m pthread usb usb-1.0 util
 
-MASTER_SITES =	https://www.arcane-labs.net/download/OpenBSD/
+SITES =		https://www.arcane-labs.net/download/OpenBSD/
 #GH_ACCOUNT =            raspberrypi
 #GH_PROJECT =            openocd
 

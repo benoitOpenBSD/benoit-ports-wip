@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		assembler for MSP430, dsPIC and others
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/mikeakohn/naken_asm
 

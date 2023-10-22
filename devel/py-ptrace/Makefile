@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		debugger using ptrace written in Python. 
 
@@ -14,7 +13,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=p/python-ptrace/}
+SITES =			${SITE_PYPI:=p/python-ptrace/}
 
 MODULES =		lang/python
 

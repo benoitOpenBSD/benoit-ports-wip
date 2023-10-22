@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT = 	Perl functions to compare Git versions
 

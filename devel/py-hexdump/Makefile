@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		dump binary data to hex format and restore from there
 

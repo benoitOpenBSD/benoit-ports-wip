@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		multi-pass Cross Assembler 6502 and 65c816 processors
 
@@ -11,7 +10,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${HOMEPAGE}
+SITES =			${HOMEPAGE}
 
 HOMEPAGE =		https://www.brutaldeluxe.fr/products/crossdevtools/merlin/
 

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		module for using fake objects to test real ones
 
@@ -13,7 +12,7 @@ HOMEPAGE =		http://farmdev.com/projects/fudge/
 # MIT
 PERMIT_PACKAGE =		Yes
 
-MASTER_SITES=		${MASTER_SITE_PYPI:=f/fudge/}
+SITES=			${SITE_PYPI:=f/fudge/}
 
 MODULES =		lang/python
 

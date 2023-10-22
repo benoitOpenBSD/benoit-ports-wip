@@ -1,8 +1,7 @@
-# $OpenBSD$
 
 COMMENT =		cross-development tools for the Motorola 6809/Hitachi 6309
 
-DISTNAME =		lwtools-4.20
+DISTNAME =		lwtools-4.21
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		http://lwtools.projects.l-w.ca/releases/lwtools/
+SITES =			http://lwtools.projects.l-w.ca/releases/lwtools/
 
 HOMEPAGE =		http://lwtools.projects.l-w.ca/
 

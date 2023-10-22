@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		helper to test command-line scripts
 
@@ -13,7 +12,7 @@ HOMEPAGE =		http://bitbucket.org/ianb/scripttest/
 # MIT
 PERMIT_PACKAGE =		Yes
 
-MASTER_SITES=		${MASTER_SITE_PYPI:=S/ScriptTest/}
+SITES =			${SITE_PYPI:=S/ScriptTest/}
 
 MODULES =		lang/python
 

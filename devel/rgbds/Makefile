@@ -11,7 +11,7 @@ PERMIT_PACKAGE =	Yes
 
 HOMEPAGE =		https://rgbds.gbdev.io/
 
-MASTER_SITES =		https://github.com/gbdev/rgbds/releases/download/v$V/
+SITES =			https://github.com/gbdev/rgbds/releases/download/v$V/
 
 COMPILER =		ports-gcc
 COMPILER_LANGS =	c c++

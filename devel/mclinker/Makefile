@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	full-fledged system linker for mobile devices
 
@@ -14,7 +13,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # BSD
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =	http://mclinker.googlecode.com/files/
+SITES =		http://mclinker.googlecode.com/files/
 
 WANTLIB +=	c m pthread stdc++
 

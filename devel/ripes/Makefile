@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile.template,v 1.78 2018/07/09 15:00:06 jca Exp $
 
 COMMENT =	Graphical 5-stage RISC-V pipeline simulator
 

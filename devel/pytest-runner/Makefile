@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		scripts can use pytest-runner to add setup.py test support 
 
@@ -13,7 +12,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # MIT
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=p/pytest-runner/}
+SITES =			${SITE_PYPI:=p/pytest-runner/}
 EXTRACT_SUFX =		.zip
 
 MODULES =		lang/python

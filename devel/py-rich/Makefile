@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		library for rich text in the terminal
 

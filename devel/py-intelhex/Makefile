@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		manipulate data from Intel HEX file format
 

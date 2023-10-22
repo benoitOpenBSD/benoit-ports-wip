@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.12 2016/03/20 19:56:24 naddy Exp $
 
 COMMENT = 	Perl interface to Git repositories
 

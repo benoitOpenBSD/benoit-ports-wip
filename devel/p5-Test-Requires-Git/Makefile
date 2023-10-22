@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT = 	check your test against the available version of Git
 
