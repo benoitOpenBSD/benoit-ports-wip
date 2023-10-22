@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		the macroassembler as
 
@@ -11,8 +10,8 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2 / GPLv3
 PERMIT_PACKAGE =	Yes
 
-# MASTER_SITES =		http://john.ccac.rwth-aachen.de:8000/ftp/as/source/c_version/
-MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/
+# SITES =		http://john.ccac.rwth-aachen.de:8000/ftp/as/source/c_version/
+SITES =			https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://john.ccac.rwth-aachen.de:8000/as/
 

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Unlinks a binary executable to get back a set of .o files
 
@@ -10,8 +9,8 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # ???
 PERMIT_PACKAGE =	Yes
 
-#MASTER_SITES =		${MASTER_SITES_GITHUB}
-MASTER_SITES =          https://www.arcane-labs.net/download/OpenBSD/
+# SITES =		${SITES_GITHUB}
+SITES =          	https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		https://github.com/jnider/delinker
 

@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.25 2018/11/14 20:48:21 sthen Exp $
 
 COMMENT=	Small Device C Compiler
 
@@ -19,8 +18,8 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB += ${COMPILER_LIBCXX} c m readline z
 
-MASTER_SITES=		https://www.arcane-labs.net/download/OpenBSD/ \
-			${MASTER_SITE_SOURCEFORGE:=sdcc/}
+SITES =			https://www.arcane-labs.net/download/OpenBSD/ \
+			${SITE_SOURCEFORGE:=sdcc/}
 
 EXTRACT_SUFX =	.tar.bz2
 

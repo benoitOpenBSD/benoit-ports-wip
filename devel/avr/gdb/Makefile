@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.19 2018/09/08 15:16:33 naddy Exp $
 
 COMMENT=	Atmel AVR 8-bit RISC microcontrollers' GNU gdb
 
@@ -13,7 +12,7 @@ HOMEPAGE=	https://www.gnu.org/software/gdb/gdb.html
 PERMIT_PACKAGE =	Yes
 WANTLIB=		c expat m ncurses
 
-MASTER_SITES=   	${MASTER_SITE_GNU:=gdb/}
+SITES=   		${SITE_GNU:=gdb/}
 DIST_SUBDIR=		gdb
 
 TEST_DEPENDS=	devel/dejagnu

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		asm for programming GAL devices
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # Commercial use is strictly forbidden
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/daveho/GALasm
 

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		macro cross-assembler
 
@@ -11,7 +10,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # XXX A voir
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		http://www.retrotechnology.com/memship/ \
+SITES =			http://www.retrotechnology.com/memship/ \
 			https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://www.retrotechnology.com/memship/asmx.html

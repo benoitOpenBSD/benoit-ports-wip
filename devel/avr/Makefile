@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.3 2010/08/26 05:16:12 jasper Exp $
 
 SUBDIR =
 SUBDIR += binutils

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		manipulate Atari 800 .ATR images
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv1
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/jhallen/atari-tools/
 

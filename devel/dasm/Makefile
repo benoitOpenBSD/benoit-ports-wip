@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		the dillon dasm macro assembler
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		https://dasm-assembler.github.io/
 

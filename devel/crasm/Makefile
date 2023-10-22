@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		portable cross-asm for the 6800,6801,6803,6502,65C02,Z80
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/colinbourassa/crasm
 

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	creation and handling of firmware for the ESP8266
 
@@ -16,7 +15,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c
 
-MASTER_SITES =          ${MASTER_SITES_GITHUB}
+SITES =          	${SITES_GITHUB}
 GH_ACCOUNT =            tommie
 GH_PROJECT =            esptool-ck
 GH_TAGNAME =            v$V

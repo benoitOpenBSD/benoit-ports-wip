@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	Simulator for Z80 and GBZ80
 
@@ -15,8 +14,8 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB += 		${COMPILER_LIBCXX} c m
 
-MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/ \
-			${MASTER_SITE_SOURCEFORGE:=sdcc/}
+SITES =			https://www.arcane-labs.net/download/OpenBSD/ \
+			${SITE_SOURCEFORGE:=sdcc/}
 
 EXTRACT_SUFX =	.tar.bz2
 

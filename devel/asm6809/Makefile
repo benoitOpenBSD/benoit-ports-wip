@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	portable 6809 cross-assembler
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB +=		c
 
-MASTER_SITES =          https://www.6809.org.uk/asm6809/dl/
+SITES =                 https://www.6809.org.uk/asm6809/dl/
 
 CONFIGURE_STYLE =	gnu
 

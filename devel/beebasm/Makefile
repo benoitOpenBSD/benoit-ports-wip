@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	portable 6502 assembler with BBC Micro style syntax
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB +=		c m ${COMPILER_LIBCXX}
 
-MASTER_SITES =          ${MASTER_SITES_GITHUB}
+SITES =                 ${SITES_GITHUB}
 GH_ACCOUNT =            stardot
 GH_PROJECT =            beebasm
 GH_TAGNAME =            v$V

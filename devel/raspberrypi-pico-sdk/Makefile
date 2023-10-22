@@ -18,11 +18,11 @@ RUN_DEPENDS +=	devel/arm-none-eabi/binutils,arm \
 		devel/arm-none-eabi/gcc-linaro,arm \
 		devel/arm-none-eabi/newlib,arm
 
-MASTER_SITES0 = https://github.com/georgerobotics/cyw43-driver/archive/
-MASTER_SITES1 = https://github.com/lwip-tcpip/lwip/archive/
-MASTER_SITES2 = https://github.com/hathach/tinyusb/archive/
-MASTER_SITES3 = https://github.com/raspberrypi/pico-examples/archive/
-MASTER_SITES4 = https://github.com/sekigon-gonnoc/Pico-PIO-USB/archive/
+SITES0 = 	https://github.com/georgerobotics/cyw43-driver/archive/
+SITES1 = 	https://github.com/lwip-tcpip/lwip/archive/
+SITES2 = 	https://github.com/hathach/tinyusb/archive/
+SITES3 = 	https://github.com/raspberrypi/pico-examples/archive/
+SITES4 = 	https://github.com/sekigon-gonnoc/Pico-PIO-USB/archive/
 
 CYW43_V =	38238aefb6f59ce92681d83aa47d3a48d77b2f6e
 LWIP_V =	eaf49262393d23842232bafc6ff0a24ee06d8b20

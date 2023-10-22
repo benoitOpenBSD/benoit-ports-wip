@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		8085 Assembler 
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # MIT Licence
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/TomNisbet/asm85
 

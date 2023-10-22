@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		a mostly Mac/65 compatible cross-assembler
 
@@ -11,7 +10,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${HOMEPAGE}
+SITES =			${HOMEPAGE}
 
 HOMEPAGE =		http://atari.miribilist.com/atasm/
 

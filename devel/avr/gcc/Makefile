@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.36 2021/01/09 21:41:16 jasper Exp $
 
 COMMENT=	Atmel AVR 8-bit RISC microcontrollers' XGCC #'
 
@@ -13,7 +12,7 @@ WANTLIB=		c gmp mpfr ${COMPILER_LIBCXX} m mpc
 
 COMPILER =		base-clang ports-gcc base-gcc
 
-MASTER_SITES= 	${MASTER_SITE_GCC:=releases/gcc-$(V)/}
+SITES = 	${SITE_GCC:=releases/gcc-$(V)/}
 EXTRACT_SUFX=	.tar.xz
 DIST_SUBDIR=	gcc
 

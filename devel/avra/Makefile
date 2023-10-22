@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		assembler for the Atmel AVR microcontroller family
 
@@ -12,8 +11,8 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-#MASTER_SITES =		https://sourceforge.net/projects/avra/files/${V}/
-MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/
+# SITES =		https://sourceforge.net/projects/avra/files/${V}/
+SITES =			https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://avra.sourceforge.net/index.html
 

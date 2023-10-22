@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	read, modify, create ELF files on any arch
 DISTNAME =	elfutils-0.143
@@ -12,7 +11,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		https://fedorahosted.org/releases/e/l/elfutils/
+SITES =			https://fedorahosted.org/releases/e/l/elfutils/
 
 EXTRACT_SUFX =         .tar.bz2
 

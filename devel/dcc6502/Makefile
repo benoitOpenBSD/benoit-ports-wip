@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		disassembler for 6502 processors 
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # MIT
 PERMIT_PACKAGE =	Yes
 
-SITES =		        ${MASTER_SITES_GITHUB}
+SITES =		        ${SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/tcarmelveilleux/dcc6502
 
