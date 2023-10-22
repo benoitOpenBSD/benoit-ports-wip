@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.6 2020/05/14 12:13:52 fcambus Exp $
 
 COMMENT =	portable cross-assembler for MOS 6502 processors
 
@@ -13,7 +12,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB +=	c
 
-MASTER_SITES =	https://www.floodgap.com/retrotech/xa/dists/
+SITES =		https://www.floodgap.com/retrotech/xa/dists/
 
 FIX_EXTRACT_PERMISSIONS = Yes
 

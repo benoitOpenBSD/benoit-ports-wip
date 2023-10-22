@@ -10,7 +10,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		http://wwwhomes.uni-bielefeld.de/achim/z80-asm/
+SITES =			http://wwwhomes.uni-bielefeld.de/achim/z80-asm/
 
 HOMEPAGE =		http://wwwhomes.uni-bielefeld.de/achim/z80-asm.html
 

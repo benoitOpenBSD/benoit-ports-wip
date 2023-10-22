@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		portable M68k disasm for 68000-68060,68851,68881,68882
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # Freeware
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		http://sun.hasenbraten.de/~frank/projects/download/ \
+SITES =			http://sun.hasenbraten.de/~frank/projects/download/ \
 			https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://sun.hasenbraten.de/~frank/projects/

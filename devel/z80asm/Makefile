@@ -10,7 +10,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		http://download.savannah.nongnu.org/releases/z80asm/
+SITES =			http://download.savannah.nongnu.org/releases/z80asm/
 
 HOMEPAGE =		http://savannah.nongnu.org/projects/z80asm/
 

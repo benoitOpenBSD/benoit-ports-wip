@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	program your stm8 devices with SWIM/stlinkv(1,2)
 

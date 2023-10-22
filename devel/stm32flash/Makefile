@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	flashing utility for STM32 and STM32W through UART or I2C
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 WANTLIB +=	c
 
 # MASTER_SITES =	https://www.arcane-labs.net/download/OpenBSD/
-MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=stm32flash/}
+SITES =		${SITE_SOURCEFORGE:=stm32flash/}
 
 USE_GMAKE =	Yes
 

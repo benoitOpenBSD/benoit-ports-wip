@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		portable multi-format linker
 
@@ -12,7 +11,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # XXX A voir
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		http://server.owl.de/~frank/tags/ \
+SITES =			http://server.owl.de/~frank/tags/ \
 			https://www.arcane-labs.net/download/OpenBSD/
 
 HOMEPAGE =		http://sun.hasenbraten.de/vlink/

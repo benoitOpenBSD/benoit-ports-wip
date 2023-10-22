@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		a lean disassembler targeting small architectures
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/edma2/ucdisasm
 

@@ -15,7 +15,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB +=		c
 
-MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/
+SITES =			https://www.arcane-labs.net/download/OpenBSD/
 
 USE_GMAKE =		Yes
 
