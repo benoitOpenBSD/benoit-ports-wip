@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.15 2021/05/21 19:50:35 kmos Exp $
 
 COMMENT =		Python implementation of ECDSA cryptography
 

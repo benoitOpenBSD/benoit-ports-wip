@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Generate RFC-4255 SSHFP DNS records
 
@@ -12,7 +11,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		ftp://ftp.xelerance.com/sshfp/
+SITES =			ftp://ftp.xelerance.com/sshfp/
 
 MODULES =		lang/python
 

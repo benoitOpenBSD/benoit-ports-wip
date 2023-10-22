@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Fairly Secure Hashed Password
 
@@ -15,7 +14,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # Public Domain
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=f/fshp/}
+SITES =			${SITE_PYPI:=f/fshp/}
 
 MODULES =		lang/python
 

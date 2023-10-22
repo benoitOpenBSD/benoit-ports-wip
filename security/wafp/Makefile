@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		???
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 #WANTLIB =		???
 
-MASTER_SITES =		http://mytty.org/wafp/
+SITES =			http://mytty.org/wafp/
 
 MODULES =		lang/ruby
 #BUILD_DEPENDS =	???

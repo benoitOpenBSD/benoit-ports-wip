@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.19 2013/10/11 23:50:55 naddy Exp $
 
 COMMENT=	portable, encrypted, compressed tunnel
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE_CDROM=   Yes
 
 WANTLIB=	c pthread
 
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=zebedee/} \
+SITES =		${SITE_SOURCEFORGE:=zebedee/} \
 		http://www.winton.org.uk/zebedee/
 
 FLAVORS=	udp_spoof

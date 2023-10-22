@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		framework/API for generating random, malformed data
 
@@ -15,7 +14,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=a/arc4/}
+SITES =			${SITE_PYPI:=a/arc4/}
 
 MODULES =		lang/python
 

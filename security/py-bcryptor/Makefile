@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		python wrapper for bcrypt
 
@@ -15,7 +14,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # ISC
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=B/Bcryptor/}
+SITES =			${SITE_PYPI:=B/Bcryptor/}
 
 MODULES =		lang/python
 

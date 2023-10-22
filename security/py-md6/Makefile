@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		MD6 wrapper for Python
 
@@ -17,7 +16,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		ssl crypto
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=m/md6/}
+SITES =			${SITE_PYPI:=m/md6/}
 
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes

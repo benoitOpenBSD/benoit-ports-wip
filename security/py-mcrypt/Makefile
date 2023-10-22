@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Python interface to mcrypt library
 
@@ -14,7 +13,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # LGPLv2.1
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		http://labix.org/download/python-mcrypt/
+SITES =			http://labix.org/download/python-mcrypt/
 
 MODULES =		lang/python
 #MODPY_SETUPTOOLS =	Yes

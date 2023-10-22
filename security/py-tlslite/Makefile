@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		python library that implements SSL 3.0, TLS 1.0, and TLS 1.1
 
@@ -14,7 +13,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # Public domain and BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=t/tlslite/}
+SITES =			${SITE_PYPI:=t/tlslite/}
 
 MODULES =		lang/python
 

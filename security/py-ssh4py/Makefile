@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		ssh4Py is a LibSSH2 Wrapper (SSH, SCP, SFTP).
 
@@ -17,7 +16,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		crypto ssl z
 
-MASTER_SITES =		http://www.keyphrene.com/download/
+SITES =			http://www.keyphrene.com/download/
 
 EXTRACT_SUFX =		.zip
 

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		python implementation of DES and TRIPLE DES algorithm
 
@@ -15,7 +14,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # Public Domain
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		http://twhiteman.netfirms.com/pyDES/
+SITES =			http://twhiteman.netfirms.com/pyDES/
 
 MODULES =		lang/python
 

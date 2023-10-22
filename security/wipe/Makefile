@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		A UNIX tool for secure deletion
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c
 
-MASTER_SITES =		http://lambda-diode.com/resources/wipe/
+SITES =			http://lambda-diode.com/resources/wipe/
 
 MAKE_FLAGS =		CC="${CC}" CFLAGS="${CFLAGS}"
 

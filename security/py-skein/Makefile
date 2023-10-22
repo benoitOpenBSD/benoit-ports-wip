@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Efficiently compute Skein hashes
 
@@ -15,7 +14,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=p/pyskein/}
+SITES =			${SITE_PYPI:=p/pyskein/}
 
 MODULES =		lang/python
 #MODPY_SETUPTOOLS =	Yes

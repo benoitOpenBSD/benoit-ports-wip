@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.5 2013/03/11 11:41:28 espie Exp $
 
 COMMENT =		retrieves syskey and extract hashes
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c ssl crypto
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=ophcrack/}
+SITES =			${SITE_SOURCEFORGE:=ophcrack/}
 
 EXTRACT_SUFX =		.tar.bz2
 

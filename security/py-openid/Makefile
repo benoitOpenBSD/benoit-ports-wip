@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		The OpenID library with batteries included.
 
@@ -15,7 +14,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # Apache v2.0
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		http://openidenabled.com/files/python-openid/packages/
+SITES =			http://openidenabled.com/files/python-openid/packages/
 
 MODULES =		lang/python
 

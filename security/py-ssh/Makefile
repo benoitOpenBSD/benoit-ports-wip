@@ -1,4 +1,3 @@
-# $OpenBSD
 
 COMMENT =		Python module that implements the SSH2 protocol
 
@@ -14,7 +13,7 @@ MAINTAINER = 		Benoit Lecocq <benoit@openbsd.org>
 # LGPL
 PERMIT_PACKAGE_CDROM = 	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=s/ssh/}
+SITES =			${SITE_PYPI:=s/ssh/}
 
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes

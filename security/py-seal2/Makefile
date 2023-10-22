@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Python wrapper for SEAL2 encryption
 
@@ -15,7 +14,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_PYPI:=s/seal2/}
+SITES =			${SITE_PYPI:=s/seal2/}
 
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes

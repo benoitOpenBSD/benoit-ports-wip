@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		python SMB Password Hash Generator 
 
@@ -14,7 +13,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		http://barryp.org/static/software/download/py-smbpasswd/1.0.1/
+SITES =			http://barryp.org/static/software/download/py-smbpasswd/1.0.1/
 
 MODULES =		lang/python
 

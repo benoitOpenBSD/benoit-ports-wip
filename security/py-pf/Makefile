@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		packet filter module
 
@@ -13,7 +12,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # BSD
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=py-pf/}
+SITES =			${SITE_SOURCEFORGE:=py-pf/}
 
 MODULES =		lang/python
 
