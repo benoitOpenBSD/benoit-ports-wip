@@ -1,3 +1,0 @@
-@comment $OpenBSD$
-@bin bin/optipng
-@man man/man1/optipng.1

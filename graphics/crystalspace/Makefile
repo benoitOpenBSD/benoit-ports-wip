@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 #ONLY_FOR_ARCHS =	???
 #NOT_FOR_ARCHS =	???
@@ -24,7 +23,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 #WANTLIB =		???
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=crystal/}
+SITES =			${SITE_SOURCEFORGE:=crystal/}
 
 EXTRACT_SUFX =		.tar.bz2
 

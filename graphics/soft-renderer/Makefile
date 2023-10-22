@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		software 3D model renderer
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # MIT
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/wangyu-/soft-renderer
 

@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.92 2017/08/01 19:53:27 benoit Exp $
 
 COMMENT =		optimizer for PNG files
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c m
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=pmt/}
+SITES =			${SITE_SOURCEFORGE:=pmt/}
 
 MAKE_FLAGS =		CC="${CC}" LD="${CC}" CFLAGS="${CFLAGS} -I. -DZ_SOLO"
 

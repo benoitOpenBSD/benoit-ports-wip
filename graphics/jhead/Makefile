@@ -1,17 +1,19 @@
-# $OpenBSD: Makefile,v 1.24 2019/07/12 20:47:01 sthen Exp $
-
 COMMENT =	Exif jpeg camera setting parser and thumbnail remover
 
-DISTNAME =	jhead-3.04
+GH_ACCOUNT =	Matthias-Wandel
+GH_PROJECT =	jhead
+GH_TAGNAME =	3.08
+
 CATEGORIES =	graphics
 
-HOMEPAGE =	http://www.sentex.net/~mwandel/jhead/
-MASTER_SITES =	${HOMEPAGE}
+HOMEPAGE =	https://www.sentex.net/~mwandel/jhead/
 
 MAINTAINER=	Benoit Lecocq <benoit@openbsd.org>
 
 # public domain
 PERMIT_PACKAGE =	Yes
+
+FIX_CRLF_FILES =	gpsinfo.c
 
 WANTLIB =	c m
 

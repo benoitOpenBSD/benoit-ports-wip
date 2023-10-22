@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		pure Python library for PNG image encoding/decoding
 
