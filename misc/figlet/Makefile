@@ -1,5 +1,3 @@
-# $OpenBSD: Makefile,v 1.24 2013/03/11 11:23:57 espie Exp $
-
 COMMENT =	generates ASCII banner art
 
 DISTNAME =	figlet-2.2.5
@@ -10,16 +8,15 @@ HOMEPAGE =	http://www.figlet.org/
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
 # BSD
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c
 
-MASTER_SITES =	ftp://ftp.figlet.org/pub/figlet/program/unix/
-MASTER_SITES0 =	https://www.arcane-labs.net/download/OpenBSD/
+SITES =		ftp://ftp.figlet.org/pub/figlet/program/unix/
+SITES.c =	http://www.arcane-labs.net/download/OpenBSD/
 
-DISTFILES =	${DISTNAME}${EXTRACT_SUFX} \
-		figlet-contributed-06092002${EXTRACT_SUFX}:0
-MAKE_FLAGS =	CC="${CC}" CFLAGS="${CFLAGS}" \
+DISTFILES.c = 	figlet-contributed-06092002${EXTRACT_SUFX}
+MAKE_FLAGS =	CC="${CC}" LD="${CC}" CFLAGS="${CFLAGS}" \
 		DEFAULTFONTDIR=${PREFIX}/share/figlet
 
 NO_TEST =	Yes
