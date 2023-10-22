@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		OS9 level One emulator (for Motorola 6809)
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # BSD
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${HOMEPAGE}
+SITES =			${HOMEPAGE}
 
 HOMEPAGE =		https://www.roug.org/soren/6809/
 

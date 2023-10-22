@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		a Z80 CP/M 2.2 emulator
 
@@ -11,7 +10,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # MIT
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/MockbaTheBorg/RunCPM
 

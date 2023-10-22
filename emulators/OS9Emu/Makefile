@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		OS9 6809 Emulator
 

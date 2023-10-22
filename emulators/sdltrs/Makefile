@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		a TRS-80 Emulator
 
@@ -13,7 +12,7 @@ MAINTAINER =		Tom Murphy <openbsd@pertho.net>
 # BSD
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=sdltrs/}
+SITES =			${SITE_SOURCEFORGE:=sdltrs/}
 
 BUILD_DEPENDS =		devel/sdl
 

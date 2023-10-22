@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		implementation of the MC6809 CPU in Python
 

@@ -1,12 +1,3 @@
-# $OpenBSD$
-
-# Reasons why the port/package shouldn't be built
-#
-#ONLY_FOR_ARCHS =	???
-#NOT_FOR_ARCHS =	???
-#SHARED_ONLY =		???
-#COMES_WITH =		???
-#BROKEN =		reason
 
 COMMENT =		simulator for Microchip PIC microcontrollers
 
@@ -36,7 +27,7 @@ WANTLIB +=		glitz gmodule-2.0 gobject-2.0 gthread-2.0 gtk-x11-2.0
 WANTLIB +=		pango-1.0 pangocairo-1.0 pangoft2-1.0 pcre pixman-1
 WANTLIB +=		png readline termcap
                                                 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=gpsim/}
+SITES =			${SITE_SOURCEFORGE:=gpsim/}
 
 MODULES =		devel/gettext
 #BUILD_DEPENDS =	???

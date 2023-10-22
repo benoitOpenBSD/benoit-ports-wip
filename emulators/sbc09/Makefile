@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Lennart Benschop 6809 Single Board Computer
 

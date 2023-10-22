@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	emulates the Amstrad PCW
 
@@ -17,7 +16,7 @@ PERMIT_PACKAGE =	Yes
 WANTLIB +=	c dsk m png xml2 z
 WANTLIB +=	${COMPILER_LIBCXX} 765 SDL bz2 iconv lzma sndio usbhid
 
-MASTER_SITES =	https://www.seasip.info/Unix/Joyce/
+SITES =		https://www.seasip.info/Unix/Joyce/
 
 LIB_DEPENDS =	devel/sdl \
 		graphics/png \

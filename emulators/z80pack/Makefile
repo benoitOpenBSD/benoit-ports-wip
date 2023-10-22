@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		a Zilog Z80 and Intel 8080 systems emulation
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # BSD
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		${MASTER_SITES_GITHUB}
+SITES =			${SITES_GITHUB}
 
 HOMEPAGE =		https://github.com/udo-munk/z80pack
 

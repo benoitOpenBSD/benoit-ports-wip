@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		mc6809 emulator
 

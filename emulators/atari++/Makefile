@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Unix based emulator of the Atari eight bit computers
 
@@ -17,7 +16,7 @@ WANTLIB +=		c m z pthread SDL
 WANTLIB +=		${COMPILER_LIBCXX} ICE SM X11 Xext Xv curses
 
 # tar: Unable to link file atari++/winmain.cpp to itself
-MASTER_SITES =		http://www.xl-project.com/download/
+SITES =			http://www.xl-project.com/download/
 TAR =			${LOCALBASE}/bin/gtar
 
 BUILD_DEPENDS =		archivers/gtar

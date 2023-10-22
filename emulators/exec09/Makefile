@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		6809 emulator
 

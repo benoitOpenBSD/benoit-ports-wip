@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		amstrad CPC, amstrad CPC+ and KC Compact emulator
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c X11 Xext Xi m pthread
 
-MASTER_SITES =		http://arnold.emuunlim.com/download/ \
+SITES =			http://arnold.emuunlim.com/download/ \
 			https://www.arcane-labs.net/download/OpenBSD/
 			
 EXTRACT_SUFX =		.zip

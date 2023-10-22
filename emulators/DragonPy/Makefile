@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		python Dragon emulator
 

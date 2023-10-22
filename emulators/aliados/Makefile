@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		CP/M 80 emulator
 
@@ -16,7 +15,7 @@ COMPILER =		base-clang ports-gcc base-gcc
 
 WANTLIB =		c m ncurses ${COMPILER_LIBCXX}
 
-MASTER_SITES =		https://www.arcane-labs.net/download/OpenBSD/ \
+SITES =			https://www.arcane-labs.net/download/OpenBSD/ \
 			http://www.arrakis.es/~ninsesabe/aliados/
 
 CONFIGURE_STYLE =	gnu

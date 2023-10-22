@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT=		proper web fonts
 
@@ -9,7 +8,7 @@ MAINTAINER=		jcs@jcs.org
 
 PERMIT_PACKAGE =	nope
 
-MASTER_SITES=		http://jcs.org/tmp/
+SITES =			http://jcs.org/tmp/
 
 NO_BUILD=		Yes
 NO_TEST=		Yes

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Apple ][ emulator
 

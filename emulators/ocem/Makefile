@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		ocem emulator COCO 3/OS-9
 
@@ -10,7 +9,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # XXX
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		http://atjs.mbnet.fi/mc6809/6809Computers/
+SITES =			http://atjs.mbnet.fi/mc6809/6809Computers/
 
 WANTLIB +=		c
 

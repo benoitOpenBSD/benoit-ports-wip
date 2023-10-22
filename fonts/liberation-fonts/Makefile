@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.9 2019/07/12 20:46:12 sthen Exp $
 
 PKG_ARCH =	*
 
@@ -16,7 +15,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # SIL OFL 1.1
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =	https://releases.pagure.org/liberation-fonts/
+SITES =		https://releases.pagure.org/liberation-fonts/
 
 NO_BUILD =	Yes
 NO_TEST =	Yes

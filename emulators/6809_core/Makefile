@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		emulator core for MC6809E processor
 
