@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 VERSION=	0.81
 COMMENT=	open ports when requested by a *secret knock*
@@ -9,7 +8,7 @@ HOMEPAGE=	http://doorman.sourceforge.net/
 
 MAINTAINER=	Vlad Glagolev <stealth@sourcemage.org>
 
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=doorman/}
+SITES=		${SITE_SOURCEFORGE:=doorman/}
 EXTRACT_SUFX=	.tgz
 
 # GPL

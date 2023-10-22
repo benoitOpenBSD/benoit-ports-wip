@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Automatic hostnames and virtual hosts discovery tool
 
@@ -12,7 +11,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=hostmap/}
+SITES =			${SITE_SOURCEFORGE:=hostmap/}
 
 MODULES =		lang/ruby
 

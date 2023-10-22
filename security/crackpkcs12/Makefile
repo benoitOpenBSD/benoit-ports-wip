@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		tool to audit PKCS12 files passwords
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c crypto pthread
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=crackpkcs12/}
+SITES =			${SITE_SOURCEFORGE:=crackpkcs12/}
 
 CONFIGURE_STYLE =	gnu
 

@@ -2,7 +2,7 @@ COMMENT =		library implementing the SSH2 protocol
 
 DISTNAME =		libssh2-1.11.0
 CATEGORIES =		security
-SHARED_LIBS +=		ssh2	11.0	# .1.1
+SHARED_LIBS +=		ssh2	10.1	# .1.1
 
 HOMEPAGE =		https://www.libssh2.org/
 
@@ -14,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		crypto ssl z
 
-MASTER_SITES =		https://www.libssh2.org/download/
+SITES =			https://www.libssh2.org/download/
 
 CONFIGURE_STYLE =	gnu
 

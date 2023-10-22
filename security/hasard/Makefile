@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		???
 
@@ -24,7 +23,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 # where the source files and patches can be fetched
 #
-MASTER_SITES =		http://bitbucket.org/haypo/hasard/downloads/
+SITES =			http://bitbucket.org/haypo/hasard/downloads/
 EXTRACT_SUFX =		.tar.bz2
 
 MODULES +=		devel/cmake

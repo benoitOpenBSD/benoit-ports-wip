@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		C library aiming to implement the Liberty Alliance standards
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c crypto ssl z
 
-MASTER_SITES =		http://labs.libre-entreprise.org/frs/download.php/735/
+SITES =			http://labs.libre-entreprise.org/frs/download.php/735/
 
 MODULES +=		devel/gettext 
 MODULES +=		lang/python

@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Network authentication cracking tool
 
@@ -12,7 +11,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE =	Yes
 
-MASTER_SITES =		http://nmap.org/ncrack/dist/
+SITES =			http://nmap.org/ncrack/dist/
 
 WANTLIB =		c m stdc++ ssl crypto
 

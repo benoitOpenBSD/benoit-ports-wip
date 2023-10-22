@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2010/12/23 12:39:14 stephan Exp $
 
 COMMENT-main = 	penetration testing resources
 COMMENT-mysql = penetration testing resources (mysql backend)
@@ -14,7 +13,7 @@ DISTNAME =	framework-${V}
 EXTRACT_SUFX =	.tar.bz2
 
 HOMEPAGE =	http://www.metasploit.com/
-MASTER_SITES = 	http://updates.metasploit.com/data/releases/
+SITES = 	http://updates.metasploit.com/data/releases/
 
 MAINTAINER =	Stephan A. Rickauer <stephan@openbsd.org>
 

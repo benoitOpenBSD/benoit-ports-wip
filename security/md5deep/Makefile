@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	Program to compute various message digests
 
@@ -12,7 +11,7 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # Public domain, GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=md5deep/}
+SITES =			${SITE_SOURCEFORGE:=md5deep/}
 
 WANTLIB =		c m pthread stdc++
 

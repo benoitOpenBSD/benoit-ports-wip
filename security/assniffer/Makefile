@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		a malware identification and classification tool
 
@@ -12,7 +11,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		http://cockos.com/assniffer/
+SITES =			http://cockos.com/assniffer/
 
 WANTLIB =		c pcap
 

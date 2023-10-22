@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	yet another signify tool
 

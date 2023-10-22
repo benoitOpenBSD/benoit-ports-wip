@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	entropy (randomness) management
 

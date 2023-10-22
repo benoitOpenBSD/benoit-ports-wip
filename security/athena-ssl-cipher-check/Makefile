@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		an SSL Cipher scanner
 
@@ -13,7 +12,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv3
 PERMIT_PACKAGE_CDROM=   Yes
 
-MASTER_SITES =		${HOMEPAGE}
+SITES =			${HOMEPAGE}
 
 MODULES =		java
 MODJAVA_VER =		1.3+

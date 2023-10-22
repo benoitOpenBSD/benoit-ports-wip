@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		recognize cpu instructions in an arbitrary binary file
 
@@ -15,7 +14,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # Apache v2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =          ${MASTER_SITES_GITHUB}
+SITES =                 ${SITES_GITHUB}
 
 MODULES =		lang/python
 MODPY_VERSION =		${MODPY_DEFAULT_VERSION_3}
