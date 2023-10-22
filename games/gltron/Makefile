@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		3D game inspired by the movie Tron
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB +=		SDL c z GL m mikmod ogg pthread smpeg
 WANTLIB +=		stdc++ vorbis vorbisfile SDL_sound png
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=gltron/}
+SITES =			${SITE_SOURCEFORGE:=gltron/}
 
 LIB_DEPENDS =		devel/sdl-sound \
 			graphics/png

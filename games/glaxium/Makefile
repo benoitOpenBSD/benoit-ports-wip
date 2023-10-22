@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		A FREE OpenGL shoot them up
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		SDL c m pthread GL GLU z X11 Xi Xmu SDL_mixer png glut
 
-MASTER_SITES =		http://xhosxe.free.fr/glaxium/
+SITES =			http://xhosxe.free.fr/glaxium/
 
 LIB_DEPENDS =		devel/sdl-mixer \
 			graphics/png \

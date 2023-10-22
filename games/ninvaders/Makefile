@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =	console based space invaders clone
 
@@ -11,7 +10,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =	c ncurses
 
-MASTER_SITES =	${MASTER_SITE_SOURCEFORGE:=ninvaders/}
+SITES =		${SITE_SOURCEFORGE:=ninvaders/}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/nInvaders ${PREFIX}/bin/

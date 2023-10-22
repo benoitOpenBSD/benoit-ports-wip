@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		hammer of Thyrion
 
@@ -17,7 +16,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c SDL m pthread SDL_mixer
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=uhexen2/}
+SITES =			${SITE_SOURCEFORGE:=uhexen2/}
 
 EXTRACT_SUFX =		.tgz
 

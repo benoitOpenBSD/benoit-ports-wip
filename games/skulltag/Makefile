@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		???
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		???
 
-MASTER_SITES =		???
+SITES =			???
 
 NO_TEST =		Yes
 

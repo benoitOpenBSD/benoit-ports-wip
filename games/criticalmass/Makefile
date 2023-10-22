@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Space shootemup resembling Galaxian
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		SDL c m png pthread z GL stdc++ SDL_image SDL_mixer
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=criticalmass/}
+SITES =			${SITE_SOURCEFORGE:=criticalmass/}
 
 EXTRACT_SUFX =		.tar.bz2
 

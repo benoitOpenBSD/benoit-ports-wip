@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Arcade 2D shoot-em-up game
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		SDL c m pthread Xext Xxf86dga SDL_mixer
 
-MASTER_SITES =		http://linux.tlk.fr/games/Powermanga/download/
+SITES =			http://linux.tlk.fr/games/Powermanga/download/
 
 LIB_DEPENDS =		devel/sdl-mixer \
 			graphics/png

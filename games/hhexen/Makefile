@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		hacked Hexen
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c GL GLU m pthread SDL
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=hhexen/}
+SITES =			${SITE_SOURCEFORGE:=hhexen/}
 
 EXTRACT_SUFX =		.tgz
 

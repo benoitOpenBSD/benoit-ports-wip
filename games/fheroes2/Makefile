@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		free implementation of Heroes of the Might and Magic II engine
 
@@ -16,7 +15,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =		SDL c m png pthread z GL stdc++ SDL_image SDL_mixer \
 			SDL_net SDL_ttf ogg
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=fheroes2/}
+SITES =			${SITE_SOURCEFORGE:=fheroes2/}
 
 EXTRACT_SUFX =		.tgz
 

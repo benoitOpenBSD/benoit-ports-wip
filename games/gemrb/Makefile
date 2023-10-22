@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		portable open-source implementation of BIE
 
@@ -16,7 +15,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =		SDL c m png pthread z GL stdc++ SDL_image SDL_mixer \
 			openal
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=gemrb/}
+SITES =			${SITE_SOURCEFORGE:=gemrb/}
 
 MODULES =		devel/cmake lang/python devel/gettext
 

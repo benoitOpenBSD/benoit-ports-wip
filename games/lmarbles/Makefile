@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Atomix clone
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		SDL c m pthread SDL_mixer
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=lgames/}
+SITES =			${SITE_SOURCEFORGE:=lgames/}
 
 RUN_DEPENDS =		devel/desktop-file-utils
 LIB_DEPENDS =		devel/sdl-mixer

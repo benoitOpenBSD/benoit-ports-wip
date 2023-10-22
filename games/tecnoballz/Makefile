@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		A exciting Brick Breaker
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =		SDL c m pthread ogg stdc++ mikmod smpeg SDL_image SDL_mixer
 WANTLIB +=		vorbis vorbisfile
 
-MASTER_SITES =		http://linux.tlk.fr/games/TecnoballZ/download/
+SITES =			http://linux.tlk.fr/games/TecnoballZ/download/
 
 EXTRACT_SUFX =		.tgz
 

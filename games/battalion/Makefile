@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		
 
@@ -13,7 +12,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # 
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		http://www.evl.uic.edu/aej/BATTALION/
+SITES =			http://www.evl.uic.edu/aej/BATTALION/
 
 EXTRACT_SUFX =		.tar.bz2
 

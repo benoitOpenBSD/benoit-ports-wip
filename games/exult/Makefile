@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Open-source Ultima 7 engine
 
@@ -17,7 +16,7 @@ WANTLIB +=		X11 Xau Xdmcp Xext Xrandr Xrender Xxf86dga Xxf86vm
 WANTLIB +=		iconv mikmod ogg pthread-stubs smpeg sndio usbhid
 WANTLIB +=		SDL_mixer
                         
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=exult/}
+SITES =			${SITE_SOURCEFORGE:=exult/}
 
 RUN_DEPENDS =		devel/desktop-file-utils
 LIB_DEPENDS =		devel/sdl-mixer

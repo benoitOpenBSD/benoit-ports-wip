@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		classical memory game
 
@@ -14,7 +13,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		SDL c pthread SDL
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=lgames/}
+SITES =			${SITE_SOURCEFORGE:=lgames/}
 
 MODULES =		devel/gettext
 LIB_DEPENDS =		devel/sdl

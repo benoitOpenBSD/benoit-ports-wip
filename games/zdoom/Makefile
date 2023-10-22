@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		???
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 #WANTLIB =		???
 
-MASTER_SITES =		http://zdoom.org/files/zdoom/2.3/
+SITES =			http://zdoom.org/files/zdoom/2.3/
 
 EXTRACT_SUFX =		.7z
 

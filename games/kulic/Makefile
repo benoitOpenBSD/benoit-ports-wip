@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		???
 
@@ -12,7 +11,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE_CDROM =	Yes
 
-MASTER_SITES =		http://hippo.nipax.cz/src/
+SITES =			http://hippo.nipax.cz/src/
 
 LIB_DEPENDS =		graphics/jpeg \
 			games/allegro

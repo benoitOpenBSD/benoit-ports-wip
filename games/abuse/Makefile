@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.33 2010/11/16 11:23:25 espie Exp $
 
 COMMENT =	SDL port of the legendary 2D platform shooter
 
@@ -17,7 +16,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 WANTLIB =	c m pthread GL iconv stdc++ usbhid SDL sndio
 LIB_DEPENDS =	devel/sdl
 
-MASTER_SITES =	${HOMEPAGE}raw-attachment/wiki/Downloads/
+SITES =		${HOMEPAGE}raw-attachment/wiki/Downloads/
 
 DISTFILES = 	${DISTNAME}.tar.gz ${ABUSE_FRABS}.tar.gz
 EXTRACT_ONLY =	${DISTNAME}.tar.gz

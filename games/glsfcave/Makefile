@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.4 2009/08/10 06:31:42 kili Exp $
 
 COMMENT=	control a ribbon to avoid hitting walls
 
@@ -8,7 +7,7 @@ CATEGORIES=	games
 EXTRACT_SUFX=	.tar.bz2
 
 HOMEPAGE=	http://user.ecc.u-tokyo.ac.jp/~s081016/glsfcave/
-MASTER_SITES=	${HOMEPAGE}
+SITES =		${HOMEPAGE}
 
 MAINTAINER=	Simon Bertrang <simon@openbsd.org>
 
