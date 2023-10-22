@@ -36,8 +36,8 @@ MAKE_ADA=	No
 
 # The "base" prefix is somewhat arbitrary, and introduced mostly because
 # portcheck complains about lines longer than 80 characters.
-MASTER_SITE_BASE=https://releases.linaro.org/components
-MASTER_SITES= 	${MASTER_SITE_BASE}/toolchain/gcc-linaro/${VERSION}/
+SITE_BASE =	https://releases.linaro.org/components
+SITES= 		${SITE_BASE}/toolchain/gcc-linaro/${VERSION}/
 
 BUILD_DEPENDS+=	devel/autoconf/2.13 \
 		devel/metaauto
