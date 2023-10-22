@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Replacement for the arc program
 
@@ -15,7 +14,7 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB =		c
 
-MASTER_SITES =		ftp://ftp.ibiblio.org/pub/Linux/utils/compress/ \
+SITES =			ftp://ftp.ibiblio.org/pub/Linux/utils/compress/ \
 			ftp://sunsite.unc.edu/pub/Linux/utils/compress/
 
 MAKE_FLAGS +=		CC="${CC}" LD="${CC}" CFLAGS="${CFLAGS}"

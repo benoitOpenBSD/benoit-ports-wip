@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 #ONLY_FOR_ARCHS =	i386
 
@@ -17,7 +16,7 @@ PERMIT_PACKAGE_CDROM =	Yes
 
 WANTLIB =		c z stdc++ m
 
-MASTER_SITES =		${MASTER_SITE_SOURCEFORGE:=upx/}
+SITES =			${SITE_SOURCEFORGE:=upx/}
 
 EXTRACT_SUFX =		.tar.bz2
 

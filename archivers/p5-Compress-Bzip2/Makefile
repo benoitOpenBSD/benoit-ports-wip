@@ -1,4 +1,3 @@
-# $OpenBSD: Makefile,v 1.17 2016/11/21 13:51:28 benoit Exp $
 
 COMMENT =	interface to bzip2 compression library
 

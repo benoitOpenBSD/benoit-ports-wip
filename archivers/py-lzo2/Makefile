@@ -1,4 +1,3 @@
-# $OpenBSD$
 
 COMMENT =		Python bindings for the LZO data compression library 
 
