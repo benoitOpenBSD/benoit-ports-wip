@@ -1,5 +1,5 @@
---- Makefile.orig	Fri Sep  9 18:53:25 2022
-+++ Makefile	Fri Sep  9 18:54:10 2022
+--- Makefile.orig.port	Wed Jul 12 13:11:35 2023
++++ Makefile	Wed Nov  1 10:39:19 2023
 @@ -1,11 +1,11 @@
  # Unix, using gcc
  
@@ -9,8 +9,8 @@
  TARGETEXTENSION =
  
  CCOUT = -o $(DUMMY)
--COPTS = -c -std=c90 -O2 -pedantic -Wno-long-long -DUNIX $(OUTFMTS)
-+COPTS = -c -std=c90 -O2 -Wno-long-long -DUNIX $(OUTFMTS)
+-CFLAGS = -c -std=c90 -O2 -pedantic -Wno-long-long -DUNIX $(OUTFMTS)
++CFLAGS = -c -std=c90 -O2 -Wno-long-long -DUNIX $(OUTFMTS)
  
  LD = $(CC)
  LDOUT = $(CCOUT)
