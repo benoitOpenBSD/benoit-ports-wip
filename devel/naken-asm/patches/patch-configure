@@ -1,25 +1,16 @@
-$OpenBSD$
-Index: configure
---- configure.orig
-+++ configure
-@@ -1,6 +1,6 @@
+--- configure.orig.port	Sun Oct 29 23:33:32 2023
++++ configure	Wed Nov  1 10:49:19 2023
+@@ -1,7 +1,7 @@
  #!/usr/bin/env bash
  
 -CC=gcc
+-CXX=g++
 +CC=cc
++CXX=c++
  COMPILER_PREFIX=
  DEBUG=
  CFLAGS="-Wall"
-@@ -585,7 +585,7 @@ fi
- 
- if test_compiler "gcc"
- then
--  CC="gcc"
-+  CC="cc"
- elif test_compiler "cc"
- then
-   CC="cc"
-@@ -605,7 +605,7 @@ fi
+@@ -663,7 +663,7 @@
  
  if [ "${DEBUG}" = "" ]
  then
