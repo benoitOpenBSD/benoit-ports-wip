@@ -1,6 +1,5 @@
-Index: src/libpsid64/stilview/stildefs.h
---- src/libpsid64/stilview/stildefs.h.orig
-+++ src/libpsid64/stilview/stildefs.h
+--- src/libpsid64/stilview/stildefs.h.orig.port	Tue Aug  1 11:30:03 2023
++++ src/libpsid64/stilview/stildefs.h	Thu Nov  2 16:37:11 2023
 @@ -5,7 +5,7 @@
  #ifndef _STILDEFS_H
  #define _STILDEFS_H
