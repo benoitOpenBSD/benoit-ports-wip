@@ -1,9 +1,9 @@
 COMMENT =	Python bindings for capstone
 
 MODPY_EGG_VERSION = ${GH_TAGNAME}
+REVISION =	0
 
 PKGNAME =	py-${DISTNAME}
-REVISION =	4
 
 MODULES =	lang/python
 USE_GMAKE =	Yes
@@ -11,15 +11,16 @@ USE_GMAKE =	Yes
 WRKDIST =	${WRKDIR}/${DISTNAME}/bindings/python
 
 FLAVORS =	python3
-FLAVOR ?=
+FLAVOR =	python3
 
-RUN_DEPENDS =	devel/capstone/main
+RUN_DEPENDS =	devel/capstone/main \
+		devel/py-setuptools${MODPY_FLAVOR}
 
 TEST_DEPENDS =  devel/capstone/python
-TEST_TARGET = 	check
+TEST_TARGET =	check
 
 MODPY_ADJ_FILES = test*.py
-MODPY_SETUPTOOLS =	Yes
+MODPY_PYBUILD =	setuptools
 
 MAKE_ENV =	LIBCAPSTONE_PATH=${LOCALBASE}/lib/
 
