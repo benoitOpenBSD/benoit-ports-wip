@@ -1,0 +1,9 @@
+--- nall/GNUmakefile.orig	Wed Dec  6 22:00:06 2023
++++ nall/GNUmakefile	Wed Dec  6 22:01:20 2023
+@@ -244,5 +244,5 @@
+ ifeq ($(platform),windows)
+   prefix := $(subst $([space]),\$([space]),$(strip $(call strtr,$(LOCALAPPDATA),\,/)))
+ else
+-  prefix := $(HOME)/.local
++  prefix := /usr/local
+ endif
