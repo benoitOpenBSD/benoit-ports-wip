@@ -1,2 +1,2 @@
 After installation :
-	cp -pr /usr/local/share/bass {$HOME}/.local/share/
+	cp -pr /usr/local/share/bass $HOME/.local/share/
