@@ -1,0 +1,7 @@
+GHDL is an open-source analyzer, compiler, simulator and (experimental)
+synthesizer for VHDL, a Hardware Description Language (HDL). GHDL is not
+an interpreter: it allows you to analyse and elaborate sources for
+generating machine code from your design.
+
+Supports the 1987, 1993, 2002 versions of the IEEE 1076 VHDL standard,
+with partial support for the 2008 and 2019 revisions and PSL.

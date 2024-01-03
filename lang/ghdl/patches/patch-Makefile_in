@@ -1,0 +1,55 @@
+Put major.minor numbers on the shared libs.
+
+Index: Makefile.in
+--- Makefile.in.orig
++++ Makefile.in
+@@ -457,14 +457,14 @@ uninstall.simul: uninstall.simul.program
+ 
+ LIBGHDL_INCFLAGS=$(GHDL_COMMON_INCFLAGS) -aI$(srcdir)/src/synth -aI$(srcdir)/src/vhdl/libghdl -aI$(srcdir)/src/ghdldrv
+ 
+-libghdl_name=libghdl-$(libghdl_version)$(SOEXT)
++libghdl_name=libghdl-$(libghdl_version)$(SOEXT).LIBghdl_VERSION
+ 
+ LIBGHDL_GRT_OBJS= pic/grt-cstdio.o pic/grt-cdynload.o
+ 
+ lib/$(libghdl_name): $(GRT_SRC_DEPS) $(LIBGHDL_GRT_OBJS) version.ads force
+ #	Use -g for gnatlink so that the binder file is not removed.  We need
+ #	it for libghdl.a
+-	$(GNATMAKE) -I- -aI. -D pic -z libghdl -o $@ -gnat12 $(GNATFLAGS) $(PIC_FLAGS) $(LIBGHDL_INCFLAGS) -bargs -shared -Llibghdl_ -largs -g -shared $(SHLIB_FLAGS) $(filter-out -static,$(LDFLAGS)) $(LIBGHDL_GRT_OBJS)
++	$(GNATMAKE) -I- -aI. -D pic -z libghdl -o $@ -gnat12 $(GNATFLAGS) $(PIC_FLAGS) $(LIBGHDL_INCFLAGS) -bargs -shared -Llibghdl_ -largs -g -shared $(SHLIB_FLAGS).LIBghdl_VERSION $(filter-out -static,$(LDFLAGS)) $(LIBGHDL_GRT_OBJS)
+ #       On windows, gnatmake (via Osint.Executable_Name) always appends .exe
+ #       Adjust.  (Other solution: use gnatmake for compilation and binding,
+ #       then use gnatlink directly for linking).
+@@ -537,7 +537,7 @@ ghwdump$(EXEEXT): $(GHWDUMP_OBJS)
+ 	$(CC) $(LDFLAGS) -o $@ $(GHWDUMP_OBJS)
+ 
+ lib/libghw$(SOEXT): libghw.o
+-	$(CC) $(PIC_FLAGS) $(LDFLAGS) -shared -o $@ $^
++	$(CC) $(PIC_FLAGS) $(LDFLAGS) -shared -o $@.LIBghw_VERSION $^
+ 
+ ghwdump.o: $(srcdir)/ghw/ghwdump.c $(srcdir)/ghw/libghw.h
+ 	$(CC) -c -o $@ $< $(COVERAGE_FLAGS) $(CFLAGS)
+@@ -549,7 +549,7 @@ all.ghw: ghwdump$(EXEEXT) lib/libghw$(SOEXT)
+ 
+ install.ghw:
+ 	$(INSTALL_PROGRAM) -p ghwdump$(EXEEXT) "$(DESTDIR)$(bindir)/"
+-	$(INSTALL_PROGRAM) -p lib/libghw$(SOEXT) "$(DESTDIR)$(libdir)/"
++	$(INSTALL_PROGRAM) -p lib/libghw$(SOEXT).LIBghw_VERSION "$(DESTDIR)$(libdir)/"
+ 	$(INSTALL_DATA) -p $(srcdir)/ghw/libghw.h "$(DESTDIR)$(incdir)/"
+ 
+ uninstall.ghw:
+@@ -591,12 +591,12 @@ vhpi_thunk.o: $(GRTSRCDIR)/vhpi_thunk.c $(GRTSRCDIR)/v
+ 
+ $(libdirsuffix)/libghdlvpi$(SOEXT): vpi_thunk.o vhpi_thunk.o
+ 	$(MKDIR) -p $(libdirsuffix)
+-	$(CC) $(SHLIB_FLAGS) $(LDFLAGS) -shared -o $@ $^
++	$(CC) $(SHLIB_FLAGS).LIBghdlvpi_VERSION $(LDFLAGS) -shared -o $@.LIBghdlvpi_VERSION $^
+ 
+ all.vpi: $(libdirsuffix)/libghdlvpi$(SOEXT)
+ 
+ install.vpi: all.vpi install.dirs
+-	$(INSTALL_PROGRAM) -p $(libdirsuffix)/libghdlvpi$(SOEXT) "$(DESTDIR)$(libdir)/"
++	$(INSTALL_PROGRAM) -p $(libdirsuffix)/libghdlvpi$(SOEXT).LIBghdlvpi_VERSION "$(DESTDIR)$(libdir)/"
+ 	$(INSTALL_DATA) -p $(GRTSRCDIR)/vpi_user.h "$(DESTDIR)$(incdir)/"
+ 	$(INSTALL_DATA) -p $(GRTSRCDIR)/vhpi_user.h "$(DESTDIR)$(incdir)/"
+ 
