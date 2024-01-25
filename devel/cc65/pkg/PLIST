@@ -71,10 +71,13 @@ share/cc65/asminc/opcodes.inc
 share/cc65/asminc/pce.inc
 share/cc65/asminc/pet.inc
 share/cc65/asminc/plus4.inc
+share/cc65/asminc/rp6502.inc
 share/cc65/asminc/ser-error.inc
 share/cc65/asminc/ser-kernel.inc
 share/cc65/asminc/signal.inc
 share/cc65/asminc/smc.inc
+share/cc65/asminc/stat.inc
+share/cc65/asminc/statvfs.inc
 share/cc65/asminc/stdio.inc
 share/cc65/asminc/supervision.inc
 share/cc65/asminc/sym1.inc
@@ -146,6 +149,7 @@ share/cc65/cfg/pce.cfg
 share/cc65/cfg/pet-overlay.cfg
 share/cc65/cfg/pet.cfg
 share/cc65/cfg/plus4.cfg
+share/cc65/cfg/rp6502.cfg
 share/cc65/cfg/sim6502.cfg
 share/cc65/cfg/sim65c02.cfg
 share/cc65/cfg/supervision-128k.cfg
@@ -261,6 +265,7 @@ share/cc65/include/peekpoke.h
 share/cc65/include/pen.h
 share/cc65/include/pet.h
 share/cc65/include/plus4.h
+share/cc65/include/rp6502.h
 share/cc65/include/serial.h
 share/cc65/include/setjmp.h
 share/cc65/include/signal.h
@@ -275,6 +280,7 @@ share/cc65/include/supervision.h
 share/cc65/include/sym1.h
 share/cc65/include/sys/
 share/cc65/include/sys/stat.h
+share/cc65/include/sys/statvfs.h
 share/cc65/include/sys/types.h
 share/cc65/include/sys/utsname.h
 share/cc65/include/target.h
@@ -324,6 +330,7 @@ share/cc65/lib/osic1p.lib
 share/cc65/lib/pce.lib
 share/cc65/lib/pet.lib
 share/cc65/lib/plus4.lib
+share/cc65/lib/rp6502.lib
 share/cc65/lib/sim6502.lib
 share/cc65/lib/sim65c02.lib
 share/cc65/lib/supervision.lib
