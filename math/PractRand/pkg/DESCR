@@ -1,0 +1,9 @@
+PractRand (Practically Random) is a C++ library of pseudo-random
+number generators (PRNGs, or just RNGs) and statistical tests for
+RNGs.
+
+Includes a variety of very high quality RNG algorithms.
+
+Includes a standard battery of tests, in the tradition of Diehard.
+
+Only a static library is provided (for higher performance).

@@ -1,0 +1,14 @@
+  select big/little in the Makefile
+
+Index: include/PractRand/config.h
+--- include/PractRand/config.h.orig
++++ include/PractRand/config.h
+@@ -21,7 +21,7 @@ though some kinds of things (particularly serializatio
+ precisely as intended, and if the PractRands self-test function is called then 
+ it may report an endianness error.  
+ */
+-#define PRACTRAND_TARGET_IS_LITTLE_ENDIAN 1
++//#define PRACTRAND_TARGET_IS_LITTLE_ENDIAN 1
+ //#define PRACTRAND_TARGET_IS_BIG_ENDIAN 1
+ 
+ 
