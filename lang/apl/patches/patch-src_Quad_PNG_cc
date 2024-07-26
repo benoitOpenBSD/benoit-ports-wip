@@ -1,0 +1,27 @@
+Clang says this results in undefined behavior.
+We conditionally want GTK and PNG, so just say so.
+
+Index: src/Quad_PNG.cc
+--- src/Quad_PNG.cc.orig
++++ src/Quad_PNG.cc
+@@ -36,18 +36,11 @@ Quad_PNG  Quad_PNG::fun;
+ 
+ /// PNG_GTK defines whether ⎕PNG B with ⍴⍴B ←→ 3 (display of a PNG file in a
+ /// GTK window  shall be supported, Requires libgtk in addition to libnpng.
+-#define PNG_GTK	                \
+-    apl_X11                  && \
+-    defined( apl_GTK3      ) && \
+-    defined( HAVE_LIBGTK_3 ) 
++#define PNG_GTK 1
+ 
+ /// PNG_LIBS defines if the PNG related libraries (and their header files)
+ /// are present
+-#define	PNG_LIBS	                  \
+-    defined( HAVE_LIBZ           ) && \
+-    defined( HAVE_ZLIB_H         ) && \
+-    defined( HAVE_LIBPNG         ) && \
+-    defined( HAVE_LIBPNG16_PNG_H )
++#define	PNG_LIBS 1
+ 
+ #if PNG_LIBS
+ # include <zlib.h>
