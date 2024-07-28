@@ -1,7 +1,7 @@
 
 COMMENT =	portable cross-assembler for MOS 6502 processors
 
-DISTNAME =	xa-2.3.14
+DISTNAME =	xa-2.4.1
 
 CATEGORIES =	devel
 
