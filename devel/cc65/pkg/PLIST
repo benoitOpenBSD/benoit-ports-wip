@@ -120,6 +120,7 @@ share/cc65/cfg/c128-asm.cfg
 share/cc65/cfg/c128-overlay.cfg
 share/cc65/cfg/c128.cfg
 share/cc65/cfg/c16-32k.cfg
+share/cc65/cfg/c16-asm.cfg
 share/cc65/cfg/c16.cfg
 share/cc65/cfg/c64-asm.cfg
 share/cc65/cfg/c64-overlay.cfg
@@ -134,6 +135,8 @@ share/cc65/cfg/gamate.cfg
 share/cc65/cfg/geos-apple.cfg
 share/cc65/cfg/geos-cbm.cfg
 share/cc65/cfg/kim1-60k.cfg
+share/cc65/cfg/kim1-mtu60k.cfg
+share/cc65/cfg/kim1-mtuE000.cfg
 share/cc65/cfg/kim1.cfg
 share/cc65/cfg/lunix.cfg
 share/cc65/cfg/lynx-bll.cfg
@@ -148,6 +151,7 @@ share/cc65/cfg/osic1p.cfg
 share/cc65/cfg/pce.cfg
 share/cc65/cfg/pet-overlay.cfg
 share/cc65/cfg/pet.cfg
+share/cc65/cfg/plus4-asm.cfg
 share/cc65/cfg/plus4.cfg
 share/cc65/cfg/rp6502.cfg
 share/cc65/cfg/sim6502.cfg
@@ -161,6 +165,8 @@ share/cc65/cfg/sym1-4k.cfg
 share/cc65/cfg/sym1.cfg
 share/cc65/cfg/telestrat.cfg
 share/cc65/cfg/vic20-32k.cfg
+share/cc65/cfg/vic20-asm-32k.cfg
+share/cc65/cfg/vic20-asm-3k.cfg
 share/cc65/cfg/vic20-asm.cfg
 share/cc65/cfg/vic20-tgi.cfg
 share/cc65/cfg/vic20.cfg
@@ -368,6 +374,7 @@ share/cc65/samples/atari5200/hello.c
 share/cc65/samples/cbm/
 share/cc65/samples/cbm/Makefile
 share/cc65/samples/cbm/fire.c
+share/cc65/samples/cbm/hello-asm.s
 share/cc65/samples/cbm/nachtm.c
 share/cc65/samples/cbm/plasma.c
 share/cc65/samples/checkversion.c
@@ -424,9 +431,15 @@ share/cc65/samples/gunzip65.c
 share/cc65/samples/hello.c
 share/cc65/samples/kim1/
 share/cc65/samples/kim1/Makefile
+share/cc65/samples/kim1/font.rom
+share/cc65/samples/kim1/kimGFX.c
 share/cc65/samples/kim1/kimHello.c
 share/cc65/samples/kim1/kimKeyDisp.c
+share/cc65/samples/kim1/kimLife.c
 share/cc65/samples/kim1/kimSieve.c
+share/cc65/samples/kim1/kimTest.c
+share/cc65/samples/kim1/ramfont.asm
+share/cc65/samples/kim1/subs.asm
 share/cc65/samples/lynx/
 share/cc65/samples/lynx/Makefile
 share/cc65/samples/lynx/hello.c
@@ -662,6 +675,7 @@ share/cc65/target/cx16/drv/mou/
 share/cc65/target/cx16/drv/mou/cx16-std.mou
 share/cc65/target/cx16/drv/tgi/
 share/cc65/target/cx16/drv/tgi/cx320p1.tgi
+share/cc65/target/cx16/drv/tgi/cx640p1.tgi
 share/cc65/target/gamate/
 share/cc65/target/gamate/drv/
 share/cc65/target/gamate/drv/joy/
