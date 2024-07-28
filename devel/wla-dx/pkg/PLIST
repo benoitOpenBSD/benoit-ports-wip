@@ -48,8 +48,8 @@ share/doc/wla-dx/quickstart.rst
 share/doc/wla-dx/requirements.txt
 share/doc/wla-dx/sphinx/
 share/doc/wla-dx/sphinx/__pycache__/
-share/doc/wla-dx/sphinx/__pycache__/globalindex.cpython-310.pyc
-share/doc/wla-dx/sphinx/__pycache__/singletext.cpython-310.pyc
+share/doc/wla-dx/sphinx/__pycache__/globalindex.cpython-311.pyc
+share/doc/wla-dx/sphinx/__pycache__/singletext.cpython-311.pyc
 share/doc/wla-dx/sphinx/globalindex.py
 share/doc/wla-dx/sphinx/singletext.py
 share/doc/wla-dx/symbols.rst
@@ -79,7 +79,6 @@ share/wla-dx/tests/6502/append_to_test/linkfile
 share/wla-dx/tests/6502/append_to_test/main.s
 share/wla-dx/tests/6502/append_to_test/makefile
 share/wla-dx/tests/6502/append_to_test/more.s
-share/wla-dx/tests/6502/append_to_test/testsfile
 share/wla-dx/tests/6502/array_test/
 share/wla-dx/tests/6502/array_test/linkfile
 share/wla-dx/tests/6502/array_test/main.s
@@ -92,7 +91,6 @@ share/wla-dx/tests/6502/c64_prg_test/
 share/wla-dx/tests/6502/c64_prg_test/linkfile
 share/wla-dx/tests/6502/c64_prg_test/main.s
 share/wla-dx/tests/6502/c64_prg_test/makefile
-share/wla-dx/tests/6502/c64_prg_test/testsfile
 share/wla-dx/tests/6502/div_16bit/
 share/wla-dx/tests/6502/div_16bit/linkfile
 share/wla-dx/tests/6502/div_16bit/main.s
@@ -122,13 +120,16 @@ share/wla-dx/tests/6502/linker_test_1/linkfile
 share/wla-dx/tests/6502/linker_test_1/makefile
 share/wla-dx/tests/6502/linker_test_1/nop.s
 share/wla-dx/tests/6502/linker_test_1/setup.s
-share/wla-dx/tests/6502/linker_test_1/testsfile
 share/wla-dx/tests/6502/linker_test_2/
 share/wla-dx/tests/6502/linker_test_2/defines.i
 share/wla-dx/tests/6502/linker_test_2/linkfile
 share/wla-dx/tests/6502/linker_test_2/main.s
 share/wla-dx/tests/6502/linker_test_2/makefile
 share/wla-dx/tests/6502/linker_test_2/setup.s
+share/wla-dx/tests/6502/macro_argument_type_test/
+share/wla-dx/tests/6502/macro_argument_type_test/linkfile
+share/wla-dx/tests/6502/macro_argument_type_test/main.s
+share/wla-dx/tests/6502/macro_argument_type_test/makefile
 share/wla-dx/tests/6502/multifile_test/
 share/wla-dx/tests/6502/multifile_test/linkfile
 share/wla-dx/tests/6502/multifile_test/main.s
@@ -143,7 +144,6 @@ share/wla-dx/tests/6502/operand_hint_test/
 share/wla-dx/tests/6502/operand_hint_test/linkfile
 share/wla-dx/tests/6502/operand_hint_test/main.s
 share/wla-dx/tests/6502/operand_hint_test/makefile
-share/wla-dx/tests/6502/operand_hint_test/testsfile
 share/wla-dx/tests/6502/precedence_and_if_test/
 share/wla-dx/tests/6502/precedence_and_if_test/linkfile
 share/wla-dx/tests/6502/precedence_and_if_test/main.s
@@ -301,13 +301,11 @@ share/wla-dx/tests/65ce02/linker_test/
 share/wla-dx/tests/65ce02/linker_test/linkfile
 share/wla-dx/tests/65ce02/linker_test/main.s
 share/wla-dx/tests/65ce02/linker_test/makefile
-share/wla-dx/tests/65ce02/linker_test/testsfile
 share/wla-dx/tests/6800/
 share/wla-dx/tests/6800/define_data_test/
 share/wla-dx/tests/6800/define_data_test/linkfile
 share/wla-dx/tests/6800/define_data_test/main.s
 share/wla-dx/tests/6800/define_data_test/makefile
-share/wla-dx/tests/6800/define_data_test/testsfile
 share/wla-dx/tests/6800/div_16bit/
 share/wla-dx/tests/6800/div_16bit/linkfile
 share/wla-dx/tests/6800/div_16bit/main.s
@@ -317,7 +315,6 @@ share/wla-dx/tests/6800/linker_test/library.s
 share/wla-dx/tests/6800/linker_test/linkfile
 share/wla-dx/tests/6800/linker_test/main.s
 share/wla-dx/tests/6800/linker_test/makefile
-share/wla-dx/tests/6800/linker_test/testsfile
 share/wla-dx/tests/68000/
 share/wla-dx/tests/68000/linker_test/
 share/wla-dx/tests/68000/linker_test/linkfile
@@ -352,7 +349,6 @@ share/wla-dx/tests/8008/line_split_test/
 share/wla-dx/tests/8008/line_split_test/linkfile
 share/wla-dx/tests/8008/line_split_test/main.s
 share/wla-dx/tests/8008/line_split_test/makefile
-share/wla-dx/tests/8008/line_split_test/testsfile
 share/wla-dx/tests/8008/linker_test/
 share/wla-dx/tests/8008/linker_test/library.s
 share/wla-dx/tests/8008/linker_test/linkfile
@@ -376,7 +372,6 @@ share/wla-dx/tests/8080/linker_test/linkfile
 share/wla-dx/tests/8080/linker_test/main.s
 share/wla-dx/tests/8080/linker_test/makefile
 share/wla-dx/tests/8080/linker_test/namespace.s
-share/wla-dx/tests/8080/linker_test/testsfile
 share/wla-dx/tests/8080/linker_test/{INCLUDE}3.s
 share/wla-dx/tests/8080/makefile_generation/
 share/wla-dx/tests/8080/makefile_generation/binaryfile
@@ -419,7 +414,6 @@ share/wla-dx/tests/gb-z80/bank_number_test/cgb_hardware.i
 share/wla-dx/tests/gb-z80/bank_number_test/linkfile
 share/wla-dx/tests/gb-z80/bank_number_test/main.s
 share/wla-dx/tests/gb-z80/bank_number_test/makefile
-share/wla-dx/tests/gb-z80/bank_number_test/testsfile
 share/wla-dx/tests/gb-z80/conditions_test/
 share/wla-dx/tests/gb-z80/conditions_test/linkfile
 share/wla-dx/tests/gb-z80/conditions_test/main.s
@@ -454,6 +448,10 @@ share/wla-dx/tests/gb-z80/instructions_test/
 share/wla-dx/tests/gb-z80/instructions_test/linkfile
 share/wla-dx/tests/gb-z80/instructions_test/main.s
 share/wla-dx/tests/gb-z80/instructions_test/makefile
+share/wla-dx/tests/gb-z80/label_sizeof_test/
+share/wla-dx/tests/gb-z80/label_sizeof_test/linkfile
+share/wla-dx/tests/gb-z80/label_sizeof_test/main.s
+share/wla-dx/tests/gb-z80/label_sizeof_test/makefile
 share/wla-dx/tests/gb-z80/labels_test/
 share/wla-dx/tests/gb-z80/labels_test/linkfile
 share/wla-dx/tests/gb-z80/labels_test/main.s
@@ -480,7 +478,6 @@ share/wla-dx/tests/gb-z80/linker_test/main.s
 share/wla-dx/tests/gb-z80/linker_test/makefile
 share/wla-dx/tests/gb-z80/linker_test/setup.s
 share/wla-dx/tests/gb-z80/linker_test/test.i
-share/wla-dx/tests/gb-z80/linker_test/testsfile
 share/wla-dx/tests/gb-z80/listfile_test/
 share/wla-dx/tests/gb-z80/listfile_test/data.i
 share/wla-dx/tests/gb-z80/listfile_test/linkfile
@@ -594,13 +591,11 @@ share/wla-dx/tests/huc6280/define_data_test/
 share/wla-dx/tests/huc6280/define_data_test/linkfile
 share/wla-dx/tests/huc6280/define_data_test/main.s
 share/wla-dx/tests/huc6280/define_data_test/makefile
-share/wla-dx/tests/huc6280/define_data_test/testsfile
 share/wla-dx/tests/huc6280/linker_test/
 share/wla-dx/tests/huc6280/linker_test/defines.i
 share/wla-dx/tests/huc6280/linker_test/linkfile
 share/wla-dx/tests/huc6280/linker_test/main.s
 share/wla-dx/tests/huc6280/linker_test/makefile
-share/wla-dx/tests/huc6280/linker_test/testsfile
 share/wla-dx/tests/huc6280/ram_sections/
 share/wla-dx/tests/huc6280/ram_sections/defines.i
 share/wla-dx/tests/huc6280/ram_sections/linkfile
@@ -613,7 +608,6 @@ share/wla-dx/tests/spc-700/linker_test/linkfile
 share/wla-dx/tests/spc-700/linker_test/main.s
 share/wla-dx/tests/spc-700/linker_test/makefile
 share/wla-dx/tests/spc-700/linker_test/setup.s
-share/wla-dx/tests/spc-700/linker_test/testsfile
 share/wla-dx/tests/spc-700/mnemonics_test/
 share/wla-dx/tests/spc-700/mnemonics_test/linkfile
 share/wla-dx/tests/spc-700/mnemonics_test/main.s
@@ -644,6 +638,7 @@ share/wla-dx/tests/z80/linker_test_1/makefile
 share/wla-dx/tests/z80/linker_test_1/setup.s
 share/wla-dx/tests/z80/linker_test_2/
 share/wla-dx/tests/z80/linker_test_2/defines.i
+share/wla-dx/tests/z80/linker_test_2/lib.s
 share/wla-dx/tests/z80/linker_test_2/linkfile
 share/wla-dx/tests/z80/linker_test_2/main.s
 share/wla-dx/tests/z80/linker_test_2/makefile
