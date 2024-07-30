@@ -9,7 +9,7 @@ WANTLIB += 		${COMPILER_LIBCXX} m pthread fftw3
 LIB_DEPENDS +=		math/fftw3 \
 			devel/readline
 
-#BUILD_DEPENDS =		devel/libtool
+BUILD_DEPENDS =		devel/libtool
 
 CONFIGURE_ARGS =        --with-fftw3=yes --enable-cider --with-ngshared
 

@@ -15,4 +15,11 @@ CONFIGURE_ENV =		LDFLAGS="${LDFLAGS} -Lc++ -L${X11BASE}/lib -L${PREFIX}/lib -L${
 			-I${LOCALBASE}/include/ereadline -I/usr/X11R6/include/freetype2" \
 			CXXFLAGS="${CXXFLAGS} -I${LOCALBASE}/include"
 
+post-install:
+			${INSTALL_DATA_DIR} ${PREFIX}/share/ngspice/examples
+			${INSTALL_DATA_DIR} ${PREFIX}/share/ngspice/tests
+        		${INSTALL_DATA} ${WRKSRC}/examples/* \
+        			${PREFIX}/share/ngspice/tests/
+        		${INSTALL_DATA} ${WRKSRC}/examples/* \
+        			${PREFIX}/share/ngspice/tests/
 .include <bsd.port.mk>
