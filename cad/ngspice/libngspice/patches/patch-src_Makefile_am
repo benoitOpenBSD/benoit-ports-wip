@@ -1,0 +1,11 @@
+--- src/Makefile.am.orig	Tue Jul 30 17:38:55 2024
++++ src/Makefile.am	Tue Jul 30 17:39:16 2024
+@@ -634,7 +634,7 @@
+ libngspice_la_CFLAGS = -shared
+ 
+ libngspice_la_LDFLAGS =  -shared
+-libngspice_la_LDFLAGS +=  -lstdc++
++libngspice_la_LDFLAGS +=  -lc++
+ 
+ if SHWIN
+ libngspice_la_LDFLAGS += -Wl,--output-def=ngspice.def  -Wl,--out-implib=ngspice.dll.a

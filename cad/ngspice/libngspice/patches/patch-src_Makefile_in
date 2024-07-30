@@ -1,0 +1,11 @@
+--- src/Makefile.in.orig	Tue Jul 30 17:39:01 2024
++++ src/Makefile.in	Tue Jul 30 17:39:23 2024
+@@ -1000,7 +1000,7 @@
+ @SHARED_MODULE_TRUE@	maths/sparse/libsparse.la misc/libmisc.la \
+ @SHARED_MODULE_TRUE@	$(LIBS) $(OPENMP_CFLAGS) $(am__append_46)
+ @SHARED_MODULE_TRUE@libngspice_la_CFLAGS = -shared
+-@SHARED_MODULE_TRUE@libngspice_la_LDFLAGS = -shared -lstdc++ \
++@SHARED_MODULE_TRUE@libngspice_la_LDFLAGS = -shared -lc++ \
+ @SHARED_MODULE_TRUE@	$(am__append_47) $(am__append_49) \
+ @SHARED_MODULE_TRUE@	-version-info \
+ @SHARED_MODULE_TRUE@	$(LT_NGSPICE_CURRENT):$(LT_NGSPICE_REVISION):$(LT_LIBNGSPICE_AGE)
