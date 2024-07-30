@@ -1,0 +1,4 @@
+637c637
+< libngspice_la_LDFLAGS +=  -lstdc++
+---
+> libngspice_la_LDFLAGS +=  -lc++

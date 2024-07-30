@@ -1,0 +1,4 @@
+1003c1003
+< @SHARED_MODULE_TRUE@libngspice_la_LDFLAGS = -shared -lstdc++ \
+---
+> @SHARED_MODULE_TRUE@libngspice_la_LDFLAGS = -shared -lc++ \

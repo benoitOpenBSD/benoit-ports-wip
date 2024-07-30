@@ -1,0 +1,11 @@
+@pkgpath cad/ngspice
+@bin bin/ngspice
+@man man/man1/ngspice.1
+share/ngspice/
+share/ngspice/scripts/
+share/ngspice/scripts/ciderinit
+share/ngspice/scripts/devaxis
+share/ngspice/scripts/devload
+share/ngspice/scripts/setplot
+share/ngspice/scripts/spectrum
+share/ngspice/scripts/spinit
