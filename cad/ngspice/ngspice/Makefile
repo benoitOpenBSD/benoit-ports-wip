@@ -18,8 +18,8 @@ CONFIGURE_ENV =		LDFLAGS="${LDFLAGS} -Lc++ -L${X11BASE}/lib -L${PREFIX}/lib -L${
 post-install:
 			${INSTALL_DATA_DIR} ${PREFIX}/share/ngspice/examples
 			${INSTALL_DATA_DIR} ${PREFIX}/share/ngspice/tests
-			${INSTALL_DATA} ${WRKSRC}/examples/* \
+			cp -r ${WRKSRC}/examples/* \
 				${PREFIX}/share/ngspice/examples/
-			${INSTALL_DATA} ${WRKSRC}/tests/* \
+			cp -r ${WRKSRC}/tests/* \
 				${PREFIX}/share/ngspice/tests/
 .include <bsd.port.mk>
