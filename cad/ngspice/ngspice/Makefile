@@ -14,17 +14,21 @@ CONFIGURE_ARGS =	--with-fftw3=yes --enable-cider --with-readline=yes  \
 			--enable-klu --enable-sense2 --enable-predictor
 #			--enable-osdi --enable-oldapps
 
-CONFIGURE_ENV =		LDFLAGS="${LDFLAGS} -Lc++ -L${X11BASE}/lib -L${PREFIX}/lib -L${LOCALBASE}/lib" \
-			CFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include \
-			-I${LOCALBASE}/include/ereadline -I/usr/X11R6/include/freetype2" \
-			CXXFLAGS="${CXXFLAGS} -I${LOCALBASE}/include"
-
 FLAVORS =		xspice
 FLAVOR ?=
 
 .if ${FLAVOR:Mxspice}
 CONFIGURE_ARGS +=	--with-x --enable-xspice
 WANTLIB += 		pthread
+CONFIGURE_ENV =		LDFLAGS="${LDFLAGS} -Lc++ -L${X11BASE}/lib -L${PREFIX}/lib -L${LOCALBASE}/lib" \
+			CFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include \
+			-I${LOCALBASE}/include/ereadline -I/usr/X11R6/include/freetype2" \
+			CXXFLAGS="${CXXFLAGS} -I${LOCALBASE}/include"
+.else
+CONFIGURE_ENV =		LDFLAGS="${LDFLAGS} -Lc++ -L${X11BASE}/lib -L${PREFIX}/lib -L${LOCALBASE}/lib" \
+			CFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include \
+			-I${LOCALBASE}/include/ereadline -I/usr/X11R6/include/freetype2" \
+			CXXFLAGS="${CXXFLAGS} -I${LOCALBASE}/include"
 .endif
 
 post-install:
