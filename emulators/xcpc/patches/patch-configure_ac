@@ -1,0 +1,22 @@
+--- configure.ac.orig.port	Tue Jul 30 16:23:12 2024
++++ configure.ac	Wed Jul 31 10:35:34 2024
+@@ -53,7 +53,7 @@
+ 
+ case "${host_os}" in
+     linux*)
+-        AX_APPEND_FLAG([-D_DEFAULT_SOURCE], [CPPFLAGS])
++#        AX_APPEND_FLAG([-D_DEFAULT_SOURCE], [CPPFLAGS])
+         ;;
+ esac
+ 
+@@ -61,8 +61,8 @@
+ # Programs
+ # ----------------------------------------------------------------------------
+ 
+-AC_PROG_CC
+-AC_PROG_CXX
++AC_PROG_CC([cc])
++AC_PROG_CXX([c++])
+ 
+ # ----------------------------------------------------------------------------
+ # Checks
