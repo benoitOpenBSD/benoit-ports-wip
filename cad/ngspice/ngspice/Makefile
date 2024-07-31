@@ -8,7 +8,8 @@ LIB_DEPENDS +=		math/fftw3 \
 
 BUILD_DEPENDS =		devel/libtool
 
-CONFIGURE_ARGS =	--with-fftw3=yes --enable-cider --with-readline=yes
+CONFIGURE_ARGS =	--with-fftw3=yes --enable-cider --with-readline=yes  --enable-klu
+#			--enable-osdi --enable-oldapps --enable-xspice 
 
 CONFIGURE_ENV =		LDFLAGS="${LDFLAGS} -Lc++ -L${X11BASE}/lib -L${PREFIX}/lib -L${LOCALBASE}/lib" \
 			CFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include \
