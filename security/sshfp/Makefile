@@ -11,6 +11,7 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 # GPLv2+
 PERMIT_PACKAGE_CDROM =	Yes
 
+# https://github.com/xelerance/sshfp
 SITES =			ftp://ftp.xelerance.com/sshfp/
 
 MODULES =		lang/python
