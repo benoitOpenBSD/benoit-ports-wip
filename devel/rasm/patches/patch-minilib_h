@@ -1,6 +1,7 @@
---- minilib.h.orig	Tue Nov 24 08:33:03 2020
-+++ minilib.h	Tue Nov 24 08:36:03 2020
-@@ -29,7 +29,12 @@
+Index: minilib.h
+--- minilib.h.orig
++++ minilib.h
+@@ -36,7 +36,12 @@
  #include<string.h>
  #include<setjmp.h>
  #include<errno.h>

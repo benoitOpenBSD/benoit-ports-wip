@@ -1,16 +1,17 @@
---- makefile.orig	Fri Oct 21 17:14:04 2022
-+++ makefile	Fri Nov  4 08:54:54 2022
+Index: makefile
+--- makefile.orig
++++ makefile
 @@ -1,7 +1,7 @@
  CC=cc
 -EXEC=rasm.exe
 +EXEC=rasm
  
--CFLAGS=-lm -lrt -march=native -o $(EXEC)
+-CFLAGS=-lm  -march=native -o $(EXEC)
 +CFLAGS=-lm -march=native -o $(EXEC)
  CFLAGS_OPT = $(CFLAGS) -O2
- CFLAGS_DBG = $(CFLAGS) -g -pthread -lefence
+ CFLAGS_DBG = $(CFLAGS) -O0 -g -pthread
  CFLAGS_3RD = $(CFLAGS) -g -pthread -DNO_3RD_PARTIES
-@@ -10,7 +10,7 @@
+@@ -10,7 +10,7 @@ SRC_APUDIR=./apultra-master/src
  SRC_LZSADIR=./lzsa-master/src
  SRC_ZX0DIR=./ZX0-main/src
  
@@ -19,7 +20,7 @@
  
  APU_OBJ =$(SRC_APUDIR)/expand.o
  APU_OBJ+=$(SRC_APUDIR)/matchfinder.o
-@@ -20,7 +20,7 @@
+@@ -20,7 +20,7 @@ APU_OBJ+=$(SRC_APUDIR)/libdivsufsort/lib/divsufsort_ut
  APU_OBJ+=$(SRC_APUDIR)/libdivsufsort/lib/sssort.o
  APU_OBJ+=$(SRC_APUDIR)/libdivsufsort/lib/trsort.o
  
