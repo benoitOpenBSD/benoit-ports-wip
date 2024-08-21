@@ -8,6 +8,9 @@ CONFIGURE_ARGS +=	--with-x \
 			--enable-klu --enable-sense2 --enable-predictor \
 			--enable-osdi
 
+RUN_DEPENDS =		cad/gtkwave \
+			math/gnuplot
+
 post-install:
 			${INSTALL_DATA_DIR} ${PREFIX}/share/ngspice/examples
 			${INSTALL_DATA_DIR} ${PREFIX}/share/ngspice/tests
