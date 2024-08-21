@@ -1,27 +1,18 @@
-COMMENT =		ngspice shared library, based on Berkeley SPICE
+COMMENT =	ngspice shared library, based on Berkeley SPICE
 
-PKGNAME =		libngspice-${V}
+PKGNAME =	libngspice-${V}
 
-SHARED_LIBS +=		ngspice			1.0 # 0.0
+SHARED_LIBS +=  ngspice                0.0 # 0.0
 
-WANTLIB += 		${COMPILER_LIBCXX} m pthread fftw3
+WANTLIB += m pthread
 
-LIB_DEPENDS +=		math/fftw3 \
-			devel/readline
-
-BUILD_DEPENDS =		devel/libtool
-
-CONFIGURE_ARGS =        --with-fftw3=yes --enable-cider --with-ngshared
-
-CONFIGURE_ENV =         LDFLAGS="${LDFLAGS} -L${X11BASE}/lib -L${PREFIX}/lib -L${LOCALBASE}/lib" \
-                        CFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include \
-                        -I/usr/X11R6/include/freetype2" \
-                        CXXFLAGS="${CXXFLAGS} -I${LOCALBASE}/include"
+CONFIGURE_ARGS +=	--with-ngshared \
+			--enable-shared
 
 # same tests as cad/ngspice/ngspice, but they assume you've built a binary
-NO_TEST =		Yes
+NO_TEST =	Yes
 
 post-install:
-	@rm -r ${PREFIX}/share/ngspice/
+	@rm -r ${PREFIX}/{lib,share}/ngspice/
 
 .include <bsd.port.mk>
