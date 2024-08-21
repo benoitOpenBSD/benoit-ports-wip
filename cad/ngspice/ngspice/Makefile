@@ -8,4 +8,12 @@ CONFIGURE_ARGS +=	--with-x \
 			--enable-klu --enable-sense2 --enable-predictor \
 			--enable-osdi
 
+post-install:
+			${INSTALL_DATA_DIR} ${PREFIX}/share/ngspice/examples
+			${INSTALL_DATA_DIR} ${PREFIX}/share/ngspice/tests
+			cp -r ${WRKSRC}/examples/* \
+				${PREFIX}/share/ngspice/examples/
+			cp -r ${WRKSRC}/tests/* \
+				${PREFIX}/share/ngspice/tests/
+
 .include <bsd.port.mk>
