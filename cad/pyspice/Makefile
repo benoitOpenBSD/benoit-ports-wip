@@ -20,6 +20,8 @@ MODPY_PI =		Yes
 FLAVORS =		python3
 FLAVOR =		python3
 
+RUN_DEPENDS =		graphics/py-matplotlib${MODPY_FLAVOR}
+
 NO_TEST =		Yes
 
 .include <bsd.port.mk>
