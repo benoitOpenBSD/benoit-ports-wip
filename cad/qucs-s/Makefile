@@ -12,17 +12,19 @@ MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 # GPLv2
 PERMIT_PACKAGE=	Yes
 
-WANTLIB +=	${COMPILER_LIBCXX} ICE Qt5Core Qt5DBus Qt5Gui Qt5Widgets
-WANTLIB +=	Qt5X11Extras SM X11 Xext c m
+WANTLIB +=	${COMPILER_LIBCXX} Qt5Core Qt5Gui Qt5Widgets
+WANTLIB +=	Qt5PrintSupport Qt5Svg Qt5Xml c m
 
 SITES =		https://github.com/ra3xdh/qucs_s/releases/download/${V}/
 
 MODULES =	devel/cmake \
 		x11/qt5
 
-LIB_DEPENDS =	x11/qt5/qtx11extras
+LIB_DEPENDS =	converters/libiconv \
+		x11/qt5/qtsvg
 
-RUN_DEPENDS =	cad/ngspice
+RUN_DEPENDS =	cad/ngspice/ngspice \
+		math/gnuplot
 
 BUILD_DEPENDS =	devel/bison \
 		devel/ninja
