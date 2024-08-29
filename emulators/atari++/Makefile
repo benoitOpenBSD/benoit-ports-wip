@@ -1,7 +1,7 @@
 
 COMMENT =		Unix based emulator of the Atari eight bit computers
 
-DISTNAME =		atari++_1.83
+DISTNAME =		atari++_1.85
 PKGNAME =		${DISTNAME:S/_/-/}
 CATEGORIES =		emulators
 
