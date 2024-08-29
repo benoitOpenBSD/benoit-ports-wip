@@ -2,7 +2,7 @@
 COMMENT =		a Z80 CP/M 2.2 emulator
 
 DISTNAME =		runCPM
-PKGNAME =		runCPM-v5.7-211102
+PKGNAME =		runCPM-v6.6-240820
 CATEGORIES =		emulators
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/MockbaTheBorg/RunCPM
 
 GH_ACCOUNT =		MockbaTheBorg
 GH_PROJECT =		RunCPM
-GH_COMMIT =		240904a3683b931d1b2795be3411f43c0749f8d9
+GH_COMMIT =		f87f6eaf79781e376d5f199192d16698ef714eb8
 
 WANTLIB +=		c m curses
 
@@ -28,11 +28,11 @@ do-build:
 	cd ${WRKBUILD}/RunCPM && ${GMAKE} posix build
 
 do-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/RunCPM/A/0
+	${INSTALL_DATA_DIR} ${PREFIX}/RunCPM
 	${INSTALL_DATA_DIR} ${PREFIX}/RunCPM/Docs
 	${INSTALL_PROGRAM} ${WRKBUILD}/RunCPM/RunCPM ${PREFIX}/RunCPM/
 	cp -R ${WRKSRC}/CCP/* ${PREFIX}/RunCPM/
-	cd ${PREFIX}/RunCPM/A/0 && unzip ${WRKSRC}/DISK/A.ZIP
+	cd ${PREFIX}/RunCPM && unzip ${WRKSRC}/DISK/A0.ZIP
 	cp -R ${WRKSRC}/Docs/* ${PREFIX}/RunCPM/Docs
 
 .include <bsd.port.mk>
