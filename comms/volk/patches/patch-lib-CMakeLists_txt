@@ -1,0 +1,22 @@
+--- lib/CMakeLists.txt.orig	Sat Nov 23 15:42:20 2024
++++ lib/CMakeLists.txt	Sat Nov 23 15:49:29 2024
+@@ -256,16 +256,16 @@
+ if(NOT CROSSCOMPILE_MULTILIB AND CPU_IS_x86)
+     include(CheckTypeSize)
+     check_type_size("void*[8]" SIZEOF_CPU BUILTIN_TYPES_ONLY)
+-    if(${SIZEOF_CPU} EQUAL 64)
++    if("${SIZEOF_CPU}" STREQUAL "64")
+         overrule_arch(32 "CPU width is 64 bits")
+     endif()
+-    if(${SIZEOF_CPU} EQUAL 32)
++    if("${SIZEOF_CPU}" STREQUAL "32")
+         overrule_arch(64 "CPU width is 32 bits")
+     endif()
+ 
+     #MSVC 64 bit does not have MMX, overrule it
+     if(MSVC)
+-        if(${SIZEOF_CPU} EQUAL 64)
++        if("${SIZEOF_CPU}" STREQUAL "64")
+             overrule_arch(mmx "No MMX for Win64")
+         endif()
+         force_arch(sse "Built-in for MSVC > 2013")

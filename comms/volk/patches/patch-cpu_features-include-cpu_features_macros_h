@@ -1,0 +1,13 @@
+--- cpu_features/include/cpu_features_macros.h.orig	Sat Nov 23 14:55:23 2024
++++ cpu_features/include/cpu_features_macros.h	Sat Nov 23 14:55:39 2024
+@@ -91,6 +91,10 @@
+ // Os
+ ////////////////////////////////////////////////////////////////////////////////
+ 
++#if (defined(__openbsd__) || defined(__OpenBSD__))
++#define CPU_FEATURES_OS_OPENBSD
++#endif
++
+ #if (defined(__freebsd__) || defined(__FreeBSD__))
+ #define CPU_FEATURES_OS_FREEBSD
+ #endif

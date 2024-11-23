@@ -1,0 +1,10 @@
+--- cpu_features/BUILD.bazel.orig	Sat Nov 23 14:50:19 2024
++++ cpu_features/BUILD.bazel	Sat Nov 23 14:52:13 2024
+@@ -271,6 +271,7 @@
+     testonly = 1,
+     srcs = selects.with_or({
+         PLATFORM_CPU_X86_64: [
++            "src/impl_x86_openbsd.c",
+             "src/impl_x86_freebsd.c",
+             "src/impl_x86_linux_or_android.c",
+             "src/impl_x86_macos.c",
