@@ -1,0 +1,23 @@
+Add OpenBSD man page location and compile options
+
+Index: CMakeLists.txt
+--- CMakeLists.txt.orig
++++ CMakeLists.txt
+@@ -214,6 +214,8 @@
+   ###set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Wvla -ffast-math -ftree-vectorize -D_XOPEN_SOURCE=600 -D_DEFAULT_SOURCE ${EXTRA_FLAGS}")
+   if(FREEBSD)
+     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Wvla -ffast-math -ftree-vectorize -D_DEFAULT_SOURCE ${EXTRA_FLAGS}")
++  elseif(OPENBSD)
++    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Wvla -ffast-math -ftree-vectorize -D_DEFAULT_SOURCE ${EXTRA_FLAGS}")
+   else()
+     #set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wvla -ffast-math -ftree-vectorize -D_GNU_SOURCE -fsanitize=bounds-strict ${EXTRA_FLAGS}")
+     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wvla -ffast-math -ftree-vectorize -D_GNU_SOURCE ${EXTRA_FLAGS}")
+@@ -255,6 +257,8 @@
+   set(INSTALL_CONF_DIR "${INSTALL_DOC_DIR}/conf")
+   set(INSTALL_SCRIPTS_DIR "${INSTALL_DOC_DIR}/scripts")
+   if(FREEBSD)
++    set(INSTALL_MAN_DIR "man/man1")
++  elseif(OPENBSD)
+     set(INSTALL_MAN_DIR "man/man1")
+   else()
+     set(INSTALL_MAN_DIR "share/man/man1")
