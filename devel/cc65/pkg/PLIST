@@ -15,6 +15,7 @@ share/cc65/asminc/
 share/cc65/asminc/_file.inc
 share/cc65/asminc/_heap.inc
 share/cc65/asminc/accelerator.inc
+share/cc65/asminc/agat.inc
 share/cc65/asminc/apple2.inc
 share/cc65/asminc/apple2.mac
 share/cc65/asminc/ascii_charmap.inc
@@ -37,6 +38,7 @@ share/cc65/asminc/atmos.inc
 share/cc65/asminc/c128.inc
 share/cc65/asminc/c16.inc
 share/cc65/asminc/c64.inc
+share/cc65/asminc/c65.inc
 share/cc65/asminc/cbm.mac
 share/cc65/asminc/cbm510.inc
 share/cc65/asminc/cbm610.inc
@@ -62,6 +64,7 @@ share/cc65/asminc/joy-kernel.inc
 share/cc65/asminc/kim1.inc
 share/cc65/asminc/longbranch.mac
 share/cc65/asminc/lynx.inc
+share/cc65/asminc/mega65.inc
 share/cc65/asminc/modload.inc
 share/cc65/asminc/module.mac
 share/cc65/asminc/mouse-kernel.inc
@@ -75,6 +78,7 @@ share/cc65/asminc/rp6502.inc
 share/cc65/asminc/ser-error.inc
 share/cc65/asminc/ser-kernel.inc
 share/cc65/asminc/signal.inc
+share/cc65/asminc/sim65.inc
 share/cc65/asminc/smc.inc
 share/cc65/asminc/stat.inc
 share/cc65/asminc/statvfs.inc
@@ -90,6 +94,7 @@ share/cc65/asminc/utsname.inc
 share/cc65/asminc/vic20.inc
 share/cc65/asminc/zeropage.inc
 share/cc65/cfg/
+share/cc65/cfg/agat.cfg
 share/cc65/cfg/apple2-asm.cfg
 share/cc65/cfg/apple2-hgr.cfg
 share/cc65/cfg/apple2-overlay.cfg
@@ -125,6 +130,8 @@ share/cc65/cfg/c16.cfg
 share/cc65/cfg/c64-asm.cfg
 share/cc65/cfg/c64-overlay.cfg
 share/cc65/cfg/c64.cfg
+share/cc65/cfg/c65-asm.cfg
+share/cc65/cfg/c65.cfg
 share/cc65/cfg/cbm510.cfg
 share/cc65/cfg/cbm610.cfg
 share/cc65/cfg/creativision.cfg
@@ -143,6 +150,8 @@ share/cc65/cfg/lynx-bll.cfg
 share/cc65/cfg/lynx-coll.cfg
 share/cc65/cfg/lynx-uploader.cfg
 share/cc65/cfg/lynx.cfg
+share/cc65/cfg/mega65-asm.cfg
+share/cc65/cfg/mega65.cfg
 share/cc65/cfg/module.cfg
 share/cc65/cfg/nes.cfg
 share/cc65/cfg/none.cfg
@@ -152,6 +161,7 @@ share/cc65/cfg/pce.cfg
 share/cc65/cfg/pet-overlay.cfg
 share/cc65/cfg/pet.cfg
 share/cc65/cfg/plus4-asm.cfg
+share/cc65/cfg/plus4-hires.cfg
 share/cc65/cfg/plus4.cfg
 share/cc65/cfg/rp6502.cfg
 share/cc65/cfg/sim6502.cfg
@@ -195,7 +205,9 @@ share/cc65/include/_tia.h
 share/cc65/include/_vdc.h
 share/cc65/include/_vic.h
 share/cc65/include/_vic2.h
+share/cc65/include/_vic3.h
 share/cc65/include/accelerator.h
+share/cc65/include/agat.h
 share/cc65/include/apple2.h
 share/cc65/include/apple2_filetype.h
 share/cc65/include/apple2enh.h
@@ -213,6 +225,7 @@ share/cc65/include/atmos.h
 share/cc65/include/c128.h
 share/cc65/include/c16.h
 share/cc65/include/c64.h
+share/cc65/include/c65.h
 share/cc65/include/cbm.h
 share/cc65/include/cbm264.h
 share/cc65/include/cbm510.h
@@ -259,6 +272,8 @@ share/cc65/include/limits.h
 share/cc65/include/locale.h
 share/cc65/include/lynx.h
 share/cc65/include/lz4.h
+share/cc65/include/lzsa.h
+share/cc65/include/mega65.h
 share/cc65/include/modload.h
 share/cc65/include/mouse/
 share/cc65/include/mouse.h
@@ -275,6 +290,7 @@ share/cc65/include/rp6502.h
 share/cc65/include/serial.h
 share/cc65/include/setjmp.h
 share/cc65/include/signal.h
+share/cc65/include/sim65.h
 share/cc65/include/stdarg.h
 share/cc65/include/stdbool.h
 share/cc65/include/stddef.h
@@ -300,9 +316,13 @@ share/cc65/include/time.h
 share/cc65/include/unistd.h
 share/cc65/include/vic20.h
 share/cc65/include/zlib.h
+share/cc65/include/zx02.h
 share/cc65/lib/
+share/cc65/lib/agat.lib
+share/cc65/lib/apple2-integer-basic-compat.o
 share/cc65/lib/apple2-iobuf-0800.o
 share/cc65/lib/apple2.lib
+share/cc65/lib/apple2enh-integer-basic-compat.o
 share/cc65/lib/apple2enh-iobuf-0800.o
 share/cc65/lib/apple2enh.lib
 share/cc65/lib/atari.lib
@@ -319,6 +339,7 @@ share/cc65/lib/c64-soft80.o
 share/cc65/lib/c64-soft80mono.o
 share/cc65/lib/c64-tgimousedata.o
 share/cc65/lib/c64.lib
+share/cc65/lib/c65.lib
 share/cc65/lib/cbm510.lib
 share/cc65/lib/cbm610.lib
 share/cc65/lib/creativision.lib
@@ -328,6 +349,7 @@ share/cc65/lib/geos-apple.lib
 share/cc65/lib/geos-cbm.lib
 share/cc65/lib/kim1.lib
 share/cc65/lib/lynx.lib
+share/cc65/lib/mega65.lib
 share/cc65/lib/nes.lib
 share/cc65/lib/none.lib
 share/cc65/lib/osic1p-screen-c1p-48x12.o
@@ -346,6 +368,7 @@ share/cc65/lib/vic20.lib
 share/cc65/samples/
 share/cc65/samples/Makefile
 share/cc65/samples/apple2/
+share/cc65/samples/apple2/.gitignore
 share/cc65/samples/apple2/Makefile
 share/cc65/samples/apple2/astronaut.hgr
 share/cc65/samples/apple2/catface.dhgr
@@ -365,19 +388,24 @@ share/cc65/samples/apple2/werner.hgr
 share/cc65/samples/apple2/werner.s
 share/cc65/samples/apple2/winston.hgr
 share/cc65/samples/ascii.c
+share/cc65/samples/asciires.grc
 share/cc65/samples/atari2600/
+share/cc65/samples/atari2600/.gitignore
 share/cc65/samples/atari2600/Makefile
 share/cc65/samples/atari2600/hello.c
 share/cc65/samples/atari5200/
+share/cc65/samples/atari5200/.gitignore
 share/cc65/samples/atari5200/Makefile
 share/cc65/samples/atari5200/hello.c
 share/cc65/samples/cbm/
+share/cc65/samples/cbm/.gitignore
 share/cc65/samples/cbm/Makefile
 share/cc65/samples/cbm/fire.c
 share/cc65/samples/cbm/hello-asm.s
 share/cc65/samples/cbm/nachtm.c
 share/cc65/samples/cbm/plasma.c
 share/cc65/samples/checkversion.c
+share/cc65/samples/debug.c
 share/cc65/samples/diodemo.c
 share/cc65/samples/disasm/
 share/cc65/samples/disasm/.gitignore
@@ -391,6 +419,7 @@ share/cc65/samples/gamate/
 share/cc65/samples/gamate/Makefile
 share/cc65/samples/gamate/nachtm.c
 share/cc65/samples/geos/
+share/cc65/samples/geos/.gitignore
 share/cc65/samples/geos/Makefile
 share/cc65/samples/geos/bitmap-demo.c
 share/cc65/samples/geos/bitmap-demores.grc
@@ -404,6 +433,7 @@ share/cc65/samples/geos/geosverres.grc
 share/cc65/samples/geos/getid.c
 share/cc65/samples/geos/getidres.grc
 share/cc65/samples/geos/grc/
+share/cc65/samples/geos/grc/.gitignore
 share/cc65/samples/geos/grc/Makefile
 share/cc65/samples/geos/grc/test.grc
 share/cc65/samples/geos/grc/vlir.grc
@@ -429,6 +459,7 @@ share/cc65/samples/geos/yesnores.grc
 share/cc65/samples/getsp.s
 share/cc65/samples/gunzip65.c
 share/cc65/samples/hello.c
+share/cc65/samples/joydemo.c
 share/cc65/samples/kim1/
 share/cc65/samples/kim1/Makefile
 share/cc65/samples/kim1/font.rom
@@ -451,7 +482,13 @@ share/cc65/samples/multidemo.c
 share/cc65/samples/overlaydemo.c
 share/cc65/samples/readme.txt
 share/cc65/samples/sieve.c
+share/cc65/samples/sim65/
+share/cc65/samples/sim65/Makefile
+share/cc65/samples/sim65/cpumode_example.c
+share/cc65/samples/sim65/timer_example.c
+share/cc65/samples/sim65/trace_example.c
 share/cc65/samples/supervision/
+share/cc65/samples/supervision/.gitignore
 share/cc65/samples/supervision/Makefile
 share/cc65/samples/supervision/hello.c
 share/cc65/samples/sym1/
@@ -466,6 +503,7 @@ share/cc65/samples/terminal.c
 share/cc65/samples/tgidemo.c
 share/cc65/samples/tinyshell.c
 share/cc65/samples/tutorial/
+share/cc65/samples/tutorial/.gitignore
 share/cc65/samples/tutorial/Makefile
 share/cc65/samples/tutorial/hello.c
 share/cc65/samples/tutorial/text.s
@@ -646,6 +684,10 @@ share/cc65/target/c64/drv/ser/
 share/cc65/target/c64/drv/ser/c64-swlink.ser
 share/cc65/target/c64/drv/tgi/
 share/cc65/target/c64/drv/tgi/c64-hi.tgi
+share/cc65/target/c65/
+share/cc65/target/c65/drv/
+share/cc65/target/c65/drv/joy/
+share/cc65/target/c65/drv/joy/c65-stdjoy.joy
 share/cc65/target/cbm510/
 share/cc65/target/cbm510/drv/
 share/cc65/target/cbm510/drv/emd/
@@ -696,6 +738,10 @@ share/cc65/target/lynx/drv/ser/
 share/cc65/target/lynx/drv/ser/lynx-comlynx.ser
 share/cc65/target/lynx/drv/tgi/
 share/cc65/target/lynx/drv/tgi/lynx-160-102-16.tgi
+share/cc65/target/mega65/
+share/cc65/target/mega65/drv/
+share/cc65/target/mega65/drv/joy/
+share/cc65/target/mega65/drv/joy/m65-stdjoy.joy
 share/cc65/target/nes/
 share/cc65/target/nes/drv/
 share/cc65/target/nes/drv/joy/
@@ -717,6 +763,8 @@ share/cc65/target/plus4/drv/joy/
 share/cc65/target/plus4/drv/joy/plus4-stdjoy.joy
 share/cc65/target/plus4/drv/ser/
 share/cc65/target/plus4/drv/ser/plus4-stdser.ser
+share/cc65/target/plus4/drv/tgi/
+share/cc65/target/plus4/drv/tgi/ted-hi.tgi
 share/cc65/target/supervision/
 share/cc65/target/supervision/drv/
 share/cc65/target/supervision/drv/joy/
