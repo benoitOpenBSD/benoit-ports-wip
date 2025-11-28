@@ -1,16 +1,15 @@
---- RunCPM/Makefile.posix.orig.port	Tue Aug 20 20:27:59 2024
-+++ RunCPM/Makefile.posix	Thu Aug 29 21:06:19 2024
-@@ -5,11 +5,11 @@
+--- RunCPM/Makefile.posix.orig.port	Wed Nov 26 05:33:36 2025
++++ RunCPM/Makefile.posix	Fri Nov 28 23:11:54 2025
+@@ -5,10 +5,10 @@
  MFILE = Makefile.posix
  
  # Compiler command
--CC = gcc
-+CC = cc
- #CC = gcc -DDEBUG=1 -DDEBUGLOG=1
+-CC ?= gcc
++CC ?= cc
  
- # Flags to pass to the compiler - add "-g" to include debug information
--CFLAGS = -Wall -O3 -fPIC -Wno-unused-variable
-+CFLAGS = -Wall -O2 -fPIC -Wno-unused-variable
- #CFLAGS = -Wall -O0 -fPIC -Wno-unused-variable -g
+ # Flags to pass to the compiler
+-CFLAGS ?= -Wall -O3 -fPIC -Wno-unused-variable
++CFLAGS ?= -Wall -O2 -fPIC -Wno-unused-variable
  
- # Flags to pass to the linker
+ DEBUG_MODE :=
+ 
