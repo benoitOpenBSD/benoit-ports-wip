@@ -1,0 +1,11 @@
+--- build/cpm.py.orig	Sun Nov 30 11:01:40 2025
++++ build/cpm.py	Sun Nov 30 11:02:04 2025
+@@ -52,7 +52,7 @@
+         ins=[bootfile, "diskdefs"] + list(map.values()),
+         outs=[f"={name}.img"],
+         commands=[f"mkfs.cpm -f {format} -b {{ins[0]}} {{outs[0]}}"]
+-        + ([f"truncate -s {size} {{outs[0]}}"] if size else [])
++        + ([f"gtruncate -s {size} {{outs[0]}}"] if size else [])
+         + [
+             f"cpmcp -f {format} {{outs[0]}} {filenameof(v)} 0:{k}"
+             for k, v in map.items()
