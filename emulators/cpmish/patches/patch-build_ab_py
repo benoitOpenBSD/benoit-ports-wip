@@ -1,0 +1,13 @@
+--- build/ack.py.orig	Fri Oct 10 13:30:50 2025
++++ build/ack.py	Sun Nov 30 08:40:39 2025
+@@ -3,8 +3,8 @@
+ 
+ emit(
+     """
+-ACKCC ?= ack
+-ACKAAL ?= aal
++ACKCC ?= /usr/local/ack/bin/ack
++ACKAAL ?= /usr/local/ack/bin/aal
+      """
+ )
+ 

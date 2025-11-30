@@ -19,6 +19,8 @@ GH_COMMIT =		7f37cae18ca45b5338befec8b90db3663f44dc09
 
 WANTLIB +=		c
 
+USE_GMAKE =		Yes
+
 # coreutils : ghead, gtruncate
 BUILD_DEPENDS =		sysutils/cpmtools \
 			sysutils/coreutils \
