@@ -1,0 +1,13 @@
+--- build/ab.mk.orig	Fri Oct 10 13:30:50 2025
++++ build/ab.mk	Sun Nov 30 08:32:49 2025
+@@ -4,8 +4,8 @@
+ 
+ OBJ ?= .obj
+ PYTHON ?= python3
+-CC ?= gcc
+-CXX ?= g++
++CC ?= cc
++CXX ?= cc
+ AR ?= ar
+ CFLAGS ?= -g -Og
+ LDFLAGS ?= -g
