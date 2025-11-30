@@ -1,6 +1,6 @@
 COMMENT =	turbo assembler compatible cross-assembler for 65xx
 
-DISTNAME =	64tass-1.59.3120-src
+DISTNAME =	64tass-1.60.3243-src
 PKGNAME =	${DISTNAME:S/-src//}
 EXTRACT_SUFX =	.zip
 CATEGORIES =	devel
