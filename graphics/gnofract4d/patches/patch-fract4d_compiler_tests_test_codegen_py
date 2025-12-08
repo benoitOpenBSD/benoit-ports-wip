@@ -1,0 +1,11 @@
+--- fract4d_compiler/tests/test_codegen.py.orig.port	Thu Jul 24 20:28:40 2025
++++ fract4d_compiler/tests/test_codegen.py	Mon Dec  8 14:23:40 2025
+@@ -248,7 +248,7 @@
+             cmd = "gcc -Wall -fPIC -DPIC -Ifract4d/c -shared {} -o {} -lm -flat_namespace -undefined suppress".format(
+                 cFile.name, oFileName)
+         else:
+-            cmd = "gcc -Wall -fPIC -DPIC -Ifract4d/c -shared {} -o {} -lm".format(
++            cmd = "cc -Wall -fPIC -DPIC -Ifract4d/c -shared {} -o {} -lm".format(
+                 cFile.name, oFileName)
+         status, output = subprocess.getstatusoutput(cmd)
+         self.assertEqual(status, 0, "C error:\n%s\nProgram:\n%s\n" %
