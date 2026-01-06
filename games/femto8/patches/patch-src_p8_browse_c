@@ -1,0 +1,14 @@
+Index: src/p8_browse.c
+--- src/p8_browse.c.orig
++++ src/p8_browse.c
+@@ -5,7 +5,9 @@
+ #include <sys/types.h>
+ #include <dirent.h>
+ #include <errno.h>
+-#include <malloc.h>
++#ifndef __OpenBSD__
++ #include <malloc.h>
++#endif
+ #include <stdbool.h>
+ #include <string.h>
+ #include <stdio.h>

@@ -1,0 +1,22 @@
+backport from commit 8aeb419dba57cf6adb9e60684927da80b93cd779
+
+Index: src/lua/lvm.c
+--- src/lua/lvm.c.orig
++++ src/lua/lvm.c
+@@ -8,6 +8,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
++#include <stdint.h>
+ 
+ #define lvm_c
+ #define LUA_CORE
+@@ -386,7 +387,7 @@ void luaV_objlen (lua_State *L, StkId ra, const TValue
+       return;
+     }
+     case LUA_TSTRING: {
+-      setnvalue(ra, cast_num(tsvalue(rb)->len));
++      setnvalue(ra, lua_Number((uint64_t)tsvalue(rb)->len));
+       return;
+     }
+     default: {  /* try metamethod */

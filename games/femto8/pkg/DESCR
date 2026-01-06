@@ -1,0 +1,5 @@
+femto8 is an open-source reimplementation of the PICO-8 fantasy console,
+designed specifically for embedded systems with smaller CPUs and less
+memory. It provides a platform to play PICO-8 games on devices with
+resource constraints, making it ideal for environments with limited
+hardware capabilities.
