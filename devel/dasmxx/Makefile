@@ -1,7 +1,7 @@
 
 COMMENT =		small processor disassembler suite
 
-DISTNAME =		dasmxx-20220907
+DISTNAME =		dasmxx-20250619
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -15,7 +15,7 @@ HOMEPAGE =		https://github.com/nejohnson/dasmxx
 
 GH_ACCOUNT =		nejohnson
 GH_PROJECT =		dasmxx
-GH_COMMIT =		95ad19458233adee72166cdd72dfa24e32f5992b
+GH_COMMIT =		d5d8bce99670c4aaea9bcabb0e700f3a7b9ad140
 
 WANTLIB +=		c
 
