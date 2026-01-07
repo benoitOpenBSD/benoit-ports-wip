@@ -1,4 +1,12 @@
+@bin bin/dasm02
+@bin bin/dasm05
+@bin bin/dasm09
 @bin bin/dasm1802
+@bin bin/dasm48
+@bin bin/dasm51
+@bin bin/dasm68k
+@bin bin/dasm7000
+@bin bin/dasmz80
 @bin bin/txt2bin
 share/dasmxx/
 share/dasmxx/test/

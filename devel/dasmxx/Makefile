@@ -30,7 +30,9 @@ NO_TEST =		Yes
 # More to add : dasm02, dasm09, ...
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/txt2bin ${PREFIX}/bin/
-	${INSTALL_PROGRAM} ${WRKSRC}/dasm1802 ${PREFIX}/bin/
+.for file in dasm02 dasm05 dasm09 dasm1802 dasm48 dasm51 dasm68k dasm7000 dasmz80
+		${INSTALL_PROGRAM} ${WRKSRC}/${file} ${PREFIX}/bin/
+.endfor
 	${INSTALL_DATA_DIR} ${PREFIX}/share/dasmxx/test
 	cp -R ${WRKDIST}/test/* ${PREFIX}/share/dasmxx/test
 
