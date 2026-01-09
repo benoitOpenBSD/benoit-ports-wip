@@ -7,6 +7,7 @@ lib/ngspice/
 lib/ngspice/ivlng.vpi
 @bin lib/ngspice/spice2poly.cm
 @bin lib/ngspice/table.cm
+@bin lib/ngspice/tlines.cm
 @bin lib/ngspice/xtradev.cm
 @bin lib/ngspice/xtraevt.cm
 @man man/man1/ngspice.1
@@ -15,12 +16,19 @@ share/ngspice/scripts/
 share/ngspice/scripts/ciderinit
 share/ngspice/scripts/devaxis
 share/ngspice/scripts/devload
+share/ngspice/scripts/ghnggen
 share/ngspice/scripts/setplot
 share/ngspice/scripts/spectrum
 share/ngspice/scripts/spinit
 share/ngspice/scripts/src/
+share/ngspice/scripts/src/ghdl_shim.c
+share/ngspice/scripts/src/ghdl_shim.h
+share/ngspice/scripts/src/ghdl_vpi.c
 share/ngspice/scripts/src/ngspice/
 share/ngspice/scripts/src/ngspice/cmtypes.h
+share/ngspice/scripts/src/ngspice/coroutine.h
+share/ngspice/scripts/src/ngspice/coroutine_cosim.h
+share/ngspice/scripts/src/ngspice/coroutine_shim.h
 share/ngspice/scripts/src/ngspice/cosim.h
 share/ngspice/scripts/src/ngspice/miftypes.h
 share/ngspice/scripts/src/verilator_main.cpp

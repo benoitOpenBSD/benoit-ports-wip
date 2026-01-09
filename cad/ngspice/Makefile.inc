@@ -1,4 +1,4 @@
-V ?=			44
+V ?=			45.2
 
 DISTNAME ?=		ngspice-${V}
 
@@ -13,7 +13,7 @@ SITES ?=		${SITE_SOURCEFORGE:=ngspice/}
 
 USE_GMAKE ?=		yes
 
-AUTOCONF_VERSION =	2.69
+AUTOCONF_VERSION =	2.71
 AUTOMAKE_VERSION =	1.16
 
 CONFIGURE_STYLE =	autoreconf

@@ -2,7 +2,7 @@ COMMENT =	ngspice shared library, based on Berkeley SPICE
 
 PKGNAME =	libngspice-${V}
 
-SHARED_LIBS +=  ngspice                0.0 # 0.0
+SHARED_LIBS +=  ngspice                1.0 # 0.14
 
 WANTLIB += ${COMPILER_LIBCXX} m pthread
 
