@@ -4,7 +4,7 @@ PKGNAME =	libngspice-${V}
 
 SHARED_LIBS +=  ngspice                0.0 # 0.0
 
-WANTLIB += m pthread
+WANTLIB += ${COMPILER_LIBCXX} m pthread
 
 CONFIGURE_ARGS +=	--with-ngshared \
 			--enable-shared
