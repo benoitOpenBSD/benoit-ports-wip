@@ -24,7 +24,8 @@ RUN_DEPENDS =		graphics/py-matplotlib \
 			math/py-numexpr \
 			math/py-scipy \
 			textproc/py-markdown \
-			x11/py-qt5
+			x11/py-qt5 \
+			devel/mplcursors
 
 NO_TEST =		Yes
 
