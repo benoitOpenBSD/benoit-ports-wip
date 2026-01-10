@@ -1,9 +1,11 @@
 
 COMMENT =		python filter design analysis tool
 
-MODPY_EGG_VERSION = 	v0.9.5
-DISTNAME =		pyfda-${MODPY_EGG_VERSION}
-PKGNAME =		py-${DISTNAME}
+MODPY_EGG_VERSION =     0.9.5
+GH_ACCOUNT =    	chipmuenk
+GH_PROJECT =    	pyfda
+GH_TAGNAME =		v${MODPY_EGG_VERSION}
+
 CATEGORIES =		cad
 
 HOMEPAGE =		https://github.com/chipmuenk/pyfda
@@ -14,12 +16,12 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 PERMIT_PACKAGE =	Yes
 
 MODULES =		lang/python
-MODPY_SETUPTOOLS =	Yes
-MODPY_PI =		Yes
+
+MODPY_PYBUILD =		setuptools
 
 RUN_DEPENDS =		graphics/py-matplotlib \
 			math/py-numpy \
-			math/py-numexpr \ 
+			math/py-numexpr \
 			math/py-scipy \
 			textproc/py-markdown \
 			x11/py-qt5
