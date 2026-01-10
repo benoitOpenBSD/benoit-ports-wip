@@ -1,10 +1,12 @@
 
 COMMENT =		python filter design analysis tool
 
-MODPY_EGG_VERSION =     0.9.5
+#MODPY_EGG_VERSION =     0.9.5
+DISTNAME =		pyfda-260109
 GH_ACCOUNT =    	chipmuenk
 GH_PROJECT =    	pyfda
-GH_TAGNAME =		v${MODPY_EGG_VERSION}
+#GH_TAGNAME =		v${MODPY_EGG_VERSION}
+GH_COMMIT =		1b4e8b46beec64da388704838567e27d81882556
 
 CATEGORIES =		cad
 
