@@ -21,12 +21,16 @@ MODULES =	devel/cmake \
 		x11/qt5
 
 LIB_DEPENDS =	converters/libiconv \
-		x11/qt5/qtsvg
+		x11/qt5/qtsvg \
+		x11/qt5/qtcharts
 
 RUN_DEPENDS =	cad/ngspice/ngspice \
-		math/gnuplot
+		math/gnuplot \
+		converters/dos2unix
 
 BUILD_DEPENDS =	devel/bison \
-		devel/ninja
+		devel/ninja \
+		devel/gperf \
+		converters/dos2unix
 
 .include <bsd.port.mk>
