@@ -3,6 +3,7 @@
 @bin bin/qucs-sattenuator
 @bin bin/qucs-sfilter
 @bin bin/qucs-spowercombining
+@bin bin/qucs-sspar-viewer
 @bin bin/qucs-strans
 bin/qucs_mkdigilib
 bin/qucs_run_hdl
@@ -56,6 +57,8 @@ share/qucs-s/examples/ngspice/BJT-noise.sch
 share/qucs-s/examples/ngspice/BJT-swp.sch
 share/qucs-s/examples/ngspice/BJT.sch
 share/qucs-s/examples/ngspice/BJT_Phase_Shift_Osc.sch
+share/qucs-s/examples/ngspice/BJT_TEMPER_swp.sch
+share/qucs-s/examples/ngspice/BJT_T_swp.sch
 share/qucs-s/examples/ngspice/BJT_dc.sch
 share/qucs-s/examples/ngspice/BSIM4/
 share/qucs-s/examples/ngspice/BSIM4/BSIM4_Ring_Osc.sch
@@ -174,6 +177,7 @@ share/qucs-s/examples/ngspice/time_resistor.sch
 share/qucs-s/examples/qucsator/
 share/qucs-s/examples/qucsator/Amp_Baseband_Low-noise.sch
 share/qucs-s/examples/qucsator/Amp_Two_Tone.sch
+share/qucs-s/examples/qucsator/BJT_T_swp_qucs.sch
 share/qucs-s/examples/qucsator/BPF_1550_edge_cpld.sch
 share/qucs-s/examples/qucsator/BPF_2000_Co-ax.sch
 share/qucs-s/examples/qucsator/Comb_Gen.sch
@@ -389,6 +393,7 @@ share/qucs-s/library/PMOSFETs.lib
 share/qucs-s/library/PWM_Controller.lib
 share/qucs-s/library/PhotovoltaicRelay.lib
 share/qucs-s/library/Regulators.lib
+share/qucs-s/library/SPICE_TLine.lib
 share/qucs-s/library/SpiceOpamp.lib
 share/qucs-s/library/Substrates.lib
 share/qucs-s/library/Thermistor.lib

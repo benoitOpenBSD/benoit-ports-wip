@@ -1,6 +1,6 @@
 COMMENT =	circuit simulation program
 
-V =		24.3.0
+V =		24.4.0
 DISTNAME =	qucs-s-${V}
 
 CATEGORIES =	cad
