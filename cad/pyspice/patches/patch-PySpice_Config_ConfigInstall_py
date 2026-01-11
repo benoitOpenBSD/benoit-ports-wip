@@ -5,7 +5,7 @@
          elif sys.platform.startswith('darwin'):
              self._name = 'osx'
 +        elif sys.platform.startswith('openbsd'):
-+            self.name = 'openbsd'
++            self._name = 'openbsd'
  
      ##############################################
  
