@@ -14,13 +14,10 @@ MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 PERMIT_PACKAGE =	Yes
 
 MODULES =		lang/python
-MODPY_SETUPTOOLS =	Yes
+MODPY_PYBUILD =		setuptools
 MODPY_PI =		Yes
 
-FLAVORS =		python3
-FLAVOR =		python3
-
-RUN_DEPENDS =		graphics/py-matplotlib${MODPY_FLAVOR}
+RUN_DEPENDS =		graphics/py-matplotlib
 
 NO_TEST =		Yes
 
