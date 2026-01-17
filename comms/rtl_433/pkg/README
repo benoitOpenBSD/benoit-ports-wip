@@ -1,0 +1,21 @@
++-------------------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-------------------------------------------------------------------------------
+
+Configuration examples
+======================
+
+Sample configurations and decoders for various RF devices are available in: 
+${TRUEPREFIX}/share/examples/${PKGSTEM}
+
+Tuning and Performance
+======================
+
+The default sample rate used by ${PKGSTEM} may be too high for some hardware or
+environments, potentially preventing capturing any packets.
+
+Testing has shown that a sample rate of 1024k is generally stable and sufficient
+for most supported devices. You can specify this rate using the -s flag:
+
+# ${PKGSTEM} -s 1024k
+
