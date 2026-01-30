@@ -1,10 +1,12 @@
-@comment $OpenBSD$
 bin/cpu_rec.py
 share/cpu_rec_corpus/
 share/cpu_rec_corpus/#6502#cc65.corpus.xz
+share/cpu_rec_corpus/6502.corpus.xz
 share/cpu_rec_corpus/68HC08.corpus.xz
 share/cpu_rec_corpus/68HC11.corpus.xz
 share/cpu_rec_corpus/8051.corpus.xz
+share/cpu_rec_corpus/ARC32eb.corpus.xz
+share/cpu_rec_corpus/ARC32el.corpus.xz
 share/cpu_rec_corpus/ARM64.corpus.xz
 share/cpu_rec_corpus/ARMeb.corpus.xz
 share/cpu_rec_corpus/ARMel.corpus.xz
@@ -15,6 +17,7 @@ share/cpu_rec_corpus/Alpha.corpus.xz
 share/cpu_rec_corpus/AxisCris.corpus.xz
 share/cpu_rec_corpus/Blackfin.corpus.xz
 share/cpu_rec_corpus/CLIPPER.corpus.xz
+share/cpu_rec_corpus/CUDA.corpus.xz
 share/cpu_rec_corpus/Cell-SPU.corpus.xz
 share/cpu_rec_corpus/CompactRISC.corpus.xz
 share/cpu_rec_corpus/Cray.corpus.xz
@@ -23,6 +26,7 @@ share/cpu_rec_corpus/FR-V.corpus.xz
 share/cpu_rec_corpus/FR30.corpus.xz
 share/cpu_rec_corpus/FT32.corpus.xz
 share/cpu_rec_corpus/H8-300.corpus.xz
+share/cpu_rec_corpus/H8S.corpus.xz
 share/cpu_rec_corpus/HP-Focus.corpus.xz
 share/cpu_rec_corpus/HP-PA.corpus.xz
 share/cpu_rec_corpus/IA-64.corpus.xz
@@ -64,15 +68,20 @@ share/cpu_rec_corpus/TILEPro.corpus.xz
 share/cpu_rec_corpus/TLCS-90.corpus.xz
 share/cpu_rec_corpus/TMS320C2x.corpus.xz
 share/cpu_rec_corpus/TMS320C6x.corpus.xz
+share/cpu_rec_corpus/TriMedia.corpus.xz
 share/cpu_rec_corpus/V850.corpus.xz
 share/cpu_rec_corpus/VAX.corpus.xz
 share/cpu_rec_corpus/Visium.corpus.xz
+share/cpu_rec_corpus/WASM.corpus.xz
 share/cpu_rec_corpus/WE32000.corpus.xz
 share/cpu_rec_corpus/X86-64.corpus.xz
 share/cpu_rec_corpus/X86.corpus.xz
 share/cpu_rec_corpus/Xtensa.corpus.xz
+share/cpu_rec_corpus/XtensaEB.corpus.xz
 share/cpu_rec_corpus/Z80.corpus.xz
 share/cpu_rec_corpus/_mask1.corpus.xz
 share/cpu_rec_corpus/_ones.corpus.xz
+share/cpu_rec_corpus/_words.corpus.xz
+share/cpu_rec_corpus/_words_ucs2.corpus.xz
 share/cpu_rec_corpus/_zero.corpus.xz
 share/cpu_rec_corpus/i860.corpus.xz

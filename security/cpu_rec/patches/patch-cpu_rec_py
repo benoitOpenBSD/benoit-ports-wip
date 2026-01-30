@@ -1,18 +1,17 @@
-$OpenBSD$
---- cpu_rec.py.orig	Mon Apr 24 17:50:44 2017
-+++ cpu_rec.py	Wed Jun  7 09:32:24 2017
+--- cpu_rec.py.orig.port	Sun Mar 10 17:59:40 2024
++++ cpu_rec.py	Fri Jan 30 23:00:30 2026
 @@ -1,4 +1,4 @@
 -#! /usr/bin/env python
 +#! ${MODPY_BIN}
  # Tested with python >= 2.4
  
  # cpu_rec.py is a tool that recognizes cpu instructions
-@@ -238,7 +238,8 @@
+@@ -302,7 +302,8 @@
+         return res
      def read_corpus(self):
          """ Gets the raw training dataset """
-         import os
--        basedir = os.path.dirname(__file__)
-+        # basedir = os.path.dirname(__file__)
+-        basedir = os.path.dirname(os.path.realpath(__file__))
++        # basedir = os.path.dirname(os.path.realpath(__file__))
 +        basedir = '/usr/local/share/'
          if basedir != '': basedir += '/'
          # If the default training set has been installed along cpu_rec.py,

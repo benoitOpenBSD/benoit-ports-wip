@@ -1,7 +1,7 @@
 
 COMMENT =		recognize cpu instructions in an arbitrary binary file
 
-MODPY_EGG_VERSION =	1.0
+MODPY_EGG_VERSION =	1.1
 GH_ACCOUNT =            airbus-seclab
 GH_PROJECT =            cpu_rec
 GH_TAGNAME =            v${MODPY_EGG_VERSION}
@@ -12,12 +12,12 @@ HOMEPAGE =		https://github.com/airbus-seclab/cpu_rec
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
 # Apache v2
-PERMIT_PACKAGE_CDROM =	Yes
+PERMIT_PACKAGE =	Yes
 
 SITES =                 ${SITES_GITHUB}
 
 MODULES =		lang/python
-MODPY_VERSION =		${MODPY_DEFAULT_VERSION_3}
+#MODPY_PI =		Yes
 
 NO_TEST =		Yes
 NO_BUILD =		Yes
