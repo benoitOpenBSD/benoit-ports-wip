@@ -1,3 +1,2 @@
-@comment $OpenBSD$
 @bin bin/wipe
 @man man/man1/wipe.1
