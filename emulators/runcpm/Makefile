@@ -2,7 +2,7 @@
 COMMENT =		a Z80 CP/M 2.2 emulator
 
 DISTNAME =		runCPM
-PKGNAME =		runCPM-v6.9-251125
+PKGNAME =		runCPM-v6.9-260120
 CATEGORIES =		emulators
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -16,7 +16,7 @@ HOMEPAGE =		https://github.com/MockbaTheBorg/RunCPM
 
 GH_ACCOUNT =		MockbaTheBorg
 GH_PROJECT =		RunCPM
-GH_COMMIT =		b9cd2ecda8004e2ea276875860f605ec5d823954
+GH_COMMIT =		3362319c28634a5515a797c7799683f345fb82d0
 
 WANTLIB +=		c m curses
 
