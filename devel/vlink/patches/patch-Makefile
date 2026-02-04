@@ -1,5 +1,5 @@
---- Makefile.orig	Wed Jul 21 18:20:35 2021
-+++ Makefile	Fri Nov  4 22:32:44 2022
+--- Makefile.orig.port	Wed Jul 12 13:18:54 2023
++++ Makefile	Wed Feb  4 21:11:12 2026
 @@ -5,9 +5,9 @@
  MD = mkdir
  RM = rm -f
@@ -7,8 +7,8 @@
 -CC = gcc
 +CC = cc
  CCOUT = -o $(DUMMYVARIABLE)	# produces the string "-o "
--COPTS = -std=c99 -pedantic -O2 -fomit-frame-pointer -c
-+COPTS = -std=c99 -O2 -fomit-frame-pointer -c
+-CFLAGS = -std=c99 -pedantic -O2 -fomit-frame-pointer -c
++CFLAGS = -std=c99 -O2 -fomit-frame-pointer -c
  CONFIG =
  
  LD = $(CC)

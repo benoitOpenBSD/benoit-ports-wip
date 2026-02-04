@@ -1,8 +1,8 @@
 
 COMMENT =		portable multi-format linker
 
-PKGNAME =		vlink-0.17a
-DISTNAME =      	vlink0_17a
+PKGNAME =		vlink-0.18a
+DISTNAME =      	vlink0_18a
 
 CATEGORIES =		devel
 
