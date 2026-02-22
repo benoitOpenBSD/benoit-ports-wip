@@ -18,14 +18,12 @@ GH_TAGNAME =    	v${MODPY_EGG_VERSION}
 MODULES =		lang/python
 MODPY_PYBUILD =		setuptools
 
-RUN_DEPENDS =		devel/py-astroid${MODPY_FLAVOR} \
-			devel/py-asttokens${MODPY_FLAVOR} \
+RUN_DEPENDS =		devel/py-asttokens${MODPY_FLAVOR} \
 			devel/py-jedi${MODPY_FLAVOR} \
 			devel/py-mypy${MODPY_FLAVOR} \
 			devel/py-send2trash${MODPY_FLAVOR} \
 			devel/py-serial${MODPY_FLAVOR} \
 			devel/pylint${MODPY_FLAVOR} \
-			lang/python/${MODPY_VERSION},-tkinter \
 			textproc/py-docutils${MODPY_FLAVOR} \
 			${MODPY_TKINTER_DEPENDS}
 
