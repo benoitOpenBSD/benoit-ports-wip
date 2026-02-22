@@ -1,0 +1,13 @@
+Thonny is a simple Python IDE targeting beginners and conceived as a learning tool.
+
+It comes with a few features for learning from/how to code:
+
+  - Python 3.10 built in, but can use OS version
+  - Variables glance
+  - Simple debugger
+  - Expression evaluation popups
+  - function representation
+  - syntax errors highlighting
+  - variable scopes informations
+  - code completion
+  - pip access through a GUI
