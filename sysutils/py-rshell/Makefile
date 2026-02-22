@@ -1,7 +1,7 @@
 
 COMMENT =		remote Shell for MicroPython
 
-MODPY_EGG_VERSION =	20220518
+MODPY_EGG_VERSION =	20241204
 DISTNAME =		rshell-${MODPY_EGG_VERSION}
 PKGNAME =		py-${DISTNAME}
 
@@ -14,14 +14,11 @@ PERMIT_PACKAGE =	Yes
 
 GH_ACCOUNT =    	dhylands
 GH_PROJECT =    	rshell
-GH_COMMIT =		b87878c01aa02d6cd871ff4666983dee5584af16
+GH_COMMIT =		7441a2529149f3bdee64503d4412416b8387c8f3
 
 MODULES =		lang/python
 
-FLAVORS =		python3
-FLAVOR =		python3
-
-MODPY_SETUPTOOLS =	Yes
+MODPY_PYBUILD =		setuptools
 
 NO_TEST =		Yes
                 
