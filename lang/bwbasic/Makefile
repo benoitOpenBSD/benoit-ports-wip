@@ -1,7 +1,8 @@
 
 COMMENT =	Bywater BASIC, portable BASIC interpreter
-DISTNAME =	bwbasic-3.20
+DISTNAME =	bwbasic-3.30
 CATEGORIES =	lang
+
 HOMEPAGE =	http://bwbasic.sourceforge.net/
 
 # GPLv2

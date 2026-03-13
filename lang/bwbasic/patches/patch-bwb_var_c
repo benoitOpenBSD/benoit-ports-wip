@@ -1,9 +1,9 @@
---- bwb_var.c.orig	Thu Jun  8 11:20:12 2017
-+++ bwb_var.c	Fri Jul  2 18:57:07 2021
-@@ -111,9 +111,7 @@ bwb_COMMON (LineType * l)
+--- bwb_var.c.orig.port	Tue Dec 31 17:43:44 2019
++++ bwb_var.c	Fri Mar 13 22:05:00 2026
+@@ -111,9 +111,7 @@
          /* COMMON A(,,) : DIM A( 5, 10, 20 ) */
          dimensions++;
-         while (line_skip_seperator (l));
+         while (line_skip_seperator (l))
 -        {
 -          dimensions++;
 -        }

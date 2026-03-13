@@ -1,3 +1,2 @@
-@comment $OpenBSD: PLIST,v$
 @bin bin/bwbasic
 @bin bin/renum
