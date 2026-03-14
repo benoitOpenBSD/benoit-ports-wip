@@ -1,7 +1,7 @@
 ONLY_FOR_ARCHS =	amd64
 
 COMMENT =	small C11 compiler
-DISTNAME =	chibicc-0.0.0pl20201206
+DISTNAME =	chibicc-0.0.0pl20220622
 CATEGORIES =	lang
 
 GH_ACCOUNT =	ibara
