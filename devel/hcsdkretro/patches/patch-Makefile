@@ -1,0 +1,14 @@
+--- Makefile~	Wed Mar 18 01:48:00 2026
++++ Makefile	Fri Mar 20 15:41:20 2026
+@@ -1,9 +1,9 @@
+-M = @make --no-print-directory --silent $@ -C
++M = @gmake  $@ -C
+ INSTDIR = /usr/local/bin
+ include version.mk
+ 
+ all clean test posix linux macos win win32 samples_zip:
+-	@make --no-print-directory --silent version_$@
++	@gmake version_$@
+ 	$M hcasm
+ 	$M hclink
+ 	$M hclib
