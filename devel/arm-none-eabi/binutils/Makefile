@@ -1,8 +1,7 @@
 COMMENT=	binutils for ${CONFIG} cross-development
 
-VERSION=	2.31.1
+VERSION=		2.40
 DISTNAME=	binutils-${VERSION}
-REVISION=	0
 
 FLAVORS=	aarch64 arm
 FLAVOR?=	arm
@@ -17,16 +16,18 @@ ERRORS+=	"either aarch64 or arm FLAVOR should be set"
 
 HOMEPAGE=	https://www.gnu.org/software/binutils/
 
-WANTLIB=	c
+WANTLIB=	c z
 
 SITES=		${SITE_GNU:=binutils/}
 DIST_SUBDIR=	binutils
 
+USE_GMAKE=	Yes
 USE_LIBTOOL=	No
 
 CONFIGURE_ARGS+=--enable-commonbfdlib=no \
 		--enable-interwork	 \
-		--enable-multilib
+		--enable-multilib	\
+		--without-zstd
 
 SUBST_VARS +=	CONFIG
 
