@@ -1,8 +1,7 @@
-
 COMMENT =		Python implementation of ECDSA cryptography
 
-MODPY_EGG_VERSION = 	0.17.0
-DISTNAME = 		ecdsa-${MODPY_EGG_VERSION}
+MODPY_DISTV =		0.19.2
+DISTNAME = 		ecdsa-${MODPY_DISTV}
 PKGNAME = 		py-${DISTNAME}
 CATEGORIES = 		security
 
@@ -16,16 +15,10 @@ PERMIT_PACKAGE =	Yes
 MODPY_PI =		Yes
 
 MODULES =		lang/python
-MODPY_SETUPTOOLS =	Yes
-MODPY_PYTEST =		Yes
+MODPY_PYBUILD =		setuptools
 MODPY_PYTEST_ARGS =	src/ecdsa
 
-FLAVORS =		python3
-FLAVOR =		python3
-
-RUN_DEPENDS =		devel/py-six${MODPY_FLAVOR}
-
-TEST_DEPENDS =		devel/py-hypothesis${MODPY_FLAVOR} \
-			devel/py-test${MODPY_FLAVOR}
+RUN_DEPENDS =		devel/py-six
+TEST_DEPENDS =		devel/py-hypothesis
 
 .include <bsd.port.mk>
