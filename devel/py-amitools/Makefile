@@ -10,7 +10,7 @@ PKGNAME =		py-${DISTNAME}
 
 CATEGORIES =            devel
 
-HOMEPAGE =		https://github.com/cnvogelg/machine68k/
+HOMEPAGE =		https://github.com/cnvogelg/amitools/
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
 
