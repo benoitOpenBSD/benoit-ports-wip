@@ -1,0 +1,3 @@
+machine68k is a Python package that offers a system binding for the Musashi 
+Motorola 68000 CPU emulator with memory binding and support for ALine opcode 
+exception traps.
