@@ -1,8 +1,8 @@
 
 COMMENT =		portable and retargetable assembler
 
-PKGNAME =		vasm-2.0d
-DISTNAME =      	vasm2_0d
+PKGNAME =		vasm-2.0f
+DISTNAME =      	vasm2_0f
 
 CATEGORIES =		devel
 
