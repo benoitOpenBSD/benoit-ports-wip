@@ -1,0 +1,35 @@
+--- support.c.orig	Mon Dec 23 19:14:14 2024
++++ support.c	Tue Oct 27 15:09:03 2026
+@@ -257,32 +257,6 @@
+   return *((uint8_t *)&x)==1 ? _BIG_ENDIAN_ : _LITTLE_ENDIAN_;
+ }
+ 
+-
+-uint16_t swap16(uint16_t x)
+-/* 16-bit endian conversion */
+-{
+-  return (x&0xff)<<8 | (x&0xff00)>>8;
+-}
+-
+-
+-uint32_t swap32(uint32_t x)
+-/* 32-bit endian conversion */
+-{
+-  return (x&0xff)<<24 | (x&0xff00)<<8 |
+-         (x&0xff0000)>>8 | (x&0xff000000)>>24;
+-}
+-
+-
+-uint64_t swap64(uint64_t x)
+-/* 64-bit endian conversion */
+-{
+-  return (x&0xff)<<56 | (x&0xff00)<<40 |
+-         (x&0xff0000)<<24 | (x&0xff000000)<<8 |
+-         (x&0xff00000000LL)>>8 | (x&0xff0000000000LL)>>24 |
+-         (x&0xff000000000000LL)>>40 | (x&0xff00000000000000LL)>>56;
+-}
+-
+-
+ uint16_t read16be(void *vp)
+ /* read 16 bit word in big endian format */
+ {

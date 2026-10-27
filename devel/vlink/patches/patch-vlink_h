@@ -1,8 +1,49 @@
---- vlink.h.orig	Sun Jun 26 20:27:01 2022
-+++ vlink.h	Fri Nov  4 22:34:53 2022
-@@ -769,9 +769,11 @@
+--- vlink.h.orig	Sat Nov  1 12:29:14 2025
++++ vlink.h	Tue Oct 27 15:09:07 2026
+@@ -17,39 +17,7 @@
+ /* program's name */
+ #define PNAME "vlink"
+ 
+-/* integer types - non ISO-C99 compliant compilers have to define TYPESxxBIT */
+-#if defined(TYPES32BIT)
+-typedef signed char int8_t;
+-typedef unsigned char uint8_t;
+-typedef signed short int int16_t;
+-typedef unsigned short int uint16_t;
+-typedef signed long int int32_t;
+-typedef unsigned long int uint32_t;
+-typedef signed long long int int64_t;
+-typedef unsigned long long int uint64_t;
+-typedef unsigned int uintptr_t;
+-#elif defined(TYPES64BIT)
+-typedef signed char int8_t;
+-typedef unsigned char uint8_t;
+-typedef signed short int16_t;
+-typedef unsigned short uint16_t;
+-typedef signed int int32_t;
+-typedef unsigned int uint32_t;
+-typedef signed long int int64_t;
+-typedef unsigned long int uint64_t;
+-typedef unsigned long uintptr_t;
+-#elif defined(_MSC_VER) && (_MSC_VER < 1600)
+-typedef __int8 int8_t;	            /* prior to VS2010 stdint.h is missing */
+-typedef unsigned __int8 uint8_t;
+-typedef __int16 int16_t;
+-typedef unsigned __int16 uint16_t;
+-typedef __int32 int32_t;
+-typedef unsigned __int32 uint32_t;
+-typedef __int64 int64_t;
+-typedef unsigned __int64 uint64_t;
+-#else
+-#include <stdint.h>  /* C99 */
+-#endif
++#include <stdint.h> /* C99 */
+ 
+ /* linker word for addresses, values, offsets, etc. */
+ typedef int64_t lword;
+@@ -832,9 +800,11 @@
  char *check_name(char *);
- bool checkrange(lword,bool,int);
+ bool checkrange(lword,int,int);
  int8_t host_endianness(void);
 +/*
  uint16_t swap16(uint16_t);

@@ -25,7 +25,7 @@ WRKDIST =		${WRKDIR}/vlink
 
 NO_TEST =		Yes
 
-#do-install:
-#	${INSTALL_PROGRAM} ${WRKBUILD}/vlink  ${PREFIX}/bin
+do-install:
+	${INSTALL_PROGRAM} ${WRKBUILD}/vlink  ${PREFIX}/bin
 
 .include <bsd.port.mk>
