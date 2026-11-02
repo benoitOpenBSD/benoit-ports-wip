@@ -1,12 +1,11 @@
-$OpenBSD$
---- Makefile.orig	Sun May 16 20:05:09 2021
-+++ Makefile	Sun May 16 20:05:14 2021
-@@ -30,7 +30,7 @@
+--- Makefile.orig	Mon Nov  2 22:19:57 2026
++++ Makefile	Mon Nov  2 22:20:45 2026
+@@ -52,7 +52,7 @@
+ 
  # Various commands.
  
- AR = ar
--CC = gcc
-+CC = cc
+-LUA ?= lua
++LUA ?= lua54
  
- # Which build system to use; use 'ninja' or 'make' (in lower case). Leave
- # blank to autodetect.
+ .PHONY: all
+ all: +all

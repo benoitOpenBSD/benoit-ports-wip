@@ -1,7 +1,7 @@
 
 COMMENT =		the Amsterdam Compiler Kit
 
-DISTNAME =		ack-20210504
+DISTNAME =		ack-20261102
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -15,12 +15,24 @@ HOMEPAGE =		https://github.com/davidgiven/ack
 
 GH_ACCOUNT =		davidgiven
 GH_PROJECT =		ack
-GH_COMMIT =		8b53004031c3b44063c2260ebf352eaae643b23f
+GH_COMMIT =		c9bccd0f07212a4ea98ef04bec2db82306886e6e
 
 WANTLIB +=		c
 
+COMPILER =		ports-gcc
+COMPILER_LANGS =	c
+
+MODULES =		gcc \
+			lang/lua
+
 USE_GMAKE =		Yes
 MAKE_FLAGS =		BUILDDIR=${WRKSRC}/ack-build PREFIX=/usr/local/ack
+
+CFLAGS +=		-DUNREACHABLE_CODE="__builtin_unreachable()" \
+			-DNORETURN=_Noreturn
+        
+BUILD_DEPENDS =		devel/libconfig \
+			devel/luaposix
 
 NO_TEST =		Yes
 

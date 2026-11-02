@@ -1,0 +1,13 @@
+--- build/ab.mk.orig	Mon Nov  2 21:52:39 2026
++++ build/ab.mk	Mon Nov  2 21:53:23 2026
+@@ -11,8 +11,8 @@
+ ECHO ?= echo
+ CP ?= cp
+ 
+-HOSTCC ?= gcc
+-HOSTCXX ?= g++
++HOSTCC ?= egcc
++HOSTCXX ?= eg++
+ HOSTAR ?= ar
+ HOSTCFLAGS ?= -g -Og
+ HOSTCXXFLAGS ?= $(HOSTCFLAGS)
