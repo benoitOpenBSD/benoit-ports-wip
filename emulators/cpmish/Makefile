@@ -1,7 +1,7 @@
 
 COMMENT =		open source sort-of-CP/M distribution
 
-DISTNAME =		cpmish-20251010
+DISTNAME =		cpmish-20260817
 CATEGORIES =		emulators
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -15,7 +15,7 @@ HOMEPAGE =		https://github.com/davidgiven/cpmish
 
 GH_ACCOUNT =		davidgiven
 GH_PROJECT =		cpmish
-GH_COMMIT =		7f37cae18ca45b5338befec8b90db3663f44dc09
+GH_COMMIT =		1f60541b619c1e983f05e68a064c027d1cdeb113
 
 WANTLIB +=		c
 
