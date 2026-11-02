@@ -23,6 +23,7 @@ COMPILER =		ports-gcc
 COMPILER_LANGS =	c
 
 MODULES =		gcc \
+			devel/cmake \
 			lang/lua
 
 USE_GMAKE =		Yes
