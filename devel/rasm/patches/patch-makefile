@@ -1,26 +1,22 @@
-Index: makefile
---- makefile.orig
-+++ makefile
-@@ -1,7 +1,7 @@
+--- makefile.orig.port	Mon Nov  2 14:02:12 2026
++++ makefile	Mon Nov  2 21:12:42 2026
+@@ -1,5 +1,5 @@
  CC=cc
 -EXEC=rasm.exe
 +EXEC=rasm
  
--CFLAGS=-lm  -march=native -o $(EXEC)
-+CFLAGS=-lm -march=native -o $(EXEC)
- CFLAGS_OPT = $(CFLAGS) -O2
- CFLAGS_DBG = $(CFLAGS) -O0 -g -pthread
- CFLAGS_3RD = $(CFLAGS) -g -pthread -DNO_3RD_PARTIES
-@@ -10,7 +10,7 @@ SRC_APUDIR=./apultra-master/src
- SRC_LZSADIR=./lzsa-master/src
- SRC_ZX0DIR=./ZX0-main/src
+ CFLAGS=-lm  -march=native -o $(EXEC)
+ CFLAGS_OPT = $(CFLAGS) -O2 -Wpointer-sign
+@@ -13,7 +13,7 @@
+ SRC_SALVADOR=./salvador/src
+ SRC_Z80_MASTER=./z80-master
  
 -APU_FLAGS=-c -O3 -fomit-frame-pointer -I$(SRC_LZSADIR)/libdivsufsort/include -I$(SRC_APUDIR)
 +APU_FLAGS=-c -O2 -fomit-frame-pointer -I$(SRC_LZSADIR)/libdivsufsort/include -I$(SRC_APUDIR)
  
  APU_OBJ =$(SRC_APUDIR)/expand.o
  APU_OBJ+=$(SRC_APUDIR)/matchfinder.o
-@@ -20,7 +20,7 @@ APU_OBJ+=$(SRC_APUDIR)/libdivsufsort/lib/divsufsort_ut
+@@ -23,7 +23,7 @@
  APU_OBJ+=$(SRC_APUDIR)/libdivsufsort/lib/sssort.o
  APU_OBJ+=$(SRC_APUDIR)/libdivsufsort/lib/trsort.o
  
@@ -29,3 +25,12 @@ Index: makefile
  
  LZSA_OBJ =$(SRC_LZSADIR)/dictionary.o
  LZSA_OBJ+=$(SRC_LZSADIR)/expand_block_v1.o
+@@ -38,7 +38,7 @@
+ LZSA_OBJ+=$(SRC_LZSADIR)/shrink_inmem.o
+ LZSA_OBJ+=$(SRC_LZSADIR)/stream.o
+ 
+-SALVADOR_FLAGS=-c -O3 -fomit-frame-pointer -I$(SRC_LZSADIR)/libdivsufsort/include -I$(SRC_SALVADOR)
++SALVADOR_FLAGS=-c -O2 -fomit-frame-pointer -I$(SRC_LZSADIR)/libdivsufsort/include -I$(SRC_SALVADOR)
+ 
+ SALVADOR_OBJ =$(SRC_SALVADOR)/expand.o
+ SALVADOR_OBJ+=$(SRC_SALVADOR)/matchfinder.o
