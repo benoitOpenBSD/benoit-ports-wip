@@ -1,0 +1,6 @@
+include/a8cas.h
+@static-lib lib/liba8cas.a
+lib/liba8cas.la
+@lib lib/liba8cas.so.${LIBa8cas_VERSION}
+share/aclocal/
+share/aclocal/a8cas.m4

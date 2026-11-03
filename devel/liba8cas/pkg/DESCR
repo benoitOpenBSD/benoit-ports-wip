@@ -1,0 +1,9 @@
+This package contains sources of the A8CAS library. The library provides
+support for reading and writing tapes used by Atari 8-bit computers.
+
+There is support for reading and writing to sound files containing audio
+recordings of real tapes. All audio formats supported by libsndfile are
+available for reading and writing; the notable ones are WAV, Ogg/Vorbis
+(read-only) and FLAC (read-only). Creating new tapes is only posible in WAV.
+(This is likely to change in future releases).
+
