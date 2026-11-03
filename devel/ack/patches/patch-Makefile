@@ -1,6 +1,7 @@
---- Makefile.orig	Mon Nov  2 22:19:57 2026
-+++ Makefile	Mon Nov  2 22:20:45 2026
-@@ -52,7 +52,7 @@
+Index: Makefile
+--- Makefile.orig
++++ Makefile
+@@ -52,7 +52,7 @@ ACKLDFLAGS =
  
  # Various commands.
  

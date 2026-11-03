@@ -29,9 +29,9 @@ MODULES =		gcc \
 USE_GMAKE =		Yes
 MAKE_FLAGS =		BUILDDIR=${WRKSRC}/ack-build PREFIX=/usr/local/ack
 
-CFLAGS +=		-DUNREACHABLE_CODE="__builtin_unreachable()" \
-			-DNORETURN=_Noreturn
-        
+CFLAGS +=		-DNORETURN=_Noreturn \
+			-DUNREACHABLE_CODE="__builtin_unreachable()"
+
 BUILD_DEPENDS =		devel/libconfig \
 			devel/luaposix
 
@@ -43,5 +43,5 @@ do-install:
 			${INSTALL_PROGRAM} ${WRKSRC}/ack-build/staging/bin/* ${PREFIX}/ack/bin/
 			cp -R ${WRKSRC}/ack-build/staging/lib/* ${PREFIX}/ack/lib/
 			cp -R ${WRKSRC}/ack-build/staging/share/* ${PREFIX}/ack/share/
-			
+
 .include <bsd.port.mk>
