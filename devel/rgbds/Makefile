@@ -1,51 +1,39 @@
-COMMENT =		rednex Game Boy Development System
+COMMENT =	Game Boy development system
 
-V =			0.6.1
-DISTNAME =		rgbds-${V}
-CATEGORIES =		devel
+V =		1.0.4
+DISTNAME =	rgbds-$V
+DISTFILES =	rgbds-$V{rgbds-source}${EXTRACT_SUFX}
 
-MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
+CATEGORIES =	devel
+
+HOMEPAGE =	https://rgbds.gbdev.io/
+
+MAINTAINER =	Anthony J. Bentley <bentley@openbsd.org>
 
 # MIT
 PERMIT_PACKAGE =	Yes
 
-HOMEPAGE =		https://rgbds.gbdev.io/
+# uses pledge()
+WANTLIB += ${COMPILER_LIBCXX} c m png z
 
-SITES =			https://github.com/gbdev/rgbds/releases/download/v$V/
+SITES =		https://github.com/gbdev/rgbds/releases/download/v$V/
 
-COMPILER =		ports-gcc
-COMPILER_LANGS =	c c++
+COMPILER =	base-clang ports-gcc
 
-WANTLIB +=		c m png z
+MODULES =	devel/cmake
 
-WRKDIST =		${WRKDIR}/rgbds
+BUILD_DEPENDS =	devel/bison \
+		shells/bash
 
-USE_GMAKE =		Yes
+LIB_DEPENDS =	graphics/png
 
-MAKE_FLAGS =		CFLAGS="${CFLAGS}" \
-			CXXFLAGS="${CXXFLAGS}" \
-			CXX="${CXX}" \
-			BINMODE=${BINMODE} \
-			MANMODE=${MANMODE} \
-			Q=
+FAKE_FLAGS =	mandir=${PREFIX}/man
 
-LIB_DEPENDS =		graphics/png
+# tests require network access, involve building software with unclear license
+NO_TEST =	Yes
 
-NO_TEST =		Yes
+WRKDIST =	${WRKDIR}/rgbds
 
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/rgbasm ${PREFIX}/bin/
-	${INSTALL_PROGRAM} ${WRKSRC}/rgbfix ${PREFIX}/bin/
-	${INSTALL_PROGRAM} ${WRKSRC}/rgbgfx ${PREFIX}/bin/
-	${INSTALL_PROGRAM} ${WRKSRC}/rgblink ${PREFIX}/bin/
-	${INSTALL_MAN} ${WRKSRC}/man/rgbasm.1 ${PREFIX}/man/man1
-	${INSTALL_MAN} ${WRKSRC}/man/rgbfix.1 ${PREFIX}/man/man1
-	${INSTALL_MAN} ${WRKSRC}/man/rgbgfx.1 ${PREFIX}/man/man1
-	${INSTALL_MAN} ${WRKSRC}/man/rgblink.1 ${PREFIX}/man/man1
-	${INSTALL_MAN} ${WRKSRC}/man/rgbds.5 ${PREFIX}/man/man5
-	${INSTALL_MAN} ${WRKSRC}/man/rgbasm.5 ${PREFIX}/man/man5
-	${INSTALL_MAN} ${WRKSRC}/man/rgblink.5 ${PREFIX}/man/man5
-	${INSTALL_MAN} ${WRKSRC}/man/rgbds.7 ${PREFIX}/man/man7
-	${INSTALL_MAN} ${WRKSRC}/man/gbz80.7 ${PREFIX}/man/man7
+DEBUG_PACKAGES = ${BUILD_PACKAGES}
 
 .include <bsd.port.mk>
