@@ -1,7 +1,7 @@
 
 COMMENT =		interactive data selection cursors for Matplotlib
 
-MODPY_EGG_VERSION =     0.7
+MODPY_EGG_VERSION =     0.7.1
 GH_ACCOUNT =    	anntzer
 GH_PROJECT =    	mplcursors
 GH_TAGNAME =		v${MODPY_EGG_VERSION}
