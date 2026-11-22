@@ -15,3 +15,4 @@ share/rasm/decrunch/unaplib.asm
 share/rasm/decrunch/unaplib_fast.asm
 share/rasm/decrunch/unlzsa1_fast.asm
 share/rasm/decrunch/unlzsa2_fast.asm
+share/rasm/decrunch/upkr_decrunch.asm
