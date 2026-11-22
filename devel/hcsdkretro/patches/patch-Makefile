@@ -1,14 +1,25 @@
---- Makefile~	Wed Mar 18 01:48:00 2026
-+++ Makefile	Fri Mar 20 15:41:20 2026
-@@ -1,9 +1,9 @@
+--- Makefile.orig.port	Wed May  6 09:04:40 2026
++++ Makefile	Sun Nov 22 22:02:56 2026
+@@ -1,11 +1,11 @@
 -M = @make --no-print-directory --silent $@ -C
-+M = @gmake  $@ -C
++M = @gmake $@ -C
  INSTDIR = /usr/local/bin
+ INCDIR = /usr/local/include
+ LIBSDIR = /usr/local/share/hcsdk/libs
  include version.mk
  
- all clean test posix linux macos win win32 samples_zip:
+ all clean posix linux macos win win32 dos samples_zip:
 -	@make --no-print-directory --silent version_$@
 +	@gmake version_$@
  	$M hcasm
  	$M hclink
  	$M hclib
+@@ -13,7 +13,7 @@
+ 	$M hcbcomp
+ 	$M msxdosemu
+ 	$M libs
+-	@make --no-print-directory --silent distro_$@
++	@gmake distro_$@
+ 
+ test: all
+ 	$M tests

@@ -1,7 +1,7 @@
 
 COMMENT =		Retro SDK for 8080,8085,8086,Z80
 
-DISTNAME =		hcsdkretro-1.9R0
+DISTNAME =		hcsdkretro-2.1R6
 CATEGORIES =		devel
 
 MAINTAINER =		Benoit Lecocq <benoit@openbsd.org>
@@ -15,7 +15,7 @@ HOMEPAGE =		https://github.com/humbertocsjr/hcsdkretro
 
 GH_ACCOUNT =		humbertocsjr
 GH_PROJECT =		hcsdkretro
-GH_TAGNAME =		v1.9R0
+GH_TAGNAME =		v2.1R6
 
 USE_GMAKE =		Yes
 

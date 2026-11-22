@@ -1,0 +1,16 @@
+--- libs/Makefile.orig	Sun Nov 22 22:00:38 2026
++++ libs/Makefile	Sun Nov 22 22:01:00 2026
+@@ -6,11 +6,11 @@
+ .PHONY: all clean posix linux macos win win32 dos test test_emu samples_zip
+ 
+ all posix linux macos win win32 dos test test_emu:
+-	@make --no-print-directory $@ -C b
++	@gmake $@ -C b
+ 
+ samples_zip:
+ 	@true
+ 
+ clean:
+-	@make --no-print-directory clean -C b
++	@gmake clean -C b
+ 	@rm -f $(BLIBS)
