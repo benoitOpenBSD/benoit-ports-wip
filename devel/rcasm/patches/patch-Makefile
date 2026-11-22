@@ -1,0 +1,11 @@
+--- Makefile.orig	Sun Nov 22 21:11:15 2026
++++ Makefile	Sun Nov 22 21:12:35 2026
+@@ -2,7 +2,7 @@
+ PROJLNK=rclink
+ INCLUDE = .
+ OBJECTS = asm.o support.o mstrings.o asmcmds.o
+-CC = gcc
++CC = cc
+ LIBS =
+ 
+ all : FLAGS = -I$(INCLUDE) -Wall
