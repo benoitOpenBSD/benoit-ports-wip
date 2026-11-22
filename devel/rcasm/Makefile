@@ -2,11 +2,12 @@
 
 COMMENT =	cross-platform table-driven cross-assembler
 
-V =		3.0
+V =		3.1
 DISTNAME =	rcasm-${V}
 CATEGORIES =	devel
 
-HOMEPAGE =	http://www.elf-emulation.com/rcasm.html
+# http://www.elf-emulation.com/rcasm.html
+HOMEPAGE =	${SITES_GITHUB}
 
 MAINTAINER =	Benoit Lecocq <benoit@openbsd.org>
 
@@ -15,7 +16,10 @@ PERMIT_PACKAGE =	Yes
 
 WANTLIB +=		c
 
-SITES =			https://www.arcane-labs.net/download/OpenBSD/
+# https://www.arcane-labs.net/download/OpenBSD/
+GH_ACCOUNT =            rileym65
+GH_PROJECT =            RcAsm
+GH_COMMIT =             3fb25223547274da0c9d9e3e5f35cb5f58e0f343
 
 USE_GMAKE =		Yes
 

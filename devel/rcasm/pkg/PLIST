@@ -1,4 +1,3 @@
-@comment $OpenBSD: PLIST,v$
 @bin bin/rcasm
 @bin bin/rclink
 share/rcasm/
@@ -8,11 +7,15 @@ share/rcasm/doc/1802.txt
 share/rcasm/doc/1805.def
 share/rcasm/doc/4004.def
 share/rcasm/doc/6502.def
+share/rcasm/doc/65c02.def
 share/rcasm/doc/8080.def
 share/rcasm/doc/8080.txt
+share/rcasm/doc/agc.def
 share/rcasm/doc/asm.doc
+share/rcasm/doc/avr.def
 share/rcasm/doc/blank.txt
 share/rcasm/doc/chip8.def
 share/rcasm/doc/pic24c5xx.def
 share/rcasm/doc/z8.def
 share/rcasm/doc/z80.def
+share/rcasm/doc/z80.txt
